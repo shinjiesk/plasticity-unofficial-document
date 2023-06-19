@@ -1,0 +1,184 @@
+{
+  "Ctrl Key": {
+    "prefix": "key-ctrl",
+    "body": "`Ctrl`+"
+  },
+  "Alt Key": {
+    "prefix": "key-Alt",
+    "body": "`Alt`+"
+  },
+  "Shift Key": {
+    "prefix": "key-shift",
+    "body": "`Shift`+"
+  },
+  "Manual Move": {
+    "prefix": "manual-XYZ",
+    "body": [
+      "`X` : **X axis** : X軸方向に限定",
+      "- `Y` : **Y axis** : Y軸方向に限定",
+      "- `Z` : **Z axis** : Z軸方向に限定",
+      "- `Shift`+`X` : **X plane** : X平面に限定",
+      "- `Shift`+`Y` : **Y plane** : Y平面に限定",
+      "- `Shift`+`Z` : **Z plane** : Z平面に限定",
+      "- `G` : **Screen space** : 見た目の平面に限定",
+      "- `F` : **Freestyle** : 方向を2点で限定",
+      "- `V` : **Pivot** : 方向を平面のクリックで限定",
+      "- `W` : **Worldspace** : 方向の限定を解除する"
+    ]
+  },
+  "Manual default": {
+    "prefix": "manual-default",
+    "body": [
+      "- 機能 ： ",
+      "- ショートカット ： ",
+      "- ボタン ： ",
+      "- 操作手順 ：",
+      "  1. ",
+      "  X. コマンドダイアログの**OK**または右クリックで確定します。"
+    ]
+  },
+
+  "article": {
+    "prefix": "article",
+    "body": [
+      "---",
+      "title: ここにタイトルを書きます",
+      "description: ここに120文字を目安にリード文を書きます。記事の冒頭に挿入されます。metaタグのdescriptionにも使われます。",
+      "icon: tabler:markdown",
+      "category: フロントエンド",
+      "tags: ['フロントエンド']",
+      "createdAt: `⌘`+`Shift`+`i`で現在日時を挿入",
+      "_draft: true",
+      "---",
+      "",
+      "## 見出し2",
+      "",
+      "### 見出し3",
+      ""
+    ],
+    "description": "記事テンプレート（Markdown形式）"
+  },
+  "table": {
+    "prefix": "table",
+    "body": [
+      "| header1 | header2 | header3 |",
+      "| ------- | ------- | ------- |",
+      "|         |         |         |",
+      "|         |         |         |"
+    ],
+    "description": "テーブル（Markdown形式）"
+  },
+  "baLinkExternal": {
+    "prefix": "ba-link-external",
+    "body": [
+      "::ba-link-card",
+      "---",
+      "type: external",
+      "link: ",
+      "title: ",
+      "description: ",
+      "imgFileName: ",
+      "---",
+      "::"
+    ],
+    "description": "外部リンク（MDC形式）"
+  },
+  "baLinkRelated": {
+    "prefix": "ba-link-related",
+    "body": [
+      "::ba-link-card",
+      "---",
+      "type: related",
+      "articleId: ",
+      "---",
+      "::"
+    ],
+    "description": "関連リンク（MDC形式）"
+  },
+  "appCapture": {
+    "prefix": "app-capture",
+    "body": [
+      "::app-capture",
+      "---",
+      "src: article/xxx.png",
+      "alt: ",
+      "caption: ",
+      "---",
+      "::"
+    ],
+    "description": "画面キャプチャ（MDC形式）"
+  },
+  "appPhoto": {
+    "prefix": "app-photo",
+    "body": [
+      "::app-photo",
+      "---",
+      "src: article/xxx.png",
+      "alt: ",
+      "caption: ",
+      "---",
+      "::"
+    ],
+    "description": "写真（MDC形式）"
+  },
+  "appShopItemCardGoods": {
+    "prefix": "app-shop-item-card-goods",
+    "body": [
+      "::app-shop-item-card",
+      "---",
+      "title: ",
+      "imgFileName: ",
+      "shopName: ",
+      "amazonItemId: ",
+      "rakutenItemId: ",
+      "searchKeyword: ",
+      "---",
+      "::"
+    ],
+    "description": "商品紹介カード（MDC形式）"
+  },
+  "appShopItemCardBook": {
+    "prefix": "app-shop-item-card-book",
+    "body": [
+      "::app-shop-item-card",
+      "---",
+      "type: book",
+      "title: ",
+      "imgFileName: ",
+      "shopName: ",
+      "amazonItemId: ",
+      "kindleItemId: ",
+      "rakutenItemId: ",
+      "koboItemId: ",
+      "---",
+      "::"
+    ],
+    "description": "書籍紹介カード（MDC形式）"
+  },
+  "appSupplementInfo": {
+    "prefix": "app-supplement-info",
+    "body": [
+      "::app-supplement",
+      "---",
+      "type: info",
+      "title: ",
+      "---",
+      "ここに本文を書きます。ここに本文を書きます。ここに本文を書きます。",
+      "::"
+    ],
+    "description": "補足説明の情報（MDC形式）"
+  },
+  "appSupplementWarning": {
+    "prefix": "app-supplement-warning",
+    "body": [
+      "::app-supplement",
+      "---",
+      "type: warning",
+      "title: ",
+      "---",
+      "ここに本文を書きます。ここに本文を書きます。ここに本文を書きます。",
+      "::"
+    ],
+    "description": "補足説明の警告（MDC形式）"
+  }
+}

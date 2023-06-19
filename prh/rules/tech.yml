@@ -1,0 +1,18 @@
+meta:
+  - title: 技術用語の固有名詞ルール
+rules:
+  - expected: インターフェイス
+    patterns:
+      - インターフェース
+      - インタフェース
+      - インタフェイス
+    prh: 技術用語
+  - expected: ソフトウェア
+    pattern: ソフトウェアー
+    prh: 技術用語
+  - expected: ハードウェア
+    pattern: ハードウェアー
+    prh: 技術用語
+  - expected: デフォルト
+    pattern: ディフォルト
+    prh: 技術用語

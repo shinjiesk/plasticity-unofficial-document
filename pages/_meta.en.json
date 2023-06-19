@@ -1,13 +1,13 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "index": "Home",
+  "start": "Start Plasticity",
+
   "about": {
     "title": "About",
     "type": "page"
   },
   "contact": {
-    "title": "Contact ↗",
+    "title": "こんたくと ↗",
     "type": "page",
     "href": "https://twitter.com/shuding_",
     "newWindow": true

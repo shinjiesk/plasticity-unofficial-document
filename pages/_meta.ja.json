@@ -1,0 +1,16 @@
+{
+  "index": "Home",
+  "start": "Plasticityを始める",
+  "sketch": "スケッチ",
+
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "こんたくと ↗",
+    "type": "page",
+    "href": "https://twitter.com/shuding_",
+    "newWindow": true
+  }
+}

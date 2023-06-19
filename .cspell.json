@@ -1,0 +1,21 @@
+{
+  "version": "0.2",
+  "language": "en-GB",
+  // allowCompoundWords - set to true to allow compound words by default
+  "allowCompoundWords": true,
+  // words - list of words to be always considered correct
+  "words": ["qiita", "nextra"],
+  // flagWords - list of words to be always considered incorrect
+  // "flagWords": [],
+  // ignorePaths - a list of globs to specify which files are to be ignored
+  "ignorePaths": [
+    ".vscode",
+    ".devcontainer",
+    ".git",
+    ".history",
+    ".cspell.json",
+    "node_modules",
+    "package.json",
+    "yarn.lock"
+  ]
+}

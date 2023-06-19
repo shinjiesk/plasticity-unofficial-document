@@ -1,0 +1,12 @@
+{
+  "plugins": {},
+  "filters": {
+    "comments": true
+  },
+  "rules": {
+    "preset-jtf-style": false,
+    "prh": {
+      "rulePaths": ["./prh/index.yml"]
+    }
+  }
+}
