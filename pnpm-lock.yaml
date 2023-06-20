@@ -8,6 +8,9 @@ dependencies:
   next:
     specifier: ^13.0.6
     version: 13.0.6(react-dom@18.2.0)(react@18.2.0)
+  nextjs-google-analytics:
+    specifier: ^2.3.3
+    version: 2.3.3(next@13.0.6)(react@18.2.0)
   nextra:
     specifier: ^2.7.1
     version: 2.7.1(next@13.0.6)(react-dom@18.2.0)(react@18.2.0)
@@ -20,9 +23,6 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
-  react-ga4:
-    specifier: ^2.1.0
-    version: 2.1.0
 
 devDependencies:
   '@types/node':
@@ -1437,6 +1437,14 @@ packages:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
 
+  /fsevents@2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /function-bind@1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
     dev: true
@@ -2828,6 +2836,18 @@ packages:
       - babel-plugin-macros
     dev: false
 
+  /nextjs-google-analytics@2.3.3(next@13.0.6)(react@18.2.0):
+    resolution: {integrity: sha512-Y6sI6A7wt5dji8hYBnVkOh9LTyImSLFZXx3FpyQgVW7W4b4qEFHjH2u3fhDJsrRZeLlUGM8/RuHD/mhHc2Axfg==}
+    peerDependencies:
+      next: '>=11.0.0'
+      react: '>=17.0.0'
+    dependencies:
+      next: 13.0.6(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: false
+
   /nextra-theme-docs@2.7.1(next@13.0.6)(nextra@2.7.1)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-C2DtoGH15q22t4r2JC89lvvajmnyiqsv3PaqHJpoHRlF2eR5giuLhZC5Oahb9AENRDcnUIUvqVi/8NlfiIM0yQ==}
     peerDependencies:
@@ -3168,10 +3188,6 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
-    dev: false
-
-  /react-ga4@2.1.0:
-    resolution: {integrity: sha512-ZKS7PGNFqqMd3PJ6+C2Jtz/o1iU9ggiy8Y8nUeksgVuvNISbmrQtJiZNvC/TjDsqD0QlU5Wkgs7i+w9+OjHhhQ==}
     dev: false
 
   /react@18.2.0:

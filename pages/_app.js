@@ -1,7 +1,12 @@
-import ReactGA from "react-ga4";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
-// ...
+const App = ({ Component, pageProps }) => {
+  return (
+    <>
+      <GoogleAnalytics trackPageViews />
+      <Component {...pageProps} />
+    </>
+  );
+};
 
-if (isEnvironment("production")) {
-  ReactGA.initialize("G-068C110J0L");
-}
+export default App;

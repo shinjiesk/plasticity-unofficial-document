@@ -19,11 +19,11 @@
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
     "next": "^13.0.6",
+    "nextjs-google-analytics": "^2.3.3",
     "nextra": "^2.7.1",
     "nextra-theme-docs": "^2.7.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-ga4": "^2.1.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "18.11.10",
