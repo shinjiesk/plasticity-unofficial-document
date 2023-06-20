@@ -1,0 +1,26 @@
+# Corner Box
+
+- Allows you to create a rectangular box from a specified two points on a diagonal line.
+- Shortcut: `Shift`+`B`
+- Button: Toolbar
+
+1. Click the icon on the toolbar.
+   - **Select target bodies**: Select the targets for the Boolean operation (solid, sheet).
+   - **Width**: Specifies the width.
+   - **Length**: Specifies the length.
+   - **Height**: Specifies the height.
+2. Click at the starting point of the diagonal line on the base surface.
+   - `C`: **Center/Corner**: Switches to center box.
+   - `S`: **Square**: Constrains to a square.
+3. Click at the end point of the diagonal line.
+4. Move the cursor and click at the desired height.
+   - `Shift`+`Q`: **Slice**: Creates a solid at the intersection with the Boolean target and keeps the remaining solid as well.
+   - `Q`: **Union**: Unites with the Boolean target.
+   - `W`: **Difference**: Subtracts from the Boolean target.
+   - `Shift`+`E`: **Intersect**: Creates a solid at the intersection with the Boolean target.
+   - `B`: **New Body**: Creates a new solid. The Boolean operation is canceled.
+   - `T`: **Keep Tool**: The Boolean operation is executed, and a new solid is also created.
+   - `H`: **Height**: Move the cursor to specify the height.
+5. You can drag the yellow dot to change the width, length, and height.
+6. Click **OK** in the command dialog or right-click to confirm.
+7. A rectangular box is created.

@@ -1,16 +1,25 @@
 {
   "index": "Home",
   "start": "Plasticityを始める",
-  "sketch": "スケッチ",
+
+  "-- Sketch": {
+    "type": "separator",
+    "title": "スケッチ"
+  },
+  "sketch-basic": "スケッチの基本",
+  "sketch-tool": "スケッチツール",
+  "sketch-edit": "スケッチの編集",
+
+  "-- Solid": {
+    "type": "separator",
+    "title": "ソリッド"
+  },
+  "solid-basic": "ソリッドの基本",
+  "solid-tool": "ソリッドツール",
+  "solid-edit": "ソリッドの編集",
 
   "about": {
     "title": "About",
     "type": "page"
-  },
-  "contact": {
-    "title": "こんたくと ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
   }
 }

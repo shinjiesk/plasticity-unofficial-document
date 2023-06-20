@@ -1,0 +1,7 @@
+{
+  "sphere": "球",
+  "corner-box": "対角線からの直方体",
+  "center-box": "中心からの直方体",
+  "three-point-box": "3点指定の直方体",
+  "cylinder": "円柱"
+}

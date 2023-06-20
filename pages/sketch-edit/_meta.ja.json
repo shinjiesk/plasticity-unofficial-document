@@ -1,0 +1,35 @@
+{
+  "move": "移動する 🚧",
+  "rotate": "回転する 🚧",
+  "scale": "拡大縮小する 🚧",
+  "mirror": "ミラーする 🚧",
+  "freestyle-mirror": " 自由な軸でミラーする 🚧",
+
+  "duplicate": "複製する",
+  "place-curve": "指定した軸を基準に複製する 🚧",
+  "rectangular-array": "長方形配列で複製する 🚧",
+  "radial-array": "円形状配列で複製する 🚧",
+  "curve-array": "カーブに沿って複製する 🚧",
+
+  "alternative-duplicate": "構築平面に投影する",
+  "project-curve": "ソリッドに投影する",
+  "project-curve-onto-curve": "ふたつのカーブを投影する",
+
+  "join": "カーブを結合する 🚧",
+  "bridge-curve": "ふたつのカーブを繋げる 🚧",
+  "loft": "ふたつのポイントを繋げる 🚧",
+
+  "trim": "カーブをトリムする 🚧",
+  "unjoin": "カーブを分解する 🚧",
+  "cut-curve": "カーブを切断する 🚧",
+  "split-curve-at-point": "カーブを分割する 🚧",
+
+  "fillet-chamfer": "カーブをフィレットする 🚧",
+  "offset-curve": "カーブをオフセットする 🚧",
+  "extend-curve": "カーブを延長する 🚧",
+  "subdivide-curve": "カーブのCVを増やす 🚧",
+
+  "delete-redundant-topology": "余剰ポイントを削除する 🚧",
+  "rebuild": "カーブを再構築する 🚧",
+  "convert-vertex-to-cv": "ポイントをCVに変換する 🚧"
+}

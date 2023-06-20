@@ -1,0 +1,7 @@
+{
+  "sphere": "Sphere",
+  "corner-box": "Box from Diagonal",
+  "center-box": "Box from Center",
+  "three-point-box": "Box from Three Points",
+  "cylinder": "Cylinder"
+}

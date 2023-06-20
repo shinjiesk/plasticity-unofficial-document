@@ -18,10 +18,9 @@ Menu > Preferences
 
 Command pallet will appear when you press the `F` key in the work area.
 
-![F-Menu](./src/img/f-menu.png)
+![F-Menu](./img/f-menu.png)
 
 1. Default shortcuts (Gray)
 2. Right-click menu
 3. Assigned shortcut (Purple)
 4. Favorite commands
-

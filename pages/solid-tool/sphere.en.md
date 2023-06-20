@@ -1,0 +1,21 @@
+# Sphere
+
+- Allows you to create a sphere specified by its center and diameter.
+- Shortcut: None
+- Button: Toolbar
+
+1. Click the icon on the toolbar.
+   - **Select target bodies**: Select the targets for the Boolean operation (solid, sheet).
+   - **Radius**: Specifies the radius.
+2. Click at the center of the sphere.
+   - `Shift`+`Q`: **Slice**: Creates a solid at the intersection with the Boolean target and keeps the remaining solid as well.
+   - `Q`: **Union**: Unites with the Boolean target.
+   - `W`: **Difference**: Subtracts from the Boolean target.
+   - `Shift`+`E`: **Intersect**: Creates a solid at the intersection with the Boolean target.
+   - `X`: **X axis**: Constrains to the X-axis.
+   - `Y`: **Y axis**: Constrains to the Y-axis.
+   - `Z`: **Z axis**: Constrains to the Z-axis.
+3. Move the cursor and click at the desired radius.
+4. You can drag the yellow dot to change the radius.
+5. Click **OK** in the command dialog or right-click to confirm.
+6. A sphere is created.

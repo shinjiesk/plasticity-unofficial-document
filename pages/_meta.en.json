@@ -1,15 +1,25 @@
 {
   "index": "Home",
-  "start": "Start Plasticity",
+  "start": "Starting with Plasticity",
+
+  "-- Sketch": {
+    "type": "separator",
+    "title": "Sketch"
+  },
+  "sketch-basic": "Sketch Basics",
+  "sketch-tool": "Sketch Tools",
+  "sketch-edit": "Sketch Editing",
+
+  "-- Solid": {
+    "type": "separator",
+    "title": "Solid"
+  },
+  "solid-basic": "Solid Basics",
+  "solid-tool": "Solid Tools",
+  "solid-edit": "Solid Editing",
 
   "about": {
     "title": "About",
     "type": "page"
-  },
-  "contact": {
-    "title": "こんたくと ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
   }
 }

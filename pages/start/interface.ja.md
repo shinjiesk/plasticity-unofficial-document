@@ -1,4 +1,4 @@
-# インターフェースの概要
+# インターフェイスの概要
 
 ![Interface](./img/interface.png)
 

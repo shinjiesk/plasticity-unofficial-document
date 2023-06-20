@@ -18,7 +18,7 @@ const config: DocsThemeConfig = {
   sidebar: {
     toggleButton: true,
   },
-  gitTimestamp: "Last updated on",
+  gitTimestamp: ({ timestamp }) => <span>Last updated on {timestamp.toLocaleDateString()}</span>,
 
 }
 

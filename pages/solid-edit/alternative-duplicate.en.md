@@ -1,0 +1,3 @@
+# Alternative Duplicate
+
+- `Alt`+`D`

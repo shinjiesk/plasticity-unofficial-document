@@ -1,0 +1,35 @@
+{
+  "move": "Move 🚧",
+  "rotate": "Rotate 🚧",
+  "scale": "Scale 🚧",
+  "mirror": "Mirror 🚧",
+  "freestyle-mirror": "Mirror along arbitrary axis 🚧",
+
+  "duplicate": "Duplicate",
+  "place-curve": "Duplicate along specified axis 🚧",
+  "rectangular-array": "Duplicate in rectangular array 🚧",
+  "radial-array": "Duplicate in radial array 🚧",
+  "curve-array": "Duplicate along curve 🚧",
+
+  "alternative-duplicate": "Project onto construction plane",
+  "project-curve": "Project onto solid",
+  "project-curve-onto-curve": "Project two curves",
+
+  "join": "Join curves 🚧",
+  "bridge-curve": "Connect two curves 🚧",
+  "loft": "Connect two points 🚧",
+
+  "trim": "Trim curve 🚧",
+  "unjoin": "Decompose curve 🚧",
+  "cut-curve": "Cut curve 🚧",
+  "split-curve-at-point": "Split curve at point 🚧",
+
+  "fillet-chamfer": "Fillet curve 🚧",
+  "offset-curve": "Offset curve 🚧",
+  "extend-curve": "Extend curve 🚧",
+  "subdivide-curve": "Increase curve CVs 🚧",
+
+  "delete-redundant-topology": "Delete redundant points 🚧",
+  "rebuild": "Reconstruct curve 🚧",
+  "convert-vertex-to-cv": "Convert point to CV 🚧"
+}

@@ -1,0 +1,15 @@
+{
+  "line": "線分",
+  "spline-curve": "スプラインカーブ",
+  "control-point-curve": "制御点カーブ",
+  "center-circle": "中心からの円",
+  "two-point-circle": "2点指定の円",
+  "three-point-circle": "3点指定の円",
+  "center-point-arc": "中心からの円弧",
+  "three-point-arc": "3点指定の円弧",
+  "regular-polygon": "多角形",
+  "spiral": "螺旋",
+  "corner-rectangle": "対角線からの四角形",
+  "center-rectangle": "中心からの四角形",
+  "three-point-rectangle": "3点指定の四角形"
+}
