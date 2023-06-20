@@ -19,6 +19,7 @@ const config: DocsThemeConfig = {
   darkMode: true,
   sidebar: {
     toggleButton: true,
+    defaultMenuCollapseLevel: 1,
   },
   gitTimestamp: ({ timestamp }) => (
     <span>Last updated on {timestamp.toLocaleDateString()}</span>
