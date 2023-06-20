@@ -27,7 +27,7 @@ const config: DocsThemeConfig = {
   ),
   useNextSeoProps() {
     const { asPath } = useRouter();
-    if (asPath !== "/") {
+    if (asPath !== "/" && asPath !== "/ja" && asPath !== "/en") {
       return {
         titleTemplate: "%s – Plasticity Unofficial Document",
       };
