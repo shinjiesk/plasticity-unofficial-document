@@ -1,22 +1,22 @@
 # Alternative Duplicate
 
-- You can create a curve projected onto the construction plane from a curve or edge.
-- Shortcut: `Alt`+`D`
-- Button: Left of the command bar
+- カーブまたはエッジを構築平面に投影したカーブを作成できます。
+- ショートカット : `Alt`+`D`
+- ボタン : コマンドバー左
 
-1. Activate the construction plane you want to project onto.
-2. Select the curve or edge you want to create as the target.
-3. Press the shortcut `Alt`+`D`.
-4. The move gizmo appears and you can freely move the projected curve.
-   - You can also limit the direction of movement.
-     - `X` : **X axis** : Constrains to the X-axis.
-     - `Y` : **Y axis** : Constrains to the Y-axis.
-     - `Z` : **Z axis** : Constrains to the Z-axis.
-     - `Shift`+`X` : **X plane** : Constrains to the X plane.
-     - `Shift`+`Y` : **Y plane** : Constrains to the Y plane.
-     - `Shift`+`Z` : **Z plane** : Constrains to the Z plane.
-     - `G` : **Screen space** : Constrains to the apparent plane.
-     - `F` : **Freestyle** : Constrains the direction by two points.
-     - `V` : **Pivot** : Constrains the direction by clicking on the plane.
-     - `W` : **Worldspace** : Releases the directional constraint.
-5. Confirm by clicking **OK** in the command dialog or right-clicking.
+1. 投影したい構築平面をアクティブにします。
+2. 作成する対象として、カーブまたはエッジを選択します
+3. ショートカット`Alt`+`D`を押します。
+4. 移動ギズモが表示され、投影したたカーブを自由に移動できます。
+   - 移動方向を限定することもできます。
+     - `X` : **X axis** : X 軸方向に限定します。
+     - `Y` : **Y axis** : Y 軸方向に限定します。
+     - `Z` : **Z axis** : Z 軸方向に限定します。
+     - `Shift`+`Z` : **Z plane** : Z 平面に限定します。
+     - `Shift`+`X` : **X plane** : X 平面に限定します。
+     - `Shift`+`Y` : **Y plane** : Y 平面に限定します。
+     - `G` : **Screen space** : 見た目の平面に限定します。
+     - `F` : **Freestyle** : 2点で指定した方向に限定します。
+     - `V` : **Pivot** : クリックした対象の方向に限定します。
+     - `W` : **Worldspace** : 方向の限定を解除します。
+5. コマンドダイアログの**OK**または右クリックで確定します。

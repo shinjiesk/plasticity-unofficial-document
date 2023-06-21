@@ -1,1 +1,17 @@
 # Rotate
+
+- You can rotate curves or multiple points, CVs.
+- Shortcut: `R`
+- Button: Bottom left of the command bar
+
+1. Select the object you want to move.
+2. Press the shortcut `R` or click the icon in the bottom left of the command bar.
+3. Use the rotate gizmo that appears to rotate it.
+   - `X` : **X axis** : Constrain to the X-axis direction.
+   - `Y` : **Y axis** : Constrain to the Y-axis direction.
+   - `Z` : **Z axis** : Constrain to the Z-axis direction.
+   - `R` : **Screen space** : Constrain to the visible plane.
+   - `F` : **Freestyle** : Constrain to a direction specified by two points.
+   - `V` : **Pivot** : Constrain to the direction of the clicked object.
+   - `W` : **Worldspace** : Remove the directional constraint.
+4. Confirm by clicking **OK** on the command dialog or by right-clicking.

@@ -1,7 +1,7 @@
 {
-  "move": "Move 🚧",
-  "rotate": "Rotate 🚧",
-  "scale": "Scale 🚧",
+  "move": "Move",
+  "rotate": "Rotate",
+  "scale": "Scale",
   "mirror": "Mirror 🚧",
   "freestyle-mirror": "Mirror along arbitrary axis 🚧",
 

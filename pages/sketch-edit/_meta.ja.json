@@ -1,7 +1,7 @@
 {
-  "move": "移動する 🚧",
-  "rotate": "回転する 🚧",
-  "scale": "拡大縮小する 🚧",
+  "move": "移動する",
+  "rotate": "回転する ",
+  "scale": "拡大縮小する",
   "mirror": "ミラーする 🚧",
   "freestyle-mirror": " 自由な軸でミラーする 🚧",
 

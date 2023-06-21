@@ -11,9 +11,9 @@
      - `X` : **X axis** : Constrains to the X-axis.
      - `Y` : **Y axis** : Constrains to the Y-axis.
      - `Z` : **Z axis** : Constrains to the Z-axis.
+     - `Shift`+`Z` : **Z plane** : Constrains to the Z plane.
      - `Shift`+`X` : **X plane** : Constrains to the X plane.
      - `Shift`+`Y` : **Y plane** : Constrains to the Y plane.
-     - `Shift`+`Z` : **Z plane** : Constrains to the Z plane.
      - `G` : **Screen space** : Constrains to the apparent plane.
      - `F` : **Freestyle** : Constrains the direction by two points.
      - `V` : **Pivot** : Constrains the direction by clicking on the plane.
