@@ -2,6 +2,12 @@
   "index": "Home",
   "start": "Starting with Plasticity",
 
+  "-- common": {
+    "type": "separator",
+    "title": "Operations common to Sketch and Solid"
+  },
+  "common-operation": "Common Operations",
+
   "-- Sketch": {
     "type": "separator",
     "title": "Sketch"
@@ -17,6 +23,7 @@
   "solid-basic": "Solid Basics",
   "solid-tool": "Solid Tools",
   "solid-edit": "Solid Editing",
+
   "about": {
     "title": "About",
     "type": "page"

@@ -1,11 +1,13 @@
 {
   "index": "Home",
   "start": "Plasticityを始める",
+
   "-- common": {
     "type": "separator",
     "title": "スケッチとソリッド共通の操作"
   },
   "common-operation": "共通の操作",
+
   "-- Sketch": {
     "type": "separator",
     "title": "スケッチ"

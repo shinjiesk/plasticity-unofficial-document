@@ -1,6 +1,7 @@
 {
-  "confirm-cancel": "",
-  "gizmo-move": "",
-  "gizmo-rotate": "",
-  "gizmo-scale": ""
+  "confirm-cancel": "Confirming or Cancelling an Operation 🚧",
+  "selection": "Selection 🚧",
+  "gizmo-move": "Using the Move Gizmo 🚧",
+  "gizmo-rotate": "Using the Rotate Gizmo 🚧",
+  "gizmo-scale": "Using the Scale Gizmo 🚧"
 }
