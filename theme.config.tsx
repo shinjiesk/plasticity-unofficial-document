@@ -35,7 +35,7 @@ const config: DocsThemeConfig = {
     }
   },
 
-  head: () => {
+  /*  head: () => {
     const { asPath, defaultLocale, locale } = useRouter();
     const { frontMatter } = useConfig();
     const url =
@@ -59,7 +59,7 @@ const config: DocsThemeConfig = {
         ></meta>
       </>
     );
-  },
+  }, */
 };
 
 export default config;
