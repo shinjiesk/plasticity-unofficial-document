@@ -24,3 +24,4 @@
 5. You can drag the yellow dot to change the width, length, and height.
 6. Click **OK** in the command dialog or right-click to confirm.
 7. A rectangular box is created.
+

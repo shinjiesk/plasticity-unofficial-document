@@ -15,3 +15,4 @@
    - **Bidirectional**: If turned on, it will also be projected in the negative direction of the specified axis.
    - **X-Ray**: If turned on, it will not be projected on the faces hidden in the positive direction of the specified axis.
 5. Confirm with the **OK** in the command dialog or right click.
+

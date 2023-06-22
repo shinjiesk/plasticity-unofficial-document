@@ -15,3 +15,4 @@
 4. Click for the third point of the rectangle.
 5. Confirm with **OK** on the command dialog or by right-clicking.
 6. A rectangle is created.
+

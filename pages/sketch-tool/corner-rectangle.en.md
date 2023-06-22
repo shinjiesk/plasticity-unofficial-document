@@ -13,3 +13,4 @@
 3. Click for the end point on the diagonal.
 4. Confirm with **OK** on the command dialog or by right-clicking.
 5. A rectangle is created.
+

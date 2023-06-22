@@ -20,3 +20,4 @@
    - `Shift`+`T`: **Thickness** Specifies the wall thickness.
    - `Tab`: **Lock distances** Creates the same extrusion on both sides.
 4. The extruded solid or sheet is displayed in the work area.
+

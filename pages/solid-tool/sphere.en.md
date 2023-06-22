@@ -19,3 +19,4 @@
 4. You can drag the yellow dot to change the radius.
 5. Click **OK** in the command dialog or right-click to confirm.
 6. A sphere is created.
+

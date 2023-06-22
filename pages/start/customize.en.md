@@ -24,3 +24,4 @@ Command pallet will appear when you press the `F` key in the work area.
 2. Right-click menu
 3. Assigned shortcut (Purple)
 4. Favorite commands
+
