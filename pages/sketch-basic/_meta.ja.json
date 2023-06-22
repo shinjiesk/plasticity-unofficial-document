@@ -1,3 +1,6 @@
 {
+  "object-name": "スケッチオブジェクトの名称",
+  "tooltip": "ツールチップ",
+  "numeric-input": "数値入力",
   "construction-plane": "構築平面"
 }

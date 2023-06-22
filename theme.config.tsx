@@ -33,6 +33,20 @@ const config: DocsThemeConfig = {
       };
     }
   },
+  head: (
+    <>
+      <meta
+        property="og:site_name"
+        content="Plasticity Unofficial Document"
+      ></meta>
+      <meta
+        property="og:description"
+        content="Unofficial document of Plasticity 3D"
+      />
+      <meta name="twitter:card" content="summary_large_image"></meta>
+      <meta name="twitter:site" content="@snj_esk"></meta>
+    </>
+  ),
 };
 
 export default config;
