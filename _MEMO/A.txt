@@ -1,5 +1,0 @@
-description: カーブを作成するときに必要な構築平面の使い方を説明します
----
-title: Construction Planes
-description: This explains how to use the construction plane required when creating curves.
----

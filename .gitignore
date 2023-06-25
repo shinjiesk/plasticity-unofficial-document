@@ -16,5 +16,6 @@ yarn-error.log*
 
 .vercel
 
-.MEMO
+/_MEMO
+
 
