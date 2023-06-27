@@ -11,7 +11,7 @@
    - `Y` : **Y axis** : Constrain to the Y-axis direction.
    - `Z` : **Z axis** : Constrain to the Z-axis direction.
    - `R` : **Screen space** : Constrain to the visible plane.
-   - `F` : **Freestyle** : Constrain to a direction specified by two points.
+   - `F` : **Freestyle** : First click sets the start, the next click sets the end.
    - `V` : **Pivot** : Constrain to the direction of the clicked object.
    - `W` : **Worldspace** : Remove the directional constraint.
 4. Confirm by clicking **OK** on the command dialog or by right-clicking.

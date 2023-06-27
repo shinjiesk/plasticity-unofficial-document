@@ -14,7 +14,9 @@
    - `Shift`+`X` : **X plane** : Constrain to the X plane.
    - `Shift`+`Y` : **Y plane** : Constrain to the Y plane.
    - `G` : **Screen space** : Constrain to the visible plane.
-   - `F` : **Freestyle** : Constrain to a direction specified by two points.
+   - `F` : **Freestyle** : First click sets the start, the next click sets the end.
    - `V` : **Pivot** : Constrain to the direction of the clicked object.
    - `W` : **Worldspace** : Remove the directional constraint.
 4. Confirm by clicking **OK** on the command dialog or by right-clicking.
+
+
