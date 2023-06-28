@@ -10,12 +10,25 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase:
     "https://github.com/shinjiesk/plasticity-unofficial-document",
+
   footer: {
     text: (
-      <span>
-        {new Date().getFullYear()}
-        {"  "}©{"  "}Shinji esk
-      </span>
+      <>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "100%",
+          }}
+        >
+          <div>{new Date().getFullYear()}©Shinji esk</div>
+          <div>
+            <a href="/en">English</a>
+            <span> | </span>
+            <a href="/ja">日本語</a>
+          </div>
+        </div>
+      </>
     ),
   },
   darkMode: true,
