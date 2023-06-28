@@ -1,18 +1,9 @@
-# Customize your experience
+# Shortcuts and Command Palette
 
-## Set your preferences
-
-Menu > Preferences
-
-### Navigation
-
-### Preferences
-
-### Appearance
-
-### Grid & Unit
-
-### Backup
+- Executing commands via keyboard shortcuts
+- Executing commands through the command palette
+- Favorite feature
+- How to assign shortcuts
 
 ## Shortcuts and Favorites
 

@@ -1,3 +1,3 @@
-# Install
+# Installation
 
 https://www.plasticity.xyz/

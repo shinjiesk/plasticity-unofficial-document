@@ -1,12 +1,8 @@
 {
   "index": "Home",
-  "start": "Plasticityを始める",
-
-  "-- common": {
-    "type": "separator",
-    "title": "スケッチとソリッド共通の操作"
-  },
-  "common-operation": "共通の操作",
+  "start": "はじめに",
+  "install": "インストールとセットアップ",
+  "basic-operation": "基本操作",
 
   "-- Sketch": {
     "type": "separator",
@@ -28,4 +24,3 @@
     "type": "page"
   }
 }
-

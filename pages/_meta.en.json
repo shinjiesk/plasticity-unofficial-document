@@ -1,12 +1,8 @@
 {
   "index": "Home",
-  "start": "Starting with Plasticity",
-
-  "-- common": {
-    "type": "separator",
-    "title": "Operations common to Sketch and Solid"
-  },
-  "common-operation": "Common Operations",
+  "start": "Getting Started",
+  "install": "Installation and Setup",
+  "basic-operation": "Basic Operations",
 
   "-- Sketch": {
     "type": "separator",
@@ -29,4 +25,3 @@
     "type": "page"
   }
 }
-
