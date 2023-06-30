@@ -1,6 +1,3 @@
----
-description: This explains how to use the construction plane required when creating curves.
----
 # Construction Planes
 
 Curves are created on an active construction plane using sketch tools or commands. Construction planes can be the XY plane, YZ plane, XZ plane, or newly created ones.
@@ -41,4 +38,3 @@ You can save the created construction plane for later use.
 2. The saved construction plane becomes active.
 
 By double-clicking on **Custom plane 0**, the saved construction plane becomes active, and you get a view perpendicular to it.
-

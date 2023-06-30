@@ -48,31 +48,41 @@ const config: DocsThemeConfig = {
     }
   },
 
-  /*  head: () => {
+  head: () => {
     const { asPath, defaultLocale, locale } = useRouter();
     const { frontMatter } = useConfig();
+
     const url =
       "https://plasticitydoc.vercel.app" +
       (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
 
     return (
       <>
-        <meta name="description">{frontMatter.description}</meta>
+        <meta
+          property="og:site_name"
+          content="Plasticity Unofficial Document"
+        ></meta>
         <meta property="og:url" content={url} />
         <meta
           property="og:title"
           content={frontMatter.title || "Plasticity Unofficial Document"}
         />
-        <meta property="og:description" content={frontMatter.description} />
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="twitter:site" content="@snj_esk"></meta>{" "}
+        <meta property="og:description" content={frontMatter.desc} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@snj_esk" />
+        {/*         <meta
+          property="og:image"
+          content="https://plasticitydoc.vercel.app/ogp.png"
+        />
         <meta
-          property="og:site_name"
-          content="Plasticity Unofficial Document"
-        ></meta>
+          property="og:image:secure_url"
+          content="https://plasticitydoc.vercel.app/ogp.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" /> */}
       </>
     );
-  }, */
+  },
 };
 
 export default config;
