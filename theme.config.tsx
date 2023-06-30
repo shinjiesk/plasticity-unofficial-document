@@ -67,9 +67,13 @@ const config: DocsThemeConfig = {
           property="og:title"
           content={frontMatter.title || "Plasticity Unofficial Document"}
         />
-        <meta property="og:description" content={frontMatter.desc} />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="og:description"
+          content={frontMatter.description || ""}
+        />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@snj_esk" />
+        <meta name="twitter:creator" content="@snj_esk" />
         {/*         <meta
           property="og:image"
           content="https://plasticitydoc.vercel.app/ogp.png"
