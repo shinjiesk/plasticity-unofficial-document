@@ -1,0 +1,8 @@
+.svgInlineWithSpace {
+  display: inline-block;
+  margin-left: 2ch; /* Here 'ch' is used as the unit, which is approximately the width of a character */
+}
+
+.svgInline {
+  display: inline-block;
+}

@@ -1,0 +1,51 @@
+---
+title: Selection Operations
+description: Explains how to switch selection modes and how to select objects.
+---
+
+import { YoutubeExternalIcon } from 'components/YoutubeExternalIcon.js';
+
+
+## Selection Modes
+
+The selection mode should be adjusted according to the object you wish to select. You can switch the selection mode via the buttons at the top left.
+
+### Switching Selection Modes
+
+- Control point selection mode (**control-point**) `1`
+- Edge selection mode (**edge**) `2`
+- Face selection mode (**face**) `3`
+- Solid selection mode (**solid**) `4`
+- All selectable mode (**all**) `Tab`
+{' '}
+- Toggle only control point selection mode `Shift + 1`
+- Toggle only edge selection mode `Shift + 2`
+- Toggle only face selection mode `Shift + 3`
+- Toggle only solid selection mode `Shift + 4`
+
+## Selection
+
+You can select by clicking. Additionally, you can select by dragging the mouse or using shortcuts.
+
+### Selecting with Mouse Dragging
+
+The items that can be selected differ based on the direction of the mouse drag.
+
+- Dragging from the right towards the left: Everything that touches the green selection area is selected.
+- Dragging from the left towards the right: Only those completely within the purple selection area are selected.
+
+### Selecting with Shortcuts
+
+- Select all (**Select all**): `A`
+- Deselect all (**Deselect all**): `Alt + A`
+- Make selection unselectable (**Lock Selection**) [<YoutubeExternalIcon />](https://youtu.be/Qxou-1xByuM)
+{' '}
+- Select edges included in the selection: `Ctrl+2`
+- Select faces included in the selection: `Ctrl+3`
+- Select solids included in the selection: `Ctrl+4`
+{' '}
+- Add adjacent items to the selection: `Ctrl`+`Shift`+`=` [<YoutubeExternalIcon />](https://youtu.be/3F0MIifyfoc)
+- Select edge loops: `Alt`+left click [<YoutubeExternalIcon />](https://youtu.be/Qxou-1xByuM)
+- Select edge rings: `Alt`+`Ctrl`+left click
+- Select all curves, regions on the same plane: `Alt`+left click [<YoutubeExternalIcon />](https://youtu.be/pcj2Wl9-g9k)
+- Select all parallel faces: `Alt`+`Ctrl`+left click [<YoutubeExternalIcon />](https://youtu.be/9FGvdR-WPxY)

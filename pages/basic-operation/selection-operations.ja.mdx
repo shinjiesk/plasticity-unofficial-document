@@ -1,0 +1,52 @@
+---
+title: 選択の操作
+description:  選択モードの切り替えやオブジェクトの選択方法を説明します。
+---
+
+import { YoutubeExternalIcon } from 'components/YoutubeExternalIcon.js';
+
+## 選択モード
+
+選択する対象に合わせた選択モードにします。選択モードは左上のボタンで切り替えます。
+
+### 選択モードの切り替え
+
+- 制御点選択モード（**control-point**）`1`
+- エッジ選択モード（**edge**）`2`
+- フェイス選択モード（**face**）`3`
+- ソリッド選択モード（**solid**）`4`
+- すべて選択可能なモード（**all**）`Tab`
+{' '}
+- 制御点選択モードのみ切り替える`Shift + 1`
+- エッジ選択モードのみ切り替える`Shift + 2`
+- フェイス選択モードのみ切り替える`Shift + 3`
+- ソリッド選択モードのみ切り替える`Shift + 4`
+
+## 選択する
+
+クリックで選択できます。また、マウスドラッグやショートカットで選択することもできます。
+
+### マウスドラッグでの選択
+
+マウスドラッグでの選択は、ドラッグの方向で選択できるものが変わります。
+
+- 右側から左に向けてドラッグ：緑色の選択範囲に触れたものすべてが選択されます。
+- 左側から右に向けてドラッグ：紫色の選択範囲に完全に含まれたもののみが選択されます。
+
+### ショートカットでの選択
+
+- すべて選択する（**Select all**）：`A`
+- すべて選択解除する（**Deselect all**）：`Alt + A`
+- 選択不可にする（**Lock Selection**）[<YoutubeExternalIcon />](https://youtu.be/Qxou-1xByuM)
+{' '}
+- 選択したものに含まれるエッジを選択する：`Ctrl+2`
+- 選択したものに含まれるフェイスを選択する：`Ctrl+3`
+- 選択したものに含まれるソリッドを選択する：`Ctrl+4`
+{' '}
+- 隣接するものを選択に追加する：`Ctrl`+`Shift`+`=`[<YoutubeExternalIcon />](https://youtu.be/3F0MIifyfoc)
+- エッジをループ選択する：`Alt`+左クリック[<YoutubeExternalIcon />](https://youtu.be/Qxou-1xByuM)
+- エッジをリング選択する：`Alt`+`Ctrl`+左クリック
+- 同一平面上のカーブ、リージョンをすべて選択する：`Alt`+左クリック[<YoutubeExternalIcon />](https://youtu.be/pcj2Wl9-g9k)
+- 平行なフェイスをすべて選択する：`Alt`+`Ctrl`+左クリック[<YoutubeExternalIcon />](https://youtu.be/9FGvdR-WPxY)
+
+

@@ -3,7 +3,8 @@
   "file-operations": "🚧 ファイル操作",
   "export-obj": "📄 Export OBJ",
   "3d-viewport-operation": "📄 3Dビューポートの操作",
-  "selection-operations": "🚧 選択する",
   "shortcuts-and-command-pallet": "📄 ショートカットとコマンドパレット",
+  "selection-operations": "📄 選択する",
+  "displaying-and-hiding-objects": "📄 オブジェクトの表示・非表示",
   "shortcuts": "🚧 ショートカット一覧"
 }
