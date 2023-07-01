@@ -84,6 +84,10 @@ const config: DocsThemeConfig = {
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" /> */}
+        <meta
+          name="google-site-verification"
+          content="fy4jGFnw_V7JcWL26cXsODdJXStgXdBWJj1XXSOuRKU"
+        />
       </>
     );
   },
