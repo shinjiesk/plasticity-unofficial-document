@@ -1,4 +1,59 @@
 ---
-description: 3D Viewport Operation
+title: Operating the 3D Viewport
+description: This guide explains how to operate the 3D viewport where you draw sketches and create solids.
 ---
-# 3D Viewport Operation
+## Operating the 3D Viewport
+
+The 3D viewport can be operated using mouse dragging and keyboard shortcuts.
+
+### Operating the 3D Viewport with the Mouse
+
+- Rotate the view: Drag the middle mouse button (scroll wheel button)
+- Pan the view: Drag the right mouse button
+- Zoom in/out: Scroll the mouse wheel
+
+- Snap to orthographic projection when rotating: `Alt` + middle button drag
+
+You can choose other mouse operations similar to those in different applications in addition to the default.
+
+1. Click the menu in the top left and click **Preferences**.
+2. Click **Navigation** on the left.
+3. Choose your preferred operation method.
+   - Default
+   - Blender (Rotate: middle button, Pan: `Shift` + middle button)
+   - Maya (Rotate: `Alt` + left button, Pan: `Alt` + right button)
+   - MoI3D (Rotate: right button, Pan: `Shift` + right button)
+   - 3ds Max (Rotate: `Alt` + right button, Pan: right button)
+   - Touchpad
+4. Click outside the dialog to close it.
+5. Exit Plasticity and launch it again.
+   - The changes to the settings will be reflected.
+
+### Operating the 3D Viewport with Keyboard Shortcuts
+
+#### Changing the Viewing Direction
+
+You can change the viewing direction using the numeric keypad.
+
+- From the front: `Num.1`
+- From the right: `Num.3`
+- From above: `Num.7`
+- From the back: `Ctrl` + `Num.1`
+- From the left: `Ctrl` + `Num.3`
+- From below: `Ctrl` + `Num.7`
+
+- Switch between perspective and orthographic projection: `Num.5`
+
+#### Focusing on the Selected Item
+
+- Center it on the screen: `Space`
+- Display it full screen: `/`
+- Display it full screen and hide everything else: `.` (period)
+
+### Switching the Display Mode
+
+- Toggle overlay display: `Alt` + `Shift` + `Z`
+  - This switches the grid display on and off.
+- Toggle transparency display: `Alt` + `Z`
+  - This makes hidden lines visible.
+  - It also allows you to select hidden lines.
