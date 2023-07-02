@@ -1,9 +1,10 @@
 {
   "user-interface-overview": "🚧 インターフェイスの概要",
-  "file-operations": "🚧 ファイル操作",
-  "export-obj": "📄 Export OBJ",
   "3d-viewport-operation": "📄 3Dビューポートの操作",
   "shortcuts-and-command-pallet": "📄 ショートカットとコマンドパレット",
+  "file-operations": "🚧 ファイル操作",
+  "importing-reference-images": "📄 参照画像のインポート",
+  "export-obj": "📄 Export OBJ",
   "selection-operations": "📄 選択する",
   "displaying-and-hiding-objects": "📄 オブジェクトの表示・非表示",
   "shortcuts": "🚧 ショートカット一覧"
