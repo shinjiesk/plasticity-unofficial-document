@@ -1,4 +1,3 @@
-# Loft
+# Bridge Vertex
 
 - ふたつのポイントをつなげる
-

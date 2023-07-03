@@ -16,9 +16,10 @@
   "project-curve-onto-curve": "📄 Project two curves",
 
   "join": "🚧 Join curves",
+  "bridge-vertex": "🚧 Connect two points",
   "bridge-curve": "🚧 Connect two curves",
-  "loft": "🚧 Connect two points",
-
+  "bridge-edge": "🚧 Connect two edges",
+  "bridge": "🚧 Connect Two Points or Curves or Edges",
   "trim": "🚧 Trim curve",
   "unjoin": "🚧 Decompose curve",
   "cut-curve": "🚧 Cut curve",
