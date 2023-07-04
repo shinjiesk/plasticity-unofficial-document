@@ -1,2 +1,0 @@
-import  KinouGaiyou  from 'components/KinouGaiyou';
-<KinouGaiyou shortcut="" command="" button="" />

@@ -1,7 +1,11 @@
 import React from "react";
+import { useRouter } from "next/router";
 import { Callout } from "nextra/components";
 
 const KinouGaiyou = ({ shortcut, command, button }) => {
+  const router = useRouter();
+  const { locale } = router;
+
   const keys = shortcut.split("+").map((key, index) => (
     <React.Fragment key={index}>
       <code>{key.trim()}</code>
@@ -12,11 +16,17 @@ const KinouGaiyou = ({ shortcut, command, button }) => {
   return (
     <Callout emoji="">
       <ul>
-        <li>ショートカット :{shortcut ? <strong>{keys}</strong> : "なし"}</li>
         <li>
-          コマンド: <strong>{command}</strong>
+          {locale === "ja" ? "ショートカット" : "Shortcut"}:{" "}
+          {shortcut ? <strong>{keys}</strong> : "--"}
         </li>
-        <li>ボタン :{button ? <strong>{button}</strong> : "なし"}</li>
+        <li>
+          {locale === "ja" ? "コマンド" : "Command"}: <strong>{command}</strong>
+        </li>
+        <li>
+          {locale === "ja" ? "ボタン" : "Button"}:{" "}
+          {button ? <strong>{button}</strong> : "--"}
+        </li>
       </ul>
     </Callout>
   );
