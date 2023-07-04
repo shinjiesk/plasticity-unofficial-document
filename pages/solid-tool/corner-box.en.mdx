@@ -1,18 +1,20 @@
-# Center Box
+import  KinouGaiyou  from 'components/KinouGaiyou';
 
-- Allows you to create a rectangular box from a specified center point.
-- Shortcut: None
-- Button: Toolbar
+# Corner Box
+
+Allows you to create a rectangular box from a specified two points on a diagonal line.
+
+<KinouGaiyou shortcut='Shift+B' command='Corner Box' button='Toolbar' />
 
 1. Click the icon on the toolbar.
    - **Select target bodies**: Select the targets for the Boolean operation (solid, sheet).
    - **Width**: Specifies the width.
    - **Length**: Specifies the length.
    - **Height**: Specifies the height.
-2. Click at the center point of the base surface.
-   - `C`: **Center/Corner**: Switches to corner box.
+2. Click at the starting point of the diagonal line on the base surface.
+   - `C`: **Center/Corner**: Switches to center box.
    - `S`: **Square**: Constrains to a square.
-3. Click at the end point of the perimeter.
+3. Click at the end point of the diagonal line.
 4. Move the cursor and click at the desired height.
    - `Shift`+`Q`: **Slice**: Creates a solid at the intersection with the Boolean target and keeps the remaining solid as well.
    - `Q`: **Union**: Unites with the Boolean target.
@@ -24,4 +26,3 @@
 5. You can drag the yellow dot to change the width, length, and height.
 6. Click **OK** in the command dialog or right-click to confirm.
 7. A rectangular box is created.
-
