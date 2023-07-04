@@ -37,6 +37,13 @@
       "  X. コマンドダイアログの**OK**または右クリックで確定します。"
     ]
   },
+  "KinouGaiyou": {
+    "prefix": "kinou-gaiyou",
+    "body": [
+      "import  KinouGaiyou  from 'components/KinouGaiyou';",
+      "<KinouGaiyou shortcut='' command='' button='ツールバー' />"
+    ]
+  },
 
   "article": {
     "prefix": "article",

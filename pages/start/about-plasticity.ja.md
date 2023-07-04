@@ -1,2 +1,2 @@
-# Plasticity とは
+# Plasticityとは
 

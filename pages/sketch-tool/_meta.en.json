@@ -1,16 +1,15 @@
 {
-  "line": "Line segment",
-  "spline-curve": "Spline curve",
-  "control-point-curve": "Control point curve",
+  "line": "Line Segment",
+  "spline-curve": "Spline Curve",
+  "control-point-curve": "",
   "center-circle": "Circle from center",
-  "two-point-circle": "Circle defined by two points",
-  "three-point-circle": "Circle defined by three points",
+  "two-point-circle": "Circle with Two Points",
+  "three-point-circle": "Circle with Three Points",
   "center-point-arc": "Arc from center",
-  "three-point-arc": "Arc defined by three points",
+  "three-point-arc": "Arc with Three Points",
   "regular-polygon": "Polygon",
   "spiral": "Spiral",
   "corner-rectangle": "Rectangle from diagonal",
   "center-rectangle": "Rectangle from center",
-  "three-point-rectangle": "Rectangle defined by three points"
+  "three-point-rectangle": "Rectangle with Three Points"
 }
-
