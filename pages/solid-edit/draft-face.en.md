@@ -1,6 +1,0 @@
-# Draft Face
-
-- `Shift`+`S`
-
-
-

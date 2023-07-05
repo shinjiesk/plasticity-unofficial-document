@@ -1,2 +1,0 @@
-# Curve Array
-

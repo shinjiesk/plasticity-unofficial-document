@@ -1,4 +1,0 @@
-# Imprint
-
-- `Shift`+`I`
-

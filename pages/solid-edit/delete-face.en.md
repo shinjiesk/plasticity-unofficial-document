@@ -1,3 +1,0 @@
-# Delete Face
-
-- `Shift`+`Delete`

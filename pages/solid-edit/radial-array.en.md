@@ -1,2 +1,0 @@
-# Radial Array
-

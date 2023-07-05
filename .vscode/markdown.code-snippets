@@ -1,4 +1,8 @@
 {
+  "Unknown Function": {
+    "prefix": "unknown-function",
+    "body": " {/* ??? unknown function */}"
+  },
   "Ctrl Key": {
     "prefix": "key-ctrl",
     "body": "`Ctrl`+"

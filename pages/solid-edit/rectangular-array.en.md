@@ -1,2 +1,0 @@
-# Rectangular Array
-

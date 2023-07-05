@@ -1,6 +1,0 @@
-# Place Solid
-
-- `Ctrl`+`D`
-
-
-

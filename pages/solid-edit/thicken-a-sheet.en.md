@@ -1,2 +1,0 @@
-# Thicken A sheet
-
