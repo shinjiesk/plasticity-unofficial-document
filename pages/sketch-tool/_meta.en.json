@@ -1,4 +1,5 @@
 {
+  "common-options": "Sketch Tool Common options",
   "line": "Line Segment",
   "spline-curve": "Spline Curve",
   "control-point-curve": "",

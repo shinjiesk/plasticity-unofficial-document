@@ -1,4 +1,5 @@
 {
+  "common-options": "スケッチツールの共通オプション",
   "line": "線分",
   "spline-curve": "スプラインカーブ",
   "control-point-curve": "制御点カーブ",
