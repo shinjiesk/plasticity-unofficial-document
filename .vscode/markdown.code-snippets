@@ -41,11 +41,11 @@
       "  X. コマンドダイアログの**OK**または右クリックで確定します。"
     ]
   },
-  "KinouGaiyou": {
+  "Reference": {
     "prefix": "kinou-gaiyou",
     "body": [
-      "import  KinouGaiyou  from 'components/KinouGaiyou';",
-      "<KinouGaiyou shortcut='' command='' button='ツールバー' />"
+      "import  Reference  from 'components/Reference';",
+      "<Reference shortcut='' command='' button='ツールバー' />"
     ]
   },
 

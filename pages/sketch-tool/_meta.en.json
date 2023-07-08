@@ -1,16 +1,16 @@
 {
   "common-options": "Sketch Tool Common options",
-  "line": "Line Segment",
+  "line": "Line",
   "spline-curve": "Spline Curve",
-  "control-point-curve": "",
-  "center-circle": "Circle from center",
-  "two-point-circle": "Circle with Two Points",
-  "three-point-circle": "Circle with Three Points",
-  "center-point-arc": "Arc from center",
-  "three-point-arc": "Arc with Three Points",
-  "regular-polygon": "Polygon",
+  "control-point-curve": "Control Point Curve",
+  "center-circle": "Center Circle",
+  "two-point-circle": "Two Point Circle",
+  "three-point-circle": "Three Point Circle",
+  "center-point-arc": "Center Point Arc",
+  "three-point-arc": "Three Point Arc",
+  "regular-polygon": "Regular Polygon",
   "spiral": "Spiral",
-  "corner-rectangle": "Rectangle from diagonal",
-  "center-rectangle": "Rectangle from center",
-  "three-point-rectangle": "Rectangle with Three Points"
+  "corner-rectangle": "Corner Rectangle",
+  "center-rectangle": "Center Rectangle",
+  "three-point-rectangle": "Three Point Rectangle"
 }
