@@ -1,8 +1,8 @@
 {
   "common-options": "ソリッドツールの共通オプション",
-  "sphere": "球",
-  "corner-box": "対角線からの直方体",
-  "center-box": "中心からの直方体",
-  "three-point-box": "3点指定の直方体",
-  "cylinder": "円柱"
+  "sphere": "Sphere（球）",
+  "corner-box": "Corner Box（対角線からの直方体）",
+  "center-box": "Center Box（中心からの直方体）",
+  "three-point-box": "Three Point Box（3点指定の直方体）",
+  "cylinder": "Cylinder（円柱）"
 }

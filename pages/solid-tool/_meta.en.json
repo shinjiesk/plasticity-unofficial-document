@@ -1,8 +1,8 @@
 {
   "common-options": "Solid Tool Common options",
   "sphere": "Sphere",
-  "corner-box": "Box from Diagonal",
-  "center-box": "Box from Center",
-  "three-point-box": "Box from Three Points",
+  "corner-box": "Corner Box",
+  "center-box": "Center Box",
+  "three-point-box": "Three Point Box",
   "cylinder": "Cylinder"
 }
