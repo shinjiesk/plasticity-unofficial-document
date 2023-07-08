@@ -9,7 +9,7 @@
   "center-point-arc": "Center Point Arc（中心からの円弧）",
   "three-point-arc": "Three Point Arc（3点指定の円弧）",
   "regular-polygon": "Regular Polygon（多角形）",
-  "spiral": "螺旋",
+  "spiral": "Spiral（螺旋）",
   "corner-rectangle": "Corner Rectangle（対角線からの四角形）",
   "center-rectangle": "Center Rectangle（中心からの四角形）",
   "three-point-rectangle": "Three Point Rectangle（3点指定の四角形）"
