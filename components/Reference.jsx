@@ -1,40 +1,3 @@
-/* import React from "react";
-import { useRouter } from "next/router";
-import { Callout } from "nextra/components";
-
-const Reference = ({ shortcut, command, button }) => {
-  const router = useRouter();
-  const { locale } = router;
-
-  const keys = shortcut.split("+").map((key, index) => (
-    <React.Fragment key={index}>
-      <code>{key.trim()}</code>
-      {index < shortcut.split("+").length - 1 && "+"}
-    </React.Fragment>
-  ));
-
-  return (
-    <Callout emoji="">
-      <ul>
-        <li>
-          {locale === "ja" ? "ショートカット" : "Shortcut"}:{" "}
-          {shortcut ? <strong>{keys}</strong> : "--"}
-        </li>
-        <li>
-          {locale === "ja" ? "コマンド" : "Command"}: <strong>{command}</strong>
-        </li>
-        <li>
-          {locale === "ja" ? "ボタン" : "Button"}:{" "}
-          {button ? <strong>{button}</strong> : "--"}
-        </li>
-      </ul>
-    </Callout>
-  );
-};
-
-export default Reference;
- */
-
 import React from "react";
 import { useRouter } from "next/router";
 
@@ -53,7 +16,7 @@ const Reference = ({ shortcut, command, button }) => {
       commandLabel: "Command",
       buttonLabel: "Button",
     },
-    // もし新しいロケールが追加された場合は、ここに追加する
+    // If a new locale is added, add it here.
     // fr: {
     //   shortcutLabel: "Raccourci",
     //   commandLabel: "Commande",
@@ -96,11 +59,11 @@ const Reference = ({ shortcut, command, button }) => {
         }
 
         .label {
-          width: 40%;
+          width: 30%;
         }
 
         .value {
-          width: 60%;
+          width: 70%;
           font-weight: bold;
         }
       `}</style>
