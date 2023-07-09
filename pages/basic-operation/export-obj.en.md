@@ -21,5 +21,5 @@
    |**Curve angle tolerance** | Maximum Allowable Angular Deviation of Edge <br /> (in radians) | **Specify the accuracy of the conversion of the edges of curved surfaces (boundaries of the face).** <br /> This is similar to Surface angle tolerance, but affects the conversion of edges (boundaries of the face) more than the center of the face. | A suitable value is 0.35 (for low poly) to 0.15 (for high poly). |
    |**Curve max length** | Maximum Allowable Length of Curve (Edge) Segment |         |
    |**Plane angle** | Maximum Allowable Ratio between Plane Tolerance and Max Width | Useful for obtaining more quadrangles or polygons. |
-1. Click **OK**.
+1. Click OK.
 2. The OBJ file is exported.

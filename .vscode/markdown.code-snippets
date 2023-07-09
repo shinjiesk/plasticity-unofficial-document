@@ -1,19 +1,27 @@
 {
-  "Refer Solid Edit Common Optinons EN": {
+  "Ref Solid Edit Common Opt EN": {
     "prefix": "refer-solid-edit-common-en",
     "body": "   - Refer to [Solid Editing Common options](common-options) for other options."
   },
-  "Refer Solid Edit Common Optinons JA": {
+  "Ref Solid Edit Common Opt JA": {
     "prefix": "refer-solid-edit-common-ja",
     "body": "   - そのほかのオプションは[ソリッド編集の共通オプション](common-options)を参照してください。"
   },
-  "Refer Solid Edit boolean Optinons EN": {
+  "Ref Solid Edit bool Opt EN": {
     "prefix": "refer-solid-edit-bool-en",
     "body": "   - Refer to [Solid Editing Boolean options](boolean-options) for other options."
   },
-  "Refer Solid Edit boolean Optinons JA": {
+  "Ref Solid Edit bool Opt JA": {
     "prefix": "refer-solid-edit-bool-ja",
     "body": "   - そのほかのオプションは[ソリッド編集のブーリアンオプション](boolean-options)を参照してください。"
+  },
+  "Ref Sketch Tool Common Opt EN": {
+    "prefix": "refer-sketch-tool-common-en",
+    "body": "   - Refer to [Sketch Tool Common options](common-options) for other options."
+  },
+  "Ref Sketch Tool Common Opt JA": {
+    "prefix": "refer-sketch-tool-common-ja",
+    "body": "   - そのほかのオプションは[スケッチツールの共通オプション](common-options)を参照してください。"
   },
   "Table-en": {
     "prefix": "table-en",
@@ -24,7 +32,7 @@
   },
   "Confirm": {
     "prefix": "confirm",
-    "body": "Confirm with **OK** in the command dialog or right click."
+    "body": "Confirm with OK in the command dialog or right click."
   },
   "Unknown Function": {
     "prefix": "unknown-function",
