@@ -15,6 +15,14 @@
     "prefix": "refer-solid-edit-bool-ja",
     "body": "   - そのほかのオプションは[ソリッド編集のブーリアンオプション](boolean-options)を参照してください。"
   },
+  "Ref Sold Tool Common Opt EN": {
+    "prefix": "refer-solid-tool-common-en",
+    "body": "   - Refer to [Solid Tool Common options](common-options) for other options."
+  },
+  "Ref Solid Tool Common Opt JA": {
+    "prefix": "refer-solid-tool-common-ja",
+    "body": "   - そのほかのオプションは[ソリッドツールの共通オプション](common-options)を参照してください。"
+  },
   "Ref Sketch Tool Common Opt EN": {
     "prefix": "refer-sketch-tool-common-en",
     "body": "   - Refer to [Sketch Tool Common options](common-options) for other options."
