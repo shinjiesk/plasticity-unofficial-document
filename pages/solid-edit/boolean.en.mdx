@@ -2,29 +2,23 @@ import Reference from 'components/Reference';
 
 # Boolean
 
-You can perform boolean operations on solids or sheets.
-
 <Reference shortcut="Q" command="Boolean" button="" />
 
-1. Press the shortcut `Q` or click the icon at the bottom-left of the Command Bar.
+You can perform boolean operations on solids or sheets.
+
+1. Press the shortcut `Q` or click the button at the bottom-left of the Command Bar.
 2. Make sure that **Select target bodies** in the dialog is highlighted in purple, and select the solid or sheet to be used as the boolean target.
 3. Make sure that **Select tool bodies** in the dialog is highlighted in purple, and select the solid or sheet to be used as the boolean tool.
 4. Specify the boolean operation. The default is **Difference**.
-   - `Shift-Q`: **Slice**: Creates a solid at the intersection of the boolean target and tool, keeping both the resulting solid and the remaining solid.
-   - `Q`: **Union**: Joins the boolean target and tool together.
-   - `W`: **Difference**: Removes the tool from the boolean target.
-   - `Shift-E`: **Intersect**: Creates a solid at the intersection of the boolean target and tool.
-   - `T`: **Keep Tools**: Retains the tool after the boolean operation.
-   - `G`: **Move**: Allows you to move the tool.
-     - `G`: **Screen space**: Restricts movement to the visible plane.
-     - `X`: **X axis**: Restricts movement to the X-axis.
-     - `Y`: **Y axis**: Restricts movement to the Y-axis.
-     - `Z`: **Z axis**: Restricts movement to the Z-axis.
-     - `Shift-Z`: **Z plane**: Restricts movement to the Z-plane.
-     - `Shift-X`: **X plane**: Restricts movement to the X-plane.
-     - `Shift-Y`: **Y plane**: Restricts movement to the Y-plane.
-   - `R`: **Rotate**: Allows you to rotate the tool.
-     - `R`: **Screen space**: Resets the rotation axis.
-   - `S`: **Scale**: Allows you to scale the tool.
-     - `S`: **Uniform**: Scales uniformly in the X, Y, and Z directions.
+   - `G` **Move**
+      - Allows you to move the tool.
+   - `R` **Rotate**
+      - Allows you to rotate the tool.
+      - `R` **Screen space**
+         - Resets the rotation axis.
+   - `S` **Scale**
+      - Allows you to scale the tool.
+      - `S` **Uniform**
+        - Scales uniformly in the X, Y, and Z directions.
+   - Refer to [Solid Editing Boolean options](boolean-options) and  [Solid Editing Common options](common-options) for other options.
 5. Confirm with **OK** in the command dialog or right click.

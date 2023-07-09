@@ -2,22 +2,18 @@ import Reference from 'components/Reference';
 
 # Extrude
 
-When extruding a face of a solid or a region of a sketch, a solid will be created. When extruding a curve, a sheet will be created.
-
 <Reference shortcut="E" command="Extrude" button="" />
+
+When extruding a face of a solid or a region of a sketch, a solid will be created. When extruding a curve, a sheet will be created.
 
 1. Press the shortcut `E`.
 2. Select the solid face, sketch region, or curve as the object to be extruded.
 3. Move the yellow dot to specify the distance.
    - **Select target bodies**: Select the target bodies (solids, sheets) for a boolean operation.
-     - `Shift-Q`: **Slice**: Creates a solid at the intersection with the target body, keeping both the resulting solid and the remaining solid.
-     - `Q`: **Union**: Joins with the target body.
-     - `W`: **Difference**: Removes from the target body.
-     - `Shift-E`: **Intersect**: Creates a solid at the intersection with the target body.
+      - Refer to [Solid Editing Boolean options](boolean-options) for other options.
    - `B`: **New Body**: Creates a new solid. Boolean operations will be canceled.
-   - `T`: **Keep Tool**: Performs boolean operation and creates a new solid.
    - `F`: **Freestyle**: Specify the extrusion direction with two points.
-   - `V`: **Pivot**: Specify the extrusion direction by clicking a plane.
+   - `V`: **Pivot**: Click to specify the position of the Gizmo. 
    - `D`: **Distance 1**: Specify the distance.
    - `A`: **Angle 1**: Specify the angle of extrusion.
    - `Shift-T`: **Thickness**: Specify the wall thickness.

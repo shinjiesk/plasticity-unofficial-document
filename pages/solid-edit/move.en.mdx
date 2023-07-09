@@ -2,21 +2,16 @@ import Reference from 'components/Reference';
 
 # Move
 
-You can move solids, sheets, faces, and edges.
-
 <Reference shortcut="G" command="Move" button="Bottom-left of Command Bar" />
 
+You can move solids, sheets, faces, and edges.
+
 1. Select a solid, sheet, face, or edge as the object to move.
-2. Press the shortcut `G` or click the icon at the bottom-left of the Command Bar.
-3. Use the displayed Move Gizmo to move:
-   - `X`: **X axis**: Restricts movement to the X-axis.
-   - `Y`: **Y axis**: Restricts movement to the Y-axis.
-   - `Z`: **Z axis**: Restricts movement to the Z-axis.
-   - `Shift-Z`: **Z plane**: Restricts movement to the Z-plane.
-   - `Shift-X`: **X plane**: Restricts movement to the X-plane.
-   - `Shift-Y`: **Y plane**: Restricts movement to the Y-plane.
-   - `G`: **Screen space**: Restricts movement to the visible plane.
-   - `F`: **Freestyle**: Specify the starting point with the first click and the ending point with the next click.
-   - `V`: **Pivot**: Restricts movement in the direction of the clicked object.
-   - `W`: **World space**: Releases the movement restrictions.
+2. Press the shortcut `G` or click the button at the bottom-left of the Command Bar.
+3. Use the displayed Move Gizmo to move.
+   - `F` **Freestyle**
+      - Click to specify the starting point and the endpoint, determining the direction and distance of movement.
+   - `W` **World space**
+      - Releases the movement restrictions.
+   - Refer to [Solid Editing Common options](common-options) for other options.
 4. Confirm with **OK** in the command dialog or right click.
