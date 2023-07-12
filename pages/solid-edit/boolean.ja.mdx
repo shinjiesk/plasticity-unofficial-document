@@ -1,22 +1,25 @@
 import  Reference  from 'components/Reference';
 
-# ブーリアンする
+# Boolean（ブーリアン）
 
-<Reference shortcut="Q" command="Boolean" button="" />
+<Reference shortcut="Q" command="Boolean" button="コマンドバー左" />
 
 ソリッドまたはシートをブーリアンできます。
 
-1. ショートカット`Q`を押すか、コマンドバー左下のアイコンをクリックします。
-2. ダイアログの**Select target bodies**が紫色で囲まれているのを確認し、ブーリアン対象となるソリッドまたはシートを選択します。
-3. ダイアログの**Select tool bodies**が紫色で囲まれているのを確認し、ツールとなるソリッドまたはシートを選択します。
-4. ブーリアン操作を指定します。デフォルトは**Difference**です。
-    - `G`: **Move**
+1. ショートカット`Q`を押すか、ボタンをクリックします。
+2. ターゲットとツールを指定します。
+    - **Select target bodies**: ブーリアン対象となるソリッドまたはシートを選択します。
+    - **Select tool bodies**: ツールとなるソリッドまたはシートを選択します。
+4. ブーリアン操作を指定します。
+    - `G` **Move**
         - ツールを移動できます。
-    - `R`: **Rotate**
+    - `R` **Rotate**
         -ツールを回転できます。
-        - `R`: **Screen space**: 回転軸をもとに戻します。
-    - `S`: **Scale**
+        - `R` **Screen space**
+            - 回転軸をもとに戻します。
+    - `S` **Scale**
         -ツールを拡大縮小できます。
-        - `S` : **Uniform** : X、Y、Z軸方向に同じだけ拡大縮小します。
-    - そのほかのオプションは[ソリッド編集のブーリアンオプション](boolean-options)と[ソリッド編集の共通オプション](common-options)を参照してください。
+        - `S` **Uniform**
+            - X、Y、Z軸方向に同じだけ拡大縮小します。
+    - そのほかのオプションは[ブーリアンオプション](boolean-options)と[ソリッド編集の共通オプション](common-options)を参照してください。
 5. コマンドダイアログのOKまたは右クリックで確定します。

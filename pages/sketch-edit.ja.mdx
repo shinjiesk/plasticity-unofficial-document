@@ -1,38 +1,41 @@
-# スケッチの編集
+# スケッチの機能
 
-| コマンドの機能  | ショートカット |ボタン|
-| ------- | -------  | -------  |
-| [Move（移動する）](sketch-edit/move)|`G`|左下|
-| [Rotate（回転する）](sketch-edit/rotate)|`R` |左下|
-| [Scale（拡大縮小する）](sketch-edit/scale)|`S` | 左下|
-| [Mirror（ミラーする）](sketch-edit/mirror)|`Alt-X`| 左下|
-| [Freestyle Mirror（ 自由な軸でミラーする）](sketch-edit/freestyle-mirror)| |左下 |
-| **複製**|| |
-| [Duplicate（複製する）](sketch-edit/duplicate)|`Shift-D` | 左下|
-| [Place Curve（指定した軸を基準に複製する 🚧）](sketch-edit/place-curve)|`Ctrl-D` |左下 |
-| [Rectangular Array（長方形配列で複製する）](sketch-edit/rectangular-array)| | |
-| [Radial Array（円形状配列で複製する）](sketch-edit/radial-array)| |右下|
-| [Curve Array（カーブに沿って複製する）](sketch-edit/curve-array)| |右下|
-| **投影**|| |
-| [Alternative Duplicate（構築平面に投影する）](sketch-edit/alternative-duplicate)|`Alt-D`| |
-| [Project Curve（ソリッドに投影する）](sketch-edit/project-curve)|`I`|右下|
-| [Project Curve Onto Curve（ふたつのカーブを投影する）](sketch-edit/project-curve-onto-curve)|`I`|右下|
-| **結合**|| |
-| [Join（カーブを結合する 🚧）](sketch-edit/join)|`J`| |
-| [Bridge（ふたつのポイントまたはカーブ、エッジを繋げる 🚧）](sketch-edit/bridge)| | |
-| [Bridge Vertex（ふたつのポイントを繋げる 🚧）](sketch-edit/bridge-vertex)| | |
-| [Bridge Curve（ふたつのカーブを繋げる 🚧）](sketch-edit/bridge-curve)| | |
-| [Bridge Edge（ふたつのエッジを繋げる 🚧）](sketch-edit/bridge-edge)| | |
-| [Trim（カーブをトリムする 🚧）](sketch-edit/trim)|`T`|ツールバー|
-| [Unjoin（カーブを分解する 🚧）](sketch-edit/unjoin)| |右下|
-| [Cut Curve（カーブを切断する 🚧）](sketch-edit/cut-curve)| | |
-| [Split Curve At Point（カーブを分割する 🚧）](sketch-edit/split-curve-at-point)| |ツールバー|
-| **編集**|| |
-| [Fillet（カーブをフィレットする 🚧）](sketch-edit/fillet-chamfer)|`B`|右下|
-| [Offset Curve（カーブをオフセットする 🚧）](sketch-edit/offset-curve)|`O`|右下|
-| [Subdivide Curve（カーブのCVを増やす 🚧）](sketch-edit/subdivide-curve)| |右下|
-| [Extend Curve（カーブを延長する 🚧）](sketch-edit/extend-curve)|`Shift-S`| |
-| [Rebuild（カーブを再構築する 🚧）](sketch-edit/rebuild)| |右下|
-| **ポイントの編集**|| |
-| [Delete Redundant Topology（余剰ポイントを削除する 🚧）](sketch-edit/delete-redundant-topology)| | |
-| [Convert Vertex To CV（ポイントをCVに変換する 🚧）](sketch-edit/convert-vertex-to-cv)| | |
+| コマンド                                                                                  | ショートカット | ボタン         |        内包する機能                                                 |
+| ----------------------------------------------------------------------------------------- | -------------- | -------------- | ------------------------------------------------------- |
+| [Move（移動） ⤴](../common-edit/move)                                                    | `G`            | コマンドバー左 |                                                         |
+| [Rotate（回転 ）⤴](../common-edit/rotate)                                                | `R`            | コマンドバー左 |                                                         |
+| [Scale（拡大縮小）⤴](../common-edit/scale)                                               | `S`            | コマンドバー左 |                                                         |
+| [Mirror（ミラー）⤴](../common-edit/mirror)                                               | `Alt-X`        | コマンドバー左 |                                                         |
+| [Freestyle Move（自由軸で移動） ⤴](../common-edit/freestyle-move)                        |                |                |                                                         |
+| [Freestyle Rotate（自由軸で回転） ⤴](../common-edit/freestyle-rotate)                    |                |                |                                                         |
+| [Freestyle Scale （自由軸で拡大縮小）⤴](../common-edit/freestyle-scale)                  |                |                |                                                         |
+| [Freestyle Mirror（ 自由軸でミラー） ⤴](../common-edit/freestyle-mirror)                 |                | コマンドバー左 |                                                         |
+| **複製**                                                                                  |                |                |                                                         |
+| [Duplicate（複製 ⤴）](../common-edit/duplicate)                                          | `Shift-D`      | コマンドバー左 |                                                         |
+| [Place Curve（指定軸を基準に複製）⤴ 🚧](../common-edit/place-curve)                     | `Ctrl-D`       | コマンドバー左 |                                                         |
+| [Rectangular Array（長方形配列で複製）⤴](../common-edit/rectangular-array)               |                |                |                                                         |
+| [Radial Array（円形状配列で複製）⤴](../common-edit/radial-array)                         |                | コマンドバー右 |                                                         |
+| [Curve Array（カーブに沿って複製）⤴](../common-edit/curve-array)                         |                | コマンドバー右 |                                                         |
+| **投影**                                                                                  |                |                |                                                         |
+| [Project（投影）](sketch-edit/project)                                                    | `I`            | コマンドバー右 | Project Body Body<br />Project Curve Body<br />Project Curve Curve             |
+| [Duplicate Curve and Project（複製して投影）](sketch-edit/duplicate-curve-and-project)    |                |                |                                                         |
+| **結合と分割**                                                                            |                |                |                                                         |
+| [Join（結合）⤴ 🚧](../common-edit/join)                                                 | `J`            |                | Join Curves<br />Join Sheets                            |
+| [Bridge（繋げる） 🚧](sketch-edit/bridge)                                                |                |                | Bridge Vertex<br />Bridge Curve<br />Bridge Edge        |
+| [Trim（トリム） 🚧](sketch-edit/trim)                                                    | `T`            | ツールバー     |                                                         |
+| [Explode（分解）⤴ 🚧](../common-edit/explode)                                           |                | コマンドバー右 | Explode Curves<br />Explode Faces<br />Explode Shells   |
+| [Cut Curve（切断） 🚧](sketch-edit/cut-curve)                                            |                |                |                                                         |
+| [Split Segment（分割） 🚧](sketch-edit/split-curve-at-point)                             |                | ツールバー     |                                                         |
+| **編集**                                                                                  |                |                |                                                         |
+| [Fillet（フィレット）⤴ 🚧](../common-edit/fillet-chamfer)                               | `B`            | コマンドバー右 | Fillet Curve<br />Fillet Vertex<br />Fillet Shell       |
+| [Offset Curve（オフセット⤴） 🚧](../common-edit/offset-curve)                           | `O`            | コマンドバー右 | Offset Planar Curve<br />Offset Region<br />Offset Edge |
+| [Subdivide Curve（CVを増やす） 🚧](sketch-edit/subdivide-curve)                          |                | コマンドバー右 |                                                         |
+| [Extend（延長）⤴ 🚧](../common-edit/extend-curve)                                       | `Shift-S`      |                | Extend Curve<br />Extend Sheet                          |
+| [Rebuild（再構築）⤴ 🚧](../common-edit/rebuild)                                         |                | コマンドバー右 | Rebuild Curve<br />Rebuild Face                         |
+| [Text（テキスト） 🚧](sketch-edit/text)                                                  |                |                |                                                         |
+| **ポイントの編集**                                                                        |                |                |                                                         |
+| [Delete Redundant Topology（余剰を削除）⤴ 🚧](../common-edit/delete-redundant-topology) |                |                |                                                         |
+| [Convert Vertex To CV（ポイントをCVに変換） 🚧](sketch-edit/convert-vertex-to-cv)        |                |                |                                                         |
+| [Set Material（マテリアルの設定） ⤴](../common-edit/set-material)                        | `M`            |                |                                                         |
+| [Remove Material（マテリアルを削除） ⤴](../common-edit/remove-material)                  | `Alt-M`        |                |                                                         |
+|                                                                                           |                |                |                                                         |

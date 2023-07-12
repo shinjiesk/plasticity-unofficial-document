@@ -1,37 +1,74 @@
 {
-  "move": "📄 Move",
-  "rotate": "📄 Rotate",
-  "scale": "📄 Scale",
-  "mirror": "📄 Mirror",
-  "freestyle-mirror": "📄 Freestyle Mirror",
-
-  "duplicate": "📄 Duplicate",
-  "place-curve": "🚧 Place Curve",
-  "rectangular-array": "📄 Rectangular Array",
-  "radial-array": "📄 Radial Array",
-  "curve-array": "📄 Curve Array",
-
-  "alternative-duplicate": "📄 Alternative Duplicate",
-  "project-curve": "📄 Project Curve",
-  "project-curve-onto-curve": "🚧 Project Curve Onto Curve",
-
-  "join": "🚧 Join",
+  "move": { "title": "Move ⤴", "href": "../common-edit/move" },
+  "rotate": { "title": "Rotate ⤴", "href": "../common-edit/rotate" },
+  "scale": { "title": "Scale ⤴", "href": "../common-edit/scale" },
+  "mirror": { "title": "Mirror ⤴", "href": "../common-edit/mirror" },
+  "freestyle-move": {
+    "title": "Freestyle Move ⤴",
+    "href": "../common-edit/freestyle-move"
+  },
+  "freestyle-rotate": {
+    "title": "Freestyle Rotate ⤴",
+    "href": "../common-edit/freestyle-rotate"
+  },
+  "freestyle-scale": {
+    "title": "Freestyle Scale ⤴",
+    "href": "../common-edit/freestyle-scale"
+  },
+  "freestyle-mirror": {
+    "title": "Freestyle Mirror ⤴",
+    "href": "../common-edit/freestyle-mirror"
+  },
+  "duplicate": {
+    "title": "Duplicate ⤴",
+    "href": "../common-edit/duplicate"
+  },
+  "place": {
+    "title": "Place ⤴",
+    "href": "../common-edit/place"
+  },
+  "rectangular-array": {
+    "title": "Rectangular Array ⤴",
+    "href": "../common-edit/rectangular-array"
+  },
+  "radial-array": {
+    "title": "Radial Array ⤴",
+    "href": "../common-edit/radial-array"
+  },
+  "curve-array": {
+    "title": "Curve Array ⤴",
+    "href": "../common-edit/curve-array"
+  },
+  "project": "Project",
+  "duplicate-curve-and-project": "Duplicate Curve and Project",
+  "join": { "title": "Join ⤴", "href": "../common-edit/join" },
   "bridge": "🚧 Bridge",
-  "bridge-vertex": "🚧 Bridge Vertex",
-  "bridge-curve": "🚧 Bridge Curve",
-  "bridge-edge": "🚧 Bridge Edge",
-
   "trim": "🚧 Trim",
-  "unjoin": "🚧 Unjoin",
+  "explode": { "title": "Explode ⤴", "href": "../common-edit/explode" },
   "cut-curve": "🚧 Cut curve",
-  "split-curve-at-point": "🚧 Split Curve at Point",
+  "split-segment": "🚧 Split Curve at Point",
 
-  "fillet-chamfer": "🚧 Fillet",
-  "offset-curve": "🚧 Offset Curve",
-  "extend-curve": "🚧 Extend Curve",
+  "fillet": { "title": "Fillet ⤴", "href": "../common-edit/fillet" },
+  "offset-curve": {
+    "title": "Offset Curve ⤴",
+    "href": "../common-edit/offset-curve"
+  },
   "subdivide-curve": "🚧 Subdivide Curve",
+  "extend": { "title": "Extend ⤴", "href": "../common-edit/extend" },
+  "rebuild": { "title": "Rebuild ⤴", "href": "../common-edit/rebuild" },
+  "text": "🚧 Text",
 
-  "delete-redundant-topology": "🚧 Delete Redundant Topology",
-  "rebuild": "🚧 Rebuild",
-  "convert-vertex-to-cv": "🚧 Convert Vertex To CV"
+  "delete-redundant-topology": {
+    "title": "Delete Redundant Topology ⤴",
+    "href": "../common-edit/delete-redundant-topology"
+  },
+  "convert-vertex": "🚧 Convert Vertex",
+  "set-material": {
+    "title": "Set Material ⤴",
+    "href": "../common-edit/set-material"
+  },
+  "remove-material": {
+    "title": "Remove Material ⤴",
+    "href": "../common-edit/remove-material"
+  }
 }

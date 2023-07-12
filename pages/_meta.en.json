@@ -4,21 +4,31 @@
   "install": "Installation and Setup",
   "basic-operation": "Basic Operations",
 
+  "-- Tool": {
+    "type": "separator",
+    "title": "Tool"
+  },
+  "tool": "Tools",
+
+  "-- Common": {
+    "type": "separator",
+    "title": "Common"
+  },
+  "common-edit": "Common Function",
+
   "-- Sketch": {
     "type": "separator",
     "title": "Sketch"
   },
   "sketch-basic": "Sketch Basics",
-  "sketch-tool": "Sketch Tools",
-  "sketch-edit": "Sketch Editing",
+  "sketch-edit": "Sketch Function",
 
   "-- Solid": {
     "type": "separator",
     "title": "Solid"
   },
   "solid-basic": "Solid Basics",
-  "solid-tool": "Solid Tools",
-  "solid-edit": "Solid Editing",
+  "solid-edit": "Solid Function",
 
   "about": {
     "title": "About",

@@ -1,52 +1,61 @@
-# Solid Editing
+# Solid Functions
 
-- [Solid Editing Common options](solid-edit/common-options)
-- [Solid Editing Boolean options](solid-edit/boolean-options)
+| Command                                                                  | Shortcut          | Button               | Inclusive functions                                     |
+| ------------------------------------------------------------------------ | ----------------- | -------------------- | ------------------------------------------------------- |
+| [Move ⤴](../common-edit/move)                                           | `G`               | Left of Command Bar  |                                                         |
+| [Rotate ⤴](../common-edit/rotate)                                       | `R`               | Left of Command Bar  |                                                         |
+| [Scale ⤴](../common-edit/scale)                                         | `S`               | Left of Command Bar  |                                                         |
+| [Mirror ⤴](../common-edit/mirror)                                       | `Alt-X`           | Left of Command Bar  |                                                         |
+| [Freestyle Move ⤴](../common-edit/freestyle-move)                       |                   |                      |                                                         |
+| [Freestyle Rotate ⤴](../common-edit/freestyle-rotate)                   |                   |                      |                                                         |
+| [Freestyle Scale ⤴](../common-edit/freestyle-scale)                     |                   |                      |                                                         |
+| [Freestyle Mirror ⤴](../common-edit/freestyle-mirror)                   |                   |                      |                                                         |
+| [Boolean](solid-edit/boolean)                                            | `Q`               | Left of Command Bar  |                                                         |
+| [Cut](solid-edit/cut)                                                    | `C`               | Left of Command Bar  |                                                         |
+| **Solids and Sheets**                                                    |                   |                      |                                                         |
+| [Extrude](solid-edit/extrude)                                            | `E`               | Right of Command Bar |                                                         |
+| [Sweep 🚧](solid-edit/sweep)                                            | `Shift-P`         |                      |                                                         |
+| [Sweep Tool🚧](solid-edit/sweep-tool)                                   |                   |                      |                                                         |
+| [Revolve](solid-edit/revolve)                                            |                   | Right of Command Bar |                                                         |
+| [Loft 🚧](solid-edit/loft)                                              | `L`               |                      |                                                         |
+| [Loft Guide 🚧](solid-edit/loft-guide)                                  | `Alt-L`           |                      |                                                         |
+| [Pipe 🚧](solid-edit/pipe)                                              | `P`               |                      |                                                         |
+| [Patch 🚧](solid-edit/patch)                                            |                   |                      |                                                         |
+| [Thicken 🚧](solid-edit/thicken)                                        |                   |                      | Thicken Sheet                                           |
+| [Constrained Surface 🚧](solid-edit/constrained-surface)                |                   |                      |                                                         |
+| [Fillet ⤴](../common-edit/fillet)                                       | `B`               |                      | Fillet Curve<br />Fillet Vertex<br />Fillet Shell       |
+| [Refillet Face 🚧](solid-edit/refillet-face)                            |                   |                      |                                                         |
+| [Remove Fillets from Shell 🚧](solid-edit/remove-fillets-from-shell)    |                   |                      |                                                         |
+| [Duplicate ⤴](../common-edit/duplicate)                                 | `Shift-D`         |                      |                                                         |
+| [Place ⤴](../common-edit/place)                                         | `Ctrl-D`          |                      |                                                         |
+| [Rectangular Array ⤴](../common-edit/rectangular-array)                 |                   |                      |                                                         |
+| [Radial Array ⤴](../common-edit/radial-array)                           |                   |                      |                                                         |
+| [Curve Array ⤴](../common-edit/curve-array)                             |                   |                      |                                                         |
+| [Alternative Duplicate 🚧](solid-edit/alternative-duplicate)            | `Alt-D`           |                      |                                                         |
+| [Hollow 🚧](solid-edit/hollow)                                          |                   |                      | Hollow Solid                                            |
+| [Explode ⤴](../common-edit/explode)                                     | `Alt-J`           |                      | Explode Curves<br />Explode Faces<br />Explode Shells   |
+| [Rebuild ⤴](../common-edit/rebuild)                                     |                   |                      | Rebuild Curve<br />Rebuild Face                         |
+| **Sheet**                                                                |                   |                      |                                                         |
+| [Join ⤴](../common-edit/join)                                           | `J`               |                      | Join Curves<br />Join Sheets                            |
+| [Bridge Surface 🚧](solid-edit/bridge-surface)                          |                   |                      |                                                         |
+| [Bridge Edge Surface 🚧](solid-edit/bridge-edge-surface)                |                   |                      |                                                         |
+| [Extend ⤴](../common-edit/extend)                                       |                   |                      | Extend Curve<br />Extend Sheet<br />Extend Edge         |
+| [Find Boundary Edges 🚧](solid-edit/find-boundary-edges)                |                   |                      |                                                         |
+| [Untrim 🚧](solid-edit/untrim)                                          | `Alt-T`           |                      |                                                         |
+| **Face**                                                                 |                   |                      |                                                         |
+| [Offset Face 🚧](solid-edit/offset-face)                                | `Shift-O`         |                      |                                                         |
+| [Offset Face Loop 🚧](solid-edit/offset-face-loop)                      |                   |                      |                                                         |
+| [Draft Face 🚧](solid-edit/draft-face)                                  | `Shift-S`         |                      |                                                         |
+| [Match Face 🚧](solid-edit/match-face)                                  |                   |                      |                                                         |
+| [Offset Curve ⤴](../common-edit/offset-curve)                           | `O`               |                      | Offset Planar Curve<br />Offset Region<br />Offset Edge |
+| [Delete Face 🚧](solid-edit/delete-face)                                | `Shift-Backspace` |                      |                                                         |
+| [Unwrap Face 🚧](solid-edit/unwrap-face)                                |                   |                      |                                                         |
+| [Wrap Face 🚧](solid-edit/wrap-face)                                    |                   |                      |                                                         |
+| **Edge**                                                                 |                   |                      |                                                         |
+| [Imprint 🚧](solid-edit/imprint)                                        | `Shift-I`         |                      | Imprint Body Bode<br />Imprint Curve Body               |
+| [Isoparam 🚧](solid-edit/isoparam)                                      | `Ctrl-R`          |                      |                                                         |
+| [Delete Redundant Topology ⤴](../common-edit/delete-redundant-topology) |                   |                      |                                                         |
+| [Extend Edge 🚧](solid-edit/extend-edge)                                |                   |                      |                                                         |
+| [Set Material ⤴](../common-edit/set-material)                           | `M`               |                      |                                                         |
+| [Remove Material ⤴](../common-edit/remove-material)                     | `Alt-M`           |                      |                                                         |
 
-| Command  | Shortcut | Button |
-| ------- | ------- | ------- | 
-| [Move](solid-edit/move)  |`G`|  |
-| [Rotate](solid-edit/rotate)  |`R`|  |
-| [Scale](solid-edit/scale)  |`S`|  |
-| [Boolean](solid-edit/boolean)  |`Q`|  |
-| [Cut](solid-edit/cut-solid-with-curve)  |`C`|  |
-| [Mirror](solid-edit/mirror)  |`Alt-X`|  |
-| [Freestyle Mirror](solid-edit/freestyle-mirror)  |  |  |
-|**Solids and Sheets**| | 
-| [Extrude](solid-edit/extrude) | `E`|  |
-| [Sweep 🚧](solid-edit/sweep)  |`Shift-P`|  |
-| [Revolve](solid-edit/revolve)  |  |  |
-| [Loft 🚧](solid-edit/loft)  |`L`|  |
-| [Pipe 🚧](solid-edit/pipe)  |`P`|  |
-| [Patch 🚧](solid-edit/patch)  |  |  |
-| [Thicken A Sheet 🚧](solid-edit/thicken-a-sheet)  |  |  |
-| [Duplicate 🚧](solid-edit/duplicate)  |`Shift-D`|  |
-| [Place Solid 🚧](solid-edit/place-solid)  |`Ctrl-D`|  |
-| [Rectangular Array 🚧](solid-edit/rectangular-array)  |  |  |
-| [Radial Array 🚧](solid-edit/radial-array)   |  |  |
-| [Curve Array 🚧](solid-edit/curve-array)   |  |  |
-| [Alternative Duplicate 🚧](solid-edit/alternative-duplicate)   |`Alt-D`|  |
-| [Hollow 🚧](solid-edit/hollow)  |  |  |
-| [Unjoin 🚧](solid-edit/unjoin)  |`Alt-J`  |  |
-| [Remove Fillets from Shell 🚧](solid-edit/remove-fillets-from-shell)     |  |  |
-| [Rebuild 🚧](solid-edit/rebuild)  |  |  |
-|**Sheet Editing** | | 
-| [Join 🚧](solid-edit/join)  |`J`|  |
-| [Bridge Surface 🚧](solid-edit/bridge-surface)   |  |  |
-| [Extend Sheet 🚧](solid-edit/extend-Sheet) | Extend Sheet |  |  |
-| [Find Boundary Edges 🚧](solid-edit/find-boundary-edges)   |  |  |
-| [Untrim 🚧](solid-edit/untrim)  |`Alt-T`|  |
-| **Face Editing** | | |
-| [Offset Face 🚧](solid-edit/offset-face)   | `Shift-O` |  |
-| [Draft Face 🚧](solid-edit/draft-face)   |`Shift-S`  |  |
-| [Match Face 🚧](solid-edit/match-face)   |  |  |
-| [Offset Curve 🚧](solid-edit/offset-curve)   |`O`|  |
-| [Delete Face 🚧](solid-edit/delete-face)   |`Shift-X`|  |
-| [Unwrap Face 🚧](solid-edit/unwrap-face)   |  |  |
-| [Wrap Face 🚧](solid-edit/wrap-face)   |  |  |
-| **Edge Editing** | | 
-| [Imprint 🚧](solid-edit/imprint)  |`Shift-I`|  |
-| [Isoparam 🚧](solid-edit/isoparam)  |`Ctrl-R`|  |
-| [Delete Redundant Topology 🚧](solid-edit/delete-redundant-topology)    |  |  |
-| [Extend Edges 🚧](solid-edit/extend-edges)   |  |  |
-| [Imprint Body Body 🚧](solid-edit/imprint-body-body)  |  |  |

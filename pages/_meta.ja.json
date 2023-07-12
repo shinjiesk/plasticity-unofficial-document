@@ -4,21 +4,31 @@
   "install": "インストールとセットアップ",
   "basic-operation": "基本操作",
 
+  "-- Tool": {
+    "type": "separator",
+    "title": "ツール"
+  },
+  "tool": "ツール",
+
+  "-- Common": {
+    "type": "separator",
+    "title": "共通"
+  },
+  "common-edit": "共通機能",
+
   "-- Sketch": {
     "type": "separator",
     "title": "スケッチ"
   },
   "sketch-basic": "スケッチの基本",
-  "sketch-tool": "スケッチツール",
-  "sketch-edit": "スケッチの編集",
+  "sketch-edit": "スケッチの機能",
 
   "-- Solid": {
     "type": "separator",
     "title": "ソリッド"
   },
   "solid-basic": "ソリッドの基本",
-  "solid-tool": "ソリッドツール",
-  "solid-edit": "ソリッドの編集",
+  "solid-edit": "ソリッドの機能",
   "about": {
     "title": "About",
     "type": "page"

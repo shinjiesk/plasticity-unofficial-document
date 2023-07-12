@@ -1,0 +1,30 @@
+{
+  "common-options": "Sketch Tool Common options",
+  "line": "Line",
+  "spline-curve": "Spline Curve",
+  "control-point-curve": "Control Point Curve",
+  "center-circle": "Center Circle",
+  "two-point-circle": "Two Point Circle",
+  "three-point-circle": "Three Point Circle",
+  "center-point-arc": "Center Point Arc",
+  "three-point-arc": "Three Point Arc",
+  "polygon": "Regular Polygon",
+  "spiral": "Spiral",
+  "corner-rectangle": "Corner Rectangle",
+  "center-rectangle": "Center Rectangle",
+  "three-point-rectangle": "Three Point Rectangle",
+  "bridge": {
+    "title": "Bridge Curve",
+    "href": "../sketch-edit/bridge"
+  },
+  "trim": { "title": "Trim", "href": "../sketch-edit/trim" },
+  "split-segment": {
+    "title": "Split Curve At Point",
+    "href": "../sketch-edit/split-segment"
+  },
+  "sphere": "Sphere",
+  "corner-box": "Corner Box",
+  "center-box": "Center Box",
+  "three-point-box": "Three Point Box",
+  "cylinder": "Cylinder"
+}

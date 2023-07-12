@@ -1,0 +1,30 @@
+{
+  "common-options": "スケッチツールの共通オプション",
+  "line": "Line（線分）",
+  "spline-curve": "Spline Curve（スプラインカーブ）",
+  "control-point-curve": "Control Point Curve（制御点カーブ）",
+  "center-circle": "Center Circle（中心からの円）",
+  "two-point-circle": "Two Point Circle（2点指定の円）",
+  "three-point-circle": "Three Point Circle（3点指定の円）",
+  "center-point-arc": "Center Point Arc（中心からの円弧）",
+  "three-point-arc": "Three Point Arc（3点指定の円弧）",
+  "polygon": "Regular Polygon（多角形）",
+  "spiral": "Spiral（螺旋）",
+  "corner-rectangle": "Corner Rectangle（対角線からの四角形）",
+  "center-rectangle": "Center Rectangle（中心からの四角形）",
+  "three-point-rectangle": "Three Point Rectangle（3点指定の四角形）",
+  "bridge": {
+    "title": "Bridge Curve（カーブを繋げる）",
+    "href": "../sketch-edit/bridge"
+  },
+  "trim": { "title": "Trim（カーブをトリム）", "href": "../sketch-edit/trim" },
+  "split-segment": {
+    "title": "Split Curve At Point（カーブを分割）",
+    "href": "../sketch-edit/split-segment"
+  },
+  "sphere": "Sphere（球）",
+  "corner-box": "Corner Box（対角線からの直方体）",
+  "center-box": "Center Box（中心からの直方体）",
+  "three-point-box": "Three Point Box（3点指定の直方体）",
+  "cylinder": "Cylinder（円柱）"
+}

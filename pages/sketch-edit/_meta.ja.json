@@ -1,37 +1,80 @@
 {
-  "move": "📄 Move（移動する）",
-  "rotate": "📄 Rotate（回転する）",
-  "scale": "📄 Scale（拡大縮小する）",
-  "mirror": "📄 Mirror（ミラーする）",
-  "freestyle-mirror": "📄 Freestyle Mirror（ 自由な軸でミラーする）",
+  "move": { "title": "Move（移動） ⤴", "href": "../common-edit/move" },
+  "rotate": { "title": "Rotate（回転） ⤴", "href": "../common-edit/rotate" },
+  "scale": { "title": "Scale（拡大縮小） ⤴", "href": "../common-edit/scale" },
+  "mirror": { "title": "Mirror（ミラー） ⤴", "href": "../common-edit/mirror" },
+  "freestyle-move": {
+    "title": "Freestyle Move（自由軸で移動） ⤴",
+    "href": "../common-edit/freestyle-move"
+  },
+  "freestyle-rotate": {
+    "title": "Freestyle Rotate（自由軸で回転） ⤴",
+    "href": "../common-edit/freestyle-rotate"
+  },
+  "freestyle-scale": {
+    "title": "Freestyle Scale（自由軸で拡大縮小） ⤴",
+    "href": "../common-edit/freestyle-scale"
+  },
+  "freestyle-mirror": {
+    "title": "Freestyle Mirror（自由軸でミラー） ⤴",
+    "href": "../common-edit/freestyle-mirror"
+  },
+  "duplicate": {
+    "title": "Duplicate（複製） ⤴",
+    "href": "../common-edit/duplicate"
+  },
+  "place": {
+    "title": "Place（指定軸を基準に複製） ⤴",
+    "href": "../common-edit/place"
+  },
+  "rectangular-array": {
+    "title": "Rectangular Array（長方形配列で複製） ⤴",
+    "href": "../common-edit/rectangular-array"
+  },
+  "radial-array": {
+    "title": "Radial Array（円形状配列で複製） ⤴",
+    "href": "../common-edit/radial-array"
+  },
+  "curve-array": {
+    "title": "Curve Array（カーブに沿って複製） ⤴",
+    "href": "../common-edit/curve-array"
+  },
+  "project": "Project（投影）",
+  "duplicate-curve-and-project": "Duplicate Curve and Project（複製して投影）",
+  "join": { "title": "Join（結合） ⤴", "href": "../common-edit/join" },
+  "bridge": "🚧 Bridge（繋げる）",
+  "trim": "🚧 Trim（トリム）",
+  "explode": { "title": "Explode（分解） ⤴", "href": "../common-edit/explode" },
+  "cut-curve": "🚧 Cut curve（切断）",
+  "split-segment": "🚧 Split Curve at Point（分割）",
 
-  "duplicate": "📄 Duplicate（複製する）",
-  "place-curve": "🚧 Place Curve（指定した軸を基準に複製する）",
-  "rectangular-array": "📄 Rectangular Array（長方形配列で複製する）",
-  "radial-array": "📄 Radial Array（円形状配列で複製する）",
-  "curve-array": "📄 Curve Array（カーブに沿って複製する）",
+  "fillet": {
+    "title": "Fillet（フィレット） ⤴",
+    "href": "../common-edit/fillet"
+  },
+  "offset-curve": {
+    "title": "Offset Curve（オフセット） ⤴",
+    "href": "../common-edit/offset-curve"
+  },
+  "subdivide-curve": "🚧 Subdivide Curve（CVを増やす）",
+  "extend": { "title": "Extend（延長） ⤴", "href": "../common-edit/extend" },
+  "rebuild": {
+    "title": "Rebuild（再構築） ⤴",
+    "href": "../common-edit/rebuild"
+  },
+  "text": "🚧 Text（テキスト）",
 
-  "alternative-duplicate": "📄 Alternative Duplicate（構築平面に投影する）",
-  "project-curve": "📄 Project Curve（ソリッドに投影する）",
-  "project-curve-onto-curve": "📄 Project Curve Onto Curve（ふたつのカーブを投影する）",
-
-  "join": "🚧 Join（カーブを結合する）",
-  "bridge": "🚧 Bridge（ふたつのポイントまたはカーブ、エッジを繋げる）",
-  "bridge-vertex": "🚧 Bridge Vertex（ふたつのポイントを繋げる）",
-  "bridge-curve": "🚧 Bridge Curve（ふたつのカーブを繋げる）",
-  "bridge-edge": "🚧 Bridge Edge（ふたつのエッジを繋げる）",
-
-  "trim": "🚧 Trim（カーブをトリムする）",
-  "unjoin": "🚧 Unjoin（カーブを分解する）",
-  "cut-curve": "🚧 Cut Curve（カーブを切断する）",
-  "split-curve-at-point": "🚧 Split Curve At Point（カーブを分割する）",
-
-  "fillet-chamfer": "🚧 Fillet（カーブをフィレットする）",
-  "offset-curve": "🚧 Offset Curve（カーブをオフセットする）",
-  "subdivide-curve": "🚧 Subdivide Curve（カーブのCVを増やす）",
-  "extend-curve": "🚧 Extend Curve（カーブを延長する）",
-  "rebuild": "🚧 Rebuild（カーブを再構築する）",
-
-  "delete-redundant-topology": "🚧 Delete Redundant Topology（余剰ポイントを削除する）",
-  "convert-vertex-to-cv": "🚧 Convert Vertex To CV（ポイントをCVに変換する）"
+  "delete-redundant-topology": {
+    "title": "Delete Redundant Topology（余剰を削除） ⤴",
+    "href": "../common-edit/delete-redundant-topology"
+  },
+  "convert-vertex": "🚧 Convert Vertex（ポイントをCVに変換）",
+  "set-material": {
+    "title": "Set Material（マテリアルを設定） ⤴",
+    "href": "../common-edit/set-material"
+  },
+  "remove-material": {
+    "title": "Remove Material（マテリアルを削除） ⤴",
+    "href": "../common-edit/remove-material"
+  }
 }

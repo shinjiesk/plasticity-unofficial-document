@@ -1,38 +1,42 @@
-# Sketch Editing
+# Sketch Function
 
-| Command                                                                | Shortcut  | Button       |
-| ---------------------------------------------------------------------- | --------- | ------------ |
-| [Move](sketch-edit/move)                                               | `G`       | Bottom Left  |
-| [Rotate](sketch-edit/rotate)                                           | `R`       | Bottom Left  |
-| [Scale](sketch-edit/scale)                                             | `S`       | Bottom Left  |
-| [Mirror](sketch-edit/mirror)                                           | `Alt-X`   | Bottom Left  |
-| [Freestyle Mirror](sketch-edit/freestyle-mirror)                       |           | Bottom Left  |
-| **Duplicate**                                                          |           |              |
-| [Duplicate](sketch-edit/duplicate)                                     | `Shift-D` | Bottom Left  |
-| [Place Curve 🚧](sketch-edit/place-curve)                             | `Ctrl-D`  | Bottom Left  |
-| [Rectangular Array](sketch-edit/rectangular-array)                     |           |              |
-| [Radial Array](sketch-edit/radial-array)                               |           | Bottom Right |
-| [Curve Array](sketch-edit/curve-array)                                 |           | Bottom Right |
-| **Project**                                                            |           |              |
-| [Alternative Duplicate](sketch-edit/alternative-duplicate)             | `Alt-D`   |              |
-| [Project Curve](sketch-edit/project-curve)                             | `I`       | Bottom Right |
-| [Project Curve Onto Curve 🚧](sketch-edit/project-curve-onto-curve)       | `I`       | Bottom Right |
-| **Join**                                                               |           |              |
-| [Join 🚧](sketch-edit/join)                                           | `J`       |              |
-| [Bridge 🚧](sketch-edit/bridge)                                       |           |              |
-| [Bridge Vertex 🚧](sketch-edit/bridge-vertex)                         |           |              |
-| [Bridge Curve 🚧](sketch-edit/bridge-curve)                           |           |              |
-| [Bridge Edge 🚧](sketch-edit/bridge-edge)                             |           |              |
-| [Trim 🚧](sketch-edit/trim)                                           | `T`       | Toolbar      |
-| [Unjoin 🚧](sketch-edit/unjoin)                                      |           | Bottom Right |
-| [Cut Curve 🚧](sketch-edit/cut-curve)                                 |           |              |
-| [Split Curve at Point 🚧](sketch-edit/split-curve-at-point)           |           | Toolbar      |
-| **Edit**                                                               |           |              |
-| [Fillet 🚧](sketch-edit/fillet-chamfer)                               | `B`       | Bottom Right |
-| [Offset Curve 🚧](sketch-edit/offset-curve)                           | `O`       | Bottom Right |
-| [Subdivide Curve 🚧](sketch-edit/subdivide-curve)                     |           | Bottom Right |
-| [Extend Curve 🚧](sketch-edit/extend-curve)                           | `Shift-S` |              |
-| [Rebuild 🚧](sketch-edit/rebuild)                                     |           | Bottom Right |
-| **Edit Points**                                                        |           |              |
-| [Delete Redundant Topology 🚧](sketch-edit/delete-redundant-topology) |           |              |
-| [Convert Vertex To CV 🚧](sketch-edit/convert-vertex-to-cv)           |           |              |
+| Command                                                                  | Shortcut  | Button               | Inclusive functions                                     |
+| ------------------------------------------------------------------------ | --------- | -------------------- | ------------------------------------------------------- |
+| [Move ⤴](../common-edit/move)                                           | `G`       | Left of Command Bar  |                                                         |
+| [Rotate ⤴](../common-edit/rotate)                                       | `R`       | Left of Command Bar  |                                                         |
+| [Scale ⤴](../common-edit/scale)                                         | `S`       | Left of Command Bar  |                                                         |
+| [Mirror ⤴](../common-edit/mirror)                                       | `Alt-X`   | Left of Command Bar  |                                                         |
+| [Freestyle Move ⤴](../common-edit/freestyle-move)                       |           |                      |                                                         |
+| [Freestyle Rotate ⤴](../common-edit/freestyle-rotate)                   |           |                      |                                                         |
+| [Freestyle Scale ⤴](../common-edit/freestyle-scale)                     |           |                      |                                                         |
+| [Freestyle Mirror ⤴](../common-edit/freestyle-mirror)                   |           | Left of Command Bar  |                                                         |
+| **Duplicate**                                                            |           |                      |                                                         |
+| [Duplicate ⤴](../common-edit/duplicate)                                 | `Shift-D` | Left of Command Bar  |                                                         |
+| [Place ⤴](../common-edit/place)                                         | `Ctrl-D`  | Left of Command Bar  |                                                         |
+| [Rectangular Array ⤴](../common-edit/rectangular-array)                 |           |                      |                                                         |
+| [Radial Array ⤴](../common-edit/radial-array)                           |           | Right of Command Bar |                                                         |
+| [Curve Array ⤴](../common-edit/curve-array)                             |           | Right of Command Bar |                                                         |
+| **Project**                                                              |           |                      |                                                         |
+| [Project](sketch-edit/project)                                           | I         | Right of Command Bar | Project Body Body<br />Project Curve Body<br />Project Curve Curve             |
+| [Duplicate Curve and Project](sketch-edit/duplicate-curve-and-project)   |           |                      |                                                         |
+| **Join and Split**                                                       |           |                      |                                                         |
+| [Join ⤴](../common-edit/join)                                           | `J`       |                      | Join Curves<br />Join Sheets                            |
+| [Bridge 🚧](sketch-edit/bridge)                                         |           |                      | Bridge Vertex<br />Bridge Curve<br />Bridge Edge        |
+| [Trim 🚧](sketch-edit/trim)                                             | `T`       | Toolbar              |                                                         |
+| [Explode ⤴](../common-edit/explode)                                     | `Alt-J`   | Right of Command Bar | Explode Curves<br />Explode Faces<br />Explode Shells   |
+| [Cut Curve 🚧](sketch-edit/cut-curve)                                   |           |                      |                                                         |
+| [Split Segment 🚧](sketch-edit/split-segment)                           |           | Toolbar              |                                                         |
+| **Edit**                                                                 |           |                      |                                                         |
+| [Fillet ⤴](../common-edit/fillet)                                       | `B`       | Right of Command Bar | Fillet Curve<br />Fillet Vertex<br />Fillet Shell       |
+| [Offset Curve ⤴](../common-edit/offset-curve)                           | `O`       | Right of Command Bar | Offset Planar Curve<br />Offset Region<br />Offset Edge |
+| [Subdivide Curve 🚧](sketch-edit/subdivide-curve)                       | `Shift-S` | Right of Command Bar |                                                         |
+| [Extend ⤴](../common-edit/extend)                                       |           |                      | Extend Curve<br />Extend Sheet                          |
+| [Rebuild ⤴](../common-edit/rebuild)                                     |           | Right of Command Bar | Rebuild Curve<br />Rebuild Face                         |
+| [Text 🚧](sketch-edit/text)                                             |           |                      |                                                         |
+| **Edit Points**                                                          |           |                      |                                                         |
+| [Delete Redundant Topology ⤴](../common-edit/delete-redundant-topology) |           |                      |                                                         |
+| [Convert Vertex 🚧](sketch-edit/convert-vertex)                         |           |                      |                                                         |
+| **Material**                                                             |           |                      |                                                         |
+| [Set Material ⤴](../common-edit/set-material)                           | `M`       |                      |                                                         |
+| [Remove Material ⤴](../common-edit/remove-material)                     | `Alt-M`   |                      |                                                         |
+

@@ -1,53 +1,61 @@
-# ソリッドの編集
+# ソリッドの機能
 
-- [ソリッド編集の共通オプション](solid-edit/common-options)
-- [ソリッド編集のブーリアンオプション](solid-edit/boolean-options)
-
-| コマンドの機能 | コマンド | ショートカット |ボタン|
-| ------- | ------- | ------- | -------  |
-| [移動する](solid-edit/move) | Move |`G`|  |
-| [回転する](solid-edit/rotate) | Rotate |`R`|  |
-| [拡大縮小する](solid-edit/scale) | Scale |`S`|  |
-| [ブーリアンする](solid-edit/boolean) | Boolean |`Q`|  |
-| [カットする](solid-edit/cut-solid-with-curve) | Cut Solid With Curve |`C`|  |
-| [ミラーする](solid-edit/mirror) | Mirror |`Alt-X`|  |
-| [自由な軸でミラーする](solid-edit/freestyle-mirror) | Freestyle Mirror |  |  |
-|**ソリッドとシート**| | |
-| [押し出す](solid-edit/extrude) | Extrude |`E`|  |
-| [スイープする](solid-edit/sweep) | Sweep |`Shift-P`|  |
-| [リボルブする](solid-edit/revolve) | Revolve |  |  |
-| [ロフトする 🚧](solid-edit/loft) | Loft |`L`|  |
-| [パイプを作成する 🚧](solid-edit/pipe) | Pipe |`P`|  |
-| [パッチする 🚧](solid-edit/patch) | Patch |  |  |
-| [シートに厚みをつける 🚧](solid-edit/thicken-a-sheet) | Thicken A Sheet |  |  |
-| [複製する 🚧](solid-edit/duplicate) | Duplicate |`Shift-D`|  |
-| [指定した軸を基準に複製する 🚧](solid-edit/place-solid) | Place Solid |`Ctrl-D`|  |
-| [長方形配列で複製する 🚧](solid-edit/rectangular-array) | Rectangular Array |  |  |
-| [円形状配列で複製する 🚧](solid-edit/radial-array) | Radial Array |  |  |
-| [カーブに沿って複製する 🚧](solid-edit/curve-array) | Curve Array |  |  |
-| [alternative複製 🚧](solid-edit/alternative-duplicate) | Alternative Duplicate |`Alt-D`|  |
-| [中空にする 🚧](solid-edit/hollow) | Hollow |  |  |
-| [分解する 🚧](solid-edit/unjoin) | Unjoin |`Alt-J`  |  |
-| [フィレットを削除する 🚧](solid-edit/remove-fillets-from-shell) | Remove Fillets From Shell |  |  |
-| [再構築する 🚧](solid-edit/rebuild) | Rebuild |  |  |
-|**シートの編集** | | |
-| [シートを結合する 🚧](solid-edit/join) | Join |`J`|  |
-| [ふたつのシートを繋ぐ 🚧](solid-edit/bridge-surface) | Bridge Surface |  |  |
-| [シートを延長する 🚧](solid-edit/extend-Sheet) | Extend Sheet |  |  |
-| [閉じていないシートエッジを選択する 🚧](solid-edit/find-boundary-edges) | Find Boundary Edges |  |  |
-| [元の形状のシートを作成する 🚧](solid-edit/untrim) | Untrim |`Alt-T`|  |
-| **フェイスの編集** | | |
-| [フェイスをオフセットする 🚧](solid-edit/offset-face) | Offset Face | `Shift-O` |  |
-| [フェイスを傾ける 🚧](solid-edit/draft-face) | Draft Face |`Shift-S`  |  |
-| [フェイスを置き換える 🚧](solid-edit/match-face) | Match Face |  |  |
-| [オフセットしたエッジを作成する 🚧](solid-edit/offset-curve) | Offset Curve |`O`|  |
-| [フェイスを削除する 🚧](solid-edit/delete-face) | Delete Face |`Shift-X`|  |
-| [フェイスをアンラップする 🚧](solid-edit/unwrap-face) | Unwrap Face |  |  |
-| [フェイスをラップする 🚧](solid-edit/wrap-face) | Wrap Face |  |  |
-| **エッジの編集** | | |
-| [エッジを作成する 🚧](solid-edit/imprint) | Imprint |`Shift-I`|  |
-| [エッジを追加する 🚧](solid-edit/isoparam) | Isoparam |`Ctrl-R`|  |
-| [余剰エッジを削除する 🚧](solid-edit/delete-redundant-topology) | Delete Redundant Topology |  |  |
-| [エッジを延長する 🚧](solid-edit/extend-edges) | Extend Edges |  |  |
-| [交線にエッジを作成する 🚧](solid-edit/imprint-body-body) | Imprint Body Body |  |  |
+| コマンド                                                                                  | ショートカット    | ボタン         | 内包する機能                                            |
+| ----------------------------------------------------------------------------------------- | ----------------- | -------------- | ------------------------------------------------------- |
+| [Move（移動） ⤴](../common-edit/move)                                                    | `G`               | コマンドバー左 |                                                         |
+| [Rotate（回転） ⤴](../common-edit/rotate)                                                | `R`               | コマンドバー左 |                                                         |
+| [Scale（拡大縮小） ⤴](../common-edit/scale)                                              | `S`               | コマンドバー左 |                                                         |
+| [Mirror（ミラー） ⤴](../common-edit/mirror)                                              | `Alt-X`           | コマンドバー左 |                                                         |
+| [Freestyle Move（自由軸で移動） ⤴](../common-edit/freestyle-move)                        |                   |                |                                                         |
+| [Freestyle Rotate（自由軸で回転） ⤴](../common-edit/freestyle-rotate)                    |                   |                |                                                         |
+| [Freestyle Scale（自由軸で拡大縮小） ⤴](../common-edit/freestyle-scale)                  |                   |                |                                                         |
+| [Freestyle Mirror（自由軸でミラー） ⤴](../common-edit/freestyle-mirror)                  |                   |                |                                                         |
+| [Boolean（ブーリアン）](solid-edit/boolean)                                               | `Q`               | コマンドバー左 |                                                         |
+| [Cut（カット）](solid-edit/cut)                                                           | `C`               | コマンドバー左 |                                                         |
+| **ソリッドとシート**                                                                      |                   |                |                                                         |
+| [Extrude（押出し）](solid-edit/extrude)                                                   | `E`               | コマンドバー右 |                                                         |
+| [Sweep（スイープ） 🚧](solid-edit/sweep)                                                 | `Shift-P`         |                |                                                         |
+| [Sweep Tool（スイープツール） 🚧](solid-edit/sweep-tool)                                 |                   |                |                                                         |
+| [Revolve（リボルブ）](solid-edit/revolve)                                                 |                   | コマンドバー右 |                                                         |
+| [Loft（ロフト） 🚧](solid-edit/loft)                                                     | `L`               |                |                                                         |
+| [Loft Guide（ロフトガイド） 🚧](solid-edit/loft-guide)                                   | `Alt-L`           |                |                                                         |
+| [Pipe（パイプ） 🚧](solid-edit/pipe)                                                     | `P`               |                |                                                         |
+| [Patch（パッチ） 🚧](solid-edit/patch)                                                   |                   |                |                                                         |
+| [Thicken（厚み） 🚧](solid-edit/thicken)                                                 |                   |                | Thicken Sheet                                           |
+| [Constrained Surface（拘束サーフェイス） 🚧](solid-edit/constrained-surface)             |                   |                |                                                         |
+| [Fillet（フィレット） ⤴](../common-edit/fillet)                                          | `B`               |                | Fillet Curve<br />Fillet Vertex<br />Fillet Shell       |
+| [Refillet Face（リフィレットフェイス） 🚧](solid-edit/refillet-face)                     |                   |                |                                                         |
+| [Remove Fillets from Shell（フィレットを削除） 🚧](solid-edit/remove-fillets-from-shell) |                   |                |                                                         |
+| [Duplicate（複製） ⤴](../common-edit/duplicate)                                          | `Shift-D`         |                |                                                         |
+| [Place（指定軸を基準に複製） ⤴](../common-edit/place)                                    | `Ctrl-D`          |                |                                                         |
+| [Rectangular Array（長方形配列で複製） ⤴](../common-edit/rectangular-array)              |                   |                |                                                         |
+| [Radial Array（円形状配列で複製） ⤴](../common-edit/radial-array)                        |                   |                |                                                         |
+| [Curve Array（カーブに沿って複製） ⤴](../common-edit/curve-array)                        |                   |                |                                                         |
+| [Alternative Duplicate（代替複製） 🚧](solid-edit/alternative-duplicate)                 | `Alt-D`           |                |                                                         |
+| [Hollow（中空） 🚧](solid-edit/hollow)                                                   |                   |                | Hollow Solid                                            |
+| [Explode（分解） ⤴](../common-edit/explode)                                              | `Alt-J`           |                | Explode Curves<br />Explode Faces<br />Explode Shells   |
+| [Rebuild（再構築） ⤴](../common-edit/rebuild)                                            |                   |                | Rebuild Curve<br />Rebuild Face                         |
+| **シート**                                                                                |                   |                |                                                         |
+| [Join（結合） ⤴](../common-edit/join)                                                    | `J`               |                | Join Curves<br />Join Sheets                            |
+| [Bridge Surface（ブリッジサーフェイス） 🚧](solid-edit/bridge-surface)                   |                   |                |                                                         |
+| [Bridge Edge Surface（ブリッジエッジサーフェイス） 🚧](solid-edit/bridge-edge-surface)   |                   |                |                                                         |
+| [Extend（延長） ⤴](../common-edit/extend)                                                |                   |                | Extend Curve<br />Extend Sheet<br />Extend Edge         |
+| [Find Boundary Edges（開口部のカーブを作成） 🚧](solid-edit/find-boundary-edges)         |                   |                |                                                         |
+| [Untrim（アントリム） 🚧](solid-edit/untrim)                                             | `Alt-T`           |                |                                                         |
+| **フェイス**                                                                              |                   |                |                                                         |
+| [Offset Face（フェイスをオフセット） 🚧](solid-edit/offset-face)                         | `Shift-O`         |                |                                                         |
+| [Offset Face Loop（フェイスループをオフセット 🚧](solid-edit/offset-face-loop)           |                   |                |                                                         |
+| [Draft Face（フェイスを傾ける） 🚧](solid-edit/draft-face)                               | `Shift-S`         |                |                                                         |
+| [Match Face（フェイスを合わせる） 🚧](solid-edit/match-face)                             |                   |                |                                                         |
+| [Offset Curve（オフセット） ⤴](../common-edit/offset-curve)                              | `O`               |                | Offset Planar Curve<br />Offset Region<br />Offset Edge |
+| [Delete Face（フェイスを削除） 🚧](solid-edit/delete-face)                               | `Shift-Backspace` |                |                                                         |
+| [Unwrap Face（アンラップ） 🚧](solid-edit/unwrap-face)                                   |                   |                |                                                         |
+| [Wrap Face（ラップ） 🚧](solid-edit/wrap-face)                                           |                   |                |                                                         |
+| **エッジ**                                                                                |                   |                |                                                         |
+| [Imprint（インプリント） 🚧](solid-edit/imprint)                                         | `Shift-I`         |                | Imprint Body Bode<br />Imprint Curve Body               |
+| [Isoparam（アイソパラムを追加） 🚧](solid-edit/isoparam)                                 | `Ctrl-R`          |                |                                                         |
+| [Delete Redundant Topology（余剰を削除） ⤴](../common-edit/delete-redundant-topology)    |                   |                |                                                         |
+| [Extend Edge（エッジを延長） 🚧](solid-edit/extend-edge)                                 |                   |                |                                                         |
+| [Set Material（マテリアルの設定） ⤴](../common-edit/set-material)                        | `M`               |                |                                                         |
+| [Remove Material（マテリアルを削除） ⤴](../common-edit/remove-material)                  | `Alt-M`           |                |                                                         |
 

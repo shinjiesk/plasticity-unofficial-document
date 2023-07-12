@@ -1,21 +1,41 @@
 import Reference from 'components/Reference';
+import { Callout } from 'nextra/components'
 
 # Extrude
 
-<Reference shortcut="E" command="Extrude" button="" />
+<Reference shortcut="E" command="Extrude" button="Right of Command Bar" />
 
-When extruding a face of a solid or a region of a sketch, a solid will be created. When extruding a curve, a sheet will be created.
+Extruding faces or regions generates solids, while extruding curves produces sheets.
 
-1. Press the shortcut `E`.
-2. Select the solid face, sketch region, or curve as the object to be extruded.
+1. Press the shortcut `E` or click the button.
+2. Select the face, region, or curve to extrude.
 3. Move the yellow dot to specify the distance.
-   - **Select target bodies**: Select the target bodies (solids, sheets) for a boolean operation.
+   - **Distance**
+      - Specify the distance and the opposite distance.
+   - **Degrees**
+      - Specify the angle of extrusion.
+   - **Thickness**
+      - Specify the wall thickness.
+   - `F` **Freestyle**
+      - Click to specify the starting point and the endpoint, determining the direction and distance of movement.
+   - `V` **Pivot**
+      - Click to specify the position of the Gizmo. 
+   - `D` **Distance 1**
+      - Specify the distance with mouse movement.
+   - `A` **Angle 1** 
+      - Specify the angle of extrusion with mouse movement.
+   - `Shift-T` **Thickness**
+      - Specify the wall thickness with mouse movement.
+   - `Tab` **Lock distances**
+      - Make the distance and the distance to the opposite side equal.
+4. \<Option\>You can boolean with the extruded object.
+   - **Select target bodies**: Select the solid or sheet to be used as the boolean target.
       - Refer to [Solid Editing Boolean options](boolean-options) for other options.
-   - `B`: **New Body**: Creates a new solid. Boolean operations will be canceled.
-   - `F`: **Freestyle**: Specify the extrusion direction with two points.
-   - `V`: **Pivot**: Click to specify the position of the Gizmo. 
-   - `D`: **Distance 1**: Specify the distance.
-   - `A`: **Angle 1**: Specify the angle of extrusion.
-   - `Shift-T`: **Thickness**: Specify the wall thickness.
-   - `Tab`: **Lock distances**: Create the same extrusion on both sides.
-4. The extruded solid or sheet will be displayed in the workspace.
+5. The extruded solid or sheet will be displayed in the workspace.
+
+ {/* ??? unknown function 
+ solid-edit/extrude
+ Degrees 2
+ Thickness 2
+ 
+ */}
