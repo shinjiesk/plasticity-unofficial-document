@@ -7,6 +7,7 @@ import  Reference  from 'components/Reference';
 The behavior varies depending on the selected objects when executing the command.
 
 - When two curves are selected: [**Project Curve Curve**](#project-curve-curve)
+- When two solids or sheets are selected: [**Project Body Body**](#project-body-body)
 - Otherwise: [**Project Curve Body**](#project-curve-body)
 
 ## Project Curve Curve [#project-curve-curve]
@@ -17,7 +18,13 @@ You can create a curve by projecting the intersection curve of two selected curv
 2. Press the shortcut `I` or click the button.
 3. The projected intersection curve will be created.
 
-## Project Curve Body[#project-curve-body]
+## Project Body Body [#project-body-body]
+
+1. Select two solids or sheets.
+2. Press the shortcut `I` or click the button.
+3. A curve representing the intersection line will be created.
+
+## Project Curve Body [#project-curve-body]
 
 You can project a curve onto a solid or sheet to create a curve.
 
@@ -38,3 +45,5 @@ You can project a curve onto a solid or sheet to create a curve.
      - When enabled, the projection will not occur on hidden faces in the positive direction of the specified axis.
 5. Click OK or right-click in the command dialog to confirm.
 6. The projected curve will be created.
+
+
