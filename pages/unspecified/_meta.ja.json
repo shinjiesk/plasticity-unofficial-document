@@ -1,0 +1,13 @@
+{
+  "bridge-edge-surface": "Bridge Edge Surface",
+  "check": "Check",
+  "create-solid-from-faces": "Create Solid From Faces",
+  "dissolve-face": "Dissolve Face",
+  "loft-guide": "Loft Guide",
+  "offset-face-loop": "Offset Face Loop",
+  "push-face": "Push Face",
+  "refillet-face": "Refillet Face",
+  "smart-command": "Smart Command",
+  "sweep-tool": "Sweep Tool"
+  }
+  

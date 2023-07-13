@@ -29,6 +29,13 @@
   },
   "solid-basic": "ソリッドの基本",
   "solid-edit": "ソリッドの機能",
+
+  "-- Unspecified": {
+    "type": "separator",
+    "title": "未確認"
+  },
+  "unspecified": "未確認機能",
+
   "about": {
     "title": "About",
     "type": "page"

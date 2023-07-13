@@ -30,6 +30,12 @@
   "solid-basic": "Solid Basics",
   "solid-edit": "Solid Function",
 
+  "-- Unspecified": {
+    "type": "separator",
+    "title": "Unspecified"
+  },
+  "unspecified": "Unspecified Functions",
+
   "about": {
     "title": "About",
     "type": "page"
