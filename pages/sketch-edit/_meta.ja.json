@@ -42,11 +42,11 @@
   "project": "Project（投影）",
   "duplicate-curve-and-project": "Duplicate Curve and Project（複製して投影）",
   "join": { "title": "Join（結合） ⤴", "href": "../common-edit/join" },
-  "bridge": "🚧 Bridge（繋げる）",
-  "trim": "🚧 Trim（トリム）",
+  "bridge": "Bridge（繋げる）🚧",
+  "trim": "Trim（トリム）🚧",
   "explode": { "title": "Explode（分解） ⤴", "href": "../common-edit/explode" },
-  "cut-curve": "🚧 Cut curve（切断）",
-  "split-segment": "🚧 Split Curve at Point（分割）",
+  "cut-curve": "Cut curve（切断）🚧",
+  "split-segment": "Split Curve at Point（分割）🚧",
 
   "fillet": {
     "title": "Fillet（フィレット） ⤴",
@@ -56,19 +56,19 @@
     "title": "Offset Curve（オフセット） ⤴",
     "href": "../common-edit/offset-curve"
   },
-  "subdivide-curve": "🚧 Subdivide Curve（CVを増やす）",
+  "subdivide-curve": "Subdivide Curve（CVを増やす）🚧",
   "extend": { "title": "Extend（延長） ⤴", "href": "../common-edit/extend" },
   "rebuild": {
     "title": "Rebuild（再構築） ⤴",
     "href": "../common-edit/rebuild"
   },
-  "text": "🚧 Text（テキスト）",
+  "text": "Text（テキスト）🚧",
 
   "delete-redundant-topology": {
     "title": "Delete Redundant Topology（余剰を削除） ⤴",
     "href": "../common-edit/delete-redundant-topology"
   },
-  "convert-vertex": "🚧 Convert Vertex（ポイントをCVに変換）",
+  "convert-vertex": "Convert Vertex（ポイントをCVに変換）🚧",
   "set-material": {
     "title": "Set Material（マテリアルを設定） ⤴",
     "href": "../common-edit/set-material"

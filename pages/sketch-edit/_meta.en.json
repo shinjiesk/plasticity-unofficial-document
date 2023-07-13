@@ -42,27 +42,27 @@
   "project": "Project",
   "duplicate-curve-and-project": "Duplicate Curve and Project",
   "join": { "title": "Join ⤴", "href": "../common-edit/join" },
-  "bridge": "🚧 Bridge",
-  "trim": "🚧 Trim",
+  "bridge": "Bridge 🚧",
+  "trim": "Trim 🚧",
   "explode": { "title": "Explode ⤴", "href": "../common-edit/explode" },
-  "cut-curve": "🚧 Cut curve",
-  "split-segment": "🚧 Split Curve at Point",
+  "cut-curve": "Cut curve 🚧",
+  "split-segment": "Split Curve at Point 🚧",
 
   "fillet": { "title": "Fillet ⤴", "href": "../common-edit/fillet" },
   "offset-curve": {
     "title": "Offset Curve ⤴",
     "href": "../common-edit/offset-curve"
   },
-  "subdivide-curve": "🚧 Subdivide Curve",
+  "subdivide-curve": "Subdivide Curve 🚧",
   "extend": { "title": "Extend ⤴", "href": "../common-edit/extend" },
   "rebuild": { "title": "Rebuild ⤴", "href": "../common-edit/rebuild" },
-  "text": "🚧 Text",
+  "text": "Text 🚧",
 
   "delete-redundant-topology": {
     "title": "Delete Redundant Topology ⤴",
     "href": "../common-edit/delete-redundant-topology"
   },
-  "convert-vertex": "🚧 Convert Vertex",
+  "convert-vertex": "Convert Vertex 🚧",
   "set-material": {
     "title": "Set Material ⤴",
     "href": "../common-edit/set-material"
