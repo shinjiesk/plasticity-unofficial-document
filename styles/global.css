@@ -5,3 +5,13 @@ li > ul {
 a {
   text-decoration: none !important;
 }
+
+.nx-text-sm {
+  font-size: 0.8rem !important;
+}
+
+@media (min-width: 768px) {
+  .md\:nx-w-64 {
+    width: 20rem !important;
+  }
+}
