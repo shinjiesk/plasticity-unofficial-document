@@ -31,7 +31,7 @@
   },
   "boolean": "Boolean（ブーリアン）",
   "cut": "Cut（カット）",
-  "extrude": "Extrude",
+  "extrude": "Extrude（押し出し）",
   "sweep": "Sweep（スイープ）🚧",
   "sweep-tool": "Sweep Tool（スイープツール）🚧",
   "revolve": "Revolve（リボルブ）",

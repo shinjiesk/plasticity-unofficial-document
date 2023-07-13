@@ -19,3 +19,12 @@ a {
     width: 20rem !important;
   }
 }
+
+.nx-py-1\.5 {
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.2rem !important;
+}
+
+.nx-list-disc {
+  list-style-type: none !important;
+}
