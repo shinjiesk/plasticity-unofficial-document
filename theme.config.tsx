@@ -4,7 +4,7 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 import { useConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span>Plasticity Unofficial Document</span>,
+  logo: <span>Plasticity Unofficial Manual</span>,
   project: {
     link: "https://github.com/shinjiesk/plasticity-unofficial-document",
   },
@@ -43,7 +43,7 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter();
     if (asPath !== "/" && asPath !== "/ja" && asPath !== "/en") {
       return {
-        titleTemplate: "%s – Plasticity Unofficial Document",
+        titleTemplate: "%s – Plasticity Unofficial Manual",
       };
     }
   },
@@ -60,12 +60,12 @@ const config: DocsThemeConfig = {
       <>
         <meta
           property="og:site_name"
-          content="Plasticity Unofficial Document"
+          content="Plasticity Unofficial Manual"
         ></meta>
         <meta property="og:url" content={url} />
         <meta
           property="og:title"
-          content={frontMatter.title || "Plasticity Unofficial Document"}
+          content={frontMatter.title || "Plasticity Unofficial Manual"}
         />
         <meta
           property="og:description"
