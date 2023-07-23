@@ -1,5 +1,4 @@
 {
-  "common-options": "Sketch Tool Common options",
   "line": "Line",
   "spline-curve": "Spline Curve",
   "control-point-curve": "Control Point Curve",
@@ -15,12 +14,12 @@
   "three-point-rectangle": "Three Point Rectangle",
   "bridge": {
     "title": "Bridge Curve",
-    "href": "../sketch-edit/bridge"
+    "href": "../sketch/bridge"
   },
-  "trim": { "title": "Trim", "href": "../sketch-edit/trim" },
+  "trim": { "title": "Trim", "href": "../sketch/trim" },
   "split-segment": {
     "title": "Split Curve At Point",
-    "href": "../sketch-edit/split-segment"
+    "href": "../sketch/split-segment"
   },
   "sphere": "Sphere",
   "corner-box": "Corner Box",
