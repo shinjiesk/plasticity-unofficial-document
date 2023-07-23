@@ -1,5 +1,8 @@
 {
-  "about-plasticity": "🚧 Plasticityとは",
-  "new-features": "🚧 最新バージョンの新機能",
-  "system-requirements": "🚧 システム要件"
+  "download-and-install": "Download and install",
+  "user-interface-overview": "User Interface Overview",
+  "how-to-execute-a-commands": "How to Execute a Commands",
+  "file-operations": "File Operations",
+  "importing-reference-images": "Importing Reference Images",
+  "export-obj": "Export OBJ"
 }

@@ -1,5 +1,8 @@
 {
-  "about-plasticity": "🚧 About Plasticity",
-  "new-features": "🚧 New Features in Latest Version",
-  "system-requirements": "🚧 System Requirements"
+  "download-and-install": "Download and install",
+  "user-interface-overview": "User Interface Overview",
+  "how-to-execute-a-commands": "How to Execute a Commands",
+  "file-operations": "File Operations",
+  "importing-reference-images": "Importing Reference Images",
+  "export-obj": "Export OBJ"
 }

@@ -1,40 +1,11 @@
 {
   "index": "Home",
   "start": "Getting Started",
-  "install": "Installation and Setup",
-  "basic-operation": "Basic Operations",
-
-  "-- Tool": {
-    "type": "separator",
-    "title": "Tool"
-  },
+  "3d-viewport": "3D Viewport",
   "tool": "Tools",
-
-  "-- Common": {
-    "type": "separator",
-    "title": "Common"
-  },
-  "common-edit": "Common Function",
-
-  "-- Sketch": {
-    "type": "separator",
-    "title": "Sketch"
-  },
-  "sketch-basic": "Sketch Basics",
-  "sketch-edit": "Sketch Function",
-
-  "-- Solid": {
-    "type": "separator",
-    "title": "Solid"
-  },
-  "solid-basic": "Solid Basics",
-  "solid-edit": "Solid Function",
-
-  "-- Unspecified": {
-    "type": "separator",
-    "title": "Unspecified"
-  },
-  "unspecified": "Unspecified Functions",
+  "common": "Common Commands",
+  "sketch": "Sketch Commands",
+  "solid": "Solid Commands",
 
   "about": {
     "title": "About",

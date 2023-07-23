@@ -1,0 +1,34 @@
+import Reference from 'components/Reference';
+import { Callout } from 'nextra/components'
+
+<Callout emoji="">このセクションにはスケッチとソリッドに共通する機能が書かれています。</Callout>
+
+# Place（指定軸を基準に複製）
+
+<Reference shortcut="Ctrl-D" command="Place" button="コマンドバー左" />
+
+指定した軸を基準に、曲線やソリッド、シートを複製することができます。
+
+1. 複製したいオブジェクトを選択します。
+2. ショートカット<kbd>Ctrl-D</kbd>を押すか、ボタンをクリックします。
+3. 複製元の基準点をクリックします。
+4. 複製先の基準点をクリックします。
+- <kbd>S</kbd> **Scale**
+   - 拡大縮小ができます。
+- <kbd>A</kbd> **Angle**
+   - 回転ができます。
+- <kbd>D</kbd> **Offset**
+   - 連続して複製できます。
+- <kbd>F</kbd> **Flip**
+   - 複製の軸を反転できます。
+- <kbd>X</kbd> **x-up**
+   - 複製の軸をX軸方向にします。
+- <kbd>Y</kbd> **y-up**
+  - 複製の軸をY軸方向にします。
+- <kbd>Z</kbd> **z-up**
+   - 複製の軸をZ軸方向にします。
+5. 右クリックで確定します。
+6. \<オプション\>さらに複製したいとき:
+   1. 複製先の基準点をクリックします。
+   2. 右クリックで確定します。
+7. Escapeキーで終了します。

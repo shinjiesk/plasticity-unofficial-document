@@ -2,19 +2,113 @@
 title: Plasticity Unofficial Manual
 description: An unofficial manual for Plasticity 3D. Updated daily!
 ---
-import { Callout } from 'nextra/components'
-
 # Plasticity Unofficial Manual
 
-- Compatible with Plasticity version 1.1.38 - BETA (Studio only) .
-- Features not included in Plasticity version 1.1.3 will be marked accordingly.
+## Tools
+| Command Name                                        | Shortcut  | Description                     |
+| --------------------------------------------------- | --------- | ------------------------------- |
+| [Line](tool/line)                                   | <kbd>Shift-A</kbd> | Line segments                   |
+| [Spline Curve](tool/spline-curve)                   |           | Spline Curve                    |
+| [Control Point Curve](tool/control-point-curve)     |           | Control Point Curve             |
+| [Center Circle](tool/center-circle)                 |           | Circle by center and diameter   |
+| [Two Point Circle](tool/two-point-circle)           |           | Circle by diameter              |
+| [Three Point Circle](tool/three-point-circle)       |           | Circle by three points          |
+| [Center Point Arc](tool/center-point-arc)           |           | Arc by center and two points    |
+| [Three Point Arc](tool/three-point-arc)             |           | Arc by three points             |
+| [Regular Polygon](tool/polygon)                     |           | Regular polygon                 |
+| [Spiral](tool/spiral)                               |           | Spiral                          |
+| [Corner Rectangle](tool/corner-rectangle)           |           | Rectangle by diagonal           |
+| [Center Rectangle](tool/center-rectangle)           |           | Rectangle by center and point   |
+| [Three Point Rectangle](tool/three-point-rectangle) |           | Rectangle by three points       |
+| [Bridge Curve 🚧](sketch/bridge)                   |           | Join Curves                     |
+| [Trim 🚧](sketch/trim)                             |           | Trim Curve                      |
+| [Split Curve At Point 🚧](sketch/split-segment)    |           | Decompose Curve into segments   |
+| [Sphere](tool/sphere)                               |           | Sphere                          |
+| [Corner Box](tool/corner-box)                       | <kbd>Shift-B</kbd> | Box by diagonal and height      |
+| [Center Box](tool/center-box)                       |           | Box by center, point and height |
+| [Three Point Box](tool/three-point-box)             |           | Box by three points and height  |
+| [Cylinder](tool/cylinder)                           | <kbd>Shift-C</kbd> | Cylinder                        |
 
-<Callout type="info">
-**Document Update History**
-- July 13, 2023: Added [Place](./common-edit/place), [Project](./sketch-edit/project).
-- July 7, 2023: Added [Mirror, Mirror with Free Axis, Duplicate, Duplicate with Rectangular Array, Duplicate with Radial Array, Duplicate along Curve](./sketch-edit).
-</Callout>
+## Commands Common to Sketch and Solid
+| Command Name                                    | Shortcut  | Description                                |
+| ----------------------------------------------- | --------- | ------------------------------------------ |
+| [Move](common/move)                             | <kbd>G</kbd>       | Move objects                               |
+| [Rotate](common/rotate)                         | <kbd>R</kbd>       | Rotate objects                             |
+| [Scale](common/scale)                           | <kbd>S</kbd>       | Scale objects                              |
+| [Mirror](common/mirror)                         | <kbd>Alt-X</kbd>   | Mirror objects                             |
+| [Freestyle Move](common/freestyle-move)         |           | Move objects along freely defined axes     |
+| [Freestyle Rotate 🚧](common/freestyle-rotate) |           | Rotate objects along freely defined axes   |
+| [Freestyle Scale 🚧](common/freestyle-scale)   |           | Scale objects along freely defined axes    |
+| [Freestyle Mirror 🚧](common/freestyle-mirror) |           | Mirror objects along freely defined axes   |
+| [Duplicate](common/duplicate)                   | <kbd>Shift-D</kbd> | Duplicate objects                          |
+| [Place](common/place)                           | <kbd>Ctrl-D</kbd>  | Duplicate objects specified axis           |
+| [Rectangular Array](common/rectangular-array)   |           | Duplicate objects in a rectangular pattern |
+| [Radial Array](common/radial-array)             |           | Duplicate objects in a radial pattern      |
+| [Curve Array](common/curve-array)               |           | Duplicate objects along a Curve            |
+| [Explode 🚧](common/explode)                   | <kbd>Alt-J</kbd>   | Decompose Curve, Solid and Sheet           |
+| [Set Material 🚧](common/set-material)         | <kbd>M</kbd>       | Set material                               |
+| [Remove Material 🚧](common/remove-material)   | <kbd>Alt-M</kbd>   | Remove material                            |
 
+## Sketch Commands - Region, Curve, Point, CV
+| Command Name                                                      | Shortcut  | Description                      |
+| ----------------------------------------------------------------- | --------- | -------------------------------- |
+| [Fillet 🚧](sketch/fillet)                                       | <kbd>B</kbd>       | Fillet or chamfer Curves         |
+| [Offset Curve 🚧](sketch/offset-curve)                           | <kbd>O</kbd>       | Offset Curves                    |
+| [Subdivide Curve 🚧](sketch/subdivide-curve)                     | <kbd>Shift-S</kbd> | Increase CVs                     |
+| [Extend 🚧](sketch/extend)                                       |           | Extend Curve                     |
+| [Rebuild 🚧](sketch/rebuild)                                     |           | Rebuild Curve                    |
+| [Text 🚧](sketch/text)                                           |           | Create text                      |
+| **Project Commands**                                             |           |                                  |
+| [Project](sketch/project)                                         | <kbd>I</kbd>       | Project Curve to Solid or Sheet  |
+| [Duplicate Curve and Project](sketch/duplicate-curve-and-project) |           | Duplicate Curve And Project      |
+| **Join and Split Commands**                                      |           |                                  |
+| [Join 🚧](sketch/join)                                           | <kbd>J</kbd>       | Join Curves at connecting points |
+| [Bridge 🚧](sketch/bridge)                                       |           | Join Curves                      |
+| [Trim 🚧](sketch/trim)                                           | <kbd>T</kbd>       | Trim Curve                       |
+| [Cut Curve 🚧](sketch/cut-curve)                                 |           | Cut Curve                        |
+| [Split Segment 🚧](sketch/split-segment)                         |           | Decompose Curve into segments    |
+| **Point Commands**                                         |           |                                  |
+| [Delete Redundant Topology 🚧](sketch/delete-redundant-topology) |           | Remove excess points             |
+| [Convert Vertex 🚧](sketch/convert-vertex)                       |           | Converting vertices to CV        |
+|                                                                   |           |                                  |
 
-
+# Solid Commands - Solid, Sheet, Face, Edge
+| Command Name                                                     | Shortcut          | Description                                        |
+| ---------------------------------------------------------------- | ----------------- | -------------------------------------------------- |
+| [Boolean](solid/boolean)                                         | <kbd>Q</kbd>               | Boolean Solid and Sheet                            |
+| [Cut](solid/cut)                                                 | <kbd>C</kbd>               | Cut Solid and Sheet                                |
+| **Solids and Sheets Commands**                                  |                   | Extrude Faces, Regions and Curves                  |
+| [Extrude](solid/extrude)                                         | <kbd>E</kbd>               | Sweep Region and Curve                             |
+| [Sweep 🚧](solid/sweep)                                         | <kbd>Shift-P</kbd>         | Revolve Region and Curve                           |
+| [Revolve](solid/revolve)                                         |                   | Loft Face, Edge and Curve                          |
+| [Loft 🚧](solid/loft)                                           | <kbd>L</kbd>               | Create a Pipe from Edge and Curve                  |
+| [Pipe 🚧](solid/pipe)                                           | <kbd>P</kbd>               | Fill Sheet holes                                   |
+| [Patch 🚧](solid/patch)                                         |                   | Add thickness to a Sheet                           |
+| [Thicken 🚧](solid/thicken)                                     |                   | Create a constrained surface                       |
+| [Constrained Surface 🚧](solid/constrained-surface)             |                   | Fillet or chamfer Edges                            |
+| [Fillet 🚧](solid/fillet)                                       | <kbd>B</kbd>               | Fillet or chamfer Edges                            |
+| [Refillet Face 🚧](solid/refillet-face)                         |                   | Redo fillets                                       |
+| [Remove Fillets from Shell 🚧](solid/remove-fillets-from-shell) |                   | Remove Solid and Sheet fillets                     |
+| [Alternative Duplicate 🚧](solid/alternative-duplicate)         | <kbd>Alt-D</kbd>           | Alternative Duplicate                              |
+| [Hollow 🚧](solid/hollow)                                       |                   | Hollow out a Solid                                 |
+| [Rebuild 🚧](solid/rebuild)                                     |                   | Rebuild Face                                       |
+| **Sheet Commands**                                              |                   |                                                    |
+| [Join 🚧](solid/join)                                           | <kbd>J</kbd>               | Combine Sheets with matching Edges                 |
+| [Bridge Surface 🚧](solid/bridge-surface)                       |                   | Bridge two Sheets                                  |
+| [Extend 🚧](solid/extend)                                       |                   | Extend Sheet                                       |
+| [Find Boundary Edges 🚧](solid/find-boundary-edges)             |                   | Select Edges of a Sheet opening                    |
+| [Untrim 🚧](solid/untrim)                                       | <kbd>Alt-T</kbd>           | Create a Sheet based on the original shape         |
+| **Face Commands**                                               |                   |                                                    |
+| [Offset Face 🚧](solid/offset-face)                             | <kbd>Shift-O</kbd>         | Offset Faces                                       |
+| [Draft Face 🚧](solid/draft-face)                               | <kbd>Shift-S</kbd>         | Draft Faces                                        |
+| [Match Face 🚧](solid/match-face)                               |                   | Align Face with other Face                         |
+| [Delete Face 🚧](solid/delete-face)                             | <kbd>Shift-Backspace</kbd> | Delete Face                                        |
+| [Unwrap Face 🚧](solid/unwrap-face)                             |                   | Unwrap Face                                        |
+| [Wrap Face 🚧](solid/wrap-face)                                 |                   | Wrap Face                                          |
+| **Edge Commands**                                               |                   |                                                    |
+| [Offset Curve 🚧](solid/offset-curve)                           | <kbd>O</kbd>               | Create offset Edges from Edge or Face outlines     |
+| [Imprint 🚧](solid/imprint)                                     | <kbd>Shift-I</kbd>         | Create Edges by projecting Solid, Sheet and Curves |
+| [Isoparam 🚧](solid/isoparam)                                   | <kbd>Ctrl-R</kbd>          | Add Edge                                           |
+| [Delete Redundant Topology 🚧](solid/delete-redundant-topology) |                   | Remove excess Edges                                |
+| [Extend Edge 🚧](solid/extend-edge)                             |                   | Extend Edges                                       |
 

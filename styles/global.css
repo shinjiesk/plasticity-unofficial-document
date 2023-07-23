@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-li > ul {
-  margin-top: 0 !important;
-}
-
 a {
   text-decoration: none !important;
 }
@@ -25,6 +21,41 @@ a {
   padding-bottom: 0.2rem !important;
 }
 
-.nx-list-disc {
+kbd {
+  background-color: #8881;
+  padding: 0px 0.3rem 1px;
+  border-radius: 0.3rem;
+  border: 1px solid #bbb;
+  border-bottom-width: 2px;
+  font-size: 0.9rem !important;
+  font-family: inherit !important;
+}
+
+// List styles
+
+li > ul {
+  margin-top: 0 !important;
+}
+
+ul.nx-mt-6 {
+  margin-top: 0rem;
+}
+
+.dl > ul > li {
+  font-weight: bold;
   list-style-type: none !important;
+  margin-left: 0 !important;
+}
+
+.dl > ul > li > ul > li {
+  font-weight: normal;
+  list-style-type: none !important;
+}
+:is([dir="ltr"] .ltr\:nx-ml-6) {
+  margin-left: 1.2rem !important;
+}
+
+// Inline Image
+html img {
+  display: inline !important;
 }

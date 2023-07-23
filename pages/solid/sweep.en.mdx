@@ -1,0 +1,40 @@
+import Reference from 'components/Reference';
+
+
+# Sweep
+
+<Reference shortcut="Shift-P" command="Sweep" button="" />
+
+You can perform a sweep operation on faces, regions, or curves.
+
+
+{/* 
+1. Press the shortcut <kbd>Shift-P</kbd>.
+2. Make sure that **Select region, face, or curve** in the dialog is highlighted in purple, and select the face, region, or curve to be swept.
+3. Make sure that **Select spine** in the dialog is highlighted in purple, and select the curve that will serve as the path for the sweep.
+   - **Twist**: Specify the twisting angle in degrees.
+   - **Alignment**:
+     - **Parallel**: Sweeps parallel to the path, regardless of the orientation.
+     - **Normal**: Sweeps at an angle aligned with the path.
+4. If necessary, make sure that **Select guides** in the dialog is highlighted in purple, and select the curves that will serve as guides for the sweep.
+   - Hold Shift while clicking to select multiple guides.
+   - Hold Ctrl while clicking to deselect.
+   - The order in which you select the guides will affect the shape of the sweep.
+   - **Guide method**:
+     - **Point**: Rotate and scale the cross-section of the swept body to follow the guides and the path.
+     - **Chord**: Rotate the cross-section to follow the guides and the path.
+     - **Curve**: */} {/* ??? unknown function */}
+
+{/*
+Point
+The cross-section of the swept body is rotated and scaled so that the points initially coincident with the guide and path always remain in contact.
+
+Chord
+The cross-section is rotated but not scaled.
+
+Curve
+The cross-section is rotated but not scaled. The guide and path must touch the profile. The profile stays in contact with both guide wires, but only one of the contact points is at a fixed
+point on the profile; the other is free to move along the profile.
+Note: The profile must be large enough to span the greatest distance between the two guide wires.
+
+*/}
