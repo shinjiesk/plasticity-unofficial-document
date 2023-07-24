@@ -1,9 +1,9 @@
 {
-  "object-names":"Object Names",
-  "operating-the-3d-viewport":"Operating the 3D Viewport",
-  "object-selection":"Object Selection",
-  "displaying-and-hiding":"Displaying and Hiding Objects",
-  "setting-up-the-grid":"Setting Up the Grid",
-  "construction-plane":"Construction Plane",
-  "numeric-input-and-tooltip":"Numeric Input and Tooltip"
+  "object-names":"オブジェクトの名称",
+  "operating-the-3d-viewport":"3Dビューポートの操作",
+  "object-selection":"オブジェクトの選択",
+  "displaying-and-hiding":"オブジェクトの表示・非表示",
+  "setting-up-the-grid":"グリッド機能",
+  "construction-plane":"構築平面",
+  "numeric-input-and-tooltip":"数値入力とツールチップ"
   }

@@ -1,55 +1,84 @@
 ---
-title: Selection Operations
-description: Explains how to switch selection modes and how to select objects.
+title: Object Selection
 ---
-
-
-
+# Object Selection
 
 ## Selection Modes
 
-The selection mode should be adjusted according to the object you wish to select. You can switch the selection mode via the buttons at the top left.
+- You need to switch the selection mode according to the object you want to select.
+- The selection mode can be toggled using the buttons in the upper left corner of the screen or keyboard shortcuts.
 
-### Switching Selection Modes
-
-- Control point selection mode (**control-point**) <kbd>1</kbd>
-- Edge selection mode (**edge**) <kbd>2</kbd>
-- Face selection mode (**face**) <kbd>3</kbd>
-- Solid selection mode (**solid**) <kbd>4</kbd>
-- All selectable mode (**all**) <kbd>Tab</kbd>
-{' '}
-- Toggle only control point selection mode <kbd>Shift + 1</kbd>
-- Toggle only edge selection mode <kbd>Shift - 2</kbd>
-- Toggle only face selection mode <kbd>Shift - 3</kbd>
-- Toggle only solid selection mode <kbd>Shift - 4</kbd>
+    ![Selection mode buttons](./img/selection-mode-buttons.png)
+<div className="dl">
+- Control point selection mode: 
+    - press <kbd>1</kbd> or click the button(1).
+- Edge selection mode: 
+    - press <kbd>2</kbd> or click the button(2).
+- Face selection mode: 
+    - press <kbd>3</kbd> or click the button(3).
+- Solid selection mode: 
+    - press <kbd>4</kbd> or click the button(4).
+- All selectable mode: 
+    - press <kbd>Tab</kbd>
+<br />
+- Multiple selection modes can be specified.
+- Toggle only control point selection mode: 
+    - press <kbd>Shift - 1</kbd> or <kbd>Shift</kbd>-click the button(1).
+- Toggle only edge selection mode: 
+    - press <kbd>Shift - 2</kbd> or <kbd>Shift</kbd>-click the button(2).
+- Toggle only face selection mode: 
+    - press <kbd>Shift - 3</kbd> or <kbd>Shift</kbd>-click the button(3).
+- Toggle only solid selection mode: 
+    - press <kbd>Shift - 4</kbd> or <kbd>Shift</kbd>-click the button(4).
+</div>
 
 ## Selection
 
-You can select by clicking. Additionally, you can select by dragging the mouse or using shortcuts.
+- You can select by clicking. Additionally, you can select by dragging the mouse or using shortcuts.
 
 ### Selecting with Mouse Dragging
 
-The items that can be selected differ based on the direction of the mouse drag.
-
-- Dragging from the right towards the left: Everything that touches the green selection area is selected.
-- Dragging from the left towards the right: Only those completely within the purple selection area are selected.
+- The items that can be selected differ based on the direction of the mouse drag.
+<div className="dl">
+- Dragging from the right towards the left: 
+    - Everything that touches the green selection area is selected.
+- Dragging from the left towards the right: 
+    - Only those completely within the purple selection area are selected.
+</div>
+![Mouse Drag selection](./img/mouse-drag-selection.gif)
 
 ### Selecting with Shortcuts
 
-- Select all (**Select all**): <kbd>A</kbd>
-- Deselect all (**Deselect all**): <kbd>Esc</kbd>
-- Invert Selection (**Invert Selection**): <kbd>Alt - A</kbd>
-- Make selection unselectable (**Lock Selection**) 
-{' '}
-- Select edges included in the selection: <kbd>Ctrl - 2</kbd>
-- Select faces included in the selection: <kbd>Ctrl - 3</kbd>
-- Select solids included in the selection: <kbd>Ctrl - 4</kbd>
-{' '}
-- Add adjacent items to the selection: <kbd>Ctrl - Shift - =</kbd> 
-- Select edge loops: <kbd>Alt</kbd>+ left click 
-- Select edge rings: <kbd>Alt - Ctrl</kbd>+left click
-- Select all curves, regions on the same plane: <kbd>Alt</kbd>+ left click 
-- Select all parallel faces: <kbd>Alt - Ctrl</kbd>+ left click 
-{' '}
-- Select All Curves（**Select All Curves**）: Command Pallet <kbd>F</kbd>
+<div className="dl">
+- Select all: 
+    - press <kbd>A</kbd> or use **"Select all"** in the Command Palette.
+- Select All Curves: 
+    - Use **"Select All Curves"** in the Command Palette.
+- Deselect all: 
+    - Press <kbd>Esc</kbd> or use **"Deselect all"** in the Command Palette.
+- Invert Selection: 
+    - Press<kbd>Alt - A</kbd> or use **"Invert Selection"** in the Command Palette.
+- Make selection unselectable: 
+    - Use **"Lock Selected"** in the Command Palette.
+<br />
+- Select edges included in the selection: 
+    - Press <kbd>Ctrl - 2</kbd> or use **"Selection: convert to edges"** in the Command Palette.
+- Select faces included in the selection: 
+    - Press <kbd>Ctrl - 3</kbd> or use **"Selection: convert to faces"** in the Command Palette.
+- Select solids included in the selection: 
+    - Press <kbd>Ctrl - 4</kbd> or use **"Selection: convert to solids"** in the Command Palette.
 
+![Select objects included](./img/select-objects-included.gif)
+
+<br />
+- Add adjacent items to the selection: 
+    - Press <kbd>Ctrl - Shift - =</kbd> or use **"Select Adjacent"** in the Command Palette.
+- Select edge loops: 
+    - <kbd>Alt</kbd>-click 
+- Select edge rings: 
+    - <kbd>Alt - Ctrl</kbd>-click
+- Select all curves, regions on the same plane: 
+    - <kbd>Alt</kbd>-click 
+- Select all parallel faces: 
+    - <kbd>Alt - Ctrl</kbd>-click 
+</div>
