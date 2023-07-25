@@ -7,6 +7,10 @@
   "sketch": "Sketch Commands",
   "solid": "Solid Commands",
 
+  "options": {
+    "display": "hidden"
+  },
+
   "about": {
     "title": "About",
     "type": "page"
