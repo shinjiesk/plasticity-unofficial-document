@@ -1,26 +1,29 @@
 import  Reference  from 'components/Reference';
-import { Callout } from 'nextra/components'
-
-<Callout emoji="">This section applies to both sketches and solids.</Callout>
 
 # Curve Array
 
 <Reference shortcut="" command="Curve Array" button="" />
 
-You can duplicate curves, solids, sheets in a curve array.
+You can duplicate Curves, Solids, Sheets in a curve array.
 
-1. Select the object you want to move.
-2. Use the shortcut <kbd>F</kbd> to display the command palette and select **Curve Array**.
+1. Select the object you want to duplicate.
+2. Use **"Curve Array"** in the Command Palette.
 3. Select the curve to use as the path.
-   - **Number**
+4. Set the options in the command dialog and Shortcut Key.
+  - **Number**
     - Specify the number of duplications. You can also use <kbd>Shift</kbd>+Mouse wheel to adjust.
-   - **Twist**
+  - **Twist**
     - Specify the angle of twist along the curve in degrees.
-   - **Scale**
+  - **Scale**
     - Specify the scaling factor along the curve.
-   - **Alignment**
-     - **Parallel**
+  - **Alignment**
+    - **Parallel**
       - Duplicate the curves in parallel, regardless of the path.
-     - **Normal**
+    - **Normal**
       - Duplicate the curves with angles aligned to the path.
+   - <kbd>Shift</kbd>-Wheel up **Add copy**
+      - Increases the objects.
+   - <kbd>Shift</kbd>-Wheel down **Subtract copy**
+      - Reduces the objects.
 4. Confirm with OK in the command dialog or right click.
+
