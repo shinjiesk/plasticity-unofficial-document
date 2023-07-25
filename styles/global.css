@@ -1,4 +1,3 @@
-
 a {
   text-decoration: none !important;
 }
@@ -57,10 +56,8 @@ ul.nx-mt-6 {
   list-style-type: none !important;
 }
 
+/* Button Icon */
 
-/* Inline Image */
-
-/* img {
+.buttonIcon > img {
   display: inline !important;
 }
- */

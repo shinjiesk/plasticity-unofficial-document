@@ -1,4 +1,9 @@
 import  Reference from 'components/Reference';
+import ButtonIcon from 'components/ButtonIcon';
+import Option_K from '../options/sketch-k.en.mdx'
+import Option_X from '../options/axis-x.en.mdx'
+import Option_Y from '../options/axis-y.en.mdx'
+import Option_Z from '../options/axis-z.en.mdx'
 
 # Spline Curve（スプラインカーブ）
 
@@ -6,13 +11,16 @@ import  Reference from 'components/Reference';
 
 スプラインカーブを作成できます。
 
-1. ツールバーのボタンをクリックします。
+1. ツールバーのボタン <ButtonIcon type="button-spline-curve" /> をクリックします。
 2. スプラインカーブの最初の位置でクリックします。
 3. 次の位置でクリックを繰り返して、スプラインカーブを作成します。
+   <Option_K />
    - <kbd>Tab</kbd> **Control /  Through-point**
       - Control Point Curveに切り替えます。
    - <kbd>Ctrl-Z</kbd> **Undo**
       - 直前のクリックを取り消します。
-   - そのほかのオプションは[スケッチツールの共通オプション](common-options)を参照してください。
+   <Option_X />
+   <Option_Y />
+   <Option_Z />
 4. コマンドダイアログのOKまたは右クリックで確定します。
 5. スプラインカーブが作成されます。

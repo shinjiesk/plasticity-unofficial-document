@@ -1,4 +1,8 @@
 import  Reference  from 'components/Reference';
+import ButtonIcon from 'components/ButtonIcon';
+import Option_X from '../options/axis-x.ja.mdx'
+import Option_Y from '../options/axis-y.ja.mdx'
+import Option_Z from '../options/axis-z.ja.mdx'
 
 # Spiral（螺旋）
 
@@ -6,10 +10,12 @@ import  Reference  from 'components/Reference';
 
 螺旋を作成できます。
 
-1. ツールバーのボタンをクリックします。
+1. ツールバーのボタン <ButtonIcon type="button-spiral" /> をクリックします。
 2. 螺旋の軸の始点でクリックします。
 3. カーソルを動かして螺旋の軸の終点でクリックします。
-   - オプションは[スケッチツールの共通オプション](common-options)を参照してください。
+   <Option_X />
+   <Option_Y />
+   <Option_Z />
 4. カーソルを動かして螺旋の直径の位置でクリックします。
 5. コマンドダイアログとショートカットキーでオプションを設定します。
    - **Turns**    
@@ -28,3 +34,5 @@ import  Reference  from 'components/Reference';
       - 直径をマウス移動で指定します。それぞれの値が連動します。
 6. コマンドダイアログのOKまたは右クリックで確定します。
 7. 螺旋が作成されます。
+
+![spiral](/img/spiral.gif)

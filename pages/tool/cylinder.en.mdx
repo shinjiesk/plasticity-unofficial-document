@@ -1,4 +1,7 @@
 import  Reference  from 'components/Reference';
+import ButtonIcon from 'components/ButtonIcon';
+import Option_Boolean from '../options/boolean.en.mdx'
+import Option_X from '../options/axis-x.en.mdx'
 
 # Cylinder
 
@@ -6,14 +9,24 @@ import  Reference  from 'components/Reference';
 
 Allows you to create a cylinder from a circle specified by its center and diameter.
 
-1. Click the button on the toolbar.
+1. Click the button <ButtonIcon type="button-cylinder" /> on the toolbar.
 2. Click at the point for the circle's center on the base surface.
 3. Move the cursor and click on a point on the circumference.
+   - <kbd>V</kbd> **Vertical/ Horizontal**
+      - Changes the inclination with respect to the construction plane.
+   <Option_X />
 4. Move the cursor and click at the desired height.
+5. Set the options in the command dialog and Shortcut Key.
+   - **Select target bodies**
+      - Specifies the boolean targets.
+   - **Radius**
+      - Specifies the Radius.
+   - **Height**
+      - Specifies the Height.
+   <Option_Boolean />
    - <kbd>F</kbd> **Radius**
       - Move the cursor to specify the radius.
    - <kbd>D</kbd> **Height**
       - Move the cursor to specify the height.
-   - Other options: Refer to [Solid Editing Boolean options](boolean-options) .
-5. Click OK in the command dialog or right-click to confirm.
-6. A cylinder is created.
+6. Click OK in the command dialog or right-click to confirm.
+7. A cylinder is created.

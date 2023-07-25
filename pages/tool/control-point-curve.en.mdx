@@ -1,4 +1,9 @@
 import  Reference  from 'components/Reference';
+import ButtonIcon from 'components/ButtonIcon';
+import Option_K from '../options/sketch-k.en.mdx'
+import Option_X from '../options/axis-x.en.mdx'
+import Option_Y from '../options/axis-y.en.mdx'
+import Option_Z from '../options/axis-z.en.mdx'
 
 # Control Point Curve
 
@@ -6,13 +11,16 @@ import  Reference  from 'components/Reference';
 
 You can create a control point curve.
 
-1. Click the button on the toolbar.
+1. Click the button <ButtonIcon type="button-control-point-curve" /> on the toolbar.
 2. Click at the start point of the control point curve.
 3. Repeat clicking at the next point to create the control point curve.
+   <Option_K />
    - <kbd>Tab</kbd> **Control / Through-point**
       - Switches to Spline curve.
    - <kbd>Ctrl-Z</kbd> **Undo**
       - Cancels the last click.
-   - Other options: Refer to [Sketch Tool Common options](common-options) .
+   <Option_X />
+   <Option_Y />
+   <Option_Z />
 4. Confirm with OK in the command dialog or right click.
 5. A control point curve is created.

@@ -1,4 +1,9 @@
 import  Reference  from 'components/Reference';
+import ButtonIcon from 'components/ButtonIcon';
+import Option_K from '../options/sketch-k.ja.mdx'
+import Option_X from '../options/axis-x.ja.mdx'
+import Option_Y from '../options/axis-y.ja.mdx'
+import Option_Z from '../options/axis-z.ja.mdx'
 
 # Three Point Rectangle（3点指定の四角形）
 
@@ -6,11 +11,14 @@ import  Reference  from 'components/Reference';
 
 3点を指定した四角形を作成できます。
 
-1. ツールバーのボタンをクリックします。
+1. ツールバーのボタン <ButtonIcon type="button-three-point-rectangle" /> をクリックします。
 2. 四角形の一辺の始点でクリックします。
    - `Tab` 
       - 長さを数値で指定します。
-   - そのほかのオプションは[スケッチツールの共通オプション](common-options)を参照してください。
+   <Option_K />
+   <Option_X />
+   <Option_Y />
+   <Option_Z />
 3. 四角形の一辺の終点でクリックします。
 4. 四角形の3点目をクリックします。
 5. コマンドダイアログのOKまたは右クリックで確定します。

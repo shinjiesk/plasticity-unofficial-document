@@ -1,4 +1,9 @@
 import  Reference  from 'components/Reference';
+import ButtonIcon from 'components/ButtonIcon';
+import Option_K from '../options/sketch-k.ja.mdx'
+import Option_X from '../options/axis-x.ja.mdx'
+import Option_Y from '../options/axis-y.ja.mdx'
+import Option_Z from '../options/axis-z.ja.mdx'
 
 # Control Point Curve（制御点カーブ）
 
@@ -6,13 +11,16 @@ import  Reference  from 'components/Reference';
 
 制御点カーブを作成できます。
 
-1. ツールバーのボタンをクリックします。
+1. ツールバーのボタン <ButtonIcon type="button-control-point-curve" /> をクリックします。
 2. 制御点カーブの最初の位置でクリックします。
 3. 次の位置でクリックを繰り返して、制御点カーブを作成します。
+   <Option_K />
    - <kbd>Tab</kbd> **Control /  Through-point**
       - Spline Curveに切り替えます。
    - <kbd>Ctrl-Z</kbd> **Undo**
       - 直前のクリックを取り消します。
-   - そのほかのオプションは[スケッチツールの共通オプション](common-options)を参照してください。
+   <Option_X />
+   <Option_Y />
+   <Option_Z />
 4. コマンドダイアログのOKまたは右クリックで確定します。
 5. 制御点カーブが作成されます。

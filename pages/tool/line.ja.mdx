@@ -1,4 +1,9 @@
 import  Reference  from 'components/Reference';
+import ButtonIcon from 'components/ButtonIcon';
+import Option_K from '../options/sketch-k.ja.mdx'
+import Option_X from '../options/axis-x.ja.mdx'
+import Option_Y from '../options/axis-y.ja.mdx'
+import Option_Z from '../options/axis-z.ja.mdx'
 
 # Line（線分）
 
@@ -6,13 +11,16 @@ import  Reference  from 'components/Reference';
 
 一連の線分を作成できます。
 
-1. ツールバーのボタンをクリックします。
+1. ツールバーのボタン <ButtonIcon type="button-line" /> をクリックします。
 2. 線分の最初の位置でクリックします。
 3. 次の位置でクリックを繰り返して、一連の線分を作成します。
    - <kbd>Tab</kbd> 
       - 長さと角度を数値で指定します。
+   <Option_K />
    - <kbd>Ctrl-Z</kbd> **Undo**
       - 直前のクリックを取り消します。
-   - そのほかのオプションは[スケッチツールの共通オプション](common-options)を参照してください。
+   <Option_X />
+   <Option_Y />
+   <Option_Z />
 4. コマンドダイアログのOKまたは右クリックで確定します。
 5. 線分が作成されます。

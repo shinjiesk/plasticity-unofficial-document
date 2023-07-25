@@ -1,4 +1,7 @@
 import  Reference  from 'components/Reference';
+import ButtonIcon from 'components/ButtonIcon';
+import Option_Boolean from '../options/boolean.ja.mdx'
+import Option_X from '../options/axis-x.ja.mdx'
 
 # Cylinder（円柱）
 
@@ -6,14 +9,24 @@ import  Reference  from 'components/Reference';
 
 中心と直径で指定した円から円柱を作成できます。
 
-1. ツールバーのボタンをクリックします。
+1. ツールバーのボタン <ButtonIcon type="button-cylinder" /> をクリックします。
 2. 円の中心位置でクリックします。
 3. カーソルを移動して直径の位置でクリックします。
+   - <kbd>V</kbd> **Vertical/ Horizontal**
+      - Changes the inclination with respect to the construction plane.
+   <Option_X />
 4. カーソルを動かして高さの位置でクリックします。
+5. コマンドダイアログとショートカットキーでオプションを設定します。
+   - **Select target bodies**
+      - ブーリアンのターゲットを指定します。
+   - **Radius**
+      - 直径を指定します。
+   - **Height**
+      - 高さを指定します。
+   <Option_Boolean />
    - <kbd>F</kbd> **Radius**
       - カーソルを動かして直径を指定します。
    - <kbd>D</kbd> **Height**
       - カーソルを動かして高さを指定します。
-   - そのほかのオプションは[ブーリアンオプション](boolean-options)を参照してください。
 5. コマンドダイアログのOKまたは右クリックで確定します。
 6. 円柱が作成されます。
