@@ -42,6 +42,9 @@ kbd {
 li > ul {
   margin-top: 0 !important;
 }
+li > ol {
+  margin-top: 0 !important;
+}
 
 ul.nx-mt-6 {
   margin-top: 0rem;

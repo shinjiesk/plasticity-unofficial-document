@@ -1,6 +1,8 @@
 import  Reference  from 'components/Reference';
-import { Callout } from 'nextra/components'
-
+import ButtonIcon from 'components/ButtonIcon';
+import Option_X from '../options/axis-x.en.mdx'
+import Option_Y from '../options/axis-y.en.mdx'
+import Option_Z from '../options/axis-z.en.mdx'
 
 # Rectangular Array
 
@@ -9,13 +11,30 @@ import { Callout } from 'nextra/components'
 You can duplicate Curves, Solids, Sheets in a rectangular array.
 
 1. Select the object you want to duplicate.
-2. Click on the button.
+2. Click the button <ButtonIcon type="button-rectangular-array" /> on the Right of Command Bar.
 3. The duplication preview will be displayed.
+   <Option_X />
+   <Option_Y />
+   <Option_Z />
 4. Click on the desired direction.
-   - **Distance 1**: Specify the distance.
-   - **Number**: Specify the number of duplications. You can also use <kbd>Shift</kbd>+Mouse wheel to adjust.
-5. \<Option\> If you want to duplicate in another direction, click on **Select endpoint 2** in the dialog.
+5. Set the options in the command dialog and Shortcut Key.
+   - **Distance 1**
+      - Specify the distance.
+   - **Number**
+      - Specify the number of duplications.
+   - <kbd>Shift</kbd>-Wheel up **Add copy**
+      - Increases the number of duplications.
+   - <kbd>Shift</kbd>-Wheel down **Subtract copy**
+      - Reduces the number of duplications.
+6. \<Option\> If you want to duplicate in another direction, click on **Select endpoint 2** in the dialog.
     1. Click on the desired direction for duplication.
-       - **Distance 2**: Specify the distance.
-       - **Repeat**: Specify the number of repetitions. You can also use <kbd>Shift</kbd>+Mouse wheel to adjust.
-6. Confirm with OK in the command dialog or right click.
+    2. Set the options in the command dialog 
+      - **Distance 2**
+         - Specify the distance.
+      - **Repeat**
+         - Specify the number of repetitions.
+      - <kbd>Shift</kbd>-Wheel up **Add copy**
+         - Increases the number of duplications.
+      - <kbd>Shift</kbd>-Wheel down **Subtract copy**
+         - Reduces the number of duplications.
+7. Confirm with OK in the command dialog or right click.
