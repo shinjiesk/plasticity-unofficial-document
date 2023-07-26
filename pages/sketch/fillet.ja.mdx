@@ -1,0 +1,32 @@
+
+import Reference  from 'components/Reference';
+import { Callout } from 'nextra/components'
+import ButtonIcon from 'components/ButtonIcon';
+
+# Fillet（フィレット）
+
+<Reference shortcut="B" command="Fillet" button="コマンドバー右" />
+
+カーブとカーブの角の頂点を、フィレットまたは面取りできます。
+
+1. フィレットまたは面取りをしたいカーブまたは頂点を選択します。
+2. <kbd>B</kbd> を押すか、コマンドバー右の <ButtonIcon type="button-fillet" /> をクリックします。
+3. 黄色い点を動かすことで、フィレットまたは面取りを作成できます。
+作成される形状は、動かす方向によって異なります。
+4. コマンドダイアログとショートカットキーでオプションを設定します。
+  - **Distance**
+    - 距離を指定します。
+   - <kbd>D</kbd> **Fillet Distance**
+      - マウスの動きでフィレットの距離を指定します。
+   - <kbd>C</kbd> **Chanfer Distance**
+        - マウスの動きで面取りの距離を指定します。
+4. コマンドダイアログの OK をクリックするか、右クリックで確定します。
+
+![Fillet](/img/fillet.gif)
+---
+<Callout type="info" emoji="ℹ️">
+**高度な情報**<br />
+このコマンドは、選択されていたオブジェクトに応じて以下のコマンドを自動的に呼び出します。
+- カーブとカーブの角の頂点が選択されていたとき：**Fillet Curve** と **Fillet Vertex** コマンドが呼び出されます。このページで説明している機能です。
+- ソリッドとシートが選択されていたとき：[**Fillet Shell**](../solid/fillet) コマンドが呼び出されます。
+</Callout>

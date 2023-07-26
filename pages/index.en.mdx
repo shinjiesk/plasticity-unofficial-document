@@ -2,7 +2,14 @@
 title: Plasticity Unofficial Manual
 description: An unofficial manual for Plasticity 3D. Updated daily!
 ---
+import { Callout } from 'nextra/components'
+
 # Plasticity Unofficial Manual
+
+<Callout type="info" emoji="ℹ️">
+Unofficial Manual Update Information
+- July 26, 2023 Added: [Fillet(Curve)](./sketch/fillet)、[Subdivide Curve](./sketch/subdivide-curve)、[Extend(Curve)](./sketch/extend)
+</Callout>
 
 ## Tools
 | Command Name                                        | Shortcut  | Description                     |
@@ -50,27 +57,27 @@ description: An unofficial manual for Plasticity 3D. Updated daily!
 | [Remove Material 🚧](common/remove-material)   | <kbd>Alt-M</kbd>   | Remove material                            |
 
 ## Sketch Commands - Region, Curve, Point, CV
-| Command Name                                                      | Shortcut  | Description                      |
-| ----------------------------------------------------------------- | --------- | -------------------------------- |
-| [Fillet 🚧](sketch/fillet)                                       | <kbd>B</kbd>       | Fillet or chamfer Curves         |
+| Command Name                                                      | Shortcut           | Description                      |
+| ----------------------------------------------------------------- | ------------------ | -------------------------------- |
+| [Fillet](sketch/fillet)                                       | <kbd>B</kbd>       | Fillet or chamfer Curves         |
 | [Offset Curve 🚧](sketch/offset-curve)                           | <kbd>O</kbd>       | Offset Curves                    |
-| [Subdivide Curve 🚧](sketch/subdivide-curve)                     | <kbd>Shift-S</kbd> | Increase CVs                     |
-| [Extend 🚧](sketch/extend)                                       |           | Extend Curve                     |
-| [Rebuild 🚧](sketch/rebuild)                                     |           | Rebuild Curve                    |
-| [Text 🚧](sketch/text)                                           |           | Create text                      |
-| **Project Commands**                                             |           |                                  |
+| [Subdivide Curve](sketch/subdivide-curve)                     | <kbd>Shift-S</kbd> | Increase CVs of Curves           |
+| [Extend](sketch/extend)                                       |                    | Extend Curve                     |
+| [Rebuild 🚧](sketch/rebuild)                                     |                    | Rebuild Curve                    |
+| [Text 🚧](sketch/text)                                           |                    | Create text                      |
+| **Project Commands**                                              |                    |                                  |
 | [Project](sketch/project)                                         | <kbd>I</kbd>       | Project Curve to Solid or Sheet  |
-| [Duplicate Curve and Project](sketch/duplicate-curve-and-project) |           | Duplicate Curve And Project      |
-| **Join and Split Commands**                                      |           |                                  |
+| [Duplicate Curve and Project](sketch/duplicate-curve-and-project) |                    | Duplicate Curve And Project      |
+| **Join and Split Commands**                                       |                    |                                  |
 | [Join 🚧](sketch/join)                                           | <kbd>J</kbd>       | Join Curves at connecting points |
-| [Bridge 🚧](sketch/bridge)                                       |           | Join Curves                      |
+| [Bridge 🚧](sketch/bridge)                                       |                    | Join Curves                      |
 | [Trim 🚧](sketch/trim)                                           | <kbd>T</kbd>       | Trim Curve                       |
-| [Cut Curve 🚧](sketch/cut-curve)                                 |           | Cut Curve                        |
-| [Split Segment 🚧](sketch/split-segment)                         |           | Decompose Curve into segments    |
-| **Point Commands**                                         |           |                                  |
-| [Delete Redundant Topology 🚧](sketch/delete-redundant-topology) |           | Remove excess points             |
-| [Convert Vertex 🚧](sketch/convert-vertex)                       |           | Converting vertices to CV        |
-|                                                                   |           |                                  |
+| [Cut Curve 🚧](sketch/cut-curve)                                 |                    | Cut Curve                        |
+| [Split Segment 🚧](sketch/split-segment)                         |                    | Decompose Curve into segments    |
+| **Point Commands**                                                |                    |                                  |
+| [Delete Redundant Topology 🚧](sketch/delete-redundant-topology) |                    | Remove excess points             |
+| [Convert Vertex 🚧](sketch/convert-vertex)                       |                    | Converting vertices to CV        |
+|                                                                   |                    |                                  |
 
 ## Solid Commands - Solid, Sheet, Face, Edge
 | Command Name                                                     | Shortcut                   | Description                                        |
