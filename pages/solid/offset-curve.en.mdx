@@ -1,22 +1,62 @@
 import Reference from 'components/Reference';
-import { Callout } from 'nextra/components'
-
 
 # Offset Curve
 
-<Reference shortcut="O" command="Offset Curve" button="" />
+<Reference shortcut="O" command="Offset Curve" button="Right of Command Bar" />
 
 This command automatically calls the following command depending on the selected object.
 
 - When curves are selected: [**"Offset Planar Curve"**](../sketch/offset-curve#offset-planar-curve) in Sketch's **"Offset Curve"**.
 - When Regions are selected: [**"Offset Region"**](../sketch/offset-curve#offset-region) in Sketch's **"Offset Curve"**.
-- When Faces are selected: see **"Offset Face Loop"**] described below.
-- When Edges are selected: see **"Offset Edge"**] described below.
+- When Faces are selected: see [**"Offset Face Loop"**](#offset-face-loop) described below.
+- When Edges are selected: see [**"Offset Edge"**](#offset-edge) described below.
 
 ## Offset Face Loop
 
+You can offset Face loops to create new Edge.
+
+1. Select the Faces you want to offset.
+2. Press <kbd>O</kbd>.
+3. Move the mouse to specify the distance.
+4. Set the options in the command dialog and Shortcut Key.
+    - **Distance**
+        - Specify the Distance.
+    - **Gap fill**
+        - **Round**
+         - Rounds convex corners.
+        - **Linear**
+            - Connects convex corners with straight lines.
+        - **Natural**
+            - Natural
+    - <kbd>I</kbd> **Individual**
+        - When multiple Faces are selected, turning on this option offsets the Faces in a combined form.
+   - <kbd>D</kbd> **Distance**
+      - Specifies the distance with mouse movement.
+5. Confirm with OK in the command dialog or right click.
+
+![Offset Face Loop](/img/offset-face-loop.gif)
 
 ## Offset Edge
 
+You can offset Edges to create new Edge.
 
+1. Select the Edges you want to offset.
+2. Press <kbd>O</kbd>.
+3. Move the mouse left and right to specify the direction and distance.
+4. Set the options in the command dialog and Shortcut Key.
+    - **Distance**
+        - Specify the Distance.
+    - **Gap fill**
+        - **Round**
+         - Rounds convex corners.
+        - **Linear**
+            - Connects convex corners with straight lines.
+        - **Natural**
+            - Natural
+    - <kbd>Tab</kbd> **Lock distances**
+        - Offset with equal distance on both sides.
+   - <kbd>D</kbd> **Distance**
+      - Specifies the distance with mouse movement.
+5. Confirm with OK in the command dialog or right click.
 
+![Offset Edge](/img/offset-edge.gif)
