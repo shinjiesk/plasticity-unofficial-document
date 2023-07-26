@@ -48,9 +48,10 @@ const Reference = ({ shortcut, command, button }) => {
       <style jsx>{`
         .reference {
           width: 50%;
-          background-color: #f5f5f5;
           padding: 16px;
-          border-radius: 4px;
+          border: 1px solid #888;
+          border-radius: 6px;
+          margin-top: 1rem;
         }
 
         table {
