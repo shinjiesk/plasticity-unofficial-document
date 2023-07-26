@@ -7,10 +7,6 @@
   "sketch": "スケッチのコマンド",
   "solid": "ソリッドのコマンド",
 
-  "options": {
-    "display": "hidden"
-  },
-
   "about": {
     "title": "About",
     "type": "page"
