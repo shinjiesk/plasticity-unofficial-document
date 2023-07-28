@@ -6,7 +6,7 @@
   "common": "Common Commands",
   "sketch": "Sketch Commands",
   "solid": "Solid Commands",
-
+  "cad-essentials": "CAD Essentials",
   "about": {
     "title": "About",
     "type": "page"
