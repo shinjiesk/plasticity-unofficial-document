@@ -63,14 +63,14 @@ const config: DocsThemeConfig = {
           content="Plasticity Unofficial Manual"
         ></meta>
         <meta property="og:url" content={url} />
-        <meta
+{/*         <meta
           property="og:title"
           content={frontMatter.title || "Plasticity Unofficial Manual"}
-        />
-        <meta
+        /> */}
+{/*         <meta
           property="og:description"
           content={frontMatter.description || ""}
-        />
+        /> */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@snj_esk" />
         <meta name="twitter:creator" content="@snj_esk" />
