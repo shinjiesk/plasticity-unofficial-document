@@ -1,20 +1,29 @@
 import os
 
+""" 
+
+Confirmation of the existence of en and ja files in the Pages directory.
+  .md, .mdx, .json
+  
+"""
 
 def check_files(directory):
     error_found = False
 
-    # ディレクトリ内の全てのファイルとディレクトリを走査
+    # Traverse all files and directories in the specified directory.
     for root, dirs, files in os.walk(directory):
-        # imgディレクトリ内のファイルはチェック対象から外す
+        # Exclude files in the img directory from the check.
         if "img" in root:
             continue
         for file in files:
-            # _app.jsファイルはチェック対象から外す
+            # Exclude the _app.js file from the check.
             if file == "_app.js":
                 continue
+            # Exclude the 404.js file from the check.
+            if file == "404.js":
+                continue
 
-            # ファイルが適切な拡張子で終わっているかをチェック
+            # Check if the file has the appropriate extension.
             if file.endswith(".en.md"):
                 ja_file = file.replace(".en.md", ".ja.md")
                 if ja_file not in files:
@@ -67,5 +76,5 @@ def check_files(directory):
         print("No errors found.")
 
 
-# チェックを行うディレクトリを指定
+# Specify the directory to check.
 check_files("./pages")

@@ -1,6 +1,6 @@
 {
   "version": "0.2",
-  "language": "en-GB",
+  "language": "en",
   // allowCompoundWords - set to true to allow compound words by default
   "allowCompoundWords": true,
   // words - list of words to be always considered correct
