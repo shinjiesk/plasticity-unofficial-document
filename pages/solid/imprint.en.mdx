@@ -1,8 +1,30 @@
 import  Reference  from 'components/Reference';
 
-<Reference shortcut="" command="" button="" />
+<Reference shortcut="Shift-I" command="Imprint" button="" />
 
 # Imprint
 
-- `Shift-I`
+There are two functions in Imprint:
+- [**Imprint Curve Body**](#imprint-curve-body): This function projects a Curves onto a Solid or Sheet to create an Edges.
+- [**Imprint Body Body**](#imprint-body-body): This function creates an Edge at the intersection of two Solids or Sheets.
 
+This command automatically calls the following command depending on the selected object.
+- When Curves or  are selected: [**"Offset Planar Curve"**](#offset-planar-curve) described below.
+- When Faces are selected: see [**"Offset Face Loop"**](../solid/offset-curve#offset-face-loop) in Solid's **"Offset Curve"**.
+
+
+
+## Imprint Curve Body(#imprint-curve-body)
+
+You can project a Curves onto a Solid or Sheet to create an Edges.
+
+
+
+abc
+
+
+
+
+## Imprint Body Body(#imprint-body-body)
+
+You can create an Edge at the intersection of two Solids or Sheets.
