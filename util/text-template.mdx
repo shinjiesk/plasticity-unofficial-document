@@ -1,0 +1,100 @@
+import Reference  from 'components/Reference';
+import { Callout } from 'nextra/components'
+import ButtonIcon from 'components/ButtonIcon';
+import Option_X from 'options/axis-x.en.mdx'
+import Option_Y from 'options/axis-y.en.mdx'
+import Option_Z from 'options/axis-z.en.mdx'
+import Option_Boolean from '../options/boolean.en.mdx'
+
+# Dummy Page
+
+<Reference shortcut="" command="Curve Array" button="Right of Command Bar" />
+
+This command automatically calls the following command depending on the selected object.
+- When Curves are selected: see [**"Offset Planar Curve"**](#offset-planar-curve) described below.
+- When Faces are selected: see [**"Offset Face Loop"**](../solid/offset-curve#offset-face-loop) in Solid's **"Offset Curve"**.
+- When two Solids or/and Sheets are selected: see [**"Imprint Body Body"**](#imprint-body-body) described below.
+
+You can 
+
+1. Select the object you want to duplicate.
+
+2. Press <kbd></kbd>.
+2. Use **""** in the Command Palette.
+2. Click the button <ButtonIcon type="button-radial-array" /> on the Right of Command Bar.
+2. Press <kbd></kbd> or click the button <ButtonIcon type="button-" /> on the Right of Command Bar.
+2. When a face is selected, the default command, Offset Face, is automatically executed.
+
+3. Proceed to step 4.
+
+3. Select the curve to use as the path.
+3. You can create a fillet or chamfer by moving the yellow point.
+3. Move the yellow dot to specify the distance.
+
+4. Set the options in the command dialog and Shortcut Key.
+   - ****
+      - Specify the 
+   - <kbd></kbd> ****
+      - 
+
+   - <kbd></kbd> ****
+      - Specifies the    with mouse movement.
+
+   - <kbd>Shift</kbd>-Wheel up **Add copy**
+      - Increases the number of duplications.
+   - <kbd>Shift</kbd>-Wheel down **Subtract copy**
+      - Reduces the number of duplications.
+
+   - <kbd>Tab</kbd> **Lock distances**
+      - Extrude with equal distance on both sides.
+
+   - <kbd>F</kbd> **Freestyle**
+      - It functions similarly to the **"Freestyle Offset Planar Curve"** described below.
+
+   <Option_X />
+   <Option_Y />
+   <Option_Z />
+   <Option_Boolean />
+
+4. Confirm with OK in the command dialog or right click.
+
+5. A circle is created.
+
+![](/img/hoge.gif)
+
+3. Move the cursor and click at the end point of the spiral axis.
+
+
+This command can be executed not only through the **Freestyle** option in the **"Offset Curve"** command but also by using the **"Freestyle Offset Planar Curve"** in the command palette.
+
+3. Press <kbd>F</kbd> to enter Freestyle mode.
+4. Move the cursor to the offset point and click.
+    - If Grid Snaps are enabled, the offset point snaps to the grid.
+    - If Object Snaps are enabled, the offset point snaps to the object.
+
+<Callout type="info" emoji="ℹ️">
+**Advanced info**<br />
+This command automatically calls the following command depending on the selected object.
+- When Curves or vertices at corners are selected: **Fillet Curve** and "Fillet Vertex" commands are called with the functionality described on this page.
+- When solids or sheets are selected: **Fillet Shell** command is called, which is described on the [**Fillet Shell**](../solid/fillet) page.
+</Callout>
+
+<Callout emoji="❗">
+**Attention**<br />
+To join two Curves, their endpoints must be perfectly aligned.
+When they are perfectly aligned, the Points will turn green. If they appear purple, they are not aligned.
+To ensure a precise alignment of the two Points, make sure [**Object Snaps**](../3d-viewport/grid-and-snap#object-snap) are enabled, then hold down <kbd>Ctrl</kbd> and drag to snap to the other point.
+</Callout>
+
+<Callout type="warning" emoji="⚠️">
+</Callout>
+
+
+
+**高度な情報**<br />
+このコマンドは、選択されていたオブジェクトに応じて以下のコマンドを自動的に呼び出します。
+
+コマンドダイアログとショートカットキーでオプションを設定します。
+コマンドダイアログでオプションを設定します。
+
+コマンドダイアログのOKまたは右クリックで確定します。
