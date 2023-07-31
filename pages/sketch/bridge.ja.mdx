@@ -1,9 +1,6 @@
 import  Reference  from 'components/Reference';
 import ButtonIcon from 'components/ButtonIcon';
 import { Callout } from 'nextra/components'
-import Option_X from 'options/axis-x.ja.mdx'
-import Option_Y from 'options/axis-y.ja.mdx'
-import Option_Z from 'options/axis-z.ja.mdx'
 
 # Bridge
 
@@ -28,32 +25,32 @@ import Option_Z from 'options/axis-z.ja.mdx'
 
 1. ツールバーの <ButtonIcon type="button-bridge-curve" /> をクリックします。
 2. 始点をクリックします。
-   <Option_X />
-   <Option_Y />
-   <Option_Z />
-    - <kbd>N</kbd> **Normal:** フェイスの法線方向に限定します。
+   - <kbd>X</kbd> **X axis:** X軸方向に限定します。
+   - <kbd>Y</kbd> **Y axis:** Y軸方向に限定します。
+   - <kbd>Z</kbd> **Z axis:** Z軸方向に限定します。
+   - <kbd>N</kbd> **Normal:** フェイスの法線方向に限定します。
 3. 終点をクリックします。
 4. コマンドダイアログとショートカットキーでオプションを設定します。
-    - **T:**
+   - **T:**
         - **Value 1:** 始点のセグメント上の相対位置(0~1.0)を指定します。
         - **Value 2:** 終点のセグメント上の相対位置(0~1.0)を指定します。
-    - **Direction:** 
+   - **Direction:** 
         - **Direction 1**: 始点の方向を反転します。
         - **Direction 2**: 終点の方向を反転します。
-    - **Tension 1:**
+   - **Tension 1:**
         - **Value 1:** 始点のテンション値(\<0,0\<)を指定します。
         - **Value 2:** 終点のテンション値(\<0,0\<)を指定します。
-    - **Tension 2:**
+   - **Tension 2:**
         - **Value 1:** 
         - **Value 2:**
-    - **Tension 3:**
+   - **Tension 3:**
         - **Value 1:** 
         - **Value 2:**
-    - **Start curvature:**
+   - **Start curvature:**
         - **G0, G1, G2, G3:** 始点での[曲線の連続性](../cad-essentials/continuity-curve-and-surface)を指定します。
      - **End curvature:**
         - **G0, G1, G2, G3:** 終点での[曲線の連続性](../cad-essentials/continuity-curve-and-surface)を指定します。
-    -  **Trim:** オンにすると、ブリッジからはみ出たカーブはトリムされます。
+   -  **Trim:** オンにすると、ブリッジからはみ出たカーブはトリムされます。
 4. コマンドダイアログでOKを押すか、右クリックで確定します。
 
 ![Bridge Curve](/img/bridge-curve.gif)
@@ -65,16 +62,16 @@ import Option_Z from 'options/axis-z.ja.mdx'
 1. 繋げたいふたつのポイントを選択します。
 2. コマンドパレットで **"Bridge"** を実行します。
 4. コマンドダイアログとショートカットキーでオプションを設定します。
-    - **Tension 1:**
+   - **Tension 1:**
         - **Value 1:** 始点のテンション値(\<0,0\<)を指定します。
         - **Value 2:** 終点のテンション値(\<0,0\<)を指定します。
-    - **Tension 2:**
+   - **Tension 2:**
         - **Value 1:** 
         - **Value 2:**
-    - **Tension 3:**
+   - **Tension 3:**
         - **Value 1:** 
         - **Value 2:**
-    - **Start curvature:**
+   - **Start curvature:**
         - **G0, G1, G2, G3:** 始点での[曲線の連続性](../cad-essentials/continuity-curve-and-surface)を指定します。
      - **End curvature:**
         - **G0, G1, G2, G3:** 終点での[曲線の連続性](../cad-essentials/continuity-curve-and-surface)を指定します。
@@ -87,25 +84,23 @@ import Option_Z from 'options/axis-z.ja.mdx'
 1. 繋げたいふたつのエッジを選択します。
 2. コマンドパレットで **"Bridge"** を実行します。
 4. コマンドダイアログとショートカットキーでオプションを設定します。
-    - **Side** 
+   - **Side** 
         - **Side 1**: 最初に選択したエッジの端点のどちら側にブリッジするかを指定します。
         - **Side 2**: 次に選択したエッジの端点のどちら側にブリッジするかを指定する。
-    - **Tension 1:**
+   - **Tension 1:**
         - **Value 1:** 始点のテンション値(\<0,0\<)を指定します。
         - **Value 2:** 終点のテンション値(\<0,0\<)を指定します。
-    - **Tension 2:**
+   - **Tension 2:**
         - **Value 1:** 
         - **Value 2:**
-    - **Tension 3:**
+   - **Tension 3:**
         - **Value 1:** 
         - **Value 2:**
-    - **Start curvature:**
+   - **Start curvature:**
         - **G0, G1, G2, G3:** 始点での[曲線の連続性](../cad-essentials/continuity-curve-and-surface)を指定します。
      - **End curvature:**
         - **G0, G1, G2, G3:** 終点での[曲線の連続性](../cad-essentials/continuity-curve-and-surface)を指定します。 
 4. コマンドダイアログでOKを押すか、右クリックで確定します。
 
 ![Bridge Edge](/img/bridge-edge.gif)
-
-
 

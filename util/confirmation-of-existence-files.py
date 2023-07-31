@@ -75,6 +75,5 @@ def check_files(directory):
     if not error_found:
         print("No errors found.")
 
-
 # Specify the directory to check.
 check_files("./pages")
