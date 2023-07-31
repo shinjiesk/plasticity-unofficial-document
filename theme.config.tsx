@@ -16,12 +16,12 @@ const config: DocsThemeConfig = {
           }}
         >
           <div>
-            <a href="/en">English</a>
+            <a href="/">English</a>
             <span> | </span>
             <a href="/ja">日本語</a>
           </div>
           <div>{new Date().getFullYear()}©Shinji esk.</div>
-{/*           <div>
+          {/*           <div>
             <a
               href="https://github.com/shinjiesk/plasticity-unofficial-document"
               rel="nofollow"
