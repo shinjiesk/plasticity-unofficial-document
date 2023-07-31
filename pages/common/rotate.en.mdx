@@ -1,18 +1,23 @@
 import Reference from 'components/Reference';
-import { Callout } from 'nextra/components'
 
 # Rotate
 
 <Reference shortcut="R" command="Rotate" button="Left of Command Bar" />
 
-You can rotate: Curves, multiple points, multiple  CVs, solids, sheets, faces.
-{/* 
+You can rotate Curves, multiple points, multiple  CVs, solids, sheets, faces.
+
 1. Select the objects you want to rotate.
-2. Press <kbd>R</kbd> or click the button.
+2. Press <kbd>R</kbd>.
 3. Use the displayed Rotation Gizmo to rotate.
-   - <kbd>F</kbd> **Freestyle**
-      - Specify the starting point with the first click and the ending point with the next click.
-   - Other options: Refer to [Common options](common-options) .
-4. Confirm with OK in the command dialog or right click.
- */}
+4. Set the options in the command dialog and Shortcut Key.
+   - **Angle:** Specify the last specified angle using the rotation Gizmo as a numerical value
+   - **Axis:** Specify the rotation axis using the X, Y, or Z vector.
+   - <kbd>X</kbd> **X axis:** Limit to the X-axis direction.
+   - <kbd>Y</kbd> **Y axis:** Limit to the Y-axis direction.
+   - <kbd>Z</kbd> **Z axis:** Limit to the Z-axis direction.
+   - <kbd>G</kbd> **Screen space:** Limit to the visible plane.
+   - <kbd>F</kbd> **Freestyle:** Specify the rotation axis and reference point by clicking three times.
+   - <kbd>V</kbd> **Pivot:** Click to specify the position of the Gizmo.
+   - <kbd>W</kbd> **Worldspace:** Reset the rotation axis.
+5. Confirm with OK in the command dialog or right click.
 
