@@ -21,14 +21,14 @@ const config: DocsThemeConfig = {
             <a href="/ja">日本語</a>
           </div>
           <div>{new Date().getFullYear()}©Shinji esk.</div>
-          {/*           <div>
+          <div>
             <a
               href="https://github.com/shinjiesk/plasticity-unofficial-document"
               rel="nofollow"
             >
               GitHub
             </a>
-          </div> */}
+          </div>
         </div>
       </>
     ),
