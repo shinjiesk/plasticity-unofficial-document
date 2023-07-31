@@ -5,12 +5,6 @@ import { useConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
   logo: <span>Plasticity Unofficial Manual</span>,
-  project: {
-    link: "https://github.com/shinjiesk/plasticity-unofficial-document",
-  },
-  docsRepositoryBase:
-    "https://github.com/shinjiesk/plasticity-unofficial-document",
-
   footer: {
     text: (
       <>
@@ -21,11 +15,19 @@ const config: DocsThemeConfig = {
             width: "100%",
           }}
         >
-          <div>{new Date().getFullYear()}©Shinji esk</div>
           <div>
             <a href="/en">English</a>
             <span> | </span>
             <a href="/ja">日本語</a>
+          </div>
+          <div>{new Date().getFullYear()}©Shinji esk.</div>
+          <div>
+            <a
+              href="https://github.com/shinjiesk/plasticity-unofficial-document"
+              rel="nofollow"
+            >
+              GitHub
+            </a>
           </div>
         </div>
       </>
@@ -36,6 +38,12 @@ const config: DocsThemeConfig = {
     toggleButton: true,
     defaultMenuCollapseLevel: 1,
   },
+  feedback: {
+    content: null,
+  },
+  editLink: {
+    text: null,
+  },
   gitTimestamp: ({ timestamp }) => (
     <span>Last updated on {timestamp.toLocaleDateString()}</span>
   ),
@@ -43,7 +51,7 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter();
     if (asPath !== "/" && asPath !== "/ja" && asPath !== "/en") {
       return {
-        titleTemplate: "%s – Plasticity Unofficial Manual",
+        titleTemplate: "%s - Plasticity Unofficial Manual",
       };
     }
   },
@@ -63,11 +71,11 @@ const config: DocsThemeConfig = {
           content="Plasticity Unofficial Manual"
         ></meta>
         <meta property="og:url" content={url} />
-{/*         <meta
+        {/*         <meta
           property="og:title"
           content={frontMatter.title || "Plasticity Unofficial Manual"}
         /> */}
-{/*         <meta
+        {/*         <meta
           property="og:description"
           content={frontMatter.description || ""}
         /> */}
