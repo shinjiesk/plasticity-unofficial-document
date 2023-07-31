@@ -1,4 +1,5 @@
-import Reference from 'components/Reference';
+import Reference from 'components/Reference'
+import { Callout } from 'nextra/components'
 
 # Rotate
 
@@ -17,7 +18,7 @@ Additionally, there is a [**Freestyle Rotate**](#freestyle-rotate) command that 
    - <kbd>Y</kbd> **Y axis:** Limit to the Y-axis direction.
    - <kbd>Z</kbd> **Z axis:** Limit to the Z-axis direction.
    - <kbd>G</kbd> **Screen space:** Limit to the visible plane.
-   - <kbd>F</kbd> **Freestyle:** Click the starting point and endpoint of the rotation axis, and then click the reference point.
+   - <kbd>F</kbd> **Freestyle:** Click the starting point and endpoint of the rotation axis, and then click the reference point. Move the cursor to rotate 
    - <kbd>V</kbd> **Pivot:** Click to specify the position of the Gizmo.
    - <kbd>W</kbd> **Worldspace:** Reset the rotation axis.
 5. Confirm with OK in the command dialog or right click.
@@ -29,14 +30,21 @@ You can rotate Curves, multiple points, multiple  CVs, solids, sheets, faces usi
 1. Select the objects you want to rotate.
 2. Use **"Freestyle Rotate"** in the Command Palette.
 3. Click the starting point and endpoint of the rotation axis, and then click the reference point.
-4. Set the options in the command dialog and Shortcut Key.
+4. Move the cursor to rotate 
+5. Set the options in the command dialog and Shortcut Key.
    - **Angle:** Specify the last specified angle using the rotation Gizmo as a numerical value
    - **Axis:** Specify the rotation axis using the X, Y, or Z vector.
    - <kbd>X</kbd> **X axis:** Limit to the X-axis direction.
    - <kbd>Y</kbd> **Y axis:** Limit to the Y-axis direction.
    - <kbd>Z</kbd> **Z axis:** Limit to the Z-axis direction.
-5. Confirm with OK in the command dialog or right click.
+   - <kbd>G</kbd> **Screen space:** Limit to the visible plane.
+   - <kbd>F</kbd> **Freestyle:** Click the starting point and endpoint of the rotation axis, and then click the reference point.
+   - <kbd>V</kbd> **Pivot:** Click to specify the position of the Gizmo.
+   - <kbd>W</kbd> **Worldspace:** Reset the rotation axis.
+6. Confirm with OK in the command dialog or right click.
 
 <Callout type="info" emoji="ℹ️">
 The **"Freestyle Rotate"** command is equivalent to the <kbd>F</kbd> option of the **"Rotate"** command.
 </Callout>
+
+![Freestyle Rotate](/img/freestyle-rotate.gif)
