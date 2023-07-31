@@ -42,7 +42,7 @@ const config: DocsThemeConfig = {
     content: null,
   },
   editLink: {
-    text: null,
+    component: null,
   },
   gitTimestamp: ({ timestamp }) => (
     <span>Last updated on {timestamp.toLocaleDateString()}</span>
