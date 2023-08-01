@@ -16,7 +16,7 @@ const config: DocsThemeConfig = {
           }}
         >
           <div>
-            <a href="/">English</a>
+            <a href="/en">English</a>
             <span> | </span>
             <a href="/ja">日本語</a>
           </div>
