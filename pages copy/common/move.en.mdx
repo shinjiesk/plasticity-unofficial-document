@@ -1,0 +1,38 @@
+import Reference from 'components/Reference'
+
+# Move
+
+<Reference shortcut="G" command="Move" button="Left of Command Bar" />
+
+You can move Curves, Points, CVs, Solids, Sheets, Faces, Edges.
+To move objects freely, see [**"Freestyle Move"**](#freestyle-move) described below.
+
+1. Select the objects you want to move.
+2. Press <kbd>G</kbd>.
+3. Use the displayed Move Gizmo to move.
+4. Set the options in the command dialog and Shortcut Key.
+   - **XYZ:** Specify the amount of movement of the X, Y, and Z axes.
+   - <kbd>X</kbd> **X axis:** Limit to the X-axis direction.
+   - <kbd>Y</kbd> **Y axis:** Limit to the Y-axis direction.
+   - <kbd>Z</kbd> **Z axis:** Limit to the Z-axis direction.
+   - <kbd>Shift-X</kbd> **X plane:** Limit to the X-plane direction.
+   - <kbd>Shift-Y</kbd> **Y plane:** Limit to the Y-plane direction.
+   - <kbd>Shift-Z</kbd> **Z plane:** Limit to the Z-plane direction.
+   - <kbd>G</kbd> **Screen space:** Limit to the visible plane.
+   - <kbd>F</kbd> **Freestyle:** Click to specify the starting point and endpoint, which will determine the direction and distance of movement.
+   - <kbd>V</kbd> **Pivot:** Click to specify the position of the Gizmo.
+   - <kbd>W</kbd> **Worldspace:** Change the gizmo's coordinate axis to world coordinates.
+4. Confirm with OK in the command dialog or right click.
+
+## Freestyle Move[#freestyle-move]
+
+This command is equivalent to the <kbd>F</kbd> option of the **"Move"** command.
+
+1. Select the objects you want to move.
+2. Use **"Freestyle Move"** in the Command Palette.
+3. Click the starting point and endpoint to determine the direction and distance of movement.
+4. Set the options in the command dialog and Shortcut Key.
+   - The option is the same as the **"Rotate"** command.
+4. Confirm with OK in the command dialog or right click.
+
+![Freestyle Move](/img/freestyle-move.gif)

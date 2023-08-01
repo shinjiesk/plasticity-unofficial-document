@@ -1,0 +1,30 @@
+import Reference from 'components/Reference';
+import { Callout } from 'nextra/components'
+
+# Place
+
+<Reference shortcut="Ctrl-D" command="Place" button="Left of Command Bar" />
+
+You can duplicate Curves, Solids, Sheets based on a specified axis.
+
+1. Select the objects you want to duplicate.
+2. Press <kbd>Ctrl-D</kbd> or click the button.
+3. Click on the reference point of the object to be duplicated.
+4. Click on the reference point of the destination for duplication.
+   - <kbd>S</kbd> **Scale**Allows scaling.
+   - <kbd>A</kbd> **Angle**Allows rotation.
+   - <kbd>D</kbd> **Offset**Allows consecutive duplication.
+   - <kbd>F</kbd> **Flip**Allows flipping the duplication axis.
+   - <kbd>X</kbd> **x-up**Sets the duplication axis to the X-axis.
+   - <kbd>Y</kbd> **y-up**Sets the duplication axis to the Y-axis.
+   - <kbd>Z</kbd> **z-up**Sets the duplication axis to the Z-axis.
+   - <kbd>Shift-Q</kbd> **Slice:** Creates a solid at the intersections with the Boolean target and preserves the remaining solids.
+   - <kbd>Q</kbd> **Union:** Joins the boolean target and tool together.
+   - <kbd>W</kbd> **Difference:** Removes the tool from the boolean target.
+   - <kbd>Shift-E</kbd> **Intersect:** Creates a solid at the intersection of the boolean target and tool.
+   - <kbd>B</kbd> **New Body:** Creates a new solid without performing Boolean operations.
+5. Click to confirm.
+6. To duplicate more object, repeat steps 4 and 5.
+7. Press <kbd>Esc</kbd> to exit.
+
+![Place](/img/place.gif)

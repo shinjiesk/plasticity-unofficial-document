@@ -1,0 +1,27 @@
+import Reference from 'components/Reference';
+
+# Extend（延長する）
+
+<Reference shortcut="" command="Extend" button="" />
+
+このコマンドは、選択しているオブジェクトに応じて、以下のコマンドを自動的に呼び出します。
+
+- カーブが選択されていたとき: 以下の **"Extend Curve"** を参照してください。
+- シートの外側のエッジが選択されていたとき: [**"Extend Sheet"**](../solid/extend)を参照してください。
+
+## Extend Curve（カーブを延長する）
+
+カーブを延長できます。
+
+1. 延長したいカーブ端のポイントを選択します。
+2. コマンドパレットで **"Extend"** を実行します。
+3. <kbd>D</kbd>を押し、カーソルを動かして、延長先の位置でクリックします。
+4. コマンドダイアログでオプションを設定します。
+   - **Shape:**
+        - **Natural** / **Liner** /  **Soft** /  **Reflective** / **Arc**
+        - それぞれのオプションの違いは、動画を参照してください。
+   - **Distance:** 距離を指定します。
+5. コマンドダイアログでOKを押すか、右クリックで確定します。
+
+![Extend Curve](/img/extend-curve.gif)
+

@@ -1,0 +1,26 @@
+import Reference from 'components/Reference';
+
+# Extend
+
+<Reference shortcut="" command="Extend" button="" />
+
+This command automatically calls the following command depending on the selected object.
+- When Curves are selected: **"Extend Curve"** described below.
+- When outside Edges of the Sheet are selected: see [**"Extend Sheet"**](../solid/extend).
+
+## Extend Curve
+
+You can extend the curve.
+
+1. Select the end Point of the Curve you wish to extend.
+2. Use **"Extend"** in the Command Palette.
+3. Press <kbd>D</kbd>, move the cursor, and click at the endpoint.
+4. Set the options in the command dialog.
+   - **Shape:**
+        - **Natural** / **Liner** /  **Soft** /  **Reflective** / **Arc**
+        - Refer to the video to see the differences between each option.
+   - **Distance:** Specifies the distance.
+5. Confirm with OK in the command dialog or right click.
+
+![Extend Curve](/img/extend-curve.gif)
+

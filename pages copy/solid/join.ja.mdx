@@ -1,0 +1,26 @@
+import Reference from 'components/Reference';
+import { Callout } from 'nextra/components'
+
+# Join
+
+<Reference shortcut="J" command="Join" button="" />
+
+このコマンドは、選択されていたオブジェクトに応じて以下のコマンドを自動的に呼び出します。
+- カーブが選択されているとき: Sketchの **"Join"** の [**"Join Curves"**](../sketch/join#join-Curves)を参照してください。
+- シートが選択されているとき: 以下に説明する[**"Join Sheets"**](#join-sheets)を参照してください。
+
+## Join Sheets（一致したエッジでシートをつなぐ）[#join-sheets]
+
+一致したエッジでシートをつなぐことができます。
+
+1. つなげたいシートを選択します。
+2. <kbd>J</kbd>を押します。
+3. シートがつながります。
+
+<Callout emoji="❗">
+**注意** <br/ >
+つなげたいふたつのシートは、エッジが一致している必要があります。
+</Callout>
+
+![Join Sheets](/img/join-sheets.gif)
+

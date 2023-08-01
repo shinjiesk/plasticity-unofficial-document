@@ -1,0 +1,37 @@
+import Reference from 'components/Reference';
+
+# Mirror
+
+<Reference shortcut="Alt-X" command="Mirror" button="Left of Command Bar" />
+
+You can mirror Curves, Solids, Sheets, faces.<br />
+To mirror objects freely, see [**"Freestyle Mirror"**](#freestyle-mirror) described below.
+
+1. Select the objects you want to mirror.
+2. Press <kbd>Alt-X</kbd> or click the button.
+3. Use the displayed Mirror Gizmo to mirror.
+4. Specify the mirroring direction and options.
+   - **Cut:** When enabled, the mirror target is divided by the mirror plane before mirroring.
+   - **Union:** When enabled, the two mirrored objects are combined.
+   - <kbd>X</kbd> **Position X** Mirror in the positive direction of the X-axis.
+   - <kbd>Y</kbd> **Position Y** Mirror in the positive direction of the Y-axis.
+   - <kbd>Z</kbd> **Position Z** Mirror in the positive direction of the Z-axis.
+   - <kbd>Shift-X</kbd> **Negative X** Mirror in the negative direction of the X-axis.
+   - <kbd>Shift-Y</kbd> **Negative Y** Mirror in the negative direction of the Y-axis.
+   - <kbd>Shift-Z</kbd> **Negative Z** Mirror in the negative direction of the Z-axis.
+   - <kbd>F</kbd> **Freestyle** Specify the mirroring plane by clicking on the starting and ending points.
+   - <kbd>Q</kbd> Union(merge): Combines the two mirrored objects.
+5. Confirm with OK in the command dialog or right click.
+
+## Freestyle Mirror[#freestyle-mirror]
+
+This command is equivalent to the <kbd>F</kbd> option of the **"Mirror"** command.
+
+1. Select the objects you want to mirror.
+2. Use **"Freestyle Mirror"** in the Command Palette.
+3. Specify the mirroring plane by clicking on the starting and ending points.
+4. Set the options in the command dialog and Shortcut Key.
+   - The option is the same as the **"Mirror"** command.
+5. Confirm with OK in the command dialog or right click.
+
+![Freestyle Mirror](/img/freestyle-mirror.gif)

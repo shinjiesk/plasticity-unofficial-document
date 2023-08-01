@@ -1,0 +1,14 @@
+{
+  "index": "Home",
+  "start": "はじめに",
+  "3d-viewport": "3Dビューポート",
+  "tool": "ツール",
+  "common": "共通のコマンド",
+  "sketch": "スケッチのコマンド",
+  "solid": "ソリッドのコマンド",
+  "cad-essentials": "CADエッセンシャル",
+  "about": {
+    "title": "About",
+    "type": "page"
+  }
+}

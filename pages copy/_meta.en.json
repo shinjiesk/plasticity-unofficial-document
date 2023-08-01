@@ -1,0 +1,14 @@
+{
+  "index": "Home",
+  "start": "Getting Started",
+  "3d-viewport": "3D Viewport",
+  "tool": "Tools",
+  "common": "Common Commands",
+  "sketch": "Sketch Commands",
+  "solid": "Solid Commands",
+  "cad-essentials": "CAD Essentials",
+  "about": {
+    "title": "About",
+    "type": "page"
+  }
+}
