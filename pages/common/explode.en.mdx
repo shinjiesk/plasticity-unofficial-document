@@ -1,6 +1,39 @@
 import Reference from 'components/Reference';
-import { Callout } from 'nextra/components'
 
-# Explode
+# Explode（切り離す）
 
-<Reference shortcut="" command="Explode" button="" />
+<Reference shortcut="Alt-J" command="Explode" button="" />
+
+You can separate joined Curves, Faces, Solids, Sheets.
+
+This command automatically calls the following command depending on the selected object.
+- When Curves are selected: see [**"Explode Curves"**](#explode-curve) described below.
+- When Faces are selected: see [**"Explode Faces"**](#explode-faces) described below.
+- When Solids or Sheets are selected: see [**"Explode Shells"**](#explode-sheets) described below.
+
+## Explode Curves [#explode-curve]
+
+You can separate joined Curves.
+
+1. Select the Curves you want to separate.
+2. Press <kbd>Alt-J</kbd>.
+3. The Curves are separated.
+
+## Explode Faces [#explode-faces]
+
+You can separate selected Faces from Solid or Sheet.
+
+1. Select the Faces you want to separate.
+2. Press <kbd>Alt-J</kbd>.
+3. The Faces are separated.
+
+## Explode Shells [#explode-sheets]
+
+You can separate all Faces from selected Solids or Sheets.
+
+1. Select the Sheets you want to separate.
+2. Press <kbd>Alt-J</kbd>.
+3. The Sheets are separated.
+
+
+
