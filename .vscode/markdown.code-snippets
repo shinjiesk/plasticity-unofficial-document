@@ -34,7 +34,7 @@
   "Table-en": {
     "prefix": "table-en",
     "body": [
-      "   | Shortcut Key | Option | Description |",
+      "   | shortcut key | Option | Description |",
       "   | ------- | ------- | ------- |"
     ]
   },
@@ -62,7 +62,7 @@
   "Reference": {
     "prefix": "kinou-gaiyou",
     "body": [
-      "import  Reference  from 'components/Reference';",
+      "import Reference  from 'components/Reference';",
       "<Reference shortcut='' command='' button='ツールバー' />"
     ]
   }
