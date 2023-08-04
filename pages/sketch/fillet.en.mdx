@@ -6,6 +6,12 @@ import ButtonIcon from 'components/ButtonIcon';
 
 <Reference shortcut="B" command="Fillet" button="Right of Command Bar" />
 
+This command automatically calls the following command depending on the selected object.
+- When curves or verticies are selected: see **"Fillet Curves and Vertices"** described below.
+- When edges are selected: see solid's [**"Fillet"**](../solid/fillet) command.
+
+## Fillet Curves and Vertices
+
 You can fillet or chamfer Curves and vertices at corners.
 
 1. Select the Curves or vertices where you want to apply fillet or chamfer.
@@ -19,13 +25,3 @@ The outcome depends on the direction in which you move it.
 4. Confirm with OK in the command dialog or right click.
 
 ![Fillet](/img/fillet.gif)
----
-<Callout type="info" emoji="ℹ️">
-**Advanced info**<br />
-This command automatically calls the following command depending on the selected object.
-- When Curves or vertices at corners are selected: **Fillet Curve** and "Fillet Vertex" commands are called with the functionality described on this page.
-- When solids or sheets are selected: **Fillet Shell** command is called, which is described on the [**Fillet Shell**](../solid/fillet) page.
-</Callout>
-
-
-
