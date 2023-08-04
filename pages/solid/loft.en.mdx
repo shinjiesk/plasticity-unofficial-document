@@ -1,11 +1,141 @@
 import  Reference  from 'components/Reference';
+import { Callout } from 'nextra/components'
 
-<Reference shortcut="" command="" button="" />
+<Reference shortcut="L" command="Loft" button="" />
 
 # Loft
 
-- `L`
+## Loft the Curves and the Edges
 
+You can loft with any combination of Curves and Edges. 
 
+### Lofting two Curves
 
+Lofting Curves allows you to specify **Add Limit Point** option.
 
+1. Select two Curves you want to loft.
+2. Press <kbd>L</kbd>.
+3. Set the options by Shortcut Key.
+    - <kbd>L</kbd> **Add Limit Point:** Specify the range to loft.
+        - Make sure that [**Object Snaps**](../3d-viewport/grid-and-snap#object-snap) are enabled.
+        - Click on the Egde to add a limit point.
+        - To reverse the direction, click on the limit point again.
+        - Up to two limit points can be set on each Curve.
+4. Confirm with OK in the command dialog or right click.
+
+![Loft Curve and Curve](/img/loft-curve-and-curve.gif)
+
+### Lofting two Edges
+
+Lofting Edges allows you to specify **Continuity**, **Tension**, **Add Limit Point** options.
+
+1. Select two Edges you want to loft.
+2. Press <kbd>L</kbd>.
+3. Set the options in the command dialog and Shortcut Key.
+    - **Continuity**: **G0, G1, G2** 
+        - Specifies the [continuity of the Surface](../cad-essentials/continuity-curve-and-surface).
+        - Continuity can be specified individually by clicking on the black circles on the surface.
+    - **Tension**: Specifies the tension of each edge.
+    - <kbd>Tab</kbd> **Cycle continuity:** Switch continuity.
+    - <kbd>D</kbd> **Tension:** By moving the cursor, you can specify the tension for both edges at once.
+    - <kbd>L</kbd> **Add Limit Point:** Specify the range to loft. Same as **Lofting two Curves**
+4. Confirm with OK in the command dialog or right click.
+
+<Callout emoji="❗">
+**Attention**<br />
+When profile Curve overlaps Edge, the Curve must be hidden or deleted to loft Edge. Otherwise, Curve will be selected instead of Edge.
+</Callout>
+
+![Loft Edge and Edge](/img/loft-edge-and-edge.gif)
+
+### Lofting Curve and Edge
+
+Curves and edges can be lofted in any combination. The procedure and functions are the same as **"Lofting two Curves"** and **"Lofting two Edges"** described above. 
+
+## Lofting multiple Curves
+
+You can loft multiple Curves at once. <kbd>Shift</kbd>-Click to select multiple, <kbd>Ctrl</kbd>-Click to deselect. The procedure and functions are the same as **"Lofting two Curves"**. Edges can also be specified at the start and end points.
+
+<Callout emoji="❗">
+**Attention**<br />
+curves and edges are lofted in the order in which they are selected.
+</Callout>
+
+![Loft multiple Curves](/img/loft-multiple-curves.gif)
+
+## Lofting with guide
+
+The guides can be used to control the shape of the loft. Any combination of Curves and Edges can be specified for guides. The lofted surface can be trimmed.
+
+1. Select two Curves you want to loft.
+2. Press <kbd>L</kbd>.
+3. Select guide Curves or Edges. <kbd>Shift</kbd>-Click to select multiple, <kbd>Ctrl</kbd>-Click to deselect. 
+4. Set the options in the command dialog and Shortcut Key.
+    - **Trim overlap:**
+        - **Guides:** Guide side lofted surface is trimmed.
+        - **Profiles:** Profile side lofted surface is trimmed.
+    - The other options are the same as **Lofting two Curves** and **Lofting two Edges** described above.
+5. Confirm with OK in the command dialog or right click.
+
+<Callout emoji="❗">
+**Attention**<br />
+The guide end points must be perfectly aligned on the profile Curves. When they are perfectly aligned, the Points will turn green. If they appear purple, they are not aligned. To ensure a precise alignment, see [**Object Snaps**](../3d-viewport/grid-and-snap#object-snap).
+</Callout>
+
+![Loft Curve with guide](/img/loft-curve-with-guide.gif)
+
+## Continuous Loftintg
+
+If only one edge is selected and lofted, two adjacent edges can be lofted as guides. This function can be performed in succession to join easily two sheets together.
+
+![Continuous Loftintg](/img/loft-continuous.gif)
+
+## Loop lofting
+
+You can loft more than three Curves to create a loop Sheet.
+
+1. Select three or more Curves you want to loft.
+2. Press <kbd>L</kbd>.
+3. Click **Loop** in the command dialog.
+4. Set the options by Shortcut Key.
+    - <kbd>L</kbd> **Add Limit Point:** Specify the range to loft. Same as **"Curve and Curve"**
+4. Confirm with OK in the command dialog or right click.
+
+![Loft Loop](/img/loft-loop.gif)
+
+## Loft the closed Curves
+
+You can loft the closed Curves to create a closed Sheet.  
+
+1. Select two or more closed Curves you want to loft.
+2. Press <kbd>L</kbd>.
+3. To control the shape of the loft, you can select the guide Curves.  
+4. Confirm with OK in the command dialog or right click.
+
+## Loft the Regions
+
+You can loft the Regions to create a Solid.
+
+1. Select two or more Regions you want to loft.
+2. Press <kbd>L</kbd>.
+3. To control the shape of the loft, you can select the guide Curves.  
+4. Confirm with OK in the command dialog or right click.
+
+## Loft the Faces
+
+You can loft two Faces to create a Solid.
+
+1. Select two Faces you want to loft.
+2. Press <kbd>L</kbd>.
+3. To control the shape of the loft, you can select the guide Curves.  
+4. Set the options in the command dialog and Shortcut Key.
+    - **Continuity**: **G0, G1, G2** 
+        - Specifies the [continuity of the Surface](../cad-essentials/continuity-curve-and-surface).
+        - Continuity can be specified individually by clicking on the black circles on the surface.
+        - <kbd>Tab</kbd> **Cycle continuity:** Switch continuity.
+    - **Tension**: Specifies the tension of each edge.
+4. Confirm with OK in the command dialog or right click.
+
+## Loft the Vertices
+
+Lofting two vertices allows bridging two curves. The functionality is the same as [**"Bridge Vertex"**](../sketch/bridge#bridge-vertex).
