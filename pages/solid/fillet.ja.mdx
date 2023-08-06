@@ -1,9 +1,60 @@
 import Reference from 'components/Reference';
-import { Callout } from 'nextra/components'
 
-# Fillet（フィレット）
+# Fillet（フィレットまたは面取りする）
 
-<Reference shortcut="" command="Fillet" button="" />
+<Reference shortcut="B" command="Fillet" button="" />
+
+このコマンドは、選択されたオブジェクトによって、自動的に以下のコマンドを呼び出します。
+- カーブまたは頂点が選択されているとき: スケッチの[**Fillet**](../sketch/fillet)コマンドを参照してください。
+- エッジが選択されているとき: 下記の**Fillet Shell**を参照してください。
+
+## Fillet Shell
+
+ソリッドまたはシートをフィレットまたは面取りすることができます。
+
+1. フィレットまたは面取りしたいエッジを選択します。
+2. エッジが選択されると、デフォルトのコマンドであるこのコマンドが自動的に実行されます。
+3. 黄色い点を動かして、フィレットまたは面取りの距離を指定します。正の方向に動かすとフィレット、負の方向に動かすと面取りになります。
+4. エッジを追加で選択するには、<kbd>Ctrl</kbd>キーを押しながらクリックします。選択を解除するには、<kbd>Ctrl</kbd>キーを押しながら再度クリックします。
+5. コマンドダイアログとショートカットキーでオプションを設定します。
+    - **Distance:** 
+        - エッジをフィレットするには、正の値を入力します。
+        - エッジを面取りするには、負の値を入力します。
+        - フィレットと面取りの両方について、両方向のエッジからの距離を指定するために2つの値を入力することができます。
+        ![](/img/fillet-solid-two-value.gif)
+    - **フィレットのとき:**
+        - **Shape:**
+            - **Conic:** サーフェスの連続性を円錐曲面にする
+            - **G2:** サーフェスの連続性をG2にする。[サーフェスの連続性](../cad-essentials/continuity-curve-and-surface)を参照してください。
+        ![](/img/fillet-solid.gif)
+        - **Y-Blend:** 複雑になったフィレットのトポロジーを改善するには、**Attempt**を有効にします。
+        ![](/img/fillet-solid-yblend.gif)
+        - **Selection:** 選択したエッジのみにフィレットを制限するには、**Add tangent edges**を無効にします。
+        ![](/img/fillet-sold-selection.gif)
+        - <kbd>A</kbd> **Chamfer angle:** カーソルを動かして、非対称のフィレットを指定します。
+        - <kbd>D</kbd> **Fillet distance:** カーソルを動かして、フィレットの距離を指定します。
+        - <kbd>V</kbd> **Add variable point:** フィレットに可変点を追加します。
+        ![](/img/fillet-solid-variable.gif)
+        - <kbd>L</kbd> **Add limit (stop) point:** フィレットの範囲を指定します。
+            -  [**オブジェクトスナップ**](../3d-viewport/grid-and-snap#object-snap)が有効になっていることを確認してください。
+            - フィレットの中心線をクリックして、制限点を追加します。
+            - 方向を反転するには、再度制限点をクリックします。
+            - 最大2つの制限点を設定できます。
+        ![](/img/fillet-solid-limit.gif)
+        - フィレットの半径をコピーするには、ソースフィレットをクリックします。ただし、2つの**Distance**が同じで、形状が**Conic**の場合に限ります。
+        ![](/img/fillet-solid-copyfillet.gif)
+<br/>
+    - **面取りのとき:**
+        - **Shape:**
+            - **Offset:** デフォルトの面取り
+            - **Apex:** 面取りの境界線のずれを減らします。
+        - **Selection:** 選択したエッジのみに面取りを制限するには、**Add tangent edges**を無効にします。
+        - <kbd>A</kbd> **Chamfer angle:** カーソルを動かして、面取りの角度を指定します。
+        - <kbd>D</kbd> **Fillet distance:** カーソルを動かして、フィレットの距離を指定します。
+        - <kbd>C</kbd> **Chanfer distance:** カーソルを動かして、面取りの距離を指定します。
+        - <kbd>L</kbd> **Add limit (stop) point:** 面取りの範囲を指定します。**フィレットのとき**と同じです。
+6. コマンドダイアログのOKボタンをクリックするか、右クリックして確定します。
+
 
 
 
