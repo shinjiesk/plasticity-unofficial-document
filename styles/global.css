@@ -37,6 +37,12 @@ kbd {
   font-family: inherit !important;
 }
 
+.downloadButton {
+  padding: 1rem;
+  color:  hsl(var(--nextra-primary-hue)100% 45%/var(--tw-text-opacity));
+}
+
+
 /* List styles */
 li > ul {
   margin-top: 0 !important;
