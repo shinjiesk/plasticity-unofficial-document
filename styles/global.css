@@ -6,12 +6,6 @@ a {
   font-size: 0.8rem !important;
 }
 
-@media (min-width: 768px) {
-  .md\:nx-w-64 {
-    width: 20rem !important;
-  }
-}
-
 .nx-py-1\.5 {
   padding-top: 0.2rem !important;
   padding-bottom: 0.2rem !important;
@@ -22,10 +16,15 @@ a {
   padding-top: 0.2rem !important;
   padding-bottom: 0.2rem !important;
 }
-.nx-border {
+td.nx-border,
+th.nx-border {
   border-right-width: 0 !important;
   border-left-width: 0 !important;
 }
+
+
+
+
 
 /* Keyboard styles  */
 kbd {

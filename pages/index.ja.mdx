@@ -3,12 +3,20 @@ title: Plasticity 非公式マニュアル
 description: Plasticity 3D の非公式マニュアル。全キーボードショートカット掲載。日々更新中！
 ---
 import { Callout } from 'nextra/components'
-import Tool_Commands from './tool.ja.mdx'
-import Common_Commands from './common.ja.mdx'
-import Sketch_Commands from './sketch.ja.mdx'
-import Solid_Commands from './solid.ja.mdx'
+import { Cards, Card } from 'nextra/components'
 
 # Plasticity 非公式マニュアル
+
+<Cards>
+    <Card title="All commands & Shortcut Keys" href="./all-commands" />
+    <Card title="Getting Started" href="./start" />
+    <Card title="3D Viewport" href="./3d-viewport" />
+    <Card title="Tools" href="./tool" />
+    <Card title="Common Commands" href="./common" />
+    <Card title="Sketch Commands" href="./sketch" />
+    <Card title="Solid Commands" href="./solid" />
+    <Card title="CAD Essentials" href="./cad-essentials" />
+</Cards>
 
 <Callout type="info" emoji="ℹ️">
 非公式マニュアル更新情報
@@ -19,14 +27,3 @@ import Solid_Commands from './solid.ja.mdx'
 - 2023/7/30 追加: [Delete Face](solid/delete-face) 、[Isoparam](solid/isoparam)、[Sweep](solid/sweep) 
 - 2023/7/29 追加: [Imprint](solid/imprint)、[Text](sketch/text)
 </Callout>
-
-<Tool_Commands />
-
-<Common_Commands />
-
-<Sketch_Commands />
-
-<Solid_Commands />
-
-
-

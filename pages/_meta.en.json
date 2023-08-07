@@ -1,5 +1,6 @@
 {
   "index": "Home",
+  "all-commands": "All Commands & Shortcut Keys",
   "start": "Getting Started",
   "3d-viewport": "3D Viewport",
   "tool": "Tools",
@@ -10,6 +11,9 @@
   "about": {
     "title": "About",
     "type": "page"
+  },
+  "viewport-commands": {
+    "display": "hidden"
   }
 }
 

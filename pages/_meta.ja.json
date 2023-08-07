@@ -1,5 +1,6 @@
 {
   "index": "Home",
+  "all-commands": "全コマンド & ショートカットキー",
   "start": "はじめに",
   "3d-viewport": "3Dビューポート",
   "tool": "ツール",
@@ -10,8 +11,8 @@
   "about": {
     "title": "About",
     "type": "page"
+  },
+  "viewport-commands": {
+    "display": "hidden"
   }
 }
-
-
-

@@ -1,61 +1,9 @@
+import Viewport_Commands from './viewport-commands.ja.mdx'
+
 # 3Dビューポート
 
 - [オブジェクトの名称](./3d-viewport/object-names)
-- [3Dビューポートの操作](./3d-viewport/operating-the-3d-viewport)
-- [オブジェクトの操作](./3d-viewport/object-manipulation)
-- [グリッドとスナップ](./3d-viewport/grid-and-snap)
-- [構築平面](./3d-viewport/construction-plane)
 - [数値入力とツールチップ](./3d-viewport/numeric-input-and-tooltip)
 
-| コマンド名                                    | ショートカット              | 機能                                                            |
-| --------------------------------------------- | --------------------------- | --------------------------------------------------------------- |
-| **3Dビューポートの操作**                      |                             |                                                                 |
-| Viewport: navigate to front                   | <kbd>Num.1</kbd>            | 前からのビュー                                                  |
-| Viewport: navigate to right                   | <kbd>Num.3</kbd>            | 右からのビュー                                                  |
-| Viewport: navigate to top                     | <kbd>Num.7</kbd>            | 上からのビュー                                                  |
-| Viewport: navigate to back                    | <kbd>Ctrl - Num.1</kbd>     | 後ろからのビュー                                                |
-| Viewport: navigate to left                    | <kbd>Ctrl - Num.3</kbd>     | 左からのビュー                                                  |
-| Viewport: navigate to bottom                  | <kbd>Ctrl - Num.7</kbd>     | 下からのビュー                                                  |
-| Viewport: toggle orthographic camera          | <kbd>Num.5</kbd>            | 透視投影と正投影を切り替える                                    |
-| Viewport: navigate to selection               | <kbd>Space</kbd>            | オブジェクトを画面の中央に表示する                              |
-| Viewport: focus                               | <kbd>/ (Slash)</kbd>        | オブジェクトを画面全体に表示する                                |
-| Focus                                         | <kbd>. (period)</kbd>       | オブジェクトを画面全体に表示して、他のオブジェクトを隠す        |
-| Viewport: toggle overlays                     | <kbd>Alt - Shift - Z</kbd>  | オーバーレイを切り替える                                        |
-| Viewport: toggle xray mode                    | <kbd>Alt - Z</kbd>          | X-Rayを切り替える                                               |
-| Viewport: toggle edges                        |                             | エッジの表示を切り替える                                        |
-| Viewport: toggle faces                        |                             | フェイスの表示を切り替える                                      |
-| **オブジェクトの操作**                        |                             |                                                                 |
-| Selection mode: set control-point             | <kbd>1</kbd>                | ポイント選択モード                                              |
-| Selection mode: set edge                      | <kbd>2</kbd>                | エッジ選択モード                                                |
-| Selection mode: set face                      | <kbd>3</kbd>                | フェイス選択モード                                              |
-| Selection mode: set solid                     | <kbd>4</kbd>                | ソリッド選択モード                                              |
-| Selection mode: set all                       | <kbd>Tab</kbd>              | 全種類選択可能なモード                                          |
-| Selection: toggle control-point               | <kbd>Shift - 1</kbd>        | ポイント選択モードのみを切り替える                              |
-| Selection: toggle edge                        | <kbd>Shift - 2</kbd>        | エッジ選択モードのみを切り替える                                |
-| Selection: toggle face                        | <kbd>Shift - 3</kbd>        | フェイス選択モードのみを切り替える                              |
-| Selection: toggle solid                       | <kbd>Shift - 4</kbd>        | ソリッド選択モードのみを切り替える                              |
-| Select All                                    | <kbd>A</kbd>                | すべてのオブジェクトを選択する                                  |
-| Select Adjacent                               | <kbd>Ctrl-Shift-=</kbd>     | 隣接オブジェクトを選択に追加する                                |
-| Select All Curves                             |                             | すべてのカーブを選択する                                        |
-| Deselect All                                  | <kbd>Esc</kbd>              | すべての選択を解除する                                          |
-| Invert Selection                              | <kbd>Alt - A</kbd>          | 選択を反転する                                                  |
-| Selection: convert to edges                   | <kbd>Ctrl - 2</kbd>         | 選択しているオブジェクトに含まれるエッジのみを選択する          |
-| Selection: convert to faces                   | <kbd>Ctrl - 3</kbd>         | 選択しているオブジェクトに含まれるフェイスのみを選択する        |
-| Selection: convert to solids                  | <kbd>Ctrl - 4</kbd>         | 選択しているオブジェクトを含んでいるソリッドのみを選択する      |
-| Hide Selected                                 | <kbd>H</kbd>                | 選択しているオブジェクトを非表示にする                          |
-| Hide Unselected                               | <kbd>Shift-H</kbd>          | 選択していないオブジェクトを非表示にする                        |
-| Invert Hidden                                 | <kbd>Ctrl-H</kbd>           | 非表示を反転する                                                |
-| Unhide All                                    | <kbd>Alt-H</kbd>            | すべてを表示する                                                |
-| Group Selected                                | <kbd>Ctrl-G</kbd>           | 選択オブジェクトをグループ化する                                |
-| Ungroup Selected                              | <kbd>Alt-G</kbd>            | 選択オブジェクトをグループから外す                              |
-| **グリッドとスナップ**                            |                             |                                                                 |
-| Grid: toggle grid snapping                    |                             | グリッドスナップを切り替える                                    |
-| Viewport: decrease grid size                  |                             | グリッドサイズを大きくする                                      |
-| Viewport: increase grid size                  |                             | グリッドサイズを小さくする                                      |
-| Snaps: toggle snap snapping                   |                             | オブジェクトスナップを切り替える                                |
-| **構築平面**
-|                                               | <kbd>Space</kbd>            | 選択オブジェクトから構築平面を作成する(カメラを合わせる)        |
-| Viewport: set construction plane to selection | <kbd>Shift-Space</kbd>      | 選択オブジェクトから構築平面を作成する (カメラを合わせない)     |
-| Create Viewspace Construction Plane At Ori... | <kbd>Ctrl-Space</kbd>       | 見えている視線に合わせた構築平面を作成する (ワールド原点を通る) |
-| Create Viewspace Construction Plane           | <kbd>Ctrl-Shift-Space</kbd> | 見えている視線に合わせた構築平面を作成する (選択した点を通る)   |
+<Viewport_Commands />
 
