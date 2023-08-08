@@ -34,13 +34,13 @@
   "Table-en": {
     "prefix": "table-en",
     "body": [
-      "   | shortcut key | Option | Description |",
+      "   | shortcut key | Option | Note |",
       "   | ------- | ------- | ------- |"
     ]
   },
   "Confirm": {
     "prefix": "confirm",
-    "body": "Confirm with OK in the command dialog or right click."
+    "body": "Confirm with OK in the command dialog or right-click."
   },
   "Unknown Function": {
     "prefix": "unknown-function",
