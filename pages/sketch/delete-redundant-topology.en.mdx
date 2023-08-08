@@ -1,11 +1,19 @@
 import Reference from 'components/Reference';
-import { Callout } from 'nextra/components'
 
 <Reference shortcut="" command="Delete Redundant Topology" button="" />
 
 # Delete Redundant Topology
 
+This command automatically calls the following command depending on the selected object.
+- When curves are selected: see [**Delete Redundant Topology (Curves)**](#delete-redundant-Topology-curves) described below.
+- When solids or sheets are selected: see [**Delete Redundant Topology (Solid)**](../solid/delete-redundant-Topology#delete-redundant-Topology-solid) in Solid.
 
+## Delete Redundant Topology (Curves)[#delete-redundant-Topology-curves]
 
+You can delete redundant control points(CVs) of curves.
 
+1. Select the curves to delete redundant CVs.
+2. Use **Delete Redundant Topology** in the Command Palette.
+3. The redundant CVs are deleted.
 
+![Delete Redundant Topology](/img/delete-redundant-topology.gif)
