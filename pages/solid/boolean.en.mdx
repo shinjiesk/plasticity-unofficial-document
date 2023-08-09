@@ -1,29 +1,38 @@
 import Reference from 'components/Reference';
+import ButtonIcon from 'components/ButtonIcon'
 
 # Boolean
 
 <Reference shortcut="Q" command="Boolean" button="Left of Command Bar" />
 
-You can boolean operations on solids or sheets.
-{/* 
-1. Press <kbd>Q</kbd> or click the button.
-2. Specify the target and tool.
-   - **Select target bodies**: Select the solid or sheet to be used as the boolean target.
-   - **Select tool bodies**: Select the solid or sheet to be used as the boolean tool.
-3. Specify the boolean operation.
-   - <kbd>G</kbd> **Move**
-      - You can  move the tool.
-   - <kbd>R</kbd> **Rotate**
-      - You can  rotate the tool.
-      - <kbd>R</kbd> **Screen space**
-         - Resets the rotation axis.
-   - <kbd>S</kbd> **Scale**
-      - You can  scale the tool.
-      - <kbd>S</kbd> **Uniform**
-         - Scales uniformly in the X, Y, and Z directions.
-   - Other options: Refer to **Solid Editing Boolean options** and **Solid Editing Common options**.(Both under construction.)
+You can boolean operations on any combination of solids and sheets.
+
+1. Press <kbd>Q</kbd> or click the button <ButtonIcon type="button-boolean" /> .
+2. Select the target and the tool.
+   - **Select target bodies:** Select the solid or sheet to be used as the boolean target.
+   - **Select tool bodies:** Select the solid or sheet to be used as the boolean tool.
+3. Set the options in the command dialog and shortcut key.
+   - **Keep Tools:** Performs Boolean operations while keeping the tool objects intact.
+   - <kbd>Shift-Q</kbd> **Slice:** Creates a solid at the intersections with the Boolean target and preserves the remaining solids.
+   - <kbd>Q</kbd> **Union:** Joins the boolean target and tool together.
+   - <kbd>W</kbd> **Difference:** Removes the tool from the boolean target.
+   - <kbd>Shift-E</kbd> **Intersect:** Creates a solid at the intersection of the boolean target and tool.
+   - <kbd>T</kbd> **Keep Tool:** Performs Boolean operations while keeping the tool objects intact.
+   - <kbd>G</kbd> **Move:** Move the tool in the same way as the **Move** command.
+   - <kbd>R</kbd> **Rotate:** Ratate the tool in the same way as the **Rotate** command.
+   - <kbd>S</kbd> **Scale:** Scale the tool in the same way as the **Scale** command.
+   - <kbd>X</kbd> **X-axis:** Limit to the X-axis direction.
+   - <kbd>Y</kbd> **Y-axis:** Limit to the Y-axis direction.
+   - <kbd>Z</kbd> **Z-axis:** Limit to the Z-axis direction.
+   - <kbd>Shift-X</kbd> **X plane:** Limit to the X-plane direction.
+   - <kbd>Shift-Y</kbd> **Y plane:** Limit to the Y-plane direction.
+   - <kbd>Shift-Z</kbd> **Z plane:** Limit to the Z-plane direction.
 4. Confirm with OK in the command dialog or right-click.
- */}
 
+![Boolean 1](/img/boolean-1.png )
 
+![Boolean 2](/img/boolean-2.png )
 
+![Boolean 3](/img/boolean-3.png )
+
+![Boolean 4](/img/boolean-4.png )
