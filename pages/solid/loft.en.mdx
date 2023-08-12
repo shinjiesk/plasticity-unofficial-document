@@ -81,11 +81,6 @@ The guides can be used to control the shape of the loft.  Any combination of cur
     - The other options are the same as **Lofting two curves** and **Lofting two edges** described above.
 5. Confirm with OK in the Command Dialog or right-click.
 
-<Callout emoji="❗">
-**Note**<br />
-The guide endpoints must touch the profile curve. If they are touching, they will be green. Otherwise, they will be purple. To ensure a precise touch, see [**Object Snaps**](../3d-viewport/grid-and-snap#object-snap).
-</Callout>
-
 ![Loft Curve with guide](/img/loft-curve-with-guide.gif)
 
 ## Continuous Lofting
@@ -144,3 +139,16 @@ You can loft two faces to create a solid.
 
 Lofting two vertices allows bridging two curves. The functionality is the same as [**Bridge Vertex.**](../sketch/bridge#bridge-vertex).
 
+## Troubleshooting Tips
+
+<Callout type="info" emoji="💡">
+**Possible reasons when loft doesn't succeed**
+1. Curve(s) are overly complex.  Rebuilding the curves is often the solution.
+2. Guide curve(s) not touching the profile(s).  Check that each connection has a blue-green dot, indicating intersection.  To ensure a precise touch, see [**Object Snaps**](../3d-viewport/grid-and-snap#object-snap).
+3. Attempting to Loft a complex shape all in one go.  Design the model using simpler sub-section shapes, made with multiple Lofts. Connect surfaces using Joins or using bridge curves with additional Lofts for example.
+4. Too many, or not enough guide curves. Practice helps one to get better here.  Lofts struggle if you try to force a surface to fit through too many profiles & guides. Same issue if profiles & guides are spaced too close together.
+5. Select curve(s) instead of edge(s). The possible options are different for edge and curve. 
+6. Curves are not selected in the correct order. Profiles and guides must be selected in the order in which surfaces flow.
+7. Failed Loft some times is not a failure.  Generally you see the Loft growing as you select guides. However, I've had surfaces appear, then disappear, when selecting the next guides.  This leads you to think the Loft has failed. Keep going on to the next giude(s) and all the surfaces may suddenly appear.  It's as if Parisolid sometimes needs ALL your inputs first to solve the puzzle.
+8. Reverse the selection sequence of Profiles and Guides.  Normally you select the Profiles and then the Guides.  When a loft fails try selecting the "Guides" and then the "Profiles".  This can work even though it seems backwards.
+</Callout>
