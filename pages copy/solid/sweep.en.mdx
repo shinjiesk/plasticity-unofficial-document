@@ -1,0 +1,39 @@
+import Reference from 'components/Reference'
+
+# Sweep
+
+<Reference shortcut="Shift-P" command="Sweep" button="Right of Command Bar" />
+
+You can perform a sweep operation on faces, Regions, or curves.
+
+1. Slect the Regions, Faces, or Curves to be swept.
+2. Press <kbd>Shift-P</kbd>.
+3. Select the curve that will serve as the path for the sweep.
+4. Set the options in the Command Dialog and shortcut key.
+   - **Twist:** Specify the twisting angle in degrees.
+   - **Alignment:** 
+      - **Parallel:** Sweeps parallel to the path, regardless of the orientation. 
+      - **Normal:** Sweeps at an angle aligned with the path.
+   - <kbd>D</kbd> **Twist:** Specify the Twist with mouse movement.
+5. If you need to specify Sweep guides.
+      1. Make sure that **Select guides:** is in purple.
+      2. Select the Curves that will serve as guides for the sweep.
+        - Use <kbd>Shift</kbd>-click to select multiple guides.
+        - Use <kbd>Ctrl</kbd>-click to deselect.
+        - The order in which you select the guides will affect the shape of the sweep.
+      3. Set the options in the Command Dialog
+        - **Guide method:**
+          - **Point:** The cross-section of the swept body is rotated and scaled so that the points initially coincident with the guide and path always remain in contact.
+          - **Chord:**  The cross-section is rotated but not scaled.
+          - **Curve:** The cross-section is rotated but not scaled. The guide and path must touch the profile. The profile stays in contact with both guide wires, but only one of the contact points is at a fixed
+          point on the profile; the other is free to move along the profile.
+          Note: The profile must be large enough to span the greatest distance between the two guide wires.
+6. Confirm with OK in the Command Dialog or right-click.
+7. The object created depends on the initial selection.
+   - If you select Regions and Faces, a Solid is created.
+   - If you select a curve, a Sheet is created.
+
+![Sweep](/img/sweep.gif)
+
+
+

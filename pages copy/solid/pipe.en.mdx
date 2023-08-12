@@ -1,0 +1,33 @@
+import Reference from 'components/Reference'
+
+# Pipe
+
+<Reference shortcut="P" command="Pipe" button="Right of Command Bar" />
+
+You can create a pipe along a curve or edge.
+
+1. Select the curve or edge you want to pipe.
+2. Press <kbd>P</kbd>.
+3. Drag the yellow dot to specify the section size and the yellow square to specify the pipe thickness. Drag the white circle to specify the rotation angle.
+4. Set the options in the Command Dialog and shortcut key.
+     - **Select target bodies:** Select the solid or sheet to be used as the boolean target.
+          - <kbd>Shift-Q</kbd> **Slice:** Creates a solid at the intersections with the Boolean target and preserves the remaining solids.
+          - <kbd>Q</kbd> **Union:** Joins the boolean target and tool together.
+          - <kbd>W</kbd> **Difference:** Removes the tool from the boolean target.
+          - <kbd>Shift-E</kbd> **Intersect:** Creates a solid at the intersection of the boolean target and tool.
+          - <kbd>B</kbd> **New Body:** Creates a new solid without performing Boolean operations.
+          - <kbd>T</kbd> **Keep Tool:** Performs Boolean operations while keeping the tool objects intact.
+     - **Select custom profile:** Select the Regions, Curves or Faces to specify the custom profiles.
+     - **Vertex count:** Specify the number of vertices for the profile's polygon. If you specify 0, it will be circular.
+     - **Section size:** Specify the section size.
+     - **Thickness:** Specify the pipe thickness.
+     - **Angle:** Specify the rotation angle.
+     - <kbd>C</kbd> **Custom profile** Select the Regions, Curves or Faces to specify the custom profiles.
+     - <kbd>D</kbd> **Section size** Specify the section size by moving the cursor.
+     - <kbd>A</kbd> **Angle** Specify the rotation angle by moving the cursor.
+     - <kbd>Shift-T</kbd> **Thickness** Specify the pipe thickness by moving the cursor.
+5. Confirm with OK in the Command Dialog or right-click.
+
+![Pipe](/img/pipe.gif)
+
+

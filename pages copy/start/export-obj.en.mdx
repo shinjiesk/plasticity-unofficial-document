@@ -1,0 +1,27 @@
+# Export OBJ
+
+1. Select the solid or sheet you want to export.
+   - If nothing is selected, all displayed solids and sheets will be exported.
+2. Click **Menu** > **Export/Save as...**.
+3. A save-as dialog box will appear.
+   - Enter the file name.
+   - Select **Wavefront OBJ (*.obj)** as the file type.
+4. The ExportOBJ dialog box will appear.
+   - Configure the options.
+
+   | Option | Overview | Detail | Recommended Value |
+   | ------- | ------- |------- |------- |
+   | **Topology** |  | **The shape of the polygons to be converted** <br /> Tris (only triangular polygons) <br /> Quads (quadrangular and triangular polygons) <br /> Ngons (polygons with multiple sides, quadrangular, triangular polygons)||
+   |**Density** |  | **This is the only value that automatically sets other values, so it's easy to achieve good results with this value alone.** <br /> Lower the value: fewer polygons, rough shape conversion.<br /> Increase the value: more polygons, detailed shape conversion.||
+   |**Min width** | Minimum Size | **Specify the minimum size of the polygons.** <br /> To avoid congestion of small polygons, such as minute fillets, increase this value. |
+   |**Max width** | Maximum Size | **Specify the maximum size of the polygons.** <br /> To avoid extremely long or large polygons, decrease this value. <br /> To make the size of the polygons more uniform, decrease this value. |
+   |**Surface plane tolerance** | Maximum Allowable Deviation <br /> (in cm) | **Specify the accuracy of the conversion.** <br /> Lower the value: more polygons, detailed shape conversion.<br /> Increase the value: fewer polygons, rough shape conversion. <br /> Although less intuitive than Max width, this is one of the most common ways to increase or decrease the number of polygons. | A suitable value for low poly is 0.01, and for high poly is 0.0001. <br /> If you want to use a value smaller than 0.001, it may be better to decrease the Max width. |
+   |**Surface angle tolerance** | Maximum Allowable Angular Deviation <br /> (in radians) | **Specify the accuracy of the surface conversion.** <br /> Lower the value: the curved surface is converted faithfully, and the number of polygons increases.<br /> Increase the value: the curved surface is converted roughly, and the number of polygons decreases.<br /> This can be thought of as the minimum number of segments, or elements, per circle or cylinder. | A suitable value is 0.35 (for low poly) to 0.15 (for high poly). |
+   |**Curve plane tolerance** | Maximum Allowable Deviation of Edge <br /> (in cm) | **Specify the accuracy of the conversion of the edges and face boundaries.** <br /> This is similar to Surface plane tolerance, but affects the conversion of edges and face boundaries more than the center of the face. ||
+   |**Curve angle tolerance** | Maximum Allowable Angular Deviation of Edge <br /> (in radians) | **Specify the accuracy of the conversion of the edges of curved surfaces (boundaries of the face).** <br /> This is similar to Surface angle tolerance, but affects the conversion of edges (boundaries of the face) more than the center of the face. | A suitable value is 0.35 (for low poly) to 0.15 (for high poly). |
+   |**Curve max length** | Maximum Allowable Length of Curve (Edge) Segment |         |
+   |**Plane angle** | Maximum Allowable Ratio between Plane Tolerance and Max Width | Useful for obtaining more quadrangles or polygons. |
+1. Click OK.
+2. The OBJ file is exported.
+
+

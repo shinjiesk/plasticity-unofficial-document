@@ -1,0 +1,22 @@
+import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon'
+
+<Reference shortcut="" command="Match Face" button="Right of Command Bar" />
+
+# Match Face
+
+フェイスを他のフェイスに置き換えることができます。
+
+1. 置き換えたいフェイスを選択します。
+2. ボタン <ButtonIcon type="button-match-face" /> をクリックします。
+3. 置き換え先のサーフェイスを選択します。
+3. コマンドダイアログでオプションを設定します。
+        - 凹面の内側のフェイスを合わせるとき。
+        - **Moving:** 外壁に到達したら、壁全体を移動します。
+        - **Fixed:** 外壁で停止します。
+        - **None:** 外壁の影響を受けずに、フェイスが進み続けます。
+    - **Side:** 
+        - **Front:** 有効にすると、選択された面の前面に一致します。
+4. コマンドダイアログでOKをクリックするか、右クリックで確定します。
+
+![Match Face](/img/match-face.gif)

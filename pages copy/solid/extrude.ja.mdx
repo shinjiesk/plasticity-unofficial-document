@@ -1,0 +1,33 @@
+import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon'
+
+# Extrude（押し出す）
+
+<Reference shortcut="E" command="Extrude" button="コマンドバー右" />
+
+フェイスまたはリージョンを押し出したときはソリッドが作成されます。カーブのときはシートが作成されます。
+
+1. <kbd>E</kbd>を押すか、ボタン <ButtonIcon type="button-extrude" /> をクリックします。
+2. 押し出すフェイス、リージョンまたはカーブを選択します。
+3. 黄色い丸を動かして距離を指定します。
+4. コマンドダイアログまたはショートカットキーでオプションを設定します。 
+   - **Select target bodies:** ブーリアンのターゲットにするソリッドやシートを選択します。
+      - <kbd>Shift-Q</kbd> **Slice:** ブーリアン対象との交点にソリッドを作成し、余りのソリッドも残ります。
+      - <kbd>Q</kbd> **Union:** ブーリアン対象と結合します。
+      - <kbd>W</kbd> **Difference:** ブーリアン対象から切り取ります。
+      - <kbd>Shift-E</kbd> **Intersect:** ブーリアン対象との交点にソリッドを作成します。
+      - <kbd>B</kbd> **New Body:** 新規にソリッドを作成します。ブーリアンは実行されません。
+      - <kbd>T</kbd> **Keep Tool:** ブーリアンが実行され、ツールのオブジェクトはそのまま残ります。
+   - **Distance:** 距離と反対側の距離を指定します
+   - **Degrees:** 押し出しの角度を指定します。
+   - **Thickness:** 壁の厚さを指定します。
+   - **Keep tools:** <kbd>T</kbd>と同じです。
+   - <kbd>F</kbd> **Freestyle** クリックして始点と終点を指定し、移動の方向と距離を指定します。
+   - <kbd>V</kbd> **Pivot** クリックしてギズモの位置を指定します。
+   - <kbd>D</kbd> **Distance 1** カーソルを動かして距離を指定します。
+   - <kbd>A</kbd> **Angle 1** カーソルを動かして押し出しの角度を指定します。
+   - <kbd>Shift-T</kbd> **Thickness** カーソルを動かして壁の厚さを指定します。
+   - <kbd>Tab</kbd> **Lock distances** 両側の距離を同じにして押し出します。
+5. コマンドダイアログのOKをクリックするか、右クリックします。
+
+
