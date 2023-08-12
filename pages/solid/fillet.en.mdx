@@ -1,4 +1,5 @@
 import Reference from 'components/Reference'
+import { Callout } from 'nextra/components'
 
 # Fillet
 
@@ -15,46 +16,56 @@ You can fillet or chamfer the edges of a solid or sheet.
 1. Select the edges to fillet or chamfer.
 2. When a esges is selected, the default command, **Fillet**, is automatically executed.
 3. Move the yellow dot to specify the distance of the fillet or chamfer. Positive movement results in a fillet and negative movement results in a chamfer.
+    ![Fillet](/img/fillet-solid-0.gif)
 4. To select more edges, <kbd>Ctrl</kbd>-click on the edge. To deselect, <kbd>Ctrl</kbd>-click again.
-5. Set the options in the command dialog and shortcut key.
-    - **Distance:** 
-        - To fillet an edge, enter a positive value.
-        - To chamfer an edge, enter a negative value.
-        - For both fillets and chamfers, two values can be entered to specify the distance from the edge in both directions.
-        ![](/img/fillet-solid-two-value.gif)
-    - **When fillet:**
-        - **Shape:**
-            - **Conic:** Conical Continuity.
-            - **G2:** G2 Continuity. see [Surface Continuity](../cad-essentials/continuity-curve-and-surface).
-        ![](/img/fillet-solid.gif)
-        - **Y-Blend:** To create better topology and avoid undesired fillet results by enabling **Attempt**.
-        ![](/img/fillet-solid-yblend.gif)
-        - **Selection:** Disable **Add tangent edges** to limit fillets to selected edges only.
-        ![](/img/fillet-sold-selection.gif)
-        - <kbd>A</kbd> **Chamfer angle:** Specify asymmetric fillets by moving the cursor.
-        - <kbd>D</kbd> **Fillet distance:** Specify Fillet distance by moving the cursor.
-        - <kbd>V</kbd> **Add variable point:** Add a variable point to the fillet.
-        ![](/img/fillet-solid-variable.gif)
-        - <kbd>L</kbd> **Add limit (stop) point:** Specify the range to fillet.
-            - Make sure that [**Object Snaps**](../3d-viewport/grid-and-snap#object-snap) are enabled.
-            - Click on the center line of fillet to add a limit point.
-            - To reverse the direction, click on the limit point again.
-            - Up to two limit points can be set.
-        ![](/img/fillet-solid-limit.gif)
-        - To copy a fillet radius, click on the source fillet, but only if the two Distance values are the same and the shape is a Conic.
-        ![](/img/fillet-solid-copyfillet.gif)
-<br/>
-    - **When chamfer:**
-        - **Shape:**
-            - **Offset:** Default chamfer.
-            - **Apex:** Reduce the displacement of the border of the chamfer surface.
-        - **Selection:** Disable **Add tangent edges** to limit chamfer to selected edges only.
-        - <kbd>A</kbd> **Chamfer angle:** Specify chamfer angle by moving the cursor.
-        - <kbd>D</kbd> **Fillet distance:** Specify Fillet distance by moving the cursor.
-        - <kbd>C</kbd> **Chanfer distance:** Specify Chamfer distance by moving the cursor.
-        - <kbd>L</kbd> **Add limit (stop) point:** Specify the range to fillet. Same as **When fillet.**
+5. Set the options in the command dialog and shortcut key. See [**Fillet options**](#fillet-options) and [**Chamfer options**](#chamfer-options) below.
 6. Confirm with OK in the command dialog or right-click.
 
+### Fillet options
+**Distance:** 
+    - To fillet an edge, enter a positive value. To chamfer an edge, enter a negative value
+<Callout type="info" emoji="💡">
+    **Tip:**
+    To copy a fillet radius, click on the source fillet, but only if the two Distance values are the same and the shape is a Conic.
+![](/img/fillet-solid-copyfillet.gif)
+</Callout>
 
+**Shape:**
+    - **Conic:** Conical Continuity.
+    - **G2:** G2 Continuity. see [Surface Continuity](../cad-essentials/continuity-curve-and-surface).
+    ![](/img/fillet-solid.gif)
 
+**Y-Blend:** 
+    - The “Y-blend” is a special kind of blend or fillet that occurs when three surfaces meet at a common point, forming a “Y” shape. Enabling **Attempt**, you can create better topology  in Y-blend and avoid undesired fillet results.
+    ![](/img/fillet-solid-yblend.gif)
 
+**Selection:** 
+    - Disable **Add tangent edges** to limit fillets to selected edges only.
+    ![](/img/fillet-sold-selection.gif)
+
+<kbd>A</kbd> **Chamfer angle:** 
+    - Specify fillet angle by moving the cursor.
+<Callout type="info" emoji="💡">
+    Also, changing the two values of distance changes the angle.
+    ![](/img/fillet-solid-two-value.gif)
+</Callout>
+
+<kbd>D</kbd> **Fillet distance:** 
+    - Specify Fillet distance by moving the cursor.<br />
+
+<kbd>C</kbd> **Chanfer distance:** 
+    - Specify Chamfer distance by moving the cursor.<br />
+
+<kbd>V</kbd> **Add variable point:** <br />
+    - Add a variable point to the fillet.<br />
+    ![](/img/fillet-solid-variable.gif)
+
+<kbd>L</kbd> **Add limit (stop) point:** <br />
+    - Specify the range to fillet. Make sure that [**Object Snaps**](../3d-viewport/grid-and-snap#object-snap) are enabled, Click on the center line of fillet to add a limit point. To reverse the direction, click on the limit point again. Up to two limit points can be set.
+    ![](/img/fillet-solid-limit.gif)
+
+### Chamfer options
+- **Shape:**
+    - **Offset:** Default chamfer.
+    - **Apex:** Reduce the displacement of the border of the chamfer surface.
+- Others are the same as fillet options.
