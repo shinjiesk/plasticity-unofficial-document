@@ -1,9 +1,9 @@
 {
-  "object-names": "オブジェクトの名称",
-  "operating-the-3d-viewport": "3Dビューポートの操作",
-  "object-manipulation": "オブジェクトの操作",
-  "grid-and-snap": "グリッドとスナップ",
-  "construction-plane": "構築平面",
-  "numeric-input-and-tooltip": "数値入力とツールチップ"
+    "object-names": "オブジェクトの名称",
+    "operating-the-3d-viewport": "3Dビューポートの操作",
+    "outliner": "アウトライナー",
+    "grid-and-snap": "グリッドとスナップ",
+    "construction-plane": "構築平面",
+    "object-manipulation": "オブジェクトの操作",
+    "numeric-input-and-tooltip": "数値入力とツールチップ"
 }
-

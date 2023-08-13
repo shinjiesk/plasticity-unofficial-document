@@ -1,8 +1,10 @@
 {
   "download-and-install": "Download and install",
   "user-interface-overview": "User Interface Overview",
+  "general": "General Functions",
   "how-to-execute-a-commands": "How to Execute a Commands",
-  "file-operations": "File Operations",
+  "file-menu": "File Menu",
   "importing-reference-images": "Importing Reference Images",
-  "export-obj": "Export OBJ"
+  "export-obj": "Export OBJ",
+  "preferences": "Preferences"
 }
