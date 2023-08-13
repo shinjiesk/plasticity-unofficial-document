@@ -1,12 +1,66 @@
 import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon'
+import { Callout } from 'nextra/components'
 
 # Patch
 
 <Reference shortcut="" command="" button="" />
 
-シートのエッジとカーブが混在していてもOK
+## Creating a Patch from curves
+
+You can create a patch shrface from closed curves.
+
+1. Select the closed curves you want to patch.
+2. Click the button <ButtonIcon type="button-patch" /> on the Right of Command Bar.
+3. Set the options in the Command Dialog.
+    - **Tolernace:** Specify the tolerance for the patch.
+4. Confirm with OK in the Command Dialog or right-click.
+
+## Patch holes along edges
+
+You can patch holes along edges.
+
+1. Select the edges that surround the hole.
+2. Click the button <ButtonIcon type="button-patch" /> on the Right of Command Bar.
+3. Set the options in the Command Dialog.
+    - **Continuity:**
+        - **Planar:** Specify the continuity as planar.
+        - **G0, G1, G2**
+            - Specify the [continuity of the Surface](../cad-essentials/continuity-curve-and-surface).
+            - Continuity can be specified individually by clicking on the black circles on the surface.
+    - **Faces:**
+        - **Single:**
+        - **Minimal:**
+        - **Quality:**
+    - **Tolernace:** Specify the tolerance for the patch.
+4. Confirm with OK in the Command Dialog or right-click.
+
+## Patch with guide curves
+
+You can patch holes along edges with guide curves.
+
+1. Create the guide curves.
+2. Add isoparams to the point at which guide curves are touched. 
+3. Select the closed edges you want to patch.
+4. Click the button <ButtonIcon type="button-patch" /> on the Right of Command Bar.
+5. Select the guide curves.
+6. Set the options in the Command Dialog.
+    - Options are the same as above.
+7. Confirm with OK in the Command Dialog or right-click.
+
+## Patch multiple holes
+
+You can patch multiple holes at once.
+
+1. Select the sheets with multiple holes you want to patch.
+2. Click the button <ButtonIcon type="button-patch" /> on the Right of Command Bar.
+3. Holes are patched and made solid.
+<Callout emoji="❗">
+**Note**<br />
+If there is a hole that cannot be filled, the command fails.
+</Callout>
 
 
-{/* 
-The streamlined patch tool covers holes with mixed g0/g1/g2 filling, making design repairs accurate and easy. 
-*/}
+
+
+
