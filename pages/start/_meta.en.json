@@ -2,9 +2,10 @@
   "user-support": "User Support",
   "download-and-install": "Download and install",
   "user-interface-overview": "User Interface Overview",
+  "file-menu": "File Menu",
+  "outliner": "Outliner",
   "general": "General Functions",
   "how-to-execute-a-commands": "How to Execute a Commands",
-  "file-menu": "File Menu",
   "importing-reference-images": "Importing Reference Images",
   "export-obj": "Export OBJ",
   "preferences": "Preferences"
