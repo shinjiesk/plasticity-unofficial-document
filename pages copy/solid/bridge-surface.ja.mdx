@@ -1,0 +1,39 @@
+import Reference from 'components/Reference'
+
+# Bridge Surface（ふたつのシートを繋ぐ）
+
+<Reference shortcut="" command="Bridge Surface" button="" />
+
+繋がっていないサーフェイスををブレンドまたはフィレットすることができます。
+
+## 離れているサーフェイスを繋ぐ
+
+1. コマンドパレットで**Bridge Surface**コマンドを実行します。
+2. 繋ぎたいふたつのシートを選択します。
+3. コマンドダイアログでオプションを設定します。
+    - **Width:** ブリッジの幅を指定します。
+    - **Shape:** 
+        - **G2:** 繋いだサーフェイスはG2接続になります。
+        - **Chamfer:** 繋いだサーフェイスは面取りになります。
+    - **Trim walls:** 有効のとき、ブリッジの後ろのサーフェイスをトリムします。
+    - **Trim blend:** 
+        - **Both:** 繋いだサーフェイスの両側をトリムします。
+        - **Short:** 繋いだサーフェイスの短い側をトリムします。
+        - **Long:** 繋いだサーフェイスの長い側をトリムします。
+        - **None:** 繋いだサーフェイスをトリムしません。
+4. コマンドダイアログでOKをクリックするか、右クリックで確定します。
+
+![Bridge Surface 1](/img/bridge-surface-1.gif)
+
+## Bridging intersecting surfaces
+
+1. コマンドパレットで**Bridge Surface**コマンドを実行します。
+2. 繋ぎたいふたつのシートを選択します。
+3. コマンドダイアログでオプションを設定します。
+    - **Sense:** 
+        - **Sense 1/Sense 2:** Reverse the direction of the bridge surface.
+    - その他のオプションは上記と同じです。
+4. コマンドダイアログでOKをクリックするか、右クリックで確定します。
+
+![Bridge Surface 2](/img/bridge-surface-2.gif)
+

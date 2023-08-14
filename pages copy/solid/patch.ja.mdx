@@ -1,0 +1,74 @@
+import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon'
+import { Callout } from 'nextra/components'
+
+# Patch
+
+<Reference shortcut="" command="Patch" button="Right of Command Bar" />
+
+## カーブからパッチを作成する
+
+閉じたカーブからパッチを作成することができます。
+
+1. パッチを作成したい閉じたカーブを選択します。
+2. コマンドバーの右側にある <ButtonIcon type="button-patch" /> ボタンをクリックします。
+3. コマンドダイアログでオプションを設定します。
+    - **Tolernace:** パッチの許容差を指定します。
+4. コマンドダイアログで OK をクリックするか、右クリックして確定します。
+
+![Patch 1](/img/patch-1.gif)
+
+## Patch holes along edges
+## エッジに沿って穴をパッチする
+
+エッジに沿って穴をパッチすることができます。
+
+1. 穴を囲むエッジを選択します。
+2. コマンドバーの右側にある <ButtonIcon type="button-patch" /> ボタンをクリックします。
+3. コマンドダイアログでオプションを設定します。
+    - **Continuity:**
+        - **Planar:** サーフェスの連続性を平面として指定します。
+        - **G0, G1, G2**
+            - [サーフェスの連続性](../cad-essentials/continuity-curve-and-surface)を指定します。
+            - サーフェス上の黒い丸をクリックすることで、個別に連続性を指定することができます。
+    - **Faces:**
+        - **Single:**
+        - **Minimal:**
+        - **Quality:**
+    - **Tolernace:** パッチの許容差を指定します。
+4. コマンドダイアログで OK をクリックするか、右クリックして確定します。
+
+![Patch 2](/img/patch-2.gif)
+
+## ガイドカーブでパッチする
+
+ガイドカーブを使って、エッジに沿って穴をパッチすることができます。
+
+1. ガイドカーブを作成します。
+2. ガイドカーブが接触する点に、[Isoparam](./isoparam)コマンドでアイソパラムを追加します。
+3. 穴を囲むエッジを選択します。
+4. コマンドバーの右側にある <ButtonIcon type="button-patch" /> ボタンをクリックします。
+5. ガイドカーブを選択します。
+6. コマンドダイアログでオプションを設定します。
+    - オプションは上記と同じです。
+7. コマンドダイアログで OK をクリックするか、右クリックして確定します。
+
+![Patch 3](/img/patch-3.gif)
+
+## 複数の穴をパッチする
+
+複数の穴を一度にパッチすることができます。
+
+1. パッチしたい複数の穴があるシートを選択します。
+2. コマンドバーの右側にある <ButtonIcon type="button-patch" /> ボタンをクリックします。
+3. 穴がパッチされて、ソリッドになります。
+
+<Callout emoji="❗">
+**注意**<br />
+パッチできない穴があると、コマンドは失敗します。
+</Callout>
+
+![Patch 4](/img/patch-4.gif)
+
+
+

@@ -1,0 +1,78 @@
+import Reference from 'components/Reference'
+
+# Offset Curve（カーブをオフセットする）
+
+<Reference shortcut="O" command="Offset Curve" button="コマンドバー右" />
+
+このコマンドは、選択されていたオブジェクトに応じて以下のコマンドを自動的に呼び出します。
+
+- カーブ選択時: 下記の[**Offset Planar Curve**](#offset-planar-curve) を参照。
+- リージョン選択時: 下記の[**Offset Region**](#offset-region) を参照。
+- フェース選択時: Solidの **Offset Curve** の[**Offset Face Loop**](../solid/offset-curve#offset-face-loop)を参照。
+- エッジ選択時: Solidの **Offset Curve** の[**Offset Edge**](../solid/offset-curve#offset-edge)を参照。
+
+## Offset Planar Curve（カーブをオフセットする）
+
+カーブをオフセットして新しいカーブを作成することができます。
+
+1. オフセットしたいカーブを選択します。
+2. <kbd>O</kbd>を押します。
+3. 黄色い矢印を動かして距離を指定します。   
+4. コマンドダイアログとショートカットキーでオプションを設定します。
+   - **Distance:** 距離を指定します。
+   - **Gap fill:** 
+        - **Round:** 出っ張った角を丸めます。
+        - **Linear:** 出っ張った角を直線でつなぎます。 
+        - **Natural** ナチュラル
+   - <kbd>Tab</kbd> **Lock distances:** 両側に等しい距離でオフセットします。
+   - <kbd>F</kbd> **Freestyle:** 下記の[**Freestyle Offset Planar Curve**](#freestyle-offset-planar-curve)と同様の機能です。
+   - <kbd>D</kbd> **Distance:** マウスの動きで距離を指定します。
+5. コマンドダイアログのOKか右クリックで確定します。
+
+![Offset Planar Curve](/img/offset-planar-curve.gif)
+
+## Freestyle Offset Planar Curve
+
+グリッドスナップやオブジェクトスナップも利用して、カーブをオフセットして新しいカーブを作成することができます。
+
+- このコマンドは、**Offset Curve **コマンドの**Freestyle**オプションだけでなく、コマンドパレットの**Freestyle Offset Planar Curve **を使っても実行できます。
+
+1. オフセットしたいカーブを選択します。
+2. <kbd>O</kbd>を押します。
+3. <kbd>F</kbd>を押してフリースタイルモードに入ります。
+4. カーソルをオフセットする位置に移動してクリックします。
+   - グリッドスナップが有効な場合、グリッドにスナップされます。
+   - オブジェクトスナップが有効な場合、オブジェクトにスナップされます。
+   - **Distance:** 距離を指定します。
+   - **Gap fill:**
+        - **Round:** 出っ張った角を丸めます。
+        - **Linear:** 出っ張った角を直線でつなぎます。 
+        - **Natural** ナチュラル
+   - <kbd>Tab</kbd> **Lock distances:** 両側に等しい距離でオフセットします。
+5. コマンドダイアログのOKか右クリックで確定します。
+
+## Offset Region（リージョンをオフセットする）[#offset-region]
+
+リージョンをオフセットして新しいリージョンを作成することができます。
+
+1. オフセットしたいリージョンを選択します。
+2. <kbd>O</kbd>を押します。
+3. 黄色い矢印を動かして距離を指定します。
+4. コマンドダイアログとショートカットキーでオプションを設定します。
+   - **Distance:** 距離を指定します。
+   - **Gap fill:**
+        - **Round:** 出っ張った角を丸めます。
+        - **Linear:** 出っ張った角を直線でつなぎます。 
+        - **Natural** ナチュラル
+   - <kbd>Tab</kbd> **Lock distances:** 両側に等しい距離でオフセットします。
+   - <kbd>I</kbd> **Individual:** 複数のリージョンが選択されているとき、このオプションをオンにすると、リージョンを結合してオフセットします。
+   - <kbd>D</kbd> **Distance:**
+        - マウスの動きで距離を指定します。
+5. コマンドダイアログのOKか右クリックで確定します。
+
+![Offset Region](/img/offset-region.gif)
+
+
+
+
+

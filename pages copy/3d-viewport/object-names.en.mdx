@@ -1,0 +1,64 @@
+import { Callout } from 'nextra/components'
+
+# Object Names
+
+## Sketch
+
+### Curve
+Line or curve consisting of Vertex and Control-Vertex.
+To select, set the selection mode to "Edge".
+Multiple curves can be connected and treated as one.
+It is displayed as a blue line in the sketch. When you point the cursor on it, it turns white, and when selected, it turns yellow.
+![Curve](/img/object-name-curve.png)
+
+### Vertex
+A point that exists at both ends of a curve and determines the position of the curve.
+To display and select it, set the selection mode to "Control-Point".
+It appears as a purple dot in the sketch. It turns white when you point the cursor on it, and stays white when you select it.
+When multiple Vertexes are matched, they are indicated by a blue-green dot. Note that this only indicates a match and has nothing to do with the presence or absence of a connection.
+![Vertex](/img/object-name-vertex.png)
+
+### Control-Vertex (CV)
+A point that exists in the middle of a curve and determines the shape of the curve.
+To display and select it, set the selection mode to "Control-Point".
+It appears as a small purple dot on the sketch. It turns white when you point the cursor on it and stays white when you select it.
+Vertex and Control-Vertex are connected by a white line to make it easier to recognize their relationship to Curve.
+By adding Control-Vertex, complex curves can be expressed.
+![Control-Vertex](/img/object-name-cv.png)
+
+### Region
+Area surrounded by curves. To select, set the selection mode to "Face". It appears as a dark blue area in the sketch. When the cursor is pointed at the Region, the default command Extrude is automatically executed.
+<Callout emoji="❗">
+**Note**<br />
+The result of the command is different when a closed curve is selected and when Region is selected. For example, when Extrude, a closed curve creates a sheet and a region creates a solid.
+</Callout>
+![Region](/img/object-name-region.png)
+
+## Solid
+
+### Solid
+Three-dimensional sealed with Face.
+To select, set the selection mode to "Body".
+If you delete some Face, it becomes a Sheet.
+It is displayed in gray in the 3D viewport, and the outline turns white when you point the cursor on it, and yellow when you select it.
+![Solid](/img/object-name-solid.png)
+
+### Sheet
+An open solid surrounded by a Face.
+To select it, set the selection mode to Body.
+It is displayed in gray in the 3D viewport, and when the cursor is pointed at it, the outline turns white, and when selected, it turns yellow.
+![Sheet](/img/object-name-sheet.png)
+
+### Face
+The planar or curved surfaces that make up Solid and Sheet.
+To select, set the selection mode to Face.
+It will appear gray in the 3D viewport, lighten when you point the cursor on it, and turn yellow when selected.
+When Face is selected, the default command Offset Face is automatically executed.
+![Face](/img/object-name-face.png)
+
+### Edge
+Face Border.
+To select, set the selection mode to "Edge".
+It is displayed as a black line, which turns white when the cursor is pointed at it, and turns yellow when selected.
+When the edge of the boundary between two Faces is selected, the default command Fillet is automatically executed, and when the open edge of a Sheet is selected, the default command Extend Sheet is automatically executed.
+![Edge](/img/object-name-edge.png)

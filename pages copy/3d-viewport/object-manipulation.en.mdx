@@ -1,0 +1,85 @@
+---
+title: Object Manupulation
+---
+# Object Manupulation
+
+## Object Selection
+
+### Selection Modes
+
+Switch the selection mode according to the object you want to select.
+To switch the selection mode, use the buttons in the upper left corner of the screen or keyboard shortcuts.
+
+![Selection mode buttons](/img/selection-mode-buttons.png)
+
+| Selection mode                           | Shortcut             | Button                     |
+| ---------------------------------------- | -------------------- | -------------------------- |
+| Control point selection mode             | <kbd>1</kbd>         | (1)                        |
+| Edge selection mode                      | <kbd>2</kbd>         | (2)                        |
+| Face selection mode                      | <kbd>3</kbd>         | (3)                        |
+| Solid selection mode                     | <kbd>4</kbd>         | (4)                        |
+| All selectable mode                      | <kbd>Tab</kbd>       | (5)                        |
+| Toggle only control point selection mode | <kbd>Shift - 1</kbd> | <kbd>Shift</kbd>-click (1) |
+| Toggle only edge selection mode          | <kbd>Shift - 2</kbd> | <kbd>Shift</kbd>-click (2) |
+| Toggle only face selection mode          | <kbd>Shift - 3</kbd> | <kbd>Shift</kbd>-click (3) |
+| Toggle only solid selection mode         | <kbd>Shift - 4</kbd> | <kbd>Shift</kbd>-click (4) |
+
+### Selecting Objects
+
+#### Select with mouse
+
+- Click: You can select an object.
+- Dragging from right to left: Objects touching the green selection will be selected.
+- Drag to select from left to right: Only objects that are completely contained in the purple selection will be selected.
+
+![Mouse Drag selection](/img/mouse-drag-selection.gif)
+
+### Selecting with Shortcuts
+
+| Operation                                    | Shortcut                    | Command className     |
+| -------------------------------------------- | --------------------------- | --------------------- |
+| Select all                                   | <kbd>A</kbd>                | **Select all**        |
+| Select All Curves                            |                             | **Select All Curves** |
+| Deselect all                                 | <kbd>Esc</kbd>              | **Deselect all**      |
+| Invert Selection                             | <kbd>Alt - A</kbd>          | **Invert Selection**  |
+| Make selection unselectable                  |                             | **Lock Selected**     |
+| Add adjacent items to the selection          | <kbd>Ctrl - Shift - =</kbd> | **Select Adjacent**   |
+| Select edge loops                            | <kbd>Alt</kbd>click         |                       |
+| Select edge rings                            | <kbd>Alt - Ctrl</kbd>click  |                       |
+| Select all Curves, regions on the same plane | <kbd>Alt</kbd>click         |                       |
+| Select all parallel faces                    | <kbd>Alt - Ctrl</kbd>click  |                       |
+
+| Operation                               | Shortcut            | Command className                |
+| --------------------------------------- | ------------------- | -------------------------------- |
+| Select edges included in the selection  | <kbd>Ctrl - 2</kbd> | **Selection: convert to edges**  |
+| Select faces included in the selection  | <kbd>Ctrl - 3</kbd> | **Selection: convert to faces**  |
+| Select solids included in the selection | <kbd>Ctrl - 4</kbd> | **Selection: convert to solids** |
+
+![Select objects included](/img/select-objects-included.gif)
+
+## Show and hide objects
+
+Objects can be temporarily hidden or made visible again.
+
+| Operation                         | Shortcut                      | Command className   |
+| --------------------------------- | ----------------------------- | ------------------- |
+| Hide selected objects             | <kbd>H</kbd>                  | **Hide selected**   |
+| Hide unselected objects           | <kbd>Shift-H</kbd>            | **Hide unselected** |
+| Unhide                            | <kbd>Alt-H</kbd>              | **Unhide all**      |
+| Invert Hidden                     | <kbd>Ctrl-H</kbd>             | **Invert Hidden**   |
+| Hide all curves on the same plane | Select regions - <kbd>H</kbd> |                     |
+
+## Grouping objects
+
+You can group objects.
+
+| Operation                            | Shortcut          | Command className    |
+| ------------------------------------ | ----------------- | -------------------- |
+| Group selected objects               | <kbd>Ctrl-G</kbd> | **Group Selected**   |
+| Remove selected objects from a group | <kbd>Alt-G</kbd>  | **Ungroup Selected** |
+
+
+
+
+
+

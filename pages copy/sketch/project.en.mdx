@@ -1,0 +1,53 @@
+---
+title: Project
+description: Explanation of how to use the Project command of the Sketch function.
+---
+
+import Reference from 'components/Reference'
+
+# Project
+
+<Reference shortcut="I" command="Project" button="Right of the command bar" />
+
+The behavior varies depending on the selected objects when executing the command.
+
+- When two Curves are selected: [**Project Curve Curve**](#project-curve-curve)
+- When two solids or sheets are selected: [**Project Body Body**](#project-body-body)
+- Otherwise: [**Project Curve Body**](#project-curve-body)
+
+## Project Curve Curve [#project-curve-curve]
+
+You can create a curve by projecting the intersection curve of two selected curves.
+
+1. Select the two Curves to be projected.
+2. Press <kbd>I</kbd> or click the button.
+3. The projected intersection curve will be created.
+
+## Project Body Body [#project-body-body]
+
+1. Select two solids or sheets.
+2. Press <kbd>I</kbd> or click the button.
+3. A curve representing the intersection line will be created.
+
+## Project Curve Body [#project-curve-body]
+
+You can project a curve onto a solid or sheet to create a curve.
+
+1. Select the solid or sheet to project onto.
+2. Press <kbd>I</kbd> or click the button.
+3. Select the curve to project.
+4. Set the options in the Command Dialog:
+   - **Method:**
+     - **Normal:** Projects in the positive Z-axis direction based on the construction plane.
+     - **Vector:** Specify the projection direction with the **Direction** option.
+         - **Direction:** Projects in the specified vector direction (**X**, **Y**, **Z**) based on the construction plane.
+   - **Bidirectional:** When enabled, the projection will also occur in the negative direction of the specified axis.
+   - **X-Ray:** When enabled, the projection will not occur on hidden faces in the positive direction of the specified axis.
+5. Click OK or right-click in the Command Dialog to confirm.
+6. The projected curve will be created.
+
+
+
+
+
+
