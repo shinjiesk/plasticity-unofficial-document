@@ -69,8 +69,3 @@ ul.nx-mt-6 {
 .nx-list-disc {
   list-style-type: none !important;
 }
-
-/* Button Icon */
-.buttonIcon > img {
-  display: inline !important;
-}

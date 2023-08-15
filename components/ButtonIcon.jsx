@@ -1,17 +1,15 @@
-import React from 'react';
+import React from "react";
+import Image from "next/image";
+import styles from 'styles/ButtonIcon.module.css'
 
 function ButtonImage({ type }) {
-  const imagePath = `/img/${type}.png`;
+    const imagePath = `/img/${type}.png`;
 
-  const imageStyle = {
-    display: 'inline !important',
-  };
-
-  return (
-    <span className="buttonIcon">
-      <img src={imagePath} alt={type} style={imageStyle} />
-    </span>
-  );
+    return (
+        <span className={styles.buttonIcon}>
+            <Image src={imagePath} alt={type} width={32} height={32} />
+        </span>
+    );
 }
 
 export default ButtonImage;
