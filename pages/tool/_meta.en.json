@@ -1,4 +1,5 @@
 {
+  "sketching-tips": "Sketching Tips",
   "line": "Line",
   "spline-curve": "Spline Curve",
   "control-point-curve": "Control Point Curve",
@@ -27,3 +28,4 @@
   "three-point-box": "Three Point Box",
   "cylinder": "Cylinder"
 }
+

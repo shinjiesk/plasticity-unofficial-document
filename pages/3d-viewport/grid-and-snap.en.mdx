@@ -1,32 +1,33 @@
-import Reference from 'components/Reference'
-
 # Grid and Snap
-{/* 
-Grid: toggle grid snapping
-Viewport: decrease grid size
-Viewport: increase grid size
 
-Snaps: toggle snap snapping
+## Grid[#grid]
 
- */}
+- The grid is displayed on the active construction plane. You can specify the grid unit and size in the [preferences](../start/preferences).
+- While you sketch or edit the object by mouse dragging, The grid snapping causes the mouse cursor to snap to the grid. 
+- To toggle the grid snapping, click the **Snap to grid** in the top right of the window. To specify the grid size, apply the value under the **Snap to grid**. 
+- To temporarily turn off grid snapping, hold <kbd>Ctrl</kbd> while dragging.
+- You can execute the grid snapping in the Command Palette; **Grid: toggle grid snapping**, **Viewport: decrease grid size**, **Viewport: increase grid size**.
 
+## Object snap[#object-snap]
 
+- While you sketch or edit by mouse dragging, The object snapping causes the mouse cursor to snap to the object. 
+- To toggle the object snapping, click the **Enable snapping** in the top right of the window. To specify the target type of the snap, click on the three points and select from the displayed.
 
+- You want snap when edit the object, you need to hold <kbd>Ctrl</kbd> key. When you draw a sketch, it requires no <kbd>Ctrl</kbd> key.
 
-## Grid
+- You can specify the snap target by the control vertex, curve, region, edge, and face. The snap target displays the small black dot for the snap point.
+- Tip help is displayed when you point to a snap target. Clicking on it will snap it Accurately.
 
-### Grid Size
+    | Snap target    | Tip help                                                                                           |
+    | -------------- | -------------------------------------------------------------------------------------------------- |
+    | Control-vertex | CV                                                                                                 |
+    | Curve          | Curve, Beginning, End, Middle, Closest, Intersection, X, Y, Z, XY, YZ, ZX, Center, 1/4, 3/4, Tan/Tan |
+    | Region         | Region, Center                                                                                     |
+    | Edge           | Edge, End, Middle                                                                                  |
+    | Face           | Face, Center                                                                                       |
 
-### Grid Snap
+- You can execute the object snapping in the Command Palette; **Snaps: toggle snap snapping**. 
 
+## Sketch Tips
 
-
-## Object Snap[#object-snap]
-
-
-
-## Shift Snap
-
-
-
-
+- To draw a sketch accurately, please refer to [Sketching Tips](../tool/sketching-tips).
