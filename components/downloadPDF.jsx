@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function DownloadPDF() {
     return (
         <>
@@ -7,7 +9,7 @@ export default function DownloadPDF() {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <div className="downloadButton">
+                <div className="nx-text-primary-600">
                     Plasticity_1.2.6_Shortcut_Key_Sheet.pdf
                 </div>
             </a>

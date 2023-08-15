@@ -1,7 +1,17 @@
 {
-    "object-names": "オブジェクトの名称",
-    "operating-the-3d-viewport": "3Dビューポートの操作",
-    "grid-and-snap": "グリッドとスナップ",
-    "construction-plane": "構築平面",
-    "object-manipulation": "オブジェクトの操作"
+  "object-names": "オブジェクトの名称",
+  "operating-the-3d-viewport": "3Dビューポートの操作",
+  "user-interface-overview": "インターフェイスの概要",
+  "file-menu": "ファイルメニュー",
+  "outliner": "アウトライナー",
+  "selection-mode": "選択モード",
+  "view-mode": "ビューモード",
+  "grid-and-snap": "グリッドとスナップ",
+  "construction-plane": "構築平面",
+  "command-bar": "コマンドバー",
+  "command-palette": "コマンドパレット",
+  "general": "一般機能",
+  "importing-reference-images": "参照画像をインポートする",
+  "export-obj": "OBJファイルの書き出し"
+
 }
