@@ -32,20 +32,15 @@ The starting and ending points can be selected at any point on the curve, edge, 
 3. Click on the ending point.  
 4. Set the options in the Command Dialog and shortcut key.
    - **T:**
-        - **Value 1:** The relative position (0~1.0) on the segment of the starting point.
-        - **Value 2:** The relative position (0~1.0) on the segment of the ending point.
+        - **Value 1/2:** The relative position on the segment of the starting point and ending point. (0~1.0)
    - **Direction:** 
-        - **Direction 1**: Reverse the direction of the starting point.
-        - **Direction 2**: Reverse the direction of the ending point.
+        - **Direction 1/2**: Reverse the direction of the starting point and ending point.
    - **Tension 1:**
-        - **Value 1:** The tension value(\<0,0\<) of the starting point.
-        - **Value 2:** The tension value(\<0,0\<) of the ending point.
+        - **Value 1/2:** The tension value affected 1st CV to 3rd CV of the starting point and ending point. (\<0,0\<)
    - **Tension 2:**
-        - **Value 1:** 
-        - **Value 2:**
+        - **Value 1/2:** The tension value affected 2nd CV and 3rd CV of the starting point and ending point. (\<0,0\<)
    - **Tension 3:**
-        - **Value 1:**
-        - **Value 2:**
+        - **Value 1/2:** The tension value affected 3rd CV of the starting point and ending point. (\<0,0\<)
    - **Start curvature:**
         - **G0, G1, G2, G3:** Specify the [continuity of the curve](../cad-essentials/continuity-curve-and-surface) at the starting point.
      -  **End curvature:**
@@ -57,27 +52,19 @@ The starting and ending points can be selected at any point on the curve, edge, 
 
 ## Bridge Vertex[#bridge-vertex]
 
+Two vertices can be connected for continuity.
+
 1. Select two Vartices you want to bridge.
 2. Use the **Bridge**  command in the Command Palette.
 3. Set the options in the Command Dialog and shortcut key. 
-   - **Tension 1:**
-        - **Value 1:** The tension value(\<0,0\<) of the starting point.
-        - **Value 2:** The tension value(\<0,0\<) of the ending point.
-   - **Tension 2:**
-        - **Value 1:** 
-        - **Value 2:**
-   - **Tension 3:**
-        - **Value 1:** 
-        - **Value 2:**
-   - **Start curvature:**
-        - **G0, G1, G2, G3:** Specify the [continuity of the curve](../cad-essentials/continuity-curve-and-surface) at the starting point.
-     -  **End curvature:**
-        - **G0, G1, G2, G3:** Specify the [continuity of the curve](../cad-essentials/continuity-curve-and-surface) at the ending point.  
+     - Options are the same as [**Bridge Curve**](#bridge-curve) described above.
 4. Confirm with OK in the Command Dialog or right-click.
 
 ![Bridge Vertex](/img/bridge-vertex.gif)
 
 ## Bridge Edge[#bridge-edge]
+
+Two edges can be connected for continuity.
 
 1. Select two Edges you want to bridge.
 2. Use the **Bridge** command in the Command Palette
@@ -85,25 +72,7 @@ The starting and ending points can be selected at any point on the curve, edge, 
    - **Side:** 
         - **Side 1:** Specify which side of the endpoint of the initially selected edge to bridge to.
         - **Side 2:** Specify which side of the endpoint of the subsequently selected edge to bridge to.
-   - **Tension 1:**
-        - **Value 1:** The tension value(\<0,0\<) of the starting point.
-        - **Value 2:** The tension value(\<0,0\<) of the ending point.
-   - **Tension 2:**
-        - **Value 1:** 
-        - **Value 2:**
-   - **Tension 3:**
-        - **Value 1:** 
-        - **Value 2:**
-   - **Start curvature:**
-        - **G0, G1, G2, G3:** Specify the [continuity of the curve](../cad-essentials/continuity-curve-and-surface) at the starting point.
-     -  **End curvature:**
-        - **G0, G1, G2, G3:** Specify the [continuity of the curve](../cad-essentials/continuity-curve-and-surface) at the ending point.    
+     - Anothe options are the same as [**Bridge Curve**](#bridge-curve) described above.
 4. Confirm with OK in the Command Dialog or right-click.
 
 ![Bridge Edge](/img/bridge-edge.gif)
-
-
-
-
-
-
