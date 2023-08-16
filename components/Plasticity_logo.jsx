@@ -6,7 +6,7 @@ import styles from "styles/Plasticity_logo.module.css";
 function Plasticity_logo() {
     return (
         <span className={styles.logo}>
-            <Image src={Logo} alt="Plasticity Logo" width={80} height={80} />
+            <Image src={Logo} alt="Plasticity Logo" width={60} height={60} />
         </span>
     );
 }
