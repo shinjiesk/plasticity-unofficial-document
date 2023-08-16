@@ -74,8 +74,7 @@ const config: DocsThemeConfig = {
                 ></meta>
                 <meta property="og:url" content={url} />
                 <meta name="twitter:card" content="summary" />
-                <meta name="twitter:site" content="@snj_esk" />
-                <meta name="twitter:creator" content="@snj_esk" />
+                <meta name="twitter:site" content="@getPlasticity" />
                 <meta
                     name="google-site-verification"
                     content="fy4jGFnw_V7JcWL26cXsODdJXStgXdBWJj1XXSOuRKU"
