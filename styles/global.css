@@ -1,88 +1,83 @@
-body {
-  font-family: 'Inter','SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial','Noto Sans Japanese' ,sans-serif;
+body:lang(en) {
+    font-family: "Inter", "SF Pro Text", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
 }
 
-.nx-font-bold{
-  font-weight: 900 !important;
+body:lang(ja) {
+    font-family: "Noto Sans JP", "Hiragino Sans", "Meiryo",
+        "Hiragino Kaku Gothic ProN", sans-serif;
 }
 
-.nx-font-semibold{
-  font-weight: 700 !important;
+.nx-font-bold {
+    font-weight: 900 !important;
 }
 
-
-
-
+.nx-font-semibold {
+    font-weight: 700 !important;
+}
 
 a {
-  text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 .nx-text-sm {
-  font-size: 0.8rem !important;
+    font-size: 0.8rem !important;
 }
 
 .nx-py-1\.5 {
-  padding-top: 0.2rem !important;
-  padding-bottom: 0.2rem !important;
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
 }
 
 /* Table */
 .nx-py-2 {
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
 }
 td.nx-border,
 th.nx-border {
-  border-right-width: 0 !important;
-  border-left-width: 0 !important;
+    border-right-width: 0 !important;
+    border-left-width: 0 !important;
 }
-
-
-
-
 
 /* Keyboard styles  */
 kbd {
-  background-color: #8881;
-  padding: 0px 0.3rem 1px;
-  border-radius: 0.3rem;
-  border: 1px solid #bbb;
-  border-bottom-width: 2px;
-  font-size: 0.9rem !important;
-  font-family: inherit !important;
+    background-color: #8881;
+    padding: 0px 0.3rem 1px;
+    border-radius: 0.3rem;
+    border: 1px solid #bbb;
+    border-bottom-width: 2px;
+    font-size: 0.9rem !important;
+    font-family: inherit !important;
 }
-
-
 
 /* List styles */
 li > ul {
-  margin-top: 0 !important;
+    margin-top: 0 !important;
 }
 li > ol {
-  margin-top: 0 !important;
+    margin-top: 0 !important;
 }
 
 ul.nx-mt-6 {
-  margin-top: 0rem;
+    margin-top: 0rem;
 }
 
 .dl > ul > li {
-  font-weight: bold;
-  list-style-type: none !important;
-  margin-left: 0 !important;
+    font-weight: bold;
+    list-style-type: none !important;
+    margin-left: 0 !important;
 }
 
 .dl > ul > li > ul > li {
-  font-weight: normal;
-  list-style-type: none !important;
-  margin-left: 1rem !important;
+    font-weight: normal;
+    list-style-type: none !important;
+    margin-left: 1rem !important;
 }
 :is([dir="ltr"] .ltr\:nx-ml-6) {
-  margin-left: 1rem !important;
+    margin-left: 1rem !important;
 }
 
 .nx-list-disc {
-  list-style-type: none !important;
+    list-style-type: none !important;
 }
