@@ -71,27 +71,9 @@ const config: DocsThemeConfig = {
           content="Plasticity Unofficial Manual"
         ></meta>
         <meta property="og:url" content={url} />
-        {/*         <meta
-          property="og:title"
-          content={frontMatter.title || "Plasticity Unofficial Manual"}
-        /> */}
-        {/*         <meta
-          property="og:description"
-          content={frontMatter.description || ""}
-        /> */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@snj_esk" />
         <meta name="twitter:creator" content="@snj_esk" />
-        {/*         <meta
-          property="og:image"
-          content="https://plasticitydoc.vercel.app/ogp.png"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://plasticitydoc.vercel.app/ogp.png"
-        />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" /> */}
         <meta
           name="google-site-verification"
           content="fy4jGFnw_V7JcWL26cXsODdJXStgXdBWJj1XXSOuRKU"

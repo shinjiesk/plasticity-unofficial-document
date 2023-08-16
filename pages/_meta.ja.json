@@ -1,18 +1,15 @@
 {
-  "index": "Home",
-  "all-commands": "全コマンド & ショートカットキー",
-  "getting-started": "はじめに",
-  "3d-viewport": "3Dビューポート",
-  "tool": "ツール",
-  "common": "共通のコマンド",
-  "sketch": "スケッチのコマンド",
-  "solid": "ソリッドのコマンド",
-  "cad-essentials": "CADエッセンシャル",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
-  "viewport-commands": {
-    "display": "hidden"
-  }
+    "index": "Home",
+    "all-commands": "全コマンド & ショートカットキー",
+    "getting-started": "はじめに",
+    "3d-viewport": "3Dビューポート",
+    "tool": "ツール",
+    "common": "共通のコマンド",
+    "sketch": "スケッチのコマンド",
+    "solid": "ソリッドのコマンド",
+    "cad-essentials": "CADエッセンシャル",
+    "about": {
+        "title": "About",
+        "type": "page"
+    }
 }
