@@ -8,6 +8,12 @@
     "sketch": "Sketch Commands",
     "solid": "Solid Commands",
     "cad-essentials": "CAD Essentials",
+    "get-plasticity": {
+        "title": "Get Plasticity",
+        "type": "page",
+        "href": "https://www.plasticity.xyz",
+        "newWindow": true
+    },
     "about": {
         "title": "About",
         "type": "page"

@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/shinjiesk/plasticity-unofficial-document.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "Shinji esk",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/shinjiesk/plasticity-unofficial-document/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://plasticitydoc.vercel.app/",
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
     "@next/mdx": "^13.4.12",

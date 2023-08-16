@@ -4,7 +4,12 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 import { useConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span>Plasticity Unofficial Manual</span>,
+  logo: (
+    <>
+     <div style={{ fontWeight: 800}}>Plasticity</div>&nbsp;Unofficial Manual
+    </>
+  ),
+
   footer: {
     text: (
       <>
@@ -21,14 +26,7 @@ const config: DocsThemeConfig = {
             <a href="/ja">日本語</a>
           </div>
           <div>{new Date().getFullYear()}©Shinji esk.</div>
-          <div>
-            <a
-              href="https://github.com/shinjiesk/plasticity-unofficial-document"
-              rel="nofollow"
-            >
-              GitHub
-            </a>
-          </div>
+
         </div>
       </>
     ),
@@ -38,11 +36,12 @@ const config: DocsThemeConfig = {
     toggleButton: true,
     defaultMenuCollapseLevel: 1,
   },
-  feedback: {
-    content: null,
+  docsRepositoryBase: "https://github.com/shinjiesk/plasticity-unofficial-document",
+  project:{
+    link: "https://github.com/shinjiesk/plasticity-unofficial-document"
   },
   editLink: {
-    component: null,
+    text: <></>,
   },
   gitTimestamp: ({ timestamp }) => (
     <span>Last updated on {timestamp.toLocaleDateString()}</span>
@@ -80,6 +79,14 @@ const config: DocsThemeConfig = {
         />
       </>
     );
+  },
+  banner: {
+    key: '1.2.6-release',
+    text: (
+      <a href="https://github.com/nkallen/plasticity/releases/tag/v1.2.6" target="_blank">
+        🎉 Plasticity 1.2.6 is released. Downroad →
+      </a>
+    )
   },
 };
 
