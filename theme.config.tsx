@@ -63,7 +63,7 @@ const config: DocsThemeConfig = {
         const { frontMatter } = useConfig();
 
         const url =
-            "https://plasticitydoc.vercel.app" +
+            "https://doc.plasticity.xyz/" +
             (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
 
         return (
