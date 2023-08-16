@@ -6,8 +6,7 @@ import { useConfig } from "nextra-theme-docs";
 const config: DocsThemeConfig = {
     logo: (
         <>
-            <div style={{ fontWeight: 800 }}>Plasticity</div>
-            &nbsp;Unofficial&nbsp;Manual
+            <div style={{ fontWeight: 800 }}>Plasticity</div>&nbsp;Manual
         </>
     ),
 
@@ -26,7 +25,10 @@ const config: DocsThemeConfig = {
                         <span> | </span>
                         <a href="/ja">日本語</a>
                     </div>
-                    <div>{new Date().getFullYear()}©Shinji esk.</div>
+                    <div>
+                        © Copyright {new Date().getFullYear()}. All rights
+                        reserved.
+                    </div>
                 </div>
             </>
         ),
@@ -51,7 +53,7 @@ const config: DocsThemeConfig = {
         const { asPath } = useRouter();
         if (asPath !== "/" && asPath !== "/ja" && asPath !== "/en") {
             return {
-                titleTemplate: "%s - Plasticity Unofficial Manual",
+                titleTemplate: "%s - Plasticity Manual",
             };
         }
     },
@@ -68,7 +70,7 @@ const config: DocsThemeConfig = {
             <>
                 <meta
                     property="og:site_name"
-                    content="Plasticity Unofficial Manual"
+                    content="Plasticity Manual"
                 ></meta>
                 <meta property="og:url" content={url} />
                 <meta name="twitter:card" content="summary" />
