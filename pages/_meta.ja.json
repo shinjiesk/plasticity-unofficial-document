@@ -7,9 +7,5 @@
     "common": "共通のコマンド",
     "sketch": "スケッチのコマンド",
     "solid": "ソリッドのコマンド",
-    "cad-essentials": "CADエッセンシャル",
-    "about": {
-        "title": "About",
-        "type": "page"
-    }
+    "cad-essentials": "CADエッセンシャル"
 }

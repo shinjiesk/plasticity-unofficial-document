@@ -13,9 +13,5 @@
         "type": "page",
         "href": "https://www.plasticity.xyz",
         "newWindow": true
-    },
-    "about": {
-        "title": "About",
-        "type": "page"
     }
 }
