@@ -5,12 +5,12 @@ export default function DownloadPDF() {
         <>
             <br />
             <a
-                href="https://drive.google.com/file/d/1e1VipXfWm20W-hABjoNdqZ8d8eKI5Y79/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1RIPq2y_fl5KwtS7lgQDBBrYxoJMsPSuy/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
             >
                 <div className="nx-text-primary-600">
-                    Plasticity_1.2.6_Shortcut_Key_Sheet.pdf
+                    Plasticity_1.2.6_Shortcut_Key_Sheet_v2.pdf
                 </div>
             </a>
         </>
