@@ -1,30 +1,31 @@
+import ButtonIcon from 'components/ButtonIcon'
+
 # Grid and Snap
 
 ## Grid[#grid]
 
 - The grid is displayed on the active construction plane. You can specify the grid unit and size in the [preferences](../start/preferences).
-- While you sketch or edit the object by mouse dragging, The grid snapping causes the mouse cursor to snap to the grid. 
-- To toggle the grid snapping, click the **Snap to grid** in the top right of the window. To specify the grid size, apply the value under the **Snap to grid**. 
+- You can use grid snapping to snap your cursor to the grid while drawing or moving objects.
+- To toggle grid snapping, click **Snap to grid** in the top right of the window. To specify the grid size, change the value under **Snap to grid**.
 - To temporarily turn off grid snapping, hold <kbd>Ctrl</kbd> while dragging.
 - You can execute the grid snapping in the Command Palette; **Grid: toggle grid snapping**, **Viewport: decrease grid size**, **Viewport: increase grid size**.
+- You can also toggle and adjust grid snapping via commands in the Command Palette: **Grid: toggle grid snapping**, **Viewport: decrease grid size**, **Viewport: increase grid size**.
 
 ## Object snap[#object-snap]
 
-- While you sketch or edit by mouse dragging, The object snapping causes the mouse cursor to snap to the object. 
-- To toggle the object snapping, click the **Enable snapping** in the top right of the window. To specify the target type of the snap, click on the three points and select from the displayed.
+- You can use snapping to snap your cursor to features while drawing or moving objects.
+- To toggle the object snapping, click the **Enable snapping** in the top right of the window.  To toggle different types of snapping, click the <ButtonIcon type="button-types-of-snapping" /> and adjust the options.
+- To temporarily enable snapping, hold the <kbd>Ctrl</kbd> key. Snapping is automatically enabled when drawing Curves.
+- You can snap to points on various types of objects: Control Vertex, Curve, Region, Edge, and Face. A snap target appears as a small black dot.
+- Tip help appears when you point to a snap target. Click when the tip help is visible to snap accurately.
 
-- You want snap when edit the object, you need to hold <kbd>Ctrl</kbd> key. When you draw a sketch, it requires no <kbd>Ctrl</kbd> key.
-
-- You can specify the snap target by the control vertex, curve, region, edge, and face. The snap target displays the small black dot for the snap point.
-- Tip help is displayed when you point to a snap target. Clicking on it will snap it Accurately.
-
-    | Snap target    | Tip help                                                                                           |
-    | -------------- | -------------------------------------------------------------------------------------------------- |
-    | Control-vertex | CV                                                                                                 |
+    | Snap target    | Tip help                                                                                             |
+    | -------------- | ---------------------------------------------------------------------------------------------------- |
+    | Control-vertex | CV                                                                                                   |
     | Curve          | Curve, Beginning, End, Middle, Closest, Intersection, X, Y, Z, XY, YZ, ZX, Center, 1/4, 3/4, Tan/Tan |
-    | Region         | Region, Center                                                                                     |
-    | Edge           | Edge, End, Middle                                                                                  |
-    | Face           | Face, Center                                                                                       |
+    | Region         | Region, Center                                                                                       |
+    | Edge           | Edge, End, Middle                                                                                    |
+    | Face           | Face, Center                                                                                         |
 
 - You can execute the object snapping in the Command Palette; **Snaps: toggle snap snapping**. 
 
