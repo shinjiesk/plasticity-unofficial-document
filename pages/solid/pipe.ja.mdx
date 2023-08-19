@@ -1,4 +1,5 @@
 import Reference from 'components/Reference'
+import { Callout } from 'nextra/components'
 
 # Pipe（パイプを作成）
 
@@ -27,6 +28,14 @@ import Reference from 'components/Reference'
      - <kbd>A</kbd> **Angle** 回転角度をカーソルを動かして指定します。
      - <kbd>Shift + T</kbd> **Thickness** パイプの厚みをカーソルを動かして指定します。
 5. コマンドダイアログのOKをクリックするか、右クリックで確定します。
+
+<Callout emoji="❗">
+**注意**<br />
+Pipeコマンドは、正確な寸法のパイプを作るためのものではありません。
+見た目がクールなパイプやチューブを素早く作成するためのものです。
+ポリゴンとして角度をつけるなど、多くのことを行うので、配管などには寸法的に正確ではありません。
+正確なパイプを作るには、[Sweep](./sweep) コマンドを使ってください。
+</Callout>
 
 ![Pipe](/img/pipe.gif)
 

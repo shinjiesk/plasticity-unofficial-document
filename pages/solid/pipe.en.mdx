@@ -1,4 +1,5 @@
 import Reference from 'components/Reference'
+import { Callout } from 'nextra/components'
 
 # Pipe
 
@@ -27,6 +28,14 @@ You can create a pipe along a curve or edge.
      - <kbd>A</kbd> **Angle** Specify the rotation angle by moving the cursor.
      - <kbd>Shift + T</kbd> **Thickness** Specify the pipe thickness by moving the cursor.
 5. Confirm with OK in the Command Dialog or right-click.
+
+<Callout emoji="❗">
+**Note**<br />
+The "Pipe" command is NOT for creating dimensionally accurate pipes. 
+It is for quickly creating cool looking pipes/tubes. 
+It does a lot of things like angles as polygons that make it not dimensionally accurate for any kind of plumbing or whatever. 
+To create a precise pipe, use the [**Sweep**](./sweep) command 
+</Callout>
 
 ![Pipe](/img/pipe.gif)
 
