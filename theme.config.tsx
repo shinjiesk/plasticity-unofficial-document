@@ -89,7 +89,7 @@ const config: DocsThemeConfig = {
             </>
         );
     },
-    banner: {
+/*     banner: {
         key: "1.2.6-release",
         text: (
             <a
@@ -99,7 +99,7 @@ const config: DocsThemeConfig = {
                 🎉 Plasticity 1.2.6 is released. Downroad →
             </a>
         ),
-    },
+    }, */
 };
 
 export default config;
