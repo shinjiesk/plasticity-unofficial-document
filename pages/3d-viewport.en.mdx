@@ -2,60 +2,84 @@
 
 - [Object Types](./3d-viewport/object-types)
 
-| Command Name                                                             | Shortcut                   | Note                                            |
-| ------------------------------------------------------------------------ | -------------------------- | ------------------------------------------------------ |
-| [**Operating the 3D Viewport**](./3d-viewport/operating-the-3d-viewport) |                            |                                                        |
-| Viewport: navigate to front                                              | <kbd>Num.1</kbd>           | Front view                                             |
-| Viewport: navigate to right                                              | <kbd>Num.3</kbd>           | Right view                                             |
-| Viewport: navigate to top                                                | <kbd>Num.7</kbd>           | Top view                                               |
-| Viewport: navigate to back                                               | <kbd>Ctrl + Num.1</kbd>    | Back view                                              |
-| Viewport: navigate to left                                               | <kbd>Ctrl + Num.3</kbd>    | Left view                                              |
-| Viewport: navigate to bottom                                             | <kbd>Ctrl + Num.7</kbd>    | Bottom view                                            |
-| Viewport: toggle orthographic camera                                     | <kbd>Num.5</kbd>           | Switch between perspective and orthographic projection |
-| Viewport: navigate to selection                                          | <kbd>Space</kbd>           | Center selected object on the screen                             |
-| Viewport: focus                                                          | <kbd>/ (Slash)</kbd>       | Zoom to selected object                                 |
-| Focus                                                                    | <kbd>. (Period)</kbd>      | Zoom to selected object and hide others    |
-| Viewport: toggle overlays                                                | <kbd>Alt + Shift + Z</kbd> | To toggle overlay display                              |
-| Viewport: toggle xray mode                                               | <kbd>Alt + Z</kbd>         | To toggle X-Ray mode                                   |
-| Viewport: toggle edges                                                   |                            | To toggle show edges                                   |
-| Viewport: toggle faces                                                   |                            | To toggle show faces                                   |
-| [**Object Manupulation**](./3d-viewport/object-manipulation)             |                             |                                                        |
-| Selection mode: set control-point                                        | <kbd>1</kbd>                | Control point selection mode                           |
-| Selection mode: set edge                                                 | <kbd>2</kbd>                | Edge selection mode                                    |
-| Selection mode: set face                                                 | <kbd>3</kbd>                | Face selection mode                                    |
-| Selection mode: set solid                                                | <kbd>4</kbd>                | Body selection mode                                   |
-| Selection mode: set all                                                  | <kbd>Tab</kbd>              | All selectable mode                                    |
-| Selection: toggle control-point                                          | <kbd>Shift + 1</kbd>        | Toggle Control Point selection mode               |
-| Selection: toggle edge                                                   | <kbd>Shift + 2</kbd>        | Toggle Edge selection mode                        |
-| Selection: toggle face                                                   | <kbd>Shift + 3</kbd>        | Toggle Face selection mode                        |
-| Selection: toggle solid                                                  | <kbd>Shift + 4</kbd>        | Toggle Body selection mode                       |
-| Select All                                                               | <kbd>A</kbd>                | Select All                                             |
-| Select Adjacent                                                          | <kbd>Ctrl + Shift + =</kbd>     | Select Adjacent                                        |
-| Select all Curves                                                        |                             | Select all Curves                                      |
-| Deselect All                                                             | <kbd>Esc</kbd>              | Deselect all                                           |
-| Invert Selection                                                         | <kbd>Alt + A</kbd>          | Invert selection                                       |
-| Selection: convert to edges                                              | <kbd>Ctrl + 2</kbd>         | Select edges included in the selection                 |
-| Selection: convert to faces                                              | <kbd>Ctrl + 3</kbd>         | Select faces included in the selection                 |
-| Selection: convert to solids                                             | <kbd>Ctrl + 4</kbd>         | Select solids included in the selection                |
-| Hide Selected                                                            | <kbd>H</kbd>                | Hide Selected                                          |
-| Hide Unselected                                                          | <kbd>Shift + H</kbd>          | Hide Unselected                                        |
-| Invert Hidden                                                            | <kbd>Ctrl + H</kbd>           | Invert Hidden                                          |
-| Unhide All                                                               | <kbd>Alt + H</kbd>            | Unhide All                                             |
-| Group Selected                                                           | <kbd>Ctrl + G</kbd>           | Group Selected                                         |
-| Ungroup Selected                                                         | <kbd>Alt + G</kbd>            | Ungroup Selected                                       |
-| [**Grid and Snap**](./3d-viewport/grid-and-snap)                         |                             |                                                        |
-| Grid: toggle grid snapping                                               |                             | Toggle grid snapping                                   |
-| Viewport: decrease grid size                                             |                             | Decrease grid size                                     |
-| Viewport: increase grid size                                             |                             | Increase grid size                                     |
-| Snaps: toggle snap snapping                                              |                             | Toggle object snapping                                 |
-| [**Construction Planes**](./3d-viewport/construction-plane)              |                             |                                                        |
-|                                                                          | <kbd>Space</kbd>            | Construction plane from selection (align camera)       |
-| Viewport: set construction plane to selection                            | <kbd>Shift + Space</kbd>      | Construction plane from selection (do not align)       |
-| Create Viewspace Construction Plane At Ori...                            | <kbd>Ctrl + Space</kbd>       | Construction plane from camera (through origin)        |
-| Create Viewspace Construction Plane                                      | <kbd>Ctrl + Shift + Space</kbd> | Construction plane from camera (select distance point) |
-
-
-
+| Command Name                                                             | Shortcut                                          | Note                                                               |
+| ------------------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------------ |
+| [**Operating the 3D Viewport**](./3d-viewport/operating-the-3d-viewport) |                                                   |                                                                    |
+| Viewport: navigate to front                                              | <kbd>Num.1</kbd>                                  | Front view                                                         |
+| Viewport: navigate to right                                              | <kbd>Num.3</kbd>                                  | Right view                                                         |
+| Viewport: navigate to top                                                | <kbd>Num.7</kbd>                                  | Top view                                                           |
+| Viewport: navigate to back                                               | <kbd>Ctrl + Num.1</kbd>                           | Back view                                                          |
+| Viewport: navigate to left                                               | <kbd>Ctrl + Num.3</kbd>                           | Left view                                                          |
+| Viewport: navigate to bottom                                             | <kbd>Ctrl + Num.7</kbd>                           | Bottom view                                                        |
+| Viewport: toggle orthographic camera                                     | <kbd>Num.5</kbd>                                  | Switch between perspective and orthographic projection             |
+| Viewport: navigate to selection                                          | <kbd>Space</kbd>                                  | Center selected object on the screen                               |
+| Viewport: focus                                                          | <kbd>/ (Slash)</kbd>                              | Zoom to selected object                                            |
+| Focus                                                                    | <kbd>. (Period)</kbd>                             | Zoom to selected object and hide others                            |
+| [**File Menu**](./3d-viewport/file-menu)                                 |                                                   |                                                                    |
+| New                                                                      | <kbd>Ctrl + N</kbd>                               | Clear the scene, then new document                                 |
+| Open                                                                     | <kbd>Ctrl + O</kbd>                               |                                                                    |
+| Import/Append                                                            | <kbd>Ctrl + Shift + O</kbd>                       | See [File import](#file-import) below                              |
+| Save                                                                     | <kbd>Ctrl + S</kbd>                               |                                                                    |
+| Export/Save as                                                           | <kbd>Ctrl + Shift + S</kbd>                       | See [File export](#file-export) below                              |
+| Quick save version                                                       |                                                   | Save a copy of the document with the same filename and a timestamp |
+| Save as startup scene                                                    |                                                   | Save the current document as the startup scene                     |
+| Preferences                                                              | <kbd>Ctrl + , (Comma)</kbd>                       | See [Preferences](./preferences) page                              |
+| Manage licenses                                                          |                                                   | Manage the license token and devices                               |
+| Plasticity Version: 0.0.0                                                |                                                   | Installed Plasticity version                                       |
+| Quit                                                                     | <kbd>Ctrl + Q</kbd>                               |                                                                    |
+| [**Outliner**](./3d-viewport/outliner)                                   |                                                   |                                                                    |
+| Group Selected                                                           | <kbd>Ctrl + G</kbd>                               | Group Selected                                                     |
+| Ungroup Selected                                                         | <kbd>Alt + G</kbd>                                | Ungroup Selected                                                   |
+| Hide Selected                                                            | <kbd>H</kbd>                                      | Hide Selected                                                      |
+| Hide Unselected                                                          | <kbd>Shift + H</kbd>                              | Hide Unselected                                                    |
+| Unhide All                                                               | <kbd>Alt + H</kbd>                                | Unhide All                                                         |
+| Invert Hidden                                                            | <kbd>Ctrl + H</kbd>                               | Invert Hidden                                                      |
+| Lock Selected                                                            |                                                   | Make selection unselectable                                        |
+| [**Selection Mode**](./3d-viewport/selection-mode)                       |                                                   |                                                                    |
+| Selection mode: set control-point                                        | <kbd>1</kbd>                                      | Control point selection mode                                       |
+| Selection mode: set edge                                                 | <kbd>2</kbd>                                      | Edge selection mode                                                |
+| Selection mode: set face                                                 | <kbd>3</kbd>                                      | Face selection mode                                                |
+| Selection mode: set solid                                                | <kbd>4</kbd>                                      | Body selection mode                                                |
+| Selection mode: set all                                                  | <kbd>Tab</kbd>                                    | All selectable mode                                                |
+| Selection: toggle control-point                                          | <kbd>Shift + 1</kbd>                              | Toggle Control Point selection mode                                |
+| Selection: toggle edge                                                   | <kbd>Shift + 2</kbd>                              | Toggle Edge selection mode                                         |
+| Selection: toggle face                                                   | <kbd>Shift + 3</kbd>                              | Toggle Face selection mode                                         |
+| Selection: toggle solid                                                  | <kbd>Shift + 4</kbd>                              | Toggle Body selection mode                                         |
+| Select All                                                               | <kbd>A</kbd>                                      | Select All                                                         |
+| Select all Curves                                                        |                                                   | Select all Curves                                                  |
+| Invert Selection                                                         | <kbd>Alt + A</kbd>                                | Invert selection                                                   |
+| Select Adjacent                                                          | <kbd>Ctrl + Shift + =</kbd>                       | Select Adjacent                                                    |
+| Deselect All                                                             | <kbd>Esc</kbd>                                    | Deselect all                                                       |
+|                                                                          | <kbd>Alt</kbd> + click                            | Select edge loops                                                  |
+|                                                                          | <kbd>Alt + Ctrl</kbd> + click                     | Select edge rings                                                  |
+|                                                                          | <kbd>Alt</kbd> + click                            | Select all Curves, regions on the same plane                       |
+|                                                                          | <kbd>Alt + Ctrl</kbd> + click                     | Select all parallel faces                                          |
+| **Selection: convert to edges**                                          | <kbd>Ctrl + 2</kbd>                               | Select edges included in the selection                             |
+| **Selection: convert to faces**                                          | <kbd>Ctrl + 3</kbd>                               | Select faces included in the selection                             |
+| **Selection: convert to solids**                                         | <kbd>Ctrl + 4</kbd>                               | Select solids included in the selection                            |
+| [**View Mode**](./3d-viewport/view-mode)                                 |                                                   |                                                                    |
+| Viewport: toggle overlays                                                | <kbd>Alt + Shift + Z</kbd>                        | To toggle overlay display                                          |
+| Viewport: toggle xray mode                                               | <kbd>Alt + Z</kbd>                                | To toggle X-Ray mode                                               |
+| Viewport: toggle edges                                                   |                                                   | To toggle show edges                                               |
+| Viewport: toggle faces                                                   |                                                   | To toggle show faces                                               |
+| [**Grid and Snap**](./3d-viewport/grid-and-snap)                         |                                                   |                                                                    |
+| Grid: toggle grid snapping                                               |                                                   | Toggle grid snapping                                               |
+| Viewport: decrease grid size                                             |                                                   | Decrease grid size                                                 |
+| Viewport: increase grid size                                             |                                                   | Increase grid size                                                 |
+| Snaps: toggle snap snapping                                              |                                                   | Toggle object snapping                                             |
+| [**Construction Planes**](./3d-viewport/construction-plane)              |                                                   |                                                                    |
+|                                                                          | <kbd>Space</kbd>                                  | Construction plane from selection (align camera)                   |
+| Viewport: set construction plane to selection                            | <kbd>Shift + Space</kbd>                          | Construction plane from selection (do not align)                   |
+| Create Viewspace Construction Plane At Ori...                            | <kbd>Ctrl + Space</kbd>                           | Construction plane from camera (through origin)                    |
+| Create Viewspace Construction Plane                                      | <kbd>Ctrl + Shift + Space</kbd>                   | Construction plane from camera (select distance point)             |
+| [**General Functions**](./3d-viewport/general)                           |                                                   |                                                                    |
+|                                                                          | <kbd>Ctrl + C</kbd>                               | Copy                                                               |
+|                                                                          | <kbd>Ctrl + visible</kbd>                         | Paste                                                              |
+| Delete                                                                   | <kbd>X</kbd> or <kbd>Delete</kbd>                 | Delete                                                             |
+| Delete face                                                              | <kbd>Shift + X</kbd> or <kbd>Shift + Delete</kbd> | elete face                                                         |
+|                                                                          | <kbd>Ctrl + Z</kbd>                               | Undo                                                               |
+|                                                                          | <kbd>Ctrl + Shift + Z</kbd>                       | Redo                                                               |
+| Edit: Repeat last command                                                | <kbd>Shift + R</kbd>                              | Repeat last command                                                |
 
 
 

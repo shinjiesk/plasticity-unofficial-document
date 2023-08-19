@@ -2,30 +2,62 @@ import ButtonIcon from 'components/ButtonIcon'
 
 # Outliner
 
-- (1) Objects
-    - Created objects are divided into solids, sheets, and curves.
-    - The outliner can be reorganized by dragging and dropping.
-- (2) Create Group
-    - You can create a group by clicking on the icon or pressing <kbd>Ctrl + G</kbd>.
-    - The selected object is moved to the created group.
-    - To take it out of the group, select the object and press <kbd>Alt + G</kbd>.
-- (3) Group
-    - Groups appear at the top of the outliner.
+## Organize Objects
 
-![Outliner 1](/img/outliner-1.png)
+- Created objects are divided into solids, sheets, and curves.
+- The outliner can be reorganized by dragging and dropping.
 
-- (4) Toggle states
-    - You can switch between states by clicking on the icons to the right of the objects and folders.
-    - <ButtonIcon type="button-outliner-hide" double="true" />: Toggle hide in viewport
-    - <ButtonIcon type="button-outliner-disable" double="true" /> : Toggle disable in viewport
-    - <ButtonIcon type="button-outliner-disable-selection" double="true"  /> : Toggle disable selection in viewport
-- (5) Collapse all
-- (6) Material color of object
-    - Drag and drop a color dot to copy the color.
-- (7) Material color of group
-    - Drag and drop a color dot to copy the color.
+- ![Outliner 1](/img/outliner-01.png)
 
-![Outliner 2](/img/outliner-2.png)
+## Group
+
+- You can create a group by clicking on the icon (1) or pressing <kbd>Ctrl + G</kbd>.
+- The selected object is moved to the created group.
+- To take it out of the group, select the object and press <kbd>Alt + G</kbd>.
+- You can collapse all groups clicking on the icon (2). 
+
+- ![Outliner 2](/img/outliner-02.png)
+
+## Toggle states
+
+- You can change the status of an objects or groups.
+    - Temporarily hidden or made visible again.
+    - Temporarily disabled or enabled again.
+    - Locked or unlocked.
+
+- ![Outliner 3](/img/outliner-03.png)
+
+### Operation in the outliner
+
+- <ButtonIcon type="button-outliner-hide" double="true" />: Toggle hide
+- <ButtonIcon type="button-outliner-disable" double="true" /> : Toggle disable
+- <ButtonIcon type="button-outliner-disable-selection" double="true"  /> : Toggle lock
+
+### Operation by shortcut key
+
+| Operation                         | Shortcut                      | Command Name    |
+| --------------------------------- | ----------------------------- | --------------- |
+| Hide selected objects             | <kbd>H</kbd>                  | Hide selected   |
+| Hide unselected objects           | <kbd>Shift + H</kbd>          | Hide unselected |
+| Unhide all                        | <kbd>Alt + H</kbd>            | Unhide all      |
+| Invert Hidden                     | <kbd>Ctrl + H</kbd>           | Invert Hidden   |
+| Hide all curves on the same plane | Select regions -> <kbd>H</kbd> |                 |
+| Lock selected objects             |                               | Lock selected   |
+
+
+## Material color
+
+- The object's material color is displayed as color dots.
+- The color can be copied by dragging and dropping the color dots.
+- Material colors can also be set for groups. The color can be copied in the same way.
+
+- ![Outliner 4](/img/outliner-04.png)
+
+
+
+
+
+
 
 
 
