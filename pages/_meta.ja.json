@@ -4,8 +4,20 @@
     "getting-started": "はじめに",
     "3d-viewport": "3Dビューポート",
     "tool": "ツール",
+    "---1": {
+        "type": "separator"
+    },
     "common": "共通のコマンド",
     "sketch": "スケッチのコマンド",
     "solid": "ソリッドのコマンド",
-    "cad-essentials": "CADエッセンシャル"
+    "---2": {
+        "type": "separator"
+    },
+    "cad-essentials": "CADエッセンシャル",
+    "get-plasticity": {
+        "title": "Get Plasticity",
+        "type": "page",
+        "href": "https://www.plasticity.xyz",
+        "newWindow": true
+    }
 }
