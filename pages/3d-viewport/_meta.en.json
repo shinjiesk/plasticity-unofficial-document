@@ -1,18 +1,16 @@
 {
-
-  "object-names": "Object Names",
-  "operating-the-3d-viewport": "Operating the 3D Viewport",
-  "user-interface-overview": "User Interface Overview",
-  "file-menu": "File Menu",
-  "outliner": "Outliner",
-  "selection-mode": "Selection Mode",
-  "view-mode": "View Mode",
-  "grid-and-snap": "Grid and Snap",
-  "construction-plane": "Construction Plane",
-  "command-bar": "Command Bar",
-  "command-palette": "Command Palette",
-  "general": "General Functions",
-  "importing-reference-images": "Importing Reference Images",
-  "export-obj": "Export OBJ"
-
+    "object-types": "Object Types",
+    "operating-the-3d-viewport": "Operating the 3D Viewport",
+    "user-interface-overview": "User Interface Overview",
+    "file-menu": "File Menu",
+    "outliner": "Outliner",
+    "selection-mode": "Selection Mode",
+    "view-mode": "View Mode",
+    "grid-and-snap": "Grid and Snap",
+    "construction-plane": "Construction Plane",
+    "command-bar": "Command Bar",
+    "command-palette": "Command Palette",
+    "general": "General Functions",
+    "importing-reference-images": "Importing Reference Images",
+    "export-obj": "Export OBJ"
 }
