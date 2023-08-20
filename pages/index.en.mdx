@@ -4,22 +4,37 @@ description: The official manual for Plasticity 3D. All keyboard shortcuts. Upda
 ---
 import { Callout } from 'nextra/components'
 import { Cards, Card } from 'nextra/components'
-import Plasticity_logo from 'components/Plasticity_logo' 
+import styles from '/styles/index.module.scss'
 
 <div style={{margin: '2em 0'}}>
     <span style={{fontSize: '2em'}}><span style={{fontWeight: 800}}>Plasticity&nbsp;</span>Manual</span>
 </div>
 
-<Cards>
-    <Card title="All commands & Keyboard Shortcutss" href="./all-commands" />
-    <Card title="Getting Started" href="./getting-started" />
-    <Card title="3D Viewport" href="./3d-viewport" />
-    <Card title="Tools" href="./tool" />
-    <Card title="Common Commands" href="./common" />
-    <Card title="Sketch Commands" href="./sketch" />
-    <Card title="Solid Commands" href="./solid" />
-    <Card title="CAD Essentials" href="./cad-essentials" />
-</Cards>
+<div className={styles.container}>
+    <div>
+    **Command Overview**
+    - [Command List & Shortcut Keys](./all-commands)
+    </div>
+    <div>
+    **Basics**
+    - [Getting Started](./getting-started)
+    - [3D Viewport](./3d-viewport)
+    </div>
+    <div>
+    **Tools**
+    - [Sketch & Primitive Tools](./tool)
+    </div>
+    <div>
+    **Commands**
+    - [Common: Sketch & Solid](./common)
+    - [Sketch](./sketch)
+    - [Solid](./solid)
+    </div>
+    <div>
+    **Advanced**
+    - [CAD Essentials](./cad-essentials)
+    </div>
+</div>
 
 <Callout type="info" emoji="ℹ️">
 Manual Update Information
