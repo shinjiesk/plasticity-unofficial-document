@@ -1,18 +1,20 @@
 {
     "index": "Home",
-    "all-commands": "All Commands & Shortcut Keys",
-    "---1": {
-        "type": "separator"
-    },
+    "all-commands": "Command List & Shortcut Keys",
     "getting-started": "Getting Started",
     "3d-viewport": "3D Viewport",
-    "tool": "Tools",
-    "---2": {
-        "type": "separator"
+    "---1": {
+        "type": "separator",
+        "title": "Tools"
     },
-    "common": "Common Commands",
-    "sketch": "Sketch Commands",
-    "solid": "Solid Commands",
+    "tool": "Sketching & Primitive Tools",
+    "---2": {
+        "type": "separator",
+        "title": "Commands"
+    },
+    "common": "Common",
+    "sketch": "Sketch ",
+    "solid": "Solid ",
     "---3": {
         "type": "separator"
     },

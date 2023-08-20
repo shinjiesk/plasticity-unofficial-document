@@ -6,6 +6,15 @@ body:lang(en) {
 body:lang(ja) {
     font-family: "Noto Sans JP", "Hiragino Sans", "Meiryo",
         "Hiragino Kaku Gothic ProN", sans-serif;
+    font-size: 0.9rem;
+
+    .nx-text-sm {
+        font-size: 0.8rem !important;
+    }
+
+    .md\:nx-w-64 {
+        width: 18rem;
+    }
 }
 
 .nx-font-bold {
@@ -18,10 +27,6 @@ body:lang(ja) {
 
 a {
     text-decoration: none !important;
-}
-
-.nx-text-sm {
-    font-size: 0.8rem !important;
 }
 
 .nx-py-1\.5 {
