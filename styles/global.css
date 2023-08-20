@@ -1,6 +1,10 @@
 body:lang(en) {
     font-family: "Inter", "SF Pro Text", "SF Pro Icons", "Helvetica Neue",
         "Helvetica", "Arial", sans-serif;
+
+    .md\:nx-w-64 {
+        width: 18rem;
+    }
 }
 
 body:lang(ja) {
@@ -13,7 +17,7 @@ body:lang(ja) {
     }
 
     .md\:nx-w-64 {
-        width: 18rem;
+        width: 19rem;
     }
 }
 

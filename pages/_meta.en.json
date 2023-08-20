@@ -1,6 +1,9 @@
 {
-    "index": "Home",
-    "all-commands": "Command List & Shortcut Keys",
+    "index": { "display": "hidden" },
+    "all-commands": "📃Command List & Shortcut Keys",
+    "---0": {
+        "type": "separator"
+    },
     "getting-started": "Getting Started",
     "3d-viewport": "3D Viewport",
     "---1": {
