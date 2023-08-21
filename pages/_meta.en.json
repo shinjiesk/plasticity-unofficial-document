@@ -1,25 +1,27 @@
 {
     "index": { "display": "hidden" },
     "all-commands": "Command List & Shortcut Keys",
-    "---0": {
-        "type": "separator"
+    "---1": {
+        "type": "separator",
+        "title": ""
     },
     "getting-started": "Getting Started",
     "3d-viewport": "3D Viewport",
-    "---1": {
+    "---2": {
         "type": "separator",
         "title": "Tools"
     },
     "tool": "Sketching & Primitive Tools",
-    "---2": {
+    "---3": {
         "type": "separator",
         "title": "Commands"
     },
     "common": "Common",
     "sketch": "Sketch ",
     "solid": "Solid ",
-    "---3": {
-        "type": "separator"
+    "---4": {
+        "type": "separator",
+        "title": ""
     },
     "cad-essentials": "CAD Essentials",
     "get-plasticity": {

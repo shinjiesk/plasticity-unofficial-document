@@ -38,12 +38,6 @@ const config: DocsThemeConfig = {
         toggleButton: true,
         defaultMenuCollapseLevel: 1,
         autoCollapse: true,
-        titleComponent({ title, type }) {
-            if (type === "separator") {
-                return <div style={{}}>{title}</div>;
-            }
-            return <>{title}</>;
-        },
     },
     docsRepositoryBase:
         "https://github.com/shinjiesk/plasticity-unofficial-document",
