@@ -89,14 +89,14 @@ const config: DocsThemeConfig = {
             </>
         );
     },
-/*     banner: {
+    /*     banner: {
         key: "1.2.6-release",
         text: (
             <a
                 href="https://github.com/nkallen/plasticity/releases/tag/v1.2.6"
                 target="_blank"
             >
-                🎉 Plasticity 1.2.6 is released. Downroad →
+                🎉 Plasticity 1.2.6 is released. Download  →
             </a>
         ),
     }, */
