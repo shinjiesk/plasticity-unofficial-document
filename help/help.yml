@@ -8,4 +8,7 @@ helps:
   radial-array:
     description: オブジェクトを円環状に複製する。複製の角度、数を指定できる。放射方向にも複製できる。
     image_path: "path/to/image3.png"
+  raday:
+    description: オブジェクトを円環状に複製する。複製の角度、数を指定できる。放射方向にも複製できる。
+    image_path: "path/to/image3.png"
 
