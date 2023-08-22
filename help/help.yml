@@ -2,7 +2,10 @@ helps:
   loft:
     description: "Creates a surface between two sets of edges/curves that can be GO/G1/G2 continuous. Tension is adjustable."
     image_path: "path/to/image1.png"
-  help_key_2:
-    description: "ヘルプ2の説明文です。"
+  move:
+    description: "Moves objects with Move Gizmo. Single-axis constraints or Freestyle movement possible. Pivot is adjustable."
     image_path: "path/to/image2.png"
+  radial-array:
+    description: オブジェクトを円環状に複製する。複製の角度、数を指定できる。放射方向にも複製できる。
+    image_path: "path/to/image3.png"
 
