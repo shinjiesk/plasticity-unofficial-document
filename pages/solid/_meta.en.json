@@ -1,4 +1,7 @@
 {
-  "solid-command-essentials": "Solid Command Essentials"
+  "solid-command-essentials": {
+    "title": "Solid Command Essentials",
+    "display": "hidden"
+  }
 }
 

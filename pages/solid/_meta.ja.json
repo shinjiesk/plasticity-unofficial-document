@@ -1,4 +1,6 @@
 {
-  "solid-command-essentials": "ソリッドコマンドの基本"
+    "solid-command-essentials": {
+        "title": "ソリッドコマンドの基本",
+        "display": "hidden"
+    }
 }
-
