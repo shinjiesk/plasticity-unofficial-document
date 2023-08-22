@@ -1,0 +1,8 @@
+helps:
+  loft:
+    description: "Creates a surface between two sets of edges/curves that can be GO/G1/G2 continuous. Tension is adjustable."
+    image_path: "path/to/image1.png"
+  help_key_2:
+    description: "ヘルプ2の説明文です。"
+    image_path: "path/to/image2.png"
+
