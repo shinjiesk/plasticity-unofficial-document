@@ -8,12 +8,12 @@ import { Callout } from 'nextra/components'
 
 ## Creating a Patch from Curves
 
-You can create a patch shrface from closed Curves.
+You can create a patch surface from closed Curves.
 
 1. Select the closed Curves you want to patch.
 2. Click the button <ButtonIcon type="button-patch" /> on the Right of Command Bar.
 3. Set the options in the Command Dialog.
-    - **Tolernace:** Specify the tolerance for the patch.
+    - **Tolerance:** Specify the tolerance for the patch.
 4. Confirm with OK in the Command Dialog or right-click.
 
 ![Patch 1](/img/patch-1.gif)
@@ -34,7 +34,7 @@ You can patch holes along Edges.
         - **Single:**
         - **Minimal:**
         - **Quality:**
-    - **Tolernace:** Specify the tolerance for the patch.
+    - **Tolerance:** Specify the tolerance for the patch.
 4. Confirm with OK in the Command Dialog or right-click.
 
 ![Patch 2](/img/patch-2.gif)
@@ -44,7 +44,7 @@ You can patch holes along Edges.
 You can patch holes along Edges with guide Curves.
 
 1. Create the guide Curves.
-2. Add isoparams to the point at which guide Curves are touched.  Use [Isoparam](./isoparam) command.
+2. Add an isoparam at each point where the guide curve touches the surface. Use the [Isoparam](./isoparam) command.
 3. Select the Edges that surround the hole.
 4. Click the button <ButtonIcon type="button-patch" /> on the Right of Command Bar.
 5. Select the guide Curves.
