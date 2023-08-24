@@ -9,6 +9,8 @@ Our lofting functionality now supports g0/g1/g2 surface continuity for sleeker t
 
 # Loft
 
+You can create a surface from two or more profile Curves.
+
 ## Loft the Curves and the Edges
 
 You can loft with any combination of Curves and Edges. 
@@ -55,11 +57,19 @@ Curves and Edges can be lofted in any combination. The procedure and functions a
 
 You can loft multiple Curves at once. <kbd>Shift</kbd> + Click to select multiple, <kbd>Ctrl</kbd> + Click to deselect. The procedure and functions are the same as **Lofting two Curves**. Edges can also be specified at the start and endpoints.
 
+
+
+
+<Callout type="warning" emoji="⚠️">
+Profiles and guides must be selected in the order in which surfaces flow.
+</Callout>
+
+
 ![Loft multiple Curves](/img/loft-multiple-curves.gif)
 
-## Lofting with Guide
+## Lofting with a Guide
 
-The guides can be used to control the shape of the loft.  Any combination of Curves and Edges can be specified as guides. The lofted surface can be trimmed.
+One or more guides can be used to control the shape of the loft.  Any combination of Curves and Edges can be specified as guides. The lofted surface can be trimmed.
 
 1. Select two Curves you want to loft.
 2. Press <kbd>L</kbd>.
@@ -71,7 +81,7 @@ The guides can be used to control the shape of the loft.  Any combination of Cur
     - The other options are the same as **Lofting two Curves** and **Lofting two Edges** described above.
 5. Confirm with OK in the Command Dialog or right-click.
 
-![Loft Curve with guide](/img/loft-curve-with-guide.gif)
+![Loft Curve with a guide](/img/loft-curve-with-guide.gif)
 
 ## Continuous Lofting
 
@@ -92,31 +102,31 @@ You can loft more than three Curves to create a loop Sheet.
 
 ![Loft Loop](/img/loft-loop.gif)
 
-## Loft the Closed Curves
+## Loft Closed Curves
 
 You can loft a closed Curves to create a closed Sheet.  
 
 1. Select two or more closed Curves you want to loft.
 2. Press <kbd>L</kbd>.
-3. To control the shape of the loft, you can select the guide Curves.  
+3. Optionally select guide Curves to control the shape of the loft.  
 4. Confirm with OK in the Command Dialog or right-click.
 
-## Loft the Regions
+## Loft Regions
 
 You can loft a Regions to create a Solid.
 
 1. Select two or more Regions you want to loft.
 2. Press <kbd>L</kbd>.
-3. To control the shape of the loft, you can select the guide Curves.  
+3. Optionally select guide Curves to control the shape of the loft.  
 4. Confirm with OK in the Command Dialog or right-click.
 
-## Loft the Faces
+## Loft Faces
 
 You can loft two Faces to create a Solid.
 
 1. Select two Faces you want to loft.
 2. Press <kbd>L</kbd>.
-3. To control the shape of the loft, you can select the guide Curves.  
+3. Optionally select guide Curves to control the shape of the loft.  
 4. Set the options in the Command Dialog and the Keyboard Shortcuts.
     - **Continuity**: **G0, G1, G2** 
         - Specify the [Continuity of the Surface](../cad-essentials/continuity-curve-and-surface).
@@ -125,9 +135,9 @@ You can loft two Faces to create a Solid.
     - **Tension**: Specify the tension of each Edge.
 4. Confirm with OK in the Command Dialog or right-click.
 
-## Loft the Vertices
+## Loft Vertices
 
-Lofting two Vertices allows bridging two Curves. The functionality is the same as [**Bridge Vertex.**](../sketch/bridge#bridge-vertex).
+Lofting two Vertices allows bridging two Curves. The functionality is the same as [**Bridge Vertex**](../sketch/bridge#bridge-vertex).
 
 ## Troubleshooting Tips
 
@@ -139,8 +149,8 @@ Lofting two Vertices allows bridging two Curves. The functionality is the same a
 4. Too many, or not enough guide Curves. Practice helps one to get better here.  Lofts struggle if you try to force a surface to fit through too many profiles & guides. Same issue if profiles & guides are spaced too close together.
 5. Select Curves instead of Edges. The possible options are different for Edge and Curve. 
 6. Curves are not selected in the correct order. Profiles and guides must be selected in the order in which surfaces flow.
-7. Failed Loft some times is not a failure.  Generally you see the Loft growing as you select guides. However, I've had surfaces appear, then disappear, when selecting the next guides.  This leads you to think the Loft has failed. Keep going on to the next giudes and all the surfaces may suddenly appear.  It's as if PariSolid sometimes needs ALL your inputs first to solve the puzzle.
-8. Reverse the selection sequence of Profiles and Guides.  Normally you select the Profiles and then the Guides.  When a loft fails try selecting the "Guides" and then the "Profiles".  This can work even though it seems backwards.
+7. A failed Loft is sometimes not a failure.  Generally you see the Loft growing as you select guides. However, I've had surfaces appear, then disappear, when selecting the next guides.  This leads you to think the Loft has failed. Keep going on to the next giudes and all the surfaces may suddenly appear.  It's as if Parasolid sometimes needs ALL your inputs first to solve the puzzle.
+8. Reverse the selection sequence of Profiles and Guides.  Normally you select the Profiles and then the Guides.  When a loft fails, try selecting the "Guides" and then the "Profiles".  This can work even though it seems backwards.
 </Callout>
 
 ## See also
