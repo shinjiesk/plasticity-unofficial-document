@@ -1,5 +1,7 @@
 # Continuity of Curves and Surfaces
 
+import YouTube from '/components/Youtube'
+
 The continuity of a  Curve or a surface refers to the smoothness and quality of the shape. The continuity is determined by the degree of matching between the position, direction, curvature, and curvature change rate of the adjacent segments.
 
 ## Curve Continuity
@@ -23,7 +25,21 @@ Higher continuity is required to create smoother and more natural surfaces.
 
 ![Curve Continuity](/img/surface-continuity.png)
 
+---
 
+This video utilizes Autodesk's Alias, but the concepts are also applicable when working with Plasticity. Note that G3 continuity curves can be created using [Bridge Curve](../sketch/bridge#bridge-curve) command, but G3 continuity surfaces cannot be generated. Additionally, curvature combs have not yet been implemented.
+<br/ >
+<YouTube videoId="NowFoAGen7k" />
+
+**Autodesk Alias Tutorials l Alias Theory 2 - Continuity**
+
+Summary:
+- G0 refers to "Position Continuity," where surfaces touch but have a hard, mechanical edge. There's no smoothness in the transition between the surfaces.
+- G1, or "Tangent Continuity," introduces some level of smoothness. However, the transition can still be somewhat abrupt. The Control Vertices (CVs) of the transitioning surface must align with those of the primary surface.
+- G2, or "Curvature Continuity," offers a much smoother transition between surfaces. The curvature combs at the transition are at the same height, indicating a smoother flow. A minimum of a degree-five surface is usually required for this.
+- G3 is an even higher level of curvature continuity, offering the smoothest transitions. It's especially important in Class A modeling for large transitional surfaces like car bodies.
+- The tutorial uses visual aids like surface fillers and curvature combs to demonstrate these different levels of continuity. Curvature combs help in evaluating the smoothness of transitions.
+- While G2 can be mathematically calculated, G3 is more of an art form that requires visual evaluation, often using curvature combs for the best assessment.
 
 
 
