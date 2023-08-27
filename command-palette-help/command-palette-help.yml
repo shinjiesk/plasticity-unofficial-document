@@ -3,10 +3,6 @@
 # image size: width/Height -- tentatively 256/160
 
 helps:
-  loft:
-    description: Creates a surface between two sets of Edges/Curves that can be GO/G1/G2 continuous. Tension is adjustable.
-    image: help-loft.png
-
   # Bridge
   bridge:
     description: Unified command for Bridge Curve, Bridge Vertex, Bridge Edge. The command is run based on the selected object.
@@ -36,7 +32,7 @@ helps:
     image: help-fillet-shell.png
   refillet-face:
     description: Redo fillet without selecting individual fillet faces from Solid or Sheet. Distance is adjustable.
-    image: help-.png
+    image: help-refillet-face.png
   remove-fillets-from-shell:
     description: Remove fillets from Solid or Sheet with possible restrictions on max radius and convexity.
     image: help-remove-fillets-from-shell.png
@@ -45,9 +41,6 @@ helps:
   pipe:
     description: Create a pipe of any size from a Curve or an Edge. It can be used for boolean operations. Polygon or custom profile options are available.
     image: help-pipe.png
-  offset-curve: 
-    description: Unified command for Offset Planar Curve, Offset Region, Offset Face Loop,  Offset Edge. The command is run based on the selected object.
-    image: help-offset-curve.png
 
   move:
     description: Moves objects with Move Gizmo. Single-axis constraints or Freestyle movement possible. Pivot is adjustable.
@@ -58,3 +51,9 @@ helps:
   text:
     description: Creates Curves from the inputted text. Built-in fonts and sizes can be specified.
     image: help-text.png
+  boolean: 
+    description: Combine, subtract, or intersect multiple objects in any combination of Solids and Sheets.
+    image: help-boolean.png
+
+
+    
