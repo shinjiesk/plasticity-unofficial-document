@@ -25,22 +25,38 @@ Higher continuity is required to create smoother and more natural surfaces.
 
 ![Curve Continuity](/img/surface-continuity.png)
 
----
 
-This video utilizes Autodesk's Alias, but the concepts are also applicable when working with Plasticity. Note that G3 continuity curves can be created using [Bridge Curve](../sketch/bridge#bridge-curve) command, but G3 continuity surfaces cannot be generated. Additionally, curvature combs have not yet been implemented.
-<br/ >
-<YouTube videoId="ULN-KhTHFH0" />
+## Reference Videos
 
-**Autodesk Alias Tutorials l Alias Theory 2 - Continuity**
+The movie discusses the intricacies of curve and surface continuity, focusing on G0, G1, G2, and G3 types. It also delves into mathematical perspectives, CAD system capabilities, and practical applications in design, particularly in the automotive industry.
 
-Summary:
-- G0 refers to "Position Continuity," where surfaces touch but have a hard, mechanical edge. There's no smoothness in the transition between the surfaces.
-- G1, or "Tangent Continuity," introduces some level of smoothness. However, the transition can still be somewhat abrupt. The Control Vertices (CVs) of the transitioning surface must align with those of the primary surface.
-- G2, or "Curvature Continuity," offers a much smoother transition between surfaces. The curvature combs at the transition are at the same height, indicating a smoother flow. A minimum of a degree-five surface is usually required for this.
-- G3 is an even higher level of curvature continuity, offering the smoothest transitions. It's especially important in Class A modeling for large transitional surfaces like car bodies.
-- The tutorial uses visual aids like surface fillers and curvature combs to demonstrate these different levels of continuity. Curvature combs help in evaluating the smoothness of transitions.
-- While G2 can be mathematically calculated, G3 is more of an art form that requires visual evaluation, often using curvature combs for the best assessment.
+### "Curve and Surface Continuity" - CMU PDET
 
+<YouTube videoId="Cks7nA296v8" />
 
+#### Summary
+The transcript discusses the intricacies of curve and surface continuity, focusing on G0, G1, G2, and G3 types. It also delves into mathematical perspectives, CAD system capabilities, and practical applications in design, particularly in the automotive industry.
 
+#### Types of Continuity
+- **G0 Continuity**: Point continuity, where curves or surfaces share a point or edge but may have different slopes.
+- **G1 Continuity**: Tangent continuity, where there is G0 continuity and the slopes of the curves are the same.
+- **G2 Continuity**: Curvature continuity, which includes G0 and G1, plus the curves have the same rate of curvature.
+- **G3 Continuity**: Adds an acceleration component to G2 continuity.
+
+#### Mathematical Perspective
+- **G0**: The functions representing the curves are not equal at any particular point.
+- **G1**: The first derivatives of the functions are equal, meaning they have the same slope.
+- **G2**: The second derivatives are equal, indicating the same rate of curvature.
+
+#### Visual Analysis Methods
+- **Zebra Stripe Analysis**: Used to evaluate how well curves or surfaces blend and reflect light.
+- **Porcupine Analysis**: Another method to visually assess the quality of curves and surfaces.
+
+#### Automotive Design Standards
+- **Class A Surfaces**: Visible to the user and typically require G2 or better continuity.
+- **Class B Surfaces**: Visible when the product is not in use and have lower continuity requirements.
+- **Body and White Surfaces**: Not visible to the user and can have G0 or better continuity.
+
+#### Final Remarks
+The quality of your design can be significantly impacted by the type of continuity you choose. This is especially true in industries like automotive design, where the aesthetic and functional aspects are critical.
 
