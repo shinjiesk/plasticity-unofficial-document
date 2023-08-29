@@ -1,0 +1,26 @@
+import ButtonIcon from 'components/ButtonIcon'
+
+# Toggle Object States
+
+- You can change the status of objects or groups.
+    - Temporarily hidden or made visible again.
+    - Temporarily disabled or enabled again.
+    - Locked or unlocked.
+![Toggle Object States](/img/toggle-object-states.png)
+
+### Operations in the Outliner
+
+- <ButtonIcon type="button-outliner-hide" double="true" />: Toggle hide
+- <ButtonIcon type="button-outliner-disable" double="true" /> : Toggle disable
+- <ButtonIcon type="button-outliner-disable-selection" double="true"  /> : Toggle lock
+
+### Operations by shortcut key
+
+| Operation                         | Shortcut                      | Command Name    |
+| --------------------------------- | ----------------------------- | --------------- |
+| Hide selected objects             | <kbd>H</kbd>                  | Hide selected   |
+| Hide unselected objects           | <kbd>Shift + H</kbd>          | Hide unselected |
+| Unhide all                        | <kbd>Alt + H</kbd>            | Unhide all      |
+| Invert Hidden                     | <kbd>Ctrl + H</kbd>           | Invert Hidden   |
+| Hide all Curves on the same plane | Select Regions -> <kbd>H</kbd> |                 |
+| Lock selected objects             |                               | Lock selected   |
