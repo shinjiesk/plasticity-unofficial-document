@@ -2,84 +2,85 @@
 
 - [オブジェクトの種類](./plasticity-essentials/object-types)
 
-| コマンド名                                            | ショートカット                                    | 機能                                                            |
-| ----------------------------------------------------- | ------------------------------------------------- | --------------------------------------------------------------- |
-| **3Dビューポートの操作**                              |                                                   |                                                                 |
-| Viewport: navigate to front                           | <kbd>Num.1</kbd>                                  | 前からのビュー                                                  |
-| Viewport: navigate to right                           | <kbd>Num.3</kbd>                                  | 右からのビュー                                                  |
-| Viewport: navigate to top                             | <kbd>Num.7</kbd>                                  | 上からのビュー                                                  |
-| Viewport: navigate to back                            | <kbd>Ctrl + Num.1</kbd>                           | 後ろからのビュー                                                |
-| Viewport: navigate to left                            | <kbd>Ctrl + Num.3</kbd>                           | 左からのビュー                                                  |
-| Viewport: navigate to bottom                          | <kbd>Ctrl + Num.7</kbd>                           | 下からのビュー                                                  |
-| Viewport: toggle orthographic camera                  | <kbd>Num.5</kbd>                                  | 透視投影と正投影を切り替える                                    |
-| Viewport: navigate to selection                       | <kbd>Space</kbd>                                  | オブジェクトを画面の中央に表示する                              |
-| Viewport: focus                                       | <kbd>/ (Slash)</kbd>                              | オブジェクトを画面全体に表示する                                |
-| Focus                                                 | <kbd>. (Period)</kbd>                             | オブジェクトを画面全体に表示して、他のオブジェクトを隠す        |
-| [**P-メニュー**](./plasticity-essentials/file-menu)              |                                                   |                                                                 |
-| New                                                   | <kbd>Ctrl + N</kbd>                               | シーンをクリアして、新しいドキュメントを開きます                |
-| Open                                                  | <kbd>Ctrl + O</kbd>                               |                                                                 |
-| Import/Append                                         | <kbd>Ctrl + Shift + O</kbd>                       | [ファイルのインポート](#file-import) を参照してください         |
-| Save                                                  | <kbd>Ctrl + S</kbd>                               |                                                                 |
-| Export/Save as                                        | <kbd>Ctrl + Shift + S</kbd>                       | [ファイルのエクスポート](#file-export) を参照してください       |
-| Quick save version                                    |                                                   | ファイル名の末尾にタイムスタンプを付け加えて別名保存します      |
-| Save as startup scene                                 |                                                   | 現在のドキュメントを起動時に開くようにします。                  |
-| Preferences                                           | <kbd>Ctrl + , (Comma)</kbd>                       | [設定](./preferences) を参照してください                        |
-| Manage licenses                                       |                                                   | ライセンストークンとデバイスの管理をします。                    |
-| Plasticity Version                                    |                                                   | インストールされているPlasticityのバージョン                    |
-| Quit                                                  | <kbd>Ctrl + Q</kbd>                               |                                                                 |
-| [**アウトライナー**](./plasticity-essentials/outliner)          |                                                   |                                                                 |
-| Group Selected                                        | <kbd>Ctrl + G</kbd>                               | 選択オブジェクトをグループ化する                                |
-| Ungroup Selected                                      | <kbd>Alt + G</kbd>                                | 選択オブジェクトをグループから外す                              |
-| Hide Selected                                         | <kbd>H</kbd>                                      | 選択しているオブジェクトを非表示にする                          |
-| Hide Unselected                                       | <kbd>Shift + H</kbd>                              | 選択していないオブジェクトを非表示にする                        |
-| Unhide All                                            | <kbd>Alt + H</kbd>                                | すべてを表示する                                                |
-| Invert Hidden                                         | <kbd>Ctrl + H</kbd>                               | 非表示を反転する                                                |
-| Lock Selected                                         |                                                   | 選択不可にする                                                  |
-| [**選択モード**](./3d-viewmode/selectiom-mode)        |                                                   |                                                                 |
-| Selection mode: set control-point                     | <kbd>1</kbd>                                      | コントロールポイント選択モード                                  |
-| Selection mode: set Edge                              | <kbd>2</kbd>                                      | エッジ選択モード                                                |
-| Selection mode: set Face                              | <kbd>3</kbd>                                      | フェイス選択モード                                              |
-| Selection mode: set Solid                             | <kbd>4</kbd>                                      | ボディ選択モード                                                |
-| Selection mode: set all                               | <kbd>Tab</kbd>                                    | 全種類選択可能なモード                                          |
-| Selection: toggle control-point                       | <kbd>Shift + 1</kbd>                              | コントロールポイント選択モードのみを切り替える                  |
-| Selection: toggle Edge                                | <kbd>Shift + 2</kbd>                              | エッジ選択モードのみを切り替える                                |
-| Selection: toggle Face                                | <kbd>Shift + 3</kbd>                              | フェイス選択モードのみを切り替える                              |
-| Selection: toggle Solid                               | <kbd>Shift + 4</kbd>                              | ボディ選択モードのみを切り替える                                |
-| Select All                                            | <kbd>A</kbd>                                      | すべてのオブジェクトを選択する                                  |
-| Select all Curves                                     |                                                   | すべてのカーブを選択する                                        |
-| Invert Selection                                      | <kbd>Alt + A</kbd>                                | 選択を反転する                                                  |
-| Select Adjacent                                       | <kbd>Ctrl + Shift + =</kbd>                       | 隣接オブジェクトを選択に追加する                                |
-| Deselect All                                          | <kbd>Esc</kbd>                                    | すべての選択を解除する                                          |
-|                                                       | <kbd>Alt</kbd> + クリック                         | エッジをループ選択する                                          |
-|                                                       | <kbd>Alt + Ctrl</kbd> + クリック                  | エッジをリング選択する                                          |
-|                                                       | <kbd>Alt</kbd> + クリック                         | 同一平面上のすべてのカーブ、リージョンを選択する                |
-|                                                       | <kbd>Alt + Ctrl</kbd> + クリック                  | すべての平行なフェイスを選択する                                |
-| **Selection: convert to Edges**                       | <kbd>Ctrl + 2</kbd>                               | 選択しているオブジェクトに含まれるエッジのみを選択する          |
-| **Selection: convert to Faces**                       | <kbd>Ctrl + 3</kbd>                               | 選択しているオブジェクトに含まれるフェイスのみを選択する        |
-| **Selection: convert to Solids**                      | <kbd>Ctrl + 4</kbd>                               | 選択しているオブジェクトを含んでいるソリッドのみを選択する      |
-| [**ビューモード**](./plasticity-essentials/view-mode)           |                                                   |                                                                 |
-| Viewport: toggle overlays                             | <kbd>Alt + Shift + Z</kbd>                        | オーバーレイを切り替える                                        |
-| Viewport: toggle xray mode                            | <kbd>Alt + Z</kbd>                                | X-Rayを切り替える                                               |
-| Viewport: toggle Edges                                |                                                   | エッジの表示を切り替える                                        |
-| Viewport: toggle Faces                                |                                                   | フェイスの表示を切り替える                                      |
-| [**グリッドとスナップ**](./plasticity-essentials/grid-and-snap) |                                                   |                                                                 |
-| Grid: toggle grid snapping                            |                                                   | グリッドスナップを切り替える                                    |
-| Viewport: decrease grid size                          |                                                   | グリッドサイズを大きくする                                      |
-| Viewport: increase grid size                          |                                                   | グリッドサイズを小さくする                                      |
-| Snaps: toggle snap snapping                           |                                                   | オブジェクトスナップを切り替える                                |
-| [**構築平面**](./3dviewport/construction-plane)       |                                                   |                                                                 |
-|                                                       | <kbd>Space</kbd>                                  | 選択オブジェクトから構築平面を作成する (カメラを合わせる)       |
-| Viewport: set construction plane to selection         | <kbd>Shift + Space</kbd>                          | 選択オブジェクトから構築平面を作成する (カメラを合わせない)     |
-| Create Viewspace Construction Plane At Ori...         | <kbd>Ctrl + Space</kbd>                           | 見えている視線に合わせた構築平面を作成する (ワールド原点を通る) |
-| Create Viewspace Construction Plane                   | <kbd>Ctrl + Shift + Space</kbd>                   | 見えている視線に合わせた構築平面を作成する (選択した点を通る)   |
-| [**一般機能**](./plasticity-essentials/general)                 |                                                   |                                                                 |
-|                                                       | <kbd>Ctrl + C</kbd>                               | コピー                                                            |
-|                                                       | <kbd>Ctrl + visible</kbd>                         | 貼り付け                                                           |
-| Delete                                                | <kbd>X</kbd> or <kbd>Delete</kbd>                 | 削除                                                         |
-| Delete Face                                           | <kbd>Shift + X</kbd> or <kbd>Shift + Delete</kbd> | フェイスを削除                                                      |
-|                                                       | <kbd>Ctrl + Z</kbd>                               | 取り消し                                                      |
-|                                                       | <kbd>Ctrl + Shift + Z</kbd>                       | やり直し                                                           |
-| Edit: Repeat last command                             | <kbd>Shift + R</kbd>                              | 最後のコマンドを繰り返す                                             |
+| コマンド名                                                              | ショートカット                                    | 機能                                                            |
+| ----------------------------------------------------------------------- | ------------------------------------------------- | --------------------------------------------------------------- |
+| **3Dビューポートの操作**                                                |                                                   |                                                                 |
+| Viewport: navigate to front                                             | <kbd>Num.1</kbd>                                  | 前からのビュー                                                  |
+| Viewport: navigate to right                                             | <kbd>Num.3</kbd>                                  | 右からのビュー                                                  |
+| Viewport: navigate to top                                               | <kbd>Num.7</kbd>                                  | 上からのビュー                                                  |
+| Viewport: navigate to back                                              | <kbd>Ctrl + Num.1</kbd>                           | 後ろからのビュー                                                |
+| Viewport: navigate to left                                              | <kbd>Ctrl + Num.3</kbd>                           | 左からのビュー                                                  |
+| Viewport: navigate to bottom                                            | <kbd>Ctrl + Num.7</kbd>                           | 下からのビュー                                                  |
+| Viewport: toggle orthographic camera                                    | <kbd>Num.5</kbd>                                  | 透視投影と正投影を切り替える                                    |
+| Viewport: navigate to selection                                         | <kbd>Space</kbd>                                  | オブジェクトを画面の中央に表示する                              |
+| Viewport: focus                                                         | <kbd>/ (Slash)</kbd>                              | オブジェクトを画面全体に表示する                                |
+| Focus                                                                   | <kbd>. (Period)</kbd>                             | オブジェクトを画面全体に表示して、他のオブジェクトを隠す        |
+| [**P-メニュー**](./plasticity-essentials/file-menu)                     |                                                   |                                                                 |
+| New                                                                     | <kbd>Ctrl + N</kbd>                               | シーンをクリアして、新しいドキュメントを開きます                |
+| Open                                                                    | <kbd>Ctrl + O</kbd>                               |                                                                 |
+| Import/Append                                                           | <kbd>Ctrl + Shift + O</kbd>                       | [ファイルのインポート](#file-import) を参照してください         |
+| Save                                                                    | <kbd>Ctrl + S</kbd>                               |                                                                 |
+| Export/Save as                                                          | <kbd>Ctrl + Shift + S</kbd>                       | [ファイルのエクスポート](#file-export) を参照してください       |
+| Quick save version                                                      |                                                   | ファイル名の末尾にタイムスタンプを付け加えて別名保存します      |
+| Save as startup scene                                                   |                                                   | 現在のドキュメントを起動時に開くようにします。                  |
+| Preferences                                                             | <kbd>Ctrl + , (Comma)</kbd>                       | [設定](./preferences) を参照してください                        |
+| Manage licenses                                                         |                                                   | ライセンストークンとデバイスの管理をします。                    |
+| Plasticity Version                                                      |                                                   | インストールされているPlasticityのバージョン                    |
+| Quit                                                                    | <kbd>Ctrl + Q</kbd>                               |                                                                 |
+| [**アウトライナー**](./plasticity-essentials/outliner)                  |                                                   |                                                                 |
+| Group Selected                                                          | <kbd>Ctrl + G</kbd>                               | 選択オブジェクトをグループ化する                                |
+| Ungroup Selected                                                        | <kbd>Alt + G</kbd>                                | 選択オブジェクトをグループから外す                              |
+| Hide Selected                                                           | <kbd>H</kbd>                                      | 選択しているオブジェクトを非表示にする                          |
+| Hide Unselected                                                         | <kbd>Shift + H</kbd>                              | 選択していないオブジェクトを非表示にする                        |
+| Unhide All                                                              | <kbd>Alt + H</kbd>                                | すべてを表示する                                                |
+| Invert Hidden                                                           | <kbd>Ctrl + H</kbd>                               | 非表示を反転する                                                |
+| Lock Selected                                                           |                                                   | 選択不可にする                                                  |
+| [**選択モード**](./3d-viewmode/selectiom-mode)                          |                                                   |                                                                 |
+| Selection mode: set control-point                                       | <kbd>1</kbd>                                      | コントロールポイント選択モード                                  |
+| Selection mode: set Edge                                                | <kbd>2</kbd>                                      | エッジ選択モード                                                |
+| Selection mode: set Face                                                | <kbd>3</kbd>                                      | フェイス選択モード                                              |
+| Selection mode: set Solid                                               | <kbd>4</kbd>                                      | ボディ選択モード                                                |
+| Selection mode: set all                                                 | <kbd>Tab</kbd>                                    | 全種類選択可能なモード                                          |
+| Selection: toggle control-point                                         | <kbd>Shift + 1</kbd>                              | コントロールポイント選択モードのみを切り替える                  |
+| Selection: toggle Edge                                                  | <kbd>Shift + 2</kbd>                              | エッジ選択モードのみを切り替える                                |
+| Selection: toggle Face                                                  | <kbd>Shift + 3</kbd>                              | フェイス選択モードのみを切り替える                              |
+| Selection: toggle Solid                                                 | <kbd>Shift + 4</kbd>                              | ボディ選択モードのみを切り替える                                |
+| [**オブジェクトを選択する**](./plasticity-essentials/selecting-objects) |                                                   |                                                                 |
+| Select All                                                              | <kbd>A</kbd>                                      | すべてのオブジェクトを選択する                                  |
+| Select all Curves                                                       |                                                   | すべてのカーブを選択する                                        |
+| Invert Selection                                                        | <kbd>Alt + A</kbd>                                | 選択を反転する                                                  |
+| Select Adjacent                                                         | <kbd>Ctrl + Shift + =</kbd>                       | 隣接オブジェクトを選択に追加する                                |
+| Deselect All                                                            | <kbd>Esc</kbd>                                    | すべての選択を解除する                                          |
+|                                                                         | <kbd>Alt</kbd> + クリック                         | エッジをループ選択する                                          |
+|                                                                         | <kbd>Alt + Ctrl</kbd> + クリック                  | エッジをリング選択する                                          |
+|                                                                         | <kbd>Alt</kbd> + クリック                         | 同一平面上のすべてのカーブ、リージョンを選択する                |
+|                                                                         | <kbd>Alt + Ctrl</kbd> + クリック                  | すべての平行なフェイスを選択する                                |
+| **Selection: convert to Edges**                                         | <kbd>Ctrl + 2</kbd>                               | 選択しているオブジェクトに含まれるエッジのみを選択する          |
+| **Selection: convert to Faces**                                         | <kbd>Ctrl + 3</kbd>                               | 選択しているオブジェクトに含まれるフェイスのみを選択する        |
+| **Selection: convert to Solids**                                        | <kbd>Ctrl + 4</kbd>                               | 選択しているオブジェクトを含んでいるソリッドのみを選択する      |
+| [**ビューモード**](./plasticity-essentials/view-mode)                   |                                                   |                                                                 |
+| Viewport: toggle overlays                                               | <kbd>Alt + Shift + Z</kbd>                        | オーバーレイを切り替える                                        |
+| Viewport: toggle xray mode                                              | <kbd>Alt + Z</kbd>                                | X-Rayを切り替える                                               |
+| Viewport: toggle Edges                                                  |                                                   | エッジの表示を切り替える                                        |
+| Viewport: toggle Faces                                                  |                                                   | フェイスの表示を切り替える                                      |
+| [**グリッドとスナップ**](./plasticity-essentials/grid-and-snap)         |                                                   |                                                                 |
+| Grid: toggle grid snapping                                              |                                                   | グリッドスナップを切り替える                                    |
+| Viewport: decrease grid size                                            |                                                   | グリッドサイズを大きくする                                      |
+| Viewport: increase grid size                                            |                                                   | グリッドサイズを小さくする                                      |
+| Snaps: toggle snap snapping                                             |                                                   | オブジェクトスナップを切り替える                                |
+| [**構築平面**](./3dviewport/construction-plane)                         |                                                   |                                                                 |
+|                                                                         | <kbd>Space</kbd>                                  | 選択オブジェクトから構築平面を作成する (カメラを合わせる)       |
+| Viewport: set construction plane to selection                           | <kbd>Shift + Space</kbd>                          | 選択オブジェクトから構築平面を作成する (カメラを合わせない)     |
+| Create Viewspace Construction Plane At Ori...                           | <kbd>Ctrl + Space</kbd>                           | 見えている視線に合わせた構築平面を作成する (ワールド原点を通る) |
+| Create Viewspace Construction Plane                                     | <kbd>Ctrl + Shift + Space</kbd>                   | 見えている視線に合わせた構築平面を作成する (選択した点を通る)   |
+| [**一般機能**](./plasticity-essentials/general)                         |                                                   |                                                                 |
+|                                                                         | <kbd>Ctrl + C</kbd>                               | コピー                                                          |
+|                                                                         | <kbd>Ctrl + visible</kbd>                         | 貼り付け                                                        |
+| Delete                                                                  | <kbd>X</kbd> or <kbd>Delete</kbd>                 | 削除                                                            |
+| Delete Face                                                             | <kbd>Shift + X</kbd> or <kbd>Shift + Delete</kbd> | フェイスを削除                                                  |
+|                                                                         | <kbd>Ctrl + Z</kbd>                               | 取り消し                                                        |
+|                                                                         | <kbd>Ctrl + Shift + Z</kbd>                       | やり直し                                                        |
+| Edit: Repeat last command                                               | <kbd>Shift + R</kbd>                              | 最後のコマンドを繰り返す                                        |
 
 
 
