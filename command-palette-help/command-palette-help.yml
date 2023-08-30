@@ -33,6 +33,10 @@ helps:
     description: Switch between perspective and orthographic projection.
     image: help-viewport-toggle-orthographic-camera.png
     url: /
+  Isolate:
+    description: 
+    image: help-Isolate.png
+    url: /
   viewport-focus:
     description:
     image: help-viewport-focus.png
@@ -40,10 +44,6 @@ helps:
   viewport-navigate-to-selection:
     description: Center selected object on the screen.
     image: help-viewport-navigate-to-selection.png
-    url: /
-  focus:
-    description:
-    image: help-focus.png
     url: /
 
 # P-Menu  Text:10/10
@@ -158,7 +158,7 @@ helps:
     image: help-selection-toggle-solid.png
     url: /
 
-  # Selecting Objects 8/8
+  # Selecting Objects 8/11
   select-all:
     description: Select all objects.
     image: help-select-all.png
@@ -190,6 +190,18 @@ helps:
   selection-convert-to-solids:
     description: Select only the Solids or Sheets of the currently selected Faces and Edges.
     image: help-selection-convert-to-solids.png
+    url: /
+  selection:-convert-to-groups:
+    description: 
+    image: help-selection-convert-to-groups.png
+    url: /
+  select-next-entity-collection:
+    description: 
+    image: help-select-next-entity-collection.png
+    url: /
+  select-previous-entity-collection:
+    description: 
+    image: help-select-previous-entity-collection.png
     url: /
 
 # View Mode
@@ -258,6 +270,18 @@ helps:
   delete-face:
     description:
     image: help-delete-face.png
+    url: /
+  delete-group:
+    description:
+    image: help-delete-group.png
+    url: /
+  dissolve:
+    description:
+    image: help-dissolve.png
+    url: /
+  dissolve-face:
+    description:
+    image: help-dissolve-face.png
     url: /
   edit-repeat-last-command:
     description:
@@ -705,6 +729,10 @@ helps:
     description:
     image: help-thicken-sheet.png
     url: /
+  thicken-face:
+    description:
+    image: help-thicken-face.png
+    url: /
   constrained-surface:
     description:
     image: help-constrained-surface.png
@@ -784,6 +812,17 @@ helps:
     image: help-extend-edge.png
     url: /
 
+# ##### Radial menu #####
+  radial-menu-selection-mode:
+    description:
+    image: help-radial-menu-selection-mode.png
+    url: /
+  radial-menu-viewport-settings:
+    description:
+    image: help-radial-menu-viewport-settings.png
+    url: /
+
+
 #  ##### In-Development Feature ##### 
   check:
     description:
@@ -792,10 +831,6 @@ helps:
   create-solid-from-faces:
     description:
     image: help-create-solid-from-faces.png
-    url: /
-  dissolve-face:
-    description:
-    image: help-dissolve-face.png
     url: /
   push-face:
     description:
