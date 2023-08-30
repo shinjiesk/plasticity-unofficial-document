@@ -10,23 +10,28 @@
 
 ## Selecting with Shortcuts
 
-| Operation                                    | Shortcut                      | Command Name     |
-| -------------------------------------------- | ----------------------------- | --------------------- |
-| Select All                                   | <kbd>A</kbd>                  | **Select all**        |
-| Select all Curves                            |                               | **Select all Curves** |
-| Deselect All                                 | <kbd>Esc</kbd>                | **Deselect all**      |
-| Invert Selection                             | <kbd>Alt + A</kbd>            | **Invert Selection**  |
-| Add adjacent items to the selection          | <kbd>Ctrl + Shift + =</kbd>   | **Select Adjacent**   |
-| Select Edge loops                            | <kbd>Alt</kbd> + click           |                       |
-| Select Edge rings                            | <kbd>Alt + Ctrl</kbd> + click |                       |
-| Select all Curves, Regions on the same plane | <kbd>Alt</kbd> + click           |                       |
-| Select all parallel Faces                    | <kbd>Alt + Ctrl</kbd> + click |                       |
+| Command Name      | Shortcut                    | Note                                                    |
+| ----------------- | --------------------------- | ------------------------------------------------------- |
+| Select all        | <kbd>A</kbd>                | Select all objects.                                             |
+| Select all Curves | <kbd>Ctrl + A</kbd>         | Select all Curves.                                      |
+| Deselect all      | <kbd>Escape</kbd>           | Deselect all.                                           |
+| Invert Selection  | <kbd>Alt + A</kbd>          | Invert selection.                                       |
+| Select Adjacent   | <kbd>Ctrl + Shift + =</kbd> | Select adjacent objects to the currently selected ones. |
 
-| Operation                               | Shortcut            | Command Name                |
-| --------------------------------------- | ------------------- | -------------------------------- |
-| Select Edges included in the selection  | <kbd>Ctrl + 2</kbd> | **Selection: convert to Edges**  |
-| Select Faces included in the selection  | <kbd>Ctrl + 3</kbd> | **Selection: convert to Faces**  |
-| Select Solids included in the selection | <kbd>Ctrl + 4</kbd> | **Selection: convert to Solids** |
+| Note                                         | Shortcut                      |
+| -------------------------------------------- | ----------------------------- |
+| Select Edge loops                            | <kbd>Alt</kbd> + click        |
+| Select Edge rings                            | <kbd>Alt + Ctrl</kbd> + click |
+| Select all Curves, Regions on the same plane | <kbd>Alt</kbd> + click        |
+| Select all parallel Faces                    | <kbd>Alt + Ctrl</kbd> + click |
+
+### Select from the currently selected objects
+
+| Command Name                | Shortcut            | Note                                                                        |
+| --------------------------- | ------------------- | --------------------------------------------------------------------------- |
+| selection-convert-to-edges  | <kbd>Ctrl + 2</kbd> | Select only the Edges of the currently selected Solids, Sheets, and Faces.  |
+| selection-convert-to-faces  | <kbd>Ctrl + 3</kbd> | Select only the Faces of the currently selected Solids and Sheets.          |
+| selection-convert-to-solids | <kbd>Ctrl + 4</kbd> | Select only the Solids or Sheets of the currently selected Faces and Edges. |
 
 ![Select objects included](/img/select-objects-included.gif)
 

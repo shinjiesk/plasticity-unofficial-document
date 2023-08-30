@@ -10,27 +10,29 @@
 
 ## キーボードショートカットで選択する
 
-| 操作                                             | ショートカット                   | コマンド名            |
-| ------------------------------------------------ | -------------------------------- | --------------------- |
-| すべてのオブジェクトを選択する                   | <kbd>A</kbd>                     | **Select all**        |
-| すべてのカーブを選択する                         |                                  | **Select all Curves** |
-| すべてのオブジェクトの選択を解除する             | <kbd>Esc</kbd>                   | **Deselect all**      |
-| 選択を反転する                                   | <kbd>Alt + A</kbd>               | **Invert Selection**  |
-| 隣接するオブジェクトを選択に追加する             | <kbd>Ctrl + Shift + =</kbd>      | **Select Adjacent**   |
-| エッジをループ選択する                           | <kbd>Alt</kbd> + クリック        |                       |
-| エッジをリング選択する                           | <kbd>Alt + Ctrl</kbd> + クリック |                       |
-| 同一平面上のすべてのカーブ、リージョンを選択する | <kbd>Alt</kbd> + クリック           |                       |
-| すべての平行なフェイスを選択する                 | <kbd>Alt + Ctrl</kbd> + クリック |                       |
+| Command Name      | Shortcut                    | Note                                                               |
+| ----------------- | --------------------------- | ------------------------------------------------------------------ |
+| Select all        | <kbd>A</kbd>                | すべてのオブジェクトを選択する                                     |
+| Select all Curves | <kbd>Ctrl + A</kbd>         | すべてのカーブを選択する                                           |
+| Deselect all      | <kbd>Escape</kbd>           | すべての選択を解除する                                             |
+| Invert Selection  | <kbd>Alt + A</kbd>          | 選択を反転する                                                     |
+| Select Adjacent   | <kbd>Ctrl + Shift + =</kbd> | 現在選択されているオブジェクトに隣接するオブジェクトを選択します。 |
 
-| 操作                                                       | ショートカット      | コマンド名                       |
-| ---------------------------------------------------------- | ------------------- | -------------------------------- |
-| 選択しているオブジェクトに含まれるエッジのみを選択する     | <kbd>Ctrl + 2</kbd> | **Selection: convert to Edges**  |
-| 選択しているオブジェクトに含まれるフェイスのみを選択する   | <kbd>Ctrl + 3</kbd> | **Selection: convert to Faces**  |
-| 選択しているオブジェクトを含んでいるソリッドのみを選択する | <kbd>Ctrl + 4</kbd> | **Selection: convert to Solids** |
+| Note                                           | Shortcut                      |
+| ---------------------------------------------- | ----------------------------- |
+| エッジループを選択する                         | <kbd>Alt</kbd> + click        |
+| エッジリングを選択する                         | <kbd>Alt + Ctrl</kbd> + click |
+| 同一平面のすべてのカーブとリージョンを選択する | <kbd>Alt</kbd> + click        |
+| すべての平行なフェイスを選択する               | <kbd>Alt + Ctrl</kbd> + click |
+
+### 選択しているオブジェクトから選択する
+
+| Command Name                | Shortcut            | Note                                                               |
+| --------------------------- | ------------------- | ------------------------------------------------------------------ |
+| selection-convert-to-edges  | <kbd>Ctrl + 2</kbd> | 選択しているソリッド、シート、フェイスの、エッジのみを選択します   |
+| selection-convert-to-faces  | <kbd>Ctrl + 3</kbd> | 選択しているソリッド、シートの、フェイスのみを選択します           |
+| selection-convert-to-solids | <kbd>Ctrl + 4</kbd> | 選択しているフェイス、エッジの、ソリッドまたはシートを選択します。 |
 
 ![Select objects included](/img/select-objects-included.gif)
-
-
-
 
 

@@ -4,33 +4,33 @@
 
 helps:
 
-# Operating the 3D Viewport
+# Operating the 3D Viewport  Text:8/10
   viewport-navigate-to-front:
-    description:
+    description: Set the view direction to front-facing.
     image: help-viewport-navigate-to-front.png
     url: /
   viewport-navigate-to-right:
-    description:
+    description: Set the view direction to right-facing.
     image: help-viewport-navigate-to-right.png
     url: /
   viewport-navigate-to-top:
-    description:
+    description: Set the view direction to top-facing.
     image: help-viewport-navigate-to-top.png
     url: /
   viewport-navigate-to-back:
-    description:
+    description: Set the view direction to back-facing.
     image: help-viewport-navigate-to-back.png
     url: /
   viewport-navigate-to-left:
-    description:
+    description: Set the view direction to left-facing.
     image: help-viewport-navigate-to-left.png
     url: /
   viewport-navigate-to-bottom:
-    description:
+    description: Set the view direction to bottom-facing.
     image: help-viewport-navigate-to-bottom.png
     url: /
   viewport-toggle-orthographic-camera:
-    description:
+    description: Switch between perspective and orthographic projection.
     image: help-viewport-toggle-orthographic-camera.png
     url: /
   viewport-focus:
@@ -38,7 +38,7 @@ helps:
     image: help-viewport-focus.png
     url: /
   viewport-navigate-to-selection:
-    description:
+    description: Center selected object on the screen.
     image: help-viewport-navigate-to-selection.png
     url: /
   focus:
@@ -46,155 +46,149 @@ helps:
     image: help-focus.png
     url: /
 
-# P-Menu
+# P-Menu  Text:10/10
   file-new:
-    description:
+    description: Clear the scene, then create a new Plasticity document.
     image: help-file-new.png
     url: /
   file-open:
-    description:
+    description: Open a Plasticity document.
     image: help-file-open.png
     url: /
   file-import:
-    description:
+    description: Import a document; Accepts Plasticity, STEP, Parasolid, OBJ, and Image files. Studio users can also import IGES, SAT, and Rhino files.
     image: help-file-import.png
     url: /
   file-save:
-    description:
+    description: Save a Plasticity document.
     image: help-file-save.png
     url: /
   file-save-as:
-    description:
+    description: Save as a new Plasticity document. Alternatively, export a document; Supports STEP, Parasolid, OBJ, and STL formats. Studio users can also export in IGES and SAT formats.
     image: help-file-save-as.png
     url: /
-  file-export:
-    description:
-    image: help-file-export.png
-    url: /
-  export-cad:
-    description:
-    image: help-export-cad.png
-    url: /
-  export-obj:
-    description:
+  file-export: 
+    description: ""
+    image: ""
+    url: ""
+  export-cad: 
+    description: ""
+    image: ""
+    url: ""
+  export-obj: 
+    description: Export a Wavefront OBJ file. Detailed tessellation parameters for the geometry can be specified.
     image: help-export-obj.png
     url: /
   file-quick-save-version:
-    description:
+    description: Save a copy of the document with the same filename, appended with a timestamp.
     image: help-file-quick-save-version.png
     url: /
   file-save-as-startup:
-    description:
+    description: Save the current document as the startup scene. The file will automatically open upon the next startup.
     image: help-file-save-as-startup.png
     url: /
 
-# Outliner
-  sidebar-toggle:
-    description:
-    image: help-sidebar-toggle.png
-    url: /
-
-# Group Objects
+# Group Objects 2/2
   group-selected:
-    description:
+    description: Create a group, and the selected object will be moved to the newly created group.
     image: help-group-selected.png
     url: /
   ungroup-selected:
-    description:
+    description: Remove the selected object from the group.
     image: help-ungroup-selected.png
     url: /
 
-# Toggle Object States
+# Toggle Object States 5/5
   hide-selected:
-    description:
+    description: Temporarily hide selected objects.
     image: help-hide-selected.png
     url: /
   hide-unselected:
-    description:
+    description: Temporarily hide unselected objects.
     image: help-hide-unselected.png
     url: /
   unhide-all:
-    description:
+    description: Unhide all objects.
     image: help-unhide-all.png
     url: /
   invert-hidden:
-    description:
+    description: Invert visibility.
     image: help-invert-hidden.png
     url: /
   lock-selected:
-    description:
+    description: Lock to disable selection in the 3D viewport.
     image: help-lock-selected.png
     url: /
 
-# Selection Mode
+# Selection Mode 9/9
   selection-mode-set-control-point:
-    description:
+    description: Switching to this mode allows control point selection.
     image: help-selection-mode-set-control-point.png
     url: /
   selection-mode-set-edge:
-    description:
+    description: Switching to this mode allows edge or curve selection.
     image: help-selection-mode-set-edge.png
     url: /
   selection-mode-set-face:
-    description:
+    description: Switching to this mode allows face or region selection.
     image: help-selection-mode-set-face.png
     url: /
   selection-mode-set-solid:
-    description:
+    description: Switching to this mode allows solid or sheet selection.
     image: help-selection-mode-set-solid.png
     url: /
   selection-mode-set-all:
-    description:
+    description: Switching to this mode allows selection of all types of objects.
     image: help-selection-mode-set-all.png
     url: /
   selection-toggle-control-point:
-    description:
+    description: Toggle Control Point selection mode.
     image: help-selection-toggle-control-point.png
     url: /
   selection-toggle-edge:
-    description:
+    description: Toggle Edge selection mode.
     image: help-selection-toggle-edge.png
     url: /
   selection-toggle-face:
-    description:
+    description: Toggle Face selection mode.
     image: help-selection-toggle-face.png
     url: /
   selection-toggle-solid:
-    description:
+    description: Toggle Body selection mode.
     image: help-selection-toggle-solid.png
     url: /
 
-  # Selecting Objects
+  # Selecting Objects 8/8
   select-all:
-    description:
+    description: Select all objects.
     image: help-select-all.png
     url: /
   select-all-curves:
-    description:
+    description: Select all Curves.
     image: help-select-all-curves.png
     url: /
   deselect-all:
-    description:
+    description: Deselect all.
     image: help-deselect-all.png
     url: /
   invert-selection:
-    description:
+    description: Invert selection.
     image: help-invert-selection.png
     url: /
   select-adjacent:
-    description:
+    description: Select adjacent objects to the currently selected ones.
     image: help-select-adjacent.png
     url: /
   selection-convert-to-edges:
-    description:
+    description: Select only the Edges of the currently selected Solids, Sheets, and Faces.
     image: help-selection-convert-to-edges.png
     url: /
   selection-convert-to-faces:
-    description:
+    description: Select only the Faces of the currently selected Solids and Sheets.
     image: help-selection-convert-to-faces.png
     url: /
   selection-convert-to-solids:
-    description:
+    description: Select only the Solids or Sheets of the currently selected Faces and Edges.
     image: help-selection-convert-to-solids.png
     url: /
 
@@ -269,7 +263,11 @@ helps:
     description:
     image: help-edit-repeat-last-command.png
     url: /
-
+  sidebar-toggle:
+    description: Toggle the visibility of the sidebar.
+    image: help-sidebar-toggle.png
+    url: /
+  
 # ##### Tools ##### 
   line:
     description:
