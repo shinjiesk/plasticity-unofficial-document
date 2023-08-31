@@ -56,7 +56,7 @@ helps:
     image: help-file-open.png
     url: /
   file-import:
-    description: Import a document; Accepts Plasticity, STEP, Parasolid, OBJ, and Image files. Studio users can also import IGES, SAT, and Rhino files.
+    description: "Import a document: Accepts Plasticity, STEP, Parasolid, OBJ, and Image files. Studio users can also import IGES, SAT, and Rhino files."
     image: help-file-import.png
     url: /
   file-save:
@@ -64,7 +64,7 @@ helps:
     image: help-file-save.png
     url: /
   file-save-as:
-    description: Save as a new Plasticity document. Alternatively, export a document; Supports STEP, Parasolid, OBJ, and STL formats. Studio users can also export in IGES and SAT formats.
+    description: "Save as a new Plasticity document. Alternatively, export a document: Supports STEP, Parasolid, OBJ, and STL formats. Studio users can also export in IGES and SAT formats."
     image: help-file-save-as.png
     url: /
   file-export: 
@@ -204,39 +204,39 @@ helps:
     image: help-select-previous-entity-collection.png
     url: /
 
-# View Mode
+# View Mode 4/4
   viewport-toggle-overlays:
-    description:
+    description: "Toggle overlay display: Switch the grid display on and off."
     image: help-viewport-toggle-overlays.png
     url: /
   viewport-toggle-xray-mode:
-    description:
+    description: "Toggle X-Ray mode: Make hidden lines visible and selectable."
     image: help-viewport-toggle-xray-mode.png
     url: /
   viewport-toggle-edges:
-    description:
+    description: "Toggle show Edges: Turning this off will hide the Edges."
     image: help-viewport-toggle-edges.png
     url: /
   viewport-toggle-faces:
-    description:
+    description: "Toggle show Faces: Turning this off will hide the Faces."
     image: help-viewport-toggle-faces.png
     url: /
 
-# Grid and Snap
+# Grid and Snap 4/4
   viewport-decrease-grid-size:
-    description:
+    description: Decrease snapping grid size.
     image: help-viewport-decrease-grid-size.png
     url: /
   viewport-increase-grid-size:
-    description:
+    description: Increase snapping grid size.
     image: help-viewport-increase-grid-size.png
     url: /
   grid-toggle-grid-snapping:
-    description:
+    description: "Toggle grid snapping: If enabled, snap your cursor to the grid while drawing or moving objects."
     image: help-grid-toggle-grid-snapping.png
     url: /
   snaps-toggle-snap-snapping:
-    description:
+    description: "Toggle snap snapping: If enabled, snap your cursor to features while drawing or moving objects."
     image: help-snaps-toggle-snap-snapping.png
     url: /
 
@@ -254,37 +254,37 @@ helps:
     image: help-viewport-set-construction-plane-to-s.png
     url: /
 
-# General Functions
+# General Functions 9/9
   delete:
-    description:
+    description: Delete selected objects. Deleting a group removes the group and its children.
     image: help-delete.png
     url: /
   delete-control-point:
-    description:
+    description: Delete selected Control Points.
     image: help-delete-control-point.png
     url: /
   delete-edge:
-    description:
+    description: Delete selected Edges.
     image: help-delete-edge.png
     url: /
   delete-face:
-    description:
+    description: Delete selected Faces.
     image: help-delete-face.png
     url: /
-  delete-group:
-    description:
+  delete-group: 
+    description: Remove the group and its children.
     image: help-delete-group.png
     url: /
   dissolve:
-    description:
+    description: Delete selected objects. Dissolving a group removes the group but keeps its items.
     image: help-dissolve.png
     url: /
-  dissolve-face:
-    description:
+  dissolve-face: 
+    description: <unknown>
     image: help-dissolve-face.png
     url: /
   edit-repeat-last-command:
-    description:
+    description: Repeat the last command.
     image: help-edit-repeat-last-command.png
     url: /
   sidebar-toggle:
@@ -294,71 +294,71 @@ helps:
   
 # ##### Tools ##### 
   line:
-    description:
+    description: Create a series of connected line segments. Specify length and angle with a numerical value.
     image: help-line.png
     url: /
   curve:
-    description:
+    description: Create a Curve by placing points which the Curve will pass through.
     image: help-curve.png
     url: /
   control-point-curve:
-    description:
+    description: Create a Curve by placing Control Points.
     image: help-control-point-curve.png
     url: /
   center-circle:
-    description:
+    description: Create a circle by specifying the center and the diameter. Adjust the angle relative to the construction plane.
     image: help-center-circle.png
     url: /
   two-point-circle:
-    description:
+    description: Create a circle specified by two points of the diameter. Adjust the angle relative to the construction plane.
     image: help-two-point-circle.png
     url: /
   three-point-circle:
-    description:
+    description: Create a circle specified by three points on the circumference.
     image: help-three-point-circle.png
     url: /
   center-point-arc:
-    description:
+    description: Create an arc by specifying the center and two points on the circumference.
     image: help-center-point-arc.png
     url: /
   three-point-arc:
-    description:
+    description: Create a rectangle specified by three points.
     image: help-three-point-arc.png
     url: /
-  polygon:
-    description:
+  polygon: 
+    description: Create a polygon with any number of vertices.
     image: help-polygon.png
     url: /
   spiral:
-    description:
+    description: Create a spiral by specifying diameter and number of turns. Angling is also possible.
     image: help-spiral.png
     url: /
   corner-rectangle:
-    description:
+    description: Create a rectangle by specifying two points on the diagonal. Specify length with a numerical value.
     image: help-corner-rectangle.png
     url: /
   center-rectangle:
-    description:
+    description: Create a rectangle by specifying the center point. Specify length a numerical value.
     image: help-center-rectangle.png
     url: /
   sphere:
-    description:
+    description: Create a sphere specified by its center and the diameter. Boolean operations are possible.
     image: help-sphere.png
     url: /
-  corner-box:
-    description:
+  corner-box: 
+    description: Create a rectangular box from a specified diagonal corner points and height. Boolean operations are possible.
     image: help-corner-box.png
     url: /
   center-box:
-    description:
+    description: Create a rectangular box from a specified center, corner point and height. Boolean operations are possible.
     image: help-center-box.png
     url: /
   three-point-box:
-    description:
+    description: Create a rectangular box defined by three points and height. Boolean operations are possible.
     image: help-three-point-box.png
     url: /
   cylinder:
-    description:
+    description: Create a cylinder from a circle specified by its center, diameter, and height. Boolean operations are possible.
     image: help-cylinder.png
     url: /
 
