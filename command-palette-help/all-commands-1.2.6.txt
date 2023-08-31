@@ -1,0 +1,194 @@
+Alternative Duplicate
+Boolean
+Bridge
+Bridge Curve
+Bridge Edge
+Bridge Edge Surface
+Bridge Surface
+Bridge Vertex
+Center Box
+Center Circle
+Center Point Arc
+Center Rectangle
+Check
+Constrained Surface
+Control Point Curve
+Convert Vertex
+Corner Box
+Corner Rectangle
+Create Solid From Faces
+Create Viewspace Construction P
+Create Viewspace Construction...
+Curve
+Curve Array
+Cut
+Cut Curve
+Cylinder
+Delete
+Delete Control Point
+Delete Edge
+Delete Face
+Delete Redundant Topology
+Deselect All
+Dissolve Face
+Draft Face
+Duplicate
+Duplicate Curve And Project
+Edit: repeat last command
+Explode
+Explode Curves
+Explode Faces
+Explode Shells
+Export Cad
+Export Obj
+Extend
+Extend Curve
+Extend Edge
+Extend Sheet
+Extrude
+File: export
+File: import
+File: new
+File: open
+File: quick save version
+File: save
+File: save as
+File: save as startup
+Fillet
+Fillet Curve
+Fillet Shell
+Fillet Vertex
+Find Boundary Edges
+Focus
+Freestyle Mirror
+Freestyle Move
+Freestyle Move Item
+Freestyle Offset Planar Curve
+Freestyle Rotate
+Freestyle Rotate Item
+Freestyle Scale
+Freestyle Scale
+Freestyle Scale Item
+Freestyle Scale Item
+Grid: toggle grid snapping
+Grid: toggle grid snapping
+Group Selected
+Group Selected
+Hide Selected
+Hide Selected
+Hide Unselected
+Hide Unselected
+Hollow
+Hollow
+Hollow Solid
+Hollow Solid
+Imprint
+Imprint Body Body
+Imprint Curve Body
+Invert Hidden
+Invert Selection
+Isoparam
+Join
+Join Curves
+Join Sheets
+Line
+Lock Selected
+Loft
+Loft Guide
+Match Face
+Mirror
+Move
+Move Control Point
+Move Empty
+Move Face
+Move Item
+Offset Curve
+Offset Edge
+Offset Face
+Offset Face Loop
+Offset Planar Curve
+Offset Region
+Patch
+Pipe
+Place
+Polygon
+Project
+Project Body Body
+Project Curve Body
+Project Curve Curve
+Push Face
+Radial Array
+Rebuild
+Rebuild Curve
+Rebuild Face
+Rectangular Array
+Refillet Face
+Remove Fillets From Shell
+Remove Item
+Remove Material
+Revolve
+Rotate
+Rotate Control Point
+Rotate Empty
+Rotate Face
+Rotate Item
+Scale
+Scale Control Point
+Scale Empty
+Scale Face
+Scale Item
+Select Adjacent
+Select All
+Select All Curves
+Selection mode: set all
+Selection mode: set control-point
+Selection mode: set edge
+Selection mode: set face
+Selection mode: set solid
+Selection: convert to edges
+Selection: convert to faces
+Selection: convert to solids
+Selection: toggle control-point
+Selection: toggle edge
+Selection: toggle face
+Selection: toggle solid
+Set Material
+Sidebar: toggle
+Smart Command
+Snaps: toggle snap snapping
+Sphere
+Spiral
+Split Segment
+Subdivide Curve
+Sweep
+Sweep Tool
+Text
+Thicken
+Thicken Sheet
+Three Point Arc
+Three Point Box
+Three Point Circle
+Three Point Rectangle
+Trim
+Two Point Circle
+Ungroup Selected
+Unhide All
+Untrim
+Unwrap Face
+Viewport: decrease grid size
+Viewport: focus
+Viewport: increase grid size
+Viewport: navigate to back
+Viewport: navigate to bottom
+Viewport: navigate to front
+Viewport: navigate to left
+Viewport: navigate to right
+Viewport: navigate to selection
+Viewport: navigate to top
+Viewport: set construction plane to s...
+Viewport: toggle edges
+Viewport: toggle faces
+Viewport: toggle orthographic camera
+Viewport: toggle overlays
+Viewport: toggle xray mode
+Wrap Face
