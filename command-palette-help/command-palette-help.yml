@@ -656,7 +656,7 @@ helps:
 
   # ##### Sketch Commands #####
   subdivide-curve:
-    description:
+    description: Increase the number of Control Vertices on the selected Curves.
     image: help-subdivide-curve.png
     url: /
   text:
