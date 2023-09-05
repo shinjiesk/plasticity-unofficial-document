@@ -664,15 +664,15 @@ helps:
     image: help-text.png
     url: /
   duplicate-curve-and-project:
-    description:
+    description: Create a Curve projected onto the construction plane from a Curve or Edge. Single-axis constraints or Freestyle movement possible. Pivot is adjustable.
     image: help-duplicate-curve-and-project.png
     url: /
   trim:
-    description:
+    description: Remove specified segments from planar or 3D Curves.
     image: help-trim.png
     url: /
   cut-curve:
-    description:
+    description: Cut the target Curve using a cutter Curve or Face. When a Curve is the cutter, the cut is made based on a surface generated from that Curve.
     image: help-cut-curve.png
     url: /
   split-segment:
