@@ -654,7 +654,7 @@ helps:
     image: help-delete-redundant-topology.png
     url: /
 
-  # ##### Sketch Commands #####
+  # ##### Sketch Commands ##### 7/7
   subdivide-curve:
     description: Increase the number of Control Vertices on the selected Curves.
     image: help-subdivide-curve.png
@@ -676,26 +676,26 @@ helps:
     image: help-cut-curve.png
     url: /
   split-segment:
-    description: 
+    description: Split the curve into two segments at any point along its length.
     image: help-split-segment.png
     url: /
   convert-vertex:
-    description:
+    description: Convert Vertices to Control-Vertices.
     image: help-convert-vertex.png
     url: /
 
-  # ##### Solid Commands #####
+  # ##### Solid Commands ##### 1/2
 
   boolean:
     description: Combine, subtract, or intersect multiple objects in any combination of Solids and Sheets.
     image: help-boolean.png
     url: /
   cut:
-    description:
+    description: Cut the target Solid or Sheet using a cutter Curve or Face. When a Curve is the cutter, the cut is made based on a surface generated from that Curve.
     image: help-cut.png
     url: /
 
-  # Solid and Sheet Commands
+  # Solid and Sheet Commands 1/15
   extrude:
     description:
     image: help-extrude.png
@@ -757,7 +757,7 @@ helps:
     image: help-hollow-solid.png
     url: /
 
-  # Sheet Commands
+  # Sheet Commands 4
   bridge-surface:
     description:
     image: help-bridge-surface.png
@@ -775,7 +775,7 @@ helps:
     image: help-untrim.png
     url: /
 
-  # Face commands
+  # Face commands 3
   offset-face:
     description:
     image: help-offset-face.png
@@ -788,16 +788,8 @@ helps:
     description:
     image: help-match-face.png
     url: /
-  unwrap-face:
-    description:
-    image: help-unwrap-face.png
-    url: /
-  wrap-face:
-    description:
-    image: help-wrap-face.png
-    url: /
 
-  # Edge Commands
+  # Edge Commands 5
   imprint:
     description:
     image: help-imprint.png
@@ -819,7 +811,7 @@ helps:
     image: help-extend-edge.png
     url: /
 
-  # ##### Radial menu #####
+  # ##### Radial menu ##### 2
   radial-menu-selection-mode:
     description:
     image: help-radial-menu-selection-mode.png
@@ -829,7 +821,16 @@ helps:
     image: help-radial-menu-viewport-settings.png
     url: /
 
-  #  ##### In-Development Feature #####
+#  ##### In-Development Feature #####
+
+  unwrap-face:
+    description: <under development>
+    image: help-unwrap-face.png
+    url: /
+  wrap-face:
+    description: <under development>
+    image: help-wrap-face.png
+    url: /
   check:
     description: <under development>
     image: help-check.png
