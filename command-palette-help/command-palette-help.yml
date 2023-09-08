@@ -684,7 +684,7 @@ helps:
     image: help-convert-vertex.png
     url: /
 
-  # ##### Solid Commands ##### 1/2
+  # ##### Solid Commands ##### 2/2
 
   boolean:
     description: Combine, subtract, or intersect multiple objects in any combination of Solids and Sheets.
@@ -695,123 +695,111 @@ helps:
     image: help-cut.png
     url: /
 
-  # Solid and Sheet Commands 1/15
+  # Solid and Sheet Commands 13/13
   extrude:
-    description:
+    description: Extruding Faces or Regions generates Solids, while extruding Curves produces Sheets. Specify distance, set extrusion angle, and define wall thickness. Boolean options available.
     image: help-extrude.png
     url: /
   sweep:
-    description:
+    description: Sweeping Faces or Regions generates Solids, while sweeping Curves produces Sheets. Specify twisting angle and optionally select multiple sweep guides.
     image: help-sweep.png
     url: /
-  sweep-tool:
-    description:
-    image: help-sweep-tool.png
-    url: /
   revolve:
-    description:
+    description: Revolving Regions generates Solids, while revolving Curves produces either Solids or Sheets. Options include Normal, Binormal, and Tangent.
     image: help-revolve.png
     url: /
   loft:
-    description:
+    description: Create a surface using two or more profile Curves and Edges. Shape can be controlled by Guide Curves or Edges. Supports G0, G1, G2 continuity and tension.
     image: help-loft.png
-    url: /
-  loft-guide:
-    description:
-    image: help-loft-guide.png
     url: /
   pipe:
     description: Create a pipe of any size from a Curve or an Edge. It can be used for boolean operations. Polygon or custom profile options are available.
     image: help-pipe.png
     url: /
-  patch:
-    description:
+  patch: 
+    description: Create a patch surface from closed Curves or holes along Edges. For holes, G0, G1, G2, and planar continuity options and guide Curves are available.
     image: help-patch.png
     url: /
-  thicken:
-    description:
+  thicken: 
+    description: Add thickness to a selected Sheet. Thickness for each side can be specified. 
     image: help-thicken.png
     url: /
-  thicken-sheet:
-    description:
+  thicken-sheet: 
+    description: Alternative to the thicken command. 
     image: help-thicken-sheet.png
     url: /
   thicken-face:
-    description:
+    description: Add thickness to a selected Face. Thickness for each side can be specified. 
     image: help-thicken-face.png
     url: /
   constrained-surface:
-    description:
+    description: Generate a surface that passes through a set of points by clicking on them.
     image: help-constrained-surface.png
     url: /
   alternative-duplicate:
-    description:
+    description: Create a Solid from selected Faces and then manipulate its position.
     image: help-alternative-duplicate.png
     url: /
   hollow:
-    description:
+    description: "When a Face is selected: Hollows out the selected Face, creating an open void in the Solid. When a Solid is selected: Turns the selected Solid into a closed hollow form."
     image: help-hollow.png
     url: /
   hollow-solid:
-    description:
+    description: Alternative to the hollow command. 
     image: help-hollow-solid.png
     url: /
 
-  # Sheet Commands 4
+  # Sheet Commands 3/3
   bridge-surface:
-    description:
+    description: Blend between two disconnected Surfaces with available shape options G2 or Chamfer. Redundant surfaces may be trimmed.
     image: help-bridge-surface.png
     url: /
-  bridge-edge-surface:
-    description:
-    image: help-bridge-edge-surface.png
-    url: /
   find-boundary-edges:
-    description:
+    description: Select the boundary Edges of an open area on a selected Sheet.
     image: help-find-boundary-edges.png
     url: /
   untrim:
-    description:
+    description: Create a Sheet based on the original shape of the selected Face.
     image: help-untrim.png
     url: /
 
-  # Face commands 3
+  # Face commands 3/3
   offset-face:
-    description:
+    description: Offset the selected Faces by specifying the distance. Optional adjacent angle specification available.
     image: help-offset-face.png
     url: /
   draft-face:
-    description:
+    description: Apply a draft angle to the selected Face.
     image: help-draft-face.png
     url: /
   match-face:
-    description:
+    description: Replace the selected Face with another Face.
     image: help-match-face.png
     url: /
 
-  # Edge Commands 5
+  # Edge Commands 5/5
   imprint:
-    description:
+    description: Unified command for Imprint Body Body, Imprint Curve Body. The command is run based on the selected object.
     image: help-imprint.png
     url: /
   imprint-body-body:
-    description:
+    description: Create Edges on the target Solid or Sheet where it intersects with a tool Solid or Sheet. Optional Edges can also be created on the tool.
     image: help-imprint-body-body.png
     url: /
   imprint-curve-body:
-    description:
+    description: Create Edges on the target Solid or Sheet where it projects onto a tool Curve. Optional direction of projection can be specified; bidirectional projection is also available.
     image: help-imprint-curve-body.png
     url: /
   isoparam:
-    description:
+    description: Create Edges on a Face of a Solid or Sheet along the U or V direction. Multiple Edges can be created simultaneously.
     image: help-isoparam.png
     url: /
   extend-edge:
-    description:
+    description: Extend the selected Edge until it intersects with another Edge.
     image: help-extend-edge.png
     url: /
 
-  # ##### Radial menu ##### 2
+  # ##### Radial menu #####
   radial-menu-selection-mode:
     description:
     image: help-radial-menu-selection-mode.png
@@ -822,7 +810,14 @@ helps:
     url: /
 
 #  ##### In-Development Feature #####
-
+  loft-guide:
+    description: <under development>
+    image: help-loft-guide.png
+    url: /
+  sweep-tool:
+    description: <under development>
+    image: help-sweep-tool.png
+    url: /
   unwrap-face:
     description: <under development>
     image: help-unwrap-face.png
