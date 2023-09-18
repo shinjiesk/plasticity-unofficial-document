@@ -1,877 +1,687 @@
 # Command Palette Help
 #
 # image size: width/Height -- 256/160
+#
+# No image functions:
+#  file-new:
+#  file-open:
+#  file-import:
+#  file-save:
+#  file-save-as:
+#  export-obj:
+#  file-quick-save-version:
+#  file-save-as-startup:
+#  select-next-entity-collection:
+#  select-previous-entity-collection:
+#  edit-repeat-last-command:
+#
+# In-development features are listed together at the end of the list.
 
 helps:
-
-# Operating the 3D Viewport  Text:8/10
+  # Operating the 3D Viewport
   viewport-navigate-to-front:
     description: Set the view direction to front-facing.
     image: help-viewport-navigate-to-front.png
-    url: /
   viewport-navigate-to-right:
     description: Set the view direction to right-facing.
     image: help-viewport-navigate-to-right.png
-    url: /
   viewport-navigate-to-top:
     description: Set the view direction to top-facing.
     image: help-viewport-navigate-to-top.png
-    url: /
   viewport-navigate-to-back:
     description: Set the view direction to back-facing.
     image: help-viewport-navigate-to-back.png
-    url: /
   viewport-navigate-to-left:
     description: Set the view direction to left-facing.
     image: help-viewport-navigate-to-left.png
-    url: /
   viewport-navigate-to-bottom:
     description: Set the view direction to bottom-facing.
     image: help-viewport-navigate-to-bottom.png
-    url: /
   viewport-toggle-orthographic-camera:
     description: Switch between perspective and orthographic projection.
     image: help-viewport-toggle-orthographic-camera.png
-    url: /
   Isolate:
-    description: 
+    description: Isolate the selected object by temporarily hiding unselected objects.
     image: help-Isolate.png
-    url: /
   viewport-focus:
-    description:
+    description: Zoom to selected object.
     image: help-viewport-focus.png
-    url: /
   viewport-navigate-to-selection:
     description: Center selected object on the screen.
     image: help-viewport-navigate-to-selection.png
-    url: /
 
-# P-Menu  Text:10/10
+  # P-Menu
   file-new:
     description: Clear the scene, then create a new Plasticity document.
-    image: help-file-new.png
-    url: /
+    image:
   file-open:
     description: Open a Plasticity document.
-    image: help-file-open.png
-    url: /
+    image:
   file-import:
     description: "Import a document: Accepts Plasticity, STEP, Parasolid, OBJ, and Image files. Studio users can also import IGES, SAT, and Rhino files."
-    image: help-file-import.png
-    url: /
+    image:
   file-save:
     description: Save a Plasticity document.
-    image: help-file-save.png
-    url: /
+    image:
   file-save-as:
     description: "Save as a new Plasticity document. Alternatively, export a document: Supports STEP, Parasolid, OBJ, and STL formats. Studio users can also export in IGES and SAT formats."
-    image: help-file-save-as.png
-    url: /
-  file-export: 
-    description: ""
-    image: ""
-    url: ""
-  export-cad: 
-    description: ""
-    image: ""
-    url: ""
-  export-obj: 
+    image:
+  export-obj:
     description: Export a Wavefront OBJ file. Detailed tessellation parameters for the geometry can be specified.
-    image: help-export-obj.png
-    url: /
+    image:
   file-quick-save-version:
     description: Save a copy of the document with the same filename, appended with a timestamp.
-    image: help-file-quick-save-version.png
-    url: /
+    image:
   file-save-as-startup:
     description: Save the current document as the startup scene. The file will automatically open upon the next startup.
-    image: help-file-save-as-startup.png
-    url: /
+    image:
 
-# Group Objects 2/2
+  # Group Objects
   group-selected:
     description: Create a group, and the selected object will be moved to the newly created group.
     image: help-group-selected.png
-    url: /
   ungroup-selected:
     description: Remove the selected object from the group.
     image: help-ungroup-selected.png
-    url: /
 
-# Toggle Object States 5/5
+  # Toggle Object States
   hide-selected:
     description: Temporarily hide selected objects.
     image: help-hide-selected.png
-    url: /
   hide-unselected:
     description: Temporarily hide unselected objects.
     image: help-hide-unselected.png
-    url: /
   unhide-all:
     description: Unhide all objects.
     image: help-unhide-all.png
-    url: /
   invert-hidden:
     description: Invert visibility.
     image: help-invert-hidden.png
-    url: /
   lock-selected:
     description: Lock to disable selection in the 3D viewport.
     image: help-lock-selected.png
-    url: /
 
-# Selection Mode 9/9
+  # Selection Mode
   selection-mode-set-control-point:
-    description: Switching to this mode allows control point selection.
+    description: Switching to this mode allows Control-Point selection.
     image: help-selection-mode-set-control-point.png
-    url: /
   selection-mode-set-edge:
     description: Switching to this mode allows edge or curve selection.
     image: help-selection-mode-set-edge.png
-    url: /
   selection-mode-set-face:
     description: Switching to this mode allows face or region selection.
     image: help-selection-mode-set-face.png
-    url: /
   selection-mode-set-solid:
     description: Switching to this mode allows solid or sheet selection.
     image: help-selection-mode-set-solid.png
-    url: /
   selection-mode-set-all:
     description: Switching to this mode allows selection of all types of objects.
     image: help-selection-mode-set-all.png
-    url: /
   selection-toggle-control-point:
     description: Toggle Control Point selection mode.
     image: help-selection-toggle-control-point.png
-    url: /
   selection-toggle-edge:
     description: Toggle Edge selection mode.
     image: help-selection-toggle-edge.png
-    url: /
   selection-toggle-face:
     description: Toggle Face selection mode.
     image: help-selection-toggle-face.png
-    url: /
   selection-toggle-solid:
     description: Toggle Body selection mode.
     image: help-selection-toggle-solid.png
-    url: /
 
-  # Selecting Objects 8/11
+  # Selecting Objects
   select-all:
     description: Select all objects.
     image: help-select-all.png
-    url: /
   select-all-curves:
     description: Select all Curves.
     image: help-select-all-curves.png
-    url: /
   deselect-all:
     description: Deselect all.
     image: help-deselect-all.png
-    url: /
   invert-selection:
     description: Invert selection.
     image: help-invert-selection.png
-    url: /
   select-adjacent:
     description: Select adjacent objects to the currently selected ones.
     image: help-select-adjacent.png
-    url: /
   selection-convert-to-edges:
     description: Select only the Edges of the currently selected Solids, Sheets, and Faces.
     image: help-selection-convert-to-edges.png
-    url: /
   selection-convert-to-faces:
     description: Select only the Faces of the currently selected Solids and Sheets.
     image: help-selection-convert-to-faces.png
-    url: /
   selection-convert-to-solids:
     description: Select only the Solids or Sheets of the currently selected Faces and Edges.
     image: help-selection-convert-to-solids.png
-    url: /
-  selection:-convert-to-groups:
-    description: 
+  selection-convert-to-groups:
+    description: Select all objects within the group of the selected objects.
     image: help-selection-convert-to-groups.png
-    url: /
   select-next-entity-collection:
-    description: 
-    image: help-select-next-entity-collection.png
-    url: /
+    description: A counterpart to "Select Previous Entity Collection". Allows for the sequential selection of subsequent source objects.
+    image:
   select-previous-entity-collection:
-    description: 
-    image: help-select-previous-entity-collection.png
-    url: /
+    description: A counterpart to "Select Next Entity Collection". Select the source objects used in the last operation. Using this feature multiple times selects sources from earlier operations sequentially.
+    image:
 
-# View Mode 4/4
+  # View Mode
   viewport-toggle-overlays:
     description: "Toggle overlay display: Switch the grid display on and off."
     image: help-viewport-toggle-overlays.png
-    url: /
   viewport-toggle-xray-mode:
     description: "Toggle X-Ray mode: Make hidden lines visible and selectable."
     image: help-viewport-toggle-xray-mode.png
-    url: /
   viewport-toggle-edges:
     description: "Toggle show Edges: Turning this off will hide the Edges."
     image: help-viewport-toggle-edges.png
-    url: /
   viewport-toggle-faces:
     description: "Toggle show Faces: Turning this off will hide the Faces."
     image: help-viewport-toggle-faces.png
-    url: /
 
-# Grid and Snap 4/4
+  # Grid and Snap
   viewport-decrease-grid-size:
     description: Decrease snapping grid size.
     image: help-viewport-decrease-grid-size.png
-    url: /
   viewport-increase-grid-size:
     description: Increase snapping grid size.
     image: help-viewport-increase-grid-size.png
-    url: /
   grid-toggle-grid-snapping:
     description: "Toggle grid snapping: If enabled, snap your cursor to the grid while drawing or moving objects."
     image: help-grid-toggle-grid-snapping.png
-    url: /
   snaps-toggle-snap-snapping:
     description: "Toggle snap snapping: If enabled, snap your cursor to features while drawing or moving objects."
     image: help-snaps-toggle-snap-snapping.png
-    url: /
 
-# Construction Planes
-  create-viewspace-construction-p:
-    description:
-    image: help-create-viewspace-construction-p.png
-    url: /
-  create-viewspace-construction:
-    description:
-    image: help-create-viewspace-construction.png
-    url: /
-  viewport-set-construction-plane-to-s...:
-    description:
-    image: help-viewport-set-construction-plane-to-s.png
-    url: /
+  # Construction Planes
+  create-viewspace-construction-plane:
+    description: Create a construction plane through selected point.
+    image: help-create-viewspace-construction-plane.png
+  create-viewspace-construction-plane-at-origin:
+    description: Create a construction plane through the world origin.
+    image: help-create-viewspace-construction-plane-at-origin.png
+  viewport-set-construction-plane-to-selection:
+    description: Create a construction plane aligned to a surface without altering the view direction.
+    image: help-viewport-set-construction-plane-to-selection.png
+    url: Shift Space
 
-# General Functions 9/9
+  # General Functions
   delete:
     description: Delete selected objects. Deleting a group removes the group and its children.
     image: help-delete.png
-    url: /
   delete-control-point:
     description: Delete selected Control Points.
     image: help-delete-control-point.png
-    url: /
   delete-edge:
     description: Delete selected Edges.
     image: help-delete-edge.png
-    url: /
   delete-face:
     description: Delete selected Faces.
     image: help-delete-face.png
-    url: /
-  delete-group: 
+  delete-group:
     description: Remove the group and its children.
     image: help-delete-group.png
-    url: /
   dissolve:
     description: Delete selected objects. Dissolving a group removes the group but keeps its items.
     image: help-dissolve.png
-    url: /
-  dissolve-face: 
-    description: <unknown>
+  dissolve-face:
+    description: Delete selected redundant Faces.
     image: help-dissolve-face.png
-    url: /
   edit-repeat-last-command:
     description: Repeat the last command.
-    image: help-edit-repeat-last-command.png
-    url: /
+    image:
   sidebar-toggle:
     description: Toggle the visibility of the sidebar.
     image: help-sidebar-toggle.png
-    url: /
-  
-# ##### Tools ##### 
+
+  # ##### Tools #####
   line:
     description: Create a series of connected line segments. Specify length and angle with a numerical value.
     image: help-line.png
-    url: /
   curve:
     description: Create a Curve by placing points which the Curve will pass through.
     image: help-curve.png
-    url: /
   control-point-curve:
     description: Create a Curve by placing Control Points.
     image: help-control-point-curve.png
-    url: /
   center-circle:
     description: Create a circle by specifying the center and the diameter. Adjust the angle relative to the construction plane.
     image: help-center-circle.png
-    url: /
   two-point-circle:
     description: Create a circle specified by two points of the diameter. Adjust the angle relative to the construction plane.
     image: help-two-point-circle.png
-    url: /
   three-point-circle:
     description: Create a circle specified by three points on the circumference.
     image: help-three-point-circle.png
-    url: /
   center-point-arc:
     description: Create an arc by specifying the center and two points on the circumference.
     image: help-center-point-arc.png
-    url: /
   three-point-arc:
     description: Create a rectangle specified by three points.
     image: help-three-point-arc.png
-    url: /
-  polygon: 
+  polygon:
     description: Create a polygon with any number of vertices.
     image: help-polygon.png
-    url: /
   spiral:
-    description: Create a spiral by specifying diameter and number of turns. Angling is also possible.
+    description: Create a spiral by specifying the diameter and number of turns. Angling options are also available.
     image: help-spiral.png
-    url: /
   corner-rectangle:
     description: Create a rectangle by specifying two points on the diagonal. Specify length with a numerical value.
     image: help-corner-rectangle.png
-    url: /
   center-rectangle:
     description: Create a rectangle by specifying the center point. Specify length a numerical value.
     image: help-center-rectangle.png
-    url: /
+  three-point-rectangle:
+    description: Create a rectangle by specifying three points. Specify length with a numerical value.
+    image: help-three-point-rectangle.png
+    url: <not yet>
   sphere:
-    description: Create a sphere specified by its center and the diameter. Boolean operations are possible.
+    description: Create a sphere by specifying its center and diameter. Boolean operations are also available.
     image: help-sphere.png
-    url: /
-  corner-box: 
-    description: Create a rectangular box from a specified diagonal corner points and height. Boolean operations are possible.
+  corner-box:
+    description: Create a rectangular box by specifying diagonal corner points and height. Boolean operations are also available.
     image: help-corner-box.png
-    url: /
   center-box:
-    description: Create a rectangular box from a specified center, corner point and height. Boolean operations are possible.
+    description: Create a rectangular box by specifying the center, a corner point, and height. Boolean operations are also available.
     image: help-center-box.png
-    url: /
   three-point-box:
-    description: Create a rectangular box defined by three points and height. Boolean operations are possible.
+    description: Create a rectangular box by defining three points and height. Boolean operations are also available.
     image: help-three-point-box.png
-    url: /
   cylinder:
-    description: Create a cylinder from a circle specified by its center, diameter, and height. Boolean operations are possible.
+    description: Create a cylinder by specifying a circle's center, diameter, and height. Boolean operations are also available.
     image: help-cylinder.png
-    url: /
 
-# ##### Common Commands ##### 
+  # ##### Common Commands #####
 
   # Move Commands
   move:
-    description: Moves objects with Move Gizmo. Single-axis constraints or Freestyle movement possible. Pivot is adjustable.
+    description: Move objects using Move Gizmo. Options for single-axis constraints or freestyle movement are available. The pivot is also adjustable.
     image: help-move.png
-    url: /
+    url: common/move
   move-control-point:
-    description:
+    description: Move Control-Vertices and Vertices using Move Gizmo. Options for single-axis constraints or freestyle movement are available. The pivot is also adjustable.
     image: help-move-control-point.png
-    url: /
   move-empty:
-    description:
+    description: Move images and mesh objects using Move Gizmo. Options for single-axis constraints or freestyle movement are available. The pivot is also adjustable.
     image: help-move-empty.png
-    url: /
   move-face:
-    description:
+    description: Move Face using Move Gizmo. Options for single-axis constraints or freestyle movement are available. The pivot is also adjustable.
     image: help-move-face.png
-    url: /
   move-item:
-    description:
+    description: Move objects using Move Gizmo. Options for single-axis constraints or freestyle movement are available. The pivot is also adjustable.
     image: help-move-item.png
-    url: /
   freestyle-move:
-    description:
+    description: Move objects by specifying both direction and distance using cursor movement.
     image: help-freestyle-move.png
-    url: /
   freestyle-move-item:
-    description:
+    description: Move objects by specifying both direction and distance using cursor movement.
     image: help-freestyle-move-item.png
-    url: /
 
   # Rotate Commands
   rotate:
-    description:
+    description: Rotate objects using Rotate Gizmo. Options for single-axis constraints or freestyle rotation are available. The pivot is also adjustable.
     image: help-rotate.png
-    url: /
   rotate-control-point:
-    description:
+    description: Rotate multiple Control-Vertices and multiple Vertices using Rotate Gizmo. Options for single-axis constraints or freestyle rotation are available. The pivot is also adjustable.
     image: help-rotate-control-point.png
-    url: /
   rotate-empty:
-    description:
+    description: Rotate images and mesh objects using Rotate Gizmo. Options for single-axis constraints or freestyle rotation are available. The pivot is also adjustable.
     image: help-rotate-empty.png
-    url: /
   rotate-face:
-    description:
+    description: Rotate Faces using Rotate Gizmo. Options for single-axis constraints or freestyle rotation are available. The pivot is also adjustable.
     image: help-rotate-face.png
-    url: /
   rotate-item:
-    description:
+    description: Rotate objects using Rotate Gizmo. Options for single-axis constraints or freestyle rotation are available. The pivot is also adjustable.
     image: help-rotate-item.png
-    url: /
   freestyle-rotate:
-    description:
+    description: Rotate objects by specifying the rotation axis and reference points using cursor movement.
     image: help-freestyle-rotate.png
-    url: /
   freestyle-rotate-item:
-    description:
+    description: Rotate objects by specifying the rotation axis and reference points using cursor movement.
     image: help-freestyle-rotate-item.png
-    url: /
 
   # Scale Commands
   scale:
-    description:
+    description: Scale objects using Scale Gizmo. Options for single-axis constraints or freestyle scaling are available. The pivot is also adjustable.
     image: help-scale.png
-    url: /
   scale-control-point:
-    description:
+    description: Scale multiple Control-Vertices and multiple Vertices using Scale Gizmo. Options for single-axis constraints or freestyle scaling are available. The pivot is also adjustable.
     image: help-scale-control-point.png
-    url: /
   scale-empty:
-    description:
+    description: Scale images and mesh objects using Scale Gizmo. Options for single-axis constraints or freestyle scaling are available. The pivot is also adjustable.
     image: help-scale-empty.png
-    url: /
   scale-face:
-    description:
+    description: Scale Faces using Scale Gizmo. Options for single-axis constraints are available. The pivot is also adjustable.
     image: help-scale-face.png
-    url: /
   scale-item:
-    description:
+    description: Scale objects using Scale Gizmo. Options for single-axis constraints or freestyle scaling are available. The pivot is also adjustable.
     image: help-scale-item.png
-    url: /
   freestyle-scale:
-    description:
+    description: Scale objects by specifying both direction and scale factor using cursor movement.
     image: help-freestyle-scale.png
-    url: /
   freestyle-scale-item:
-    description:
+    description: Scale objects by specifying both direction and scale factor using cursor movement.
     image: help-freestyle-scale-item.png
-    url: /
 
   # Mirror Commands
   mirror:
-    description:
+    description: Mirror objects using Mirror Gizmo. Slice along the mirror plane and merge halves together. Freestyle mirroring possible.
     image: help-mirror.png
-    url: /
   freestyle-mirror:
-    description:
+    description: Mirror objects by specifying the mirror plane through cursor movement. Slice along the mirror plane and merge halves together.
     image: help-freestyle-mirror.png
-    url: /
-  duplicate:
-    description:
-    image: help-duplicate.png
-    url: /
-  place:
-    description:
-    image: help-place.png
-    url: /
-  rectangular-array:
-    description:
-    image: help-rectangular-array.png
-    url: /
-  radial-array:
-    description: Duplicates objects in a circular pattern by specifying the angle and number. Radial duplication is also possible.
-    image: help-radial-array.png
-    url: /
-  curve-array:
-    description:
-    image: help-curve-array.png
-    url: /
-  set-material:
-    description:
-    image: help-set-material.png
-    url: /
-  remove-material:
-    description:
-    image: help-remove-material.png
-    url: /
 
-# ##### Sketch and Solid ##### 
+  # Duplicate Commands
+  duplicate:
+    description: Duplicate objects and move them using Move Gizmo. Single-axis constraints or Freestyle movement possible. Pivot is adjustable.
+    image: help-duplicate.png
+  place:
+    description: Duplicate objects and place them on reference point. Allow scaling, rotation, and flipping the axis. It can be used for boolean operations.
+    image: help-place.png
+  rectangular-array:
+    description: Duplicate objects in a linear pattern by specifying the number of duplicates. Optionally, define another direction to create a rectangular array.
+    image: help-rectangular-array.png
+  radial-array:
+    description: Duplicate objects in a circular pattern by specifying the angle and number. Radial duplication is also possible.
+    image: help-radial-array.png
+    url: common/radial-array
+  curve-array:
+    description: Duplicate objects along a Curve by specifying the number of duplicates. Twist, scale, alignment possible.
+    image: help-curve-array.png
+
+  # Material Commands
+  set-material:
+    description: Assign material to selected Solids and Sheets. Group material influences contained objects. Curves are affected by color and opacity. Image depth and opacity can be adjusted through material.
+    image: help-set-material.png
+  remove-material:
+    description: Remove material from selected objects and reset to default material.
+    image: help-remove-material.png
+
+  # ##### Sketch and Solid #####
 
   # Fillet Commands
   fillet:
     description: Unified command for Fillet Curves, Fillet Vertices, Fillet Shell. The command is run based on the selected object.
     image: help-fillet.png
-    url: /
+    url:
   fillet-curve:
-    description: Fillet or chamfer between two Curve segments. 
+    description: Fillet or chamfer between two Curve segments.
     image: help-fillet-curve.png
-    url: /
+    url: sketch/fillet#fillet-curves-and-vertices
   fillet-vertex:
-    description: Fillet or chamfer the connected Vertices. 
+    description: Fillet or chamfer the connected Vertices.
     image: help-fillet-vertex.png
-    url: /
+    url: sketch/fillet#fillet-curves-and-vertices
   fillet-shell:
-    description: Fillet or chamfer the edges which can be conic or G2 continuous. Variable distance, limit range are adjustable. 
+    description: Fillet or chamfer the Edges which can be conic or G2 continuous. Variable distance, limit range are adjustable.
     image: help-fillet-shell.png
-    url: /
+    url: solid/fillet#fillet-shell
   refillet-face:
-    description: Redo fillet without selecting individual fillet faces from Solid or Sheet. Distance is adjustable.
+    description: Redo fillet without selecting individual fillet Faces from Solid or Sheet. Distance is adjustable.
     image: help-refillet-face.png
-    url: /
+    url: solid/refillet-face
   remove-fillets-from-shell:
     description: Remove fillets from Solid or Sheet with possible restrictions on max radius and convexity.
     image: help-remove-fillets-from-shell.png
-    url: /
+    url: solid/remove-fillets-from-shell
 
   # Offset Commands
   offset-curve:
-    description:
+    description: Unified command for Offset Planar Curve, Offset Region, Offset Face Loop, Offset Edge. The command is run based on the selected object.
     image: help-offset-curve.png
-    url: /
   offset-planar-curve:
-    description:
+    description: Offset a planar Curve by specifying the distance to create new Curves. The option for symmetrical offsetting on both sides is available.
     image: help-offset-planar-curve.png
-    url: /
   freestyle-offset-planar-curve:
-    description:
+    description: Offset a planar Curve by specifying the distance using cursor movement to create new Curves. The option for symmetrical offsetting on both sides is available.
     image: help-freestyle-offset-planar-curve.png
-    url: /
   offset-region:
-    description:
+    description: Offset the outline curves of a selected Region by specifying the distance to create new Regions. Multiple Regions create new Individual Regions or a combined Region.
     image: help-offset-region.png
-    url: /
   offset-face-loop:
-    description:
+    description: Offset the outline edges of selected Faces by specifying the distance to create new Edges. Multiple Faces create new Individual Edges or a combined Edge.
     image: help-offset-face-loop.png
-    url: /
   offset-edge:
-    description:
+    description: Offset the selected Edges by specifying the distance to create new Edges. The option for symmetrical offsetting on both sides is available.
     image: help-offset-edge.png
-    url: /
 
   # Extend Commands
   extend:
-    description:
+    description: Unified command for Extend Curve, Extend Sheet. The command is run based on the selected object.
     image: help-extend.png
-    url: /
   extend-curve:
-    description:
+    description: Extend a Curve by specifying the distance. Choose from extension shapes like Natural, Linear, Soft, Reflective, and Arc.
     image: help-extend-curve.png
-    url: /
   extend-sheet:
-    description:
+    description: Extend one or more outside Edges of the Sheet by specifying the distance. Choose from extension shapes like Liner, Soft and Reflective.
     image: help-extend-sheet.png
-    url: /
 
+  # Rebuild Commands
   rebuild:
-    description:
+    description: Unified command for Rebuild Curve, Rebuild Face. The command is run based on the selected object.
     image: help-rebuild.png
-    url: /
   rebuild-curve:
-    description:
+    description: Rebuilt by optimizing the positions of the Control Points without changing the shape of the Curve.
     image: help-rebuild-curve.png
-    url: /
   rebuild-face:
-    description:
+    description: <under development>
     image: help-rebuild-face.png
-    url: /
 
   # Project Commands
   project:
-    description:
+    description: Unified command for Project Body Body, Project Curve Body, Project Curve Curve. The command is run based on the selected object.
     image: help-project.png
-    url: /
   project-body-body:
-    description:
+    description: Create a new Curve representing the intersection line between two Solids or Sheets.
     image: help-project-body-body.png
-    url: /
   project-curve-body:
-    description:
+    description: Create a new Curve by projecting a Curve onto a Solid or Sheet. Choose projection method normal or direction vector. Bidirectional is also available.
     image: help-project-curve-body.png
-    url: /
   project-curve-curve:
-    description:
+    description: Create a new Curve by projecting the intersection points of surfaces generated from two independent Curves.
     image: help-project-curve-curve.png
-    url: /
 
   # Join Commands
   join:
-    description:
+    description: Unified command for Join Curves, Join Sheets. The command is run based on the selected object.
     image: help-join.png
-    url: /
   join-curves:
-    description:
+    description: Join Curves at connecting points.
     image: help-join-curves.png
-    url: /
   join-sheets:
-    description:
+    description: Join Sheets with matching Edges.
     image: help-join-sheets.png
-    url: /
 
   # Bridge Commands
   bridge:
     description: Unified command for Bridge Curve, Bridge Vertex, Bridge Edge. The command is run based on the selected object.
     image: help-bridge.png
-    url: /
+    url:
   bridge-curve:
-    description: Bridges two Curves that can be G0/G1/G2/G3 continuous. Tension is adjustable. Auto trim is possible. 
+    description: Bridges two Curves that can be G0/G1/G2/G3 continuous. Tension is adjustable. Auto trim is possible.
     image: help-bridge-curve.png
-    url: /
+    url: sketch/bridge#bridge-curve
   bridge-edge:
-    description: Bridges two Edges that can be G0/G1/G2/G3 continuous. Specify which end of the Edges to bridge. Tension is adjustable. 
+    description: Bridges two Edges that can be G0/G1/G2/G3 continuous. Specify which end of the Edges to bridge. Tension is adjustable.
     image: help-bridge-edge.png
-    url: /
+    url: sketch/bridge#bridge-edge
   bridge-vertex:
-    description: Bridges two Vertices that can be G0/G1/G2/G3 continuous. Tension is adjustable. 
+    description: Bridges two Vertices that can be G0/G1/G2/G3 continuous. Tension is adjustable.
     image: help-bridge-vertex.png
-    url: /
+    url: sketch/bridge#bridge-vertex
 
   # Explode Commands
   explode:
-    description:
+    description: Unified command for Explode Curves, Explode Faces, Explode Shells. The command is run based on the selected object.
     image: help-explode.png
-    url: /
   explode-curves:
-    description:
+    description: Separate joined Curves into individual ones.
     image: help-explode-curves.png
-    url: /
   explode-faces:
-    description:
+    description: Separate selected Faces from Solid or Sheet.
     image: help-explode-faces.png
-    url: /
   explode-shells:
-    description:
+    description: Separate all Faces from selected Solids or Sheets into individual Faces.
     image: help-explode-shells.png
-    url: /
 
   # Delete Redundant Topology Commands
   delete-redundant-topology:
-    description:
+    description: The command is run based on the selected object. When Curves are selected, redundant CVs are removed. When Solids or Sheets are selected, redundant isoparam is removed.
     image: help-delete-redundant-topology.png
-    url: /
 
-# ##### Sketch Commands ##### 
+  # ##### Sketch Commands #####
   subdivide-curve:
-    description:
+    description: Increase the number of Control Vertices on the selected Curves.
     image: help-subdivide-curve.png
-    url: /
   text:
     description: Creates Curves from the inputted text. Built-in fonts and sizes can be specified.
     image: help-text.png
-    url: /
+    url: sketch/text
   duplicate-curve-and-project:
-    description:
+    description: Create a Curve projected onto the construction plane from a Curve or Edge. Single-axis constraints or Freestyle movement possible. Pivot is adjustable.
     image: help-duplicate-curve-and-project.png
-    url: /
   trim:
-    description:
+    description: Remove specified segments from planar or 3D Curves.
     image: help-trim.png
-    url: /
   cut-curve:
-    description:
+    description: Cut the target Curve using a cutter Curve or Face. When a Curve is the cutter, the cut is made based on a surface generated from that Curve.
     image: help-cut-curve.png
-    url: /
   split-segment:
-    description:
+    description: Split the curve into two segments at any point along its length.
     image: help-split-segment.png
-    url: /
   convert-vertex:
-    description:
+    description: Convert Vertices to Control-Vertices.
     image: help-convert-vertex.png
-    url: /
 
-# ##### Solid Commands ##### 
-
+  # ##### Solid Commands #####
   boolean:
     description: Combine, subtract, or intersect multiple objects in any combination of Solids and Sheets.
     image: help-boolean.png
-    url: /
+    url: solid/boolean
   cut:
-    description:
+    description: Cut the target Solid or Sheet using a cutter Curve or Face. When a Curve is the cutter, the cut is made based on a surface generated from that Curve.
     image: help-cut.png
-    url: /
-  
+
   # Solid and Sheet Commands
   extrude:
-    description:
+    description: Extruding Faces or Regions generates Solids, while extruding Curves produces Sheets. Specify distance, set extrusion angle, and define wall thickness. Boolean options available.
     image: help-extrude.png
-    url: /
   sweep:
-    description:
+    description: Sweeping Faces or Regions generates Solids, while sweeping Curves produces Sheets. Specify twisting angle and optionally select multiple sweep guides.
     image: help-sweep.png
-    url: /
-  sweep-tool:
-    description:
-    image: help-sweep-tool.png
-    url: /
   revolve:
-    description:
+    description: Revolving Regions generates Solids, while revolving Curves produces either Solids or Sheets. Options include Normal, Binormal, and Tangent.
     image: help-revolve.png
-    url: /
   loft:
-    description:
+    description: Create a surface using two or more profile Curves and Edges. Shape can be controlled by Guide Curves or Edges. Supports G0, G1, G2 continuity and tension.
     image: help-loft.png
-    url: /
-  loft-guide:
-    description:
-    image: help-loft-guide.png
-    url: /
   pipe:
     description: Create a pipe of any size from a Curve or an Edge. It can be used for boolean operations. Polygon or custom profile options are available.
     image: help-pipe.png
-    url: /
+    url: solid/pipe
   patch:
-    description:
+    description: Create a patch surface from closed Curves or holes along Edges. For holes, G0, G1, G2, and planar continuity options and guide Curves are available.
     image: help-patch.png
-    url: /
   thicken:
-    description:
+    description: Add thickness to a selected Sheet. Thickness for each side can be specified.
     image: help-thicken.png
-    url: /
   thicken-sheet:
-    description:
+    description: Alternative to the thicken command.
     image: help-thicken-sheet.png
-    url: /
   thicken-face:
-    description:
+    description: Add thickness to a selected Face. Thickness for each side can be specified.
     image: help-thicken-face.png
-    url: /
   constrained-surface:
-    description:
+    description: Generate a surface that passes through a set of points by clicking on them.
     image: help-constrained-surface.png
-    url: /
   alternative-duplicate:
-    description:
+    description: Create a Solid from selected Faces and then manipulate its position.
     image: help-alternative-duplicate.png
-    url: /
   hollow:
-    description:
+    description: "When a Face is selected: Hollows out the selected Face, creating an open void in the Solid. When a Solid is selected: Turns the selected Solid into a closed hollow form."
     image: help-hollow.png
-    url: /
   hollow-solid:
-    description:
+    description: Alternative to the hollow command.
     image: help-hollow-solid.png
-    url: /
 
   # Sheet Commands
   bridge-surface:
-    description:
+    description: Blend between two disconnected Surfaces with available shape options G2 or Chamfer. Redundant surfaces may be trimmed.
     image: help-bridge-surface.png
-    url: /
-  bridge-edge-surface:
-    description:
-    image: help-bridge-edge-surface.png
-    url: /
   find-boundary-edges:
-    description:
+    description: Select the boundary Edges of an open area on a selected Sheet.
     image: help-find-boundary-edges.png
-    url: /
   untrim:
-    description:
+    description: Create a Sheet based on the original shape of the selected Face.
     image: help-untrim.png
-    url: /
 
   # Face commands
   offset-face:
-    description:
+    description: Offset the selected Faces by specifying the distance. Optional adjacent angle specification available.
     image: help-offset-face.png
-    url: /
   draft-face:
-    description:
+    description: Apply a draft angle to the selected Face.
     image: help-draft-face.png
-    url: /
   match-face:
-    description:
+    description: Replace the selected Face with another Face.
     image: help-match-face.png
-    url: /
-  unwrap-face:
-    description:
-    image: help-unwrap-face.png
-    url: /
-  wrap-face:
-    description:
-    image: help-wrap-face.png
-    url: /
 
   # Edge Commands
   imprint:
-    description:
+    description: Unified command for Imprint Body Body, Imprint Curve Body. The command is run based on the selected object.
     image: help-imprint.png
-    url: /
   imprint-body-body:
-    description:
+    description: Create Edges on the target Solid or Sheet where it intersects with a tool Solid or Sheet. Optional Edges can also be created on the tool.
     image: help-imprint-body-body.png
-    url: /
   imprint-curve-body:
-    description:
+    description: Create Edges on the target Solid or Sheet where it projects onto a tool Curve. Optional direction of projection can be specified; bidirectional projection is also available.
     image: help-imprint-curve-body.png
-    url: /
   isoparam:
-    description:
+    description: Create Edges on a Face of a Solid or Sheet along the U or V direction. Multiple Edges can be created simultaneously.
     image: help-isoparam.png
-    url: /
   extend-edge:
-    description:
+    description: Extend the selected Edge until it intersects with another Edge.
     image: help-extend-edge.png
-    url: /
 
-# ##### Radial menu #####
-  radial-menu-selection-mode:
-    description:
-    image: help-radial-menu-selection-mode.png
-    url: /
-  radial-menu-viewport-settings:
-    description:
-    image: help-radial-menu-viewport-settings.png
-    url: /
-
-
-#  ##### In-Development Feature ##### 
+  #  ##### In-Development Feature #####
+  export-cad:
+    description: <under development>
+    image:
+  file-export:
+    description: <under development>
+    image:
+  loft-guide:
+    description: <under development>
+    image:
+  sweep-tool:
+    description: <under development>
+    image:
+  unwrap-face:
+    description: <under development>
+    image:
+  wrap-face:
+    description: <under development>
+    image:
   check:
-    description:
-    image: help-check.png
-    url: /
+    description: <under development>
+    image:
   create-solid-from-faces:
-    description:
-    image: help-create-solid-from-faces.png
-    url: /
+    description: <under development>
+    image:
   push-face:
-    description:
-    image: help-push-face.png
-    url: /
+    description: <under development>
+    image:
   remove-item:
-    description:
-    image: help-remove-item.png
-    url: /
+    description: <under development>
+    image:
   smart-command:
-    description:
-    image: help-smart-command.png
-    url: /
+    description: <under development>
+    image:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  # ##### Radial menu #####
+  radial-menu-selection-mode:
+    description: <under development>
+    image:
+  radial-menu-viewport-settings:
+    description: <under development>
+    image:
