@@ -1,75 +1,20 @@
 import Reference from 'components/Reference'
 
-<Reference shortcut="Shift + I" command="Imprint" button="" />
-
 # Imprint
 
-This command automatically calls the following command depending on the selected object.
-     - When Curves or Solid or Sheet are selected or nothing is selected: see [**Imprint Curve Body**](#imprint-curve-body) described below.
-     - When two Solids or Sheets are selected: see [**Imprint Body Body**](#imprint-body-body) described below.
+<Reference shortcut="Shift + I" command="Imprint" button="" />
 
-## Imprint Curve Body[#imprint-curve-body]
-
-You can project a  Curves onto a Solid or Sheet to create an Edges.
-
-### When Curves are selected
-
-1. Press <kbd>Shift + I</kbd>.
-2. Select a Solid or Sheet to project the Curves onto.
-3. Proceed to step 4.
-
-### When Solid or Sheet are selected
-
-1. Press <kbd>Shift + I</kbd>.
-2. Select Curves to project onto the Solid or Sheet.
-3. Proceed to step 4.
-
-### When nothing is selected
-
-1. Press <kbd>Shift + I</kbd>.
-2. Select a Solid or Sheet to project the Curves onto.
-3. Select Curves to project onto the Solid or Sheet.
-4. Set the options in the Command Dialog and Keyboard Shortcuts.
-   - **Method:**
-        - **Normal:** Projects using the standard method.
-        - **Vector:** Projects in the direction specified by **Direction**. **Bidirectional** and **X-Ray** will be enabled.
-   - **Direction:**
-        - **Value 1:** Specify the X component of the vector for the projection direction.
-        - **Value 2:** Specify the Y component of the vector for the projection direction.
-        - **Value 3:** Specify the Z component of the vector for the projection direction.
-   - **Bidirectional:** Performs the projection in both directions.
-   - **X-Ray:** 
-        - **Hide occlusion:** When enabled, does not project onto surfaces behind the object.
-   - **Completion:** Specify the extension of the projected Edges.
-        - **None:** Does not extend the projected Edges.
-        - **Edge:** Extends the projected Edges until they intersect with other Edges.
-        - **Boundary:** Extends the projected Edges until they intersect with other Edges and connects them.
-5. Confirm with OK in the Command Dialog or right-click.
-
-![Imprint Curve Body](/img/imprint-curve-body.gif)
-
-## Imprint Body Body[#imprint-body-body]
-
-You can create an Edge at the intersection of two Solids or Sheets.
-
-1. Select the first Solid or Sheet that you want to use as the target for the intersection.
-2. Select the second Solid or Sheet that you want to use as the tool for the intersection.
-3. Set the options in the Command Dialog.
-   - **Imprint tool:** Turn on **Imprint** to specify the **Complete tool** option.
-   - **Complete target:** 
-        - **None:** Does not extend the projected Edges on the target body.
-        - **Edge:** Extends the projected Edges until they intersect with other Edges on the target body.
-   - **Complete tool:**
-        - **None:** Does not extend the projected Edges on the tool body.
-        - **Edge:** Extends the projected Edges until they intersect with other Edges on the tool body.   
-4. Confirm with OK in the Command Dialog or right-click.
-
-![Imprint Body Body](/img/imprint-body-body.gif)
+Unified command for Imprint Body Body, Imprint Curve Body. The command is run based on the selected object.
+     - When Curves or Solid or Sheet are selected or nothing is selected: see [Imprint Curve Body](./imprint-curve-body).
+     - When two Solids or Sheets are selected: see [Imprint Body Body](./imprint-body-body).
 
 ## See also
+- [Imprint Curve Body](./imprint-curve-body)
+- [Imprint Body Body](./imprint-body-body)
 - [isoparam](./isoparam)
 - [Offset Curve](./offset-curve)
 - [Extend Edge](./extend-edge)
+
 
 
 

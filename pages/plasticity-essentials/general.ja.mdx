@@ -2,15 +2,20 @@ import Image from 'next/image'
 
 # 一般機能
 
-| 機能                     | ショートカット                                |
-| ------------------------ | --------------------------------------------- |
-| コピー                   | <kbd>Ctrl + C</kbd>                             |
-| 貼り付け                 | <kbd>Ctrl + visible</kbd>                       |
-| 削除                     | <kbd>X</kbd> or <kbd>Delete</kbd>             |
-| フェイスを削除           | <kbd>Shift + X</kbd> or <kbd>Shift + Delete</kbd> |
-| 取り消し                 | <kbd>Ctrl + Z</kbd>                             |
-| やり直し                 | <kbd>Ctrl + Shift + Z</kbd>                       |
-| 最後のコマンドを繰り返す | <kbd>Shift + R</kbd>                            |
+| コマンド名                | ショートカット                                    | 機能                                                                                                       |
+| ------------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Copy                      | <kbd>Ctrl + C</kbd>                               | コピー                                                                                                     |
+| Paste                     | <kbd>Ctrl + visible</kbd>                         | 貼り付け                                                                                                   |
+| Undo                      | <kbd>Ctrl + Z</kbd>                               | 取り消し                                                                                                   |
+| Redo                      | <kbd>Ctrl + Shift + Z</kbd>                       | やり直し                                                                                                   |
+| Delete                    | <kbd>Shift + Backspace</kbd>                      | 選択したオブジェクトを削除する。グループを削除すると、グループとその中のオブジェクトが削除される。         |
+| Delete Control Point      |                                                   | 選択した頂点、制御点を削除する                                                                             |
+| Delete Edge               |                                                   | 選択したエッジを削除する                                                                                   |
+| Delete Face               | <kbd>Shift + X</kbd> or <kbd>Shift + Delete</kbd> | 選択したフェイスを削除する                                                                                 |
+| Delete Group              |                                                   | グループを削除して、グループ内のオブジェクトも削除する。                                                   |
+| Dissolve                  | <kbd>Backspace</kbd>                              | 選択したオブジェクトを削除する。グループを削除すると、グループが削除されるが、その中のオブジェクトは残る。 |
+| Dissolve Face             |                                                   | 選択した余剰なフェイスを削除する                                                                           |
+| Edit: repeat last Command | <kbd>Shift + R</kbd>                              | 最後のコマンドを繰り返す                                                                                   |
 
 ## サイドバー
 
@@ -21,4 +26,5 @@ import Image from 'next/image'
 | コマンド名     | ショートカット      | 機能                                |
 | -------------- | ------------------- | ----------------------------------- |
 | Sidebar Toggle | <kbd>Ctrl + B</kbd> | サイドバーの表示/非表示を切り替える |
+
 

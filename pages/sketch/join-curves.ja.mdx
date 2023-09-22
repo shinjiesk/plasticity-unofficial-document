@@ -1,0 +1,25 @@
+import Reference from 'components/Reference'
+import { Callout } from 'nextra/components'
+
+# Join Curves（一致した点でカーブをつなぐ）[#join-Curves]
+
+<Reference shortcut="" command="Join Curves" button="" />
+
+一致した点でカーブをつなぐことができます。
+
+1. つなげたいカーブを選択します。
+2. <kbd>J</kbd>を押します。
+3. カーブがつながります。
+
+<Callout emoji="❗">
+**注意** <br/ >
+つなげたいふたつのカーブは、端点が完全に一致している必要があります。
+完全に一致すると、頂点は緑色になります。紫色のときは一致していません。
+ふたつの頂点を確実に一致させるには、[**Object snaps**](../plasticity-essentials/grid-and-snap#object-snap) を参照してください。
+</Callout>
+
+![Join Curves](/img/join-curves.gif)
+
+## 関連項目
+- [Join](./join)
+- [Bridge](./bridge)

@@ -1,0 +1,48 @@
+import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon'
+import { Callout } from 'nextra/components'
+
+## Bridge Curve（カーブをなめらかに繋げる）[#bridge-curve]
+
+<Reference shortcut="" command="Bridge Curve" button="" />
+
+連続性を考慮してふたつのカーブを繋げることができます。また、エッジ上、フェース上、構築平面上の任意の点も繋げることができます。
+
+<Callout emoji="❗">
+    **注意**<br />
+頂点を選択する前に、[**グリッドスナップ**](../plasticity-essentials/grid-and-snap#grid-snap)と[**オブジェクトスナップ**](../plasticity-essentials/grid-and-snap#object-snap)を有効にしてください。
+</Callout>
+<Callout type="info" emoji="ℹ️">
+始点と終点は、カーブ上、エッジ上、フェース上、または構築平面上の任意の点を選択することができます。
+</Callout>
+
+1. ツールバーの <ButtonIcon type="button-bridge-curve" /> をクリックします。
+2. 始点をクリックします。
+   - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [X、Y、Z軸に拘束します](./sketching-essentials#constrain-to-an-axis)。
+   - <kbd>N</kbd> **Normal:** フェイスの法線方向に限定します。
+3. 終点をクリックします。
+4. コマンドダイアログとキーボードショートカットでオプションを設定します。
+   - **T:**
+        - **Value 1/2:** 始点/終点のセグメント上の相対位置を指定します。
+   - **Direction:** 
+        - **Direction 1/2**: 始点/終点の方向を反転します。
+   - **Tension 1:**
+        - **Value 1/2:** 始点/終点の第1CVから第3CVに影響するテンション値を指定します。
+   - **Tension 2:**
+        - **Value 1/2:** 始点/終点の第2CVと第3CVに影響するテンション値を指定します。
+   - **Tension 3:**
+        - **Value 1/2:** 始点/終点の第3CVに影響するテンション値を指定します。
+   - **Start curvature:**
+        - **G0, G1, G2, G3:** 始点での[曲線の連続性](../cad-essentials/continuity-curve-and-surface)を指定します。
+     - **End curvature:**
+        - **G0, G1, G2, G3:** 終点での[曲線の連続性](../cad-essentials/continuity-curve-and-surface)を指定します。
+   -  **Trim:** オンにすると、ブリッジからはみ出たカーブはトリムされます。
+5. コマンドダイアログでOKを押すか、右クリックで確定します。
+
+![Bridge Curve](/img/bridge-curve.gif)
+
+## 関連項目
+- [Bridge](./bridge)
+- [Bridge Vertex](./bridge-vertex)
+- [Bridge Edge](./bridge-edge)
+- [Join](./join)
