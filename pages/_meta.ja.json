@@ -21,7 +21,12 @@
     "solid": "ソリッド",
     "---4": {
         "type": "separator",
-        "title": ""
+        "title": "Integration"
+    },
+    "blender": "Blender",
+    "---5": {
+        "type": "separator",
+        "title": "Advanced"
     },
     "cad-essentials": "CADの基本",
     "get-plasticity": {
