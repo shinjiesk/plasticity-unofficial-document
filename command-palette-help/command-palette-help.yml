@@ -643,6 +643,23 @@ helps:
     description: Extend the selected Edge until it intersects with another Edge.
     image: help-extend-edge.png
 
+
+
+
+
+  # ##### Radial menu #####
+  radial-menu-selection-mode:
+    description: <under development>
+    image:
+  radial-menu-viewport-settings:
+    description: <under development>
+    image:
+
+
+
+
+
+
   #  ##### In-Development Feature #####
   export-cad:
     description: <under development>
@@ -675,13 +692,5 @@ helps:
     description: <under development>
     image:
   smart-command:
-    description: <under development>
-    image:
-
-  # ##### Radial menu #####
-  radial-menu-selection-mode:
-    description: <under development>
-    image:
-  radial-menu-viewport-settings:
     description: <under development>
     image:

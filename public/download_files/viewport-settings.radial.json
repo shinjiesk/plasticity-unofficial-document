@@ -1,0 +1,36 @@
+{
+    "name": "Viewport settings",
+    "command": "viewport:settings",
+    "items": [
+        {
+            "command": "viewport:toggle-orthographic",
+            "icon": "orthographic-view",
+            "label": "Toggle orthographic"
+        },
+        {
+            "command": "viewport:toggle-x-ray",
+            "icon": "xray",
+            "label": "Toggle X-ray"
+        },
+        {
+            "command": "viewport:toggle-overlays",
+            "icon": "overlays",
+            "label": "Toggle overlays"
+        },
+        {
+            "command": "viewport:toggle-render-mode",
+            "icon": "render-mode",
+            "label": "Toggle render mode"
+        },
+        {
+            "command": "viewport:toggle-edges",
+            "icon": "edge",
+            "label": "Toggle edges"
+        },
+        {
+            "command": "viewport:toggle-faces",
+            "icon": "face",
+            "label": "Toggle faces"
+        }
+    ]
+}
