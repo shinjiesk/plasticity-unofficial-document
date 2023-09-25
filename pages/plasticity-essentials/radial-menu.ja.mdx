@@ -1,48 +1,48 @@
 import VideoPlayer from 'components/VideoPlayer';
 
-# Radial Menu
+# Radial Menu（ラジアルメニュー）
 
-The Radial Menu is a circular interface for executing commands. You can execute all commands available in Plasticity. By default, there are two radial menus: "Selection mode" and "Viewport settings". Additionally, users can create their own custom radial menus.
+ラジアルメニューは、コマンドを実行するための円形のインターフェースです。Plasticityで利用可能なすべてのコマンドを実行できます。デフォルトでは、「Selection mode」と「Viewport settings」という2つのラジアルメニューがあります。さらに、ユーザーは独自のラジアルメニューを作成することもできます。
 
 ![Radial Menu](/img/radial-menu.png)
 
-## Setting Up the Radial Menu
+## ラジアルメニューのセットアップ
 
-To use the default "Selection mode" and "Viewport settings" radial menus, some setup is required.
+デフォルトの「Selection mode」と「Viewport settings」ラジアルメニューを使用するには、いくつかの設定が必要です。
 
-1. Download the following two files:
+1. 以下の2つのファイルをダウンロードしてください。
     - [selection-mode.radial.json](https://www.dropbox.com/scl/fi/fl8gqnwp0tv1cvcahssjg/selection-mode.radial.json?rlkey=pm7rt8kq4obda0bpy6nei23xq&dl=1)
     - [viewport-settings.radial.json](https://www.dropbox.com/scl/fi/ttm3mmzwy8wlcw5vf2pza/viewport-settings.radial.json?rlkey=x2ea4o5fkviw5ut4f99u4j38x&dl=1)
-2. Drag and drop the downloaded files into Plasticity's 3D viewport.
-3. Although there won't be any visible changes on the screen, the radial menu's definition is now loaded and ready for use.
+2. ダウンロードしたファイルをPlasticityの3Dビューポートにドロップします。
+3. 画面上に変化はありませんが、ラジアルメニューの定義が読み込まれて使用する準備ができています。
 
-You'll need to assign shortcuts to access the radial menus.
+ラジアルメニューにアクセスするためのショートカットを割り当てる必要があります。
 
-4. Press the <kbd>F</kbd> key to open the Command Palette.
-5. Type "menu" into the Command Palette. You'll see entries for "Radial Menu: Selection Mode" and "Radial Menu: Viewport Settings".
-6. Right-click on "Radial Menu: Selection Mode" and assign a shortcut. For guidance on assigning shortcuts, see [this section](./command-palette#assign-a-shortcut).
-7. Right-click on "Radial Menu: Viewport Settings" and assign a shortcut.
-8. Now, by pressing the shortcut you've assigned, you can display the radial menu.
+4. <kbd>F</kbd>キーを押して、コマンドパレットを開きます。
+5. コマンドパレットに「menu」と入力します。そうすると、「Radial Menu: Selection Mode」と「Radial Menu: Viewport Settings」のエントリが表示されます。
+6. 「Radial Menu: Selection Mode」を右クリックして、ショートカットを割り当てます。ショートカットの割り当て方法については、[このセクション](./command-palette#assign-a-shortcut)を参照してください。
+7. 「Radial Menu: Viewport Settings」を右クリックして、ショートカットを割り当てます。
+8. 割り当てたショートカットを押すことで、作成したラジアルメニューを表示できます。
 
-## Using the Radial Menu
+## ラジアルメニューの使用方法
 
-Like other commands, you can display the Radial Menu by pressing its shortcut.
+他のコマンドと同様に、ショートカットを押してラジアルメニューを表示します。
 
-1. Press the shortcut you set up earlier.
-2. The Radial Menu will appear centered on your cursor.
-3. Click on an item in the menu to execute the command.
-4. Alternatively, hold down the shortcut key, hover over an item, and release the key to execute the command.
+1. 事前に設定したショートカットを押します。
+2. カーソルを中心にラジアルメニューが表示されます。
+3. メニューの項目をクリックすると、コマンドが実行されます。
+4. または、ショートカットキーを押したまま、項目にカーソルを合わせて、キーを離すと、コマンドが実行されます。
 
 <VideoPlayer fileName="radial-menu"/>
 
-## Creating a New Radial Menu
+## 新しいラジアルメニューの作成
 
-You can craft a radial menu with any desired command. The menu name and its commands are set in a text file. <br />
-For instance, we'll design a "My Menu" Radial Menu with "Spline Curve", "Bridge", and "Lock Selected", accessible via the shortcut <kbd>Ctrl + Shift + F</kbd>.
+任意のコマンドでラジアルメニューを作成できます。メニューの名前とそのコマンドはテキストファイルで設定されます。<br />
+例として、"Spline Curve"、"Bridge"、および"Lock Selected"を含む"My Menu"ラジアルメニューをデザインし、ショートカット<kbd>Ctrl + Shift + F</kbd>でアクセスできるようにします。
 
-1. Open a text editor and create a new document.
-2. Save the document with the filename "mymenu.radial.json".
-3. Enter the following:
+1. テキストエディタを開き、新しいドキュメントを作成します。
+2. ドキュメントを「mymenu.radial.json」というファイル名で保存します。
+3. 次の内容を入力します：
 
 ```json filename="mymenu.radial.json" copy 
 {
@@ -67,14 +67,15 @@ For instance, we'll design a "My Menu" Radial Menu with "Spline Curve", "Bridge"
     ]
 }
 ```
-Explanation: (Please note, the explanations starting with // are just for reference and should not be included in the actual file.)
 
-- name: Represents the radial menu's title. You can choose any name you like. It's displayed in the command palette and will adopt the format "Radial Menu: (name)".
-- command: A unique identifier for the radial menu. To avoid conflicts with existing commands, consider incorporating the author's name or other unique elements.
-- items: Lists the commands integrated into the radial menu. You can include multiple commands.
-    - command: The internal designation for the command to be incorporated. A list of these designations can be found [here](#internal-designation-for-the-command).
-    - icon: Denotes the icon that appears in the radial menu. Be aware that some commands might not have a preset icon.
-    - label: The central label in the radial menu. If there's no corresponding icon, the label's first two characters will be shown.
+説明：（//で始まる説明は参考のためだけにあり、実際のファイルには含めないでください）
+- name: ラジアルメニューのタイトルを表します。任意の名前を選択できます。コマンドパレットに表示され、「Radial Menu: (name)」の形式になります。
+- command: ラジアルメニューの一意の識別子です。既存のコマンドとの競合を避けるために、作者の名前などのユニークな要素を取り入れることを検討してください。
+- items: ラジアルメニューに統合されるコマンドのリストです。複数のコマンドを含めることができます。
+    - command: 組み込むコマンドの内部名称です。これらの指定のリストは[こちら](#internal-designation-for-the-command)で見ることができます。
+    - icon: ラジアルメニューに表示されるアイコンを示します。プリセットのアイコンがないコマンドもあることに注意してください。
+    - label: ラジアルメニューの中心に表示されるラベルです。対応するアイコンがない場合、ラベルの最初の2文字が表示されます。
+
 ```json
 {
     "name": "My Menu",      // Represents the radial menu's title
@@ -89,14 +90,15 @@ Explanation: (Please note, the explanations starting with // are just for refere
     ]
 }
 ```
-4. Save the file.
-5. Drag and drop the file you've created into Plasticity's 3D viewport.
-6. Although there won't be any visible changes on the screen, the radial menu's definition is now loaded and ready for use.
-7. Press the <kbd>F</kbd> key to open the Command Palette.
-8. Type "menu" into the Command Palette to see a list of all loaded radial menus.
-9. Right-click on "Radial Menu: My Menu" and assign a shortcut <kbd>Ctrl + Shift + F</kbd>. For instructions on how to assign shortcuts, refer to [this section](./command-palette#assign-a-shortcut).
-10. Now, by pressing the shortcut <kbd>Ctrl + Shift + F</kbd>, you can display the radial menu you've created.
-11. If you make subsequent modifications to the text file, simply drag and drop it again to reflect the changes.
+
+4. ファイルを保存します。
+5. 作成したファイルをPlasticityの3Dビューポートにドロップします。
+6. 画面上に変化はありませんが、ラジアルメニューの定義が読み込まれて使用する準備ができています。
+7. <kbd>F</kbd>キーを押して、コマンドパレットを開きます。
+8. コマンドパレットに「menu」と入力すると、読み込まれたラジアルメニューの一覧が表示されます。
+9. 「Radial Menu: My Menu」を右クリックして、ショートカット<kbd>Ctrl + Shift + F</kbd>を割り当てます。ショートカットの割り当て方法については、[このセクション](./command-palette#assign-a-shortcut)を参照してください。
+10. これで、ショートカット<kbd>Ctrl + Shift + F</kbd>を押すことで、作成したラジアルメニューを表示できます。
+11. テキストファイルを後で修正する場合、もう一度ドラッグ＆ドロップするだけで変更が反映されます。
 
 ### Internal Designation for the Command
 
