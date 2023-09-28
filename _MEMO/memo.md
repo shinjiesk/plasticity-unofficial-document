@@ -35,3 +35,5 @@ rename -n 's/(\.[^.]+)$/.ja$1/' *
 sed -r 's/\b([a-z])/\U\1/g' A.txt
 
 
+import VideoPlayer from 'components/VideoPlayer';
+<VideoPlayer fileName="radial-menu"/>

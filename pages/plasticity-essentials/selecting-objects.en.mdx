@@ -1,12 +1,28 @@
+import VideoPlayer from 'components/VideoPlayer';
+
 # Selecting Objects
+
+Choose the desired objects using the mouse or keyboard.
 
 ## Selecting with the mouse
 
-- **Click:** Select the object.
-- **Drag from right to left:** Select objects that touch the green selection.
-- **Drag from left to right:** Select objects completely contained in the purple selection.
+| Target     | Mouse Operation         | Selection                                                    |
+| ---------- | ----------------------- | ------------------------------------------------------------ |
+| All object | Click                   | Select the object.                                           |
+| All object | Drag from right to left | Select objects that touch the green selection.               |
+| All object | Drag from left to right | Select objects completely contained in the purple selection. |
 
 ![Mouse Drag selection](/img/mouse-drag-selection.gif)
+
+### Object specific selection
+
+| Target           | Mouse Operation               | Selection                                     |
+| ---------------- | ----------------------------- | --------------------------------------------- |
+| Edge             | <kbd>Alt</kbd> + click        | Select Edge loops.                            |
+| Edge             | <kbd>Ctrl + Alt</kbd> + click | Select Edge rings.                            |
+| Curve, Region            | <kbd>Alt</kbd> + click        | Select all Curves, Regions on the same plane. |
+| Face            | <kbd>Ctrl + Alt</kbd> + click | Select all parallel Faces.                    |
+| Cylindercal Face | <kbd>Ctrl + Alt</kbd> + click | select all parallel cylindrical Faces         |
 
 ## Selecting with Shortcuts
 
@@ -18,12 +34,6 @@
 | Invert Selection  | <kbd>Alt + A</kbd>          | Invert selection.                                       |
 | Select Adjacent   | <kbd>Ctrl + Shift + =</kbd> | Select adjacent objects to the currently selected ones. |
 
-| Note                                         | Shortcut                      |
-| -------------------------------------------- | ----------------------------- |
-| Select Edge loops                            | <kbd>Alt</kbd> + click        |
-| Select Edge rings                            | <kbd>Alt + Ctrl</kbd> + click |
-| Select all Curves, Regions on the same plane | <kbd>Alt</kbd> + click        |
-| Select all parallel Faces                    | <kbd>Alt + Ctrl</kbd> + click |
 
 ### Select from the currently selected objects
 
@@ -43,9 +53,4 @@
 | Select Previous Entity Collection | <kbd>Ctrl + T</kbd>       | Select the source objects used in the last operation. Using this feature multiple times selects sources from earlier operations sequentially. |
 | Select Next Entity Collection     | <kbd>Ctrl + Shift + T</kbd> | A counterpart to "Select Previous Entity Collection". Allows for the sequential selection of subsequent source objects.                       |
 
-
-
-
-
-
-
+<VideoPlayer fileName="select-previous-entity-collection"/>
