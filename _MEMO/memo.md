@@ -34,6 +34,10 @@ rename -n 's/(\.[^.]+)$/.ja$1/' *
 テキストファイルの単語の小文字を大文字にする
 sed -r 's/\b([a-z])/\U\1/g' A.txt
 
+import Reference from 'components/Reference'
+<Reference shortcut="" command="Bridge Curve" button="" />
 
 import VideoPlayer from 'components/VideoPlayer';
 <VideoPlayer fileName="radial-menu"/>
+
+<kbd></kbd>
