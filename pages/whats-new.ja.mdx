@@ -1,3 +1,5 @@
+import VideoPlayer from 'components/VideoPlayer';
+
 # What's New
 
 ## What's New in version 1.3
@@ -12,11 +14,19 @@ Release date: October 9, 2023
         * Server/bridge settings in preferences #8
 
 #### Customizable radial menus #4
-    . Hierarchical isolation (like machinetools)
+
+#### Hierarchical isolation
+
+Isolateコマンドの機能が向上し、階層的にオブジェクトを隠すことができるようになりました。これにより、複雑なシーンでの作業が大幅に向上します。Isolateコマンドで表示するオブジェクトを絞り込んだ後、その中からさらにオブジェクトを選択してIsolateコマンドを実行すると、最後に選択したオブジェクトのみが表示されます。この機能は何段階も繰り返すことができます。絞り込んだ段階は画面上に表示され、これをクリックすることで段階的にオブジェクトの表示を戻すことができます。
+<br/>
+<VideoPlayer fileName="isolate"/>
+
+
 
 #### Multiple windows + copy/paste + place command for kitbashing
         * P > menu has "New Window" option. You can copy and paste between windows #23
         * copy-with-placement and paste-with-placement (ctrl-shift-c, ctrl-shift-v) #25
+
 #### Many enhancements to outliner
         * Enhancements to outliner #13
         * "Meatball" menu above outliner with focus/isolate
