@@ -78,7 +78,7 @@ const config: DocsThemeConfig = {
                 <meta name="twitter:site" content="@getPlasticity" />
                 <meta
                     name="google-site-verification"
-                    content="fy4jGFnw_V7JcWL26cXsODdJXStgXdBWJj1XXSOuRKU"
+                    content="ykdvE9_snpoWuN4a2jZLtDiMPanzLK4Dwr4SriOYvXI"
                 />
             </>
         );
