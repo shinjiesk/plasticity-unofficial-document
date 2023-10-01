@@ -70,10 +70,6 @@ const config: DocsThemeConfig = {
         return (
             <>
                 <meta
-                    name="google-site-verification"
-                    content="ykdvE9_snpoWuN4a2jZLtDiMPanzLK4Dwr4SriOYvXI"
-                />
-                <meta
                     property="og:site_name"
                     content="Plasticity Manual"
                 ></meta>
