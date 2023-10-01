@@ -28,14 +28,18 @@ Isolateコマンドの機能が向上し、階層的にオブジェクトを隠�
         * copy-with-placement and paste-with-placement (ctrl-shift-c, ctrl-shift-v) #25
 
 #### Many enhancements to outliner
-        * Enhancements to outliner #13
-        * "Meatball" menu above outliner with focus/isolate
-        * Mass assign materials, visibility, names, to multiple selections
-        * Rightclick menu on groups now that has items for select all, etc
-        - alt-click / right-click on Solids/Sheets/Empties in outliner to select all items in that section #14
-        + Alt-click on folder in outliner to select all items in that section
-        * Outliner "add current selection to group" now works with nested groups #19
-        * Outliner rightclick on item has set/remove matrial #20
+
+- グループフォルダーを右クリックすると、様々な関連コマンドにアクセスできます。例えば、「現在の選択をグループに追加」、「すべて選択」、「現在の選択で新しいサブグループ作成」、すべてのグループを折りたたむ・展開する、素材を変更するなど。
+
+- 選択へスクロール: 3Dビューポートで選択したオブジェクトをアウトライナー内で見つけるためのショートカットが提供されています。
+
+- 選択範囲のみ表示: 選択したオブジェクトが含まれる以外のすべてのグループとセクションを折りたたむショートカットも提供されています。
+
+- 複数のオブジェクトを選択して、一括で状態変更（隠す、無効にする、ロックするなど）や名前の変更、素材の修正ができます。
+
+- グループフォルダーにAltキーを押しながらクリックすると、そのセクション内のすべてのオブジェクトが選択されます。
+
+- セクションラベル（Solids、Sheets、Curves）を右クリックして「すべて選択」を選ぶと、そのセクション内のすべてのオブジェクトが選択されます。
 
 #### Chordal fillets
 ソリッドのフィレット機能にChordal オプションが追加されました。Chordalオプションの特長は、フィレットされる角度に関係なく、フィレットの弦の長さを一定に保つ点です。この一貫性は、モデルの異なる部分で視覚的な整合性を保つ際に特に有益です。
