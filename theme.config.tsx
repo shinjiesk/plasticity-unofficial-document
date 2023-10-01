@@ -76,6 +76,7 @@ const config: DocsThemeConfig = {
                 <meta property="og:url" content={url} />
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:site" content="@getPlasticity" />
+                 
                 <meta
                     name="google-site-verification"
                     content="ykdvE9_snpoWuN4a2jZLtDiMPanzLK4Dwr4SriOYvXI"
