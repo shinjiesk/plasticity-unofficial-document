@@ -1,4 +1,5 @@
 import Reference from 'components/Reference'
+import VideoPlayer from 'components/VideoPlayer';
 import { Callout } from 'nextra/components'
 
 # Fillet Shell
@@ -25,9 +26,10 @@ Fillet or chamfer the Edges which can be conic or G2 continuous. Variable distan
 </Callout>
 
 **Shape:**
-    - **Conic:** Conical Continuity.
-    - **G2:** G2 Continuity. See [Surface Continuity](../cad-essentials/continuity-curve-and-surface).
-    ![](/img/fillet-solid.gif)
+    - **Conic:** The Conic fillet option is known for producing a more natural and smooth transition compared to traditional round fillets. This makes it especially useful in applications where aerodynamics or aesthetics are crucial.
+    - **Chordal:** The hallmark of a Chordal fillet is that it maintains a constant length for the chord of the fillet, regardless of the angles being filleted. This uniformity can be particularly beneficial when aiming for visual consistency across different parts of a model.
+    - **G2:** The G2 option generates curves that are smoothly continuous with the surfaces at both ends of the fillet. This setting is optimal for intricate designs and complex surface handling that require an extremely smooth and natural shape transition. See [Surface Continuity](../cad-essentials/continuity-curve-and-surface).
+    <VideoPlayer fileName="fillet-shell-shape"/>
 
 **Y-Blend:** 
     - The “Y-blend” is a special kind of blend or fillet that occurs when three surfaces meet at a common point, forming a “Y” shape. Enabling **Attempt**, you can create better topology  in Y-blend and avoid undesired fillet results.
