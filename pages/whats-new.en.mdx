@@ -69,22 +69,38 @@ The Chordal option has been added to the solid fillet feature. The hallmark of a
 
 The Move Gizmo is now available when moving Edges using the Move command. Additionally, you can specify the Pivot point and perform Freestyle movements.
 
+### New Commands
+
+#### Isolate #18
+#### Thicken Face (which is called by Thicken automatically when a face is selected) #18
+#### Selection: convert to groups    selects all items in same group #13
+#### Project Outline Command (keybinding: alt-d when a solid/sheet is selected) #35
+#### Create Outline Command #35
+
 ### Enhancements
 
-### Workspace
+#### Workspace
 
-- Ctrl-alt clicking on cylindercal face will select all parallel cylindrical faces.
+- Ctrl + Alt clicking on cylindercal face will select all parallel cylindrical faces.
+- Alt + clicing on a Solid/Sheet/Empty will select all objects in the same group.
 - Box/Cylinder/Sphere will now give objects default names
 - Resizable left panel.
 
-### File import/export
+#### File import/export
 
 - STL files can be imported for reference.
 - Obj/Stl export is now parallelized.
 
-### commands
+#### Commands
 
 - The Extrude command's gizmo has been improved, allowing you to manipulate the thickness.
 - The Rebuild Curve command's Refit method has been enhanced to allow for keeping corners.
 
+### Renamaed Commands and Deprecations
 
+#### Renamed commands
+- Explode renamed to Unjoin     Unjoin/Unjoin Curves/Unjoin Faces/Unjoin Sheiis  #33
+- Delete renamed to Dissolve  (this should not affect you unless you have custom keybindings)
+
+#### Deprecation
+- Focus #18 (replaced by Isolate)
