@@ -7,15 +7,23 @@ import { Callout } from 'nextra/components'
 
 ソリッドまたはシートをフィレットまたは面取りすることができます。
 
+## 基本的な使い方
+
 1. フィレットまたは面取りしたいエッジを選択します。
 2. エッジが選択されると、デフォルトのコマンドであるこのコマンドが自動的に実行されます。
-3. 黄色い点を動かして、フィレットまたは面取りの距離を指定します。正の方向に動かすとフィレット、負の方向に動かすと面取りになります。
+3. または、ショートカットキー<kbd>B</kbd>を押して実行します。
+4. 黄色い点を動かして、フィレットまたは面取りの距離を指定します。
+    - 正の方向に動かす: フィレット
+    - 負の方向に動かす: 面取りに
     ![Fillet](/img/fillet-solid-0.gif)
-4. エッジを追加で選択するには、<kbd>Ctrl</kbd>キーを押しながらクリックします。選択を解除するには、<kbd>Ctrl</kbd>キーを押しながら再度クリックします。
-5. コマンドダイアログとキーボードショートカットでオプションを設定します。下記の[**Fillet options**](#fillet-options) と [**Chamfer options**](#chamfer-options) を参照してください。
+4. さらにエッジを追加で選択するには、<kbd>Ctrl</kbd>キーを押しながらクリックします。選択を解除するには、<kbd>Ctrl</kbd>キーを押しながら再度クリックします。
+5. コマンドダイアログとキーボードショートカットでオプションを設定します。下記の[**フィレットオプション**](#fillet-options) と [**面取りオプション**](#chamfer-options) を参照してください。
 6. コマンドダイアログのOKボタンをクリックするか、右クリックして確定します。
 
-### Fillet options [#fillet-options]
+## フィレットオプション [#fillet-options]
+
+### コマンドダイアログ
+
 - **Distance:** 
     - エッジをフィレットするには、正の値を入力します。エッジを面取りするには、負の値を入力します。
 <Callout type="info" emoji="💡">
@@ -38,28 +46,30 @@ import { Callout } from 'nextra/components'
     - Disable **Add tangent Edges** 選択したエッジのみにフィレットを制限します。
     ![](/img/fillet-sold-selection.gif)
 
-<kbd>A</kbd> **Chamfer angle:**
+### ショートカット
+
+<kbd>A</kbd> **: Chamfer angle**
     - カーソルを動かして、フィレットの角度を指定します。
 <Callout type="info" emoji="💡">
     距離のふたつの値を変更することでも、角度を変えることができます。
     ![](/img/fillet-solid-two-value.gif)
 </Callout>
 
-<kbd>D</kbd> **Fillet distance:** 
+<kbd>D</kbd> **: Fillet distance** 
     - カーソルを動かして、フィレットの距離を指定します。
 
-<kbd>C</kbd> **Chamfer distance:** 
+<kbd>C</kbd> **: Chamfer distance** 
     - カーソルを動かして、面取りの距離を指定します。
 
-<kbd>V</kbd> **Add variable point:**
+<kbd>V</kbd> **: Add variable point**
     - フィレットに可変点を追加します。
     ![](/img/fillet-solid-variable.gif)
 
-<kbd>L</kbd> **Add limit (stop) point:** <br />
+<kbd>L</kbd> **: Add limit (stop) point** <br />
     - フィレットする範囲を指定します。[**オブジェクトスナップ**](../plasticity-essentials/grid-and-snap#object-snap)が有効になっていることを確認し、フィレットの中心線をクリックしてリミットポイントを追加します。方向を逆にするには、リミットポイントをもう一度クリックします。リミットポイントは2つまで設定できます。
     ![](/img/fillet-solid-limit.gif)
 
-### Chamfer options
+### 面取りオプション [#chamfer-options]
 - **Shape:**
     - **Offset:** デフォルトの面取り。
     - **Apex:** 面取りの境界線のずれを減らします。
