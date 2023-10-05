@@ -1,16 +1,15 @@
 import VideoPlayer from 'components/VideoPlayer';
 
-# What's New
+# What's New in version 1.3
 
-## What's New in version 1.3
 Release date: October 9, 2023
 
 \[Contents\]
 
 
-### New features
+## New features
 
-#### Blender Bridge
+### Blender Bridge
 
 The Blender Bridge is a feature that allows for the rapid transfer of mesh data from Plasticity to Blender. This is realized as a Blender add-on. Once you've connected, you can just click refresh, and data is loaded really quickly. You don't need to worry about exporting to a temporary file and getting all the setting options right.
 
@@ -22,30 +21,38 @@ The workflow is also a fantastic experience. After placing the Plasticity docume
 
 The specification of UV seams and sharps in Blender is not retained in the current version. However, the Blender add-on comes with features that automatically mark edges, automatically select geometry corresponding to Plasticity faces or edges, and merge UV seams. These features also contribute to a faster workflow.
 
+To use the Blender Bridge, it is necessary to install the add-on and activate the feature. For more details, refer [here](../blender/install-blender-addon.en.mdx).
 
-#### Customizable radial menus #4
+<br/>
+For more details on Blender Bridge, see [here](../blender/install-blender-addon).
+
+### Customizable radial menus
+
+The Radial Menu is a popup menu that allows for quick execution of commands, which can be displayed using a shortcut key. By default, two radial menus are provided: the "Selection Mode Radial Menu" for toggling selection modes, and the "Viewport Settings Radial Menu" for modifying 3D viewport settings. The Radial Menu can be customized or created anew by users, and can incorporate all commands within Plasticity.
+Installation is required to use the default Radial Menu. 
+
+For more details on Radial Menu, see [here](../plasticity-essentials/radial-menu).
+<br/>
+<VideoPlayer fileName="v1_3_new_radial-menu"/>
 
 
-
-
-
-
-
-
-
-#### Hierarchical isolation
+### Hierarchical isolation
 
 The functionality of the Isolate command has been enhanced to allow hierarchical hiding of objects. This significantly improves workflow in complex scenes. After narrowing down the objects displayed with the Isolate command, you can further select objects within that group and run the Isolate command again, leaving only the most recently selected objects visible. This feature can be repeated through multiple layers. The level of isolation is displayed on the screen, and clicking on it allows you to gradually revert back to showing more objects.
+
+For more details on Isolate command, see [here](../plasticity-essentials/focus-and-isolate-objects#isolate-objects).
 <br/>
 <VideoPlayer fileName="isolate"/>
 
-#### Multiple windows + copy/paste + place command for kitbashing
+### Multiple windows + copy/paste + place command for kitbashing
 
 You can now open multiple Plasticity windows, enhancing workflow efficiency. While you can copy and paste objects between windows, we've introduced enhanced commands: 'Copy with Placement' and 'Paste with Placement'. These operate akin to the Place command, but across different windows. In one window, you can copy an object with a reference point, then paste it using that same point in another window. This feature is especially handy for kitbashing.
+
+For more details on Multiple windows, see [here](../plasticity-essentials/file-menu). [Copy with Placement](../common/copy-with-placement) and [Paste with Placement](../common/paste-with-placement) commands.
 <br/>
 <VideoPlayer fileName="v1_3_new_window_copy_paste_place"/>
 
-#### Many enhancements to Outliner
+### Many enhancements to Outliner
 
 - Right-click on a group folder to access various related commands, such a s"Add current selection to group", "Select all", "New subgroup with current selection", collapsing or expanding all groups, and modifying materials.
 
@@ -59,48 +66,63 @@ You can now open multiple Plasticity windows, enhancing workflow efficiency. Whi
 
 - Right-click on a section label ("Solids," "Sheets," "Curves") and choose "Select all" to select all objects within that section.
 
-#### Chordal fillets
+For more details on Outliner, see [here](../plasticity-essentials/outliner).
+
+### Chordal fillets
 
 The Chordal option has been added to the solid fillet feature. The hallmark of a Chordal fillet is that it maintains a constant length for the chord of the fillet, regardless of the angles being filleted. This uniformity can be particularly beneficial when aiming for visual consistency across different parts of a model.
+
+For more details on Fillet Shell, see [here](../solid/fillet-shell#fillet-options).
 <br/>
 <VideoPlayer fileName="fillet-shell-shape"/>
 
-#### Enhancements to the Edge movement
+
+### Enhancements to the Edge movement
 
 The Move Gizmo is now available when moving Edges using the Move command. Additionally, you can specify the Pivot point and perform Freestyle movements.
 
-### New Commands
+## New Commands
 
-#### Isolate #18
-#### Thicken Face (which is called by Thicken automatically when a face is selected) #18
-#### Selection: convert to groups    selects all items in same group #13
-#### Project Outline Command (keybinding: alt-d when a solid/sheet is selected) #35
-#### Create Outline Command #35
+### Selection: convert to groups
 
-### Enhancements
+Select all objects within the group of the selected objects. Refer to [here](../plasticity-essentials/selecting-objects#select-from-the-currently-selected-objects) for more details.
 
-#### Workspace
+### Project Outline
+
+Project the outline of the Solids or Sheets onto the current construction plane along the normal direction, thereby generating a Curves. Refer to [here](../sketch/project-outline) for more details.
+
+### Create Outline
+
+Project the outline of the Solids or Sheets onto the current construction plane along the normal direction, thereby generating a Curves. While the "Project Outline" command produces a projected curves in 2D, this command creates a 3D curves. Curves will be positioned precisely at the object's original boundary. Refer to [here](../sketch/create-outline) for more details.
+
+### Thicken Face
+
+Add thickness to a selected Face. Thickness for each side can be specified. Refer to [here](../solid/thicken-face) for more details.
+
+## Enhancements
+
+### Workspace
 
 - Ctrl + Alt clicking on cylindercal face will select all parallel cylindrical faces.
 - Alt + clicing on a Solid/Sheet/Empty will select all objects in the same group.
 - Box/Cylinder/Sphere will now give objects default names
 - Resizable left panel.
 
-#### File import/export
+### File import/export
 
 - STL files can be imported for reference.
 - Obj/Stl export is now parallelized.
 
-#### Commands
+### Commands
 
 - The Extrude command's gizmo has been improved, allowing you to manipulate the thickness.
 - The Rebuild Curve command's Refit method has been enhanced to allow for keeping corners.
 
-### Renamaed Commands and Deprecations
+## Renamaed Commands and Removed Features
 
-#### Renamed commands
-- Explode renamed to Unjoin     Unjoin/Unjoin Curves/Unjoin Faces/Unjoin Sheiis  #33
-- Delete renamed to Dissolve  (this should not affect you unless you have custom keybindings)
+### Renamed commands
+- Explode renamed to Unjoin (Unjoin/Unjoin Curves/Unjoin Faces/Unjoin Sheiis) Refer to [here](../solid/unjoin) for more details.
+- Delete renamed to Dissolve (this should not affect you unless you have custom keybindings)
 
-#### Deprecation
-- Focus #18 (replaced by Isolate)
+### Removed Features
+- Focus (replaced by Isolate)
