@@ -9,8 +9,10 @@ To transfer the Objects created in Plasticity to Blender, click the "Refresh" bu
     2. Create objects that you want to transfer to Blender.
 2. **Within Blender:**
     1. Ensure that the Blender Bridge add-on is installed and activated. Installation instructions can be found [here](./install-blender-addon).
-    2. Click the "Connect" button in the Plasticity sidebar panel. Once a connection is established, additional options will be displayed in the panel.
-    3. Click the "Refresh" button in the Plasticity sidebar panel to transfer objects from Plasticity to Blender.
+    2. Click the "Connect" button in the "Plasticity sidebar panel". Once a connection is established, additional options will be displayed in the panel.
+        ![BB Blender Connet](/img/bb-blender-connect.png)
+    3. Click the "Refresh" button in the "Plasticity sidebar panel" to transfer objects from Plasticity to Blender.
+        ![BB Blender Connet](/img/bb-blender-refresh.png)
     4. The transferred objects will appear in the 3D viewport of Blender.
         - All solids and Sheets in Plasticity will be transferred as Meshes in Blender.
         - When 'Only visible' is disabled(default), invisible objects in Plasticity will be transferred to Blender as invisible objects. When 'Only visible' is enabled, invivible objects in Plasticity will not be transferred. 
@@ -18,7 +20,7 @@ To transfer the Objects created in Plasticity to Blender, click the "Refresh" bu
 3. **Within Plasticity:**
     1. Edit the objects as needed.
 4. **Within Blender:**
-    1. To update any changes made in Plasticity, click the "Refresh" button in the Plasticity sidebar panel.
+    1. To update any changes made in Plasticity, click the "Refresh" button in the "Plasticity sidebar panel".
 
 ## Live Link
 
@@ -29,7 +31,8 @@ When Live Link is enabled, any changes made to the objects in Plasticity will be
     2. Create objects that you want to transfer to Blender.
 2. **Within Blender:**
     1. Ensure that the Blender Bridge add-on is installed and activated. 
-    2. Click the "Live Link" button in the Plasticity sidebar panel.
+    2. Click the "Live Link" button in the "Plasticity sidebar panel".
+        ![BB Blender Live Link](/img/bb-blender-live-link.png)
 3. **Within Plasticity:**
     1. Edit the objects as needed.
 4. **Within Blender:**
@@ -41,8 +44,9 @@ The Refacet Mesh option will automatically retopologize the mesh of the transfer
 
 1. **Within Blender:**
     1. Select the transferred objects to be retopologized.
-    2. Click the "Refacet" button in the Plasticity sidebar panel.
-        - You can specify the refacet config in the Plasticity sidebar panel.
+    2. Click the "Refacet" button in the "Plasticity sidebar panel".
+        ![BB Blender Refacet](/img/bb-blender-refacet.png)
+        - You can specify the refacet config in the "Plasticity sidebar panel".
             - Tri/Ngon: The type of mesh to be generated. 'Tri' will generate a mesh with only triangles, while 'Ngon' will generate a mesh that includes polygons with five or more sides.
             - Tolerance: The maximum distance between the original mesh and the retopologized mesh. A lower tolerance will result in a mesh that more closely matches the original mesh, but will also result in a mesh with more vertices.
             - Angle: The maximum angle between the original mesh and the retopologized mesh. A lower angle will result in a mesh that more closely matches the original mesh, but will also result in a mesh with more vertices.
@@ -57,6 +61,8 @@ The Refacet Mesh option will automatically retopologize the mesh of the transfer
         - Refacet automatically produces a "Mark Sharp" on the edges of the retopologized mesh.
 
 ## Utilities
+
+![BB Blender Utilities](/img/bb-blender-utilities.png)
 
 ### Auto Mark edges
 

@@ -10,7 +10,9 @@ Plasticityで作成されたオブジェクトをBlenderに転送するには、
 2. **Blenderにて:**
     1. Blender Bridgeアドオンがインストールされていて有効になっていることを確認します。インストール手順は[こちら](./install-blender-addon)で見ることができます。
     2. Plasticityサイドバーパネルの「Connect」ボタンをクリックします。接続が確立すると、パネルに追加のオプションが表示されます。
+        ![BB Blender Connet](/img/bb-blender-connect.png)
     3. Plasticityサイドバーパネルの「Refresh」ボタンをクリックして、PlasticityからBlenderにオブジェクトを転送します。
+        ![BB Blender Connet](/img/bb-blender-refresh.png)
     4. 転送されたオブジェクトはBlenderの3Dビューポートに表示されます。
         - Plasticityの全てのソリッドとシートは、Blenderにメッシュとして転送されます。
         - 「Only visible」が無効になっている場合(デフォルト)、Plasticityの非表示のオブジェクトはBlenderで非表示のオブジェクトとして転送されます。「Only visible」が有効な場合、Plasticityの非表示のオブジェクトは転送されません。
@@ -30,6 +32,7 @@ Plasticityで作成されたオブジェクトをBlenderに転送するには、
 2. **Blenderにて:**
     1. Blender Bridgeアドオンがインストールされていて有効になっていることを確認します。
     2. Plasticityサイドバーパネルの「Live Link」ボタンをクリックします。
+        ![BB Blender Live Link](/img/bb-blender-live-link.png)
 3. **Plasticityにて:**
     1. 必要に応じてオブジェクトを編集します。
 4. **Blenderにて:**
@@ -42,6 +45,7 @@ Refacetメッシュオプションは、転送されたオブジェクトのメ�
 1. **Blenderにて:**
     1. リトポロジーする転送されたオブジェクトを選択します。
     2. Plasticityサイドバーパネルの「Refacet」ボタンをクリックします。
+        ![BB Blender Refacet](/img/bb-blender-refacet.png)
         - Plasticityサイドバーパネルでrefacetの設定を指定できます。
             - Tri/Ngon: 生成されるメッシュのタイプ。'Tri'は三角形のみのメッシュを生成し、'Ngon'は5つ以上の辺を持つ多角形を含むメッシュを生成します。
             - Tolerance: オリジナルのメッシュとリトポロジーされたメッシュとの間の最大距離。許容値が低いと、オリジナルのメッシュにより密接に一致するメッシュが生成されますが、頂点の数が多いメッシュになります。
@@ -59,6 +63,8 @@ Refacetメッシュオプションは、転送されたオブジェクトのメ�
         - Refacetは自動的にリトポロジーされたメッシュのエッジに「Mark Sharp」を生成します。
 
 ## ユーティリティ
+
+![BB Blender Utilities](/img/bb-blender-utilities.png)
 
 ### Auto Mark edges（オートマークエッジ）
 
