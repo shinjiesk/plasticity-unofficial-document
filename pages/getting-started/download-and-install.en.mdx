@@ -1,50 +1,174 @@
-# Download and Install
+import { Tabs } from 'nextra/components'
 
-## Download
-Plasticity offers three types of plans: Free trial, Indie, and Studio. <br />
-The download process varies between the free trial and the other two plans.
+# Download and Installation
 
-### Free trial
-You can download it from the official Plasticity website.<br />
-https://www.plasticity.xyz/
+The procedure for download and installation varies depending on the type of license you have. Please refer to the instructions corresponding to your license from the links below:
+- [For Users with Studio License](#studio-user)
+- [For Users with Indie License](#indie-user)
+- [For Users utilizing the Free Trial](#trial-user)
 
-### Indie and Studio
-You can download from the official GitHub Page below.<br />
-https://github.com/nkallen/plasticity/releases
+## For Users with Studio License[#studio-user]
 
-The release page looks like this:
-![image of relese page ](/img/github-release-page.png)
+Users with a Studio license can use both the Stable version, which is stable in operation, and the Beta version, which includes experimental features.
+Both Stable and Beta versions can be installed separately and used interchangeably.
 
-1. **Version**
-   - The latest version is indicated as "Latest". "Pre-release" version is for Studio users only.
+The same procedure applies for both new installations and updates. Uninstallation of the old version is not required when updating.
 
-2. **Files to download**
-   - Download the correct file for your OS. To download, click on the file name.
+#### Download and Installation
+1. Open the official GitHub release page.
+   - https://github.com/nkallen/plasticity/releases
+2. The latest version is displayed at the top of the release page, with past versions listed below.
+3. The version labeled "Latest" in green next to the version number is the latest Stable version.
+   ![Stable](/img/download-latest.png)
+4. The version labeled "Pre-release" in yellow next to the version number is the Beta version.
+   ![Beta](/img/download-beta.png)
+5. You can install either the Stable or Beta version, or both. The order of installation does not matter.
+6. Click on the version you want to download, and proceed to the file list screen.
+<Tabs items={['Windows', 'macOS', 'Linux']}>
+   <Tabs.Tab>
+   7. After clicking on Assets to expand it, click on "plasticity-*****.Setup.exe" from the list of files. The download will begin.
+   8. Once the download is complete, open the downloaded file.
+   9. The installer will launch, follow the instructions to proceed with the installation.
+   </Tabs.Tab>
+   <Tabs.Tab>
+   7. After clicking on Assets to expand it, click on the file suitable for installing on macOS from the list of files. The download will begin.
+      - For macOS (M1): Plastycity-darwin-arm64-*****.zip
+      - For macOS (Intel): Plastycity-darwin-x64-*****.zip
+   8. Once the download is complete, unzip the downloaded file.
+   9. Drag the application package to the "Applications" folder.
+   </Tabs.Tab>
+   <Tabs.Tab>
+   7. After clicking on Assets to expand it, click on the suitable file from the list of files. The download will begin.
+      - For rpm: Plastycity-***.rpm
+      - For NuGet Package Manager: Plastycity-***.nupkg	
+      - For deb: Plastycity_*****.deb
+   8. Once the download is complete, proceed with the installation as usual.
+   </Tabs.Tab>
+</Tabs>
 
-       | File name                              | OS                        |
-       | -------------------------------------- | ------------------------- |
-       | Plastycity-0.0.0-.x86_64 **.rpm**      | for Linux (rpm)           |
-       | Plastycity-0.0.0-full **.nupkg**       | for NuGet Package Manager |
-       | Plastycity-0.0.0.setup **.exe**        | for Windows               |
-       | Plastycity-darwin- **arm64**-0.0.0.zip | for MacOS (M1)            |
-       | Plastycity-darwin- **x64**-0.0.0.zip   | for MacOS (Intel)         |
-       | Plastycity_0.0.0_amd64 **.deb**        | for Linux (deb)           |
+After the installation is complete, proceed with license activation, Radial Menu, and Blender Bridge setup.
 
-3. **Files for developers**
-   - These files are for developers. No download is required.
+#### License Activation
 
+License activation is required when using Plasticity for the first time.
 
+10. Launch Plasticity.
+11. Click on the P-menu at the top left, and click "Manage licenses."
+   ![P-Menu](/img/p-menu.png)
+12. Enter the Token and click "Validate token."
+13. License activation is complete.
 
+#### Radial Menu Setup
+14. Setup is required when using the Radial Menu. If you are not using the Radial Menu, this step is not necessary.
+15. For a description of Radial Menu functions and setup instructions, please refer to [here](../plasticity-essentials/radial-menu).
 
+#### Blender Bridge Setup
+16. Add-on installation is required when using the Blender Bridge. If you are not using the Blender Bridge, this step is not necessary.
+17. For a description of Blender Bridge functions and add-on installation instructions, please refer to [here](../blender/introduction-blender-bridge).
 
+Installation is now complete.
 
+## For Users with Indie License[#indie-user]
 
+Users with an Indie license can use the Stable version.
 
+The same procedure applies for both new installations and updates. Uninstallation of the old version is not required when updating.
 
+#### Download and Installation
+1. Open the official GitHub release page.
+   - https://github.com/nkallen/plasticity/releases
+2. The latest version is displayed at the top of the release page, with past versions listed below.
+3. The version labeled "Latest" in green next to the version number is the latest Stable version. Click on it to proceed to the file list screen. (The version labeled "Pre-release" in yellow is the Beta version, which is not available for use.)
+   ![Stable](/img/download-latest.png)
+<Tabs items={['Windows', 'macOS', 'Linux']}>
+   <Tabs.Tab>
+   7. After clicking on Assets to expand it, click on "plasticity-*****.Setup.exe" from the list of files. The download will begin.
+   8. Once the download is complete, open the downloaded file.
+   9. The installer will launch, follow the instructions to proceed with the installation.
+   </Tabs.Tab>
+   <Tabs.Tab>
+   7. After clicking on Assets to expand it, click on the file suitable for installing on macOS from the list of files. The download will begin.
+      - For macOS (M1): Plastycity-darwin-arm64-*****.zip
+      - For macOS (Intel): Plastycity-darwin-x64-*****.zip
+   8. Once the download is complete, unzip the downloaded file.
+   9. Drag the application package to the "Applications" folder.
+   </Tabs.Tab>
+   <Tabs.Tab>
+   7. After clicking on Assets to expand it, click on the suitable file from the list of files. The download will begin.
+      - For rpm: Plastycity-***.rpm
+      - For NuGet Package Manager: Plastycity-***.nupkg	
+      - For deb: Plastycity_*****.deb
+   8. Once the download is complete, proceed with the installation as usual.
+   </Tabs.Tab>
+</Tabs>
 
+After the installation is complete, proceed with license activation, Radial Menu, and Blender Bridge setup.
 
+#### License Activation
 
+License activation is required when using Plasticity for the first time.
 
+10. Launch Plasticity.
+11. Click on the P-menu at the top left, and click "Manage licenses."
+   ![P-Menu](/img/p-menu.png)
+12. Enter the Token and click "Validate token."
+13. License activation is complete.
 
+#### Radial Menu Setup
+14. Setup is required when using the Radial Menu. If you are not using the Radial Menu, this step is not necessary.
+15. For a description of Radial Menu functions and setup instructions, please refer to [here](../plasticity-essentials/radial-menu).
 
+#### Blender Bridge Setup
+16. Add-on installation is required when using the Blender Bridge. If you are not using the Blender Bridge, this step is not necessary.
+17. For a description of Blender Bridge functions and add-on installation instructions, please refer to [here](../blender/introduction-blender-bridge).
 
+Installation is now complete.
+
+## For Users utilizing the Free Trial[#trial-user]
+
+The free trial can be downloaded from the official page.
+
+1. Open the official page.
+   - https://www.plasticity.xyz/
+2. Download the file suitable for your OS.
+
+<Tabs items={['Windows', 'macOS', 'Linux']}>
+   <Tabs.Tab>
+   3. Once the download is complete, open the downloaded file.
+   4. The installer will launch, follow the instructions to proceed with the installation.
+   </Tabs.Tab>
+   <Tabs.Tab>
+   3. Once the download is complete, unzip the downloaded file.
+   4. Drag the application package to the "Applications" folder.
+   </Tabs.Tab>
+   <Tabs.Tab>
+   3. Once the download is complete, proceed with the installation as usual.
+   </Tabs.Tab>
+</Tabs>
+
+After the installation is complete, proceed with license activation, Radial Menu, and Blender Bridge setup.
+
+#### License Activation
+5. Launch Plasticity.
+6. The license screen will be displayed.
+7. Click "Start your free trial."
+8. Enter your email address and password, then click "Create account."
+9. A token for the trial version will be sent to your email address.
+10. Enter the token and click "Validate token."
+11. Close the license screen. You are now ready to use the free trial.
+
+#### Radial Menu Setup
+12. Setup is required when using the Radial Menu. If you are not using the Radial Menu, this step is not necessary.
+13. For a description of Radial Menu functions and setup instructions, please refer to [here](../plasticity-essentials/radial-menu).
+
+#### Blender Bridge Setup
+14. Add-on installation is required when using the Blender Bridge. If you are not using the Blender Bridge, this step is not necessary.
+15. For a description of Blender Bridge functions and add-on installation instructions, please refer to [here](../blender/introduction-blender-bridge).
+
+Installation is now complete.
+
+### Purchasing a License
+When you launch Plasticity, click "Buy a license!" on the license screen to go to the license purchase page. You can also purchase from the [official page](https://www.plasticity.xyz/#pricing).
+
+### Entering License Token
+On the license screen displayed when you launch Plasticity, enter the license token in the token entry field on the right. Click "Validate token" to complete the license activation.

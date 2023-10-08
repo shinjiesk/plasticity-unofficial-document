@@ -19,24 +19,24 @@
   "homepage": "https://plasticitydoc.vercel.app/",
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
-    "@next/mdx": "^13.4.19",
-    "@vercel/analytics": "^1.0.2",
+    "@next/mdx": "^13.5.4",
+    "@vercel/analytics": "^1.1.0",
     "gray-matter": "^4.0.3",
     "mdx-bundler": "^9.2.1",
-    "next": "^13.4.19",
+    "next": "^13.5.4",
     "nextjs-google-analytics": "^2.3.3",
-    "nextra": "^2.11.1",
-    "nextra-theme-docs": "^2.11.1",
+    "nextra": "^2.13.2",
+    "nextra-theme-docs": "^2.13.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-youtube": "^10.1.0",
     "remark-mdx-frontmatter-nextjs": "^1.1.2",
-    "sass": "^1.66.1",
-    "sharp": "^0.32.5",
-    "styled-components": "^6.0.7"
+    "sass": "^1.69.0",
+    "sharp": "^0.32.6",
+    "styled-components": "^6.0.8"
   },
   "devDependencies": {
-    "@types/node": "20.5.1",
-    "typescript": "^5.1.6"
+    "@types/node": "20.8.3",
+    "typescript": "^5.2.2"
   }
 }
