@@ -1,4 +1,5 @@
 import VideoPlayer from 'components/VideoPlayer';
+import { Callout } from 'nextra/components'
 
 # Radial Menu（ラジアルメニュー）
 
@@ -10,9 +11,9 @@ import VideoPlayer from 'components/VideoPlayer';
 
 デフォルトの「Selection mode」と「Viewport settings」ラジアルメニューを使用するには、いくつかの設定が必要です。
 
-1. 以下の2つのファイルをダウンロードしてください。
-    - [selection-mode.radial.json](https://www.dropbox.com/scl/fi/fl8gqnwp0tv1cvcahssjg/selection-mode.radial.json?rlkey=pm7rt8kq4obda0bpy6nei23xq&dl=1)
-    - [viewport-settings.radial.json](https://www.dropbox.com/scl/fi/ttm3mmzwy8wlcw5vf2pza/viewport-settings.radial.json?rlkey=x2ea4o5fkviw5ut4f99u4j38x&dl=1)
+1. 以下の2つのファイルをダウンロードしてください。クリックするとテキストの内容が表示されます。右上の"ダウンロード"をクリックしてください。 
+    - [selection-mode.radial.json](https://app.box.com/s/xrh5xjepvcio33fvmy4thbc00ady5p4k)
+    - [viewport-settings.radial.json](https://app.box.com/s/g9hlphfr4shjhkf2c5gfdknnxudq8ouu)
 2. ダウンロードしたファイルをPlasticityの3Dビューポートにドロップします。
 3. 画面上に変化はありませんが、ラジアルメニューの定義が読み込まれて使用する準備ができています。
 
@@ -99,6 +100,81 @@ import VideoPlayer from 'components/VideoPlayer';
 9. 「Radial Menu: My Menu」を右クリックして、ショートカット<kbd>Ctrl + Shift + F</kbd>を割り当てます。ショートカットの割り当て方法については、[このセクション](./command-palette#assign-a-shortcut)を参照してください。
 10. これで、ショートカット<kbd>Ctrl + Shift + F</kbd>を押すことで、作成したラジアルメニューを表示できます。
 11. テキストファイルを後で修正する場合、もう一度ドラッグ＆ドロップするだけで変更が反映されます。
+
+## ラジアルメニューからラジアルメニューを呼び出す方法
+
+1. 呼び出されるラジアルメニューを作成します。ここではこのようなラジアルメニューを定義しました。
+```json filename="2nd-my-menu.radial.json" copy 
+{
+    "name": "2nd My Menu",
+    "command": "2nd-my-menu",
+    "items": [
+        {
+            "command": "command:center-box",
+            "icon": "center-box",
+            "label": "Center Box"
+        },
+        {
+            "command": "command:cylinder",
+            "icon": "cylinder",
+            "label": "Cylinder"
+        },
+        {
+            "command": "command:sphere",
+            "icon": "sphere",
+            "label": "Sphere"
+        }
+    ]
+}
+```
+
+2. このラジアルメニューを「Selection mode」ラジアルメニューから呼び出すには、itemsの最後に次の項目を追加します。この項目のcommandには、呼び出されるラジアルメニューのcommandの前に"view:radial:"を付け足した言葉を指定します。
+
+```json  copy 
+{
+    "command": "view:radial:2nd-my-menu",
+    "icon": "2nd",
+    "label": "2nd"
+}
+```
+その結果、selection-mode.radial.jsonはこのようになります
+
+```json  filename="selection-mode.radial.json" copy 
+{
+    "name": "Selection mode",
+    "command": "selection:mode",
+    "items": [
+        {
+            "command": "selection:mode:set:control-point",
+            "icon": "control-point",
+            "label": "Control Point"
+        },
+        {
+            "command": "selection:mode:set:solid",
+            "icon": "solid",
+            "label": "Solid"
+        },
+        {
+            "command": "selection:mode:set:edge",
+            "icon": "edge",
+            "label": "Edge"
+        },
+        {
+            "command": "selection:mode:set:face",
+            "icon": "face",
+            "label": "Face"
+        },
+        {
+            "command": "view:radial:2nd-my-menu",
+            "icon": "2nd",
+            "label": "2nd"
+        }
+    ]
+}
+```
+
+これで「Selection mode」ラジアルメニューから、「2nd My Menu」ラジアルメニューを呼び出すことができるようになります。
+
 
 ### Internal Designation for the Command
 

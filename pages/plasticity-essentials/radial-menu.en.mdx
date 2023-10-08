@@ -10,9 +10,9 @@ The Radial Menu is a circular interface for executing commands. You can execute 
 
 To use the default "Selection mode" and "Viewport settings" radial menus, some setup is required.
 
-1. Download the following two files:
-    - [selection-mode.radial.json](https://www.dropbox.com/scl/fi/fl8gqnwp0tv1cvcahssjg/selection-mode.radial.json?rlkey=pm7rt8kq4obda0bpy6nei23xq&dl=1)
-    - [viewport-settings.radial.json](https://www.dropbox.com/scl/fi/ttm3mmzwy8wlcw5vf2pza/viewport-settings.radial.json?rlkey=x2ea4o5fkviw5ut4f99u4j38x&dl=1)
+1. Download the following two text files: When you click, the content of the text will be displayed. Click "Download" at the top right.
+    - [selection-mode.radial.json](https://app.box.com/s/xrh5xjepvcio33fvmy4thbc00ady5p4k)
+    - [viewport-settings.radial.json](https://app.box.com/s/g9hlphfr4shjhkf2c5gfdknnxudq8ouu)
 2. Drag and drop the downloaded files into Plasticity's 3D viewport.
 3. Although there won't be any visible changes on the screen, the radial menu's definition is now loaded and ready for use.
 
@@ -98,7 +98,82 @@ Explanation: (Please note, the explanations starting with // are just for refere
 10. Now, by pressing the shortcut <kbd>Ctrl + Shift + F</kbd>, you can display the radial menu you've created.
 11. If you make subsequent modifications to the text file, simply drag and drop it again to reflect the changes.
 
-### Internal Designation for the Command
+## How to Call a Radial Menu from a Radial Menu
+
+1. Create the radial menu to be called. In this case, a radial menu has been defined like so.
+```json filename="2nd-my-menu.radial.json" copy 
+{
+    "name": "2nd My Menu",
+    "command": "2nd-my-menu",
+    "items": [
+        {
+            "command": "command:center-box",
+            "icon": "center-box",
+            "label": "Center Box"
+        },
+        {
+            "command": "command:cylinder",
+            "icon": "cylinder",
+            "label": "Cylinder"
+        },
+        {
+            "command": "command:sphere",
+            "icon": "sphere",
+            "label": "Sphere"
+        }
+    ]
+}
+```
+
+2. To call this radial menu from the "Selection mode" radial menu, add the following item to the end of the items. In the command of this item, specify the word by appending "view:radial:" in front of the command of the radial menu to be called.
+
+```json  copy 
+{
+    "command": "view:radial:2nd-my-menu",
+    "icon": "2nd",
+    "label": "2nd"
+}
+```
+
+As a result, the selection-mode.radial.json will look like this:
+
+```json  filename="selection-mode.radial.json" copy 
+{
+    "name": "Selection mode",
+    "command": "selection:mode",
+    "items": [
+        {
+            "command": "selection:mode:set:control-point",
+            "icon": "control-point",
+            "label": "Control Point"
+        },
+        {
+            "command": "selection:mode:set:solid",
+            "icon": "solid",
+            "label": "Solid"
+        },
+        {
+            "command": "selection:mode:set:edge",
+            "icon": "edge",
+            "label": "Edge"
+        },
+        {
+            "command": "selection:mode:set:face",
+            "icon": "face",
+            "label": "Face"
+        },
+        {
+            "command": "view:radial:2nd-my-menu",
+            "icon": "2nd",
+            "label": "2nd"
+        }
+    ]
+}
+```
+
+Now, from the "Selection mode" radial menu, you can call the "2nd My Menu" radial menu.
+
+## Internal Designation for the Command
 
 ```
 command:alternative-duplicate

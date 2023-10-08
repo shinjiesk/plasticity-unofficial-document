@@ -40,4 +40,10 @@ import Reference from 'components/Reference'
 import VideoPlayer from 'components/VideoPlayer';
 <VideoPlayer fileName="radial-menu"/>
 
+import { Callout } from 'nextra/components'
+<Callout type="info">
+- 複数のリージョンを複製すると、結合されたシェイプとして複製されます。
+</Callout>
+
 <kbd></kbd>
+
