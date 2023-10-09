@@ -1,32 +1,24 @@
 import Reference from 'components/Reference'
-import ButtonIcon from 'components/ButtonIcon'
 
 # Rebuild
 
 <Reference shortcut="" command="Rebuild" button="Right of Command Bar" />
 
-This command automatically calls the following command depending on the selected object.
-  - When Curves are selected: see **Rebuild Curve** described below.
-  - When Faces are selected: see [**Rebuild Face**](../solid/rebuild#rebuild-face) in the Solid Commands section.
-
-## Rebuild Curve [#rebuild-curve]
-
-The Curve can be rebuilt by optimizing the positions of the Control Vertices(CVs) without changing the shape of the  Curve.
-
-1. Select the  Curve you want to rebuild.
-2. Click the button <ButtonIcon type="button-rebuild" />
-3. Set the options in the Command Dialog.
-  - **Method:**
-    - **Refit:** Rebuild within tolerances.
-      - **Tolerance:** Specify the Tolerances.
-    - **# points** Rebuild whith in the specified number of CVs .
-      - **Points:** Specify the number of CVs.
-4. Confirm with OK in the Command Dialog or right-click.
-
-![Rebuild Curve](/img/rebuild-curve.gif)
+Unified command for Rebuild Curve, Rebuild Face. The command is run based on the selected object.
+  - When Curves are selected: see [Rebuild Curve](./rebuild-curve).
+  - When Faces are selected: Rebuild Face (Currently under development).
 
 ## See also
+- [Rebuild Curve](./rebuild-curve)
 - [Delete Redundant Topology](./delete-redundant-topology)
+
+
+
+
+
+
+
+
 
 
 

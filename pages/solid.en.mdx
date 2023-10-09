@@ -1,43 +1,57 @@
 # Solid Commands - Solid, Sheet, Face, Edge
-| Command Name                                                 | Shortcut                     | Note                                               |
-| ------------------------------------------------------------ | ---------------------------- | -------------------------------------------------- |
-| [Boolean](solid/boolean)                                     | <kbd>Q</kbd>                 | Boolean Solids and/or Sheets                       |
-| [Cut](solid/cut)                                             | <kbd>C</kbd>                 | Cut Solid and Sheet                                |
-| **Solid and Sheet Commands**                                 |                              |                                                    |
-| [Extrude](solid/extrude)                                     | <kbd>E</kbd>                 | Extrude Faces, Regions and Curves                  |
-| [Sweep](solid/sweep)                                         | <kbd>Shift + P</kbd>         | Sweep Region or Curve                              |
-| [Revolve](solid/revolve)                                     |                              | Revolve Region or Curve                            |
-| [Loft](solid/loft)                                           | <kbd>L</kbd>                 | Loft Face, Edge and Curve                          |
-| [Pipe](solid/pipe)                                           | <kbd>P</kbd>                 | Create a Pipe from Edge and Curve                  |
-| [Patch](solid/patch)                                         |                              | Fill Sheet holes / Closed Curves to a Sheet        |
-| [Thicken](solid/thicken)                                     |                              | Add thickness to a Sheet                           |
-| [Constrained Surface](solid/constrained-surface)             |                              | Create a constrained surface                       |
-| [Fillet](solid/fillet)                                       | <kbd>B</kbd>                 | Fillet or chamfer Edges                            |
-| [Refillet Face](solid/refillet-face)                         |                              | Redo fillets                                       |
-| [Remove Fillets from Shell](solid/remove-fillets-from-shell) |                              | Remove Solid and Sheet fillets                     |
-| [Alternative Duplicate](solid/alternative-duplicate)         | <kbd>Alt + D</kbd>           | Alternative Duplicate                              |
-| [Hollow](solid/hollow)                                       |                              | Hollow out a Solid                                 |
-| [Rebuild](solid/rebuild)                                     |                              | Rebuild Face                                       |
-| **Sheet Commands**                                           |                              |                                                    |
-| [Join](solid/join)                                           | <kbd>J</kbd>                 | Combine Sheets with matching Edges                 |
-| [Bridge Surface](solid/bridge-surface)                       |                              | Bridge two Sheets                                  |
-| [Extend](solid/extend)                                       |                              | Extend a Sheet                                     |
-| [Explode](solid/explode)                                     | <kbd>Alt + J</kbd>           | Decompose Solid and Sheet                          |
-| [Find Boundary Edges](solid/find-boundary-edges)             |                              | Select Edges of a Sheet opening                    |
-| [Untrim](solid/untrim)                                       | <kbd>Alt + T</kbd>           | Create a Sheet based on the original shape         |
-| **Face Commands**                                            |                              |                                                    |
-| [Offset Face](solid/offset-face)                             | <kbd>Shift + O</kbd>         | Offset Faces                                       |
-| [Draft Face](solid/draft-face)                               |                              | Tilt Face                                          |
-| [Match Face](solid/match-face)                               |                              | Match Faces to another Face                        |
-| [Delete Face](solid/delete-face)                             | <kbd>Shift + Backspace</kbd> | Delete Face                                        |
-| [Unwrap Face](solid/unwrap-face)                             |                              | Unwrap Face                                        |
-| [Wrap Face](solid/wrap-face)                                 |                              | Wrap Face                                          |
-| **Edge Commands**                                            |                              |                                                    |
-| [Offset Curve](solid/offset-curve)                           | <kbd>O</kbd>                 | Create offset Edges from Edge or Face outlines     |
-| [Imprint](solid/imprint)                                     | <kbd>Shift + I</kbd>         | Create Edges by projecting Solid, Sheet and Curves |
-| [Isoparam](solid/isoparam)                                   | <kbd>Ctrl + R</kbd>          | Add isoparams (Edges)                              |
-| [Delete Redundant Topology](solid/delete-redundant-topology) |                              | Remove excess Edges                                |
-| [Extend Edge](solid/extend-edge)                             |                              | Extend Edges                                       |
+| Command Name                                                 | Shortcut                     | Note                                                                                     |
+| ------------------------------------------------------------ | ---------------------------- | ---------------------------------------------------------------------------------------- |
+| [Boolean](solid/boolean)                                     | <kbd>Q</kbd>                 | Boolean Solids and/or Sheets.                                                             |
+| [Cut](solid/cut)                                             | <kbd>C</kbd>                 | Cut Solid and Sheet.                                                                      |
+| **Solid and Sheet Commands**                                 |                              |                                                                                          |
+| [Extrude](solid/extrude)                                     | <kbd>E</kbd>                 | Extrude Faces, Regions and Curves.                                                        |
+| [Sweep](solid/sweep)                                         | <kbd>Shift + P</kbd>         | Sweep Region or Curve.                                                                    |
+| [Revolve](solid/revolve)                                     |                              | Revolve Region or Curve.                                                                  |
+| [Loft](solid/loft)                                           | <kbd>L</kbd>                 | Loft Face, Edge and Curve.                                                                |
+| [Pipe](solid/pipe)                                           | <kbd>P</kbd>                 | Create a Pipe from Edge and Curve.                                                        |
+| [Patch](solid/patch)                                         |                              | Fill Sheet holes / Closed Curves to a Sheet.                                              |
+| [Thicken](solid/thicken)                                     |                              | Add thickness to a selected Sheet.                                                       |
+| [Thicken Face](solid/thicken-face)                           |                              | Add thickness to a selected Face.                                                        |
+| [Constrained Surface](solid/constrained-surface)             |                              | Create a constrained surface.                                                             |
+| [Fillet](solid/fillet)                                       | <kbd>B</kbd>                 | Unified command for Fillet Curve, Fillet Vertex, Fillet Shell.                            |
+| [Fillet Shell](solid/fillet-shell)                           | <kbd>B</kbd>                 | Fillet or chamfer the Edges.                                                              |
+| [Refillet Face](solid/refillet-face)                         |                              | Redo fillets.                                                                             |
+| [Remove Fillets from Shell](solid/remove-fillets-from-shell) |                              | Remove Solid and Sheet fillets.                                                           |
+| [Alternative Duplicate](solid/alternative-duplicate)         | <kbd>Alt + D</kbd>           | Alternative Duplicate.                                                                    |
+| [Hollow](solid/hollow)                                       |                              | Hollow out a Solid.                                                                       |
+| [Rebuild](solid/rebuild)                                     |                              | Rebuild Face.                                                                             |
+| **Sheet Commands**                                           |                              |                                                                                          |
+| [Join](solid/join)                                           | <kbd>J</kbd>                 | Unified command for Join Curves, Join Sheets.                                            |
+| [Join Sheets](solid/join-sheets)                             | <kbd>J</kbd>                 | Join Sheets with matching Edges.                                                         |
+| [Bridge Surface](solid/bridge-surface)                       |                              | Bridge two Sheets.                                                                        |
+| [Extend](solid/extend)                                       |                              | Unified command for Extend Curve, Extend Sheet.                                           |
+| [Extend Sheet](solid/extend-sheet)                           |                              | Extend one or more outside Edges of the Sheet.                                            |
+| [Unjoin](solid/unjoin)                                       | <kbd>Alt + J</kbd>           | Unified command for Unjoin Curves, Unjoin Faces, Unjoin Shells.                          |
+| [Unjoin Faces](solid/unjoin-faces)                           | <kbd>Alt + J</kbd>           | Separate selected Faces from Solid or Sheet.                                             |
+| [Unjoin Shells](solid/unjoin-shells)                         | <kbd>Alt + J</kbd>           | Separate all Faces from selected Solids or Sheets into individual Faces.                 |
+| [Find Boundary Edges](solid/find-boundary-edges)             |                              | Select Edges of a Sheet opening.                                                          |
+| [Untrim](solid/untrim)                                       | <kbd>Alt + T</kbd>           | Create a Sheet based on the original shape.                                               |
+| **Face Commands**                                            |                              |                                                                                          |
+| [Offset Face](solid/offset-face)                             | <kbd>Shift + O</kbd>         |  Offset the selected Faces.                                                                           |
+| [Draft Face](solid/draft-face)                               |                              | Tilt Face.                                                                                |
+| [Match Face](solid/match-face)                               |                              | Match Faces to another Face.                                                              |
+| [Delete Face](solid/delete-face)                             | <kbd>Shift + Backspace</kbd> | Delete Face.                                                                              |
+| [Unwrap Face](solid/unwrap-face)                             |                              | Unwrap Face.                                                                              |
+| [Wrap Face](solid/wrap-face)                                 |                              | Wrap Face.                                                                                |
+| **Edge Commands**                                            |                              |                                                                                          |
+| [Offset Curve](solid/offset-curve)                           | <kbd>O</kbd>                 | Unified command for Offset Planar Curve, Offset Region, Offset Face Loop, Offset Edge.   |
+| [Offset Edge](solid/offset-edge)                             | <kbd>O</kbd>                 | Offset the selected Edges.                                                               |
+| [Offset Face Loop](solid/offset-face-loop)                   | <kbd>O</kbd>                 | Offset the outline edges of selected Faces.                                              |
+| [Imprint](solid/imprint)                                     | <kbd>Shift + I</kbd>         | Unified command for Imprint Body Body, Imprint Curve Body.                                |
+| [Imprint Body Body](solid/imprint-body-body)                 | <kbd>Shift + I</kbd>         | Create Edges on the target Solid or Sheet where it intersects with a tool Solid or Sheet. |
+| [Imprint Curve Body](solid/imprint-curve-body)               | <kbd>Shift + I</kbd>         | Create Edges on the target Solid or Sheet where it projects onto a tool Curve.            |
+| [Isoparam](solid/isoparam)                                   | <kbd>Ctrl + R</kbd>          | Add isoparams.                                                                    |
+| [Delete Redundant Topology](solid/delete-redundant-topology) |                              | Remove excess Edges.                                                                      |
+| [Extend Edge](solid/extend-edge)                             |                              | Extend Edges.                                                                             |
+
+
+
+
 
 
 

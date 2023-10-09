@@ -5,7 +5,8 @@
     "file-menu": "P-メニュー",
     "outliner": "アウトライナー",
     "group-objects": "オブジェクトをグループ化する",
-    "toggle-object-states": "オブジェクトステイタスの変更",
+    "toggle-object-states": "オブジェクト状態を切り替える",
+    "focus-and-isolate-objects": "オブジェクトにフォーカスする",
     "selection-mode": "選択モード",
     "selecting-objects":"オブジェクトを選択する",
     "view-mode": "ビューモード",
@@ -13,6 +14,7 @@
     "construction-plane": "構築平面",
     "command-bar": "コマンドバー",
     "command-palette": "コマンドパレット",
+    "radial-menu": "ラジアルメニュー",
     "general": "一般機能",
     "importing-reference-images": "参照画像をインポートする",
     "export-obj": "OBJファイルの書き出し"

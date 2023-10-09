@@ -1,28 +1,24 @@
 import Reference from 'components/Reference'
-import ButtonIcon from 'components/ButtonIcon';
 
 # Fillet
 
 <Reference shortcut="B" command="Fillet" button="Right of Command Bar" />
 
-This command automatically calls the following command depending on the selected object.
-   - When Curves or verticies are selected: see **Fillet Curves and Vertices** described below.
-   - When Edges are selected: see [**Fillet**](../solid/fillet)  in the Solid Commands section.
+Unified command for Fillet Curve, Fillet Vertex, Fillet Shell. The command is run based on the selected object.
+   - When Curves are selected: see [Fillet Curve](./fillet-curve).
+   - When verticies are selected: see [Fillet Vertex](./fillet-vertex).
+   - When Edges are selected: see [Fillet Shell](../solid/fillet-shell) in the Solid Commands section.
 
-## Fillet Curves and Vertices
+## See also
+- [Fillet Curve](./fillet-curve)
+- [Fillet Vertex](./fillet-vertex)
+- [Fillet Shell](../solid/fillet-shell)
 
-You can fillet or chamfer Curves and Vertices at corners.
 
-1. Select the Curves or Vertices where you want to apply fillet or chamfer.
-2. Press <kbd>B</kbd> or click the button <ButtonIcon type="button-fillet" /> on the Right of Command Bar.
-3. Move the yellow dot to specify the radius of the fillet or chamfer. Depending on the direction of movement, it will either be filleted or chamfered.
-4. Set the options in the Command Dialog and Keyboard Shortcuts.
-   - **Distance:** Specify the Distance.
-   - <kbd>D</kbd> **Fillet Distance:** Specify the fillet distance by moving the cursor.
-   - <kbd>C</kbd> **Chamfer Distance:** Specify the Chamfer distance by moving the cursor.
-5. Confirm with OK in the Command Dialog or right-click.
 
-![Fillet](/img/fillet.gif)
+
+
+
 
 
 

@@ -236,7 +236,7 @@ helps:
 
   # ##### Tools #####
   line:
-    description: Create a series of connected line segments. Specify length and angle with a numerical value.
+    description: Create a series of connected line segments. Specify length and angle using mouse actions or with a numerical value.
     image: help-line.png
   curve:
     description: Create a Curve by placing points which the Curve will pass through.
@@ -245,7 +245,7 @@ helps:
     description: Create a Curve by placing Control Points.
     image: help-control-point-curve.png
   center-circle:
-    description: Create a circle by specifying the center and the diameter. Adjust the angle relative to the construction plane.
+    description: Create a circle by specifying the center and the diameter. Optionally, adjust the angle relative to the construction plane.
     image: help-center-circle.png
   two-point-circle:
     description: Create a circle specified by two points of the diameter. Adjust the angle relative to the construction plane.
@@ -257,7 +257,7 @@ helps:
     description: Create an arc by specifying the center and two points on the circumference.
     image: help-center-point-arc.png
   three-point-arc:
-    description: Create a rectangle specified by three points.
+    description: Create an arc specified by three points.
     image: help-three-point-arc.png
   polygon:
     description: Create a polygon with any number of vertices.
@@ -266,10 +266,10 @@ helps:
     description: Create a spiral by specifying the diameter and number of turns. Angling options are also available.
     image: help-spiral.png
   corner-rectangle:
-    description: Create a rectangle by specifying two points on the diagonal. Specify length with a numerical value.
+    description: Create a rectangle by specifying two points on the diagonal. Length can be set using mouse actions or numerically.
     image: help-corner-rectangle.png
   center-rectangle:
-    description: Create a rectangle by specifying the center point. Specify length a numerical value.
+    description: Create a rectangle by specifying the center point. Length can be set using mouse actions or with a numerical value.
     image: help-center-rectangle.png
   three-point-rectangle:
     description: Create a rectangle by specifying three points. Specify length with a numerical value.
@@ -643,6 +643,23 @@ helps:
     description: Extend the selected Edge until it intersects with another Edge.
     image: help-extend-edge.png
 
+
+
+
+
+  # ##### Radial menu #####
+  radial-menu-selection-mode:
+    description: <under development>
+    image:
+  radial-menu-viewport-settings:
+    description: <under development>
+    image:
+
+
+
+
+
+
   #  ##### In-Development Feature #####
   export-cad:
     description: <under development>
@@ -675,13 +692,5 @@ helps:
     description: <under development>
     image:
   smart-command:
-    description: <under development>
-    image:
-
-  # ##### Radial menu #####
-  radial-menu-selection-mode:
-    description: <under development>
-    image:
-  radial-menu-viewport-settings:
     description: <under development>
     image:

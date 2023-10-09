@@ -6,6 +6,7 @@
     "outliner": "Outliner",
     "group-objects": "Group Objects",
     "toggle-object-states": "Toggle Object States",
+    "focus-and-isolate-objects": "Focus and Isolate Objects",
     "selection-mode": "Selection Mode",
     "selecting-objects":"Selecting Objects",
     "view-mode": "View Mode",
@@ -13,6 +14,7 @@
     "construction-plane": "Construction Plane",
     "command-bar": "Command Bar",
     "command-palette": "Command Palette",
+    "radial-menu": "Radial Menu",
     "general": "General Functions",
     "importing-reference-images": "Importing Reference Images",
     "export-obj": "Export OBJ"

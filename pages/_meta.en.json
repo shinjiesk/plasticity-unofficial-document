@@ -1,5 +1,6 @@
 {
     "index": { "display": "hidden" },
+    "whats-new": "What's New", 
     "all-commands": "Command List & Shortcut Keys",
     "---1": {
         "type": "separator",
@@ -21,7 +22,12 @@
     "solid": "Solid ",
     "---4": {
         "type": "separator",
-        "title": ""
+        "title": "Integration"
+    },
+    "blender": "Blender",
+    "---5": {
+        "type": "separator",
+        "title": "Advanced"
     },
     "cad-essentials": "CAD Essentials",
     "get-plasticity": {

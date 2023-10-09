@@ -1,32 +1,25 @@
 import Reference from 'components/Reference'
-import { Callout } from 'nextra/components'
 
 # Join
 
 <Reference shortcut="J" command="Join" button="" />
 
-This command automatically calls the following command depending on the selected object.
-    - When Curves are selected: [**Join Curves**](../sketch/join#join-Curves) in the Sketch Commands section.
-    - When Sheets are selected: see **Join Sheets** described below.
-
-## Join Sheets
-
-You can join Sheets with matching Edges.
-
-1. Select the Sheets you want to join.
-2. Press <kbd>J</kbd>.
-3. Sheets are joined.
-
-<Callout emoji="❗">
-**Note**<br />
-To join two Sheets, their Edges must be perfectly aligned.
-</Callout>
-
-![Join Sheets](/img/join-sheets.gif)
+Unified command for Join Curves, Join Sheets. The command is run based on the selected object.
+    - When Curves are selected: see [Join Curves](../sketch/join-Curves) in the Sketch Commands section.
+    - When Sheets are selected: see [Join Sheets](./join-sheets).
 
 ## See also
+- [Join Sheets](./join-sheets)
 - [Bridge Surface](./bridge-surface)
-- [Explode](./explode)
+- [Unjoin](./unjoin)
+
+
+
+
+
+
+
+
 
 
 

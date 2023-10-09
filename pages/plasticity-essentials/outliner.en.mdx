@@ -1,26 +1,107 @@
+import ButtonIcon from 'components/ButtonIcon'
+
 # Outliner
 
+The Outliner displays all the objects you've created. Within the Outliner, you can organize objects, group them, toggle their states, and configure materials.
+
+![Outliner](/img/outliner-001.png)
 ## Organize Objects
 
-- Created objects are divided into Solids, Sheets, and Curves.
-- The outliner can be reorganized by dragging and dropping.
-- You can also [group objects](./group-objects).
-![Outliner 1](/img/outliner-01.png)
+- Created objects are categorized into Solids, Sheets, and Curves sections.
+- Right-click on a section label ("Solids," "Sheets," "Curves") and choose "Select all" to select all objects within that section.
+- You can reorganize the Outliner by dragging and dropping objects.
+
+## Group Objects
+
+Grouping allows you to better organize your objects.
+
+| Operation                                                     | Shortcut                                                         | Command Name     |
+| ------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------- |
+| Create a group and move the selected object to the new group. | <kbd>Ctrl + G</kbd> or <ButtonIcon type="outliner-gruop-icon" /> | Group Selected   |
+| Remove the selected object from the group.                    | <kbd>Alt + G</kbd>                                               | Ungroup Selected |
+
+Right-click on a group folder to access related commands.
+
+![Group objects menu](/img/outliner-group-objects-menu.png)
+| Menu                                | Note                                                                   |
+| ----------------------------------- | ---------------------------------------------------------------------- |
+| Add current selection to group      | Adds the selected object to the group.                                 |
+| Select all                          | Selects all objects within the group.                                       |
+| New subgroup with current selection | Creates a new subgroup and adds the selected object to it.     |
+| Collapse all                        | Collapses all groups.                                                   |
+| Expand all                          | Expands all groups.                                                     |
+| Add material                        | Assigns material to the group. . See [Material Color](#material-color).      |
+| Remove material                     | Removes material from the group. See [Material Color](#material-color). |
+
+Alt-click on folder in outliner to select all objects in that section.
+
+### Collapse and Expand Groups
+
+![Collapse and Expand Groups](/img/outliner-collapse-expand.png)
+
+- To collapse all groups, either click (1)  or hover your cursor over the Outliner and press <kbd>C</kbd>.
+- To expand all groups, click (2) and select "Expand all" from the dropdown menu.
+
+## Rename Objects
+
+- To rename an object, double-click on its name.
+- To rename multiple objects at once, hold down the Shift key while selecting them, and then, while still holding Shift, double-click on one of their names.
+
+## Locate Objects in the Outliner
+
+![Collapse and Expand Groups](/img/outliner-collapse-expand.png)
+
+### To bring a selected object to the top of the Outliner
+
+- Select object in the 3D viewport, hover your cursor over the Outliner, and press <kbd>/</kbd>. 
+- Alternatively, select the object and click (2) and choose "Select in Outliner."
+
+### To isolate a selected object in the Outliner
+
+- Select the object in the Outliner and press <kbd>.</kbd>. This will collapse all groups and sections except for the one containing your selected object.
+- Alternatively, select the object and click (2) and choose "Isolate selection."
+
+## Toggle Object States
+
+You can toggle the states of objects or groups, such as making them temporarily hidden or visible, disabled or enabled, and locked or unlocked.
+
+![Toggle Object States](/img/toggle-object-states.png)
+
+### Operations in the Outliner
+
+Click on the icons next to objects or groups to change their states. You can also change states in bulk by selecting multiple objects.
+
+- <ButtonIcon type="button-outliner-hide" double="true" />: Toggle hide
+- <ButtonIcon type="button-outliner-disable" double="true" /> : Toggle disable
+- <ButtonIcon type="button-outliner-disable-selection" double="true"  /> : Toggle lock
+
+### Operations by shortcut
+
+You can also use shortcuts to change the states of objects or groups.
+
+| Operation                         | Shortcut                      | Command Name    |
+| --------------------------------- | ----------------------------- | --------------- |
+| Hide selected objects             | <kbd>H</kbd>                  | Hide selected   |
+| Hide unselected objects           | <kbd>Shift + H</kbd>          | Hide unselected |
+| Unhide all                        | <kbd>Alt + H</kbd>            | Unhide all      |
+| Invert Hidden                     | <kbd>Ctrl + H</kbd>           | Invert Hidden   |
+| Hide all Curves on the same plane | Select Regions -> <kbd>H</kbd> |                 |
+| Lock selected objects             |                               | Lock selected   |
+
 
 ## Material Color
+
+You can assign materials to Solids, Sheets, and Curves. Materials set for a group will also be applied to objects within that group.
+For more information on materials, see [**Set Material**](../common/set-material) and [**Remove Material**](../common/remove-material).
+![Outliner 4](/img/outliner-04.png)
+
+In the Outliner, you can:
 
 - The object's material color is displayed as color dots.
 - The color can be copied by dragging and dropping the color dots.
 - Material colors can also be set for groups. The color can be copied in the same way.
-- For more information on materials, see [**Set Material**](../common/set-material) and [**Remove Material**](../common/remove-material).
-![Outliner 4](/img/outliner-04.png)
-
-
-
-
-
-
-
+- Right-click on an object to access a menu where you can set or remove materials.
+- You can also select multiple objects and set or remove materials in bulk.
 
 
 

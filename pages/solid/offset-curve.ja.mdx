@@ -5,54 +5,22 @@ import Reference from 'components/Reference'
 <Reference shortcut="O" command="Offset Curve" button="コマンドバー右" />
 
 このコマンドは、選択されていたオブジェクトに応じて以下のコマンドを自動的に呼び出します。
-   - カーブが選択されているとき: スケッチコマンドの [**Offset Planar Curve**](../sketch/offset-curve#offset-planar-curve) を参照してください。
-   - リージョンが選択されているとき: スケッチコマンドの **Offset Curve** の [**Offset Region**](../sketch/offset-curve#offset-region) を参照してください。
-   - フェースが選択されているとき: 下記の [**Offset Face Loop**](#offset-face-loop) を参照してください。
-   - エッジが選択されているとき: 下記の [**Offset Edge**](#offset-edge) を参照してください。
-
-## Offset Face Loop（フェイスの輪郭をオフセットする）[#offset-face-loop]
-
-選択したフェイスの輪郭をオフセットして、新しいエッジを作成することができます。
-
-1. オフセットしたいフェイスを選択します。フェイスは複数を選択できます。
-2. <kbd>O</kbd>を押します。
-3. マウスの動きで距離を指定します。
-4. コマンドダイアログとキーボードショートカットでオプションを設定します。
-   - **Distance:** 距離を指定します。
-   - **Gap fill:**
-        - **Round:** 出っ張った角を丸めます。
-        - **Linear:** 出っ張った角を直線でつなぎます。
-        - **Natural:** ナチュラル
-   - <kbd>I</kbd> **Individual:** 複数のフェイスを選択しているとき、このオプションをオンにすると、フェイスを結合した形をオフセットします。
-   - <kbd>D</kbd> **Distance:** マウスの動きで距離を指定します。
-5. コマンドダイアログの OK をクリックするか、右クリックして確定します。
-
-![Offset Face Loop](/img/offset-face-loop.gif)[#offset-edge]
-
-## Offset Edge（エッジをオフセットする）
-
-エッジをオフセットして、新しいエッジを作成することができます。
-
-1. オフセットしたいエッジを選択します。
-2. <kbd>O</kbd>を押します。
-3. マウスを左から右に動かすことで、方向と距離を指定します。
-4. コマンドダイアログとキーボードショートカットでオプションを設定します。
-   - **Distance:** 距離を指定します。
-   - **Gap fill:**
-        - **Round:** 出っ張った角を丸めます。
-        - **Linear:** 出っ張った角を直線でつなぎます。
-        - **Natural:** ナチュラル
-   - <kbd>Tab</kbd> **Lock distances:** 両側に等しい距離でオフセットします。
-   - <kbd>D</kbd> **Distance:** マウスの動きで距離を指定します。
-5. コマンドダイアログの OK をクリックするか、右クリックして確定します。
-
-![Offset Edge](/img/offset-edge.gif)
-
+   - カーブが選択されているとき: スケッチコマンドの [Offset Planar Curve](../sketch/offset-planar-curve) を参照してください。
+   - リージョンが選択されているとき: スケッチコマンドの Offset Curve の [Offset Region](../sketch/offset-region) を参照してください。
+   - フェースが選択されているとき: 下記の [Offset Face Loop](./offset-face-loop) を参照してください。
+   - エッジが選択されているとき: 下記の [Offset Edge](./offset-edge) を参照してください。
 
 ## 関連項目
+- [Offset Edge](./offset-edge)
+- [Offset Face Loop](./offset-face-loop)
 - [isoparam](./isoparam)
 - [Imprint](./imprint)
 - [Extend Edge](./extend-edge)
+
+
+
+
+
 
 
 

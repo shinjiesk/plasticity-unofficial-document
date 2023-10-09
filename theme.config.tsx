@@ -83,17 +83,16 @@ const config: DocsThemeConfig = {
             </>
         );
     },
-    /*     banner: {
-        key: "1.2.6-release",
+    banner: {
+        key: "1.3-release",
         text: (
             <a
-                href="https://github.com/nkallen/plasticity/releases/tag/v1.2.6"
-                target="_blank"
+                href="/whats-new"
             >
-                🎉 Plasticity 1.2.6 is released. Download  →
+                🎉 Plasticity 1.3 is released → Click here for details
             </a>
         ),
-    }, */
+    },
 };
 
 export default config;
