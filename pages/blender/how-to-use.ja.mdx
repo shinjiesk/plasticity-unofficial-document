@@ -1,0 +1,93 @@
+# 使用方法
+
+## 基本的な使用方法
+
+Plasticityで作成されたオブジェクトをBlenderに転送するには、BlenderのPlasticityサイドバーパネルの「Refresh」ボタンをクリックします。
+
+1. **Plasticityにて:**
+    1. Plasticityを開きます。
+    2. Blenderに転送したいオブジェクトを作成します。
+2. **Blenderにて:**
+    1. Blender Bridgeアドオンがインストールされていて有効になっていることを確認します。インストール手順は[こちら](./install-blender-addon)で見ることができます。
+    2. Plasticityサイドバーパネルの「Connect」ボタンをクリックします。接続が確立すると、パネルに追加のオプションが表示されます。
+        ![BB Blender Connet](/img/bb-blender-connect.png)
+    3. Plasticityサイドバーパネルの「Refresh」ボタンをクリックして、PlasticityからBlenderにオブジェクトを転送します。
+        ![BB Blender Connet](/img/bb-blender-refresh.png)
+    4. 転送されたオブジェクトはBlenderの3Dビューポートに表示されます。
+        - Plasticityの全てのソリッドとシートは、Blenderにメッシュとして転送されます。
+        - 「Only visible」が無効になっている場合(デフォルト)、Plasticityの非表示のオブジェクトはBlenderで非表示のオブジェクトとして転送されます。「Only visible」が有効な場合、Plasticityの非表示のオブジェクトは転送されません。
+        - サイズをスケーリングするための「Scale」オプションが利用可能です。
+3. **Plasticityにて:**
+    1. 必要に応じてオブジェクトを編集します。
+4. **Blenderにて:**
+    1. Plasticityで行われた変更を更新するには、Plasticityサイドバーパネルの「Refresh」ボタンをクリックします。
+
+## ライブリンク
+
+ライブリンクが有効になっている場合、Plasticityのオブジェクトに行われた変更は自動的にBlenderに転送されます。
+
+1. **Plasticityにて:**
+    1. Plasticityを開きます。
+    2. Blenderに転送したいオブジェクトを作成します。
+2. **Blenderにて:**
+    1. Blender Bridgeアドオンがインストールされていて有効になっていることを確認します。
+    2. Plasticityサイドバーパネルの「Live Link」ボタンをクリックします。
+        ![BB Blender Live Link](/img/bb-blender-live-link.png)
+3. **Plasticityにて:**
+    1. 必要に応じてオブジェクトを編集します。
+4. **Blenderにて:**
+    1. 変更は自動的にBlenderに転送されます。
+
+## Refacetメッシュ
+
+Refacetメッシュオプションは、転送されたオブジェクトのメッシュを自動的にリトポロジーします。これは、メッシュの頂点の数を減少させるために役立ち、Blenderでのパフォーマンスを向上させることができます。
+
+1. **Blenderにて:**
+    1. リトポロジーする転送されたオブジェクトを選択します。
+    2. Plasticityサイドバーパネルの「Refacet」ボタンをクリックします。
+        ![BB Blender Refacet](/img/bb-blender-refacet.png)
+        - Plasticityサイドバーパネルでrefacetの設定を指定できます。
+            - Tri/Ngon: 生成されるメッシュのタイプ。'Tri'は三角形のみのメッシュを生成し、'Ngon'は5つ以上の辺を持つ多角形を含むメッシュを生成します。
+            - Tolerance: オリジナルのメッシュとリトポロジーされたメッシュとの間の最大距離。許容値が低いと、オリジナルのメッシュにより密接に一致するメッシュが生成されますが、頂点の数が多いメッシュになります。
+            - Angle: オリジナルのメッシュとリトポロジーされたメッシュとの間の最大角度。角度が低いと、オリジナルのメッシュにより密接に一致するメッシュが生成されますが、頂点の数が多いメッシュになります。
+        - 高度なオプションを表示するには「Advanced」ボタンをクリックします。
+            - Tri/Ngon: 生成されるメッシュのタイプ。'Tri'は三角形のみのメッシュを生成し、'Ngon'は5つ以上の辺を持つ多角形を含むメッシュを生成します。
+            - Min width: リトポロジーされたメッシュの最小幅。最小幅が低いと、頂点の数が多いメッシュになります。
+            - Max width: リトポロジーされたメッシュの最大幅。最大幅が低いと、頂点の数が多いメッシュになります。
+            - Edge Chord Tolerance: オリジナルのEdge chordとリトポロジーされたメッシュとの間の最大距離。
+            - Edge Angle Tolerance: オリジナルのEdge angleとリトポロジーされたメッ
+
+シュとの間の最大角度。
+            - Face Plane Tolerance: オリジナルのFace planeとリトポロジーされたメッシュとの間の最大距離。
+            - Face Angle Tolerance: オリジナルのFace angleとリトポロジーされたメッシュとの間の最大角度。
+        - Refacetは自動的にリトポロジーされたメッシュのエッジに「Mark Sharp」を生成します。
+
+## ユーティリティ
+
+![BB Blender Utilities](/img/bb-blender-utilities.png)
+
+### Auto Mark edges（オートマークエッジ）
+
+- 選択されたフェイスに基づいて、最後の操作パネルに応じてエッジをシャープまたはシームとしてマークします。
+
+### Merge UV Seams（UVシームの統合）
+
+- 選択されたフェイスに基づいてUVシームを統合します。
+
+### Select Plasticity Face(s)（Plasticityフェイスの選択）
+
+- PlasticityからのFacesに基づいて、フェイスの選択範囲を拡張します。
+
+### Select Plasticity edges（Plasticityエッジの選択）
+
+- フェイスを選択し、コマンドを実行して、PlasticityからのEdgesに基づいてエッジを選択します。
+
+### Paint Plasticity Faces（Plasticity Facesのペイント）
+
+- PlasticityからのFacesに基づいて、ランダムな頂点カラーを塗ります。
+
+
+
+
+
+

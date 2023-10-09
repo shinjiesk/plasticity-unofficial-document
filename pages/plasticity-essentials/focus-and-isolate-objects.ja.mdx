@@ -1,0 +1,65 @@
+import Reference from 'components/Reference'
+import VideoPlayer from 'components/VideoPlayer';
+import ButtonIcon from 'components/ButtonIcon'
+
+# オブジェクトにフォーカスする
+
+## Focus Objects（選択したオブジェクトを画面いっぱいに表示する）
+
+選択されたオブジェクトを画面いっぱいに表示するコマンドです。
+
+<Reference shortcut="/ (Slash)" command="Viewport: Focus" button="" />
+
+##### 使い方
+1. 注目したいオブジェクトを選択します。
+2. <kbd>/</kbd>を押してコマンドを実行します。
+3. または、アウトライナーの下にある<ButtonIcon type="button-focus" />をクリックします。
+4. 選択されたオブジェクトが画面いっぱいに表示されます。
+
+## Isolate Objects（選択したオブジェクトのみを表示する）[#isolate-objects]
+
+選択されたオブジェクトだけを画面上に表示し、それ以外のオブジェクトを一時的に非表示にするコマンドです。このコマンドは、階層的な絞り込みもサポートしています。
+
+<Reference shortcut=". (Period)" command="Isolate" button="" />
+
+##### 使い方
+1. 注目したいオブジェクトを選択します。
+2. <kbd>.</kbd>を押してコマンドを実行します。
+3. 選択されたオブジェクトだけが画面上に表示されます。
+
+##### 階層的な絞り込み
+1. Isolateコマンドを実行した後、さらに注目したいオブジェクトを選択できます。
+2. 再度Isolateコマンドを実行すると、画面上には新しく選択したオブジェクトだけが絞り込まれて表示されます。
+3. この絞り込みは何段階でも行うことができます。
+
+##### インジケータと階層数
+Isolate状態であることを示すインジケータが画面上部に表示されます。また、階層的な絞り込みが何段階行われているのか数字で示されます。例:「2 Isolated」と表示されれば、2段階目の絞り込みが行われていることを意味します。
+
+<br/>
+<VideoPlayer fileName="isolate"/>
+
+
+## Center Objects（選択したオブジェクトを画面中央に表示する）
+
+特定のオブジェクトを画面の中央に表示するコマンドです。
+
+<Reference shortcut="Space" command="Viewport: Navigate To selection" button="" />
+
+##### 使い方
+1. 中央に表示したいオブジェクトを選択します。
+2. <kbd>Space</kbd>を押してコマンドを実行します。
+3. 選択されたオブジェクトが画面の中央に表示されます。
+
+
+
+
+
+
+
+
+
+
+
+
+
+

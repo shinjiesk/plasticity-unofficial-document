@@ -1,0 +1,55 @@
+import Reference from 'components/Reference'
+
+# Offset Planar Curve（カーブをオフセットする）
+
+<Reference shortcut="O" command="Offset Planar Curve" button="" />
+
+平面カーブを指定した距離でオフセットして新しいカーブを作成できます。両側での対称的なオフセットのオプションも利用可能です。
+
+1. オフセットしたいカーブを選択します。
+2. <kbd>O</kbd>を押します。
+3. 黄色い矢印を動かして距離を指定します。   
+4. コマンドダイアログとキーボードショートカットでオプションを設定します。
+   - **Distance:** 距離を指定します。
+   - <kbd>V</kbd> **Gap fill:** 
+        - **Round:** 出っ張った角を丸めます。
+        - **Linear:** 出っ張った角を直線でつなぎます。 
+        - **Natural** ナチュラル
+   - <kbd>Tab</kbd> **Lock distances:** 両側に等しい距離でオフセットします。
+   - <kbd>F</kbd> **Freestyle:** 下記の[**Freestyle Offset Planar Curve**](#freestyle-offset-planar-curve)と同様の機能です。
+   - <kbd>D</kbd> **Distance:** マウスの動きで距離を指定します。
+5. コマンドダイアログのOKか右クリックで確定します。
+
+![Offset Planar Curve](/img/offset-planar-curve.gif)
+
+## Freestyle Offset Planar Curve
+
+カーソルの動きを使用して距離を指定し、平面カーブをオフセットして新しいカーブを作成できます。両側での対称的なオフセットのオプションも利用可能です。
+
+- このコマンドは、**Offset Curve **コマンドの**Freestyle**オプションだけでなく、コマンドパレットの**Freestyle Offset Planar Curve **を使っても実行できます。
+
+1. オフセットしたいカーブを選択します。
+2. <kbd>O</kbd>を押します。
+3. <kbd>F</kbd>を押してフリースタイルモードに入ります。
+4. カーソルをオフセットする位置に移動してクリックします。
+   - グリッドスナップが有効な場合、グリッドにスナップされます。
+   - オブジェクトスナップが有効な場合、オブジェクトにスナップされます。
+   - **Distance:** 距離を指定します。
+   - **Gap fill:**
+        - **Round:** 出っ張った角を丸めます。
+        - **Linear:** 出っ張った角を直線でつなぎます。 
+        - **Natural** ナチュラル
+   - <kbd>Tab</kbd> **Lock distances:** 両側に等しい距離でオフセットします。
+5. コマンドダイアログのOKか右クリックで確定します。
+
+## 関連項目
+- [Offset Curve](./offset-curve)
+- [Offset Region](./offset-region)
+- [Project](./project)
+
+
+
+
+
+
+

@@ -1,0 +1,374 @@
+import VideoPlayer from 'components/VideoPlayer';
+
+# Radial Menu
+
+The Radial Menu is a circular interface for executing commands. You can execute all commands available in Plasticity. By default, there are two radial menus: "Selection mode" and "Viewport settings". Additionally, users can create their own custom radial menus.
+
+![Radial Menu](/img/radial-menu.png)
+
+## Setting Up the Radial Menu
+
+To use the default "Selection mode" and "Viewport settings" radial menus, some setup is required.
+
+1. Download the following two text files: When you click, the content of the text will be displayed. Click "Download" at the top right.
+    - [selection-mode.radial.json](https://app.box.com/s/xrh5xjepvcio33fvmy4thbc00ady5p4k)
+    - [viewport-settings.radial.json](https://app.box.com/s/g9hlphfr4shjhkf2c5gfdknnxudq8ouu)
+2. Drag and drop the downloaded files into Plasticity's 3D viewport.
+3. Although there won't be any visible changes on the screen, the radial menu's definition is now loaded and ready for use.
+
+You'll need to assign shortcuts to access the radial menus.
+
+4. Press the <kbd>F</kbd> key to open the Command Palette.
+5. Type "menu" into the Command Palette. You'll see entries for "Radial Menu: Selection Mode" and "Radial Menu: Viewport Settings".
+6. Right-click on "Radial Menu: Selection Mode" and assign a shortcut. For guidance on assigning shortcuts, see [this section](./command-palette#assign-a-shortcut).
+7. Right-click on "Radial Menu: Viewport Settings" and assign a shortcut.
+8. Now, by pressing the shortcut you've assigned, you can display the radial menu.
+
+## Using the Radial Menu
+
+Like other commands, you can display the Radial Menu by pressing its shortcut.
+
+1. Press the shortcut you set up earlier.
+2. The Radial Menu will appear centered on your cursor.
+3. Click on an item in the menu to execute the command.
+4. Alternatively, hold down the shortcut key, hover over an item, and release the key to execute the command.
+
+<VideoPlayer fileName="radial-menu"/>
+
+## Creating a New Radial Menu
+
+You can craft a radial menu with any desired command. The menu name and its commands are set in a text file. <br />
+For instance, we'll design a "My Menu" Radial Menu with "Spline Curve", "Bridge", and "Lock Selected", accessible via the shortcut <kbd>Ctrl + Shift + F</kbd>.
+
+1. Open a text editor and create a new document.
+2. Save the document with the filename "mymenu.radial.json".
+3. Enter the following:
+
+```json filename="mymenu.radial.json" copy 
+{
+    "name": "My Menu",
+    "command": "your-name:mymenu",
+    "items": [
+        {
+            "command": "command:curve",
+            "icon": "curve",
+            "label": "Curve"
+        },
+        {
+            "command": "command:bridge",
+            "icon": "bridge",
+            "label": "Bridge"
+        },
+        {
+            "command": "command:lock-selected",
+            "icon": "lock-selected",
+            "label": "Lock Selected"
+        }
+    ]
+}
+```
+Explanation: (Please note, the explanations starting with // are just for reference and should not be included in the actual file.)
+
+- name: Represents the radial menu's title. You can choose any name you like. It's displayed in the command palette and will adopt the format "Radial Menu: (name)".
+- command: A unique identifier for the radial menu. To avoid conflicts with existing commands, consider incorporating the author's name or other unique elements.
+- items: Lists the commands integrated into the radial menu. You can include multiple commands.
+    - command: The internal designation for the command to be incorporated. A list of these designations can be found [here](#internal-designation-for-the-command).
+    - icon: Denotes the icon that appears in the radial menu. Be aware that some commands might not have a preset icon.
+    - label: The central label in the radial menu. If there's no corresponding icon, the label's first two characters will be shown.
+```json
+{
+    "name": "My Menu",      // Represents the radial menu's title
+    "command": "your-name:mymenu",   // A unique identifier for the radial menu
+    "items": [
+        {
+            "command": "command:curve",  // The internal designation for the command to be incorporated
+            "icon": "curve",             // Denotes the icon that appears in the radial menu
+            "label": "Curve"             // The central label in the radial menu
+        },
+        ...
+    ]
+}
+```
+4. Save the file.
+5. Drag and drop the file you've created into Plasticity's 3D viewport.
+6. Although there won't be any visible changes on the screen, the radial menu's definition is now loaded and ready for use.
+7. Press the <kbd>F</kbd> key to open the Command Palette.
+8. Type "menu" into the Command Palette to see a list of all loaded radial menus.
+9. Right-click on "Radial Menu: My Menu" and assign a shortcut <kbd>Ctrl + Shift + F</kbd>. For instructions on how to assign shortcuts, refer to [this section](./command-palette#assign-a-shortcut).
+10. Now, by pressing the shortcut <kbd>Ctrl + Shift + F</kbd>, you can display the radial menu you've created.
+11. If you make subsequent modifications to the text file, simply drag and drop it again to reflect the changes.
+
+## How to Call a Radial Menu from a Radial Menu
+
+1. Create the radial menu to be called. In this case, a radial menu has been defined like so.
+```json filename="2nd-my-menu.radial.json" copy 
+{
+    "name": "2nd My Menu",
+    "command": "2nd-my-menu",
+    "items": [
+        {
+            "command": "command:center-box",
+            "icon": "center-box",
+            "label": "Center Box"
+        },
+        {
+            "command": "command:cylinder",
+            "icon": "cylinder",
+            "label": "Cylinder"
+        },
+        {
+            "command": "command:sphere",
+            "icon": "sphere",
+            "label": "Sphere"
+        }
+    ]
+}
+```
+
+2. To call this radial menu from the "Selection mode" radial menu, add the following item to the end of the items. In the command of this item, specify the word by appending "view:radial:" in front of the command of the radial menu to be called.
+
+```json  copy 
+{
+    "command": "view:radial:2nd-my-menu",
+    "icon": "2nd",
+    "label": "2nd"
+}
+```
+
+As a result, the selection-mode.radial.json will look like this:
+
+```json  filename="selection-mode.radial.json" copy 
+{
+    "name": "Selection mode",
+    "command": "selection:mode",
+    "items": [
+        {
+            "command": "selection:mode:set:control-point",
+            "icon": "control-point",
+            "label": "Control Point"
+        },
+        {
+            "command": "selection:mode:set:solid",
+            "icon": "solid",
+            "label": "Solid"
+        },
+        {
+            "command": "selection:mode:set:edge",
+            "icon": "edge",
+            "label": "Edge"
+        },
+        {
+            "command": "selection:mode:set:face",
+            "icon": "face",
+            "label": "Face"
+        },
+        {
+            "command": "view:radial:2nd-my-menu",
+            "icon": "2nd",
+            "label": "2nd"
+        }
+    ]
+}
+```
+
+Now, from the "Selection mode" radial menu, you can call the "2nd My Menu" radial menu.
+
+## Internal Designation for the Command
+
+```
+command:alternative-duplicate
+command:boolean
+command:bridge
+command:bridge-curve
+command:bridge-edge
+command:bridge-surface
+command:bridge-vertex
+command:center-box
+command:center-circle
+command:center-point-arc
+command:center-rectangle
+command:check
+command:constrained-surface
+command:control-point-curve
+command:convert-vertex
+command:corner-box
+command:corner-rectangle
+command:create-solid-from-faces
+command:create-viewspace-construction-plane
+command:create-viewspace-construction-plane-at-origin
+command:curve
+command:curve-array
+command:cut
+command:cut-curve
+command:cylinder
+command:delete
+command:delete-control-point
+command:delete-edge
+command:delete-face
+command:delete-group
+command:delete-redundant-topology
+command:deselect-all
+command:dissolve
+command:dissolve-face
+command:draft-face
+command:duplicate
+command:duplicate-curve-and-project
+command:unjoin
+command:unjoin-curves
+command:unjoin-faces
+command:unjoin-shells
+command:export-cad
+command:export-obj
+command:export-stl
+command:extend
+command:extend-curve
+command:extend-edge
+command:extend-sheet
+command:extrude
+command:fillet
+command:fillet-curve
+command:fillet-shell
+command:fillet-vertex
+command:find-boundary-edges
+command:focus
+command:freestyle-mirror
+command:freestyle-move
+command:freestyle-move-item
+command:freestyle-offset-planar-curve
+command:freestyle-rotate
+command:freestyle-rotate-item
+command:freestyle-scale
+command:freestyle-scale-item
+command:group-selected
+command:hide-selected
+command:hide-unselected
+command:hollow
+command:hollow-solid
+command:imprint
+command:imprint-body-body
+command:imprint-curve-body
+command:invert-hidden
+command:invert-selection
+command:isoparam
+command:join
+command:join-curves
+command:join-sheets
+command:line
+command:lock-selected
+command:loft
+command:loft-guide
+command:match-face
+command:mirror
+command:move
+command:move-control-point
+command:move-empty
+command:move-face
+command:move-item
+command:offset-curve
+command:offset-edge
+command:offset-face
+command:offset-face-loop
+command:offset-planar-curve
+command:offset-region
+command:patch
+command:pipe
+command:place
+command:polygon
+command:project
+command:project-body-body
+command:project-curve-body
+command:project-curve-curve
+command:push-face
+command:radial-array
+command:rebuild
+command:rebuild-curve
+command:rebuild-face
+command:rectangular-array
+command:refillet-face
+command:remove-fillets-from-shell
+command:remove-item
+command:remove-material
+command:revolve
+command:rotate
+command:rotate-control-point
+command:rotate-empty
+command:rotate-face
+command:rotate-item
+command:scale
+command:scale-control-point
+command:scale-empty
+command:scale-face
+command:scale-item
+command:select-adjacent
+command:select-all
+command:select-all-curves
+command:set-material
+command:smart-command
+command:sphere
+command:spiral
+command:split-segment
+command:subdivide-curve
+command:sweep
+command:sweep-tool
+command:text
+command:thicken
+command:thicken-sheet
+command:three-point-arc
+command:three-point-box
+command:three-point-circle
+command:three-point-rectangle
+command:trim
+command:two-point-circle
+command:ungroup-selected
+command:unhide-all
+command:untrim
+command:unwrap-face
+command:wrap-face
+edit:repeat-last-command
+file:export
+file:import
+file:new
+file:open
+file:save
+file:save-as
+file:save-as-startup
+file:save-version
+selection:convert:edge
+selection:convert:face
+selection:convert:solid
+selection:mode:set:all
+selection:mode:set:control-point
+selection:mode:set:edge
+selection:mode:set:face
+selection:mode:set:solid
+selection:toggle:control-point
+selection:toggle:edge
+selection:toggle:face
+selection:toggle:solid
+snaps:toggle-grid
+snaps:toggle-snaps
+view:radial:selection:mode
+view:radial:viewport:settings
+view:sidebar:toggle
+viewport:cplane:selection
+viewport:focus
+viewport:grid:decr
+viewport:grid:incr
+viewport:navigate:back
+viewport:navigate:bottom
+viewport:navigate:front
+viewport:navigate:left
+viewport:navigate:right
+viewport:navigate:selection
+viewport:navigate:top
+viewport:toggle-edges
+viewport:toggle-faces
+viewport:toggle-orthographic
+viewport:toggle-overlays
+viewport:toggle-x-ray
+```
+
+
+
+
+

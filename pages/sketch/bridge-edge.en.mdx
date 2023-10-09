@@ -1,0 +1,46 @@
+import Reference from 'components/Reference'
+
+# Bridge Edge[#bridge-edge]
+
+<Reference shortcut="" command="Bridge Edge" button="" />
+
+Bridges two Edges that can be G0/G1/G2/G3 continuous. Specify which end of the Edges to bridge. Tension is adjustable.
+
+1. Select two Edges you want to bridge.
+2. Use the **Bridge** command in the Command Palette
+3. Set the options in the Command Dialog and Keyboard Shortcuts.
+   - **Side:** 
+        - **Side 1:** Specify which side of the endpoint of the initially selected Edge to bridge to.
+        - **Side 2:** Specify which side of the endpoint of the subsequently selected Edge to bridge to.
+     - **T:**
+          - **Value 1/2:** The relative position on the segment of the starting point/ending point.
+     - **Direction:** 
+          - **Direction 1/2:** Reverse the direction of the starting point/ending point.
+     - **Tension 1:**
+          - **Value 1/2:** The tension value affected 1st CV to 3rd CV of the starting point/ending point.
+     - **Tension 2:**
+          - **Value 1/2:** The tension value affected 2nd CV and 3rd CV of the starting point/ending point.
+     - **Tension 3:**
+          - **Value 1/2:** The tension value affected 3rd CV of the starting point/ending point.
+     - **Start curvature:**
+          - **G0, G1, G2, G3:** Specify the [continuity of the  Curve](../cad-essentials/continuity-curve-and-surface) at the starting point.
+     -  **End curvature:**
+          - **G0, G1, G2, G3:** Specify the [continuity of the  Curve](../cad-essentials/continuity-curve-and-surface) at the ending point.      
+   - **Trim:** When turned on, any Curve that extends beyond the bridge will be trimmed.
+4. Confirm with OK in the Command Dialog or right-click.
+
+![Bridge Edge](/img/bridge-edge.gif)
+
+## See also
+- [Bridge](./bridge)
+- [Bridge Curve](./bridge-curve)
+- [Bridge Vertex](./bridge-vertex)
+- [Join](./join)
+
+
+
+
+
+
+
+

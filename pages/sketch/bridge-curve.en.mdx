@@ -1,0 +1,56 @@
+import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon'
+import { Callout } from 'nextra/components'
+
+# Bridge Curve[#bridge-curve]
+
+<Reference shortcut="" command="Bridge Curve" button="" />
+
+Bridges two Curves that can be G0/G1/G2/G3 continuous. Tension is adjustable. Auto trim is possible.
+
+<Callout emoji="❗">
+    **Note**<br />
+Before selecting a point, enable [**Grid Snaps**](../plasticity-essentials/grid-and-snap#grid-snap) and [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap).
+</Callout>
+<Callout type="info" emoji="ℹ️">
+The starting and ending points can be selected at any point on the  Curve, Edge,Face, or construction plane.
+</Callout>
+
+1. Click the button <ButtonIcon type="button-bridge-curve" /> on the Toolbar.
+2. Click on the starting point
+   - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Constrain to the X, Y, or Z-axis](./sketching-essentials#constrain-to-an-axis).
+   - <kbd>N</kbd> **Normal** Limit to the Face's normal direction.  
+3. Click on the ending point.  
+4. Set the options in the Command Dialog and Keyboard Shortcuts.
+     - **T:**
+          - **Value 1/2:** The relative position on the segment of the starting point/ending point.
+     - **Direction:** 
+          - **Direction 1/2:** Reverse the direction of the starting point/ending point.
+     - **Tension 1:**
+          - **Value 1/2:** The tension value affected 1st CV to 3rd CV of the starting point/ending point.
+     - **Tension 2:**
+          - **Value 1/2:** The tension value affected 2nd CV and 3rd CV of the starting point/ending point.
+     - **Tension 3:**
+          - **Value 1/2:** The tension value affected 3rd CV of the starting point/ending point.
+     - **Start curvature:**
+          - **G0, G1, G2, G3:** Specify the [continuity of the  Curve](../cad-essentials/continuity-curve-and-surface) at the starting point.
+     -  **End curvature:**
+          - **G0, G1, G2, G3:** Specify the [continuity of the  Curve](../cad-essentials/continuity-curve-and-surface) at the ending point.      
+   - **Trim:** When turned on, any Curve that extends beyond the bridge will be trimmed.
+5. Confirm with OK in the Command Dialog or right-click.
+
+![Bridge Curve](/img/bridge-curve.gif)
+
+## See also
+- [Bridge](./bridge)
+- [Bridge Vertex](./bridge-vertex)
+- [Bridge Edge](./bridge-edge)
+- [Join](./join)
+
+
+
+
+
+
+
+
