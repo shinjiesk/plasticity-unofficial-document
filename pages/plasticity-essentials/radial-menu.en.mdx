@@ -1,4 +1,5 @@
 import VideoPlayer from 'components/VideoPlayer';
+import { Tabs } from 'nextra/components'
 
 # Radial Menu
 
@@ -37,7 +38,7 @@ Like other commands, you can display the Radial Menu by pressing its shortcut.
 
 ## Creating a New Radial Menu
 
-You can craft a radial menu with any desired command. The menu name and its commands are set in a text file. <br />
+You can create a radial menu with any desired command. The menu name and its commands are set in a text file. <br />
 For instance, we'll design a "My Menu" Radial Menu with "Spline Curve", "Bridge", and "Lock Selected", accessible via the shortcut <kbd>Ctrl + Shift + F</kbd>.
 
 1. Open a text editor and create a new document.
@@ -96,7 +97,48 @@ Explanation: (Please note, the explanations starting with // are just for refere
 8. Type "menu" into the Command Palette to see a list of all loaded radial menus.
 9. Right-click on "Radial Menu: My Menu" and assign a shortcut <kbd>Ctrl + Shift + F</kbd>. For instructions on how to assign shortcuts, refer to [this section](./command-palette#assign-a-shortcut).
 10. Now, by pressing the shortcut <kbd>Ctrl + Shift + F</kbd>, you can display the radial menu you've created.
-11. If you make subsequent modifications to the text file, simply drag and drop it again to reflect the changes.
+
+## Editing a Radial Menu
+
+The files you've created for configuration are saved in the Plasticity settings folder. By editing these files, you can modify the radial menu.
+
+1. Open the settings folder:
+<Tabs items={['Windows', 'macOS', 'Linux']}>
+    <Tabs.Tab>
+    Navigate to `C:\Users\<user name>\.plasticity\radials`.
+    </Tabs.Tab>
+    <Tabs.Tab>
+    Enable the setting to show hidden folders.<br />
+    Navigate to `/Users/<user name>/.plasticity/radials/`.
+    </Tabs.Tab>
+    <Tabs.Tab>
+    Open the Plasticity settings folder.
+    </Tabs.Tab>
+</Tabs>
+2. Locate the configuration file within the folder. Open this file with a text editor.
+3. Edit the file following the same steps as when you created it.
+4. Save the file.
+5. Drag and drop the saved file into Plasticity's 3D viewport.
+6. Now, you can use the updated radial menu.
+
+## Remove a Radial Menu
+
+You can remove a radial menu by deleting a specific file located in a particular folder.
+
+1. Open the specified folder:
+<Tabs items={['Windows', 'macOS', 'Linux']}>
+    <Tabs.Tab>
+    Navigate to `C:\Users\<user name>\.plasticity\radials`.
+    </Tabs.Tab>
+    <Tabs.Tab>
+    Enable the setting to show hidden folders.<br />
+    Navigate to `/Users/<user name>/.plasticity/radials/`.
+    </Tabs.Tab>
+    <Tabs.Tab>
+    Open the Plasticity configuration folder.
+    </Tabs.Tab>
+</Tabs>
+2. Within the folder, you will find configuration files. Remove the file you wish to delete from the folder, and the radial menu will be removed.
 
 ## How to Call a Radial Menu from a Radial Menu
 
@@ -172,6 +214,9 @@ As a result, the selection-mode.radial.json will look like this:
 ```
 
 Now, from the "Selection mode" radial menu, you can call the "2nd My Menu" radial menu.
+
+
+
 
 ## Internal Designation for the Command
 

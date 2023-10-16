@@ -1,5 +1,5 @@
 import VideoPlayer from 'components/VideoPlayer';
-import { Callout } from 'nextra/components'
+import { Tabs } from 'nextra/components'
 
 # Radial Menu（ラジアルメニュー）
 
@@ -99,7 +99,49 @@ import { Callout } from 'nextra/components'
 8. コマンドパレットに「menu」と入力すると、読み込まれたラジアルメニューの一覧が表示されます。
 9. 「Radial Menu: My Menu」を右クリックして、ショートカット<kbd>Ctrl + Shift + F</kbd>を割り当てます。ショートカットの割り当て方法については、[このセクション](./command-palette#assign-a-shortcut)を参照してください。
 10. これで、ショートカット<kbd>Ctrl + Shift + F</kbd>を押すことで、作成したラジアルメニューを表示できます。
-11. テキストファイルを後で修正する場合、もう一度ドラッグ＆ドロップするだけで変更が反映されます。
+
+## ラジアルメニューの編集
+
+設定のために作成したファイルは、Plasticityの設定フォルダーに保存されています。このファイルを編集することで、ラジアルメニューを編集できます。
+
+1. 設定フォルダーを開きます
+<Tabs items={['Windows', 'macOS', 'Linux']}>
+    <Tabs.Tab>
+    `C:\Users\<user name>\.plasticity\radials` を開きます。
+    </Tabs.Tab>
+    <Tabs.Tab>
+    不可視フォルダを表示する設定にしてください。<br />
+    `/Users/<user name>/.plasticity/radials/` を開きます。
+    </Tabs.Tab>
+    <Tabs.Tab>
+    Plasticityの設定フォルダーを開きます。
+    </Tabs.Tab>
+</Tabs>
+2. フォルダ内に設定ファイルがあります。このファイルをテキストエディタで開きます。
+3. 新規作成時と同じ要領で、ファイルを編集します。
+4. ファイルを保存します。
+5. 保存したファイルを、Plasticityの3Dビューポートにドロップします。
+6. これで設定し直したラジアルメニューが使用できるようになります。
+
+## ラジアルメニューの削除
+
+Plasticityの設定フォルダーにあるファイルを削除することで、ラジアルメニューを削除できます。
+
+1. 設定フォルダーを開きます
+<Tabs items={['Windows', 'macOS', 'Linux']}>
+    <Tabs.Tab>
+    `C:\Users\<user name>\.plasticity\radials` を開きます。
+    </Tabs.Tab>
+    <Tabs.Tab>
+    不可視フォルダを表示する設定にしてください。<br />
+    `/Users/<user name>/.plasticity/radials/` を開きます。
+    </Tabs.Tab>
+    <Tabs.Tab>
+    Plasticityの設定フォルダーを開きます。
+    </Tabs.Tab>
+</Tabs>
+2. フォルダ内に設定用ファイルがあります。削除したいファイルをフォルダから取り出すと、ラジアルメニューが削除されます。
+
 
 ## ラジアルメニューからラジアルメニューを呼び出す方法
 
@@ -174,6 +216,7 @@ import { Callout } from 'nextra/components'
 ```
 
 これで「Selection mode」ラジアルメニューから、「2nd My Menu」ラジアルメニューを呼び出すことができるようになります。
+
 
 
 ### Internal Designation for the Command
