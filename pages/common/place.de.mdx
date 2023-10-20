@@ -1,0 +1,50 @@
+import Reference from 'components/Reference'
+
+# Place
+
+<Reference shortcut="Ctrl + D" command="Place" button="Left of Command Bar" />
+
+Duplicate objects and place them on reference point. Allow scaling, rotation, and flipping the axis. It can be used for boolean operations.
+
+1. Select the objects you want to duplicate.
+2. Press <kbd>Ctrl + D</kbd> or click the button.
+3. Click on the reference point of the object to be duplicated.
+4. Click on the reference point of the destination for duplication.
+   - <kbd>S</kbd> **Scale**Allows scaling.
+   - <kbd>A</kbd> **Angle**Allows rotation.
+   - <kbd>D</kbd> **Offset**Allows consecutive duplication.
+   - <kbd>F</kbd> **Flip**Allows flipping the duplication axis.
+   - <kbd>X</kbd>/<kbd>Y</kbd>/<kbd>Z</kbd> **x/y/z-up** Sets the duplication axis to the X/Y/Z-axis.
+   - <kbd>Shift + Q</kbd> **Slice:** Creates a Solid at the intersections with the Boolean target and preserves the remaining Solids.
+   - <kbd>Q</kbd> **Union:** Joins the Boolean target and tool together.
+   - <kbd>W</kbd> **Difference:** Removes the tool from the Boolean target.
+   - <kbd>Shift + E</kbd> **Intersect:** Creates a Solid at the intersection of the Boolean target and tool.
+   - <kbd>B</kbd> **New Body:** Creates a new Solid without performing Boolean operations.
+5. Click to confirm.
+6. To duplicate more object, repeat steps 4 and 5.
+7. Press <kbd>Esc</kbd> to exit.
+
+![Place](/img/place.gif)
+
+## See also
+- [Duplicate](./puplicate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

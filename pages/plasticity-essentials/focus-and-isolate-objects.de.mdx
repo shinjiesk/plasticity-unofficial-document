@@ -1,0 +1,64 @@
+import Reference from 'components/Reference'
+import VideoPlayer from 'components/VideoPlayer';
+import ButtonIcon from 'components/ButtonIcon'
+
+# Focus and Isolate Objects
+
+## Focus Objects
+
+This command enlarges the selected object to fill the entire viewport.
+
+<Reference shortcut="/ (Slash)" command="Viewport: Focus" button="" />
+
+##### How to Use
+
+1. Select the objects you wish to focus on.
+2. Press <kbd>/</kbd> to execute the command.
+3. Alternatively, click the <ButtonIcon type="button-focus" /> button located beneath the Outliner.
+4. The selected objects will be enlarged to fill the entire viewport.
+
+## Isolate Objects
+
+This command focuses on the selected object by displaying it exclusively on the screen, while temporarily hiding all other objects. This command also supports hierarchical isolation.
+
+<Reference shortcut=". (Period)" command="Isolate" button="" />
+
+##### How to Use
+
+1. Select the objects you wish to focus on.
+2. Press <kbd>.</kbd> to execute the command.
+3. Only the selected objects will be displayed on the screen.
+
+##### Hierarchical Isolation
+
+1. After executing the Isolate command, you can select additional objects to focus on.
+2. Execute the Isolate command again, and the display will be narrowed down to only the newly selected objects.
+3. You can repeat this process through multiple layers of isolation.
+
+##### Indicator and Layer Count
+
+An indicator at the top of the screen signifies that the Isolate mode is active. A number next to the indicator shows how many layers of isolation have been applied. For example, if "2 Isolated" is displayed, it indicates that you are in the second layer of isolation.
+
+<br/>
+<VideoPlayer fileName="isolate"/>
+
+
+## Center Objects
+
+This command centers a specific object in the middle of the screen.
+
+<Reference shortcut="Space" command="Viewport: Navigate To selection" button="" />
+
+##### How to Use
+
+1. Select the object you wish to center.
+2. Press <kbd>Space</kbd> to execute the command.
+3. The selected object will be displayed in the center of the screen.
+
+
+
+
+
+
+
+
