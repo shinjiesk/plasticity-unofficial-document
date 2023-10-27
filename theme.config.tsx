@@ -21,9 +21,7 @@ const config: DocsThemeConfig = {
                     }}
                 >
                     <div>
-                        <a href="/en">English</a>
-                        <span> | </span>
-                        <a href="/ja">日本語</a>
+                        <a href="https://www.plasticity.xyz" target="_blank" rel="noopener">Get Plasticity</a>
                     </div>
                     <div>
                         © Copyright {new Date().getFullYear()}. All rights
@@ -83,7 +81,7 @@ const config: DocsThemeConfig = {
             </>
         );
     },
-    banner: {
+    /*     banner: {
         key: "1.3-release",
         text: (
             <a
@@ -92,7 +90,7 @@ const config: DocsThemeConfig = {
                 🎉 Plasticity 1.3 is released → Click here for details
             </a>
         ),
-    },
+    }, */
 };
 
 export default config;

@@ -1,6 +1,6 @@
 {
     "index": { "display": "hidden" },
-    "whats-new": "What's New", 
+    "whats-new": "What's New",
     "all-commands": "Command List & Shortcut Keys",
     "---1": {
         "type": "separator",
@@ -30,10 +30,22 @@
         "title": "Advanced"
     },
     "cad-essentials": "CAD Essentials",
-    "get-plasticity": {
-        "title": "Get Plasticity",
-        "type": "page",
-        "href": "https://www.plasticity.xyz",
-        "newWindow": true
+    "Language": {
+        "title": "Language 🌎",
+        "type": "menu",
+        "items": {
+            "english": {
+                "title": "English",
+                "href": "/en"
+            },
+            "deutsch": {
+                "title": "Deutsch",
+                "href": "/de"
+            },
+            "japanese": {
+                "title": "日本語",
+                "href": "/ja"
+            }
+        }
     }
 }

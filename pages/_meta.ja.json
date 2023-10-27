@@ -30,10 +30,22 @@
         "title": "Advanced"
     },
     "cad-essentials": "CADの基本",
-    "get-plasticity": {
-        "title": "Get Plasticity",
-        "type": "page",
-        "href": "https://www.plasticity.xyz",
-        "newWindow": true
+    "Language": {
+        "title": "Language 🌎",
+        "type": "menu",
+        "items": {
+            "english": {
+                "title": "English",
+                "href": "/en"
+            },
+            "deutsch": {
+                "title": "Deutsch",
+                "href": "/de"
+            },
+            "japanese": {
+                "title": "日本語",
+                "href": "/ja"
+            }
+        }
     }
 }
