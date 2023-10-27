@@ -36,11 +36,11 @@
         "items": {
             "english": {
                 "title": "English",
-                "href": "/en"
+                "href": "https://doc.plasticity.xyz/en"
             },
             "japanese": {
                 "title": "日本語",
-                "href": "/ja"
+                "href": "https://doc.plasticity.xyz/ja"
             }
         }
     }
