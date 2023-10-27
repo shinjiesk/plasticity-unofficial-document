@@ -1,0 +1,55 @@
+import Reference from 'components/Reference'
+import VideoPlayer from 'components/VideoPlayer';
+import ButtonIcon from 'components/ButtonIcon'
+
+# Fokusieren und Isolieren von Objekten
+
+## Focus Objects
+
+Dieser Befehl vergrößert das ausgewählte Objekt, sodass es den gesamten Ansichtsbereich ausfüllt.
+
+<Reference shortcut="/ (Slash)" command="Viewport: Focus" button="" />
+
+##### Anwendung
+
+1. Wählen Sie die Objekte aus, auf die Sie sich konzentrieren möchten.
+2. Drücken Sie <kbd>/</kbd>, um den Befehl auszuführen.
+3. Alternativ können Sie auf die Schaltfläche <ButtonIcon type="button-focus" /> klicken, die sich unter dem Outliner befindet.
+4. Die ausgewählten Objekte werden vergrößert, um den gesamten Ansichtsbereich auszufüllen.
+
+## Isolate Objects
+
+Mit diesem Befehl können Sie sich auf das ausgewählte Objekt konzentrieren, indem es ausschließlich auf dem Bildschirm angezeigt wird und alle anderen Objekte vorübergehend ausgeblendet werden. Dieser Befehl unterstützt auch hierarchisches Isolieren.
+
+<Reference shortcut=". (Period)" command="Isolate" button="" />
+
+##### Anwendung
+
+1. Wählen Sie die Objekte aus, auf die Sie sich konzentrieren möchten.
+2. Drücken Sie <kbd>.</kbd>, um den Befehl auszuführen.
+3. Nur die ausgewählten Objekte werden auf dem Bildschirm angezeigt.
+
+##### Hierarchisches Isolieren
+
+1. Nachdem Sie den Befehl Isolieren ausgeführt haben, können Sie zusätzliche Objekte auswählen, auf die Sie sich konzentrieren möchten.
+2. Führen Sie den Befehl Isolieren erneut aus, und die Anzeige wird nur auf die neu ausgewählten Objekte beschränkt.
+3. Sie können diesen Vorgang durch mehrere Isolierungsebenen wiederholen.
+
+##### Anzeige und Anzahl der Ebenen
+
+Ein Indikator am oberen Bildschirmrand zeigt an, dass der Isoliermodus aktiv ist. Eine Zahl neben dem Indikator zeigt, wie viele Isolierungsebenen angewendet wurden. Wenn beispielsweise "2 isoliert" angezeigt wird, bedeutet dies, dass Sie sich in der zweiten Isolierungsebene befinden.
+
+<br/>
+<VideoPlayer fileName="isolate"/>
+
+## Center Objects
+
+Mit diesem Befehl wird ein bestimmtes Objekt in der Mitte des Bildschirms zentriert.
+
+<Reference shortcut="Space" command="Viewport: Navigate To selection" button="" />
+
+##### Anwendung
+
+1. Wählen Sie das Objekt aus, das Sie zentrieren möchten.
+2. Drücken Sie <kbd>Leertaste</kbd>, um den Befehl auszuführen.
+3. Das ausgewählte Objekt wird in der Mitte des Bildschirms angezeigt.

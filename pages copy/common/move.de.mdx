@@ -1,0 +1,50 @@
+import Reference from 'components/Reference'
+import { Callout } from 'nextra/components'
+
+# Move
+
+<Reference shortcut="G" command="Move" button="Links von der Befehlsleiste" />
+
+Verschieben von Objekten mit dem Move Gizmo. Optionen für Einschränkungen einer einzelnen Achse oder [Freestyle-Bewegung](#freestyle-move) sind verfügbar. Das Pivot ist ebenfalls einstellbar.
+
+1. Wählen Sie die Objekte aus, die Sie verschieben möchten.
+2. Drücken Sie <kbd>G</kbd>.
+3. Verwenden Sie den angezeigten Move Gizmo zum Verschieben.
+4. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
+   - **XYZ:** Geben Sie die Bewegungsmenge für die X-, Y- und Z-Achsen an.
+   - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z axis:** [Auf die X-, Y- oder Z-Achse beschränken](./sketching-essentials#constrain-to-an-axis).
+   - <kbd>Umschalt + X</kbd>/ <kbd>Umschalt + Y</kbd>/<kbd>Umschalt + Z</kbd> **X, Y, Z plane:** Auf die X-, Y- oder Z-Ebene beschränken.
+   - <kbd>G</kbd> **Screen space:** Begrenzen auf die sichtbare Ebene.
+   - <kbd>F</kbd> **Freestyle:** Klicken Sie, um den Start- und Endpunkt anzugeben, die die Richtung und Entfernung der Bewegung bestimmen.
+   - <kbd>V</kbd> **Pivot:** Klicken Sie, um die Position des Gizmo anzugeben.
+   - <kbd>W</kbd> **Worldspace:** Ändern Sie die Koordinatenachse des Gizmo in Weltkoordinaten.
+4. Bestätigen Sie mit OK im Befehlsdialog oder mit einem Rechtsklick.
+
+<Callout type="info" emoji="💡">
+**Tipps**
+- Um ausgewählte Objekte zum Ursprung zu verschieben, drücken Sie: <kbd>G</kbd> (Move) > <kbd>F</kbd> > Rechtsklick > Rechtsklick.
+- Um ein Objekt basierend auf einem ausgewählten Punkt zum Ursprung zu verschieben, drücken Sie: <kbd>G</kbd> (Move) > <kbd>F</kbd> > Klicken Sie auf den Punkt des Objekts > Rechtsklick.
+</Callout>
+
+## Freestyle Move[#freestyle-move]
+
+Dieser Befehl entspricht der <kbd>F</kbd> Option des **Move** Befehls.
+
+1. Wählen Sie die Objekte aus, die Sie verschieben möchten.
+2. Verwenden Sie den **Freestyle Move** Befehl in der Befehlspalette.
+3. Klicken Sie auf den Start- und Endpunkt, um die Richtung und Entfernung der Bewegung zu bestimmen.
+4. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
+   - Die Option ist dieselbe wie beim **Rotate** Befehl.
+4. Bestätigen Sie mit OK im Befehlsdialog oder mit einem Rechtsklick.
+
+![Freestyle-Bewegung](/img/freestyle-move.gif)
+
+## Siehe auch
+- [Mirror](./mirror)
+- [Rotate](./rotate)
+- [Scale](./scale)
+
+
+
+
+

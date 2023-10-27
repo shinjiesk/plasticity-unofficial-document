@@ -1,0 +1,56 @@
+import Reference from 'components/Reference'
+import { Callout } from 'nextra/components'
+
+# Pipe
+
+<Reference shortcut="P" command="Pipe" button="Right of Command Bar" />
+
+Create a pipe of any size from a Curve or an Edge. It can be used for boolean operations. Polygon or custom profile options are available.
+
+1. Select the Curve or Edge you want to pipe.
+2. Press <kbd>P</kbd>.
+3. Drag the yellow dot to specify the section size and the yellow square to specify the pipe thickness. Drag the white circle to specify the rotation angle.
+4. Set the options in the Command Dialog and Keyboard Shortcuts.
+     - **Select target bodies:**, <kbd>Shift + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>,  <kbd>B</kbd>,  <kbd>T</kbd>
+          - These Boolean options function the same as the Boolean command. Refer to the Boolean command.
+     - **Select custom profile:** Select Regions, Curves or Faces to specify the custom profiles.
+     - **Vertex count:** Specify the number of Vertices for the profile's polygon. If you specify 0, it will be circular.
+     - **Section size:** Specify the section size.
+     - **Thickness:** Specify the pipe wall thickness.
+     - **Angle:** Specify the rotation angle.
+     - <kbd>C</kbd> **Custom profile** Select the Regions, Curves or Faces to specify the custom profiles.
+     - <kbd>D</kbd> **Section size** Specify the section size by moving the cursor.
+     - <kbd>A</kbd> **Angle** Specify the rotation angle by moving the cursor.
+     - <kbd>Shift + T</kbd> **Thickness** Specify the pipe wall thickness by moving the cursor.
+5. Confirm with OK in the Command Dialog or right-click.
+
+<Callout emoji="❗">
+**Note**<br />
+The "Pipe" command is NOT for creating dimensionally accurate pipes. 
+It is for quickly creating cool looking pipes/tubes. 
+It does a lot of things like angles as polygons that make it not dimensionally accurate for any kind of plumbing or whatever. 
+To create a precise pipe, use the [**Sweep**](./sweep) command 
+</Callout>
+
+![Pipe](/img/pipe.gif)
+
+## See also
+- [Boolean](./boolean)
+- [Cut](./cut)
+- [Extrude](./extrude)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

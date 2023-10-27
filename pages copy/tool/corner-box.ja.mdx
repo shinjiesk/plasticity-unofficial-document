@@ -1,0 +1,45 @@
+import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon';
+import VideoPlayer from 'components/VideoPlayer';
+
+# Corner Box（対角線からの直方体）
+
+<Reference shortcut='Shift + B' command='Corner Box' button='ツールバー' />
+
+対角線上の角の点と高さを指定して立方体を作成できます。ブーリアン操作も可能です。
+
+1. ツールバーのボタン <ButtonIcon type="button-corner-box" />をクリックします。
+2. 底面の対角線上の始点でクリックします。
+   - <kbd>C</kbd> **Center/Corner:** Center Boxに切り替えます。
+   - <kbd>S</kbd> **Square:** 正方形に限定します。
+3. 対角線上の終点でクリックします。
+4. カーソルを動かして目的の高さでクリックします。
+5. コマンドダイアログとキーボードショートカットでオプションを設定します。
+   - **Select target bodies**, <kbd>Shift + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>Shift + E</kbd>, <kbd>B</kbd>, <kbd>T</kbd>
+      - これらのオプションはBooleanコマンドと同じ機能です。詳細は[**Boolean**](../solid/boolean)コマンドを参照してください。
+   - **Width:** 幅を指定します。
+   - **Length:** 長さを指定します。
+   - **Height:** 高さを指定します。
+   - <kbd>H</kbd> **Height:** カーソルを動かして高さを指定します。
+5. コマンドダイアログのOKをクリックするか、右クリックで確定します。
+6. 直方体が作成されます。
+
+<VideoPlayer fileName="corner-box"/>
+
+## 関連項目
+
+- [Center Box](./center-box)
+- [Three-Point Box](./three-point-box)
+
+
+
+
+
+
+
+
+
+
+
+
+

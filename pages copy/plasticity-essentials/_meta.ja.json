@@ -1,0 +1,21 @@
+{
+    "object-types": "オブジェクトの種類",
+    "operating-the-3d-viewport": "3Dビューポートの操作",
+    "user-interface-overview": "インターフェイスの概要",
+    "file-menu": "P-メニュー",
+    "outliner": "アウトライナー",
+    "group-objects": "オブジェクトをグループ化する",
+    "toggle-object-states": "オブジェクト状態を切り替える",
+    "focus-and-isolate-objects": "オブジェクトにフォーカスする",
+    "selection-mode": "選択モード",
+    "selecting-objects":"オブジェクトを選択する",
+    "view-mode": "ビューモード",
+    "grid-and-snap": "グリッドとスナップ",
+    "construction-plane": "構築平面",
+    "command-bar": "コマンドバー",
+    "command-palette": "コマンドパレット",
+    "radial-menu": "ラジアルメニュー",
+    "general": "一般機能",
+    "importing-reference-images": "参照画像をインポートする",
+    "export-obj": "OBJファイルの書き出し"
+}

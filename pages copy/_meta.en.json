@@ -1,0 +1,39 @@
+{
+    "index": { "display": "hidden" },
+    "whats-new": "What's New", 
+    "all-commands": "Command List & Shortcut Keys",
+    "---1": {
+        "type": "separator",
+        "title": ""
+    },
+    "getting-started": "Getting Started",
+    "plasticity-essentials": "Plasticity Essentials",
+    "---2": {
+        "type": "separator",
+        "title": "Tools"
+    },
+    "tool": "Sketching & Primitive Tools",
+    "---3": {
+        "type": "separator",
+        "title": "Commands"
+    },
+    "common": "Common",
+    "sketch": "Sketch ",
+    "solid": "Solid ",
+    "---4": {
+        "type": "separator",
+        "title": "Integration"
+    },
+    "blender": "Blender",
+    "---5": {
+        "type": "separator",
+        "title": "Advanced"
+    },
+    "cad-essentials": "CAD Essentials",
+    "get-plasticity": {
+        "title": "Get Plasticity",
+        "type": "page",
+        "href": "https://www.plasticity.xyz",
+        "newWindow": true
+    }
+}

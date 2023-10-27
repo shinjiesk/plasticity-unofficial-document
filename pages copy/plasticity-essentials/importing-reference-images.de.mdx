@@ -1,0 +1,35 @@
+---
+title: Referenzbilder importieren
+description: Erklärt, wie Bilder zur Referenz importiert werden und wie man ihre Transparenz einstellt, unter anderem.
+---
+
+## Wie man Referenzbilder importiert
+
+1. Wählen Sie die Ebene aus, auf der Sie das Bild anzeigen möchten.
+   - Neben den XY-, YX- und XZ-Ebenen können Sie auch eine Konstruktionsebene auswählen.
+2. Klicken Sie oben links im Menü auf **Import/Append**.
+![](./img/import.png)
+3. Ein Dateiauswahldialog wird angezeigt.
+   - Wählen Sie eine Bilddatei aus.
+   - Das System unterstützt die Formate PNG und JPEG.
+4. Das Bild wird als Empty importiert.
+![](./img/empty.png)
+
+## Anpassen des Erscheinungsbilds von Referenzbildern
+
+Sie können Dinge wie die Transparenz von Referenzbildern einstellen.
+
+1. Klicken Sie auf das Referenzbild, um es auszuwählen.
+2. Drücken Sie die Tastenkombination <kbd>M</kbd>.
+3. Ein Dialog zur Einstellung des Bildmaterials wird angezeigt.
+![](./img/image-material.png)
+   - **Depth**:
+     - **Normal**: Es wird von Objekten vor der Ebene verdeckt und verdeckt Objekte dahinter.
+     - **Front**: Es ist immer sichtbar, unabhängig von anderen Objekten. (**Opacity** muss kleiner als 1 sein.)
+     - **Behind**:
+   - **Opacity**: 
+      - Geben Sie die Transparenz numerisch an. Das Kontrollkästchen muss aktiviert sein.
+   - **Culling**:
+     - **Front only**: Es wird nur angezeigt, wenn es von vorne betrachtet wird.
+     - **Double sided**: Es wird angezeigt, ob es von vorne oder von hinten betrachtet wird.
+4. Bestätigen Sie im Dialog mit OK oder durch Rechtsklick.

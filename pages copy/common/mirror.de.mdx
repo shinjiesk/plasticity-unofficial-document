@@ -1,0 +1,39 @@
+import Reference from 'components/Reference'
+
+# Mirror
+
+<Reference shortcut="Alt + X" command="Mirror" button="Links von der Befehlsleiste" />
+
+Objekte mit dem Mirror Gizmo spiegeln. Entlang der Spiegelebene schneiden und Hälften zusammenführen. [Freestyle-Spiegelung](#freestyle-spiegelung) möglich.
+
+1. Wählen Sie die Objekte aus, die Sie spiegeln möchten.
+2. Drücken Sie <kbd>Alt + X</kbd> oder klicken Sie auf die Schaltfläche.
+3. Verwenden Sie den angezeigten Mirror Gizmo zum Spiegeln.
+4. Legen Sie die Spiegelrichtung und Optionen fest.
+   - **Cut:** Wenn aktiviert, wird das Spiegelziel vor dem Spiegeln durch die Spiegelebene geteilt.
+   - **Union:** Wenn aktiviert, werden die beiden gespiegelten Objekte kombiniert.
+   - <kbd>X</kbd>/<kbd>Y</kbd>/<kbd>Z</kbd> **Position X/Y/Z** Spiegeln in der positiven Richtung der X/Y/Z-Achse.
+   - <kbd>Umschalt + X</kbd>/<kbd>Umschalt + Y</kbd>/<kbd>Umschalt + Z</kbd> **Negative X/Y/Z** Spiegeln in der negativen Richtung der X/Y/Z-Achse.
+   - <kbd>F</kbd> **Freestyle:** Geben Sie die Spiegelebene an, indem Sie auf den Start- und Endpunkt klicken.
+   - <kbd>Q</kbd> **Union (merge):** Kombiniert die beiden gespiegelten Objekte.
+5. Sie können die Spiegelebene auch durch Klicken auf eine flache oder gebogene Oberfläche festlegen.
+   - Wenn eine gebogene Oberfläche ausgewählt ist, ist die Spiegelebene die Ebene, die senkrecht zur Normale dieser Oberfläche steht und Kontakt mit der gebogenen Oberfläche hat.
+6. Bestätigen Sie mit OK im Befehlsdialog oder mit einem Rechtsklick.
+
+## Freestyle Mirror[#freestyle-spiegelung]
+
+Dieser Befehl entspricht der <kbd>F</kbd> Option des **Mirror** Befehls.
+
+1. Wählen Sie die Objekte aus, die Sie spiegeln möchten.
+2. Verwenden Sie den **Freestyle Mirror** Befehl in der Befehlspalette.
+3. Geben Sie die Spiegelebene an, indem Sie auf den Start- und Endpunkt klicken.
+4. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
+   - Die Option ist dieselbe wie beim **Mirror** Befehl.
+5. Bestätigen Sie mit OK im Befehlsdialog oder mit einem Rechtsklick.
+
+![Freestyle Spiegeln](/img/freestyle-mirror.gif)
+
+## Siehe auch
+- [Move](./move)
+- [Rotate](./rotate)
+- [Scale](./scale)

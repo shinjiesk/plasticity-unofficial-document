@@ -1,0 +1,28 @@
+import Reference from 'components/Reference'
+import { Callout } from 'nextra/components'
+
+# Duplicate
+
+<Reference shortcut="Umschalt + D" command="Duplicate" button="Links von der Befehlsleiste" />
+
+Objekte duplizieren und mit dem Move Gizmo verschieben. Einschränkungen für eine einzelne Achse oder freies Bewegen möglich. Pivot ist einstellbar.
+
+1. Wählen Sie die Objekte aus, die Sie duplizieren möchten.
+2. Drücken Sie <kbd>Umschalt + D</kbd>.
+3. Verwenden Sie den angezeigten Move Gizmo zum Verschieben.
+4. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
+   - **XYZ:** Geben Sie die Bewegungsmenge für die X-, Y- und Z-Achsen an.
+   - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-Achse:** [Auf die X-, Y- oder Z-Achse beschränken](./sketching-essentials#constrain-to-an-axis).
+   - <kbd>Umschalt + X</kbd>/ <kbd>Umschalt + Y</kbd>/<kbd>Umschalt + Z</kbd> **X, Y, Z-Ebene:** Auf die X-, Y- oder Z-Ebene beschränken.
+   - <kbd>G</kbd> **Screen space:** Begrenzen auf die sichtbare Ebene.
+   - <kbd>F</kbd> **Freestyle:** Klicken Sie, um den Start- und Endpunkt anzugeben, die die Richtung und Entfernung der Bewegung bestimmen.
+   - <kbd>V</kbd> **Pivot:** Klicken Sie, um die Position des Gizmo anzugeben.
+   - <kbd>W</kbd> **Worldspace:** Ändern Sie die Koordinatenachse des Gizmo in Weltkoordinaten.
+4. Bestätigen Sie mit OK im Befehlsdialog oder mit einem Rechtsklick.
+
+<Callout type="info">
+   - Beim Duplizieren mehrerer Bereiche werden diese als kombinierte Form dupliziert.
+</Callout> 
+
+## Siehe auch
+- [Place](./place)

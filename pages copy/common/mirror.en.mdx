@@ -1,0 +1,56 @@
+import Reference from 'components/Reference'
+
+# Mirror
+
+<Reference shortcut="Alt + X" command="Mirror" button="Left of Command Bar" />
+
+Mirror objects using Mirror Gizmo. Slice along the mirror plane and merge halves together. [Freestyle mirroring](#freestyle-mirror) possible.
+
+1. Select the objects you want to mirror.
+2. Press <kbd>Alt + X</kbd> or click the button.
+3. Use the displayed Mirror Gizmo to mirror.
+4. Specify the mirroring direction and options.
+   - **Cut:** When enabled, the mirror target is divided by the mirror plane before mirroring.
+   - **Union:** When enabled, the two mirrored objects are combined.
+   - <kbd>X</kbd>/<kbd>Y</kbd>/<kbd>Z</kbd> **Position X/Y/Z** Mirror in the positive direction of the X/Y/Z-axis.
+   - <kbd>Shift + X</kbd>/<kbd>Shift + Y</kbd>/<kbd>Shift + Z</kbd> **Negative X/Y/Z** Mirror in the negative direction of the X/Y/Z-axis.
+   - <kbd>F</kbd> **Freestyle:** Specify the mirroring plane by clicking on the starting and ending points.
+   - <kbd>Q</kbd> **Union (merge):** Combines the two mirrored objects.
+5. You can also specify the mirror plane by clicking on a flat or curved surface.
+   - When a  Curved surface is selected, the mirror plane is the plane that is perpendicular to the normal of that surface and makes contact with the  Curved surface.
+6. Confirm with OK in the Command Dialog or right-click.
+
+## Freestyle Mirror[#freestyle-mirror]
+
+This command is equivalent to the <kbd>F</kbd> option of the **Mirror** command.
+
+1. Select the objects you want to mirror.
+2. Use the **Freestyle Mirror**  command in the Command Palette.
+3. Specify the mirroring plane by clicking on the starting and ending points.
+4. Set the options in the Command Dialog and Keyboard Shortcuts.
+   - The option is the same as the **Mirror** command.
+5. Confirm with OK in the Command Dialog or right-click.
+
+![Freestyle Mirror](/img/freestyle-mirror.gif)
+
+## See also
+- [Move](./move)
+- [Rotate](./rotate)
+- [Scale](./scale)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

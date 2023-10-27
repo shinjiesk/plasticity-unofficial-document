@@ -1,0 +1,59 @@
+import Reference from 'components/Reference'
+
+# Rotate（回転）
+
+<Reference shortcut="R" command="Rotate" button="コマンドバー左" />
+
+オブジェクトをRotate Gizmoを使用して回転させることができます。単一軸の制約や[フリースタイルの回転](#freestyle-rotate)のオプションが利用可能です。また、ピボットも調整できます。
+
+1. 回転したいオブジェクトを選択します。
+2. <kbd>R</kbd>を押します。
+3. 表示された回転ギズモを使用して回転します。
+4. コマンドダイアログとキーボードショートカットでオプションを設定します。
+   - **Angle:** 回転ギズモで最後に指定した角度を数値で指定します。
+   - **Axis:** 回転軸をX、Y、Zのベクトルで指定します。
+   - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [X、Y、Z軸に拘束します](./sketching-essentials#constrain-to-an-axis)。
+   - <kbd>G</kbd> **Screen space:** 見た目の平面に限定します。
+   - <kbd>F</kbd> **Freestyle:** 回転軸の始点と終点をクリックし、参照点をクリックします。カーソルを動かして回転し、希望の角度でクリックします。
+   - <kbd>V</kbd> **Pivot:** クリックしてギズモの位置を指定します。
+   - <kbd>W</kbd> **Worldspace:** ギズモの座標軸をワールド座標にします。
+5. コマンドダイアログのOKをクリックするか、右クリックで確定します。
+
+## Freestyle Rotate（自由な軸で回転）[#freestyle-rotate]
+
+このコマンドは **Rotate** コマンドの<kbd>F</kbd>オプションと同じです。
+
+1. 回転したいオブジェクトを選択します。
+2. コマンドパレットで **Freestyle Rotate** を実行します。
+3. 回転軸の始点と終点をクリックし、参照点をクリックします。
+4. カーソルを動かして回転し、希望の角度でクリックします。
+5. コマンドダイアログとキーボードショートカットでオプションを設定します。
+   - オプションは **Rotate** コマンドと同じです。
+6. コマンドダイアログのOKをクリックするか、右クリックで確定します。
+
+![Freestyle Rotate](/img/freestyle-rotate.gif)
+
+## 関連項目
+- [Mirror](./mirror)
+- [Move](./move)
+- [Scale](./scale)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

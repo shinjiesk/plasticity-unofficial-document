@@ -1,0 +1,57 @@
+import Reference from 'components/Reference'
+
+# Mirror（ミラー）
+
+<Reference shortcut="Alt + X" command="Mirror" button="Left of Command Bar" />
+
+Mirror Gizmoを使用してオブジェクトをミラー反転できます。ミラープレーンに沿ってスライスし、半分を結合します。[フリースタイルミラーリング](#freestyle-mirror)も可能です。
+
+1. ミラーしたいオブジェクトを選択します。
+2. キーボードショートカット <kbd>Alt + X</kbd> を押すか、ボタンをクリックします。
+3. 表示されたミラーギズモを使ってミラーします。
+4. コマンドダイアログとキーボードショートカットでオプションを設定します。
+   - **Cut:** オンにすると、ミラー対象をミラー平面で分割してからミラーします。
+   - **Union:** オンにすると、ミラーしたふたつを結合します。
+   - <kbd>X</kbd>/<kbd>Y</kbd>/<kbd>Z</kbd> **Position X/Y/Z** X/Y/Z軸の正の方向にミラーします。
+   - <kbd>Shift + X</kbd>/<kbd>Shift + Y</kbd>/<kbd>Shift + Z</kbd> **Negative X/Y/Z** X/Y/Z軸の負の方向にミラーします。
+   - <kbd>F</kbd> **Freestyle** 始点と終点をクリックしてミラー平面を指定します。
+   - <kbd>Q</kbd> **Union (merge)** ミラーしたふたつを結合します。
+5. 平面または曲面をクリックしてミラー平面を指定することもできます。
+   - 曲面を指定したときは、その曲面の法線に垂直で曲面に接する平面がミラー平面になります。
+6. コマンドダイアログのOKをクリックするか、右クリックで確定します。 
+
+## Freestyle Mirror（自由な平面でミラー）[#freestyle-mirror]
+
+このコマンドは **Mirror** コマンドの<kbd>F</kbd>オプションと同じです。
+
+1. ミラーしたいオブジェクトを選択します。
+2. コマンドパレットで **Freestyle Mirror** を実行します。
+3. 始点と終点をクリックしてミラー平面を指定します。
+4. コマンドダイアログとキーボードショートカットでオプションを設定します。
+   - オプションは **Mirror** コマンドと同じです。
+5. コマンドダイアログのOKをクリックするか、右クリックで確定します。
+
+![Freestyle Mirror](/img/freestyle-mirror.gif)
+
+## 関連項目
+- [Move](./move)
+- [Rotate](./rotate)
+- [Scale](./scale)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+# Blender Bridge FAQ
+
+----
+- Q: Can Blender Bridge append Blender files into Plasticity?
+- A: Currently, the integration is only one-way, from Plasticity to Blender.
+----
+- Q: Are Plasticity's materials reflected in Blender?
+- A: Currently, they are not reflected.
+----
+- Q: What happens to the data when models imported into Blender using Blender Bridge are refreshed or refaceted?
+- A: When models are refreshed or refaceted in Blender via the Blender Bridge, certain data get overwritten while others remain unchanged.
+    - Data overwritten:
+        1. The "geometry" of objects is overwritten. This implies that data associated with vertices are overwritten, including attributes like seams, sharpness, and UVs.
+        2. The "outliner-specific metadata" of objects is overwritten. For instance, names, collections, visibility, and so forth are overwritten.
+        3. Everything you do in Edit Mode gets potentially overwritten.
+    - Data not overwritten:
+        1. The "data associated with objects" is not overwritten. This includes elements like transforms, modifiers, parenting, materials, and so on.
+        2. Everything you do in Object Mode will be kept.
+----
+- Q: Which port do Plasticity and Blender use for integration?
+- A: By default, they use port 8980. If you wish to change the port, you can do so in Plasticity under Preferences > Server, and in Blender under the Plasticity Sidebar Panel.

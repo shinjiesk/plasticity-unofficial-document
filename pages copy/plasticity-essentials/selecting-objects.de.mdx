@@ -1,0 +1,58 @@
+import VideoPlayer from 'components/VideoPlayer';
+
+# Objekte auswählen
+
+Wählen Sie die gewünschten Objekte mit der Maus oder Tastatur aus.
+
+## Auswahl mit der Maus
+
+| Ziel         | Mausaktion                   | Auswahl                                                                     |
+| ------------ | ---------------------------- | --------------------------------------------------------------------------- |
+| Alle Objekte | Klick                        | Das Objekt auswählen.                                                       |
+| Alle Objekte | Ziehen von rechts nach links | Wählt Objekte aus, die die grüne Auswahl berühren.                          |
+| Alle Objekte | Ziehen von links nach rechts | Wählt Objekte vollständig aus, die in der violetten Auswahl enthalten sind. |
+
+![Mausziehauswahl](/img/mouse-drag-selection.gif)
+
+### Objektspezifische Auswahl
+
+| Mausaktion                    | Ziel              | Auswahl                                         |
+| ----------------------------- | ----------------- | ----------------------------------------------- |
+| <kbd>Alt</kbd> + Klick        | Edge              | Edge-Schleifen auswählen.                       |
+| <kbd>Strg + Alt</kbd> + Klick | Edge              | Edge-Ringe auswählen.                           |
+| <kbd>Alt</kbd> + Klick        | Curve             | Alle Curves auf der gleichen Ebene auswählen.   |
+| <kbd>Alt</kbd> + Klick        | Region            | Alle Regions auf der gleichen Ebene auswählen.  |
+| <kbd>Alt</kbd> + Klick        | Face              | Alle zugehörigen Faces auswählen.               |
+| <kbd>Strg + Alt</kbd> + Klick | Face              | Alle parallelen Faces auswählen.                |
+| <kbd>Strg + Alt</kbd> + Klick | Cylindercal Face  | Alle parallelen zylindrischen Faces auswählen.  |
+| <kbd>Alt</kbd> + Klick        | Solid/Sheet/Empty | Alle Solid/Sheet/Empty in der Gruppe auswählen. |
+
+## Auswahl mit Tastenkombinationen
+
+| Befehlsname       | Tastenkombination              | Hinweis                                                    |
+| ----------------- | ------------------------------ | ---------------------------------------------------------- |
+| Select all        | <kbd>A</kbd>                   | Alle Objekte auswählen.                                    |
+| Select all Curves | <kbd>Strg + A</kbd>            | Alle Curves auswählen.                                     |
+| Deselect all      | <kbd>Escape</kbd>              | Auswahl aufheben.                                          |
+| Invert Selection  | <kbd>Alt + A</kbd>             | Auswahl umkehren.                                          |
+| Select Adjacent   | <kbd>Strg + Umschalt + =</kbd> | Angrenzende Objekte zu den aktuell ausgewählten auswählen. |
+
+### Auswahl aus den aktuell ausgewählten Objekten
+
+| Befehlsname                   | Tastenkombination  | Hinweis                                                                              |
+| ----------------------------- | ------------------ | ------------------------------------------------------------------------------------ |
+| Selection: convert to edges   | <kbd>Strg + 2</kbd> | Wählt nur die Edges der aktuell ausgewählten Solids, Sheets und Faces.               |
+| selection: convert to faces   | <kbd>Strg + 3</kbd> | Wählt nur die Faces der aktuell ausgewählten Solids und Sheets.                      |
+| selection: convert to solids  | <kbd>Strg + 4</kbd> | Wählt nur die Solids oder Sheets der aktuell ausgewählten Faces und Edges.           |
+| selection: convert to groups  | <kbd>Strg + 5</kbd> | Wählt alle Objekte innerhalb der Gruppe der ausgewählten Objekte.                    |
+
+![Objekte inbegriffen auswählen](/img/select-objects-included.gif)
+
+### Quellobjekte auswählen, die im letzten Vorgang verwendet wurden
+
+| Befehlsname                       | Tastenkombination              | Hinweis                                                                                                                                                        |
+| --------------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Select Previous Entity Collection | <kbd>Strg + T</kbd>            | Quellobjekte auswählen, die im letzten Vorgang verwendet wurden. Dieses Feature mehrfach verwenden, um Quellen aus früheren Vorgängen sequenziell auszuwählen. |
+| Select Next Entity Collection     | <kbd>Strg + Umschalt + T</kbd> | Ein Gegenstück zu "Select Previous Entity Collection". Ermöglicht die sequenzielle Auswahl von nachfolgenden Quellobjekten.                                    |
+
+<VideoPlayer fileName="select-previous-entity-collection"/>
