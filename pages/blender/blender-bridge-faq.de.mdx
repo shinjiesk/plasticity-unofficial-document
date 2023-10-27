@@ -1,21 +1,21 @@
 # Blender Bridge FAQ
 
 ----
-- Q: Can Blender Bridge append Blender files into Plasticity?
-- A: Currently, the integration is only one-way, from Plasticity to Blender.
+- F: Kann Blender Bridge Blender-Dateien in Plasticity anhängen?
+- A: Derzeit ist die Integration nur in eine Richtung möglich, von Plasticity nach Blender.
 ----
-- Q: Are Plasticity's materials reflected in Blender?
-- A: Currently, they are not reflected.
+- F: Werden die Materialien von Plasticity in Blender widergespiegelt?
+- A: Derzeit werden sie nicht widergespiegelt.
 ----
-- Q: What happens to the data when models imported into Blender using Blender Bridge are refreshed or refaceted?
-- A: When models are refreshed or refaceted in Blender via the Blender Bridge, certain data get overwritten while others remain unchanged.
-    - Data overwritten:
-        1. The "geometry" of objects is overwritten. This implies that data associated with vertices are overwritten, including attributes like seams, sharpness, and UVs.
-        2. The "outliner-specific metadata" of objects is overwritten. For instance, names, collections, visibility, and so forth are overwritten.
-        3. Everything you do in Edit Mode gets potentially overwritten.
-    - Data not overwritten:
-        1. The "data associated with objects" is not overwritten. This includes elements like transforms, modifiers, parenting, materials, and so on.
-        2. Everything you do in Object Mode will be kept.
+- F: Was passiert mit den Daten, wenn Modelle, die mit Blender Bridge in Blender importiert wurden, aktualisiert oder neu facettiert werden?
+- A: Wenn Modelle über die Blender Bridge in Blender aktualisiert oder neu facettiert werden, werden bestimmte Daten überschrieben, während andere unverändert bleiben.
+    - Überschriebene Daten:
+        1. Die "Geometrie" der Objekte wird überschrieben. Das bedeutet, dass Daten, die mit den Vertices verbunden sind, überschrieben werden, einschließlich Attribute wie Nähte, Schärfe und UVs.
+        2. Die "outliner-spezifischen Metadaten" der Objekte werden überschrieben. Beispielsweise werden Namen, Sammlungen, Sichtbarkeit und so weiter überschrieben.
+        3. Alles, was Sie im Edit Mode tun, wird möglicherweise überschrieben.
+    - Nicht überschriebene Daten:
+        1. Die "mit den Objekten verbundenen Daten" werden nicht überschrieben. Dazu gehören Elemente wie Transformationen, Modifikatoren, Elternschaft, Materialien und so weiter.
+        2. Alles, was Sie im Object Mode tun, wird beibehalten.
 ----
-- Q: Which port do Plasticity and Blender use for integration?
-- A: By default, they use port 8980. If you wish to change the port, you can do so in Plasticity under Preferences > Server, and in Blender under the Plasticity Sidebar Panel.
+- F: Welchen Port verwenden Plasticity und Blender für die Integration?
+- A: Standardmäßig verwenden sie den Port 8980. Wenn Sie den Port ändern möchten, können Sie dies in Plasticity unter Einstellungen > Server und in Blender im Plasticity Sidebar Panel tun.

@@ -3,47 +3,47 @@ import { Tabs } from 'nextra/components'
 
 # Radial Menu
 
-The Radial Menu is a circular interface for executing commands. You can execute all commands available in Plasticity. By default, there are two radial menus: "Selection mode" and "Viewport settings". Additionally, users can create their own custom radial menus.
+Das Radial Menu ist eine kreisförmige Schnittstelle zum Ausführen von Befehlen. Sie können alle in Plasticity verfügbaren Befehle ausführen. Standardmäßig gibt es zwei Radial Menus: "Selection mode" und "Viewport settings". Zusätzlich können Benutzer ihre eigenen benutzerdefinierten Radial Menus erstellen.
 
 ![Radial Menu](/img/radial-menu.png)
 
-## Setting Up the Radial Menu
+## Einrichten des Radial Menu
 
-To use the default "Selection mode" and "Viewport settings" radial menus, some setup is required.
+Um die standardmäßigen Radial Menus "Selection mode" und "Viewport settings" zu verwenden, ist eine Einrichtung erforderlich.
 
-1. Download the following two text files: When you click, the content of the text will be displayed. Click "Download" at the top right.
+1. Laden Sie die folgenden zwei Textdateien herunter: Wenn Sie klicken, wird der Inhalt des Textes angezeigt. Klicken Sie oben rechts auf "Download".
     - [selection-mode.radial.json](https://app.box.com/s/xrh5xjepvcio33fvmy4thbc00ady5p4k)
     - [viewport-settings.radial.json](https://app.box.com/s/g9hlphfr4shjhkf2c5gfdknnxudq8ouu)
-2. Drag and drop the downloaded files into Plasticity's 3D viewport.
-3. Although there won't be any visible changes on the screen, the radial menu's definition is now loaded and ready for use.
+2. Ziehen Sie die heruntergeladenen Dateien in Plasticitys 3D-Viewport.
+3. Obwohl keine sichtbaren Änderungen auf dem Bildschirm erfolgen, ist die Definition des Radial Menus nun geladen und einsatzbereit.
 
-You'll need to assign shortcuts to access the radial menus.
+Sie müssen Tastenkombinationen zuweisen, um auf die Radial Menus zuzugreifen.
 
-4. Press the <kbd>F</kbd> key to open the Command Palette.
-5. Type "menu" into the Command Palette. You'll see entries for "Radial Menu: Selection Mode" and "Radial Menu: Viewport Settings".
-6. Right-click on "Radial Menu: Selection Mode" and assign a shortcut. For guidance on assigning shortcuts, see [this section](./command-palette#assign-a-shortcut).
-7. Right-click on "Radial Menu: Viewport Settings" and assign a shortcut.
-8. Now, by pressing the shortcut you've assigned, you can display the radial menu.
+4. Drücken Sie die <kbd>F</kbd>-Taste, um die Command Palette zu öffnen.
+5. Geben Sie "menu" in die Command Palette ein. Sie sehen Einträge für "Radial Menu: Selection Mode" und "Radial Menu: Viewport Settings".
+6. Klicken Sie mit der rechten Maustaste auf "Radial Menu: Selection Mode" und weisen Sie eine Tastenkombination zu. Für Anweisungen zum Zuweisen von Tastenkombinationen siehe [diesen Abschnitt](./command-palette#assign-a-shortcut).
+7. Klicken Sie mit der rechten Maustaste auf "Radial Menu: Viewport Settings" und weisen Sie eine Tastenkombination zu.
+8. Jetzt können Sie das Radial Menu anzeigen, indem Sie die zugewiesene Tastenkombination drücken.
 
-## Using the Radial Menu
+## Verwendung des Radial Menu
 
-Like other commands, you can display the Radial Menu by pressing its shortcut.
+Wie bei anderen Befehlen können Sie das Radial Menu anzeigen, indem Sie seine Tastenkombination drücken.
 
-1. Press the shortcut you set up earlier.
-2. The Radial Menu will appear centered on your cursor.
-3. Click on an item in the menu to execute the command.
-4. Alternatively, hold down the shortcut key, hover over an item, and release the key to execute the command.
+1. Drücken Sie die zuvor eingerichtete Tastenkombination.
+2. Das Radial Menu wird zentriert zu Ihrem Cursor angezeigt.
+3. Klicken Sie auf einen Artikel im Menü, um den Befehl auszuführen.
+4. Alternativ können Sie die Tastenkombination gedrückt halten, über einen Artikel fahren und die Taste loslassen, um den Befehl auszuführen.
 
 <VideoPlayer fileName="radial-menu"/>
 
-## Creating a New Radial Menu
+## Erstellen eines neuen Radial Menu
 
-You can create a radial menu with any desired command. The menu name and its commands are set in a text file. <br />
-For instance, we'll design a "My Menu" Radial Menu with "Spline Curve", "Bridge", and "Lock Selected", accessible via the shortcut <kbd>Ctrl + Shift + F</kbd>.
+Sie können ein Radial Menu mit einem gewünschten Befehl erstellen. Der Menüname und seine Befehle werden in einer Textdatei festgelegt. <br />
+Zum Beispiel entwerfen wir ein "My Menu" Radial Menu mit "Spline Curve", "Bridge" und "Lock Selected", zugänglich über die Tastenkombination <kbd>Strg + Umschalt + F</kbd>.
 
-1. Open a text editor and create a new document.
-2. Save the document with the filename "mymenu.radial.json".
-3. Enter the following:
+1. Öffnen Sie einen Texteditor und erstellen Sie ein neues Dokument.
+2. Speichern Sie das Dokument mit dem Dateinamen "mymenu.radial.json".
+3. Geben Sie folgendes ein:
 
 ```json filename="mymenu.radial.json" copy 
 {
@@ -68,14 +68,13 @@ For instance, we'll design a "My Menu" Radial Menu with "Spline Curve", "Bridge"
     ]
 }
 ```
-Explanation: (Please note, the explanations starting with // are just for reference and should not be included in the actual file.)
+- name: Stellt den Titel des Radialmenüs dar. Sie können einen beliebigen Namen wählen. Er wird in der Befehlspalette angezeigt und nimmt das Format "Radial Menu: (name)" an.
+- command: Ein eindeutiger Bezeichner für das Radialmenü. Um Konflikte mit vorhandenen Befehlen zu vermeiden, ziehen Sie in Betracht, den Namen des Autors oder andere einzigartige Elemente einzubeziehen.
+- items: Listet die in das Radialmenü integrierten Befehle auf. Sie können mehrere Befehle einfügen.
+    - command: Die interne Bezeichnung für den zu integrierenden Befehl. Eine Liste dieser Bezeichnungen finden Sie [hier](#internal-designation-for-the-command).
+    - icon: Gibt das Symbol an, das im Radialmenü erscheint. Beachten Sie, dass einige Befehle möglicherweise kein voreingestelltes Symbol haben.
+    - label: Das zentrale Label im Radialmenü. Wenn es kein entsprechendes Symbol gibt, werden die ersten beiden Zeichen des Labels angezeigt.
 
-- name: Represents the radial menu's title. You can choose any name you like. It's displayed in the command palette and will adopt the format "Radial Menu: (name)".
-- command: A unique identifier for the radial menu. To avoid conflicts with existing commands, consider incorporating the author's name or other unique elements.
-- items: Lists the commands integrated into the radial menu. You can include multiple commands.
-    - command: The internal designation for the command to be incorporated. A list of these designations can be found [here](#internal-designation-for-the-command).
-    - icon: Denotes the icon that appears in the radial menu. Be aware that some commands might not have a preset icon.
-    - label: The central label in the radial menu. If there's no corresponding icon, the label's first two characters will be shown.
 ```json
 {
     "name": "My Menu",      // Represents the radial menu's title
@@ -90,59 +89,61 @@ Explanation: (Please note, the explanations starting with // are just for refere
     ]
 }
 ```
-4. Save the file.
-5. Drag and drop the file you've created into Plasticity's 3D viewport.
-6. Although there won't be any visible changes on the screen, the radial menu's definition is now loaded and ready for use.
-7. Press the <kbd>F</kbd> key to open the Command Palette.
-8. Type "menu" into the Command Palette to see a list of all loaded radial menus.
-9. Right-click on "Radial Menu: My Menu" and assign a shortcut <kbd>Ctrl + Shift + F</kbd>. For instructions on how to assign shortcuts, refer to [this section](./command-palette#assign-a-shortcut).
-10. Now, by pressing the shortcut <kbd>Ctrl + Shift + F</kbd>, you can display the radial menu you've created.
 
-## Editing a Radial Menu
+4. Speichern Sie die Datei.
+5. Ziehen Sie die erstellte Datei per Drag & Drop in die 3D-Ansicht von Plasticity.
+6. Auch wenn keine sichtbaren Änderungen auf dem Bildschirm auftreten, ist die Definition des Radialmenüs jetzt geladen und einsatzbereit.
+7. Drücken Sie die <kbd>F</kbd> Taste, um die Befehlspalette zu öffnen.
+8. Geben Sie "menu" in die Befehlspalette ein, um eine Liste aller geladenen Radialmenüs anzuzeigen.
+9. Klicken Sie mit der rechten Maustaste auf "Radial Menu: My Menu" und weisen Sie eine Verknüpfung <kbd>Strg + Umschalt + F</kbd> zu. Anweisungen zum Zuweisen von Verknüpfungen finden Sie in [diesem Abschnitt](./command-palette#assign-a-shortcut).
+10. Jetzt können Sie das von Ihnen erstellte Radialmenü anzeigen, indem Sie die Verknüpfung <kbd>Strg + Umschalt + F</kbd> drücken.
 
-The files you've created for configuration are saved in the Plasticity settings folder. By editing these files, you can modify the radial menu.
+## Ein Radialmenü bearbeiten
 
-1. Open the settings folder:
+Die von Ihnen für die Konfiguration erstellten Dateien werden im Plasticity-Einstellungsordner gespeichert. Durch das Bearbeiten dieser Dateien können Sie das Radialmenü ändern.
+
+1. Öffnen Sie den Einstellungsordner:
 <Tabs items={['Windows', 'macOS', 'Linux']}>
     <Tabs.Tab>
-    Navigate to `C:\Users\<user name>\.plasticity\radials`.
+    Navigieren Sie zu `C:\Users\<user name>\.plasticity\radials`.
     </Tabs.Tab>
     <Tabs.Tab>
-    Enable the setting to show hidden folders.<br />
-    Navigate to `/Users/<user name>/.plasticity/radials/`.
+    Aktivieren Sie die Einstellung, um versteckte Ordner anzuzeigen.<br />
+    Navigieren Sie zu `/Users/<user name>/.plasticity/radials/`.
     </Tabs.Tab>
     <Tabs.Tab>
-    Open the Plasticity settings folder.
+    Öffnen Sie den Plasticity-Einstellungsordner.
     </Tabs.Tab>
 </Tabs>
-2. Locate the configuration file within the folder. Open this file with a text editor.
-3. Edit the file following the same steps as when you created it.
-4. Save the file.
-5. Drag and drop the saved file into Plasticity's 3D viewport.
-6. Now, you can use the updated radial menu.
+2. Suchen Sie die Konfigurationsdatei im Ordner und öffnen Sie diese Datei mit einem Texteditor.
+3. Bearbeiten Sie die Datei gemäß den gleichen Schritten, mit denen Sie sie erstellt haben.
+4. Speichern Sie die Datei.
+5. Ziehen Sie die gespeicherte Datei per Drag & Drop in die 3D-Ansicht von Plasticity.
+6. Jetzt können Sie das aktualisierte Radialmenü verwenden.
 
-## Remove a Radial Menu
+## Ein Radialmenü entfernen
 
-You can remove a radial menu by deleting a specific file located in a particular folder.
+Sie können ein Radialmenü entfernen, indem Sie eine bestimmte Datei in einem bestimmten Ordner löschen.
 
-1. Open the specified folder:
+1. Öffnen Sie den angegebenen Ordner:
 <Tabs items={['Windows', 'macOS', 'Linux']}>
     <Tabs.Tab>
-    Navigate to `C:\Users\<user name>\.plasticity\radials`.
+    Navigieren Sie zu `C:\Users\<user name>\.plasticity\radials`.
     </Tabs.Tab>
     <Tabs.Tab>
-    Enable the setting to show hidden folders.<br />
-    Navigate to `/Users/<user name>/.plasticity/radials/`.
+    Aktivieren Sie die Einstellung, um versteckte Ordner anzuzeigen.<br />
+    Navigieren Sie zu `/Users/<user name>/.plasticity/radials/`.
     </Tabs.Tab>
     <Tabs.Tab>
-    Open the Plasticity configuration folder.
+    Öffnen Sie den Plasticity-Konfigurationsordner.
     </Tabs.Tab>
 </Tabs>
-2. Within the folder, you will find configuration files. Remove the file you wish to delete from the folder, and the radial menu will be removed.
+2. Im Ordner finden Sie Konfigurationsdateien. Entfernen Sie die Datei, die Sie aus dem Ordner löschen möchten, und das Radialmenü wird entfernt.
 
-## How to Call a Radial Menu from a Radial Menu
+## Wie man ein Radialmenü aus einem Radialmenü aufruft
 
-1. Create the radial menu to be called. In this case, a radial menu has been defined like so.
+1. Erstellen Sie das Radialmenü, das aufgerufen werden soll. In diesem Fall wurde ein Radialmenü wie folgt definiert:
+
 ```json filename="2nd-my-menu.radial.json" copy 
 {
     "name": "2nd My Menu",
@@ -167,7 +168,7 @@ You can remove a radial menu by deleting a specific file located in a particular
 }
 ```
 
-2. To call this radial menu from the "Selection mode" radial menu, add the following item to the end of the items. In the command of this item, specify the word by appending "view:radial:" in front of the command of the radial menu to be called.
+2. Um dieses Radialmenü aus dem Radialmenü "Selection mode" aufzurufen, fügen Sie das folgende Element am Ende der Elemente hinzu. Im Befehl dieses Elements geben Sie das Wort an, indem Sie "view:radial:" vor den Befehl des aufzurufenden Radialmenüs setzen.
 
 ```json  copy 
 {
@@ -177,7 +178,7 @@ You can remove a radial menu by deleting a specific file located in a particular
 }
 ```
 
-As a result, the selection-mode.radial.json will look like this:
+Als Ergebnis wird die Datei selection-mode.radial.json folgendermaßen aussehen:
 
 ```json  filename="selection-mode.radial.json" copy 
 {
@@ -213,12 +214,12 @@ As a result, the selection-mode.radial.json will look like this:
 }
 ```
 
-Now, from the "Selection mode" radial menu, you can call the "2nd My Menu" radial menu.
+Nun können Sie aus dem "Selection mode" Radialmenü das "2nd My Menu" Radialmenü aufrufen.
 
 
 
 
-## Internal Designation for the Command
+## Interne Bezeichnung für den Befehl
 
 ```
 command:alternative-duplicate

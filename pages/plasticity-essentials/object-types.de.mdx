@@ -1,79 +1,62 @@
 import { Callout } from 'nextra/components'
 
-# Object Types
+# Objekttypen
 
-## Sketch
+## Skizze
 
 ### Curve
-Line or Curve consisting of Vertices and Control-Vertices.
-To select, set the [**Edge Selection Mode**](./selection-mode).
-Multiple Curves can be joined and into one.
-It is displayed as a blue line in the sketch. When you point the cursor at it, it turns white, and when selected, it turns yellow.
+Linie oder Curve bestehend aus Vertices und Control-Vertices.
+Um auszuwählen, stellen Sie den [**Edge Selection Mode**](./selection-mode) ein.
+Mehrere Curves können zu einer verbunden werden.
+Es wird als blaue Linie in der Skizze angezeigt. Wenn Sie den Cursor darauf richten, wird es weiß und bei Auswahl gelb.
 
 ![Curve](/img/object-name-curve.png)
 
 ### Vertex
-A point that exists at both ends of a  Curve and determines the position of the  Curve.
-To display and select it, set the [**Control-Point Selection Mode**](./selection-mode).
-It appears as a purple dot in the sketch. It turns white when you point the cursor on it, and stays white when you select it.
-When multiple Vertices are in the exact same position, they are indicated by a blue-green dot. 
-Note that this only indicates that the Vertices are in the same position and has nothing to do with the presence or absence of a connection.
+Ein Punkt, der an beiden Enden einer Curve existiert und die Position der Curve bestimmt.
+Um es anzuzeigen und auszuwählen, stellen Sie den [**Control-Point Selection Mode**](./selection-mode) ein.
+Es erscheint als lila Punkt in der Skizze. Es wird weiß, wenn Sie den Cursor darauf richten und weiß bleibt, wenn Sie es auswählen.
+Wenn mehrere Vertices genau an derselben Position liegen, werden sie durch einen blau-grünen Punkt angezeigt.
+Beachten Sie, dass dies nur anzeigt, dass die Vertices in der gleichen Position sind und nichts mit der Anwesenheit oder Abwesenheit einer Verbindung zu tun hat.
 
 ![Vertex](/img/object-name-vertex.png)
 
 ### Control-Vertex (CV)
-A point that exists in the middle of a  Curve and determines the shape of the  Curve.
-To display and select it, set the [**Control-Point Selection Mode**](./selection-mode).
-It appears as a purple dot that is smaller than the Vertex on the sketch. It turns white when you point the cursor at it and stays white when you select it.
-Vertices and Control-Vertices are connected by a white line to make it easier to recognize their relationship to the Curve. By adding more Control-Vertices, complex Curves can be expressed.
+Ein Punkt, der in der Mitte einer Curve existiert und die Form der Curve bestimmt.
+Um es anzuzeigen und auszuwählen, stellen Sie den [**Control-Point Selection Mode**](./selection-mode) ein.
+Es erscheint als lila Punkt, der kleiner ist als der Vertex in der Skizze. Es wird weiß, wenn Sie den Cursor darauf richten und weiß bleibt, wenn Sie es auswählen.
+Vertices und Control-Vertices sind durch eine weiße Linie verbunden, um ihre Beziehung zur Curve leichter zu erkennen. Durch Hinzufügen weiterer Control-Vertices können komplexe Curves ausgedrückt werden.
 
 ![Control-Vertex](/img/object-name-cv.png)
 
 ### Region
-The area is surrounded by Curves. To select, set the [**Face Selection Mode**](./selection-mode). 
-It appears as a blue area in the sketch. When the cursor is pointed at the Region, the default command [**Extrude**](../solid/extrude) is automatically executed.
+Der Bereich wird von Curves umgeben. Um auszuwählen, stellen Sie den [**Face Selection Mode**](./selection-mode) ein.
+Es erscheint als blauer Bereich in der Skizze. Wenn Sie den Cursor auf die Region richten, wird der Standardbefehl [**Extrude**](../solid/extrude) automatisch ausgeführt.
 <Callout emoji="❗">
-**Note**<br />
-The result of the Extrude command is different when a closed Curve is selected and when a Region is selected: An extruded Curve becomes a Sheet, and an extruded Region becomes a Solid.
+**Hinweis**<br />
+Das Ergebnis des Extrude-Befehls unterscheidet sich, wenn eine geschlossene Curve ausgewählt ist und wenn eine Region ausgewählt ist: Eine extrudierte Curve wird zu einem Sheet und eine extrudierte Region zu einem Solid.
 </Callout>
 ![Region](/img/object-name-region.png)
 
 ## Solid
 
 ### Solid
-A fully enclosed three-dimensional object with no gaps in the surface. To select, set the [**Body Selection Mode**](./selection-mode). If you delete some Faces, it becomes a Sheet. It is displayed in gray in the 3D viewport, and the outline turns white when you point the cursor on it, and yellow when you select it.
+Ein vollständig geschlossenes dreidimensionales Objekt ohne Lücken in der Oberfläche. Um auszuwählen, stellen Sie den [**Body Selection Mode**](./selection-mode) ein. Wenn Sie einige Faces löschen, wird es zu einem Sheet. Es wird grau im 3D-Viewport angezeigt und die Kontur wird weiß, wenn Sie den Cursor darauf richten und gelb, wenn Sie es auswählen.
 
 ![Solid](/img/object-name-solid.png)
 
 ### Sheet
-An open surface built from one or more Faces. To select it, set the [**Body Selection Mode**](./selection-mode). It is displayed in gray in the 3D viewport, and when the cursor is pointed at it, the outline turns white, and when selected, it turns yellow.
+Eine offene Oberfläche, die aus einer oder mehreren Faces besteht. Um es auszuwählen, stellen Sie den [**Body Selection Mode**](./selection-mode) ein. Es wird grau im 3D-Viewport angezeigt und die Kontur wird weiß, wenn Sie den Cursor darauf richten und gelb, wenn Sie es auswählen.
 
 ![Sheet](/img/object-name-sheet.png)
 
 ### Face
-The planar or curved surfaces that make up Sheets and Solids. To select, set the [**Face Selection Mode**](./selection-mode). It will appear gray in the 3D viewport, lighten when you point the cursor at it, and turn yellow when selected. When Face is selected, the default command [**Offset Face**](../solid/offset-face) is automatically executed.
+Die ebenen oder gekrümmten Oberflächen, die Sheets und Solids bilden. Um auszuwählen, stellen Sie den [**Face Selection Mode**](./selection-mode) ein. Es wird grau im 3D-Viewport angezeigt, es hellt auf, wenn Sie den Cursor darauf richten und wird gelb, wenn Sie es auswählen. Wenn ein Face ausgewählt ist, wird der Standardbefehl [**Offset Face**](../solid/offset-face) automatisch ausgeführt.
 
 ![Face](/img/object-name-face.png)
 
 ### Edge
-The border of a Face.
-To select, set the [**Edge Selection Mode**](./selection-mode). It is displayed as a black line, which turns white when the cursor is pointed at it and turns yellow when selected. When the Edge of the boundary between two Faces is selected, the default command [Fillet](../solid/fillet) is automatically executed, and when the open Edge of a Sheet is selected, the default command [**Extend Sheet**](../solid/extend#extend-sheet) is automatically executed.
+Der Rand eines Face.
+Um auszuwählen, stellen Sie den [**Edge Selection Mode**](./selection-mode) ein. Es wird als schwarze Linie angezeigt, die weiß wird, wenn der Cursor darauf gerichtet ist und gelb wird, wenn sie ausgewählt ist. Wenn der Edge der Grenze zwischen zwei Faces ausgewählt ist, wird der Standardbefehl [Fillet](../solid/fillet) automatisch ausgeführt und wenn der offene Edge eines Sheets ausgewählt ist, wird der Standardbefehl [**Extend Sheet**](../solid/
 
 ![Edge](/img/object-name-edge.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

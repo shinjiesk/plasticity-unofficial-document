@@ -1,95 +1,88 @@
-# How to use
+# Wie benutzt man es
 
-## Setup Blender Bridge
+## Einrichtung von Blender Bridge
 
-Make sure the 'Blender Bridge' add-on is installed and the feature in Plasticity is enabled. Refer to the setup instructions [here](./install-blender-addon).
+Stellen Sie sicher, dass das Add-On "Blender Bridge" installiert ist und die Funktion in Plasticity aktiviert ist. Verweisen Sie auf die Einrichtungsanweisungen [hier](./install-blender-addon).
 
-## Basic Usage
+## Grundlegende Verwendung
 
-To transfer the Objects created in Plasticity to Blender, click the "Refresh" button in the Plasticity sidebar panel in Blender.
+Um die in Plasticity erstellten Objekte nach Blender zu übertragen, klicken Sie auf die Schaltfläche "Aktualisieren" im Plasticity Seitenbereich in Blender.
 
-1. **Within Plasticity:**
-    1. Open Plasticity.
-    2. Create objects that you want to transfer to Blender.
-2. **Within Blender:**
-    1. Click the "Connect" button in the "Plasticity sidebar panel". Once a connection is established, additional options will be displayed in the panel.
-        ![BB Blender Connet](/img/bb-blender-connect.png)
-    2. Click the "Refresh" button in the "Plasticity sidebar panel" to transfer objects from Plasticity to Blender.
-        ![BB Blender Connet](/img/bb-blender-refresh.png)
-    3. The transferred objects will appear in the 3D viewport of Blender.
-        - All solids and Sheets in Plasticity will be transferred as Meshes in Blender.
-        - When 'Only visible' is disabled(default), invisible objects in Plasticity will be transferred to Blender as invisible objects. When 'Only visible' is enabled, invivible objects in Plasticity will not be transferred. 
-        - 'Scale' option is abailable to scale the size. 
-3. **Within Plasticity:**
-    1. Edit the objects as needed.
-4. **Within Blender:**
-    1. To update any changes made in Plasticity, click the "Refresh" button in the "Plasticity sidebar panel".
+1. **In Plasticity:**
+    1. Öffnen Sie Plasticity.
+    2. Erstellen Sie Objekte, die Sie nach Blender übertragen möchten.
+2. **In Blender:**
+    1. Klicken Sie auf die Schaltfläche "Verbinden" im "Plasticity Seitenbereich". Sobald eine Verbindung hergestellt ist, werden im Panel zusätzliche Optionen angezeigt.
+        ![BB Blender Verbinden](/img/bb-blender-connect.png)
+    2. Klicken Sie auf die Schaltfläche "Aktualisieren" im "Plasticity Seitenbereich", um Objekte von Plasticity nach Blender zu übertragen.
+        ![BB Blender Aktualisieren](/img/bb-blender-refresh.png)
+    3. Die übertragenen Objekte werden im 3D-Viewport von Blender angezeigt.
+        - Alle Feststoffe und Blätter in Plasticity werden in Blender als Netze übertragen.
+        - Wenn "Nur sichtbar" deaktiviert ist (Standard), werden unsichtbare Objekte in Plasticity als unsichtbare Objekte in Blender übertragen. Wenn "Nur sichtbar" aktiviert ist, werden unsichtbare Objekte in Plasticity nicht übertragen. 
+        - Die Option "Skalieren" steht zur Verfügung, um die Größe anzupassen.
+3. **In Plasticity:**
+    1. Bearbeiten Sie die Objekte nach Bedarf.
+4. **In Blender:**
+    1. Um Änderungen, die in Plasticity vorgenommen wurden, zu aktualisieren, klicken Sie auf die Schaltfläche "Aktualisieren" im "Plasticity Seitenbereich".
 
 ## Live Link
 
-When Live Link is enabled, any changes made to the objects in Plasticity will be automatically transferred to Blender. 
+Wenn Live Link aktiviert ist, werden alle Änderungen an den Objekten in Plasticity automatisch nach Blender übertragen. 
 
-1. **Within Plasticity:**
-    1. Open Plasticity.
-    2. Create objects that you want to transfer to Blender.
-2. **Within Blender:**
-    1. Ensure that the Blender Bridge add-on is installed and activated. 
-    2. Click the "Live Link" button in the "Plasticity sidebar panel".
+1. **In Plasticity:**
+    1. Öffnen Sie Plasticity.
+    2. Erstellen Sie Objekte, die Sie nach Blender übertragen möchten.
+2. **In Blender:**
+    1. Stellen Sie sicher, dass das Add-On "Blender Bridge" installiert und aktiviert ist. 
+    2. Klicken Sie auf die Schaltfläche "Live Link" im "Plasticity Seitenbereich".
         ![BB Blender Live Link](/img/bb-blender-live-link.png)
-3. **Within Plasticity:**
-    1. Edit the objects as needed.
-4. **Within Blender:**
-    1. The changes will be automatically transferred to Blender.
+3. **In Plasticity:**
+    1. Bearbeiten Sie die Objekte nach Bedarf.
+4. **In Blender:**
+    1. Die Änderungen werden automatisch nach Blender übertragen.
 
 ## Refacet Mesh
 
-The Refacet Mesh option will automatically retopologize the mesh of the transferred object. This is useful for reducing the number of vertices in the mesh, which can improve performance in Blender.
+Die Option Refacet Mesh wird das Netz des übertragenen Objekts automatisch neu topologisieren. Dies ist nützlich, um die Anzahl der Vertices im Netz zu reduzieren, was die Leistung in Blender verbessern kann.
 
-1. **Within Blender:**
-    1. Select the transferred objects to be retopologized.
-    2. Click the "Refacet" button in the "Plasticity sidebar panel".
+1. **In Blender:**
+    1. Wählen Sie die übertragenen Objekte aus, die neu topologisiert werden sollen.
+    2. Klicken Sie auf die Schaltfläche "Refacet" im "Plasticity Seitenbereich".
         ![BB Blender Refacet](/img/bb-blender-refacet.png)
-        - You can specify the refacet config in the "Plasticity sidebar panel".
-            - Tri/Ngon: The type of mesh to be generated. 'Tri' will generate a mesh with only triangles, while 'Ngon' will generate a mesh that includes polygons with five or more sides.
-            - Tolerance: The maximum distance between the original mesh and the retopologized mesh. A lower tolerance will result in a mesh that more closely matches the original mesh, but will also result in a mesh with more vertices.
-            - Angle: The maximum angle between the original mesh and the retopologized mesh. A lower angle will result in a mesh that more closely matches the original mesh, but will also result in a mesh with more vertices.
-        - Click "Advanced" button to show advanced options.
-            - Tri/Ngon: The type of mesh to be generated. 'Tri' will generate a mesh with only triangles, while 'Ngon' will generate a mesh that includes polygons with five or more sides.
-            - Min width: The minimum width of the retopologized mesh. A lower minimum width will result in a mesh with more vertices.
-            - Max width: The maximum width of the retopologized mesh. A lower maximum width will result in a mesh with more vertices.
-            - Edge Chord Tolerance: The maximum distance between the original Edge chord and the retopologized mesh. 
-            - Edge Angle Tolerance: The maximum angle between the original Edge angle and the retopologized mesh.
-            - Face Plane Tolerance: The maximum distance between the original Face plane and the retopologized mesh.
-            - Face Angle Tolerance: The maximum angle between the original Fce angle and the retopologized mesh.
-        - Refacet automatically produces a "Mark Sharp" on the edges of the retopologized mesh.
+        - Sie können die Refacet-Konfiguration im "Plasticity Seitenbereich" angeben.
+            - Tri/Ngon: Der Typ des zu generierenden Netzes. 'Tri' wird ein Netz mit nur Dreiecken generieren, während 'Ngon' ein Netz generieren wird, das Polygone mit fünf oder mehr Seiten enthält.
+            - Toleranz: Der maximale Abstand zwischen dem ursprünglichen Netz und dem neu topologisierten Netz. Eine niedrigere Toleranz wird ein Netz erzeugen, das dem ursprünglichen Netz näher kommt, wird aber auch ein Netz mit mehr Vertices erzeugen.
+            - Winkel: Der maximale Winkel zwischen dem ursprünglichen Netz und dem neu topologisierten Netz. Ein kleinerer Winkel wird zu einem Netz führen, das dem ursprünglichen Netz näher kommt, wird aber auch ein Netz mit mehr Vertices erzeugen.
+        - Klicken Sie auf die Schaltfläche "Erweitert", um erweiterte Optionen anzuzeigen.
+            - Tri/Ngon: Der Typ des zu generierenden Netzes. 'Tri' wird ein Netz mit nur Dreiecken generieren, während 'Ngon' ein Netz generieren wird, das Polygone mit fünf oder mehr Seiten enthält.
+            - Min Breite: Die minimale Breite des neu topologisierten Netzes. Eine niedrigere Mindestbreite wird zu einem Netz mit mehr Vertices führen.
+            - Max Breite: Die maximale Breite des neu topologisierten Netzes. Eine niedrigere maximale Breite wird zu einem Netz mit mehr Vertices führen.
+            - Kantenakkord-Toleranz: Der maximale Abstand zwischen dem ursprünglichen Kantenakkord und dem neu topologisierten Netz.
+            - Kantenwinkel-Toleranz: Der maximale Winkel zwischen dem ursprünglichen Kantenwinkel und dem neu topologisierten Netz.
+            - Flächenebenen-Toleranz: Der maximale Abstand zwischen der ursprünglichen Flächenebene und dem neu topologisierten Netz.
+            - Flächenwinkel-Toleranz: Der maximale Winkel zwischen dem ursprünglichen Flächenwinkel und dem neu topologisierten Netz.
+        - Refacet erzeugt automatisch einen "Mark Scharf" an den Kanten des neu topologisierten Netzes.
 
-## Utilities
+## Dienstprogramme
 
-![BB Blender Utilities](/img/bb-blender-utilities.png)
+![BB Blender Dienstprogramme](/img/bb-blender-utilities.png)
 
-### Auto Mark edges
+### Automatisches Markieren von Kanten
 
-- Mark edges as sharp or seams based on the selected faces, depending on the last operation panel.
+- Markieren Sie Kanten als scharf oder Nähte basierend auf den ausgewählten Flächen, abhängig vom letzten Bedienfeld.
 
-### Merge UV Seams
+### UV-Nähte zusammenführen
 
-- Merge UV seams based on the selected faces.
+- UV-Nähte basierend auf den ausgewählten Flächen zusammenführen.
 
-### Select Plasticity Face(s)
+### Plasticity Fläche(n) auswählen
 
-- Expand the selection of the faces based on the Faces from Plasticity.
+- Erweitern Sie die Auswahl der Flächen basierend auf den Flächen von Plasticity.
 
-### Select Plasticity edges
+### Plasticity Kanten auswählen
 
-- After selecting faces, execute the command to select edges based on the Edges from Plasticity.
+- Nach Auswahl von Flächen, führen Sie den Befehl aus, um Kanten basierend auf den Kanten von Plasticity auszuwählen.
 
-### Paint Plasticity Faces
+### Plasticity Flächen bemalen
 
-- Paint random vertex colors based on the Faces from Plasticity.
-
-
-
-
-
-
-
+- Malen Sie zufällige Vertex-Farben basierend auf den Flächen von Plasticity.

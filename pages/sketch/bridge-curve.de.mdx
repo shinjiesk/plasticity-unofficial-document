@@ -6,52 +6,43 @@ import { Callout } from 'nextra/components'
 
 <Reference shortcut="" command="Bridge Curve" button="" />
 
-Bridges two Curves that can be G0/G1/G2/G3 continuous. Tension is adjustable. Auto trim is possible.
+Verbindet zwei Curves, die G0/G1/G2/G3-kontinuierlich sein können. Die Spannung ist einstellbar. Automatisches Trimmen ist möglich.
 
 <Callout emoji="❗">
-    **Note**<br />
-Before selecting a point, enable [**Grid Snaps**](../plasticity-essentials/grid-and-snap#grid-snap) and [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap).
+    **Hinweis**<br />
+Bevor Sie einen Punkt auswählen, aktivieren Sie [**Grid Snaps**](../plasticity-essentials/grid-and-snap#grid-snap) und [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap).
 </Callout>
 <Callout type="info" emoji="ℹ️">
-The starting and ending points can be selected at any point on the  Curve, Edge,Face, or construction plane.
+Die Start- und Endpunkte können an beliebiger Stelle auf der Curve, Edge, Face oder Bauebene ausgewählt werden.
 </Callout>
 
-1. Click the button <ButtonIcon type="button-bridge-curve" /> on the Toolbar.
-2. Click on the starting point
-   - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Constrain to the X, Y, or Z-axis](./sketching-essentials#constrain-to-an-axis).
-   - <kbd>N</kbd> **Normal** Limit to the Face's normal direction.  
-3. Click on the ending point.  
-4. Set the options in the Command Dialog and Keyboard Shortcuts.
+1. Klicken Sie auf die Schaltfläche <ButtonIcon type="button-bridge-curve" /> in der Werkzeugleiste.
+2. Klicken Sie auf den Startpunkt.
+   - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Einschränken auf die X-, Y- oder Z-Achse](./sketching-essentials#constrain-to-an-axis).
+   - <kbd>N</kbd> **Normal** Begrenzen Sie in die normale Richtung von Face.  
+3. Klicken Sie auf den Endpunkt.  
+4. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
      - **T:**
-          - **Value 1/2:** The relative position on the segment of the starting point/ending point.
+          - **Value 1/2:** Die relative Position auf dem Segment des Startpunkts/Endpunkts.
      - **Direction:** 
-          - **Direction 1/2:** Reverse the direction of the starting point/ending point.
+          - **Direction 1/2:** Die Richtung des Startpunkts/Endpunkts umkehren.
      - **Tension 1:**
-          - **Value 1/2:** The tension value affected 1st CV to 3rd CV of the starting point/ending point.
+          - **Value 1/2:** Der Spannungswert betrifft den 1. CV bis 3. CV des Startpunkts/Endpunkts.
      - **Tension 2:**
-          - **Value 1/2:** The tension value affected 2nd CV and 3rd CV of the starting point/ending point.
+          - **Value 1/2:** Der Spannungswert betrifft den 2. CV und 3. CV des Startpunkts/Endpunkts.
      - **Tension 3:**
-          - **Value 1/2:** The tension value affected 3rd CV of the starting point/ending point.
-     - **Start curvature:**
-          - **G0, G1, G2, G3:** Specify the [continuity of the  Curve](../cad-essentials/continuity-curve-and-surface) at the starting point.
-     -  **End curvature:**
-          - **G0, G1, G2, G3:** Specify the [continuity of the  Curve](../cad-essentials/continuity-curve-and-surface) at the ending point.      
-   - **Trim:** When turned on, any Curve that extends beyond the bridge will be trimmed.
-5. Confirm with OK in the Command Dialog or right-click.
+          - **Value 1/2:** Der Spannungswert betrifft den 3. CV des Startpunkts/Endpunkts.
+     - **Startkrümmung:**
+          - **G0, G1, G2, G3:** Spezifizieren Sie die [Kontinuität der Curve](../cad-essentials/continuity-curve-and-surface) am Startpunkt.
+     -  **Endkrümmung:**
+          - **G0, G1, G2, G3:** Spezifizieren Sie die [Kontinuität der Curve](../cad-essentials/continuity-curve-and-surface) am Endpunkt.      
+   - **Trim:** Wenn aktiviert, wird jede Curve, die über die Brücke hinausgeht, getrimmt.
+5. Bestätigen Sie mit OK im Befehlsdialog oder mit einem Rechtsklick.
 
 ![Bridge Curve](/img/bridge-curve.gif)
 
-## See also
+## Siehe auch
 - [Bridge](./bridge)
 - [Bridge Vertex](./bridge-vertex)
 - [Bridge Edge](./bridge-edge)
 - [Join](./join)
-
-
-
-
-
-
-
-
-

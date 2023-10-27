@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@mdx-js/react':
-    specifier: ^2.3.0
-    version: 2.3.0(react@18.2.0)
+    specifier: ^3.0.0
+    version: 3.0.0(@types/react@18.2.14)(react@18.2.0)
   '@next/mdx':
     specifier: ^13.5.6
-    version: 13.5.6(@mdx-js/react@2.3.0)
+    version: 13.5.6(@mdx-js/react@3.0.0)
   '@vercel/analytics':
     specifier: ^1.1.1
     version: 1.1.1
@@ -22,7 +22,7 @@ dependencies:
     version: 9.2.1(esbuild@0.18.17)
   next:
     specifier: ^13.5.6
-    version: 13.5.6(react-dom@18.2.0)(react@18.2.0)(sass@1.69.4)
+    version: 13.5.6(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
   nextjs-google-analytics:
     specifier: ^2.3.3
     version: 2.3.3(next@13.5.6)(react@18.2.0)
@@ -45,8 +45,8 @@ dependencies:
     specifier: ^1.1.2
     version: 1.1.2
   sass:
-    specifier: ^1.69.4
-    version: 1.69.4
+    specifier: ^1.69.5
+    version: 1.69.5
   sharp:
     specifier: ^0.32.6
     version: 0.32.6
@@ -56,8 +56,8 @@ dependencies:
 
 devDependencies:
   '@types/node':
-    specifier: 20.8.7
-    version: 20.8.7
+    specifier: 20.8.9
+    version: 20.8.9
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -364,6 +364,17 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@mdx-js/react@3.0.0(@types/react@18.2.14)(react@18.2.0):
+    resolution: {integrity: sha512-nDctevR9KyYFyV+m+/+S4cpzCWHqj+iHDHq3QrsWezcC+B17uZdIWgCguESUkwFhM3n/56KxWVE3V6EokrmONQ==}
+    peerDependencies:
+      '@types/react': '>=16'
+      react: '>=16'
+    dependencies:
+      '@types/mdx': 2.0.5
+      '@types/react': 18.2.14
+      react: 18.2.0
+    dev: false
+
   /@napi-rs/simple-git-android-arm-eabi@0.1.9:
     resolution: {integrity: sha512-9D4JnfePMpgL4pg9aMUX7/TIWEUQ+Tgx8n3Pf8TNCMGjUbImJyYsDSLJzbcv9wH7srgn4GRjSizXFJHAPjzEug==}
     engines: {node: '>= 10'}
@@ -484,7 +495,7 @@ packages:
     resolution: {integrity: sha512-Yac/bV5sBGkkEXmAX5FWPS9Mmo2rthrOPRQQNfycJPkjUAUclomCPH7QFVCDQ4Mp2k2K1SSM6m0zrxYrOwtFQw==}
     dev: false
 
-  /@next/mdx@13.5.6(@mdx-js/react@2.3.0):
+  /@next/mdx@13.5.6(@mdx-js/react@3.0.0):
     resolution: {integrity: sha512-2AMyCrz1SxSWNUpADyLz3RbPbq0GHrchbO7Msvg7IsH8MrTw3VYaZSI1KNa6JzZIoykwtNVSEL+uBmPZi106Jw==}
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
@@ -495,7 +506,7 @@ packages:
       '@mdx-js/react':
         optional: true
     dependencies:
-      '@mdx-js/react': 2.3.0(react@18.2.0)
+      '@mdx-js/react': 3.0.0(@types/react@18.2.14)(react@18.2.0)
       source-map: 0.7.4
     dev: false
 
@@ -671,10 +682,10 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: false
 
-  /@types/node@20.8.7:
-    resolution: {integrity: sha512-21TKHHh3eUHIi2MloeptJWALuCu5H7HQTdTrWIFReA8ad+aggoX+lRes3ex7/FtpC+sVUpFMQ+QTfYr74mruiQ==}
+  /@types/node@20.8.9:
+    resolution: {integrity: sha512-UzykFsT3FhHb1h7yD4CA4YhBHq545JC0YnEz41xkipN88eKQtL6rSgocL5tbAP6Ola9Izm/Aw4Ora8He4x0BHg==}
     dependencies:
-      undici-types: 5.25.3
+      undici-types: 5.26.5
     dev: true
 
   /@types/prop-types@15.7.5:
@@ -2710,7 +2721,7 @@ packages:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
     dependencies:
-      next: 13.5.6(react-dom@18.2.0)(react@18.2.0)(sass@1.69.4)
+      next: 13.5.6(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -2722,12 +2733,12 @@ packages:
       react: '*'
       react-dom: '*'
     dependencies:
-      next: 13.5.6(react-dom@18.2.0)(react@18.2.0)(sass@1.69.4)
+      next: 13.5.6(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /next@13.5.6(react-dom@18.2.0)(react@18.2.0)(sass@1.69.4):
+  /next@13.5.6(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5):
     resolution: {integrity: sha512-Y2wTcTbO4WwEsVb4A8VSnOsG1I9ok+h74q0ZdxkwM3EODqrs4pasq7O0iUxbcS9VtWMicG7f3+HAj0r1+NtKSw==}
     engines: {node: '>=16.14.0'}
     hasBin: true
@@ -2749,7 +2760,7 @@ packages:
       postcss: 8.4.31
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      sass: 1.69.4
+      sass: 1.69.5
       styled-jsx: 5.1.1(react@18.2.0)
       watchpack: 2.4.0
     optionalDependencies:
@@ -2773,7 +2784,7 @@ packages:
       next: '>=11.0.0'
       react: '>=17.0.0'
     dependencies:
-      next: 13.5.6(react-dom@18.2.0)(react@18.2.0)(sass@1.69.4)
+      next: 13.5.6(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       react: 18.2.0
     optionalDependencies:
       fsevents: 2.3.2
@@ -2796,7 +2807,7 @@ packages:
       git-url-parse: 13.1.0
       intersection-observer: 0.12.2
       match-sorter: 6.3.1
-      next: 13.5.6(react-dom@18.2.0)(react@18.2.0)(sass@1.69.4)
+      next: 13.5.6(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       next-seo: 6.1.0(next@13.5.6)(react-dom@18.2.0)(react@18.2.0)
       next-themes: 0.2.1(next@13.5.6)(react-dom@18.2.0)(react@18.2.0)
       nextra: 2.13.2(next@13.5.6)(react-dom@18.2.0)(react@18.2.0)
@@ -2826,7 +2837,7 @@ packages:
       gray-matter: 4.0.3
       katex: 0.16.9
       lodash.get: 4.4.2
-      next: 13.5.6(react-dom@18.2.0)(react@18.2.0)(sass@1.69.4)
+      next: 13.5.6(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
       next-mdx-remote: 4.4.1(react-dom@18.2.0)(react@18.2.0)
       p-limit: 3.1.0
       react: 18.2.0
@@ -3261,8 +3272,8 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: false
 
-  /sass@1.69.4:
-    resolution: {integrity: sha512-+qEreVhqAy8o++aQfCJwp0sklr2xyEzkm9Pp/Igu9wNPoe7EZEQ8X/MBvvXggI2ql607cxKg/RKOwDj6pp2XDA==}
+  /sass@1.69.5:
+    resolution: {integrity: sha512-qg2+UCJibLr2LCVOt3OlPhr/dqVHWOa9XtZf2OjbLs/T4VPSJ00udtgJxH3neXZm+QqX8B+3cU7RaLqp1iVfcQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -3594,8 +3605,8 @@ packages:
     hasBin: true
     dev: true
 
-  /undici-types@5.25.3:
-    resolution: {integrity: sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==}
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: true
 
   /unified@10.1.2:

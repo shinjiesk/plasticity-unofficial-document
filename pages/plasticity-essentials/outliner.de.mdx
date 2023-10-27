@@ -1,111 +1,103 @@
 import ButtonIcon from 'components/ButtonIcon'
 
-# Outliner
+# Inhaltsverzeichnis
 
-The Outliner displays all the objects you've created. Within the Outliner, you can organize objects, group them, toggle their states, and configure materials.
+Das Inhaltsverzeichnis zeigt alle von Ihnen erstellten Objekte an. Im Inhaltsverzeichnis können Sie Objekte organisieren, gruppieren, ihren Zustand wechseln und Materialien konfigurieren.
 
-![Outliner](/img/outliner-001.png)
-## Organize Objects
+![Inhaltsverzeichnis](/img/outliner-001.png)
+## Objekte organisieren
 
-- Created objects are categorized into Solids, Sheets, and Curves sections.
-- Right-click on a section label ("Solids," "Sheets," "Curves") and choose "Select all" to select all objects within that section.
-- You can reorganize the Outliner by dragging and dropping objects.
+- Erstellte Objekte werden in Abschnitte Solids, Sheets und Curves unterteilt.
+- Klicken Sie mit der rechten Maustaste auf eine Abschnittsbezeichnung ("Solids," "Sheets," "Curves") und wählen Sie "Select all", um alle Objekte in diesem Abschnitt auszuwählen.
+- Sie können das Inhaltsverzeichnis durch Ziehen und Ablegen von Objekten neu organisieren.
 
-## Group Objects
+## Objekte gruppieren
 
-Grouping allows you to better organize your objects.
+Gruppieren ermöglicht es Ihnen, Ihre Objekte besser zu organisieren.
 
-| Operation                                                     | Shortcut                                                         | Command Name     |
-| ------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------- |
-| Create a group and move the selected object to the new group. | <kbd>Ctrl + G</kbd> or <ButtonIcon type="outliner-gruop-icon" /> | Group Selected   |
-| Remove the selected object from the group.                    | <kbd>Alt + G</kbd>                                               | Ungroup Selected |
+| Vorgang                                                                        | Tastenkombination                                                  | Befehlsname      |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------ | ---------------- |
+| Eine Gruppe erstellen und das ausgewählte Objekt zur neuen Gruppe verschieben. | <kbd>Strg + G</kbd> oder <ButtonIcon type="outliner-gruop-icon" /> | Group Selected   |
+| Das ausgewählte Objekt aus der Gruppe entfernen.                               | <kbd>Alt + G</kbd>                                                 | Ungroup Selected |
 
-Right-click on a group folder to access related commands.
+Klicken Sie mit der rechten Maustaste auf einen Gruppenordner, um auf zugehörige Befehle zuzugreifen.
 
-![Group objects menu](/img/outliner-group-objects-menu.png)
-| Menu                                | Note                                                                   |
-| ----------------------------------- | ---------------------------------------------------------------------- |
-| Add current selection to group      | Adds the selected object to the group.                                 |
-| Select all                          | Selects all objects within the group.                                       |
-| New subgroup with current selection | Creates a new subgroup and adds the selected object to it.     |
-| Collapse all                        | Collapses all groups.                                                   |
-| Expand all                          | Expands all groups.                                                     |
-| Add material                        | Assigns material to the group. . See [Material Color](#material-color).      |
-| Remove material                     | Removes material from the group. See [Material Color](#material-color). |
+![Gruppenobjekte-Menü](/img/outliner-group-objects-menu.png)
+| Menü                                             | Anmerkung                                                                     |
+| ------------------------------------------------ | ----------------------------------------------------------------------------- |
+| Aktuelle Auswahl zur Gruppe hinzufügen           | Fügt das ausgewählte Objekt zur Gruppe hinzu.                                 |
+| Alles auswählen                                  | Wählt alle Objekte innerhalb der Gruppe aus.                                  |
+| Neue Untergruppe mit aktueller Auswahl erstellen | Erstellt eine neue Untergruppe und fügt das ausgewählte Objekt hinzu.         |
+| Alles einklappen                                 | Klappen Sie alle Gruppen ein.                                                 |
+| Alles ausklappen                                 | Klappen Sie alle Gruppen aus.                                                 |
+| Material hinzufügen                              | Weist der Gruppe ein Material zu. Siehe [Materialfarbe](#material-color).     |
+| Material entfernen                               | Entfernt das Material aus der Gruppe. Siehe [Materialfarbe](#material-color). |
 
-Alt-click on folder in outliner to select all objects in that section.
+Alt-Klick auf einen Ordner im Inhaltsverzeichnis, um alle Objekte in diesem Abschnitt auszuwählen.
 
-### Collapse and Expand Groups
+### Gruppen einklappen und ausklappen
 
-![Collapse and Expand Groups](/img/outliner-collapse-expand.png)
+![Gruppen einklappen und ausklappen](/img/outliner-collapse-expand.png)
 
-- To collapse all groups, either click (1)  or hover your cursor over the Outliner and press <kbd>C</kbd>.
-- To expand all groups, click (2) and select "Expand all" from the dropdown menu.
+- Um alle Gruppen einzuklappen, klicken Sie entweder auf (1) oder bewegen Sie den Cursor über das Inhaltsverzeichnis und drücken Sie <kbd>C</kbd>.
+- Um alle Gruppen auszuklappen, klicken Sie auf (2) und wählen Sie "Alles ausklappen" aus dem Dropdown-Menü.
 
-## Rename Objects
+## Objekte umbenennen
 
-- To rename an object, double-click on its name.
-- To rename multiple objects at once, hold down the Shift key while selecting them, and then, while still holding Shift, double-click on one of their names.
+- Um ein Objekt umzubenennen, doppelklicken Sie auf seinen Namen.
+- Um mehrere Objekte gleichzeitig umzubenennen, halten Sie die Umschalt-Taste gedrückt, während Sie sie auswählen, und doppelklicken Sie dann, während Sie Umschalt gedrückt halten, auf einen ihrer Namen.
 
-## Locate Objects in the Outliner
+## Objekte im Inhaltsverzeichnis suchen
 
-![Collapse and Expand Groups](/img/outliner-collapse-expand.png)
+![Objekte im Inhaltsverzeichnis suchen](/img/outliner-collapse-expand.png)
 
-### To bring a selected object to the top of the Outliner
+### Um ein ausgewähltes Objekt an den Anfang des Inhaltsverzeichnisses zu bringen
 
-- Select object in the 3D viewport, hover your cursor over the Outliner, and press <kbd>/</kbd>. 
-- Alternatively, select the object and click (2) and choose "Select in Outliner."
+- Wählen Sie das Objekt im 3D-Viewport aus, bewegen Sie den Cursor über das Inhaltsverzeichnis und drücken Sie <kbd>/</kbd>.
+- Alternativ können Sie das Objekt auswählen, auf (2) klicken und "Im Inhaltsverzeichnis auswählen" wählen.
 
-### To isolate a selected object in the Outliner
+### Um ein ausgewähltes Objekt im Inhaltsverzeichnis zu isolieren
 
-- Select the object in the Outliner and press <kbd>.</kbd>. This will collapse all groups and sections except for the one containing your selected object.
-- Alternatively, select the object and click (2) and choose "Isolate selection."
+- Wählen Sie das Objekt im Inhaltsverzeichnis aus und drücken Sie <kbd>.</kbd>. Dies klappt alle Gruppen und Abschnitte ein, außer dem, der Ihr ausgewähltes Objekt enthält.
+- Alternativ können Sie das Objekt auswählen, auf (2) klicken und "Auswahl isolieren" wählen.
 
-## Toggle Object States
+## Objektzustände wechseln
 
-You can toggle the states of objects or groups, such as making them temporarily hidden or visible, disabled or enabled, and locked or unlocked.
+Sie können die Zustände von Objekten oder Gruppen wechseln, z. B. sie vorübergehend ausblenden oder anzeigen, deaktivieren oder aktivieren und sperren oder entsperren.
 
-![Toggle Object States](/img/toggle-object-states.png)
+![Objektzustände wechseln](/img/toggle-object-states.png)
 
-### Operations in the Outliner
+### Vorgänge im Inhaltsverzeichnis
 
-Click on the icons next to objects or groups to change their states. You can also change states in bulk by selecting multiple objects.
+Klicken Sie auf die Symbole neben Objekten oder Gruppen, um ihre Zustände zu ändern. Sie können Zustände auch in großen Mengen ändern, indem Sie mehrere Objekte auswählen.
 
-- <ButtonIcon type="button-outliner-hide" double="true" />: Toggle hide
-- <ButtonIcon type="button-outliner-disable" double="true" /> : Toggle disable
-- <ButtonIcon type="button-outliner-disable-selection" double="true"  /> : Toggle lock
+- <ButtonIcon type="button-outliner-hide" double="true" />: Ausblenden wechseln
+- <ButtonIcon type="button-outliner-disable" double="true" /> : Deaktivieren wechseln
+- <ButtonIcon type="button-outliner-disable-selection" double="true"  /> : Sperren wechseln
 
-### Operations by shortcut
+### Vorgänge durch Tastenkombination
 
-You can also use shortcuts to change the states of objects or groups.
+Sie können auch Tastenkombinationen verwenden, um die Zustände von Objekten oder Gruppen zu ändern.
 
-| Operation                         | Shortcut                      | Command Name    |
-| --------------------------------- | ----------------------------- | --------------- |
-| Hide selected objects             | <kbd>H</kbd>                  | Hide selected   |
-| Hide unselected objects           | <kbd>Shift + H</kbd>          | Hide unselected |
-| Unhide all                        | <kbd>Alt + H</kbd>            | Unhide all      |
-| Invert Hidden                     | <kbd>Ctrl + H</kbd>           | Invert Hidden   |
-| Hide all Curves on the same plane | Select Regions -> <kbd>H</kbd> |                 |
-| Lock selected objects             |                               | Lock selected   |
+| Vorgang                                    | Tastenkombination                  | Befehlsname     |
+| ------------------------------------------ | ---------------------------------- | --------------- |
+| Ausgewählte Objekte ausblenden             | <kbd>H</kbd>                       | Hide selected   |
+| Nicht ausgewählte Objekte ausblenden       | <kbd>Umschalt + H</kbd>            | Hide unselected |
+| Alle einblenden                            | <kbd>Alt + H</kbd>                 | Unhide all      |
+| Ausgeblendete umkehren                     | <kbd>Strg + H</kbd>                | Invert Hidden   |
+| Alle Curves auf derselben Ebene ausblenden | Regionen auswählen -> <kbd>H</kbd> |                 |
+| Ausgewählte Objekte sperren                |                                    | Lock selected   |
 
+## Materialfarbe
 
-## Material Color
+Sie können Materialien Solids, Sheets und Curves zuweisen. Für eine Gruppe eingestellte Materialien werden auch auf Objekte innerhalb dieser Gruppe angewendet.
+Weitere Informationen zu Materialien finden Sie unter [**Set Material**](../common/set-material) und [**Remove Material**](../common/remove-material).
+![Inhaltsverzeichnis 4](/img/outliner-04.png)
 
-You can assign materials to Solids, Sheets, and Curves. Materials set for a group will also be applied to objects within that group.
-For more information on materials, see [**Set Material**](../common/set-material) and [**Remove Material**](../common/remove-material).
-![Outliner 4](/img/outliner-04.png)
+Im Inhaltsverzeichnis können Sie:
 
-In the Outliner, you can:
-
-- The object's material color is displayed as color dots.
-- The color can be copied by dragging and dropping the color dots.
-- Material colors can also be set for groups. The color can be copied in the same way.
-- Right-click on an object to access a menu where you can set or remove materials.
-- You can also select multiple objects and set or remove materials in bulk.
-
-
-
-
-
-
-
+- Die Materialfarbe des Objekts wird als Farbpunkte angezeigt.
+- Die Farbe kann durch Ziehen und Ablegen der Farbpunkte kopiert werden.
+- Materialfarben können auch für Gruppen festgelegt werden. Die Farbe kann auf die gleiche Weise kopiert werden.
+- Klicken Sie mit der rechten Maustaste auf ein Objekt, um ein Menü aufzurufen, in dem Sie Materialien festlegen oder entfernen können.
+- Sie können auch mehrere Objekte auswählen und Materialien in großen Mengen festlegen oder entfernen.

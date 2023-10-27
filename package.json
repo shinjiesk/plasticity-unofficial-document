@@ -18,7 +18,7 @@
   },
   "homepage": "https://plasticitydoc.vercel.app/",
   "dependencies": {
-    "@mdx-js/react": "^2.3.0",
+    "@mdx-js/react": "^3.0.0",
     "@next/mdx": "^13.5.6",
     "@vercel/analytics": "^1.1.1",
     "gray-matter": "^4.0.3",
@@ -31,12 +31,12 @@
     "react-dom": "^18.2.0",
     "react-youtube": "^10.1.0",
     "remark-mdx-frontmatter-nextjs": "^1.1.2",
-    "sass": "^1.69.4",
+    "sass": "^1.69.5",
     "sharp": "^0.32.6",
     "styled-components": "^6.1.0"
   },
   "devDependencies": {
-    "@types/node": "20.8.7",
+    "@types/node": "20.8.9",
     "typescript": "^5.2.2"
   }
 }

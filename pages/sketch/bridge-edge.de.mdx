@@ -4,44 +4,35 @@ import Reference from 'components/Reference'
 
 <Reference shortcut="" command="Bridge Edge" button="" />
 
-Bridges two Edges that can be G0/G1/G2/G3 continuous. Specify which end of the Edges to bridge. Tension is adjustable.
+Verbindet zwei Edges, die G0/G1/G2/G3-kontinuierlich sein können. Geben Sie an, welches Ende der Edges Sie verbinden möchten. Die Spannung ist einstellbar.
 
-1. Select two Edges you want to bridge.
-2. Use the **Bridge** command in the Command Palette
-3. Set the options in the Command Dialog and Keyboard Shortcuts.
+1. Wählen Sie zwei Edges aus, die Sie verbinden möchten.
+2. Verwenden Sie den **Bridge** Befehl in der Command Palette.
+3. Legen Sie die Optionen im Command Dialog und den Tastaturkürzeln fest.
    - **Side:** 
-        - **Side 1:** Specify which side of the endpoint of the initially selected Edge to bridge to.
-        - **Side 2:** Specify which side of the endpoint of the subsequently selected Edge to bridge to.
+        - **Side 1:** Geben Sie an, welche Seite des Endpunkts des zuerst ausgewählten Edge verbunden werden soll.
+        - **Side 2:** Geben Sie an, welche Seite des Endpunkts des anschließend ausgewählten Edge verbunden werden soll.
      - **T:**
-          - **Value 1/2:** The relative position on the segment of the starting point/ending point.
+          - **Value 1/2:** Die relative Position auf dem Segment des Startpunkts/Endpunkts.
      - **Direction:** 
-          - **Direction 1/2:** Reverse the direction of the starting point/ending point.
+          - **Direction 1/2:** Die Richtung des Startpunkts/Endpunkts umkehren.
      - **Tension 1:**
-          - **Value 1/2:** The tension value affected 1st CV to 3rd CV of the starting point/ending point.
+          - **Value 1/2:** Der Spannungswert betrifft den 1. CV bis 3. CV des Startpunkts/Endpunkts.
      - **Tension 2:**
-          - **Value 1/2:** The tension value affected 2nd CV and 3rd CV of the starting point/ending point.
+          - **Value 1/2:** Der Spannungswert betrifft den 2. CV und 3. CV des Startpunkts/Endpunkts.
      - **Tension 3:**
-          - **Value 1/2:** The tension value affected 3rd CV of the starting point/ending point.
+          - **Value 1/2:** Der Spannungswert betrifft den 3. CV des Startpunkts/Endpunkts.
      - **Start curvature:**
-          - **G0, G1, G2, G3:** Specify the [continuity of the  Curve](../cad-essentials/continuity-curve-and-surface) at the starting point.
+          - **G0, G1, G2, G3:** Spezifizieren Sie die [continuity of the  Curve](../cad-essentials/continuity-curve-and-surface) am Startpunkt.
      -  **End curvature:**
-          - **G0, G1, G2, G3:** Specify the [continuity of the  Curve](../cad-essentials/continuity-curve-and-surface) at the ending point.      
-   - **Trim:** When turned on, any Curve that extends beyond the bridge will be trimmed.
-4. Confirm with OK in the Command Dialog or right-click.
+          - **G0, G1, G2, G3:** Spezifizieren Sie die [continuity of the  Curve](../cad-essentials/continuity-curve-and-surface) am Endpunkt.      
+   - **Trim:** Wenn aktiviert, wird jede Curve, die über die Brücke hinausgeht, getrimmt.
+4. Bestätigen Sie mit OK im Command Dialog oder mit einem Rechtsklick.
 
 ![Bridge Edge](/img/bridge-edge.gif)
 
-## See also
+## Siehe auch
 - [Bridge](./bridge)
 - [Bridge Curve](./bridge-curve)
 - [Bridge Vertex](./bridge-vertex)
 - [Join](./join)
-
-
-
-
-
-
-
-
-

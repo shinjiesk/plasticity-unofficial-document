@@ -3,42 +3,42 @@ import ButtonIcon from 'components/ButtonIcon'
 
 # Boolean
 
-<Reference shortcut="Q" command="Boolean" button="Left of Command Bar" />
+<Reference shortcut="Q" command="Boolean" button="Links von der Befehlsleiste" />
 
-Combine, subtract, or intersect multiple objects in any combination of Solids and Sheets.
+Kombinieren, subtrahieren oder schneiden Sie mehrere Objekte in beliebiger Kombination von Solids und Sheets.
 
-## Basic Usage
+## Grundlegende Verwendung
 
-1. Press <kbd>Q</kbd> or click the button <ButtonIcon type="button-boolean" /> to excute the command.
-2. Select the target and the tool.
-   - **[Command Dialog]**
+1. Drücken Sie <kbd>Q</kbd> oder klicken Sie auf den Button <ButtonIcon type="button-boolean" />, um den Befehl auszuführen.
+2. Wählen Sie das Ziel und das Werkzeug aus.
+   - **[Befehlsdialog]**
       - **Select target bodies:** 
-         - When this button is highlighted, you can select the Solid or Sheet to be used as the Boolean target.
-         - To change the target, click this button again and select the Solid or Sheet.
+         - Wenn dieser Button hervorgehoben ist, können Sie den Solid oder Sheet auswählen, der als Boolean-Ziel verwendet werden soll.
+         - Um das Ziel zu ändern, klicken Sie erneut auf diesen Button und wählen den Solid oder Sheet.
       - **Select tool bodies:** 
-         - When this button is highlighted, you can select the Solid or Sheet to be used as the Boolean tool.
-         - To change the tool, click this button again and select the Solid or Sheet.
-3. Set the options in the Command Dialog and Keyboard Shortcuts.
-   - **[Command Dialog]**
-      - **Keep Tools:** Performs Boolean operations while keeping the tool objects intact.
+         - Wenn dieser Button hervorgehoben ist, können Sie den Solid oder Sheet auswählen, der als Boolean-Werkzeug verwendet werden soll.
+         - Um das Werkzeug zu ändern, klicken Sie erneut auf diesen Button und wählen den Solid oder Sheet.
+3. Legen Sie die Optionen im Befehlsdialog und die Tastaturkürzel fest.
+   - **[Befehlsdialog]**
+      - **Keep Tools:** Führt Boolean-Operationen durch und behält die Werkzeugobjekte bei.
       - **Opetation:**
-         - **Union:** Joins the Boolean target and tool together.
-         - **Diff(erence):** Removes the tool from the Boolean target.
-         - **Intersect:** Creates a Solid at the intersection of the Boolean target and tool.
-         - **Slice:** Creates a Solid at the intersections with the Boolean target and preserves the remaining Solids.
-         - For differences in results based on the operation, please refer to the [Operation Outcome Differences](#operation-outcome-differences) section.
-   - **[Shortcut]**
-      - <kbd>Shift + Q</kbd> **Slice:** Same as above.
-      - <kbd>Q</kbd> **Union:**  Same as above.
-      - <kbd>W</kbd> **Difference:**  Same as above.
-      - <kbd>Shift + E</kbd> **Intersect:**  Same as above.
-      - <kbd>T</kbd> **Keep Tool:**  Same as above.
-      - <kbd>G</kbd> **Move:** Move the tool in the same way as the **Move** command.
-      - <kbd>R</kbd> **Rotate:** Rotate the tool in the same way as the **Rotate** command.
-      - <kbd>S</kbd> **Scale:** Scale the tool in the same way as the **Scale** command.
-      - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Constrain to the X, Y, or Z-axis](./sketching-essentials#constrain-to-an-axis).
-      - <kbd>Shift + X</kbd>/ <kbd>Shift + Y</kbd>/<kbd>Shift + Z</kbd> **X, Y, Z plane:** Constrain to the X, Y, or Z-plane.
-4. Confirm with OK in the Command Dialog or right-click.
+         - **Union:** Verbindet das Boolean-Ziel und das Werkzeug miteinander.
+         - **Diff(erence):** Entfernt das Werkzeug vom Boolean-Ziel.
+         - **Intersect:** Erstellt einen Solid an der Schnittstelle des Boolean-Ziels und des Werkzeugs.
+         - **Slice:** Erstellt einen Solid an den Schnittstellen mit dem Boolean-Ziel und bewahrt die verbleibenden Solids.
+         - Bei Unterschieden in den Ergebnissen aufgrund der Operation, bitte beziehen Sie sich auf den [Operation Outcome Differences](#operation-outcome-differences) Abschnitt.
+   - **[Tastenkombination]**
+      - <kbd>Shift + Q</kbd> **Slice:** Wie oben beschrieben.
+      - <kbd>Q</kbd> **Union:** Wie oben beschrieben.
+      - <kbd>W</kbd> **Difference:** Wie oben beschrieben.
+      - <kbd>Shift + E</kbd> **Intersect:** Wie oben beschrieben.
+      - <kbd>T</kbd> **Keep Tool:** Wie oben beschrieben.
+      - <kbd>G</kbd> **Move:** Bewegen Sie das Werkzeug auf die gleiche Weise wie den **Move** Befehl.
+      - <kbd>R</kbd> **Rotate:** Drehen Sie das Werkzeug auf die gleiche Weise wie den **Rotate** Befehl.
+      - <kbd>S</kbd> **Scale:** Skalieren Sie das Werkzeug auf die gleiche Weise wie den **Scale** Befehl.
+      - <kbd>X</kbd>/<kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Auf X-, Y- oder Z-Achse beschränken](./sketching-essentials#constrain-to-an-axis).
+      - <kbd>Shift + X</kbd>/<kbd>Shift + Y</kbd>/<kbd>Shift + Z</kbd> **X, Y, Z plane:** Auf die X-, Y- oder Z-Ebene beschränken.
+4. Bestätigen Sie mit OK im Befehlsdialog oder Rechtsklick.
 
 ## Operation Outcome Differences [#operation-outcome-differences]
 
@@ -54,19 +54,10 @@ Combine, subtract, or intersect multiple objects in any combination of Solids an
 ### Target: Sheet, Tool: Sheet
 ![Boolean 4](/img/boolean-4.png )
 
-## See also
+## Siehe auch
 - [Cut](./cut)
 - [Extrude](./extrude)
 - [Pipe](./pipe)
-
-
-
-
-
-
-
-
-
 
 
 
