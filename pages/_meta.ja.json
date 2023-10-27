@@ -29,19 +29,5 @@
         "type": "separator",
         "title": "Advanced"
     },
-    "cad-essentials": "CADの基本",
-    "Language": {
-        "title": "Language 🌎",
-        "type": "menu",
-        "items": {
-            "english": {
-                "title": "English",
-                "href": "/en"
-            },
-            "japanese": {
-                "title": "日本語",
-                "href": "/ja"
-            }
-        }
-    }
+    "cad-essentials": "CADの基本"
 }

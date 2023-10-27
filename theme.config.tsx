@@ -21,6 +21,10 @@ const config: DocsThemeConfig = {
                     }}
                 >
                     <div>
+                        <a href="/en">English</a> | <a href="/ja">日本語</a>
+                    </div>
+                    
+                    <div>
                         <a href="https://www.plasticity.xyz" target="_blank" rel="noopener">Get Plasticity</a>
                     </div>
                     <div>

@@ -29,19 +29,5 @@
         "type": "separator",
         "title": "Advanced"
     },
-    "cad-essentials": "CAD Essentials",
-    "Language": {
-        "title": "Language 🌎",
-        "type": "menu",
-        "items": {
-            "english": {
-                "title": "English",
-                "href": "/en"
-            },
-            "japanese": {
-                "title": "日本語",
-                "href": "/ja"
-            }
-        }
-    }
+    "cad-essentials": "CAD Essentials"
 }
