@@ -6,78 +6,78 @@ import { Callout } from 'nextra/components'
 
 <Reference shortcut="B" command="Fillet Shell" button="" />
 
-Fillet or chamfer the Edges which can be conic or G2 continuous. Variable distance, limit range are adjustable.
+Kanten verrunden oder abschrägen, die konisch oder G2-kontinuierlich sein können. Variable Distanz, Begrenzungsbereich sind einstellbar.
 
-## Basic Usage
+## Grundlegende Verwendung
 
-1. Select the Edges to fillet or chamfer.
-2. When one or more Edges are selected, the default command, **Fillet**, is automatically executed.
-3. Alternatively, press the shortcut key <kbd>B</kbd> to excute.
-4. Move the yellow dot to specify the distance of the fillet or chamfer. 
-    - Positive movement:  results in a fillet.
-    - Negative movement: results in a chamfer.
+1. Wählen Sie die Kanten aus, die Sie verrunden oder abschrägen möchten.
+2. Wenn eine oder mehrere Kanten ausgewählt sind, wird der Standardbefehl **Fillet** automatisch ausgeführt.
+3. Alternativ können Sie die Verknüpfung <kbd>B</kbd> verwenden.
+4. Bewegen Sie den gelben Punkt, um die Entfernung der Rundung oder Abschrägung anzugeben.
+    - Positive Bewegung: ergibt eine Rundung.
+    - Negative Bewegung: ergibt eine Abschrägung.
     ![Fillet](/img/fillet-solid-0.gif)
-5. Optionally, to select more Edges, <kbd>Ctrl</kbd> + click on the Edge. To deselect, <kbd>Ctrl</kbd> + click again.
-6. Set the options in the Command Dialog and Keyboard Shortcuts. See [**Fillet options**](#fillet-options) and [**Chamfer options**](#chamfer-options) below.
-7. Confirm with OK in the Command Dialog or right-click.
+5. Optional können Sie mit <kbd>Strg</kbd> + Klick weitere Kanten auswählen. Um die Auswahl aufzuheben, klicken Sie erneut mit <kbd>Strg</kbd> + Klick.
+6. Legen Sie die Optionen im Command Dialog und den Tastenkombinationen fest. Siehe [**Fillet options**](#fillet-options) und [**Chamfer options**](#chamfer-options) unten.
+7. Bestätigen Sie mit OK im Command Dialog oder Rechtsklick.
 
-## Fillet options
+## Fillet-Optionen
 
 ### Command Dialog
 
 **Distance:** 
-    - To fillet an Edge, enter a positive value. To chamfer an Edge, enter a negative value
+    - Um eine Kante zu verrunden, geben Sie einen positiven Wert ein. Um eine Kante abzuschrägen, geben Sie einen negativen Wert ein.
 <Callout type="info" emoji="💡">
-    **Tip**
-    To copy a fillet radius, click on the source fillet, but only if the two Distance values are the same and the shape is a Conic.
+    **Tipp**
+    Um einen Rundungsradius zu kopieren, klicken Sie auf die Quellrundung, jedoch nur, wenn die beiden Distance-Werte gleich sind und die Form konisch ist.
 ![](/img/fillet-solid-copyfillet.gif)
 </Callout>
 
 **Shape:**
-    - **Conic:** The Conic fillet option is known for producing a more natural and smooth transition compared to traditional round fillets. This makes it especially useful in applications where aerodynamics or aesthetics are crucial.
-    - **Chordal:** The hallmark of a Chordal fillet is that it maintains a constant length for the chord of the fillet, regardless of the angles being filleted. This uniformity can be particularly beneficial when aiming for visual consistency across different parts of a model.
-    - **G2:** The G2 option generates curves that are smoothly continuous with the surfaces at both ends of the fillet. This setting is optimal for intricate designs and complex surface handling that require an extremely smooth and natural shape transition. See [Surface Continuity](../cad-essentials/continuity-curve-and-surface).
+    - **Conic:** Die konische Rundungsoption ist bekannt dafür, einen natürlicheren und glatteren Übergang im Vergleich zu traditionellen Rundungen zu erzeugen. Dies macht sie besonders nützlich in Anwendungen, wo Aerodynamik oder Ästhetik entscheidend sind.
+    - **Chordal:** Ein Merkmal der Chordal-Rundung ist, dass sie eine konstante Länge für die Saite der Rundung beibehält, unabhängig von den Winkeln, die gerundet werden. Diese Einheitlichkeit kann besonders nützlich sein, wenn man eine visuelle Konsistenz über verschiedene Teile eines Modells anstrebt.
+    - **G2:** Die G2-Option erzeugt Kurven, die an beiden Enden der Rundung reibungslos mit den Flächen kontinuierlich sind. Diese Einstellung ist optimal für komplexe Entwürfe und komplexe Oberflächenbehandlung, die einen extrem glatten und natürlichen Formübergang erfordern. Siehe [Surface Continuity](../cad-essentials/continuity-curve-and-surface).
     <VideoPlayer fileName="fillet-shell-shape"/>
 
 **Y-Blend:** 
-    - The “Y-blend” is a special kind of blend or fillet that occurs when three surfaces meet at a common point, forming a “Y” shape. Enabling **Attempt**, you can create better topology  in Y-blend and avoid undesired fillet results.
+    - Der "Y-Blend" ist eine besondere Art von Mischung oder Rundung, die auftritt, wenn drei Flächen an einem gemeinsamen Punkt zusammentreffen und eine "Y"-Form bilden. Mit **Attempt** können Sie eine bessere Topologie im Y-Blend erstellen und unerwünschte Rundungsergebnisse vermeiden.
     ![](/img/fillet-solid-yblend.gif)
 
 **Selection:** 
-    - Disable **Add tangent Edges** to limit fillets to selected Edges only.
-    - Shortcut <kbd>T</kbd> is acceptable.
+    - Deaktivieren Sie **Add tangent Edges**, um Rundungen nur auf ausgewählte Kanten zu beschränken.
+    - Verknüpfung <kbd>T</kbd> ist akzeptabel.
     ![](/img/fillet-sold-selection.gif)
 
 ### Shortcuts
 
 <kbd>A</kbd> **: Chamfer angle** 
-    - Specify fillet angle by moving the cursor.
+    - Winkel der Rundung durch Bewegen des Cursors angeben.
 <Callout type="info" emoji="💡">
-    Also, changing the two values of distance changes the angle.
+    Das Ändern der beiden Distance-Werte ändert auch den Winkel.
     ![](/img/fillet-solid-two-value.gif)
 </Callout>
 
 <kbd>D</kbd> **: Fillet distance** 
-    - Specify Fillet distance by moving the cursor.<br />
+    - Rundungsdistanz durch Bewegen des Cursors angeben.
 
 <kbd>C</kbd> **: Chamfer distance** 
-    - Specify Chamfer distance by moving the cursor.<br />
+    - Abschrägungsdistanz durch Bewegen des Cursors angeben.
 
-<kbd>V</kbd> **: Add variable point** <br />
-    - Add a variable point to the fillet.<br />
+<kbd>V</kbd> **: Add variable point** 
+    - Einen variablen Punkt zur Rundung hinzufügen.
     ![](/img/fillet-solid-variable.gif)
 
-<kbd>L</kbd> **: Add limit (stop) point** <br />
-    - Specify the range to fillet. Make sure that [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap) are enabled, Click on the center line of fillet to add a limit point. To reverse the direction, click on the limit point again. Up to two limit points can be set.
+<kbd>L</kbd> **: Add limit (stop) point** 
+    - Den Bereich für die Rundung angeben. Stellen Sie sicher, dass [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap) aktiviert sind, klicken Sie auf die Mittellinie der Rundung, um einen Grenzpunkt hinzuzufügen. Um die Richtung umzukehren, klicken Sie erneut auf den Grenzpunkt. Es können bis zu zwei Grenzpunkte festgelegt werden.
     ![](/img/fillet-solid-limit.gif)
 
-## Chamfer options
+## Chamfer Options
 - **Shape:**
-    - **Offset:** Default chamfer.
-    - **Apex:** Reduce the displacement of the border of the chamfer surface.
-- Others are the same as fillet options.
+    - **Offset:** Standard Abschrägung.
+    - **Apex:** Verschiebung der Grenze der Abschrägungsfläche reduzieren.
+- Andere Optionen sind die gleichen wie bei den Fillet-Optionen.
 
-## See also
+## Siehe auch
 - [Fillet](./fillet)
 - [Fillet Curve](../sketch/fillet-curve) 
 - [Fillet Vertex](../sketch/fillet-vertex)

@@ -2,47 +2,47 @@ import Reference from 'components/Reference'
 
 # Imprint Curve Body[#imprint-curve-body]
 
-<Reference shortcut="Shift + I" command="Imprint Curve Body" button="" />
+<Reference shortcut="Umschalt + I" command="Imprint Curve Body" button="" />
 
-Create Edges on the target Solid or Sheet where it projects onto a tool Curve. Optional direction of projection can be specified; bidirectional projection is also available.
+Erstellen Sie Kanten am Zielsolid oder Sheet, wo es auf eine Werkzeug-Curve projiziert wird. Optional kann die Projektionsrichtung angegeben werden; auch eine bidirektionale Projektion ist verfügbar.
 
-### When Curves are selected
+### Wenn Curves ausgewählt sind
 
-1. Press <kbd>Shift + I</kbd>.
-2. Select a Solid or Sheet to project the Curves onto.
-3. Proceed to step 4.
+1. Drücken Sie <kbd>Umschalt + I</kbd>.
+2. Wählen Sie einen Solid oder Sheet, auf den die Curves projiziert werden sollen.
+3. Fahren Sie mit Schritt 4 fort.
 
-### When Solid or Sheet are selected
+### Wenn Solid oder Sheet ausgewählt sind
 
-1. Press <kbd>Shift + I</kbd>.
-2. Select Curves to project onto the Solid or Sheet.
-3. Proceed to step 4.
+1. Drücken Sie <kbd>Umschalt + I</kbd>.
+2. Wählen Sie Curves, die auf den Solid oder Sheet projiziert werden sollen.
+3. Fahren Sie mit Schritt 4 fort.
 
-### When nothing is selected
+### Wenn nichts ausgewählt ist
 
-1. Press <kbd>Shift + I</kbd>.
-2. Select a Solid or Sheet to project the Curves onto.
-3. Select Curves to project onto the Solid or Sheet.
-4. Set the options in the Command Dialog and Keyboard Shortcuts.
+1. Drücken Sie <kbd>Umschalt + I</kbd>.
+2. Wählen Sie einen Solid oder Sheet, auf den die Curves projiziert werden sollen.
+3. Wählen Sie Curves, die auf den Solid oder Sheet projiziert werden sollen.
+4. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
    - **Method:**
-        - **Normal:** Projects using the standard method.
-        - **Vector:** Projects in the direction specified by **Direction**. **Bidirectional** and **X-Ray** will be enabled.
+        - **Normal:** Projiziert mit der Standardmethode.
+        - **Vector:** Projiziert in die von **Direction** angegebene Richtung. **Bidirectional** und **X-Ray** werden aktiviert.
    - **Direction:**
-        - **Value 1:** Specify the X component of the vector for the projection direction.
-        - **Value 2:** Specify the Y component of the vector for the projection direction.
-        - **Value 3:** Specify the Z component of the vector for the projection direction.
-   - **Bidirectional:** Performs the projection in both directions.
+        - **Value 1:** Geben Sie die X-Komponente des Vektors für die Projektionsrichtung an.
+        - **Value 2:** Geben Sie die Y-Komponente des Vektors für die Projektionsrichtung an.
+        - **Value 3:** Geben Sie die Z-Komponente des Vektors für die Projektionsrichtung an.
+   - **Bidirectional:** Führt die Projektion in beide Richtungen durch.
    - **X-Ray:** 
-        - **Hide occlusion:** When enabled, does not project onto surfaces behind the object.
-   - **Completion:** Specify the extension of the projected Edges.
-        - **None:** Does not extend the projected Edges.
-        - **Edge:** Extends the projected Edges until they intersect with other Edges.
-        - **Boundary:** Extends the projected Edges until they intersect with other Edges and connects them.
-5. Confirm with OK in the Command Dialog or right-click.
+        - **Hide occlusion:** Wenn aktiviert, wird nicht auf Oberflächen hinter dem Objekt projiziert.
+   - **Completion:** Geben Sie die Erweiterung der projizierten Kanten an.
+        - **None:** Erweitert die projizierten Kanten nicht.
+        - **Edge:** Erweitert die projizierten Kanten bis sie andere Kanten schneiden.
+        - **Boundary:** Erweitert die projizierten Kanten bis sie andere Kanten schneiden und verbindet sie.
+5. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
 
 ![Imprint Curve Body](/img/imprint-curve-body.gif)
 
-## See also
+## Siehe auch
 - [Imprint](./imprint)
 - [Imprint Body Body](./imprint-body-body)
 - [isoparam](./isoparam)
