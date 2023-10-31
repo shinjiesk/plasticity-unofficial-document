@@ -7,6 +7,5 @@ module.exports = withNextra({
     i18n: {
         locales: ["en", "de", "ja"],
         defaultLocale: "en",
-        localeDetection: true
     },
 });
