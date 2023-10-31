@@ -23,6 +23,8 @@ const config: DocsThemeConfig = {
                     <div>
                         <a href="/en">English</a>
                         <span> | </span>
+                        <a href="/en">Deutsch</a>
+                        <span> | </span> 
                         <a href="/ja">日本語</a>
                     </div>
                     <div>
