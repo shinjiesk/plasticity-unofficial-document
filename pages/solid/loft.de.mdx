@@ -1,153 +1,149 @@
 import Reference from 'components/Reference'
 import { Callout } from 'nextra/components'
 
-<Reference shortcut="L" command="Loft" button="" />
-
 # Loft
 
-Create a surface using two or more profile Curves and Edges. Shape can be controlled by Guide Curves or Edges. Supports G0, G1, G2 continuity and tension.
+<Reference shortcut="L" command="Loft" button="" />
 
-## Loft the Curves and the Edges
+Erstellen Sie eine Oberfläche mit zwei oder mehr Profil Curves und Edges. Die Form kann durch Guide Curves oder Edges gesteuert werden. Unterstützt G0, G1, G2 Kontinuität und Spannung.
 
-You can loft with any combination of Curves and Edges. 
+## Loft die Curves und die Edges
 
-### Lofting two Curves
+Sie können mit jeder Kombination von Curves und Edges loft.
 
-Lofting Curves allow you to specify **Add Limit Point** option.
+### Lofting von zwei Curves
 
-1. Select two Curves you want to loft.
-2. Press <kbd>L</kbd>.
-3. Set the options by Keyboard Shortcuts.
-    - <kbd>L</kbd> **Add Limit Point:** Specify the range to loft.
-        - Make sure that [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap) are enabled.
-        - Click on the Edge to add a limit point.
-        - To reverse the direction, click on the limit point again.
-        - Up to two limit points can be set on each Curve.
-4. Confirm with OK in the Command Dialog or right-click.
+Beim Lofting von Curves können Sie die Option **Add Limit Point** angeben.
 
-![Loft Curve and Curve](/img/loft-curve-and-curve.gif)
+1. Wählen Sie zwei Curves aus, die Sie loft möchten.
+2. Drücken Sie <kbd>L</kbd>.
+3. Legen Sie die Optionen mit den Tastaturkürzeln fest.
+    - <kbd>L</kbd> **Add Limit Point:** Legen Sie den Bereich für das Loft fest.
+        - Stellen Sie sicher, dass [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap) aktiviert sind.
+        - Klicken Sie auf die Edge, um einen Limit-Punkt hinzuzufügen.
+        - Um die Richtung umzukehren, klicken Sie erneut auf den Limit-Punkt.
+        - Auf jeder Curve können bis zu zwei Limit-Punkte gesetzt werden.
+4. Bestätigen Sie mit OK im Command Dialog oder mit Rechtsklick.
 
-### Lofting two Edges
+![Loft Curve und Curve](/img/loft-curve-and-curve.gif)
 
-Lofting Edges allows you to specify **Continuity**, **Tension**, **Add Limit Point** options.
+### Lofting von zwei Edges
 
-1. Select two Edges you want to loft.
-2. Press <kbd>L</kbd>.
-3. Set the options in the Command Dialog and the Keyboard Shortcuts.
+Beim Lofting von Edges können Sie die Optionen **Continuity**, **Tension** und **Add Limit Point** angeben.
+
+1. Wählen Sie zwei Edges aus, die Sie loft möchten.
+2. Drücken Sie <kbd>L</kbd>.
+3. Legen Sie die Optionen im Command Dialog und den Tastaturkürzeln fest.
     - **Continuity**: **G0, G1, G2** 
-        - Specify the [continuity of the Surface](../cad-essentials/continuity-curve-and-surface).
-        - Continuity can be specified individually by clicking on the black circles on the surface.
-    - **Tension**: Specify the tension of each Edge.
-    - <kbd>Tab</kbd> **Cycle continuity:** Switch continuity.
-    - <kbd>D</kbd> **Tension:** By moving the cursor, you can specify the tension for both Edges at once.
-    - <kbd>L</kbd> **Add Limit Point:** Specify the range to loft. Same as **Lofting two Curves**
-4. Confirm with OK in the Command Dialog or right-click.
+        - Geben Sie die [Kontinuität der Oberfläche](../cad-essentials/continuity-curve-and-surface) an.
+        - Kontinuität kann individuell angegeben werden, indem man auf die schwarzen Kreise auf der Oberfläche klickt.
+    - **Tension**: Geben Sie die Spannung jeder Edge an.
+    - <kbd>Tab</kbd> **Cycle continuity:** Wechseln Sie die Kontinuität.
+    - <kbd>D</kbd> **Tension:** Durch Bewegen des Cursors können Sie die Spannung für beide Edges gleichzeitig festlegen.
+    - <kbd>L</kbd> **Add Limit Point:** Legen Sie den Bereich für das Loft fest. Gleich wie bei **Lofting von zwei Curves**.
+4. Bestätigen Sie mit OK im Command Dialog oder mit Rechtsklick.
 
-![Loft Edge and Edge](/img/loft-edge-and-edge.gif)
+![Loft Edge und Edge](/img/loft-edge-and-edge.gif)
 
-### Lofting Curve and Edge
+### Lofting von Curve und Edge
 
-Curves and Edges can be lofted in any combination. The procedure and functions are the same as **Lofting two Curves** and **Lofting two Edges** described above. 
+Curves und Edges können in jeder Kombination geloftet werden. Das Verfahren und die Funktionen sind die gleichen wie bei **Lofting von zwei Curves** und **Lofting von zwei Edges**.
 
-## Lofting Multiple Curves
+## Lofting von mehreren Curves
 
-You can loft multiple Curves at once. <kbd>Shift</kbd> + Click to select multiple, <kbd>Ctrl</kbd> + Click to deselect. The procedure and functions are the same as **Lofting two Curves**. Edges can also be specified at the start and endpoints.
-
-
-
+Sie können mehrere Curves auf einmal loft. <kbd>Umschalt</kbd> + Klick, um mehrere auszuwählen, <kbd>Strg</kbd> + Klick, um abzuwählen. Das Verfahren und die Funktionen sind die gleichen wie bei **Lofting von zwei Curves**. Edges können auch an den Start- und Endpunkten angegeben werden.
 
 <Callout type="warning" emoji="⚠️">
-Profiles and guides must be selected in the order in which surfaces flow.
+Profile und Guides müssen in der Reihenfolge ausgewählt werden, in der die Oberflächen fließen.
 </Callout>
 
+![Loft mehrere Curves](/img/loft-multiple-curves.gif)
 
-![Loft multiple Curves](/img/loft-multiple-curves.gif)
+## Lofting mit einem Guide
 
-## Lofting with a Guide
+Ein oder mehrere Guides können verwendet werden, um die Form des Lofts zu steuern. Jede Kombination von Curves und Edges kann als Guides angegeben werden. Die geloftete Oberfläche kann beschnitten werden.
 
-One or more guides can be used to control the shape of the loft.  Any combination of Curves and Edges can be specified as guides. The lofted surface can be trimmed.
-
-1. Select two Curves you want to loft.
-2. Press <kbd>L</kbd>.
-3. Select guide Curves or Edges. <kbd>Shift</kbd> + Click to select multiple, <kbd>Ctrl</kbd> + Click to deselect. 
-4. Set the options in the Command Dialog and the Keyboard Shortcuts.
+1. Wählen Sie zwei Curves aus, die Sie loft möchten.
+2. Drücken Sie <kbd>L</kbd>.
+3. Wählen Sie Guide Curves oder Edges. <kbd>Umschalt</kbd> + Klick, um mehrere auszuwählen, <kbd>Strg</kbd> + Klick, um abzuwählen.
+4. Legen Sie die Optionen im Command Dialog und den Tastaturkürzeln fest.
     - **Trim overlap:**
-        - **Guides:** Guide side lofted surface is trimmed.
-        - **Profiles:** Profile side lofted surface is trimmed.
-    - The other options are the same as **Lofting two Curves** and **Lofting two Edges** described above.
-5. Confirm with OK in the Command Dialog or right-click.
+        - **Guides:** Die von der Guide-Seite geloftete Oberfläche wird beschnitten.
+        - **Profiles:** Die von der Profile-Seite geloftete Oberfläche wird beschnitten.
+    - Die anderen Optionen sind die gleichen wie bei **Lofting von zwei Curves** und **Lofting von zwei Edges**.
+5. Bestätigen Sie mit OK im Command Dialog oder mit Rechtsklick.
 
-![Loft Curve with a guide](/img/loft-curve-with-guide.gif)
+![Loft Curve mit einem Guide](/img/loft-curve-with-guide.gif)
 
-## Continuous Lofting
+## Kontinuierliches Lofting
 
-If only one Edge is selected and lofted, two adjacent Edges can be lofted as guides. This function can be performed in succession to easily join two Sheets together.
+Wenn nur eine Edge ausgewählt und geloftet wird, können zwei benachbarte Edges als Guides geloftet werden. Diese Funktion kann nacheinander ausgeführt werden, um zwei Sheets einfach zusammenzuführen.
 
-![Continuous Lofting](/img/loft-continuous.gif)
+![Kontinuierliches Lofting](/img/loft-continuous.gif)
 
 ## Loop Lofting
 
-You can loft more than three Curves to create a loop Sheet.
+Sie können mehr als drei Curves loft, um ein Loop Sheet zu erstellen.
 
-1. Select three or more Curves you want to loft.
-2. Press <kbd>L</kbd>.
-3. Click **Loop** in the Command Dialog.
-4. Set the options by Keyboard Shortcuts.
-    - <kbd>L</kbd> **Add Limit Point:** Specify the range to loft. Same as **"Lofting two Curves."**
-4. Confirm with OK in the Command Dialog or right-click.
+1. Wählen Sie drei oder mehr Curves aus, die Sie loft möchten.
+2. Drücken Sie <kbd>L</kbd>.
+3. Klicken Sie im Command Dialog auf **Loop**.
+4. Legen Sie die Optionen mit den Tastaturkürzeln fest.
+    - <kbd>L</kbd> **Add Limit Point:** Legen Sie den Bereich für das Loft fest. Gleich wie bei **"Lofting von zwei Curves."**
+4. Bestätigen Sie mit OK im Command Dialog oder mit Rechtsklick.
 
 ![Loft Loop](/img/loft-loop.gif)
 
-## Loft Closed Curves
+## Loft geschlossene Curves
 
-You can loft a closed Curves to create a closed Sheet.  
+Sie können geschlossene Curves loft, um ein geschlossenes Sheet zu erstellen.
 
-1. Select two or more closed Curves you want to loft.
-2. Press <kbd>L</kbd>.
-3. Optionally select guide Curves to control the shape of the loft.  
-4. Confirm with OK in the Command Dialog or right-click.
+1. Wählen Sie zwei oder mehr geschlossene Curves aus, die Sie loft möchten.
+2. Drücken Sie <kbd>L</kbd>.
+3. Wählen Sie optional Guide Curves aus, um die Form des Lofts zu steuern.
+4. Bestätigen Sie mit OK im Command Dialog oder mit Rechtsklick.
 
 ## Loft Regions
 
-You can loft a Regions to create a Solid.
+Sie können Regions loft, um ein Solid zu erstellen.
 
-1. Select two or more Regions you want to loft.
-2. Press <kbd>L</kbd>.
-3. Optionally select guide Curves to control the shape of the loft.  
-4. Confirm with OK in the Command Dialog or right-click.
+1. Wählen Sie zwei oder mehr Regions aus, die Sie loft möchten.
+2. Drücken Sie <kbd>L</kbd>.
+3. Wählen Sie optional Guide Curves aus, um die Form des Lofts zu steuern.
+4. Bestätigen Sie mit OK im Command Dialog oder mit Rechtsklick.
 
 ## Loft Faces
 
-You can loft two Faces to create a Solid.
+Sie können zwei Faces loft, um ein Solid zu erstellen.
 
-1. Select two Faces you want to loft.
-2. Press <kbd>L</kbd>.
-3. Optionally select guide Curves to control the shape of the loft.  
-4. Set the options in the Command Dialog and the Keyboard Shortcuts.
+1. Wählen Sie zwei Faces aus, die Sie loft möchten.
+2. Drücken Sie <kbd>L</kbd>.
+3. Wählen Sie optional Guide Curves aus, um die Form des Lofts zu steuern.
+4. Legen Sie die Optionen im Command Dialog und den Tastaturkürzeln fest.
     - **Continuity**: **G0, G1, G2** 
-        - Specify the [Continuity of the Surface](../cad-essentials/continuity-curve-and-surface).
-        - Continuity can be specified individually by clicking on the black circles on the surface.
-        - <kbd>Tab</kbd> **Cycle continuity:** Switch continuity.
-    - **Tension**: Specify the tension of each Edge.
-4. Confirm with OK in the Command Dialog or right-click.
+        - Geben Sie die [Kontinuität der Oberfläche](../cad-essentials/continuity-curve-and-surface) an.
+        - Kontinuität kann individuell angegeben werden, indem man auf die schwarzen Kreise auf der Oberfläche klickt.
+        - <kbd>Tab</kbd> **Cycle continuity:** Wechseln Sie die Kontinuität.
+    - **Tension**: Geben Sie die Spannung jeder Edge an.
+4. Bestätigen Sie mit OK im Command Dialog oder mit Rechtsklick.
 
 ## Loft Vertices
 
-Lofting two Vertices allows bridging two Curves. The functionality is the same as [**Bridge Vertex**](../sketch/bridge#bridge-vertex).
+Das Lofting von zwei Vertices ermöglicht es, zwei Curves zu überbrücken. Die Funktionalität ist dieselbe wie bei [**Bridge Vertex**](../sketch/bridge#bridge-vertex).
 
-## Troubleshooting Tips
+## Problemlösungstipps
 
 <Callout type="info" emoji="💡">
-**Possible reasons when loft doesn't succeed**
-1. Curves are overly complex.  Rebuilding the  Curves is often the solution.
-2. Guide Curves not touching the profiles.  Check that each connection has a blue-green dot, indicating intersection.  To ensure a precise touch, see [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap).
-3. Attempting to Loft a complex shape all in one go.  Design the model using simpler sub-section shapes, made with multiple Lofts. Connect surfaces using Joins or using bridge Curves with additional Lofts for example.
-4. Too many, or not enough guide Curves. Practice helps one to get better here.  Lofts struggle if you try to force a surface to fit through too many profiles & guides. Same issue if profiles & guides are spaced too close together.
-5. Select Curves instead of Edges. The possible options are different for Edge and Curve. 
-6. Curves are not selected in the correct order. Profiles and guides must be selected in the order in which surfaces flow.
-7. A failed Loft is sometimes not a failure.  Generally you see the Loft growing as you select guides. However, I've had surfaces appear, then disappear, when selecting the next guides.  This leads you to think the Loft has failed. Keep going on to the next giudes and all the surfaces may suddenly appear.  It's as if Parasolid sometimes needs ALL your inputs first to solve the puzzle.
-8. Reverse the selection sequence of Profiles and Guides.  Normally you select the Profiles and then the Guides.  When a loft fails, try selecting the "Guides" and then the "Profiles".  This can work even though it seems backwards.
+**Mögliche Gründe, warum das Loft nicht erfolgreich ist**
+1. Curves sind übermäßig komplex. Oft ist der Neuaufbau der Curves die Lösung.
+2. Guide Curves berühren die Profile nicht. Überprüfen Sie, ob jede Verbindung einen blau-grünen Punkt hat, der den Schnittpunkt anzeigt. Um eine genaue Berührung sicherzustellen, siehe [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap).
+3. Versuch, eine komplexe Form auf einmal zu loft. Entwerfen Sie das Modell mit einfacheren Unterabschnittsformen, die mit mehreren Lofts erstellt wurden. Verbinden Sie Oberflächen mit Joins oder mit Brückenkurven mit zusätzlichen Lofts.
+4. Zu viele oder zu wenige Guide Curves. Mit Übung wird man hier besser. Lofts haben Schwierigkeiten, wenn man versucht, eine Oberfläche durch zu viele Profile & Guides zu zwingen. Gleiches Problem, wenn Profile & Guides zu eng beieinander liegen.
+5. Wählen Sie Curves anstelle von Edges. Die möglichen Optionen für Edge und Curve sind unterschiedlich.
+6. Curves werden nicht in der richtigen Reihenfolge ausgewählt. Profile und Guides müssen in der Reihenfolge ausgewählt werden, in der die Oberflächen fließen.
+7. Ein fehlgeschlagener Loft ist manchmal kein Misserfolg. Im Allgemeinen sehen Sie den Loft wachsen, wenn Sie Guides auswählen. Ich hatte jedoch Oberflächen, die erschienen und dann verschwanden, wenn ich die nächsten Guides auswählte. Dies führt dazu, dass man denkt, der Loft sei fehlgeschlagen. Machen Sie weiter mit den nächsten Guides, und alle Oberflächen können plötzlich erscheinen. Es sieht so aus, als ob Parasolid manchmal ALLE Ihre Eingaben benötigt, um das Rätsel zu lösen.
+8. Kehren Sie die Auswahlreihenfolge von Profilen und Guides um. Normalerweise wählen Sie die Profile und dann die Guides. Wenn ein Loft fehlschlägt, versuchen Sie, zuerst die "Guides" und dann die "Profile" auszuwählen. Dies kann funktionieren, auch wenn es rückwärts erscheint.
 </Callout>
 
-## See also
+## Siehe auch
 - [Patch](./patch)

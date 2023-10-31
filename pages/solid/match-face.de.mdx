@@ -1,28 +1,28 @@
 import Reference from 'components/Reference'
 import ButtonIcon from 'components/ButtonIcon'
 
-<Reference shortcut="" command="Match Face" button="Right of Command Bar" />
-
 # Match Face
 
-Replace the selected Face with another Face.
+<Reference shortcut="" command="Match Face" button="Rechts von der Befehlsleiste" />
 
-1. Select Faces to match.
-2. Click the button <ButtonIcon type="button-match-face" />.
-3. Select the surface to replace with.
-4. Set the options in the Command Dialog.
+Ersetzen Sie das ausgewählte Face durch ein anderes Face.
+
+1. Wählen Sie Faces zum Angleichen aus.
+2. Klicken Sie auf den Button <ButtonIcon type="button-match-face" />.
+3. Wählen Sie die Oberfläche zum Ersetzen aus.
+4. Legen Sie die Optionen im Command Dialog fest.
     - **Grow:**
-        - When a concave inner Face is offset.
-        - **Moving:** Move the whole wall when the offset gets to the outer wall.
-        - **Fixed:** Stop at the outer wall.
-        - **None:** Keep going by itself, neither affecting or affected by the outer wall.
+        - Wenn ein konkaves inneres Face versetzt wird.
+        - **Moving:** Bewegen Sie die gesamte Wand, wenn der Versatz zur äußeren Wand gelangt.
+        - **Fixed:** Stoppen Sie an der äußeren Wand.
+        - **None:** Fahren Sie von selbst fort, ohne die äußere Wand zu beeinflussen oder von ihr beeinflusst zu werden.
     - **Side:** 
-        - **Front:** When enabled, the Face will be matched to the front Face of the selected surface.
-5. Confirm with OK in the Command Dialog or right-click.
+        - **Front:** Wenn aktiviert, wird das Face mit dem vorderen Face der ausgewählten Oberfläche abgeglichen.
+5. Bestätigen Sie mit OK im Command Dialog oder Rechtsklick.
 
 ![Match Face](/img/match-face.gif)
 
-## See also
+## Siehe auch
 - [Offset Face](./offset-face)
 - [Draft Face](./draft-face)
 - [Delete Face](./delete-face)
