@@ -1,45 +1,45 @@
 import VideoPlayer from 'components/VideoPlayer';
 import { Tabs } from 'nextra/components'
 
-# Radial Menu
+# Radialmenü
 
-Das Radial Menu ist eine kreisförmige Schnittstelle zum Ausführen von Befehlen. Sie können alle in Plasticity verfügbaren Befehle ausführen. Standardmäßig gibt es zwei Radial Menus: "Selection mode" und "Viewport settings". Zusätzlich können Benutzer ihre eigenen benutzerdefinierten Radial Menus erstellen.
+Das Radialmenü ist eine kreisförmige Schnittstelle zum Ausführen von Befehlen. Sie können alle in Plasticity verfügbaren Befehle ausführen. Standardmäßig gibt es zwei Radialmenüs: "Selection mode" und "Viewport settings". Zusätzlich können Benutzer ihre eigenen benutzerdefinierten Radialmenüs erstellen.
 
-![Radial Menu](/img/radial-menu.png)
+![Radialmenü](/img/radial-menu.png)
 
-## Einrichten des Radial Menu
+## Einrichten des Radialmenü
 
-Um die standardmäßigen Radial Menus "Selection mode" und "Viewport settings" zu verwenden, ist eine Einrichtung erforderlich.
+Um die standardmäßigen Radialmenüs "Selection mode" und "Viewport settings" zu verwenden, ist eine Einrichtung erforderlich.
 
 1. Laden Sie die folgenden zwei Textdateien herunter: Wenn Sie klicken, wird der Inhalt des Textes angezeigt. Klicken Sie oben rechts auf "Download".
     - [selection-mode.radial.json](https://app.box.com/s/xrh5xjepvcio33fvmy4thbc00ady5p4k)
     - [viewport-settings.radial.json](https://app.box.com/s/g9hlphfr4shjhkf2c5gfdknnxudq8ouu)
 2. Ziehen Sie die heruntergeladenen Dateien in Plasticitys 3D-Viewport.
-3. Obwohl keine sichtbaren Änderungen auf dem Bildschirm erfolgen, ist die Definition des Radial Menus nun geladen und einsatzbereit.
+3. Obwohl keine sichtbaren Änderungen auf dem Bildschirm erfolgen, ist die Definition des Radialmenüs nun geladen und einsatzbereit.
 
-Sie müssen Tastenkombinationen zuweisen, um auf die Radial Menus zuzugreifen.
+Sie müssen Tastenkombinationen zuweisen, um auf die Radialmenüs zuzugreifen.
 
 4. Drücken Sie die <kbd>F</kbd>-Taste, um die Command Palette zu öffnen.
 5. Geben Sie "menu" in die Command Palette ein. Sie sehen Einträge für "Radial Menu: Selection Mode" und "Radial Menu: Viewport Settings".
 6. Klicken Sie mit der rechten Maustaste auf "Radial Menu: Selection Mode" und weisen Sie eine Tastenkombination zu. Für Anweisungen zum Zuweisen von Tastenkombinationen siehe [diesen Abschnitt](./command-palette#assign-a-shortcut).
 7. Klicken Sie mit der rechten Maustaste auf "Radial Menu: Viewport Settings" und weisen Sie eine Tastenkombination zu.
-8. Jetzt können Sie das Radial Menu anzeigen, indem Sie die zugewiesene Tastenkombination drücken.
+8. Jetzt können Sie das Radialmenü anzeigen, indem Sie die zugewiesene Tastenkombination drücken.
 
-## Verwendung des Radial Menu
+## Verwendung des Radialmenü
 
-Wie bei anderen Befehlen können Sie das Radial Menu anzeigen, indem Sie seine Tastenkombination drücken.
+Wie bei anderen Befehlen können Sie das Radialmenü anzeigen, indem Sie seine Tastenkombination drücken.
 
 1. Drücken Sie die zuvor eingerichtete Tastenkombination.
-2. Das Radial Menu wird zentriert zu Ihrem Cursor angezeigt.
+2. Das Radialmenü wird zentriert zu Ihrem Cursor angezeigt.
 3. Klicken Sie auf einen Artikel im Menü, um den Befehl auszuführen.
 4. Alternativ können Sie die Tastenkombination gedrückt halten, über einen Artikel fahren und die Taste loslassen, um den Befehl auszuführen.
 
 <VideoPlayer fileName="radial-menu"/>
 
-## Erstellen eines neuen Radial Menu
+## Erstellen eines neuen Radialmenü
 
-Sie können ein Radial Menu mit einem gewünschten Befehl erstellen. Der Menüname und seine Befehle werden in einer Textdatei festgelegt. <br />
-Zum Beispiel entwerfen wir ein "My Menu" Radial Menu mit "Spline Curve", "Bridge" und "Lock Selected", zugänglich über die Tastenkombination <kbd>Strg + Umschalt + F</kbd>.
+Sie können ein Radialmenü mit einem gewünschten Befehl erstellen. Der Menüname und seine Befehle werden in einer Textdatei festgelegt. <br />
+Zum Beispiel entwerfen wir ein "My Menu" Radialmenü mit "Spline Curve", "Bridge" und "Lock Selected", zugänglich über die Tastenkombination <kbd>Strg + Umschalt + F</kbd>.
 
 1. Öffnen Sie einen Texteditor und erstellen Sie ein neues Dokument.
 2. Speichern Sie das Dokument mit dem Dateinamen "mymenu.radial.json".
@@ -68,6 +68,7 @@ Zum Beispiel entwerfen wir ein "My Menu" Radial Menu mit "Spline Curve", "Bridge
     ]
 }
 ```
+Erklärung: (Bitte beachten Sie, dass die Erklärungen, die mit // beginnen, nur zur Referenz dienen und nicht in die tatsächliche Datei aufgenommen werden sollten.)
 - name: Stellt den Titel des Radialmenüs dar. Sie können einen beliebigen Namen wählen. Er wird in der Befehlspalette angezeigt und nimmt das Format "Radial Menu: (name)" an.
 - command: Ein eindeutiger Bezeichner für das Radialmenü. Um Konflikte mit vorhandenen Befehlen zu vermeiden, ziehen Sie in Betracht, den Namen des Autors oder andere einzigartige Elemente einzubeziehen.
 - items: Listet die in das Radialmenü integrierten Befehle auf. Sie können mehrere Befehle einfügen.
@@ -77,13 +78,13 @@ Zum Beispiel entwerfen wir ein "My Menu" Radial Menu mit "Spline Curve", "Bridge
 
 ```json
 {
-    "name": "My Menu",      // Represents the radial menu's title
-    "command": "your-name:mymenu",   // A unique identifier for the radial menu
+    "name": "My Menu",      // Stellt den Titel des Radialmenüs dar
+    "command": "your-name:mymenu",   // Ein eindeutiger Bezeichner für das Radialmenü
     "items": [
         {
-            "command": "command:curve",  // The internal designation for the command to be incorporated
-            "icon": "curve",             // Denotes the icon that appears in the radial menu
-            "label": "Curve"             // The central label in the radial menu
+            "command": "command:curve",  // Die interne Bezeichnung für den zu integrierenden Befehl
+            "icon": "curve",             // Bezeichnet das Symbol, das im Radialmenü erscheint
+            "label": "Curve"             // Das zentrale Label im Radialmenü
         },
         ...
     ]
