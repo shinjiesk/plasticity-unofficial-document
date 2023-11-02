@@ -19,11 +19,13 @@
   "homepage": "https://plasticitydoc.vercel.app/",
   "dependencies": {
     "@mdx-js/react": "^3.0.0",
-    "@next/mdx": "^13.5.6",
+    "@next/mdx": "^14.0.1",
+    "@types/react": "^18.2.34",
+    "@types/react-dom": "^18.2.14",
     "@vercel/analytics": "^1.1.1",
     "gray-matter": "^4.0.3",
     "mdx-bundler": "^9.2.1",
-    "next": "^13.5.6",
+    "next": "^14.0.1",
     "nextjs-google-analytics": "^2.3.3",
     "nextra": "^2.13.2",
     "nextra-theme-docs": "^2.13.2",
@@ -36,7 +38,7 @@
     "styled-components": "^6.1.0"
   },
   "devDependencies": {
-    "@types/node": "20.8.9",
+    "@types/node": "20.8.10",
     "typescript": "^5.2.2"
   }
 }

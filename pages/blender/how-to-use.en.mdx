@@ -12,9 +12,9 @@ To transfer the Objects created in Plasticity to Blender, click the "Refresh" bu
     1. Open Plasticity.
     2. Create objects that you want to transfer to Blender.
 2. **Within Blender:**
-    1. Click the "Connect" button in the "Plasticity sidebar panel". Once a connection is established, additional options will be displayed in the panel.
+    1. Click the "Connect" button in the "Plasticity" sidebar panel. Once a connection is established, additional options will be displayed in the panel.
         ![BB Blender Connet](/img/bb-blender-connect.png)
-    2. Click the "Refresh" button in the "Plasticity sidebar panel" to transfer objects from Plasticity to Blender.
+    2. Click the "Refresh" button in the "Plasticity" sidebar panel to transfer objects from Plasticity to Blender.
         ![BB Blender Connet](/img/bb-blender-refresh.png)
     3. The transferred objects will appear in the 3D viewport of Blender.
         - All solids and Sheets in Plasticity will be transferred as Meshes in Blender.
@@ -23,7 +23,7 @@ To transfer the Objects created in Plasticity to Blender, click the "Refresh" bu
 3. **Within Plasticity:**
     1. Edit the objects as needed.
 4. **Within Blender:**
-    1. To update any changes made in Plasticity, click the "Refresh" button in the "Plasticity sidebar panel".
+    1. To update any changes made in Plasticity, click the "Refresh" button in the "Plasticity" sidebar panel.
 
 ## Live Link
 
@@ -34,7 +34,7 @@ When Live Link is enabled, any changes made to the objects in Plasticity will be
     2. Create objects that you want to transfer to Blender.
 2. **Within Blender:**
     1. Ensure that the Blender Bridge add-on is installed and activated. 
-    2. Click the "Live Link" button in the "Plasticity sidebar panel".
+    2. Click the "Live Link" button in the "Plasticity" sidebar panel.
         ![BB Blender Live Link](/img/bb-blender-live-link.png)
 3. **Within Plasticity:**
     1. Edit the objects as needed.
@@ -47,20 +47,20 @@ The Refacet Mesh option will automatically retopologize the mesh of the transfer
 
 1. **Within Blender:**
     1. Select the transferred objects to be retopologized.
-    2. Click the "Refacet" button in the "Plasticity sidebar panel".
+    2. Click the "Refacet" button in the "Plasticity" sidebar panel.
         ![BB Blender Refacet](/img/bb-blender-refacet.png)
-        - You can specify the refacet config in the "Plasticity sidebar panel".
-            - Tri/Ngon: The type of mesh to be generated. 'Tri' will generate a mesh with only triangles, while 'Ngon' will generate a mesh that includes polygons with five or more sides.
-            - Tolerance: The maximum distance between the original mesh and the retopologized mesh. A lower tolerance will result in a mesh that more closely matches the original mesh, but will also result in a mesh with more vertices.
-            - Angle: The maximum angle between the original mesh and the retopologized mesh. A lower angle will result in a mesh that more closely matches the original mesh, but will also result in a mesh with more vertices.
+        - You can specify the refacet config in the "Plasticity" sidebar panel.
+            - **Tri/Ngon:** The type of mesh to be generated. 'Tri' will generate a mesh with only triangles, while 'Ngon' will generate a mesh that includes polygons with five or more sides.
+            - **Tolerance:** The maximum distance between the original mesh and the retopologized mesh. A lower tolerance will result in a mesh that more closely matches the original mesh, but will also result in a mesh with more vertices.
+            - **Angle:** The maximum angle between the original mesh and the retopologized mesh. A lower angle will result in a mesh that more closely matches the original mesh, but will also result in a mesh with more vertices.
         - Click "Advanced" button to show advanced options.
-            - Tri/Ngon: The type of mesh to be generated. 'Tri' will generate a mesh with only triangles, while 'Ngon' will generate a mesh that includes polygons with five or more sides.
-            - Min width: The minimum width of the retopologized mesh. A lower minimum width will result in a mesh with more vertices.
-            - Max width: The maximum width of the retopologized mesh. A lower maximum width will result in a mesh with more vertices.
-            - Edge Chord Tolerance: The maximum distance between the original Edge chord and the retopologized mesh. 
-            - Edge Angle Tolerance: The maximum angle between the original Edge angle and the retopologized mesh.
-            - Face Plane Tolerance: The maximum distance between the original Face plane and the retopologized mesh.
-            - Face Angle Tolerance: The maximum angle between the original Fce angle and the retopologized mesh.
+            - **Tri/Ngon:** The type of mesh to be generated. 'Tri' will generate a mesh with only triangles, while 'Ngon' will generate a mesh that includes polygons with five or more sides.
+            - **Min width:** The minimum width of the retopologized mesh. A lower minimum width will result in a mesh with more vertices.
+            - **Max width:** The maximum width of the retopologized mesh. A lower maximum width will result in a mesh with more vertices.
+            - **Edge Chord Tolerance:** The maximum distance between the original Edge chord and the retopologized mesh. 
+            - **Edge Angle Tolerance:** The maximum angle between the original Edge angle and the retopologized mesh.
+            - **Face Plane Tolerance:** The maximum distance between the original Face plane and the retopologized mesh.
+            - **Face Angle Tolerance:** The maximum angle between the original Fce angle and the retopologized mesh.
         - Refacet automatically produces a "Mark Sharp" on the edges of the retopologized mesh.
 
 ## Utilities

@@ -1,7 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { DocsThemeConfig } from "nextra-theme-docs";
-import { useConfig } from "nextra-theme-docs";
+import { DocsThemeConfig, useConfig  } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
     logo: (
@@ -12,27 +11,24 @@ const config: DocsThemeConfig = {
 
     footer: {
         text: (
-            <>
-                <div
-                    style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        width: "100%",
-                    }}
-                >
-                    <div>
-                        <a href="/en">English</a>
-                        <span> | </span>
-                        <a href="/de">Deutsch</a>
-                        <span> | </span> 
-                        <a href="/ja">日本語</a>
-                    </div>
-                    <div>
-                        © Copyright {new Date().getFullYear()}. All rights
-                        reserved.
-                    </div>
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: "100%",
+                }}
+            >
+                <div>
+                    <a href="/en">English</a>
+                    <span> | </span>
+                    <a href="/de">Deutsch</a>
+                    <span> | </span>
+                    <a href="/ja">日本語</a>
                 </div>
-            </>
+                <div>
+                    © Copyright {new Date().getFullYear()}. All rights reserved.
+                </div>
+            </div>
         ),
     },
     darkMode: true,
@@ -88,9 +84,7 @@ const config: DocsThemeConfig = {
     banner: {
         key: "1.3-release",
         text: (
-            <a
-                href="/whats-new"
-            >
+            <a href="/whats-new">
                 🎉 Plasticity 1.3 is released → Click here for details
             </a>
         ),
