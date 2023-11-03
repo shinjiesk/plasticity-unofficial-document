@@ -1,0 +1,50 @@
+import Reference from 'components/Reference'
+
+# Imprint Curve Body[#imprint-curve-body]
+
+<Reference shortcut="Umschalt + I" command="Imprint Curve Body" button="" />
+
+Erstellen Sie Kanten am Zielsolid oder Sheet, wo es auf eine Werkzeug-Curve projiziert wird. Optional kann die Projektionsrichtung angegeben werden; auch eine bidirektionale Projektion ist verfügbar.
+
+### Wenn Curves ausgewählt sind
+
+1. Drücken Sie <kbd>Umschalt + I</kbd>.
+2. Wählen Sie einen Solid oder Sheet, auf den die Curves projiziert werden sollen.
+3. Fahren Sie mit Schritt 4 fort.
+
+### Wenn Solid oder Sheet ausgewählt sind
+
+1. Drücken Sie <kbd>Umschalt + I</kbd>.
+2. Wählen Sie Curves, die auf den Solid oder Sheet projiziert werden sollen.
+3. Fahren Sie mit Schritt 4 fort.
+
+### Wenn nichts ausgewählt ist
+
+1. Drücken Sie <kbd>Umschalt + I</kbd>.
+2. Wählen Sie einen Solid oder Sheet, auf den die Curves projiziert werden sollen.
+3. Wählen Sie Curves, die auf den Solid oder Sheet projiziert werden sollen.
+4. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
+   - **Method:**
+        - **Normal:** Projiziert mit der Standardmethode.
+        - **Vector:** Projiziert in die von **Direction** angegebene Richtung. **Bidirectional** und **X-Ray** werden aktiviert.
+   - **Direction:**
+        - **Value 1:** Geben Sie die X-Komponente des Vektors für die Projektionsrichtung an.
+        - **Value 2:** Geben Sie die Y-Komponente des Vektors für die Projektionsrichtung an.
+        - **Value 3:** Geben Sie die Z-Komponente des Vektors für die Projektionsrichtung an.
+   - **Bidirectional:** Führt die Projektion in beide Richtungen durch.
+   - **X-Ray:** 
+        - **Hide occlusion:** Wenn aktiviert, wird nicht auf Oberflächen hinter dem Objekt projiziert.
+   - **Completion:** Geben Sie die Erweiterung der projizierten Kanten an.
+        - **None:** Erweitert die projizierten Kanten nicht.
+        - **Edge:** Erweitert die projizierten Kanten bis sie andere Kanten schneiden.
+        - **Boundary:** Erweitert die projizierten Kanten bis sie andere Kanten schneiden und verbindet sie.
+5. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
+
+![Imprint Curve Body](/img/imprint-curve-body.gif)
+
+## Siehe auch
+- [Imprint](./imprint)
+- [Imprint Body Body](./imprint-body-body)
+- [isoparam](./isoparam)
+- [Offset Curve](./offset-curve)
+- [Extend Edge](./extend-edge)

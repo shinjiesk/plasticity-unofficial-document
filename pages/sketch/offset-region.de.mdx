@@ -1,0 +1,28 @@
+import Reference from 'components/Reference'
+
+# Offset Region
+
+<Reference shortcut="O" command="Offset Region" button="" />
+
+Versetzen Sie die Konturlinien einer ausgewählten Region, indem Sie die Entfernung angeben, um neue Regionen zu erstellen. Mehrere Regionen erstellen neue einzelne Regionen oder eine kombinierte Region.
+
+1. Wählen Sie die Regionen aus, die Sie versetzen möchten.
+2. Drücken Sie <kbd>O</kbd>.
+3. Ziehen Sie den gelben Pfeil, um die Entfernung festzulegen.
+4. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
+   - **Distance:** Geben Sie die Entfernung an.
+   - <kbd>V</kbd> **Gap fill:** 
+        - **Round:** Rundet konvexe Ecken. 
+        - **Linear:** Verbindet konvexe Ecken mit geraden Linien. 
+        - **Natural:** Natürlich    
+   - <kbd>Tab</kbd> **Lock distances:** Versetzen mit gleichem Abstand auf beiden Seiten.
+   - <kbd>I</kbd> **Individual:** Wenn mehrere Regionen ausgewählt sind, versetzt das Einschalten dieser Option die Regionen in kombinierter Form.
+   - <kbd>D</kbd> **Distance:** Geben Sie die Entfernung mit der Mausbewegung an.
+5. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
+
+![Offset Region](/img/offset-region.gif)
+
+## See also
+- [Offset Curve](./offset-curve)
+- [Offset Planar Curve](./offset-planar-curve)
+- [Project](./project)

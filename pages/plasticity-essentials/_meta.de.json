@@ -1,0 +1,21 @@
+{
+    "object-types": "Objekttypen",
+    "operating-the-3d-viewport": "Bedienung des 3D-Viewports",
+    "user-interface-overview": "Benutzeroberflächen-Übersicht",
+    "file-menu": "P-Menü",
+    "outliner": "Gliederung",
+    "group-objects": "Objekte gruppieren",
+    "toggle-object-states": "Objektzustände umschalten",
+    "focus-and-isolate-objects": "Objekte fokussieren und isolieren",
+    "selection-mode": "Auswahlmodus",
+    "selecting-objects":"Objekte auswählen",
+    "view-mode": "Ansichtsmodus",
+    "grid-and-snap": "Gitter und Fang",
+    "construction-plane": "Konstruktionsebene",
+    "command-bar": "Befehlsleiste",
+    "command-palette": "Befehlspalette",
+    "radial-menu": "Radialmenü",
+    "general": "Allgemeine Funktionen",
+    "importing-reference-images": "Referenzbilder importieren",
+    "export-obj": "OBJ exportieren"
+}

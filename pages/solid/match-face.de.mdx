@@ -1,0 +1,28 @@
+import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon'
+
+# Match Face
+
+<Reference shortcut="" command="Match Face" button="Rechts von der Befehlsleiste" />
+
+Ersetzen Sie das ausgewählte Face durch ein anderes Face.
+
+1. Wählen Sie Faces zum Angleichen aus.
+2. Klicken Sie auf den Button <ButtonIcon type="button-match-face" />.
+3. Wählen Sie die Oberfläche zum Ersetzen aus.
+4. Legen Sie die Optionen im Command Dialog fest.
+    - **Grow:**
+        - Wenn ein konkaves inneres Face versetzt wird.
+        - **Moving:** Bewegen Sie die gesamte Wand, wenn der Versatz zur äußeren Wand gelangt.
+        - **Fixed:** Stoppen Sie an der äußeren Wand.
+        - **None:** Fahren Sie von selbst fort, ohne die äußere Wand zu beeinflussen oder von ihr beeinflusst zu werden.
+    - **Side:** 
+        - **Front:** Wenn aktiviert, wird das Face mit dem vorderen Face der ausgewählten Oberfläche abgeglichen.
+5. Bestätigen Sie mit OK im Command Dialog oder Rechtsklick.
+
+![Match Face](/img/match-face.gif)
+
+## Siehe auch
+- [Offset Face](./offset-face)
+- [Draft Face](./draft-face)
+- [Delete Face](./delete-face)

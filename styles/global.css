@@ -1,23 +1,28 @@
-body:lang(en) {
-    font-family: "Inter", "SF Pro Text", "SF Pro Icons", "Helvetica Neue",
-        "Helvetica", "Arial", sans-serif;
+body {
+    &:lang(en),
+    &:lang(de) {
+        font-family: "Inter", "SF Pro Text", "SF Pro Icons", "Helvetica Neue",
+            "Helvetica", "Arial", sans-serif;
 
-    .md\:nx-w-64 {
-        width: 18rem;
+        .md\:nx-w-64 {
+            width: 18rem;
+        }
     }
 }
 
-body:lang(ja) {
-    font-family: "Noto Sans JP", "Hiragino Sans", "Meiryo",
-        "Hiragino Kaku Gothic ProN", sans-serif;
-    font-size: 0.9rem;
+body {
+    &:lang(ja) {
+        font-family: "Noto Sans JP", "Hiragino Sans", "Meiryo",
+            "Hiragino Kaku Gothic ProN", sans-serif;
+        font-size: 0.9rem;
 
-    .nx-text-sm {
-        font-size: 0.8rem !important;
-    }
+        .nx-text-sm {
+            font-size: 0.8rem !important;
+        }
 
-    .md\:nx-w-64 {
-        width: 19rem;
+        .md\:nx-w-64 {
+            width: 19rem;
+        }
     }
 }
 

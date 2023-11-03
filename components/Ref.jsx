@@ -16,6 +16,11 @@ const Reference = ({ shortcut, command, button }) => {
             commandLabel: "Command",
             buttonLabel: "Button",
         },
+        de: {
+            shortcutLabel: "Tastenkombination",
+            commandLabel: "Befehl",
+            buttonLabel: "Schaltfläche",
+        },
         // If a new locale is added, add it here.
         // fr: {
         //   shortcutLabel: "Raccourci",

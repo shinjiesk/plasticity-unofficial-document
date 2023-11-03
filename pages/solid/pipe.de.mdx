@@ -1,0 +1,40 @@
+import Reference from 'components/Reference'
+import { Callout } from 'nextra/components'
+
+# Pipe
+
+<Reference shortcut="P" command="Pipe" button="Rechts von der Befehlsleiste" />
+
+Erstellen Sie ein Rohr jeder Größe aus einer Curve oder einem Edge. Es kann für boolesche Operationen verwendet werden. Polygon- oder benutzerdefinierte Profiloptionen sind verfügbar.
+
+1. Wählen Sie die Curve oder Edge aus, die Sie verrohren möchten.
+2. Drücken Sie <kbd>P</kbd>.
+3. Ziehen Sie den gelben Punkt, um die Abschnittsgröße und das gelbe Quadrat, um die Rohrwandstärke zu bestimmen. Ziehen Sie den weißen Kreis, um den Drehwinkel festzulegen.
+4. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
+     - **Select target bodies:**, <kbd>Umschalt + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>B</kbd>, <kbd>T</kbd>
+          - Diese booleschen Optionen funktionieren genaus wie der boolesche Befehl. Verweisen Sie auf den Befehl Boolean.
+     - **Select custom profile:** Wählen Sie Regions, Curves oder Faces aus, um die benutzerdefinierten Profile festzulegen.
+     - **Vertex count:** Geben Sie die Anzahl der Vertices für das Polygon des Profils an. Wenn Sie 0 angeben, wird es kreisförmig sein.
+     - **Section size:** Geben Sie die Abschnittsgröße an.
+     - **Thickness:** Geben Sie die Rohrwandstärke an.
+     - **Angle:** Geben Sie den Drehwinkel an.
+     - <kbd>C</kbd> **Custom profile** Wählen Sie die Regions, Curves oder Faces aus, um die benutzerdefinierten Profile festzulegen.
+     - <kbd>D</kbd> **Section size** Bestimmen Sie die Abschnittsgröße durch Bewegen des Cursors.
+     - <kbd>A</kbd> **Angle** Bestimmen Sie den Drehwinkel durch Bewegen des Cursors.
+     - <kbd>Umschalt + T</kbd> **Thickness** Bestimmen Sie die Rohrwandstärke durch Bewegen des Cursors.
+5. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
+
+<Callout emoji="❗">
+**Hinweis**<br />
+Der Befehl "Pipe" dient NICHT zum Erstellen maßstabsgetreuer Rohre. 
+Er dient zum schnellen Erstellen von cool aussehenden Rohren/Röhren. 
+Er führt viele Dinge wie Winkel als Polygone aus, die ihn für jede Art von Sanitär oder ähnlichem nicht maßstabsgetreu machen. 
+Um ein präzises Rohr zu erstellen, verwenden Sie den [**Sweep**](./sweep) Befehl 
+</Callout>
+
+![Pipe](/img/pipe.gif)
+
+## Siehe auch
+- [Boolean](./boolean)
+- [Cut](./cut)
+- [Extrude](./extrude)

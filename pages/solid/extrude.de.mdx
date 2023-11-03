@@ -1,0 +1,31 @@
+import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon'
+
+# Extrude
+
+<Reference shortcut="E" command="Extrude" button="Rechts von der Befehlsleiste" />
+
+Das Herausziehen von Faces oder Regions erzeugt Solids, während das Herausziehen von Curves Sheets produziert. Geben Sie die Entfernung an, setzen Sie den Extrusionswinkel und definieren Sie die Wandstärke. Boolean-Optionen verfügbar.
+
+1. Drücken Sie <kbd>E</kbd> oder klicken Sie auf den Button <ButtonIcon type="button-extrude" />.
+2. Wählen Sie die Faces, Regions oder Curves aus, die Sie extrudieren möchten.
+3. Bewegen Sie den gelben Punkt, um die Entfernung anzugeben.
+4. Legen Sie die Optionen im Befehlsdialog und den Tastenkombinationen fest.
+   - **Select target bodies:**, <kbd>Umschalt + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>B</kbd>, <kbd>T</kbd>
+      - Diese Boolean-Optionen funktionieren genauso wie der **Boolean** Befehl. Beziehen Sie sich auf den **Boolean** Befehl.
+   - **Distance:** Geben Sie die Entfernung und die gegenüberliegende Entfernung an.
+   - **Degrees:** Geben Sie den Extrusionswinkel an.
+   - **Thickness:** Geben Sie die Wandstärke an.
+   - **Keep tools:** Gleich wie <kbd>T</kbd>
+   - <kbd>F</kbd> **Freestyle** Geben Sie den Startpunkt und den Endpunkt an, um die Richtung und Entfernung von **Extrude** zu bestimmen.
+   - <kbd>V</kbd> **Pivot** Geben Sie die Position des Gizmo an. 
+   - <kbd>D</kbd> **Distance 1** Geben Sie die Entfernung mit dem Cursor an.
+   - <kbd>A</kbd> **Angle 1** Geben Sie den Extrusionswinkel mit dem Cursor an.
+   - <kbd>Umschalt + T</kbd> **Thickness** Geben Sie die Wandstärke mit dem Cursor an.
+   - <kbd>Tab</kbd> **Lock distances** Extrudieren Sie mit gleichem Abstand auf beiden Seiten.
+5. Bestätigen Sie mit OK im Befehlsdialog oder Rechtsklick.
+
+## Siehe auch
+- [Boolean](./boolean)
+- [Cut](./cut)
+- [Pipe](./pipe)

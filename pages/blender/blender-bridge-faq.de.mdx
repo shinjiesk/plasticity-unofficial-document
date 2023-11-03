@@ -1,0 +1,21 @@
+# Blender Bridge FAQ
+
+----
+- F: Kann Blender Bridge Blender-Dateien in Plasticity anhängen?
+- A: Derzeit ist die Integration nur in eine Richtung möglich, von Plasticity nach Blender.
+----
+- F: Werden die Materialien von Plasticity in Blender widergespiegelt?
+- A: Derzeit werden sie nicht widergespiegelt.
+----
+- F: Was passiert mit den Daten, wenn Modelle, die mit Blender Bridge in Blender importiert wurden, aktualisiert oder neu facettiert werden?
+- A: Wenn Modelle über die Blender Bridge in Blender aktualisiert oder neu facettiert werden, werden bestimmte Daten überschrieben, während andere unverändert bleiben.
+    - Überschriebene Daten:
+        1. Die "Geometrie" der Objekte wird überschrieben. Das bedeutet, dass Daten, die mit den Vertices verbunden sind, überschrieben werden, einschließlich Attribute wie Nähte, Schärfe und UVs.
+        2. Die "outliner-spezifischen Metadaten" der Objekte werden überschrieben. Beispielsweise werden Namen, Sammlungen, Sichtbarkeit und so weiter überschrieben.
+        3. Alles, was Sie im Edit Mode tun, wird möglicherweise überschrieben.
+    - Nicht überschriebene Daten:
+        1. Die "mit den Objekten verbundenen Daten" werden nicht überschrieben. Dazu gehören Elemente wie Transformationen, Modifikatoren, Elternschaft, Materialien und so weiter.
+        2. Alles, was Sie im Object Mode tun, wird beibehalten.
+----
+- F: Welchen Port verwenden Plasticity und Blender für die Integration?
+- A: Standardmäßig verwenden sie den Port 8980. Wenn Sie den Port ändern möchten, können Sie dies in Plasticity unter Preferences > Server und in Blender im Plasticity Sidebar Panel tun.

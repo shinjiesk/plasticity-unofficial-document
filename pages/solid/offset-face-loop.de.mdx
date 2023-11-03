@@ -1,0 +1,29 @@
+import Reference from 'components/Reference'
+
+# Offset Face Loop
+
+<Reference shortcut="O" command="Offset Face Loop" button="" />
+
+Verschieben Sie die Umrisskanten der ausgewählten Face, indem Sie den Abstand angeben, um neue Edge zu erstellen. Mehrere Face erzeugen neue einzelne Edge oder eine kombinierte Edge.
+
+1. Wählen Sie die Face aus, die Sie versetzen möchten.
+2. Drücken Sie <kbd>O</kbd>.
+3. Bewegen Sie die Maus, um den Abstand anzugeben.
+4. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
+   - **Distance:** Geben Sie den Abstand an.
+   - <kbd>V</kbd> **Gap fill:**
+        - **Round:** Rundet konvexe Ecken.
+        - **Linear:** Verbindet konvexe Ecken mit geraden Linien.
+        - **Natural:** Natürlich
+   - <kbd>I</kbd> **Individual:** Wenn mehrere Face ausgewählt sind, aktiviert diese Option das Versetzen der Face in kombinierter Form.
+   - <kbd>D</kbd> **Distance:** Geben Sie den Abstand mit der Mausbewegung an.
+5. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
+
+![Offset Face Loop](/img/offset-face-loop.gif)
+
+## Siehe auch
+- [Offset Curve](./offset-curve)
+- [Offset Edge](./offset-edge)
+- [isoparam](./isoparam)
+- [Imprint](./imprint)
+- [Extend Edge](./extend-edge)

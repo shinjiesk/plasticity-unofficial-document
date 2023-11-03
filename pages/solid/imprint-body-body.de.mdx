@@ -1,0 +1,28 @@
+import Reference from 'components/Reference'
+
+# Imprint Body Body[#imprint-body-body]
+
+<Reference shortcut="Umschalt + I" command="Imprint Body Body" button="" />
+
+Erstellen Sie Kanten am Zielsolid oder Sheet, wo es mit einem Werkzeug-Solid oder Sheet schneidet. Optional können auch Kanten am Werkzeug erstellt werden.
+
+1. Wählen Sie den ersten Solid oder Sheet, den Sie als Ziel für den Schnitt verwenden möchten.
+2. Wählen Sie den zweiten Solid oder Sheet, den Sie als Werkzeug für den Schnitt verwenden möchten.
+3. Legen Sie die Optionen im Befehlsdialog fest.
+   - **Imprint tool:** Schalten Sie **Imprint** ein, um die Option **Complete tool** anzugeben.
+   - **Complete target:** 
+        - **None:** Erweitert die projizierten Kanten nicht am Zielkörper.
+        - **Edge:** Erweitert die projizierten Kanten, bis sie mit anderen Kanten am Zielkörper schneiden.
+   - **Complete tool:**
+        - **None:** Erweitert die projizierten Kanten nicht am Werkzeugkörper.
+        - **Edge:** Erweitert die projizierten Kanten, bis sie mit anderen Kanten am Werkzeugkörper schneiden.   
+4. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
+
+![Imprint Body Body](/img/imprint-body-body.gif)
+
+## Siehe auch
+- [Imprint](./imprint)
+- [Imprint Curve Body](./imprint-curve-body)
+- [isoparam](./isoparam)
+- [Offset Curve](./offset-curve)
+- [Extend Edge](./extend-edge)

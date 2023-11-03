@@ -1,0 +1,50 @@
+# P-Menü
+
+Um das P-Menü zu öffnen, klicken Sie auf das P in der oberen linken Ecke des Fensters.
+
+![P-Menü](/img/file-menu.png)
+
+| Befehlsname               | Tastenkombination              | Anmerkung                                                                                                                                                                                                      |
+| ------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| New                       | <kbd>Strg + N</kbd>            | Löschen Sie die Szene und erstellen Sie dann ein neues Plasticity-Dokument.                                                                                                                                    |
+| New Window                |                                | Starten Sie Plasticity in einem neuen Fenster. Die Akzentfarbe jedes neuen Fensters wird zufällig geändert, um es vom Hauptfenster zu unterscheiden. Kopieren und Einfügen zwischen Fenstern ist auch möglich. |
+| Open                      | <kbd>Strg + O</kbd>            | Öffnen Sie ein Plasticity-Dokument.                                                                                                                                                                            |
+| Import/Append             | <kbd>Strg + Umschalt + O</kbd> | Ein Dokument importieren. Siehe [File import](#file-import) unten.                                                                                                                                             |
+| Save                      | <kbd>Strg + S</kbd>            | Speichern Sie ein Plasticity-Dokument.                                                                                                                                                                         |
+| Export/Save as            | <kbd>Strg + Umschalt + S</kbd> | Speichern Sie es als ein neues Plasticity-Dokument. Alternativ ein Dokument exportieren. Siehe [File export](#file-export) unten.                                                                              |
+| Quick save version        |                                | Speichern Sie eine Kopie des Dokuments mit demselben Dateinamen, ergänzt durch einen Zeitstempel.                                                                                                              |
+| Save as startup scene     |                                | Speichern Sie das aktuelle Dokument als Startszene. Die Datei wird beim nächsten Start automatisch geöffnet.                                                                                                   |
+| Preferences               | <kbd>Strg + , (Komma)</kbd>    | Siehe [Preferences](./preferences) Seite.                                                                                                                                                                      |
+| Manage licenses           |                                | Verwalten Sie den Lizenztoken und die Geräte.                                                                                                                                                                  |
+| Plasticity Version: 0.0.0 |                                | Installierte Plasticity-Version.                                                                                                                                                                               |
+| Quit                      | <kbd>Strg + Q</kbd>            |                                                                                                                                                                                                                |
+
+## File Import [#file-import]
+
+Sie können die folgenden Dateiformate importieren.
+
+| Dateiformat                        | Indie | Studio |
+| ---------------------------------- | ----- | ------ |
+| Plasticity file (*.plasticity)     | ✓    | ✓     |
+| STEP file (*.stp; *.step)          | ✓    | ✓     |
+| ParaSolid file (*.x_t; *.x_b)      | ✓    | ✓     |
+| Wavefront OBJ file (*.obj)         | ✓    | ✓     |
+| STL file (*.stl)                   | ✓    | ✓     |
+| Image files (*.png; *.jpg; *.jpeg) | ✓    | ✓     |
+| IGES files (*.igs; *.iges)         |       | ✓     |
+| SAT files (*sat)                   |       | ✓     |
+| Rhino files (*.3dm)                |       | ✓     |
+
+## File Export [#file-export]
+
+Sie können die folgenden Dateiformate exportieren.
+
+| Dateiformat                    | Indie | Studio |                                         |
+| ------------------------------ | ----- | ------ | --------------------------------------- |
+| Plasticity file (*.plasticity) | ✓    | ✓     |                                         |
+| STEP file (*.stp; *.step)      | ✓    | ✓     |                                         |
+| ParaSolid file (*.x_t; *.x_b)  | ✓    | ✓     |                                         |
+| Wavefront OBJ file (*.obj)     | ✓    | ✓     | Siehe die Details [hier](./export-obj). |
+| STL file (*.stl)               | ✓    | ✓     |                                         |
+| IGES file (*.igs; *.iges)      |       | ✓     |                                         |
+| SAT file (*sat)                |       | ✓     |                                         |

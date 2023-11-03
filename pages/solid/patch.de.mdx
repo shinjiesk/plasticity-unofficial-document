@@ -1,0 +1,74 @@
+import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon'
+import { Callout } from 'nextra/components'
+
+# Patch
+
+<Reference shortcut="" command="Patch" button="Rechts von der Befehlsleiste" />
+
+Erstellen Sie eine Patch-Oberfläche aus geschlossenen Curves oder Löchern entlang von Edges. Für Löcher sind die Kontinuitätsoptionen G0, G1, G2 und planar sowie Leit-Curves verfügbar.
+
+## Erstellung eines Patch aus Curves
+
+Sie können eine Patch-Oberfläche aus geschlossenen Curves erstellen.
+
+1. Wählen Sie die geschlossenen Curves aus, die Sie patchen möchten.
+2. Klicken Sie auf den Button <ButtonIcon type="button-patch" /> rechts von der Befehlsleiste.
+3. Legen Sie die Optionen im Befehlsdialog fest.
+    - **Tolerance:** Geben Sie die Toleranz für den Patch an.
+4. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
+
+![Patch 1](/img/patch-1.gif)
+
+## Löcher entlang von Edges patchen
+
+Sie können Löcher entlang von Edges patchen.
+
+1. Wählen Sie die Edges aus, die das Loch umgeben.
+2. Klicken Sie auf den Button <ButtonIcon type="button-patch" /> rechts von der Befehlsleiste.
+3. Legen Sie die Optionen im Befehlsdialog fest.
+    - **Continuity:**
+        - **Planar:** Geben Sie die Kontinuität der Oberfläche als planar an.
+        - **G0, G1, G2**
+            - Geben Sie die [Kontinuität der Oberfläche](../cad-essentials/continuity-curve-and-surface) an.
+            - Die Kontinuität kann individuell angegeben werden, indem Sie auf die schwarzen Kreise auf der Oberfläche klicken.
+    - **Faces:**
+        - **Single:**
+        - **Minimal:**
+        - **Quality:**
+    - **Tolerance:** Geben Sie die Toleranz für den Patch an.
+4. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
+
+![Patch 2](/img/patch-2.gif)
+
+## Patchen mit Leit-Curves
+
+Sie können Löcher entlang von Edges mit Leit-Curves patchen.
+
+1. Erstellen Sie die Leit-Curves.
+2. Fügen Sie an jedem Punkt, an dem die Leit-Curve die Oberfläche berührt, einen Isoparam hinzu. Verwenden Sie den [**Isoparam**](./isoparam)-Befehl.
+3. Wählen Sie die Edges aus, die das Loch umgeben.
+4. Klicken Sie auf den Button <ButtonIcon type="button-patch" /> rechts von der Befehlsleiste.
+5. Wählen Sie die Leit-Curves aus.
+6. Legen Sie die Optionen im Befehlsdialog fest.
+    - Die Optionen sind wie oben.
+7. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
+
+![Patch 3](/img/patch-3.gif)
+
+## Mehrere Löcher patchen
+
+Sie können mehrere Löcher auf einmal patchen.
+
+1. Wählen Sie die Sheets mit mehreren Löchern aus, die Sie patchen möchten.
+2. Klicken Sie auf den Button <ButtonIcon type="button-patch" /> rechts von der Befehlsleiste.
+3. Löcher werden gepatcht und zu Solid gemacht.
+<Callout emoji="❗">
+**Hinweis**<br />
+Wenn es ein Loch gibt, das nicht gefüllt werden kann, schlägt der Befehl fehl.
+</Callout>
+
+![Patch 4](/img/patch-4.gif)
+
+## Siehe auch
+- [Loft](./loft)

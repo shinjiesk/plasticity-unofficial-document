@@ -1,0 +1,29 @@
+import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon'
+
+<Reference shortcut="" command="Draft Face" button="" />
+
+# Draft Face
+
+Wenden Sie einen Neigungswinkel auf die ausgewählte Face an.
+
+1. Wählen Sie die Face aus, die als Referenzebene verwendet werden soll.
+2. Klicken Sie auf den Button <ButtonIcon type="button-draft-face" /> rechts von der Befehlsleiste.
+3. Wählen Sie Faces aus, die geneigt werden sollen.
+4. Ziehen Sie den weißen Kreis, um den Neigungswinkel festzulegen.
+5. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
+    - **Degrees:** Geben Sie den Neigungswinkel an.
+    - **Grow:**
+        - Wenn die konkave innere Face geneigt wird.
+        - **Moving:** Erweitern Sie die äußere Wand, wenn die geneigte Face an die äußere Wand gelangt.
+        - **Fixed:** Stoppen Sie an der äußeren Wand.
+        - **None:** Es geht von selbst weiter, ohne die äußere Wand zu beeinflussen oder von ihr beeinflusst zu werden.
+    - <kbd>A</kbd> **Angle adjacent:** Geben Sie den Winkel durch Bewegen des Cursors an.
+6. Bestätigen Sie mit OK im Befehlsdialog oder mit einem Rechtsklick.
+
+![](/img/draft-face.gif)
+
+## Siehe auch
+- [Offset Face](./offset-face)
+- [Match Face](./match-face)
+- [Delete Face](./delete-face)

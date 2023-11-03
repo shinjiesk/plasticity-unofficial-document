@@ -1,0 +1,30 @@
+import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon';
+import { Callout } from 'nextra/components'
+
+# Control Point Curve
+
+<Reference shortcut="" command="Control Point Curve" button="Werkzeugleiste" />
+
+Erstellen Sie eine Curve, indem Sie Control Points platzieren.
+
+1. Klicken Sie auf die Schaltfläche <ButtonIcon type="button-control-point-curve" /> in der Werkzeugleiste.
+2. Klicken Sie auf den Startpunkt der Control Point Curve.
+3. Klicken Sie auf die Punkte, durch die die Control Points der Curve verlaufen werden. Wiederholen Sie die Klicks, um eine Control Point Curve zu erstellen.
+   - <kbd>K</kbd> **Knife:** [Verwenden Sie den Knife-Modus.](./sketching-essentials#use-knife-mode) 
+   - <kbd>Tab</kbd> **Control / Through-point:** Wechselt zur Spline Curve.
+   - <kbd>Strg + Z</kbd> **Undo:** Bricht den letzten Klick ab.
+   - <kbd>X</kbd>/<kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Beschränken Sie sich auf die X-, Y- oder Z-Achse](./sketching-essentials#constrain-to-an-axis).
+4. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
+5. Eine Curve wird erstellt.
+
+<Callout type="info" emoji="💡">
+**Unterschiede zwischen zwei Curves**
+- Spline Curve: Klicken Sie auf die Punkte, durch die die Curve verlaufen wird, um die Curve zu erstellen.
+- Control Point Curve: Klicken Sie auf die Control Points der Curve, um die Curve zu erstellen.
+</Callout>
+
+![Control Point Curve](/img/control-point-curve.gif)
+
+## Siehe auch
+- [Spline Curve](./spline-curve)

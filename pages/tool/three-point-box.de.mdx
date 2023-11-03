@@ -1,0 +1,29 @@
+import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon';
+import VideoPlayer from 'components/VideoPlayer';
+
+# Three-Point Box
+
+<Reference shortcut='' command='Three-Point Box' button='Werkzeugleiste' />
+
+Erstellen Sie ein rechteckiges Kästchen, indem Sie drei Punkte und die Höhe definieren. Boolesche Operationen sind ebenfalls verfügbar.
+
+1. Klicken Sie auf die Schaltfläche <ButtonIcon type="button-three-point-box" /> in der Werkzeugleiste.
+2. Klicken Sie auf den Startpunkt einer Seite des Rechtecks.
+   - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Einschränken auf die X-, Y- oder Z-Achse](./sketching-essentials#constrain-to-an-axis).
+3. Klicken Sie auf den Endpunkt dieser Seite des Rechtecks.
+4. Klicken Sie auf den dritten Punkt des Rechtecks.
+5. Legen Sie die Optionen im Command Dialog und den Tastaturkürzeln fest.
+   - **Select target bodies**, <kbd>Umschalt + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>Umschalt + E</kbd>, <kbd>B</kbd>, <kbd>T</kbd>
+      - Diese Optionen haben die gleiche Funktion wie der Befehl Boolean. Siehe [**Boolean**](../solid/boolean) Befehl für Details.
+   - **Width:** Geben Sie die Breite an.
+   - **Length:** Geben Sie die Länge an.
+   - **Height:** Geben Sie die Höhe an.
+6. Bewegen Sie den Cursor und klicken Sie auf die gewünschte Höhe.
+7. Ein rechteckiges Kästchen wird erstellt.
+
+<VideoPlayer fileName="three-point-box"/>
+
+# Siehe auch
+- [Center Box](./center-box)
+- [Corner Box](./corner-box)

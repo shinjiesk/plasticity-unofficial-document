@@ -1,0 +1,26 @@
+import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon';
+import { Callout } from 'nextra/components'
+
+# Regelmäßiges Polygon
+
+<Reference shortcut='' command='Polygon' button='Werkzeugleiste' />
+
+Erstellen Sie ein Polygon mit einer beliebigen Anzahl von Vertices.
+
+1. Klicken Sie auf die Schaltfläche <ButtonIcon type="button-regular-polygon" /> in der Werkzeugleiste.
+2. Klicken Sie auf den Punkt für das Zentrum des Polygons.
+3. Bewegen Sie den Cursor und klicken Sie auf einen Punkt auf dem umschriebenen Kreis.
+   - <kbd>Tab</kbd> [Geben Sie den Durchmesser des umschriebenen Kreises numerisch an](./sketching-essentials#specify-dimensions-numerically).
+   - <kbd>Umschalt</kbd> + Mausrad hoch **Add a Vertex:** Erhöht die Vertices des Polygons.
+   - <kbd>Umschalt</kbd> + Mausrad runter **Subtract a Vertex:** Reduziert die Vertices des Polygons.
+   - <kbd>K</kbd> **Knife:** [Knife-Modus verwenden.](./sketching-essentials#use-knife-mode)
+   - <kbd>X</kbd>/<kbd>Y</kbd> **X/Y-axis:** [Auf die X- oder Y-Achse einschränken](./sketching-essentials#constrain-to-an-axis).
+4. Bestätigen Sie mit OK im Command Dialog oder mit Rechtsklick.
+5. Ein regelmäßiges Polygon wird erstellt.
+
+<Callout type="info" emoji="💡">
+   Die Vertices des Polygons können mit den Hoch- und Runtertasten erhöht oder reduziert werden.
+</Callout>
+
+![Polygon](/img/polygon.gif)

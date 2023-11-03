@@ -1,0 +1,42 @@
+import Reference from 'components/Reference'
+
+# Bridge Surface
+
+<Reference shortcut="" command="Bridge Surface" button="" />
+
+Verbinden Sie zwei getrennte Oberflächen mit verfügbaren Formoptionen G2 oder Fase. Überflüssige Oberflächen können beschnitten werden.
+
+## Verbindung getrennter Oberflächen
+
+1. Verwenden Sie den **Bridge Surface** Befehl in der Befehlspalette.
+2. Wählen Sie zwei Blätter aus, die verbunden werden sollen.
+3. Legen Sie die Optionen im Befehlsdialog fest.
+    - **Width:** Geben Sie die Breite der Brücke an.
+    - **Shape:** 
+        - **G2:** Die Brückenoberfläche ist G2-kontinuierlich.
+        - **Chamfer:** Die Brückenoberfläche ist gefast.
+    - **Trim walls:** Wenn aktiviert, schneiden Sie die Oberflächen hinter der Brücke ab.
+    - **Trim blend:** 
+        - **Both:** Schneiden Sie beide Seiten der Brückenoberfläche ab.
+        - **Short:** Schneiden Sie die kürzere Seite der Oberfläche ab.
+        - **Long:** Schneiden Sie die längere Seite der Brückenoberfläche ab.
+        - **None:** Schneiden Sie die Brückenoberfläche nicht ab.
+4. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
+
+![Bridge Surface 1](/img/bridge-surface-1.gif)
+
+## Verbindung sich kreuzender Oberflächen
+
+1. Verwenden Sie den **Bridge Surface** Befehl in der Befehlspalette.
+2. Wählen Sie die erste Oberfläche und die zweite Oberfläche aus.
+3. Legen Sie die Optionen im Befehlsdialog fest.
+    - **Sense:** 
+        - **Sense 1/Sense 2:** Kehren Sie die Richtung der Brückenoberfläche um.
+    - Andere Optionen sind wie oben beschrieben.
+4. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
+
+![Bridge Surface 2](/img/bridge-surface-2.gif)
+
+## Siehe auch
+- [Join](./join)
+- [Unjoin](./unjoin)
