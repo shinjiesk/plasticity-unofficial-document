@@ -17,7 +17,7 @@ const Reference = ({ shortcut, command, button }) => {
             buttonLabel: "Button",
         },
         de: {
-            shortcutLabel: "Tastenkombination",
+            shortcutLabel: "Tastenkürzel",
             commandLabel: "Befehl",
             buttonLabel: "Schaltfläche",
         },
@@ -32,49 +32,15 @@ const Reference = ({ shortcut, command, button }) => {
     const translation = translations[locale] || translations.en;
 
     return (
- 
-        <div className="reference">
-          <table>
-            <tbody>
-              <tr>
-                <td className="label">{translation.commandLabel}</td>
-                <td className="value">{command}</td>
-              </tr>
-              <tr>
-                <td className="label">{translation.shortcutLabel}</td>
-                <td className="value">{shortcut || "--"}</td>
-              </tr>
-              <tr>
-                <td className="label">{translation.buttonLabel}</td>
-                <td className="value">{button || "--"}</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <style jsx>{`
-            .reference {
-              width: 50%;
-              padding: 16px;
-              border: 1px solid #888;
-              border-radius: 6px;
-              margin-top: 1rem;
-            }
-
-            table {
-              width: 100%;
-              table-layout: fixed;
-            }
-
-            .label {
-              width: 30%;
-            }
-
-            .value {
-              width: 70%;
-              font-weight: bold;
-            }
-          `}</style>
+        <div className="w-3/5 p-4 border border-gray-400 rounded-lg mt-4 grid grid-cols-10">
+            <div className="col-span-3">{translation.commandLabel}</div>
+            <div className="col-span-7 font-bold">{command}</div>
+            <div className="col-span-3">{translation.shortcutLabel}</div>
+            <div className="col-span-7 font-bold">{shortcut || "-"}</div>
+            <div className="col-span-3">{translation.buttonLabel}</div>
+            <div className="col-span-7 font-bold">{button || "-"}</div>
         </div>
+
     );
 };
 

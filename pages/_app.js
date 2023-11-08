@@ -1,6 +1,6 @@
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import { Analytics } from "@vercel/analytics/react";
-import "../styles/global.css";
+import "../styles/global.scss";
 
 const App = ({ Component, pageProps }) => {
   return (
