@@ -1,6 +1,5 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
-import VideoPlayer from 'components/VideoPlayer';
 import { Callout } from 'nextra/components'
 
 # Fillet Shell
@@ -17,7 +16,7 @@ Fillet or chamfer the Edges which can be conic or G2 continuous. Variable distan
 4. Move the yellow dot to specify the distance of the fillet or chamfer. 
     - Positive movement:  results in a fillet.
     - Negative movement: results in a chamfer.
-    ![Fillet](/img/fillet-solid-0.gif)
+    <VideoPlayer fileName="fillet-solid-0"/>
 5. Optionally, to select more Edges, <kbd>Ctrl</kbd> + click on the Edge. To deselect, <kbd>Ctrl</kbd> + click again.
 6. Set the options in the Command Dialog and Keyboard Shortcuts. See [**Fillet options**](#fillet-options) and [**Chamfer options**](#chamfer-options) below.
 7. Confirm with OK in the Command Dialog or right-click.
@@ -31,7 +30,7 @@ Fillet or chamfer the Edges which can be conic or G2 continuous. Variable distan
 <Callout type="info" emoji="💡">
     **Tip**
     To copy a fillet radius, click on the source fillet, but only if the two Distance values are the same and the shape is a Conic.
-![](/img/fillet-solid-copyfillet.gif)
+<VideoPlayer fileName="fillet-solid-copyfillet"/>
 </Callout>
 
 **Shape:**
@@ -42,12 +41,12 @@ Fillet or chamfer the Edges which can be conic or G2 continuous. Variable distan
 
 **Y-Blend:** 
     - The “Y-blend” is a special kind of blend or fillet that occurs when three surfaces meet at a common point, forming a “Y” shape. Enabling **Attempt**, you can create better topology  in Y-blend and avoid undesired fillet results.
-    ![](/img/fillet-solid-yblend.gif)
+    <VideoPlayer fileName="fillet-solid-yblend"/>
 
 **Selection:** 
     - Disable **Add tangent Edges** to limit fillets to selected Edges only.
     - Shortcut <kbd>T</kbd> is acceptable.
-    ![](/img/fillet-sold-selection.gif)
+    <VideoPlayer fileName="fillet-sold-selection"/>
 
 ### Shortcuts
 
@@ -55,7 +54,7 @@ Fillet or chamfer the Edges which can be conic or G2 continuous. Variable distan
     - Specify fillet angle by moving the cursor.
 <Callout type="info" emoji="💡">
     Also, changing the two values of distance changes the angle.
-    ![](/img/fillet-solid-two-value.gif)
+    <VideoPlayer fileName="fillet-solid-two-value"/>
 </Callout>
 
 <kbd>D</kbd> **: Fillet distance** 
@@ -66,11 +65,11 @@ Fillet or chamfer the Edges which can be conic or G2 continuous. Variable distan
 
 <kbd>V</kbd> **: Add variable point** <br />
     - Add a variable point to the fillet.<br />
-    ![](/img/fillet-solid-variable.gif)
+    <VideoPlayer fileName="fillet-solid-variable"/>
 
 <kbd>L</kbd> **: Add limit (stop) point** <br />
     - Specify the range to fillet. Make sure that [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap) are enabled, Click on the center line of fillet to add a limit point. To reverse the direction, click on the limit point again. Up to two limit points can be set.
-    ![](/img/fillet-solid-limit.gif)
+    <VideoPlayer fileName="fillet-solid-limit"/>
 
 ## Chamfer options
 - **Shape:**

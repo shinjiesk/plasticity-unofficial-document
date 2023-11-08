@@ -1,6 +1,5 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
-import VideoPlayer from 'components/VideoPlayer';
 import { Callout } from 'nextra/components'
 
 # Fillet Shell
@@ -17,7 +16,7 @@ Kanten verrunden oder abschrägen, die konisch oder G2-kontinuierlich sein könn
 4. Bewegen Sie den gelben Punkt, um die Entfernung der Rundung oder Abschrägung anzugeben.
     - Positive Bewegung: ergibt eine Rundung.
     - Negative Bewegung: ergibt eine Abschrägung.
-    ![Fillet](/img/fillet-solid-0.gif)
+    <VideoPlayer fileName="fillet-solid-0"/>
 5. Optional können Sie mit <kbd>Strg</kbd> + Klick weitere Kanten auswählen. Um die Auswahl aufzuheben, klicken Sie erneut mit <kbd>Strg</kbd> + Klick.
 6. Legen Sie die Optionen im Command Dialog und den Tastenkombinationen fest. Siehe [**Fillet options**](#fillet-options) und [**Chamfer options**](#chamfer-options) unten.
 7. Bestätigen Sie mit OK im Command Dialog oder Rechtsklick.
@@ -31,7 +30,7 @@ Kanten verrunden oder abschrägen, die konisch oder G2-kontinuierlich sein könn
 <Callout type="info" emoji="💡">
     **Tipp**
     Um einen Rundungsradius zu kopieren, klicken Sie auf die Quellrundung, jedoch nur, wenn die beiden Distance-Werte gleich sind und die Form konisch ist.
-![](/img/fillet-solid-copyfillet.gif)
+<VideoPlayer fileName="fillet-solid-copyfillet"/>
 </Callout>
 
 **Shape:**
@@ -42,12 +41,12 @@ Kanten verrunden oder abschrägen, die konisch oder G2-kontinuierlich sein könn
 
 **Y-Blend:** 
     - Der "Y-Blend" ist eine besondere Art von Mischung oder Rundung, die auftritt, wenn drei Flächen an einem gemeinsamen Punkt zusammentreffen und eine "Y"-Form bilden. Mit **Attempt** können Sie eine bessere Topologie im Y-Blend erstellen und unerwünschte Rundungsergebnisse vermeiden.
-    ![](/img/fillet-solid-yblend.gif)
+    <VideoPlayer fileName="fillet-solid-yblend"/>
 
 **Selection:** 
     - Deaktivieren Sie **Add tangent Edges**, um Rundungen nur auf ausgewählte Kanten zu beschränken.
     - Verknüpfung <kbd>T</kbd> ist akzeptabel.
-    ![](/img/fillet-sold-selection.gif)
+    <VideoPlayer fileName="fillet-sold-selection"/>
 
 ### Shortcuts
 
@@ -55,7 +54,7 @@ Kanten verrunden oder abschrägen, die konisch oder G2-kontinuierlich sein könn
     - Winkel der Rundung durch Bewegen des Cursors angeben.
 <Callout type="info" emoji="💡">
     Das Ändern der beiden Distance-Werte ändert auch den Winkel.
-    ![](/img/fillet-solid-two-value.gif)
+    <VideoPlayer fileName="fillet-solid-two-value"/>
 </Callout>
 
 <kbd>D</kbd> **: Fillet distance** 
@@ -66,11 +65,11 @@ Kanten verrunden oder abschrägen, die konisch oder G2-kontinuierlich sein könn
 
 <kbd>V</kbd> **: Add variable point** 
     - Einen variablen Punkt zur Rundung hinzufügen.
-    ![](/img/fillet-solid-variable.gif)
+    <VideoPlayer fileName="fillet-solid-variable"/>
 
 <kbd>L</kbd> **: Add limit (stop) point** 
     - Den Bereich für die Rundung angeben. Stellen Sie sicher, dass [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap) aktiviert sind, klicken Sie auf die Mittellinie der Rundung, um einen Grenzpunkt hinzuzufügen. Um die Richtung umzukehren, klicken Sie erneut auf den Grenzpunkt. Es können bis zu zwei Grenzpunkte festgelegt werden.
-    ![](/img/fillet-solid-limit.gif)
+    <VideoPlayer fileName="fillet-solid-limit"/>
 
 ## Chamfer Options
 - **Shape:**
