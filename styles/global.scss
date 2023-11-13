@@ -11,7 +11,9 @@ body {
 
         .md\:nx-w-64 {
             width: 18rem;
-        }
+        };
+        hyphens: auto;
+        hyphenate-limit-chars: 6 3 3;
     }
 }
 
