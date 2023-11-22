@@ -27,6 +27,7 @@ body {
         }
         hyphens: auto;
         hyphenate-limit-chars: 6 3 3;
+        line-height: 1.8rem;
     }
 
     &:lang(ja) {
@@ -41,20 +42,22 @@ body {
         .md\:nx-w-64 {
             width: 19rem;
         }
+        line-height: 1.8rem;
     }
 }
-
 
 ol,
 ul {
     margin-top: 0 !important;
 }
 
-
 main > ul > li {
     list-style-type: none !important;
 }
 
+ul {
+    list-style-type: none !important;
+}
 
 .nx-font-bold {
     font-weight: 900 !important;
@@ -86,10 +89,10 @@ th.nx-border {
 
 /* Keyboard styles  */
 kbd {
-    background-color: #8881;
-    padding: 0px 0.3rem 1px;
+    // background-color: #8881;
+    padding: 0px 5px 0px;
     border-radius: 0.3rem;
-    border: 1px solid #bbb;
+    border: 1px solid #888;
     border-bottom-width: 2px;
     font-size: 0.9rem !important;
     font-family: inherit !important;
@@ -121,7 +124,3 @@ kbd {
 // :is([dir="ltr"] .ltr\:nx-ml-6) {
 //     margin-left: 1rem !important;
 // }
-
-
-
-

@@ -1,0 +1,7 @@
+.container {
+    /* background-color: rgba(128, 128, 128, 0.3); 緑色の半透明背景 */
+    padding: 0rem 0.1rem;
+    border-bottom: solid 1px #777;
+    
+    font-size: 0.8rem;
+}
