@@ -5,6 +5,7 @@ const VideoPlayer = ({ fileName }) => {
 
     return (
         <div>
+            <br />
             <video controls >
                 <source src={videoPath} type="video/mp4" />
                 Your browser does not support video tags.

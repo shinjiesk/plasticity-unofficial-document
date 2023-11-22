@@ -1,5 +1,7 @@
 {
-    "index": { "display": "versteckt" },
+    "index": { 
+        "display": "versteckt" 
+    },
     "whats-new": "Was ist neu", 
     "all-commands": "Befehlsliste & Tastenkombinationen",
     "---1": {

@@ -1,0 +1,30 @@
+import VideoPlayer from 'components/VideoPlayer';
+import Reference from 'components/Reference'
+import ButtonIcon from 'components/ButtonIcon';
+
+# Tangent Circle 
+
+<Reference shortcut="" command="Tangent Circle" button="Toolbar" />
+
+２つの曲線に接する円を作成できます。半径の指定も可能です。
+
+1. ツールバーの <ButtonIcon type="button-tangent-circle" /> ボタンをクリックします。
+2. クリックして円に接する２つの曲線セグメントを選択します。
+3. カーソルを動かすか値を入力して半径を指定します。
+- \[ コマンドダイアログ \]
+    - Select first curve segment : ハイライトされているとき、クリックして最初の曲線セグメントを選択します。
+    - Select second curve segment : ハイライトされているとき、クリックしてふたつめの曲線セグメントを選択します。
+    - Radius: 円の半径を入力します。
+4. クリックして半径を確定します。
+5. 半径の値を入力したときは、コマンドダイアログの OK か右クリックで確定します。
+6. 円が作成されます。
+
+<VideoPlayer fileName="tangent-circle"/>
+
+## See also
+- [Center Cirvle](./center-circle)
+- [Two-Point Circle](./two-point-circle)
+- [Three-Point Circle](./three-point-circle)
+- [Center Point Arc](./center-point-arc)
+- [Three-Point Arc](./three-point-arc)
+- [Tangent Arc](./tangent-arc)
