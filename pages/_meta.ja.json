@@ -1,5 +1,7 @@
 {
-    "index": { "display": "hidden" },
+    "index": { 
+        "display": "hidden" 
+    },
     "whats-new": "更新情報", 
     "all-commands": "コマンドリスト & ショートカットキー",
     "---1": {

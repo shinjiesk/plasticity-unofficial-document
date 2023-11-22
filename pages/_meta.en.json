@@ -1,5 +1,7 @@
 {
-    "index": { "display": "hidden" },
+    "index": {
+        "display": "hidden"
+    },
     "whats-new": "What's New",
     "all-commands": "Command List & Shortcut Keys",
     "---1": {
