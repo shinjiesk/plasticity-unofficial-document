@@ -1,6 +1,7 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
 import { Callout } from 'nextra/components'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Pipe
 
@@ -8,17 +9,21 @@ import { Callout } from 'nextra/components'
 
 Erstellen Sie ein Rohr jeder Größe aus einer Curve oder einem Edge. Es kann für boolesche Operationen verwendet werden. Polygon- oder benutzerdefinierte Profiloptionen sind verfügbar.
 
-1. Wählen Sie die Curve oder Edge aus, die Sie verrohren möchten.
+1. Wählen Sie die Curve oder Edge aus, die Sie verrohren möchten. Wenn Sie mehrere Kurven oder Kanten auswählen, werden mehrere Pipes erstellt.
 2. Drücken Sie <kbd>P</kbd>.
 3. Ziehen Sie den gelben Punkt, um die Abschnittsgröße und das gelbe Quadrat, um die Rohrwandstärke zu bestimmen. Ziehen Sie den weißen Kreis, um den Drehwinkel festzulegen.
 4. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
-     - **Select target bodies:**, <kbd>Umschalt + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>B</kbd>, <kbd>T</kbd>
-          - Diese booleschen Optionen funktionieren genaus wie der boolesche Befehl. Verweisen Sie auf den Befehl Boolean.
+     - <Kst>Befehlsdialog</Kst>   
+     - **Select target bodies:**
+          - Gleiche Funktion wie der Befehl Boolean. Siehe [**Boolean**](../solid/boolean) Befehl für Details.
      - **Select custom profile:** Wählen Sie Regions, Curves oder Faces aus, um die benutzerdefinierten Profile festzulegen.
      - **Vertex count:** Geben Sie die Anzahl der Vertices für das Polygon des Profils an. Wenn Sie 0 angeben, wird es kreisförmig sein.
      - **Section size:** Geben Sie die Abschnittsgröße an.
      - **Thickness:** Geben Sie die Rohrwandstärke an.
      - **Angle:** Geben Sie den Drehwinkel an.
+     - <Kst>Tastenkombinationen</Kst>
+     - <kbd>Umschalt + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>B</kbd>, <kbd>T</kbd>
+          - Gleiche Funktion wie der Befehl Boolean. Siehe [**Boolean**](../solid/boolean) Befehl für Details.
      - <kbd>C</kbd> **Custom profile** Wählen Sie die Regions, Curves oder Faces aus, um die benutzerdefinierten Profile festzulegen.
      - <kbd>D</kbd> **Section size** Bestimmen Sie die Abschnittsgröße durch Bewegen des Cursors.
      - <kbd>A</kbd> **Angle** Bestimmen Sie den Drehwinkel durch Bewegen des Cursors.
