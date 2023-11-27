@@ -1,6 +1,6 @@
 {
     "index": { 
-        "display": "versteckt" 
+        "display": "hidden" 
     },
     "whats-new": "Was ist neu", 
     "all-commands": "Befehlsliste & Tastenkombinationen",
@@ -31,11 +31,5 @@
         "type": "separator",
         "title": "Fortgeschritten"
     },
-    "cad-essentials": "CAD Grundlagen",
-    "get-plasticity": {
-        "title": "Plasticity erhalten",
-        "type": "page",
-        "href": "https://www.plasticity.xyz",
-        "newWindow": true
-    }
+    "cad-essentials": "CAD Grundlagen"
 }
