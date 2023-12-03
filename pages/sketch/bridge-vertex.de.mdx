@@ -1,5 +1,6 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Bridge Vertex[#bridge-vertex]
 
@@ -10,10 +11,7 @@ Verbindet zwei Vertices, die G0/G1/G2/G3-kontinuierlich sein können. Die Spannu
 1. Wählen Sie zwei Vertices, die Sie verbinden möchten.
 2. Verwenden Sie den **Bridge** Befehl im Command Palette.
 3. Legen Sie die Optionen im Command Dialog und den Tastenkombinationen fest.
-     - **T:**
-          - **Value 1/2:** Die relative Position auf dem Segment des Startpunktes/Endpunktes.
-     - **Direction:** 
-          - **Direction 1/2:** Die Richtung des Startpunktes/Endpunktes umkehren.
+     - <Kst>Befehlsdialog</Kst>
      - **Tension 1:**
           - **Value 1/2:** Der Spannungswert beeinflusst den 1. Control-Vertex(CV) bis zum 3. CV des Startpunktes/Endpunktes.
      - **Tension 2:**
@@ -24,7 +22,6 @@ Verbindet zwei Vertices, die G0/G1/G2/G3-kontinuierlich sein können. Die Spannu
           - **G0, G1, G2, G3:** Gibt die [Kontinuität der Curve](../cad-essentials/continuity-curve-and-surface) am Startpunkt an.
      -  **End curvature:**
           - **G0, G1, G2, G3:** Gibt die [Kontinuität der Curve](../cad-essentials/continuity-curve-and-surface) am Endpunkt an.
-   - **Trim:** Wenn aktiviert, wird jeder Curve, der über die Brücke hinausgeht, beschnitten.
 4. Bestätigen Sie mit OK im Command Dialog oder klicken Sie mit der rechten Maustaste.
 
 <VideoPlayer fileName="bridge-vertex"/>

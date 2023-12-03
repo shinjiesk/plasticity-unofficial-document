@@ -2,6 +2,7 @@ import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
 import ButtonIcon from 'components/ButtonIcon'
 import { Callout } from 'nextra/components'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Bridge Curve[#bridge-curve]
 
@@ -19,10 +20,12 @@ The starting and ending points can be selected at any point on the  Curve, Edge,
 
 1. Click the button <ButtonIcon type="button-bridge-curve" /> on the Toolbar.
 2. Click on the starting point
-   - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Constrain to the X, Y, or Z-axis](./sketching-essentials#constrain-to-an-axis).
-   - <kbd>N</kbd> **Normal** Limit to the Face's normal direction.  
+     - <Kst>Keyboard Shortcuts</Kst>
+     - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Constrain to the X, Y, or Z-axis](./sketching-essentials#constrain-to-an-axis).
+     - <kbd>N</kbd> **Normal** Limit to the Face's normal direction.  
 3. Click on the ending point.  
 4. Set the options in the Command Dialog and Keyboard Shortcuts.
+     - <Kst>Command Dialog</Kst>
      - **T:**
           - **Value 1/2:** The relative position on the segment of the starting point/ending point.
      - **Direction:** 
@@ -37,7 +40,7 @@ The starting and ending points can be selected at any point on the  Curve, Edge,
           - **G0, G1, G2, G3:** Specify the [continuity of the  Curve](../cad-essentials/continuity-curve-and-surface) at the starting point.
      -  **End curvature:**
           - **G0, G1, G2, G3:** Specify the [continuity of the  Curve](../cad-essentials/continuity-curve-and-surface) at the ending point.      
-   - **Trim:** When turned on, any Curve that extends beyond the bridge will be trimmed.
+     - **Trim:** When turned on, any Curve that extends beyond the bridge will be trimmed.
 5. Confirm with OK in the Command Dialog or right-click.
 
 <VideoPlayer fileName="bridge-curve"/>
