@@ -46,18 +46,6 @@ body {
     }
 }
 
-ol,
-ul {
-    margin-top: 0 !important;
-}
-
-main > ul > li {
-    list-style-type: none !important;
-}
-
-ul {
-    list-style-type: none !important;
-}
 
 .nx-font-bold {
     font-weight: 900 !important;
@@ -103,29 +91,19 @@ strong {
     font-weight: bold !important;
 }
 
-/* List styles */
-// li > ul {
-//     margin-top: 0 !important;
-// }
-// li > ol {
-//     margin-top: 0 !important;
-// }
+ol,
+ul {
+    margin-top: 0 !important;
+}
 
-// ul.nx-mt-6 {
-//     margin-top: 0rem;
-// }
+main > ul > li {
+    list-style-type: none !important;
+}
 
-// .dl > ul > li {
-//     font-weight: bold;
-//     list-style-type: none !important;
-//     margin-left: 0 !important;
-// }
+ul {
+    list-style-type: none !important;
+}
 
-// .dl > ul > li > ul > li {
-//     font-weight: normal;
-//     list-style-type: none !important;
-//     margin-left: 1rem !important;
-// }
-// :is([dir="ltr"] .ltr\:nx-ml-6) {
-//     margin-left: 1rem !important;
-// }
+// main > ol > li > ol{
+//     margin-left: 5rem !important;
+// } 

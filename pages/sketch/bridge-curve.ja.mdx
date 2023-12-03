@@ -2,6 +2,7 @@ import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
 import ButtonIcon from 'components/ButtonIcon'
 import { Callout } from 'nextra/components'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Bridge Curve（カーブをなめらかに繋げる）[#bridge-curve]
 
@@ -19,25 +20,27 @@ import { Callout } from 'nextra/components'
 
 1. ツールバーの <ButtonIcon type="button-bridge-curve" /> をクリックします。
 2. 始点をクリックします。
-   - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [X、Y、Z軸に拘束します](./sketching-essentials#constrain-to-an-axis)。
-   - <kbd>N</kbd> **Normal:** フェイスの法線方向に限定します。
+     - <Kst>キーボードショートカット</Kst>
+     - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [X、Y、Z軸に拘束します](./sketching-essentials#constrain-to-an-axis)。
+     - <kbd>N</kbd> **Normal:** フェイスの法線方向に限定します。
 3. 終点をクリックします。
 4. コマンドダイアログとキーボードショートカットでオプションを設定します。
-   - **T:**
-        - **Value 1/2:** 始点/終点のセグメント上の相対位置を指定します。
-   - **Direction:** 
-        - **Direction 1/2**: 始点/終点の方向を反転します。
-   - **Tension 1:**
-        - **Value 1/2:** 始点/終点の第1制御点(CV)から第3CVに影響するテンション値を指定します。
-   - **Tension 2:**
-        - **Value 1/2:** 始点/終点の第2CVと第3CVに影響するテンション値を指定します。
-   - **Tension 3:**
-        - **Value 1/2:** 始点/終点の第3CVに影響するテンション値を指定します。
-   - **Start curvature:**
-        - **G0, G1, G2, G3:** 始点での[曲線の連続性](../cad-essentials/continuity-curve-and-surface)を指定します。
-     - **End curvature:**
-        - **G0, G1, G2, G3:** 終点での[曲線の連続性](../cad-essentials/continuity-curve-and-surface)を指定します。
-   -  **Trim:** オンにすると、ブリッジからはみ出たカーブはトリムされます。
+     - <Kst>コマンドダイアログ</Kst>
+     - **T:**
+          - **Value 1/2:** 始点/終点のセグメント上の相対位置を指定します。
+     - **Direction:** 
+          - **Direction 1/2**: 始点/終点の方向を反転します。
+     - **Tension 1:**
+          - **Value 1/2:** 始点/終点の第1制御点(CV)から第3CVに影響するテンション値を指定します。
+     - **Tension 2:**
+          - **Value 1/2:** 始点/終点の第2CVと第3CVに影響するテンション値を指定します。
+     - **Tension 3:**
+          - **Value 1/2:** 始点/終点の第3CVに影響するテンション値を指定します。
+     - **Start curvature:**
+          - **G0, G1, G2, G3:** 始点での[曲線の連続性](../cad-essentials/continuity-curve-and-surface)を指定します。
+          - **End curvature:**
+          - **G0, G1, G2, G3:** 終点での[曲線の連続性](../cad-essentials/continuity-curve-and-surface)を指定します。
+     -  **Trim:** オンにすると、ブリッジからはみ出たカーブはトリムされます。
 5. コマンドダイアログでOKを押すか、右クリックで確定します。
 
 <VideoPlayer fileName="bridge-curve"/>

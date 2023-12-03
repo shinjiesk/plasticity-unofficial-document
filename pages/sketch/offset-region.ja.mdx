@@ -1,5 +1,6 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 ## Offset Region（リージョンをオフセットする）[#offset-region]
 
@@ -11,15 +12,17 @@ import Reference from 'components/Reference'
 2. <kbd>O</kbd>を押します。
 3. 黄色い矢印を動かして距離を指定します。
 4. コマンドダイアログとキーボードショートカットでオプションを設定します。
+   - <Kst>コマンドダイアログ</Kst>
    - **Distance:** 距離を指定します。
-   - <kbd>V</kbd> **Gap fill:**
+   - **Gap fill:**
         - **Round:** 出っ張った角を丸めます。
         - **Linear:** 出っ張った角を直線でつなぎます。 
         - **Natural** ナチュラル
+   - <Kst>キーボードショートカット</Kst>
    - <kbd>Tab</kbd> **Lock distances:** 両側に等しい距離でオフセットします。
    - <kbd>I</kbd> **Individual:** 複数のリージョンが選択されているとき、このオプションをオンにすると、リージョンを結合してオフセットします。
-   - <kbd>D</kbd> **Distance:**
-        - マウスの動きで距離を指定します。
+   - <kbd>V</kbd> **Gap fill:**
+   - <kbd>D</kbd> **Distance:** マウスの動きで距離を指定します。
 5. コマンドダイアログのOKか右クリックで確定します。
 
 <VideoPlayer fileName="offset-region"/>
