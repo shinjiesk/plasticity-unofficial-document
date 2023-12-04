@@ -1,5 +1,6 @@
 import Reference from 'components/Reference'
 import ButtonIcon from 'components/ButtonIcon'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Boolean（ブーリアンする）
 
@@ -11,7 +12,7 @@ import ButtonIcon from 'components/ButtonIcon'
 
 1. <kbd>Q</kbd>を押すか、ボタン <ButtonIcon type="button-boolean" /> をクリックします。
 2. ターゲットとツールを選択します。
-   - **[コマンドダイアログ]**
+   - <Kst>コマンドダイアログ</Kst>
       - **Select target bodies:** 
          - このボタンがハイライトされているとき、ブーリアンのターゲットとして使用するソリッドまたはシートを選択できます。
          - ターゲットを変更するには、このボタンをもう一度クリックして、ソリッドまたはシートを選択します。
@@ -19,7 +20,7 @@ import ButtonIcon from 'components/ButtonIcon'
          - このボタンがハイライトされているとき、ブーリアンのツールとして使用するソリッドまたはシートを選択できます。
          - ツールを変更するには、このボタンをもう一度クリックして、ソリッドまたはシートを選択します。
 3. コマンドダイアログとキーボードショートカットでオプションを設定します。
-   - **[コマンドダイアログ]**
+   - <Kst>コマンドダイアログ</Kst>
       - **Keep Tools:** ブーリアンが実行され、ツールのオブジェクトはそのまま残ります。
       - **Opetation:**
          - **Union:** ブーリアンターゲットとツールを結合します。
@@ -27,7 +28,7 @@ import ButtonIcon from 'components/ButtonIcon'
          - **Intersect:** ブーリアンターゲットとツールの交点にソリッドを作成します。
          - **Slice:** ヴーリアンターゲットとツールの交点にソリッドを作成し、余りのソリッドも残ります。
          - オペレーションによる結果の違いは、[こちら](#operation-outcome-differences)を参照してください。
-   - **[ショートカット]**
+   - <Kst>キーボードショートカット</Kst>
          - <kbd>Shift + Q</kbd> **Slice:** 上記と同じです。
          - <kbd>Q</kbd> **Union:**  上記と同じです。
          - <kbd>W</kbd> **Difference:**  上記と同じです。

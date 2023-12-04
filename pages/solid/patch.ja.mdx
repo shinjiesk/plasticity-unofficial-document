@@ -2,6 +2,7 @@ import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
 import ButtonIcon from 'components/ButtonIcon'
 import { Callout } from 'nextra/components'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Patch
 
@@ -14,7 +15,8 @@ import { Callout } from 'nextra/components'
 1. パッチを作成したい閉じたカーブを選択します。
 2. コマンドバーの右側にある <ButtonIcon type="button-patch" /> ボタンをクリックします。
 3. コマンドダイアログでオプションを設定します。
-    - **Tolernace:** パッチの許容差を指定します。
+    - <Kst>コマンドダイアログ</Kst>
+        - **Tolernace:** パッチの許容差を指定します。
 4. コマンドダイアログで OK をクリックするか、右クリックして確定します。
 
 <VideoPlayer fileName="patch-1"/>
@@ -27,16 +29,17 @@ import { Callout } from 'nextra/components'
 1. 穴を囲むエッジを選択します。
 2. コマンドバーの右側にある <ButtonIcon type="button-patch" /> ボタンをクリックします。
 3. コマンドダイアログでオプションを設定します。
-    - **Continuity:**
-        - **Planar:** サーフェスの連続性を平面として指定します。
-        - **G0, G1, G2**
-            - [サーフェスの連続性](../cad-essentials/continuity-curve-and-surface)を指定します。
-            - サーフェス上の黒い丸をクリックすることで、個別に連続性を指定することができます。
-    - **Faces:**
-        - **Single:**
-        - **Minimal:**
-        - **Quality:**
-    - **Tolernace:** パッチの許容差を指定します。
+    - <Kst>コマンドダイアログ</Kst>
+        - **Continuity:**
+            - **Planar:** サーフェスの連続性を平面として指定します。
+            - **G0, G1, G2**
+                - [サーフェスの連続性](../cad-essentials/continuity-curve-and-surface)を指定します。
+                - サーフェス上の黒い丸をクリックすることで、個別に連続性を指定することができます。
+        - **Faces:**
+            - **Single:**
+            - **Minimal:**
+            - **Quality:**
+        - **Tolernace:** パッチの許容差を指定します。
 4. コマンドダイアログで OK をクリックするか、右クリックして確定します。
 
 <VideoPlayer fileName="patch-2"/>

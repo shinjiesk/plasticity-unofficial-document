@@ -1,5 +1,6 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Offset Edge
 
@@ -11,13 +12,15 @@ Verschieben Sie die ausgewählten Kanten, indem Sie den Abstand angeben, um neue
 2. Drücken Sie <kbd>O</kbd>.
 3. Bewegen Sie die Maus nach links und rechts, um die Richtung und den Abstand anzugeben.
 4. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
-   - **Distance:** Geben Sie den Abstand an.
-   - <kbd>V</kbd> **Gap fill:**
-        - **Round:** Rundet konvexe Ecken.
-        - **Linear:** Verbindet konvexe Ecken mit geraden Linien.
-        - **Natural:** Natürlich
-   - <kbd>Tab</kbd> **Lock distances:** Versetzen Sie mit gleichem Abstand auf beiden Seiten.
-   - <kbd>D</kbd> **Distance:** Geben Sie den Abstand mit der Mausbewegung an.
+   - <Kst>Befehlsdialog</Kst>
+      - **Distance:** Geben Sie den Abstand an.
+   - <Kst>Tastenkombinationen</Kst>
+      - <kbd>V</kbd> **Gap fill:**
+         - **Round:** Rundet konvexe Ecken.
+         - **Linear:** Verbindet konvexe Ecken mit geraden Linien.
+         - **Natural:** Natürlich
+      - <kbd>Tab</kbd> **Lock distances:** Versetzen Sie mit gleichem Abstand auf beiden Seiten.
+      - <kbd>D</kbd> **Distance:** Geben Sie den Abstand mit der Mausbewegung an.
 5. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
 
 <VideoPlayer fileName="offset-edge"/>

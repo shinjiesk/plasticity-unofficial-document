@@ -1,5 +1,6 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Bridge Surface
 
@@ -12,16 +13,17 @@ Blend between two disconnected Surfaces with available shape options G2 or Chamf
 1. Use **Bridge Surface** command in the Command Palette.
 2. Select two Sheets to be connected.
 3. Set the options in the Command Dialog.
-    - **Width:** Specify the width of the bridge.
-    - **Shape:** 
-        - **G2:** The bridge surface is G2 continuous.
-        - **Chamfer:** The bridge surface is chamfered.
-    - **Trim walls:** When enabled, trim the surfaces behaind the bridge.
-    - **Trim blend:** 
-        - **Both:** Trim both sides of the bridge surface.
-        - **Short:** Trim the shorter side of the surface.
-        - **Long:** Trim the longer side of the bridge surface.
-        - **None:** Do not trim the bridge surface.
+    - <Kst>Command Dialog</Kst>
+        - **Width:** Specify the width of the bridge.
+        - **Shape:** 
+            - **G2:** The bridge surface is G2 continuous.
+            - **Chamfer:** The bridge surface is chamfered.
+        - **Trim walls:** When enabled, trim the surfaces behaind the bridge.
+        - **Trim blend:** 
+            - **Both:** Trim both sides of the bridge surface.
+            - **Short:** Trim the shorter side of the surface.
+            - **Long:** Trim the longer side of the bridge surface.
+            - **None:** Do not trim the bridge surface.
 4. Confirm with OK in the Command Dialog or right-click.
 
 <VideoPlayer fileName="bridge-surface-1"/>

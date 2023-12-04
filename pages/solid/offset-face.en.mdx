@@ -1,5 +1,6 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Offset Face
 
@@ -11,16 +12,18 @@ Offset the selected Faces by specifying the distance. Optional adjacent angle sp
 2. When a Face is selected, the default command, **Offset Face**, is automatically executed.
 3. Move the yellow dot to specify the distance.
 4. Set the options in the Command Dialog and Keyboard Shortcuts.
-     - **Distance:** Specify the distance.
-     - **Degrees:** Specify the Angle.
-     - **Grow:**
-          - When the concave inner Face is offseted.
-          - **Moving:** Move the whole wall when the offset gets to the outer wall.
-          - **Fixed:** Stop at the outer wall.
-          - **None:** Keep going by itself neither affecting or affected by the outer wall.
-     - <kbd>D</kbd> **Distance** Specify the distance by moving the cursor.
-     - <kbd>A</kbd> **Angle adjacent** Specify the angle by moving the cursor.
-     - <kbd>Tab</kbd> **Grow mode** Switches the grow mode.
+     - <Kst>Command Dialog</Kst>
+          - **Distance:** Specify the distance.
+          - **Degrees:** Specify the Angle.
+          - **Grow:**
+               - When the concave inner Face is offseted.
+               - **Moving:** Move the whole wall when the offset gets to the outer wall.
+               - **Fixed:** Stop at the outer wall.
+               - **None:** Keep going by itself neither affecting or affected by the outer wall.
+     - <Kst>Keyboard Shortcuts</Kst>
+          - <kbd>D</kbd> **Distance** Specify the distance by moving the cursor.
+          - <kbd>A</kbd> **Angle adjacent** Specify the angle by moving the cursor.
+          - <kbd>Tab</kbd> **Grow mode** Switches the grow mode.
 5. Confirm with OK in the Command Dialog or right-click.
 
 <VideoPlayer fileName="offset-face"/>

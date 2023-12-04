@@ -2,6 +2,7 @@ import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
 import ButtonIcon from 'components/ButtonIcon'
 import { Callout } from 'nextra/components'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Patch
 
@@ -16,7 +17,8 @@ You can create a patch surface from closed Curves.
 1. Select the closed Curves you want to patch.
 2. Click the button <ButtonIcon type="button-patch" /> on the Right of Command Bar.
 3. Set the options in the Command Dialog.
-    - **Tolerance:** Specify the tolerance for the patch.
+    - <Kst>Command Dialog</Kst>
+        - **Tolerance:** Specify the tolerance for the patch.
 4. Confirm with OK in the Command Dialog or right-click.
 
 <VideoPlayer fileName="patch-1"/>
@@ -28,16 +30,17 @@ You can patch holes along Edges.
 1. Select the Edges that surround the hole.
 2. Click the button <ButtonIcon type="button-patch" /> on the Right of Command Bar.
 3. Set the options in the Command Dialog.
-    - **Continuity:**
-        - **Planar:** Specify the continuity of the Surface as planar.
-        - **G0, G1, G2**
-            - Specify the [continuity of the Surface](../cad-essentials/continuity-curve-and-surface).
-            - Continuity can be specified individually by clicking on the black circles on the surface.
-    - **Faces:**
-        - **Single:**
-        - **Minimal:**
-        - **Quality:**
-    - **Tolerance:** Specify the tolerance for the patch.
+    - <Kst>Command Dialog</Kst>
+        - **Continuity:**
+            - **Planar:** Specify the continuity of the Surface as planar.
+            - **G0, G1, G2**
+                - Specify the [continuity of the Surface](../cad-essentials/continuity-curve-and-surface).
+                - Continuity can be specified individually by clicking on the black circles on the surface.
+        - **Faces:**
+            - **Single:**
+            - **Minimal:**
+            - **Quality:**
+        - **Tolerance:** Specify the tolerance for the patch.
 4. Confirm with OK in the Command Dialog or right-click.
 
 <VideoPlayer fileName="patch-2"/>
