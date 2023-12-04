@@ -1,6 +1,7 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
 import { Callout } from 'nextra/components'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Loft
 
@@ -19,11 +20,12 @@ Lofting Curves allow you to specify **Add Limit Point** option.
 1. Select two Curves you want to loft.
 2. Press <kbd>L</kbd>.
 3. Set the options by Keyboard Shortcuts.
-    - <kbd>L</kbd> **Add Limit Point:** Specify the range to loft.
-        - Make sure that [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap) are enabled.
-        - Click on the Edge to add a limit point.
-        - To reverse the direction, click on the limit point again.
-        - Up to two limit points can be set on each Curve.
+    - <Kst>Keyboard Shortcuts</Kst>
+        - <kbd>L</kbd> **Add Limit Point:** Specify the range to loft.
+            - Make sure that [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap) are enabled.
+            - Click on the Edge to add a limit point.
+            - To reverse the direction, click on the limit point again.
+            - Up to two limit points can be set on each Curve.
 4. Confirm with OK in the Command Dialog or right-click.
 
 <VideoPlayer fileName="loft-curve-and-curve"/>
@@ -35,13 +37,15 @@ Lofting Edges allows you to specify **Continuity**, **Tension**, **Add Limit Poi
 1. Select two Edges you want to loft.
 2. Press <kbd>L</kbd>.
 3. Set the options in the Command Dialog and the Keyboard Shortcuts.
-    - **Continuity**: **G0, G1, G2** 
-        - Specify the [continuity of the Surface](../cad-essentials/continuity-curve-and-surface).
-        - Continuity can be specified individually by clicking on the black circles on the surface.
-    - **Tension**: Specify the tension of each Edge.
-    - <kbd>Tab</kbd> **Cycle continuity:** Switch continuity.
-    - <kbd>D</kbd> **Tension:** By moving the cursor, you can specify the tension for both Edges at once.
-    - <kbd>L</kbd> **Add Limit Point:** Specify the range to loft. Same as **Lofting two Curves**
+    - <Kst>Command Dialog</Kst>
+        - **Continuity**: **G0, G1, G2** 
+            - Specify the [continuity of the Surface](../cad-essentials/continuity-curve-and-surface).
+            - Continuity can be specified individually by clicking on the black circles on the surface.
+        - **Tension**: Specify the tension of each Edge.
+    - <Kst>Keyboard Shortcuts</Kst>
+        - <kbd>Tab</kbd> **Cycle continuity:** Switch continuity.
+        - <kbd>D</kbd> **Tension:** By moving the cursor, you can specify the tension for both Edges at once.
+        - <kbd>L</kbd> **Add Limit Point:** Specify the range to loft. Same as **Lofting two Curves**
 4. Confirm with OK in the Command Dialog or right-click.
 
 <VideoPlayer fileName="loft-edge-and-edge"/>
@@ -72,9 +76,10 @@ One or more guides can be used to control the shape of the loft.  Any combinatio
 2. Press <kbd>L</kbd>.
 3. Select guide Curves or Edges. <kbd>Shift</kbd> + Click to select multiple, <kbd>Ctrl</kbd> + Click to deselect. 
 4. Set the options in the Command Dialog and the Keyboard Shortcuts.
-    - **Trim overlap:**
-        - **Guides:** Guide side lofted surface is trimmed.
-        - **Profiles:** Profile side lofted surface is trimmed.
+    - <Kst>Command Dialog</Kst>
+            - **Trim overlap:**
+            - **Guides:** Guide side lofted surface is trimmed.
+            - **Profiles:** Profile side lofted surface is trimmed.
     - The other options are the same as **Lofting two Curves** and **Lofting two Edges** described above.
 5. Confirm with OK in the Command Dialog or right-click.
 
@@ -94,7 +99,8 @@ You can loft more than three Curves to create a loop Sheet.
 2. Press <kbd>L</kbd>.
 3. Click **Loop** in the Command Dialog.
 4. Set the options by Keyboard Shortcuts.
-    - <kbd>L</kbd> **Add Limit Point:** Specify the range to loft. Same as **"Lofting two Curves."**
+    - <Kst>Keyboard Shortcuts</Kst>
+        - <kbd>L</kbd> **Add Limit Point:** Specify the range to loft. Same as **"Lofting two Curves."**
 4. Confirm with OK in the Command Dialog or right-click.
 
 <VideoPlayer fileName="loft-loop"/>
@@ -125,11 +131,13 @@ You can loft two Faces to create a Solid.
 2. Press <kbd>L</kbd>.
 3. Optionally select guide Curves to control the shape of the loft.  
 4. Set the options in the Command Dialog and the Keyboard Shortcuts.
-    - **Continuity**: **G0, G1, G2** 
-        - Specify the [Continuity of the Surface](../cad-essentials/continuity-curve-and-surface).
-        - Continuity can be specified individually by clicking on the black circles on the surface.
+    - <Kst>Command Dialog</Kst>
+            - **Continuity**: **G0, G1, G2** 
+            - Specify the [Continuity of the Surface](../cad-essentials/continuity-curve-and-surface).
+            - Continuity can be specified individually by clicking on the black circles on the surface.
+        - **Tension**: Specify the tension of each Edge.
+    - <Kst>Keyboard Shortcuts</Kst>
         - <kbd>Tab</kbd> **Cycle continuity:** Switch continuity.
-    - **Tension**: Specify the tension of each Edge.
 4. Confirm with OK in the Command Dialog or right-click.
 
 ## Loft Vertices

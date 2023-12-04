@@ -1,5 +1,6 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Constrained Surface（拘束サーフェイスを作成）
 
@@ -10,12 +11,14 @@ import Reference from 'components/Reference'
 1. コマンドパレットで **Constrained Surface** を実行します。
 2. 通したい点をクリックします。
 3. コマンドダイアログとキーボードショートカットでオプションを設定します。
-    - **Tolerance:** サーフェスの許容差を指定します。
-    - **Angular tolerance:** サーフェスの角度許容差を指定します。
-    - **Optimize:**
-        - **Performance:** サーフェスを高速に生成します。
-        - **Smoothness:** サーフェスを滑らかに生成します。
-    - <kbd>Cmd-Z</kbd>: 最後に指定した点を取り消します。
+    - <Kst>コマンドダイアログ</Kst>
+        - **Tolerance:** サーフェスの許容差を指定します。
+        - **Angular tolerance:** サーフェスの角度許容差を指定します。
+        - **Optimize:**
+            - **Performance:** サーフェスを高速に生成します。
+            - **Smoothness:** サーフェスを滑らかに生成します。
+    - <Kst>キーボードショートカット</Kst>
+        - <kbd>Cmd-Z</kbd>: 最後に指定した点を取り消します。
 4. コマンドダイアログの OK をクリックするか、右クリックで確定します。
 
 <VideoPlayer fileName="constrained-surface"/>

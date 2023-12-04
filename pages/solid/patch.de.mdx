@@ -2,6 +2,7 @@ import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
 import ButtonIcon from 'components/ButtonIcon'
 import { Callout } from 'nextra/components'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Patch
 
@@ -28,16 +29,17 @@ Sie können Löcher entlang von Edges patchen.
 1. Wählen Sie die Edges aus, die das Loch umgeben.
 2. Klicken Sie auf den Button <ButtonIcon type="button-patch" /> rechts von der Befehlsleiste.
 3. Legen Sie die Optionen im Befehlsdialog fest.
-    - **Continuity:**
-        - **Planar:** Geben Sie die Kontinuität der Oberfläche als planar an.
-        - **G0, G1, G2**
-            - Geben Sie die [Kontinuität der Oberfläche](../cad-essentials/continuity-curve-and-surface) an.
-            - Die Kontinuität kann individuell angegeben werden, indem Sie auf die schwarzen Kreise auf der Oberfläche klicken.
-    - **Faces:**
-        - **Single:**
-        - **Minimal:**
-        - **Quality:**
-    - **Tolerance:** Geben Sie die Toleranz für den Patch an.
+    - <Kst>Befehlsdialog</Kst>
+        - **Continuity:**
+            - **Planar:** Geben Sie die Kontinuität der Oberfläche als planar an.
+            - **G0, G1, G2**
+                - Geben Sie die [Kontinuität der Oberfläche](../cad-essentials/continuity-curve-and-surface) an.
+                - Die Kontinuität kann individuell angegeben werden, indem Sie auf die schwarzen Kreise auf der Oberfläche klicken.
+        - **Faces:**
+            - **Single:**
+            - **Minimal:**
+            - **Quality:**
+        - **Tolerance:** Geben Sie die Toleranz für den Patch an.
 4. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
 
 <VideoPlayer fileName="patch-2"/>

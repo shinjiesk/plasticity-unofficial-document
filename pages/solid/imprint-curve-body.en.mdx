@@ -1,5 +1,6 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Imprint Curve Body[#imprint-curve-body]
 
@@ -25,20 +26,21 @@ Create Edges on the target Solid or Sheet where it projects onto a tool Curve. O
 2. Select a Solid or Sheet to project the Curves onto.
 3. Select Curves to project onto the Solid or Sheet.
 4. Set the options in the Command Dialog and Keyboard Shortcuts.
-   - **Method:**
-        - **Normal:** Projects using the standard method.
-        - **Vector:** Projects in the direction specified by **Direction**. **Bidirectional** and **X-Ray** will be enabled.
-   - **Direction:**
-        - **Value 1:** Specify the X component of the vector for the projection direction.
-        - **Value 2:** Specify the Y component of the vector for the projection direction.
-        - **Value 3:** Specify the Z component of the vector for the projection direction.
-   - **Bidirectional:** Performs the projection in both directions.
-   - **X-Ray:** 
-        - **Hide occlusion:** When enabled, does not project onto surfaces behind the object.
-   - **Completion:** Specify the extension of the projected Edges.
-        - **None:** Does not extend the projected Edges.
-        - **Edge:** Extends the projected Edges until they intersect with other Edges.
-        - **Boundary:** Extends the projected Edges until they intersect with other Edges and connects them.
+- <Kst>Command Dialog</Kst>
+     - **Method:**
+          - **Normal:** Projects using the standard method.
+          - **Vector:** Projects in the direction specified by **Direction**. **Bidirectional** and **X-Ray** will be enabled.
+     - **Direction:**
+          - **Value 1:** Specify the X component of the vector for the projection direction.
+          - **Value 2:** Specify the Y component of the vector for the projection direction.
+          - **Value 3:** Specify the Z component of the vector for the projection direction.
+     - **Bidirectional:** Performs the projection in both directions.
+     - **X-Ray:** 
+          - **Hide occlusion:** When enabled, does not project onto surfaces behind the object.
+     - **Completion:** Specify the extension of the projected Edges.
+          - **None:** Does not extend the projected Edges.
+          - **Edge:** Extends the projected Edges until they intersect with other Edges.
+          - **Boundary:** Extends the projected Edges until they intersect with other Edges and connects them.
 5. Confirm with OK in the Command Dialog or right-click.
 
 <VideoPlayer fileName="imprint-curve-body"/>

@@ -1,5 +1,6 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Sweep
 
@@ -11,11 +12,13 @@ Das Kehren von Faces oder Regions erzeugt Solids, während das Kehren von Curves
 2. Drücken Sie <kbd>Umschalt + P</kbd>.
 3. Wählen Sie die Curve aus, die als Pfad für das Kehren dienen soll.
 4. Legen Sie die Optionen im Command Dialog und den Tastaturkürzeln fest.
-   - **Twist:** Bestimmen Sie den Verdrehungswinkel in Grad.
-   - **Alignment:** 
-      - **Parallel:** Kehrt parallel zum Pfad, unabhängig von der Orientierung.
-      - **Normal:** Kehrt in einem Winkel, der mit dem Pfad ausgerichtet ist.
-   - <kbd>D</kbd> **Twist:** Bestimmen Sie den Twist mit Mausbewegung.
+   - <Kst>Befehlsdialog</Kst>
+      - **Twist:** Bestimmen Sie den Verdrehungswinkel in Grad.
+      - **Alignment:** 
+         - **Parallel:** Kehrt parallel zum Pfad, unabhängig von der Orientierung.
+         - **Normal:** Kehrt in einem Winkel, der mit dem Pfad ausgerichtet ist.
+   - <Kst>Befehlsdialog</Kst>
+      - <kbd>D</kbd> **Twist:** Bestimmen Sie den Twist mit Mausbewegung.
 5. Wählen Sie optional Kehrführungen aus.
       1. Stellen Sie sicher, dass **Select guides:** im Command Dialog hervorgehoben ist.
       2. Wählen Sie die Curves aus, die als Führungen für das Kehren dienen sollen.
@@ -23,11 +26,12 @@ Das Kehren von Faces oder Regions erzeugt Solids, während das Kehren von Curves
          - Verwenden Sie <kbd>Strg</kbd> + Klick zum Abwählen.
          - Die Reihenfolge, in der Sie die Führungen auswählen, beeinflusst die Form des Kehrens.
       3. Legen Sie die Optionen im Command Dialog fest.
-         - **Guide method:**
-            - **Point:** Der Querschnitt des gekehrten Körpers wird gedreht und skaliert, sodass die Punkte, die ursprünglich mit der Führung und dem Pfad übereinstimmen, immer in Kontakt bleiben.
-            - **Chord:**  Der Querschnitt wird gedreht, aber nicht skaliert.
-            - **Curve:** Der Querschnitt wird gedreht, aber nicht skaliert. Die Führung und der Pfad müssen das Profil berühren. Das Profil bleibt mit beiden Führungsdrähten in Kontakt, aber nur einer der Berührungspunkte befindet sich an einem festen Punkt auf dem Profil; der andere kann sich entlang des Profils bewegen.
-            Hinweis: Das Profil muss groß genug sein, um die größte Entfernung zwischen den beiden Führungsdrähten zu überbrücken.
+         - <Kst>Befehlsdialog</Kst>
+            - **Guide method:**
+               - **Point:** Der Querschnitt des gekehrten Körpers wird gedreht und skaliert, sodass die Punkte, die ursprünglich mit der Führung und dem Pfad übereinstimmen, immer in Kontakt bleiben.
+               - **Chord:**  Der Querschnitt wird gedreht, aber nicht skaliert.
+               - **Curve:** Der Querschnitt wird gedreht, aber nicht skaliert. Die Führung und der Pfad müssen das Profil berühren. Das Profil bleibt mit beiden Führungsdrähten in Kontakt, aber nur einer der Berührungspunkte befindet sich an einem festen Punkt auf dem Profil; der andere kann sich entlang des Profils bewegen.
+               Hinweis: Das Profil muss groß genug sein, um die größte Entfernung zwischen den beiden Führungsdrähten zu überbrücken.
 6. Bestätigen Sie mit OK im Command Dialog oder Rechtsklick.
 7. Das erstellte Objekt hängt von der ursprünglichen Auswahl ab.
    - Wenn Sie Regions und Faces auswählen, wird ein Solid erstellt.

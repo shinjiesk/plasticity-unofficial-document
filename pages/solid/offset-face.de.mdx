@@ -1,5 +1,6 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Offset Face
 
@@ -11,16 +12,18 @@ Verschieben Sie die ausgewählten Face, indem Sie den Abstand angeben. Eine opti
 2. Wenn eine Face ausgewählt ist, wird der Standardbefehl, **Offset Face**, automatisch ausgeführt.
 3. Bewegen Sie den gelben Punkt, um den Abstand anzugeben.
 4. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
-     - **Distance:** Geben Sie den Abstand an.
-     - **Degrees:** Geben Sie den Winkel an.
-     - **Grow:**
-          - Wenn die konkave innere Face verschoben wird.
-          - **Moving:** Bewegen Sie die gesamte Wand, wenn die Verschiebung zur Außenwand gelangt.
-          - **Fixed:** Stoppen Sie an der Außenwand.
-          - **None:** Fortsetzen, ohne von der Außenwand beeinflusst zu werden oder diese zu beeinflussen.
-     - <kbd>D</kbd> **Distance** Geben Sie den Abstand durch Bewegen des Cursors an.
-     - <kbd>A</kbd> **Angle adjacent** Geben Sie den Winkel durch Bewegen des Cursors an.
-     - <kbd>Tab</kbd> **Grow mode** Wechselt den Wachstumsmodus.
+     - <Kst>Befehlsdialog</Kst>
+          - **Distance:** Geben Sie den Abstand an.
+          - **Degrees:** Geben Sie den Winkel an.
+          - **Grow:**
+               - Wenn die konkave innere Face verschoben wird.
+               - **Moving:** Bewegen Sie die gesamte Wand, wenn die Verschiebung zur Außenwand gelangt.
+               - **Fixed:** Stoppen Sie an der Außenwand.
+               - **None:** Fortsetzen, ohne von der Außenwand beeinflusst zu werden oder diese zu beeinflussen.
+     - <Kst>Tastenkombinationen</Kst>
+          - <kbd>D</kbd> **Distance** Geben Sie den Abstand durch Bewegen des Cursors an.
+          - <kbd>A</kbd> **Angle adjacent** Geben Sie den Winkel durch Bewegen des Cursors an.
+          - <kbd>Tab</kbd> **Grow mode** Wechselt den Wachstumsmodus.
 5. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
 
 <VideoPlayer fileName="offset-face"/>

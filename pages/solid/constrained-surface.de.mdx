@@ -1,5 +1,6 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Constrained Surface
 
@@ -10,12 +11,14 @@ Erzeugen Sie eine Oberfläche, die durch einen Satz von Punkten verläuft, indem
 1. Verwenden Sie den **Constrained Surface**-Befehl in der Befehlspalette.
 2. Klicken Sie auf die Punkte, durch die Sie verlaufen möchten.
 3. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
-    - **Tolerance:** Geben Sie die Toleranz der Oberfläche an.
-    - **Angular tolerance:** Geben Sie die Winkeltoleranz der Oberfläche an.
-    - **Optimize:**
-        - **Performance:** Die Oberfläche wird schnell generiert.
-        - **Smoothness:** Die Oberfläche wird glatt generiert.
-    - <kbd>Cmd-Z</kbd>: Letzten Punkt rückgängig machen.
+    - <Kst>Befehlsdialog</Kst>
+        - **Tolerance:** Geben Sie die Toleranz der Oberfläche an.
+        - **Angular tolerance:** Geben Sie die Winkeltoleranz der Oberfläche an.
+        - **Optimize:**
+            - **Performance:** Die Oberfläche wird schnell generiert.
+            - **Smoothness:** Die Oberfläche wird glatt generiert.
+    - <Kst>Tastenkombinationen</Kst>        
+        - <kbd>Cmd-Z</kbd>: Letzten Punkt rückgängig machen.
 4. Bestätigen Sie mit OK im Befehlsdialog oder Rechtsklick.
 
 <VideoPlayer fileName="constrained-surface"/>

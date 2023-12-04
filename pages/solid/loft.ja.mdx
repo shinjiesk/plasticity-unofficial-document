@@ -1,6 +1,7 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
 import { Callout } from 'nextra/components'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Loft
 
@@ -17,11 +18,12 @@ import { Callout } from 'nextra/components'
 1. ロフトしたい2つのカーブを選択します。
 2. <kbd>L</kbd>を押します。
 3. キーボードショートカットでオプションを設定します。
-    - <kbd>L</kbd> **Add Limit Point:** ロフトの範囲を指定します。
-        - [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap)が有効になっていることを確認してください。
-        - エッジをクリックしてリミットポイントを追加します。
-        - 方向を反転するには、リミットポイントを再度クリックします。
-        - 各カーブには最大2つのリミットポイントを設定できます。
+    - <Kst>キーボードショートカット</Kst>
+        - <kbd>L</kbd> **Add Limit Point:** ロフトの範囲を指定します。
+            - [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap)が有効になっていることを確認してください。
+            - エッジをクリックしてリミットポイントを追加します。
+            - 方向を反転するには、リミットポイントを再度クリックします。
+            - 各カーブには最大2つのリミットポイントを設定できます。
 4. コマンドダイアログでOKをクリックするか、右クリックします。
 
 <VideoPlayer fileName="loft-curve-and-curve"/>
@@ -33,13 +35,15 @@ import { Callout } from 'nextra/components'
 1. ロフトしたい2つのエッジを選択します。
 2. <kbd>L</kbd>を押します。
 3. コマンドダイアログとキーボードショートカットでオプションを設定します。
-    - **Continuity**: **G0, G1, G2**
-        - サーフェイスの連続性を指定します。詳しくは[continuity of the Surface](../cad-essentials/continuity-curve-and-surface)を参照してください。
-        - サーフェイス上の黒い丸をクリックして、サーフェイスの連続性を個別に指定できます。
-    - **Tension**: 各エッジのテンションを指定します。
-    - <kbd>Tab</kbd> **Cycle continuity:** 押すごとに連続性が切り替わります。
-    - <kbd>D</kbd> **Tension:** カーソルを動かすことで、両方のエッジのテンションを一度に指定できます。
-    - <kbd>L</kbd> **Add Limit Point:** ロフトの範囲を指定します。**2つのカーブをロフトする**と同じです。
+    - <Kst>コマンドダイアログ</Kst>
+        - **Continuity**: **G0, G1, G2**
+            - サーフェイスの連続性を指定します。詳しくは[continuity of the Surface](../cad-essentials/continuity-curve-and-surface)を参照してください。
+            - サーフェイス上の黒い丸をクリックして、サーフェイスの連続性を個別に指定できます。
+        - **Tension**: 各エッジのテンションを指定します。
+    - <Kst>キーボードショートカット</Kst>
+        - <kbd>Tab</kbd> **Cycle continuity:** 押すごとに連続性が切り替わります。
+        - <kbd>D</kbd> **Tension:** カーソルを動かすことで、両方のエッジのテンションを一度に指定できます。
+        - <kbd>L</kbd> **Add Limit Point:** ロフトの範囲を指定します。**2つのカーブをロフトする**と同じです。
 4. コマンドダイアログでOKをクリックするか、右クリックします。
 
 <VideoPlayer fileName="loft-edge-and-edge"/>
@@ -62,9 +66,10 @@ import { Callout } from 'nextra/components'
 2. <kbd>L</kbd>を押します。
 3. ガイドになるカーブまたはエッジを選択します。複数選択するには<kbd>Shift</kbd> + クリック、選択を解除するには<kbd>Ctrl</kbd> + クリックします。
 4. コマンドダイアログとキーボードショートカットでオプションを設定します。
-    - **Trim overlap:**
-        - **Guides:** ガイド側のロフトサーフェイスをトリムします。
-        - **Profiles:** プロファイル側のロフトサーフェイスをトリムします。
+    - <Kst>コマンドダイアログ</Kst>
+        - **Trim overlap:**
+            - **Guides:** ガイド側のロフトサーフェイスをトリムします。
+            - **Profiles:** プロファイル側のロフトサーフェイスをトリムします。
     - そのほかのオプションは、上述の**カーブをロフトする**と**エッジをロフトする**と同じです。
 5. コマンドダイアログでOKをクリックするか、右クリックします。
 
@@ -84,7 +89,8 @@ import { Callout } from 'nextra/components'
 2. <kbd>L</kbd>を押します。
 3. コマンドダイアログで**Loop**をクリックします。
 4. キーボードショートカットでオプションを設定します。
-    - <kbd>L</kbd> **Add Limit Point:** ロフトの範囲を指定します。**2つのカーブをロフトする**と同じです。
+    - <Kst>キーボードショートカット</Kst>
+        - <kbd>L</kbd> **Add Limit Point:** ロフトの範囲を指定します。**2つのカーブをロフトする**と同じです。
 4. コマンドダイアログでOKをクリックするか、右クリックします。
 
 <VideoPlayer fileName="loft-loop"/>
@@ -115,11 +121,13 @@ import { Callout } from 'nextra/components'
 2. <kbd>L</kbd>を押します。
 3. ロフトの形状を制御するには、ガイドになるカーブを選択します。
 4. コマンドダイアログとキーボードショートカットでオプションを設定します。
-    - **Continuity**: **G0, G1, G2** 
-        - サーフェイスの連続性を指定します。詳しくは[continuity of the Surface](../cad-essentials/continuity-curve-and-surface)を参照してください。
-        - サーフェイス上の黒い丸をクリックして、サーフェイスの連続性を個別に指定できます。
-    - <kbd>Tab</kbd> **Cycle continuity:** 押すごとに連続性が切り替わります。
-    - **Tension**: 各エッジのテンションを指定します。
+    - <Kst>コマンドダイアログ</Kst>
+        - **Continuity**: **G0, G1, G2** 
+            - サーフェイスの連続性を指定します。詳しくは[continuity of the Surface](../cad-essentials/continuity-curve-and-surface)を参照してください。
+            - サーフェイス上の黒い丸をクリックして、サーフェイスの連続性を個別に指定できます。
+        - **Tension**: 各エッジのテンションを指定します。
+    - <Kst>キーボードショートカット</Kst>
+        - <kbd>Tab</kbd> **Cycle continuity:** 押すごとに連続性が切り替わります。
 4. コマンドダイアログでOKをクリックするか、右クリックします。
 
 ## 頂点をロフトする
