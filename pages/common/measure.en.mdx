@@ -1,0 +1,26 @@
+import Reference from 'components/Reference'
+import { Callout } from 'nextra/components'
+
+# Measure
+
+<Reference shortcut="Ctrl + =" command="Measure" button="" />
+
+Measure dimension values such as the size of a rectangular curve or the diameter of a cylinder. 
+Dimension values update according to the deformation of the measured object.
+
+## Basic Usage
+
+1. Press <kbd>Ctrl + =</kbd> or use the **Measure** command in the Command Palette.
+2. Select the Curve, Edge, or snap point you want to measure.
+3. Move the cursor to the desired axis and click to confirm the placement of the dimension.
+4. Dimension values will be displayed, corresponding to the coordinate axes of the construction plane. Additionally, 'Measurements' will be added to the Outliner.
+
+<Callout type="info">
+- When measuring a coordinate axis perpendicular to the construction plane, you need to switch to the construction plane that includes it.
+- You can display dimension values based on a user-defined construction plane. For instructions on creating a construction plane, refer to [here](../plasticity-essentials/construction-plane).
+- To measure the distance between two points, right-click to confirm.
+</Callout>
+
+
+## See also
+- [Dimension](./dimension)
