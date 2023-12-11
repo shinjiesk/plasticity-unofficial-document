@@ -1,0 +1,30 @@
+import Reference from 'components/Reference'
+import Kst from 'components/KeyboardShortcutsTitle'
+
+# Dimension
+
+<Reference shortcut="Shift + =" command="Dimension" button="" />
+
+Modify dimension values such as the size of a rectangular curve or the diameter of a cylinder.
+
+## Basic Usage
+
+1. Select the object you want to change the dimension of.
+    | Dimension Modification Target              | Selection Mode |
+    | ------------------------------------------ | -------------- |
+    | Length of two sides of a curve's rectangle | Edge           |
+    | Diameter of a curve's circle or arc        | Edge           |
+    | Diameter of a cylinder                     | Face           |
+    | Diameter of a sphere                       | Solid          |
+    | Lengths of the three sides of a cube       | Solid          |
+    | Size of a solid's fillet                   | Face           |
+    | Distance between planes of a solid         | Face           |
+2. Press <kbd>Shift + =</kbd> or use the **Dimension** command in the Command Palette.
+3. The dimension value will be displayed.
+4. Press <kbd>Tab</kbd> to enter dimension input mode.
+5. Enter the dimension value.
+6. If there are multiple dimensions, press <kbd>Tab</kbd> to switch and enter the dimensions.
+7. Press <kbd>Enter</kbd> to confirm.
+
+## See also
+- [Measure](./measure)

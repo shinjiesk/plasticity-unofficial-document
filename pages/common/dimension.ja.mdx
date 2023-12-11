@@ -1,0 +1,30 @@
+import Reference from 'components/Reference'
+import Kst from 'components/KeyboardShortcutsTitle'
+
+# Dimension
+
+<Reference shortcut="Shift + =" command="Dimension" button="" />
+
+カーブの四角形の大きさや、円柱の直径などの寸法値を変更することができます。
+
+## 基本的な使い方
+
+1. 寸法値を変更したいオブジェクトを選択します。
+    | 寸法変更の対象               | Selection Mode |
+    | ---------------------------- | -------------- |
+    | カーブの四角形の2辺の長さ    | Edge           |
+    | カーブの円、円弧の直径       | Edge           |
+    | 円柱の直径                   | Face           |
+    | 球の直径                     | Solid          |
+    | 立方体の3辺の長さ            | Solid          |
+    | ソリッドのフィレットの大きさ | Face           |
+    | ソリッドの平面間の距離       | Face           |
+2. <kbd>Shift + =</kbd>を押すか、コマンドパレットから**Dimension**コマンドを選択します。
+3. 寸法値が表示されます。
+4. <kbd>Tab</kbd>を押して、寸法入力モードに入ります。
+5. 寸法値を入力します。
+6. 複数の寸法値があるときは、<kbd>Tab</kbd>を押して切り替え、寸法値を入力します。
+7. <kbd>Enter</kbd>を押して確定します。
+
+## 関連項目
+- [Measure](./measure)
