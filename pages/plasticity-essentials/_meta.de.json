@@ -17,6 +17,7 @@
     "command-palette": "Befehlspalette",
     "radial-menu": "Radialmenü",
     "general": "Allgemeine Funktionen",
+    "import-export": "Import/Export",
     "importing-reference-images": "Referenzbilder importieren",
     "export-obj": "OBJ exportieren"
 }

@@ -17,6 +17,7 @@
     "command-palette": "コマンドパレット",
     "radial-menu": "ラジアルメニュー",
     "general": "一般機能",
+    "import-export": "インポート/エクスポート",
     "importing-reference-images": "参照画像をインポートする",
     "export-obj": "OBJファイルの書き出し"
 }
