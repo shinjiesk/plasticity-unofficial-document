@@ -4,48 +4,18 @@ P-メニューは左上の P をクリックして開きます。
 
 ![P-Menu](/img/file-menu.png)
 
-| Command Name          | Shortcut                    | Note                                                                                                                                                                                           |
+| コマンド名            | ショートカット              | 機能                                                                                                                                                                                           |
 | --------------------- | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | New                   | <kbd>Ctrl + N</kbd>         | シーンをクリアして、新しいドキュメントを開きます。                                                                                                                                             |
 | New Window            |                             | Plasticityを起動して新しいウインドウを開きます。新しいウインドウのアクセントカラーは、プライマリウインドウと区別するためにランダムに変更されます。ウインドウ間でのコピー、貼り付けも可能です。 |
-| Open                  | <kbd>Ctrl + O</kbd>         | Plasticityファイルを開く。                                                                                                                                                                     |
-| Import/Append         | <kbd>Ctrl + Shift + O</kbd> | ファイルのインポートをします。[ファイルのインポート](#file-import) を参照してください。                                                                                                        |
-| Save                  | <kbd>Ctrl + S</kbd>         |                                                                                                                                                                                                |
-| Export/Save as        | <kbd>Ctrl + Shift + S</kbd> | 名前を付けて保存、またはファイルのエクスポートをします。[ファイルのエクスポート](#file-export) を参照してください。                                                                            |
+| Open                  | <kbd>Ctrl + O</kbd>         | Plasticityファイルを開きます。                                                                                                                                                                 |
+| Import/Append         | <kbd>Ctrl + Shift + O</kbd> | ファイルをインポートします。インポート可能な形式は[こちら](./import-export#file-import) を参照してください。                                                                                   |
+| Save                  | <kbd>Ctrl + S</kbd>         | 保存します。                                                                                                                                                                                   |
+| Save as               | <kbd>Ctrl + Shift + S</kbd> | 名前を付けて保存します。                                                                                                                                                                       |
+| Export/               | <kbd>Ctrl + Shift + E</kbd> | ファイルをエクスポートします。エクスポート可能な形式は[こちら](./import-export#file-export) を参照してください。                                                                               |
 | Quick save version    |                             | ファイル名の末尾にタイムスタンプを付け加えて別名保存します。                                                                                                                                   |
-| Save as startup scene |                             | 現在のドキュメントを起動シーンとして保存します。このファイルは次回起動時に自動的に開きます。                                                                                                   |
+| Save as startup scene |                             | 現在のドキュメントを起動シーンとして保存します。このファイルが次回起動時に自動的に開きます。                                                                                                   |
 | Preferences           | <kbd>Ctrl + , (Comma)</kbd> | [設定](./preferences) を参照してください。                                                                                                                                                     |
 | Manage licenses       |                             | ライセンストークンとデバイスの管理をします。                                                                                                                                                   |
-| Plasticity Version    |                             | インストールされているPlasticityのバージョン。                                                                                                                                                 |
-| Quit                  | <kbd>Ctrl + Q</kbd>         |                                                                                                                                                                                                |
-
-## ファイルのインポート [#file-import]
-
-下記のファイル形式をインポートできます。
-
-| ファイル形式                       | Indie | Studio |
-| ---------------------------------- | ----- | ------ |
-| Plasticity file (*.plasticity)     | ✓    | ✓     |
-| STEP file (*.stp; *.step)          | ✓    | ✓     |
-| ParaSolid file (*.x_t; *.x_b)      | ✓    | ✓     |
-| Wavefront OBJ file (*.obj)         | ✓    | ✓     |
-| STL file (*.stl)                   | ✓    | ✓     |
-| Image files (*.png; *.jpg; *.jpeg) | ✓    | ✓     |
-| IGES files (*.igs; *.iges)         |       | ✓     |
-| SAT files (*sat)                   |       | ✓     |
-| Rhino files (*.3dm)                |       | ✓     |
-
-## ファイルのエクスポート [#file-export]
-
-下記のファイル形式をエクスポートできます。
-
-| ファイル形式                   | Indie | Studio |                                                  |
-| ------------------------------ | ----- | ------ | ------------------------------------------------ |
-| Plasticity file (*.plasticity) | ✓    | ✓     |                                                  |
-| STEP file (*.stp; *.step)      | ✓    | ✓     |                                                  |
-| ParaSolid file (*.x_t; *.x_b)  | ✓    | ✓     |                                                  |
-| Wavefront OBJ file (*.obj)     | ✓    | ✓     | 詳細は[こちら](./export-obj)を参照してください。 |
-| STL file (*.stl)               | ✓    | ✓     |                                                  |
-| IGES file (*.igs; *.iges)      |       | ✓     |                                                  |
-| SAT file (*sat)                |       | ✓     |                                                  |
-|                                |       |        |                                                  |
+| Plasticity Version    |                             | インストールされているPlasticityのバージョンです。                                                                                                                                             |
+| Quit                  | <kbd>Ctrl + Q</kbd>         | Plasticityを終了します。                                                                                                                                                                       |
