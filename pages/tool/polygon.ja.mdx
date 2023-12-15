@@ -1,33 +1,34 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
 import ButtonIcon from 'components/ButtonIcon';
-import { Callout } from 'nextra/components'
 import Kst from 'components/KeyboardShortcutsTitle'
 
-# Regular Polygon（多角形）
+# Regular Polygon
 
 <Reference shortcut='' command='Polygon' button='ツールバー' />
 
-任意の数の頂点で多角形を作成できます。
+多角形を作成できます。
 
 ## 基本的な使い方
 
 1. ツールバーのボタン <ButtonIcon type="button-regular-polygon" /> をクリックします。
-2. 多角形の中心位置でクリックします。
-3. カーソルを動かして外接円上の点でクリックします。
+2. 多角形の中心でクリックします。
+3. カーソルを動かして大きさを調整し、クリックして確定します。
    - <Kst>キーボードショートカット</Kst>
-   - <kbd>Tab</kbd> [外接円の直径を数値で指定します](./sketching-essentials#specify-dimensions-numerically)。
-   - <kbd>Shift + ホイール上回転</kbd> **Add a Vertex:** 多角形の頂点を増やします。
-   - <kbd>Shift + ホイール下回転</kbd> **Subtract a Vertex:** 多角形の頂点を減らします。
-   - <kbd>V</kbd> **Toggle vertical / horizontal :** 構築平面に対する傾きを変えます。
-   - <kbd>C</kbd> **Toggle circumscribed :** 外接/内接を切り替えます。
-   - <kbd>K</kbd> **Knife:** [ナイフモードを使う](./sketching-essentials#use-knife-mode)を参照してください。
-   - <kbd>X</kbd>/<kbd>Y</kbd> **X/Y-axis:** [X、Y軸に拘束します](./sketching-essentials#constrain-to-an-axis)。
-4. コマンドダイアログのOKをクリックするか、右クリックで確定します。
+      - <kbd>Tab</kbd> 寸法値に直接入力できるようになります。詳細は[こちら](./sketching-essentials#specify-dimensions-numerically)を参照してください。
+      - <kbd>Shift + ホイール上回転</kbd> **Add a Vertex:** 多角形の頂点を増やします。
+      - <kbd>Shift + ホイール下回転</kbd> **Subtract a Vertex:** 多角形の頂点を減らします。
+      - <kbd>上矢印キー</kbd> 多角形の頂点を増やします。
+      - <kbd>下矢印キー</kbd> 多角形の頂点を減らします。
+      - <kbd>V</kbd> **Toggle vertical / horizontal :** 構築平面に対する傾きを変えます。
+      - <kbd>C</kbd> **Toggle circumscribed :** 外接/内接を切り替えます。
+      - <kbd>K</kbd> **Knife:** [ナイフモードを使う](./sketching-essentials#use-knife-mode)を参照してください。
+      - <kbd>X</kbd>/<kbd>Y</kbd> **X/Y-axis:** [X、Y軸に拘束します](./sketching-essentials#constrain-to-an-axis)。
+4. 右クリックで確定します。
 5. 多角形が作成されます。
 
-<Callout type="info" emoji="💡">
-   多角形の頂点は、上下キーでも増減できます。
-</Callout>
-
 <VideoPlayer fileName="polygon"/>
+
+
+
+

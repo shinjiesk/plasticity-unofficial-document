@@ -1,21 +1,23 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
 import ButtonIcon from 'components/ButtonIcon';
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Tangent Arc
 
 <Reference shortcut="" command="Tangent Arc" button="Toolbar" />
 
-Einen Bogen tangential zu einer Kurve erstellen.
+Sie können einen Bogen erstellen, der tangential zu einer Kurve verläuft.
 
 ## Grundlegende Nutzung
 
-1. Klicken Sie auf die Schaltfläche <ButtonIcon type="button-tangent-ark" /> in der Symbolleiste.
-2. Klicken Sie, um Kurvensegmente auszuwählen, die tangential zu einem Bogen sein sollen.
-3. Spezifizieren Sie den Radius, indem Sie den Cursor bewegen.
-4. Klicken Sie, um den Radius zu bestätigen.
-6. Ein Bogen wird erstellt.
-
+1. Klicken Sie auf den <ButtonIcon type="button-tangent-ark" /> Knopf in der Werkzeugleiste.
+2. Klicken Sie auf die Kurve, an die der Bogen tangential verlaufen wird.
+3. Bewegen Sie den Cursor, um die Größe des Bogens anzupassen, und klicken Sie zur Bestätigung.
+    - <Kst>Tastenkombinationen</Kst>
+        - <kbd>D</kbd> **Richtung umkehren:** Kehrt die Richtung des Bogens um.
+        - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-Axis:** [Beschränkt auf X, Y, Z Achse](./sketching-essentials#constrain-to-an-axis).
+6. Der Bogen wird erstellt.
 
 <VideoPlayer fileName="tangent-arc"/>
 

@@ -7,29 +7,31 @@ import Kst from 'components/KeyboardShortcutsTitle'
 
 <Reference shortcut='Umschalt + C' command='Cylinder' button='Werkzeugleiste' />
 
-Erstellen Sie einen Zylinder, indem Sie das Zentrum eines Kreises, den Durchmesser und die Höhe angeben. Es sind auch boolesche Operationen verfügbar.
+Sie können einen Zylinder erstellen, indem Sie seinen Grundkreis und die Höhe angeben.
 
 ## Grundlegende Nutzung
 
-1. Klicken Sie auf die Schaltfläche <ButtonIcon type="button-cylinder" /> in der Werkzeugleiste.
-2. Klicken Sie auf den Punkt für das Zentrum des Kreises auf der Basisebene.
-3. Bewegen Sie den Cursor und klicken Sie auf einen Punkt am Umfang.
+1. Klicken Sie auf den <ButtonIcon type="button-cylinder" /> Knopf in der Werkzeugleiste.
+2. Klicken Sie, um die Mittelposition des Kreises festzulegen.
+3. Bewegen Sie den Cursor, um die Größe des Grundkreises anzupassen, und klicken Sie zur Bestätigung.
    - <Kst>Tastenkombinationen</Kst>
-   - <kbd>V</kbd> **Vertical/ Horizontal:** Ändert die Neigung in Bezug auf die Konstruktionsebene.
-   - <kbd>X</kbd>/<kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Auf die X-, Y- oder Z-Achse beschränken](./sketching-essentials#constrain-to-an-axis).
-4. Bewegen Sie den Cursor und klicken Sie auf die gewünschte Höhe.
-5. Legen Sie die Optionen im Command Dialog und den Tastaturkürzeln fest.
+      - <kbd>Tab</kbd>: Ermöglicht direkte Eingabe von Abmessungen. Weitere Details finden Sie [hier](./sketching-essentials#specify-dimensions-numerically).
+      - <kbd>V</kbd> **Vertical/ Horizontal:** Ändert die Neigung relativ zur Konstruktionsebene.
+      - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-Axis:** [Beschränkt auf X, Y, Z Achse](./sketching-essentials#constrain-to-an-axis).
+4. Bewegen Sie den Cursor, um die Höhe anzupassen, und klicken Sie zur Bestätigung.
    - <Kst>Befehlsdialog</Kst>
-   - **Select target bodies**
-      - Diese Optionen haben die gleiche Funktion wie der Befehl Boolean. Weitere Einzelheiten finden Sie im Befehl [**Boolean**](../solid/boolean).
-   - **Radius:** Geben Sie den Radius an.
-   - **Height:** Geben Sie die Höhe an.
+      - **Select target bodies**
+         - Funktioniert wie der Befehl Boolean. Weitere Informationen finden Sie unter dem [**Boolean**](../solid/boolean) Befehl.
+      - **Radius:** Durchmesser angeben.
+      - **Height:** Höhe angeben.
    - <Kst>Tastenkombinationen</Kst>
-   - <kbd>Umschalt + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>Umschalt + E</kbd>, <kbd>B</kbd>, <kbd>T</kbd>
-      - Diese Optionen haben die gleiche Funktion wie der Befehl Boolean. Weitere Einzelheiten finden Sie im Befehl [**Boolean**](../solid/boolean).
-   - <kbd>F</kbd> **Radius:** Bewegen Sie den Cursor, um den Radius anzugeben.
-   - <kbd>D</kbd> **Height:** Bewegen Sie den Cursor, um die Höhe anzugeben.
-6. Bestätigen Sie mit OK im Command Dialog oder mit Rechtsklick.
-7. Ein Zylinder wird erstellt.
+      - <kbd>Umschalt + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>Umschalt + E</kbd>, <kbd>B</kbd>, <kbd>T</kbd>
+         - Funktioniert wie der Befehl Boolean. Weitere Informationen finden Sie unter dem [**Boolean**](../solid/boolean) Befehl.
+      - <kbd>F</kbd> **Radius:** Durchmesser durch Bewegen des Cursors anpassen.
+      - <kbd>D</kbd> **Height:** Höhe durch Bewegen des Cursors anpassen.
+5. Sie können auch die Form anpassen, indem Sie die gelben Punkte bewegen.
+6. Klicken Sie im Befehlsdialog auf OK oder rechtsklick zur Bestätigung.
+7. Der Zylinder wird erstellt.
+
 
 <VideoPlayer fileName="cylinder"/>

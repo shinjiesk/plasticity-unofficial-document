@@ -1,6 +1,7 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
 import ButtonIcon from 'components/ButtonIcon';
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Tangent Arc
 
@@ -11,9 +12,11 @@ import ButtonIcon from 'components/ButtonIcon';
 ## 基本的な使い方
 
 1. ツールバーのボタン <ButtonIcon type="button-tangent-ark" /> をクリックします。
-2. 円弧に接するカーブセグメントをクリックして選択します。
-3. カーソルを動かして半径を指定します。
-4. クリックして半径を確定します。
+2. 円弧に接するカーブをクリックします。
+3. カーソルを動かして円弧の大きさを調整し、クリックして確定します。
+    - <Kst>キーボードショートカット</Kst>
+        - <kbd>D</kbd> **Flip direction:** 円弧の方向を反転します。d
+        - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [X、Y、Z軸に拘束します](./sketching-essentials#constrain-to-an-axis)。
 6. 円弧が作成されます。
 
 <VideoPlayer fileName="tangent-arc"/>
@@ -24,3 +27,6 @@ import ButtonIcon from 'components/ButtonIcon';
 - [Tangent Circle](./tangent-circle)
 - [Center Point Arc](./center-point-arc)
 - [Three-Point Arc](./three-point-arc)
+
+
+

@@ -1,20 +1,24 @@
 import VideoPlayer from 'components/VideoPlayer';
 import Reference from 'components/Reference'
 import ButtonIcon from 'components/ButtonIcon';
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Tangent Arc
 
 <Reference shortcut="" command="Tangent Arc" button="Toolbar" />
 
-Create a ark tangent to a curve.
+You can create an arc tangent to a curve.
 
 ## Basic Usage
 
-1. Click the button <ButtonIcon type="button-tangent-ark" /> on the toolbar.
-2. Click to select a curve segments to be tangent to an ark.
-3. Specify the radius by moving the cursol.
-4. Click to conferm the radius.
-6. An arc is created.
+1. Click the <ButtonIcon type="button-tangent-ark" /> button on the toolbar.
+2. Click the curve that the arc will be tangent to.
+3. Move the cursor to adjust the size of the arc, and click to confirm.
+    - <Kst>Keyboard Shortcuts</Kst>
+        - <kbd>D</kbd> **Flip direction:** Reverses the direction of the arc.
+        - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Constrains to X, Y, Z axis](./sketching-essentials#constrain-to-an-axis).
+6. The arc is created.
+
 
 <VideoPlayer fileName="tangent-arc"/>
 
