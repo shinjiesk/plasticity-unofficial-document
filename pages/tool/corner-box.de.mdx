@@ -7,30 +7,32 @@ import Kst from 'components/KeyboardShortcutsTitle'
 
 <Reference shortcut='Umschalt + B' command='Corner Box' button='Werkzeugleiste' />
 
-Erstellen Sie ein rechteckiges Kästchen, indem Sie diagonale Eckpunkte und Höhe angeben. Boolesche Operationen sind ebenfalls verfügbar.
+Sie können ein rechteckiges Feld erstellen, indem Sie die Diagonale seiner Basis und seine Höhe angeben.
 
 ## Grundlegende Nutzung
 
-1. Klicken Sie auf die Schaltfläche <ButtonIcon type="button-corner-box" /> in der Werkzeugleiste.
-2. Klicken Sie auf den Startpunkt der Diagonalen auf der Basisfläche.
+1. Klicken Sie auf den <ButtonIcon type="button-corner-box" /> Knopf in der Werkzeugleiste.
+2. Klicken Sie, um eine Ecke der Basis festzulegen.
+3. Bewegen Sie den Cursor, um die Größe der Basis anzupassen, und klicken Sie zur Bestätigung.
    - <Kst>Tastenkombinationen</Kst>
-   - <kbd>C</kbd> **Center/Corner:** Wechselt zu Center Box.
-   - <kbd>S</kbd> **Square:** Begrenzt auf ein Quadrat.
-3. Klicken Sie auf den Endpunkt der Diagonalen.
-4. Bewegen Sie den Cursor und klicken Sie auf die gewünschte Höhe.
-5. Legen Sie die Optionen im Befehlsdialog und den Tastaturkürzeln fest.
+      - <kbd>Tab</kbd>: Ermöglicht direkte Eingabe von Abmessungen. Weitere Details finden Sie [hier](./sketching-essentials#specify-dimensions-numerically).
+      - <kbd>C</kbd> **Center/Corner:** Wechselt zu Corner Box.
+      - <kbd>S</kbd> **Square:** Beschränkt auf quadratische Basis.
+4. Bewegen Sie den Cursor, um die Höhe anzupassen, und klicken Sie zur Bestätigung.
    - <Kst>Befehlsdialog</Kst>
-   - **Select target bodies**
-      - Diese Optionen haben dieselbe Funktion wie der Boolean-Befehl. Siehe [**Boolean**](../solid/boolean) Befehl für Details.
-   - **Width:** Geben Sie die Breite an.
-   - **Length:** Geben Sie die Länge an.
-   - **Height:** Geben Sie die Höhe an.
+      - **Select target bodies**:
+         - Funktioniert wie der Befehl Boolean. Weitere Informationen finden Sie unter dem [**Boolean**](../solid/boolean) Befehl.
+      - **Width:** Breite angeben.
+      - **Length:** Länge angeben.
+      - **Height:** Höhe angeben.
    - <Kst>Tastenkombinationen</Kst>
-   - <kbd>Umschalt + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>Umschalt + E</kbd>, <kbd>B</kbd>, <kbd>T</kbd>
-      - Diese Optionen haben dieselbe Funktion wie der Boolean-Befehl. Siehe [**Boolean**](../solid/boolean) Befehl für Details.
-   - <kbd>H</kbd> **Height:** Bewegt den Cursor, um die Höhe anzugeben.
-6. Bestätigen Sie mit OK im Befehlsdialog oder mit Rechtsklick.
-7. Ein rechteckiges Kästchen wird erstellt.
+      - <kbd>Umschalt + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>Umschalt + E</kbd>, <kbd>B</kbd>, <kbd>T</kbd>
+         - Funktioniert wie der Befehl Boolean. Weitere Informationen finden Sie unter dem [**Boolean**](../solid/boolean) Befehl.
+      - <kbd>H</kbd> **Height:** Höhe durch Bewegen des Cursors anpassen.
+5. Sie können auch die Form anpassen, indem Sie die gelben Punkte bewegen.
+6. Klicken Sie im Befehlsdialog auf OK oder rechtsklick zur Bestätigung.
+7. Das rechteckige Feld wird erstellt.
+
 
 <VideoPlayer fileName="corner-box"/>
 

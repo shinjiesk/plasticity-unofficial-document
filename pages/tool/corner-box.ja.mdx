@@ -3,34 +3,35 @@ import ButtonIcon from 'components/ButtonIcon';
 import VideoPlayer from 'components/VideoPlayer';
 import Kst from 'components/KeyboardShortcutsTitle'
 
-# Corner Box（対角線からの直方体）
+# Corner Box
 
 <Reference shortcut='Shift + B' command='Corner Box' button='ツールバー' />
 
-対角線上の角の点と高さを指定して立方体を作成できます。ブーリアン操作も可能です。
+対角線を指定した四角形と高さを指定して直方体を作成できます。
 
 ## 基本的な使い方
 
 1. ツールバーのボタン <ButtonIcon type="button-corner-box" />をクリックします。
-2. 底面の対角線上の始点でクリックします。
+2. 底面の角をクリックします。
+3. カーソルを動かして底面の大きさを調整し、クリックして確定します。
    - <Kst>キーボードショートカット</Kst>
-   - <kbd>C</kbd> **Center/Corner:** Center Boxに切り替えます。
-   - <kbd>S</kbd> **Square:** 正方形に限定します。
-3. 対角線上の終点でクリックします。
-4. カーソルを動かして目的の高さでクリックします。
-5. コマンドダイアログとキーボードショートカットでオプションを設定します。
+      - <kbd>Tab</kbd> : 寸法値に直接入力できるようになります。詳細は[こちら](./sketching-essentials#specify-dimensions-numerically)を参照してください。
+      - <kbd>C</kbd> **Center/Corner:** Corner Boxに切り替えます。
+      - <kbd>S</kbd> **Square:** 正方形に限定します。
+4. カーソルを動かして高さを調整し、クリックして確定します。
    - <Kst>コマンドダイアログ</Kst>
-   - **Select target bodies**
-      - Booleanコマンドと同じ機能です。詳細は[**Boolean**](../solid/boolean)コマンドを参照してください。
-   - **Width:** 幅を指定します。
-   - **Length:** 長さを指定します。
-   - **Height:** 高さを指定します。
+      - **Select target bodies** :
+         - Booleanコマンドと同じ機能です。詳細は[**Boolean**](../solid/boolean)コマンドを参照してください。
+      - **Width:** 幅を指定します。
+      - **Length:** 長さを指定します。
+      - **Height:** 高さを指定します。
    - <Kst>キーボードショートカット</Kst>
-   - <kbd>Shift + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>Shift + E</kbd>, <kbd>B</kbd>, <kbd>T</kbd>
-      - Booleanコマンドと同じ機能です。詳細は[**Boolean**](../solid/boolean)コマンドを参照してください。
-   - <kbd>H</kbd> **Height:** カーソルを動かして高さを指定します。
-5. コマンドダイアログのOKをクリックするか、右クリックで確定します。
-6. 直方体が作成されます。
+      - <kbd>Shift + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>Shift + E</kbd>, <kbd>B</kbd>, <kbd>T</kbd>
+         - Booleanコマンドと同じ機能です。詳細は[**Boolean**](../solid/boolean)コマンドを参照してください。
+      - <kbd>H</kbd> **Height:** カーソルを動かして高さを指定します。
+5. 黄色のドットを動かして形状を調整することもできます。
+6. コマンドダイアログのOKをクリックするか、右クリックで確定します。
+7. 直方体が作成されます。
 
 <VideoPlayer fileName="corner-box"/>
 
@@ -38,3 +39,7 @@ import Kst from 'components/KeyboardShortcutsTitle'
 
 - [Center Box](./center-box)
 - [Three-Point Box](./three-point-box)
+
+
+
+

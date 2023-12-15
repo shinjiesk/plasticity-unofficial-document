@@ -7,25 +7,26 @@ import Kst from 'components/KeyboardShortcutsTitle'
 
 <Reference shortcut='' command='Sphere' button='Toolbar' />
 
-Create a sphere by specifying its center and diameter. Boolean operations are also available.
+You can create a sphere by specifying its center and diameter.
 
 ## Basic Usage
 
-1. Click the button <ButtonIcon type="button-sphere" /> on the toolbar.
-2. Click at the point for the sphiere's center.
-3. Move the cursor and click at the desired radius.
-4. Set the options in the Command Dialog and Keyboard Shortcuts.
+1. Click the <ButtonIcon type="button-sphere" /> button on the toolbar.
+2. Click to set the center of the sphere.
+3. Move the cursor to adjust the size of the sphere, and click to confirm.
    - <Kst>Command Dialog</Kst>
-   - **Select target bodies :** 
-      - Same function as the Boolean command. See [**Boolean**](../solid/boolean) command for details.
-   - **Radius:** Specify the radius.
+      - **Select target bodies:**
+            - Functions the same as the Boolean command. Refer to [**Boolean**](../solid/boolean) command for details.
+      - **Radius:** Specify the diameter.
    - <Kst>Keyboard Shortcuts</Kst>
-   - <kbd>Tab</kbd> : [Specify the diameter with a numerical value](./sketching-essentials#specify-dimensions-numerically).
-   - <kbd>Shift + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>Shift + E</kbd>, <kbd>B</kbd>, <kbd>T</kbd> : 
-      - Same function as the Boolean command. See [**Boolean**](../solid/boolean) command for details.
-   - <kbd>D</kbd> **Radius :** Move the cursor to specify the radius.
-   - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis :** [Constrain to the X, Y, or Z-axis](./sketching-essentials#constrain-to-an-axis).
-5. Confirm with OK in the Command Dialog or right-click.
-6. A sphere is created.
+      - <kbd>Tab</kbd>: Enables direct input of dimensions. See [here](./sketching-essentials#specify-dimensions-numerically) for details.
+      - <kbd>Shift + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>Shift + E</kbd>, <kbd>B</kbd>, <kbd>T</kbd>:
+         - Functions the same as the Boolean command. Refer to [**Boolean**](../solid/boolean) command for details.
+      - <kbd>D</kbd> **Radius:** Adjust the diameter by moving the cursor.
+      - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Constrains to X, Y, Z axis](./sketching-essentials#constrain-to-an-axis).
+4. You can also adjust the shape by moving the yellow dot.
+5. Click OK in the command dialog or right-click to confirm.
+6. The sphere is created.
+
 
 <VideoPlayer fileName="sphere"/>

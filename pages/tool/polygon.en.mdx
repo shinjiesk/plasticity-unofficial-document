@@ -8,26 +8,24 @@ import Kst from 'components/KeyboardShortcutsTitle'
 
 <Reference shortcut='' command='Polygon' button='Toolbar' />
 
-Create a polygon with any number of vertices.
+You can create a polygon.
 
 ## Basic Usage
 
-1. Click the button <ButtonIcon type="button-regular-polygon" /> on the toolbar.
-2. Click at the point for the polygon's center.
-3. Move the cursor and click on a point on the circumscribed circle.
+1. Click the <ButtonIcon type="button-regular-polygon" /> button on the toolbar.
+2. Click at the center of the polygon.
+3. Move the cursor to adjust the size, and click to confirm.
    - <Kst>Keyboard Shortcuts</Kst>
-   - <kbd>Tab</kbd> : [Specify the diameter of the circumscribed circle with a numerical value](./sketching-essentials#specify-dimensions-numerically).
-   - <kbd>Shift + Wheel up</kbd> **Add a Vertex :** Increases the Vertices of the polygon.
-   - <kbd>Shift + Wheel down</kbd> **Subtract a Vertex :** Reduces the Vertices of the polygon.
-   - <kbd>V</kbd> **Vertical/Horizontal :** Change the inclination with respect to the construction plane.
-   - <kbd>C</kbd> **Toggle circumscribed :** Switches between circumscribed and inscribed.
-   - <kbd>K</kbd> **Knife :** [Use Knife Mode.](./sketching-essentials#use-knife-mode) 
-   - <kbd>X</kbd>/<kbd>Y</kbd> **X/Y-axis :** [Constrain to the X or Y-axis](./sketching-essentials#constrain-to-an-axis).
-4. Confirm with OK in the Command Dialog or right-click.
-5. A regular polygon is created.
-
-<Callout type="info" emoji="💡">
-   The Vertices of the polygon can be increased or decreased using the up and down keys.
-</Callout>
+      - <kbd>Tab</kbd>: Enables direct input of dimensions. See [here](./sketching-essentials#specify-dimensions-numerically) for details.
+      - <kbd>Shift + Scroll Up</kbd> **Add a Vertex:** Increases the number of vertices of the polygon.
+      - <kbd>Shift + Scroll Down</kbd> **Subtract a Vertex:** Decreases the number of vertices of the polygon.
+      - <kbd>Up Arrow Key</kbd> Increases the number of vertices of the polygon.
+      - <kbd>Down Arrow Key</kbd> Decreases the number of vertices of the polygon.
+      - <kbd>V</kbd> **Toggle vertical / horizontal:** Changes the inclination relative to the construction plane.
+      - <kbd>C</kbd> **Toggle circumscribed:** Switches between circumscribed and inscribed.
+      - <kbd>K</kbd> **Knife:** Refer to [Using Knife Mode](./sketching-essentials#use-knife-mode).
+      - <kbd>X</kbd>/<kbd>Y</kbd> **X/Y-axis:** [Constrains to X, Y axis](./sketching-essentials#constrain-to-an-axis).
+4. Right-click to confirm.
+5. The polygon is created.
 
 <VideoPlayer fileName="polygon"/>

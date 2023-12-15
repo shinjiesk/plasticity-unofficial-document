@@ -7,31 +7,31 @@ import Kst from 'components/KeyboardShortcutsTitle'
 
 <Reference shortcut='Shift + C' command='Cylinder' button='Toolbar' />
 
-Create a cylinder by specifying a circle's center, diameter, and height. Boolean operations are also available.
+You can create a cylinder by specifying its base circle and height.
 
 ## Basic Usage
 
-
-1. Click the button <ButtonIcon type="button-cylinder" /> on the toolbar.
-2. Click at the point for the circle's center on the base surface.
-3. Move the cursor and click on a point on the circumference.
+1. Click the <ButtonIcon type="button-cylinder" /> button on the toolbar.
+2. Click to specify the center position of the circle.
+3. Move the cursor to adjust the size of the base circle, and click to confirm.
    - <Kst>Keyboard Shortcuts</Kst>
-   - <kbd>V</kbd> **Vertical/ Horizontal :** Changes the inclination with respect to the construction plane.
-   - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis :** [Constrain to the X, Y, or Z-axis](./sketching-essentials#constrain-to-an-axis).
-4. Move the cursor and click at the desired height.
-5. Set the options in the Command Dialog and Keyboard Shortcuts.
+      - <kbd>Tab</kbd>: Enables direct input of dimensions. See [here](./sketching-essentials#specify-dimensions-numerically) for details.
+      - <kbd>V</kbd> **Vertical/ Horizontal:** Changes the inclination relative to the construction plane.
+      - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [Constrains to X, Y, Z axis](./sketching-essentials#constrain-to-an-axis).
+4. Move the cursor to adjust the height, and click to confirm.
    - <Kst>Command Dialog</Kst>
-   - **Select target bodies** : 
-      - Same function as the Boolean command. See [**Boolean**](../solid/boolean) command for details.
-   - **Radius :** Specify the Radius.
-   - **Height :** Specify the Height.
+      - **Select target bodies**
+         - Functions the same as the Boolean command. Refer to [**Boolean**](../solid/boolean) command for details.
+      - **Radius:** Specify the diameter.
+      - **Height:** Specify the height.
    - <Kst>Keyboard Shortcuts</Kst>
-   - <kbd>Shift + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>Shift + E</kbd>, <kbd>B</kbd>, <kbd>T</kbd> : 
-      - Same function as the Boolean command. See [**Boolean**](../solid/boolean) command for details.
-   - <kbd>F</kbd> **Radius :** Move the cursor to specify the radius.
-   - <kbd>D</kbd> **Height :** Move the cursor to specify the height.
-6. Confirm with OK in the Command Dialog or right-click.
-7. A cylinder is created.
+      - <kbd>Shift + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>Shift + E</kbd>, <kbd>B</kbd>, <kbd>T</kbd>
+         - Functions the same as the Boolean command. Refer to [**Boolean**](../solid/boolean) command for details.
+      - <kbd>F</kbd> **Radius:** Adjust the diameter by moving the cursor.
+      - <kbd>D</kbd> **Height:** Adjust the height by moving the cursor.
+5. You can also adjust the shape by moving the yellow dots.
+6. Click OK in the command dialog or right-click to confirm.
+7. The cylinder is created.
 
 
 <VideoPlayer fileName="cylinder"/>

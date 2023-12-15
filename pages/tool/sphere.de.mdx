@@ -7,25 +7,26 @@ import Kst from 'components/KeyboardShortcutsTitle'
 
 <Reference shortcut='' command='Sphere' button='Werkzeugleiste' />
 
-Erstellen Sie eine Kugel, indem Sie deren Mittelpunkt und Durchmesser angeben. Auch boolesche Operationen sind verfügbar.
+Sie können eine Kugel erstellen, indem Sie ihr Zentrum und ihren Durchmesser angeben.
 
 ## Grundlegende Nutzung
 
-1. Klicken Sie auf die Schaltfläche <ButtonIcon type="button-sphere" /> in der Werkzeugleiste.
-2. Klicken Sie auf den Punkt für das Zentrum der Kugel.
-3. Bewegen Sie den Cursor und klicken Sie auf den gewünschten Radius.
-4. Legen Sie die Optionen im Befehlsdialog und den Tastenkombinationen fest.
+1. Klicken Sie auf den <ButtonIcon type="button-sphere" /> Knopf in der Werkzeugleiste.
+2. Klicken Sie, um das Zentrum der Kugel festzulegen.
+3. Bewegen Sie den Cursor, um die Größe der Kugel anzupassen, und klicken Sie zur Bestätigung.
    - <Kst>Befehlsdialog</Kst>
-   - **Zielkörper auswählen:** 
-      - Gleiche Funktion wie der Befehl "Boolean". Siehe [**Boolean**](../solid/boolean) Befehl für Details.
-   - **Radius:** Geben Sie den Radius an.
+      - **Select target bodies:**
+            - Funktioniert wie der Befehl Boolean. Weitere Informationen finden Sie unter dem [**Boolean**](../solid/boolean) Befehl.
+      - **Radius:** Durchmesser angeben.
    - <Kst>Tastenkombinationen</Kst>
-   - <kbd>Tab</kbd> : [Geben Sie den Durchmesser numerisch an](./sketching-essentials#specify-dimensions-numerically).
-   - <kbd>Shift + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>Shift + E</kbd>, <kbd>B</kbd>, <kbd>T</kbd> : 
-      - Gleiche Funktion wie der Befehl "Boolean". Siehe [**Boolean**](../solid/boolean) Befehl für Details.
-   - <kbd>D</kbd> **Radius:** Bewegen Sie den Cursor, um den Radius zu spezifizieren.
-   - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-Achse:** [Beschränken auf die X-, Y- oder Z-Achse](./sketching-essentials#constrain-to-an-axis).
-5. Bestätigen Sie mit OK im Befehlsdialog oder mit einem Rechtsklick.
-6. Eine Kugel wird erstellt.
+      - <kbd>Tab</kbd>: Ermöglicht direkte Eingabe von Abmessungen. Weitere Informationen finden Sie [hier](./sketching-essentials#specify-dimensions-numerically).
+      - <kbd>Umschalt + Q</kbd>, <kbd>Q</kbd>, <kbd>W</kbd>, <kbd>Umschalt + E</kbd>, <kbd>B</kbd>, <kbd>T</kbd>:
+         - Funktioniert wie der Befehl Boolean. Weitere Informationen finden Sie unter dem [**Boolean**](../solid/boolean) Befehl.
+      - <kbd>D</kbd> **Radius:** Durchmesser durch Bewegen des Cursors anpassen.
+      - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-Axis:** [Beschränkt auf X, Y, Z Achse](./sketching-essentials#constrain-to-an-axis).
+4. Sie können auch die Form anpassen, indem Sie den gelben Punkt bewegen.
+5. Klicken Sie im Befehlsdialog auf OK oder rechtsklick zur Bestätigung.
+6. Die Kugel wird erstellt.
+
 
 <VideoPlayer fileName="sphere"/>
