@@ -20,7 +20,7 @@ import Kst from 'components/KeyboardShortcutsTitle'
 3. キーボードショートカットでオプションを設定します。
     - <Kst>キーボードショートカット</Kst>
         - <kbd>L</kbd> **Add Limit Point:** ロフトの範囲を指定します。
-            - [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap)が有効になっていることを確認してください。
+            - [**Object Snaps**](/plasticity-essentials/grid-and-snap#object-snap)が有効になっていることを確認してください。
             - エッジをクリックしてリミットポイントを追加します。
             - 方向を反転するには、リミットポイントを再度クリックします。
             - 各カーブには最大2つのリミットポイントを設定できます。
@@ -37,7 +37,7 @@ import Kst from 'components/KeyboardShortcutsTitle'
 3. コマンドダイアログとキーボードショートカットでオプションを設定します。
     - <Kst>コマンドダイアログ</Kst>
         - **Continuity**: **G0, G1, G2**
-            - サーフェイスの連続性を指定します。詳しくは[continuity of the Surface](../cad-essentials/continuity-curve-and-surface)を参照してください。
+            - サーフェイスの連続性を指定します。詳しくは[continuity of the Surface](/cad-essentials/continuity-curve-and-surface)を参照してください。
             - サーフェイス上の黒い丸をクリックして、サーフェイスの連続性を個別に指定できます。
         - **Tension**: 各エッジのテンションを指定します。
     - <Kst>キーボードショートカット</Kst>
@@ -123,7 +123,7 @@ import Kst from 'components/KeyboardShortcutsTitle'
 4. コマンドダイアログとキーボードショートカットでオプションを設定します。
     - <Kst>コマンドダイアログ</Kst>
         - **Continuity**: **G0, G1, G2** 
-            - サーフェイスの連続性を指定します。詳しくは[continuity of the Surface](../cad-essentials/continuity-curve-and-surface)を参照してください。
+            - サーフェイスの連続性を指定します。詳しくは[continuity of the Surface](/cad-essentials/continuity-curve-and-surface)を参照してください。
             - サーフェイス上の黒い丸をクリックして、サーフェイスの連続性を個別に指定できます。
         - **Tension**: 各エッジのテンションを指定します。
     - <Kst>キーボードショートカット</Kst>
@@ -132,14 +132,14 @@ import Kst from 'components/KeyboardShortcutsTitle'
 
 ## 頂点をロフトする
 
-ふたつの頂点をロフトすると、ふたつのカーブをブリッジできます。機能は[**Bridge Vertex**](../sketch/bridge#bridge-vertex)と同じです。
+ふたつの頂点をロフトすると、ふたつのカーブをブリッジできます。機能は[**Bridge Vertex**](/sketch/bridge#bridge-vertex)と同じです。
 
 ## トラブルシューティングのヒント [#troubleshooting-tips]
 
 <Callout type="info" emoji="💡">
 **ロフトが成功しない理由として考えられること**
 1. カーブが複雑すぎる。 カーブを作り直すことで解決することが多いです。
-2. ガイドカーブがプロファイルに接触していない。 各接続部に交差を示す青緑色の点があることを確認してください。 正確に接続するには、[**オブジェクトスナップ**](../plasticity-essentials/grid-and-snap#object-snap)を参照してください。
+2. ガイドカーブがプロファイルに接触していない。 各接続部に交差を示す青緑色の点があることを確認してください。 正確に接続するには、[**オブジェクトスナップ**](/plasticity-essentials/grid-and-snap#object-snap)を参照してください。
 3. 複雑な形状を一度にLoftしようとする。 複数のロフトを使用した、より単純なサブセクション形状を使用してモデルを設計します。例えば、**Join** を使用してサーフェスを接続したり、追加の **Loft** を使用してブリッジカーブを使用します。
 4. ガイドカーブの数が多すぎる、または足りない。ここは練習すれば上達します。サーフェスを無理に多くのプロファイルやガイドに通そうとすると、ロフトが困難になります。プロファイルとガイドの間隔が近すぎる場合も同じ問題があります。
 5. エッジの代わりにカーブを選択する。エッジとカーブでは選択できるオプションが異なります。
@@ -149,4 +149,4 @@ import Kst from 'components/KeyboardShortcutsTitle'
 </Callout>
 
 ## 関連項目
-- [Patch](./patch)
+- [Patch](patch)

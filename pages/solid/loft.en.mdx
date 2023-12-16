@@ -22,7 +22,7 @@ Lofting Curves allow you to specify **Add Limit Point** option.
 3. Set the options by Keyboard Shortcuts.
     - <Kst>Keyboard Shortcuts</Kst>
         - <kbd>L</kbd> **Add Limit Point:** Specify the range to loft.
-            - Make sure that [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap) are enabled.
+            - Make sure that [**Object Snaps**](/plasticity-essentials/grid-and-snap#object-snap) are enabled.
             - Click on the Edge to add a limit point.
             - To reverse the direction, click on the limit point again.
             - Up to two limit points can be set on each Curve.
@@ -39,7 +39,7 @@ Lofting Edges allows you to specify **Continuity**, **Tension**, **Add Limit Poi
 3. Set the options in the Command Dialog and the Keyboard Shortcuts.
     - <Kst>Command Dialog</Kst>
         - **Continuity**: **G0, G1, G2** 
-            - Specify the [continuity of the Surface](../cad-essentials/continuity-curve-and-surface).
+            - Specify the [continuity of the Surface](/cad-essentials/continuity-curve-and-surface).
             - Continuity can be specified individually by clicking on the black circles on the surface.
         - **Tension**: Specify the tension of each Edge.
     - <Kst>Keyboard Shortcuts</Kst>
@@ -133,7 +133,7 @@ You can loft two Faces to create a Solid.
 4. Set the options in the Command Dialog and the Keyboard Shortcuts.
     - <Kst>Command Dialog</Kst>
             - **Continuity**: **G0, G1, G2** 
-            - Specify the [Continuity of the Surface](../cad-essentials/continuity-curve-and-surface).
+            - Specify the [Continuity of the Surface](/cad-essentials/continuity-curve-and-surface).
             - Continuity can be specified individually by clicking on the black circles on the surface.
         - **Tension**: Specify the tension of each Edge.
     - <Kst>Keyboard Shortcuts</Kst>
@@ -142,14 +142,14 @@ You can loft two Faces to create a Solid.
 
 ## Loft Vertices
 
-Lofting two Vertices allows bridging two Curves. The functionality is the same as [**Bridge Vertex**](../sketch/bridge#bridge-vertex).
+Lofting two Vertices allows bridging two Curves. The functionality is the same as [**Bridge Vertex**](/sketch/bridge#bridge-vertex).
 
 ## Troubleshooting Tips
 
 <Callout type="info" emoji="💡">
 **Possible reasons when loft doesn't succeed**
 1. Curves are overly complex.  Rebuilding the  Curves is often the solution.
-2. Guide Curves not touching the profiles.  Check that each connection has a blue-green dot, indicating intersection.  To ensure a precise touch, see [**Object Snaps**](../plasticity-essentials/grid-and-snap#object-snap).
+2. Guide Curves not touching the profiles.  Check that each connection has a blue-green dot, indicating intersection.  To ensure a precise touch, see [**Object Snaps**](/plasticity-essentials/grid-and-snap#object-snap).
 3. Attempting to Loft a complex shape all in one go.  Design the model using simpler sub-section shapes, made with multiple Lofts. Connect surfaces using Joins or using bridge Curves with additional Lofts for example.
 4. Too many, or not enough guide Curves. Practice helps one to get better here.  Lofts struggle if you try to force a surface to fit through too many profiles & guides. Same issue if profiles & guides are spaced too close together.
 5. Select Curves instead of Edges. The possible options are different for Edge and Curve. 
@@ -159,4 +159,4 @@ Lofting two Vertices allows bridging two Curves. The functionality is the same a
 </Callout>
 
 ## See also
-- [Patch](./patch)
+- [Patch](patch)
