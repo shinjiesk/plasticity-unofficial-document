@@ -20,29 +20,29 @@ body {
     &:lang(de) {
         font-family: "Inter", "SF Pro Text", "SF Pro Icons", "Helvetica Neue",
             "Helvetica", "Arial", sans-serif;
-        font-weight: 300;
+        font-weight: 300 !important;
 
         .md\:nx-w-64 {
-            width: 18rem;
+            width: 18rem !important;
         }
-        hyphens: auto;
-        hyphenate-limit-chars: 6 3 3;
-        line-height: 1.8rem;
+        hyphens: auto !important;
+        hyphenate-limit-chars: 6 3 3 !important;
+        line-height: 1.8rem !important;
     }
 
     &:lang(ja) {
         font-family: "Noto Sans JP", "Hiragino Sans", "Meiryo",
             "Hiragino Kaku Gothic ProN", sans-serif;
-        font-size: 0.9rem;
+        font-size: 0.9rem !important;
 
         .nx-text-sm {
             font-size: 0.8rem !important;
         }
 
         .md\:nx-w-64 {
-            width: 19rem;
+            width: 19rem !important;
         }
-        line-height: 1.8rem;
+        line-height: 1.3rem !important;
     }
 }
 

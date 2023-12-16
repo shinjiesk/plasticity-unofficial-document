@@ -1,62 +1,94 @@
-import { Callout } from 'nextra/components'
-
 # Objekttypen
 
-## Skizze
+Objekte sind in die Kategorien Skizze, Festkörper und Leer unterteilt, wobei jede Kategorie weitere Unterkategorien hat.
 
-### Curve
-Linie oder Curve bestehend aus Vertices und Control-Vertices.
-Um auszuwählen, stellen Sie den [**Edge Selection Mode**](./selection-mode) ein.
-Mehrere Curves können zu einer verbunden werden.
-Es wird als blaue Linie in der Skizze angezeigt. Wenn Sie den Cursor darauf richten, wird es weiß und bei Auswahl gelb.
+1. [Sketch](#sketch)
+    1. [Curve](#curve)
+    2. [Vertex](#vertex)
+    3. [Control Vertex](#control-vertex)
+    4. [Region](#region)
+2. [Solid](#solid)
+    1. [Solid](#solid-1)
+    2. [Sheet](#sheet)
+    3. [Face](#face)
+    4. [Edge](#edge)
+3. [Empty](#empty)
+    1. [Image](#image)
+    2. [Mesh](#mesh)
 
-![Curve](/img/object-name-curve.png)
+## 1. Sketch[#sketch]
 
-### Vertex
-Ein Punkt, der an beiden Enden einer Curve existiert und die Position der Curve bestimmt.
-Um es anzuzeigen und auszuwählen, stellen Sie den [**Control-Point Selection Mode**](./selection-mode) ein.
-Es erscheint als lila Punkt in der Skizze. Es wird weiß, wenn Sie den Cursor darauf richten und weiß bleibt, wenn Sie es auswählen.
-Wenn mehrere Vertices genau an derselben Position liegen, werden sie durch einen blau-grünen Punkt angezeigt.
-Beachten Sie, dass dies nur anzeigt, dass die Vertices in der gleichen Position sind und nichts mit der Anwesenheit oder Abwesenheit einer Verbindung zu tun hat.
+### 1. Curve [#curve]
+- Eine aus Vertices und Steuerungspunkten bestehende Linie oder Kurve wird als Curve bezeichnet.
+- Zum Auswählen wechseln Sie in den [**Kanten-Auswahlmodus**](./selection-mode).
+- Mehrere Kurven können verbunden und als eine einzige Kurve behandelt werden.
+- Angezeigt in Blau und wird gelb, wenn sie ausgewählt ist.
+
+![Kurve](/img/object-name-curve.png)
+
+### 2. Vertex [#vertex]
+- Die Punkte an beiden Enden einer Curve werden als Vertices bezeichnet.
+- Zum Auswählen wechseln Sie in den [**Steuerungspunkt-Auswahlmodus**](./selection-mode).
+- Angezeigt als lila Punkte, die weiß werden, wenn sie ausgewählt sind.
+- Wenn sich mehrere Vertices überlappen, wird der Punkt türkis.
 
 ![Vertex](/img/object-name-vertex.png)
 
-### Control-Vertex (CV)
-Ein Punkt, der in der Mitte einer Curve existiert und die Form der Curve bestimmt.
-Um es anzuzeigen und auszuwählen, stellen Sie den [**Control-Point Selection Mode**](./selection-mode) ein.
-Es erscheint als lila Punkt, der kleiner ist als der Vertex in der Skizze. Es wird weiß, wenn Sie den Cursor darauf richten und weiß bleibt, wenn Sie es auswählen.
-Vertices und Control-Vertices sind durch eine weiße Linie verbunden, um ihre Beziehung zur Curve leichter zu erkennen. Durch Hinzufügen weiterer Control-Vertices können komplexe Curves ausgedrückt werden.
+### 3. Control Vertex [#control-vertex]
+- Punkte, die die Form einer Curve definieren, werden als Control Vertices bezeichnet.
+- Zum Auswählen wechseln Sie in den [**Steuerungspunkt-Auswahlmodus**](./selection-mode).
+- Kleiner als Vertices, angezeigt als lila Punkte, die weiß werden, wenn sie ausgewählt sind.
+- Vertices und Steuerungsvertices sind durch weiße Linien verbunden.
+- Das Hinzufügen von Steuerungsvertices ermöglicht komplexere Kurven.
 
-![Control-Vertex](/img/object-name-cv.png)
+![Steuerungsvertex](/img/object-name-cv.png)
 
-### Region
-Der Bereich wird von Curves umgeben. Um auszuwählen, stellen Sie den [**Face Selection Mode**](./selection-mode) ein.
-Es erscheint als blauer Bereich in der Skizze. Wenn Sie den Cursor auf die Region richten, wird der Standardbefehl [**Extrude**](../solid/extrude) automatisch ausgeführt.
-<Callout emoji="❗">
-**Hinweis**<br />
-Das Ergebnis des Extrude-Befehls unterscheidet sich, wenn eine geschlossene Curve ausgewählt ist und wenn eine Region ausgewählt ist: Eine extrudierte Curve wird zu einem Sheet und eine extrudierte Region zu einem Solid.
-</Callout>
-![Region](/img/object-name-region.png)
+### 4. Region [#region]
+- Ein von Curves umschlossener Bereich wird als Region bezeichnet.
+- Zum Auswählen wechseln Sie in den [**Flächen-Auswahlmodus**](./selection-mode).
+- Angezeigt als dunkelblau, wird hellblau, wenn sie ausgewählt ist.
+- Das Auswählen einer Region aktiviert automatisch den [**Extrudieren**](../solid/extrude) Befehl.
 
-## Solid
+## 2. Solid [#solid]
 
-### Solid
-Ein vollständig geschlossenes dreidimensionales Objekt ohne Lücken in der Oberfläche. Um auszuwählen, stellen Sie den [**Body Selection Mode**](./selection-mode) ein. Wenn Sie einige Faces löschen, wird es zu einem Sheet. Es wird grau im 3D-Viewport angezeigt und die Kontur wird weiß, wenn Sie den Cursor darauf richten und gelb, wenn Sie es auswählen.
+### 1. Solid [#solid-1]
+- Ein geschlossener fester Körper, der aus mehreren Flächen ohne Löcher besteht, wird als Solid bezeichnet.
+- Zum Auswählen wechseln Sie in den [**Körper-Auswahlmodus**](./selection-mode).
+- Das Entfernen eines Teils einer Festkörperfläche verwandelt ihn in einen offenen Körper, ein Blatt.
+- Angezeigt als grau, mit Konturen, die gelb werden, wenn sie ausgewählt sind.
 
-![Solid](/img/object-name-solid.png)
+![Festkörper](/img/object-name-solid.png)
 
-### Sheet
-Eine offene Oberfläche, die aus einer oder mehreren Faces besteht. Um es auszuwählen, stellen Sie den [**Body Selection Mode**](./selection-mode) ein. Es wird grau im 3D-Viewport angezeigt und die Kontur wird weiß, wenn Sie den Cursor darauf richten und gelb, wenn Sie es auswählen.
+### 2. Shhet [#sheet]
+- Ein offener Körper, der aus Flächen mit Löchern besteht, wird als Sheet bezeichnet.
+- Zum Auswählen wechseln Sie in den [**Körper-Auswahlmodus**](./selection-mode).
+- Angezeigt als grau, mit Konturen, die gelb werden, wenn sie ausgewählt sind.
 
-![Sheet](/img/object-name-sheet.png)
+![Blatt](/img/object-name-sheet.png)
 
-### Face
-Die ebenen oder gekrümmten Oberflächen, die Sheets und Solids bilden. Um auszuwählen, stellen Sie den [**Face Selection Mode**](./selection-mode) ein. Es wird grau im 3D-Viewport angezeigt, es hellt auf, wenn Sie den Cursor darauf richten und wird gelb, wenn Sie es auswählen. Wenn ein Face ausgewählt ist, wird der Standardbefehl [**Offset Face**](../solid/offset-face) automatisch ausgeführt.
+### 3. Face [#face]
+- Jede ebene oder gekrümmte Oberfläche, die Solids und Sheets bildet, wird als Face bezeichnet.
+- Zum Auswählen wechseln Sie in den [**Flächen-Auswahlmodus**](./selection-mode).
+- Angezeigt als grau, wird hellgelb, wenn sie ausgewählt ist.
+- Das Auswählen einer Fläche aktiviert automatisch den [**Offset Face**](../solid/offset-face) Befehl.
 
-![Face](/img/object-name-face.png)
-
-### Edge
-Der Rand eines Face.
-Um auszuwählen, stellen Sie den [**Edge Selection Mode**](./selection-mode) ein. Er wird als schwarze Linie angezeigt, die weiß wird, wenn der Cursor darauf zeigt und gelb wird, wenn sie ausgewählt ist. Wenn der Edge des Grenzbereichs zwischen zwei Faces ausgewählt ist, wird der Standardbefehl [Fillet](../solid/fillet) automatisch ausgeführt, und wenn der offene Edge eines Sheet ausgewählt ist, wird der Standardbefehl [**Extend Sheet**](../solid/extend#extend-sheet) automatisch ausgeführt.
+### 4. Edge [#edge]
+- Die Randlinien, die Faces umgeben, werden als Edges bezeichnet.
+- Zum Auswählen wechseln Sie in den [**Kanten-Auswahlmodus**](./selection-mode).
+- Angezeigt als schwarze Linien, die gelb werden, wenn sie ausgewählt sind.
+- Das Auswählen einer Kante, an der zwei Flächen zusammentreffen, aktiviert automatisch den Befehl [**Fillet**](../solid/fillet). Das Auswählen einer offenen Kante an einem Blatt aktiviert automatisch den Befehl [**Extend Sheet**](../solid/extend-sheet).
 
 ![Edge](/img/object-name-edge.png)
+
+## 3. Empty [#empty]
+
+### 1. Image [#image]
+- Bilder, die mit der Import-Funktion importiert wurden, werden als Images bezeichnet.
+- Zum Auswählen wechseln Sie in den [**Körper-Auswahlmodus**](./selection-mode).
+- Umrisse werden gelb, wenn sie ausgewählt sind.
+
+### 2. Mesh [#mesh]
+- 3D-Daten wie STL und FBX, die mit der Import-Funktion importiert wurden, werden als Meshes bezeichnet.
+- Zum Auswählen wechseln Sie in den [**Körper-Auswahlmodus**](./selection-mode).
+- Umrisse werden gelb, wenn sie ausgewählt sind.
+

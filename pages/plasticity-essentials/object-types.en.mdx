@@ -1,62 +1,96 @@
-import { Callout } from 'nextra/components'
-
 # Object Types
 
-## Sketch
+Objects are categorized into Sketch, Solid, and Empty, each with further subdivisions.
 
-### Curve
-Line or Curve consisting of Vertices and Control-Vertices.
-To select, set the [**Edge Selection Mode**](./selection-mode).
-Multiple Curves can be joined and into one.
-It is displayed as a blue line in the sketch. When you point the cursor at it, it turns white, and when selected, it turns yellow.
+1. [Sketch](#sketch)
+    1. [Curve](#curve)
+    2. [Vertex](#vertex)
+    3. [Control Vertex](#control-vertex)
+    4. [Region](#region)
+2. [Solid](#solid)
+    1. [Solid](#solid-1)
+    2. [Sheet](#sheet)
+    3. [Face](#face)
+    4. [Edge](#edge)
+3. [Empty](#empty)
+    1. [Image](#image)
+    2. [Mesh](#mesh)
+
+## 1. Sketch[#sketch]
+
+### 1. Curve [#curve]
+    - A line or curve made up of vertices and control points is called a Curve.
+    - To select, switch to [**Edge Selection Mode**](./selection-mode).
+    - Multiple curves can be connected and treated as a single curve.
+    - Displayed in blue and turns yellow when selected.
 
 ![Curve](/img/object-name-curve.png)
 
-### Vertex
-A point that exists at both ends of a  Curve and determines the position of the  Curve.
-To display and select it, set the [**Control-Point Selection Mode**](./selection-mode).
-It appears as a purple dot in the sketch. It turns white when you point the cursor on it, and stays white when you select it.
-When multiple Vertices are in the exact same position, they are indicated by a blue-green dot. 
-Note that this only indicates that the Vertices are in the same position and has nothing to do with the presence or absence of a connection.
+### 2. Vertex [#vertex]
+- The points at both ends of a Curve are called Vertices.
+- To select, switch to [**Control Point Selection Mode**](./selection-mode).
+- Displayed as purple points, turning white when selected.
+- When multiple vertices overlap, the point turns teal.
 
 ![Vertex](/img/object-name-vertex.png)
 
-### Control-Vertex (CV)
-A point that exists in the middle of a  Curve and determines the shape of the  Curve.
-To display and select it, set the [**Control-Point Selection Mode**](./selection-mode).
-It appears as a purple dot that is smaller than the Vertex on the sketch. It turns white when you point the cursor at it and stays white when you select it.
-Vertices and Control-Vertices are connected by a white line to make it easier to recognize their relationship to the Curve. By adding more Control-Vertices, complex Curves can be expressed.
+### 3. Control Vertex[#control-vertex]
+- Points that define the shape of a Curve are called Control Vertices.
+- To select, switch to [**Control Point Selection Mode**](./selection-mode).
+- Smaller than Vertices, displayed as purple points, turning white when selected.
+- Vertices and Control Vertices are connected by white lines.
+- Adding Control Vertices allows for more complex Curves.
 
 ![Control-Vertex](/img/object-name-cv.png)
 
-### Region
-The area is surrounded by Curves. To select, set the [**Face Selection Mode**](./selection-mode). 
-It appears as a blue area in the sketch. When the cursor is pointed at the Region, the default command [**Extrude**](../solid/extrude) is automatically executed.
-<Callout emoji="❗">
-**Note**<br />
-The result of the Extrude command is different when a closed Curve is selected and when a Region is selected: An extruded Curve becomes a Sheet, and an extruded Region becomes a Solid.
-</Callout>
-![Region](/img/object-name-region.png)
+### 4. Region [#region]
+- An area enclosed by Curves is called a Region.
+- To select, switch to [**Face Selection Mode**](./selection-mode).
+- Displayed as dark blue, turning light blue when selected.
+- Selecting a Region automatically activates the [**Extrude**](../solid/extrude) command.
 
-## Solid
+## 2. Solid[#solid]
 
-### Solid
-A fully enclosed three-dimensional object with no gaps in the surface. To select, set the [**Body Selection Mode**](./selection-mode). If you delete some Faces, it becomes a Sheet. It is displayed in gray in the 3D viewport, and the outline turns white when you point the cursor on it, and yellow when you select it.
+### 1. Solid [#solid-1]
+- A closed solid body made of multiple faces without any holes is called a Solid.
+- To select, switch to [**Body Selection Mode**](./selection-mode).
+- Removing part of a Solid's face turns it into an open body, a Sheet.
+- Displayed as gray, with outlines turning yellow when selected.
 
 ![Solid](/img/object-name-solid.png)
 
-### Sheet
-An open surface built from one or more Faces. To select it, set the [**Body Selection Mode**](./selection-mode). It is displayed in gray in the 3D viewport, and when the cursor is pointed at it, the outline turns white, and when selected, it turns yellow.
+### 2. Sheet [#sheet]
+- An open body made of faces with holes is called a Sheet.
+- To select, switch to [**Body Selection Mode**](./selection-mode).
+- Displayed as gray, with outlines turning yellow when selected.
 
 ![Sheet](/img/object-name-sheet.png)
 
-### Face
-The planar or curved surfaces that make up Sheets and Solids. To select, set the [**Face Selection Mode**](./selection-mode). It will appear gray in the 3D viewport, lighten when you point the cursor at it, and turn yellow when selected. When Face is selected, the default command [**Offset Face**](../solid/offset-face) is automatically executed.
+### 3. Face [#face]
+- Each plane or curved surface that makes up Solids and Sheets is called a Face.
+- To select, switch to [**Face Selection Mode**](./selection-mode).
+- Displayed as gray, turning light yellow when selected.
+- Selecting a Face automatically activates [**Offset Face**](../solid/offset-face) command.
 
 ![Face](/img/object-name-face.png)
 
-### Edge
-The border of a Face.
-To select, set the [**Edge Selection Mode**](./selection-mode). It is displayed as a black line, which turns white when the cursor is pointed at it and turns yellow when selected. When the Edge of the boundary between two Faces is selected, the default command [Fillet](../solid/fillet) is automatically executed, and when the open Edge of a Sheet is selected, the default command [**Extend Sheet**](../solid/extend#extend-sheet) is automatically executed.
+### 4. Edge [#edge]
+- The boundary lines that surround Faces are called Edges.
+- To select, switch to [**Edge Selection Mode**](./selection-mode).
+- Displayed as black lines, turning yellow when selected.
+- Selecting an Edge where two Faces meet automatically activates [**Fillet**](../solid/fillet) command. Selecting an open Edge on a Sheet automatically activates [**Extend Sheet**](../solid/extend-sheet) command.
 
 ![Edge](/img/object-name-edge.png)
+
+## 3. Empty[#empty]
+
+### 1. Image [#image]
+- Images imported using the Import function are called Images.
+- To select, switch to [**Body Selection Mode**](./selection-mode).
+- Outlines turn yellow when selected.
+
+### 2. Mesh (Mesh)[#mesh]
+- 3D data such as STL and FBX imported using the Import function are called Meshes.
+- To select, switch to [**Body Selection Mode**](./selection-mode).
+- Outlines turn yellow when selected.
+
