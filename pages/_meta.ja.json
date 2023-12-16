@@ -24,12 +24,12 @@
     "solid": "ソリッド",
     "---4": {
         "type": "separator",
-        "title": "Integration"
+        "title": "連携"
     },
     "blender": "Blender",
     "---5": {
         "type": "separator",
-        "title": "Advanced"
+        "title": "応用"
     },
     "cad-essentials": "CADの基本"
 }
