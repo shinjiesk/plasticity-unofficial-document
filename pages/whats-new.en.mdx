@@ -1,133 +1,63 @@
-import VideoPlayer from 'components/VideoPlayer';
+# Update Information Version 1.4
 
-# What's New in version 1.3
+Release: December 18, 2023
 
-Release date: October 9, 2023
+## Improved CAD-Like Usability
 
-## Download and Installation
+In Version 1.4, features to enhance CAD-like usability have been strengthened.
 
-Plasticity 1.3 is now available for download. Please refer to [this link](/getting-started/download-and-install) for more details.
+### New Measure and Dimension Commands
 
-## New features
+- The Measure command has been added, allowing measurement of object dimensions. When the measured object is transformed, the dimension values are updated accordingly. For more details, please visit [here](/common/measure).
+- The Dimension command has been added, enabling changes to dimensions like the size of a rectangle around a curve or the diameter of a cylinder. For more details, please visit [here](/common/dimension).
 
-### Blender Bridge
+### New Tangent Circle and Tangent Arc Commands
 
-The Blender Bridge is a feature that allows for the rapid transfer of mesh data from Plasticity to Blender. This is realized as a Blender add-on. Once you've connected, you can just click refresh, and data is loaded really quickly. You don't need to worry about exporting to a temporary file and getting all the setting options right.
+- The Tangent Circle command has been added to create circles tangent to two curves. For more details, please visit [here](/tool/tangent-circle).
+- The Tangent Arc command has been added to create circular arcs tangent to curves. For more details, please visit [here](/tool/tangent-arc).
 
-Even if you modify the geometry in Plasticity, the materials set in Blender are preserved. Additionally, the group structure in Plasticity is reflected as a collection in Blender. In this process, Blender's hierarchy is created using the Plasticity document name as an identifier. Therefore, multiple Plasticity documents can be incorporated into a single Blender document.
+### Enhancements to Existing Commands
 
-There's also a live link feature. The live link is a really cool feature; you can see stuff being updated in real time. The real workhorse of the Blender Bridge is the ability to quickly get assets in, so you can see them using Blender materials, Blender lighting, Ray tracing. You can view your objects in a scene with the real camera that might be used in a game or in a final render, with a specific FOV. You get the full power of Blender, including parenting things to empties, so you can animate them, rig them, and see if your mechanical parts fit together.
+- Dimension values are now displayed when executing TwoPointCircle, ThreePointCircle, Box, Cylinder, and Sphere commands.
 
-The workflow is also a fantastic experience. After placing the Plasticity document in the Blender scene, you can still change the faceting settings. Almost all of Plasticity's faceting tools are available within Blender. This means you can quickly get the polygon density or edge flow needed for your model, resulting in a faster workflow.
+### SpaceMouse Support
 
-The specification of UV seams and sharps in Blender is not retained in the current version. However, the Blender add-on comes with features that automatically mark edges, automatically select geometry corresponding to Plasticity faces or edges, and merge UV seams. These features also contribute to a faster workflow.
+- Support for 3Dconnexion's SpaceMouse on Windows and macOS.
+- Confirmed operation with SpaceMouse Compact, SpaceMouse Pro, and SpaceMouse Enterprise.
+- Currently not supported on Linux.
 
-To use the Blender Bridge, it is necessary to install the add-on and activate the feature. For more details, refer [here](/blender/install-blender-addon).
+## Other Improvements
 
-<br/>
-For more details on Blender Bridge, see [here](/blender/install-blender-addon).
+### New Commands
 
-### Customizable radial menus
+- Offset Vertex has been added, inserting new vertices along a curve on both sides of a selected vertex. For more details, please visit [here](/sketch/offset-vertex).
 
-The Radial Menu is a popup menu that allows for quick execution of commands, which can be displayed using a shortcut key. By default, two radial menus are provided: the "Selection Mode Radial Menu" for toggling selection modes, and the "Viewport Settings Radial Menu" for modifying 3D viewport settings. The Radial Menu can be customized or created anew by users, and can incorporate all commands within Plasticity.
-Installation is required to use the default Radial Menu. 
+### Outliner Improvements
 
-For more details on Radial Menu, see [here](/plasticity-essentials/radial-menu).
-<br/>
-<VideoPlayer fileName="v1_3_new_radial-menu"/>
+- Empty group folders are now displayed in a greyed-out format.
+- Group folders containing selected objects are now highlighted.
+- A button to toggle the outliner display on and off has been added.
 
+### 3D Viewport Improvements
 
-### Hierarchical isolation
+- Alt + middle mouse button click now moves the view's center to the cursor position.
+- Pressing the Alt key during view rotation now snaps to orthogonal views.
 
-The functionality of the Isolate command has been enhanced to allow hierarchical hiding of objects. This significantly improves workflow in complex scenes. After narrowing down the objects displayed with the Isolate command, you can further select objects within that group and run the Isolate command again, leaving only the most recently selected objects visible. This feature can be repeated through multiple layers. The level of isolation is displayed on the screen, and clicking on it allows you to gradually revert back to showing more objects.
+### FBX, DXF, and DWG Import
 
-For more details on Isolate command, see [here](/plasticity-essentials/focus-and-isolate-objects#isolate-objects).
-<br/>
-<VideoPlayer fileName="isolate"/>
+- FBX file import is now available.
+- DXF and DWG file import is now available (Windows and Linux with Studio License only).
 
-### Multiple windows + copy/paste + place command for kitbashing
+### Command Improvements
 
-You can now open multiple Plasticity windows, enhancing workflow efficiency. While you can copy and paste objects between windows, we've introduced enhanced commands: 'Copy with Placement' and 'Paste with Placement'. These operate akin to the Place command, but across different windows. In one window, you can copy an object with a reference point, then paste it using that same point in another window. This feature is especially handy for kitbashing.
-
-For more details on Multiple windows, see [here](/plasticity-essentials/file-menu). [Copy with Placement](/common/copy-with-placement) and [Paste with Placement](/common/paste-with-placement) commands.
-<br/>
-<VideoPlayer fileName="v1_3_new_window_copy_paste_place"/>
-
-### Many enhancements to Outliner
-
-- Right-click on a group folder to access various related commands, such a s"Add current selection to group", "Select all", "New subgroup with current selection", collapsing or expanding all groups, and modifying materials.
-
-- Scroll to selection: A shortcut has been provided to locate the object you've selected in the 3D viewport within the Outliner. 
-
-- Isolate selection: A shortcut has also been provided to collapse all groups and sections, except for the one containing your selected object.
-
-- You can perform bulk state changes—such as hiding, disabling, locking—by, renaming or modifying materials selecting multiple objects.
-
-- Alt-click on group folder to select all objects in that section.
-
-- Right-click on a section label ("Solids," "Sheets," "Curves") and choose "Select all" to select all objects within that section.
-
-For more details on Outliner, see [here](/plasticity-essentials/outliner).
-
-### Chordal fillets
-
-The Chordal option has been added to the solid fillet feature. The hallmark of a Chordal fillet is that it maintains a constant length for the chord of the fillet, regardless of the angles being filleted. This uniformity can be particularly beneficial when aiming for visual consistency across different parts of a model.
-
-For more details on Fillet Shell, see [here](/solid/fillet-shell#fillet-options).
-<br/>
-<VideoPlayer fileName="fillet-shell-shape"/>
-
-
-### Enhancements to the Edge movement
-
-The Move Gizmo is now available when moving Edges using the Move command. Additionally, you can specify the Pivot point and perform Freestyle movements.
-
-## New Commands
-
-### Selection: convert to groups
-
-Select all objects within the group of the selected objects. Refer to [here](/plasticity-essentials/selecting-objects#select-from-the-currently-selected-objects) for more details.
-
-### Project Outline
-
-Project the outline of the Solids or Sheets onto the current construction plane along the normal direction, thereby generating a Curves. Refer to [here](/sketch/project-outline) for more details.
-
-### Create Outline
-
-Project the outline of the Solids or Sheets onto the current construction plane along the normal direction, thereby generating a Curves. While the "Project Outline" command produces a projected curves in 2D, this command creates a 3D curves. Curves will be positioned precisely at the object's original boundary. Refer to [here](/sketch/create-outline) for more details.
-
-### Thicken Face
-
-Add thickness to a selected Face. Thickness for each side can be specified. Refer to [here](/solid/thicken-face) for more details.
-
-## Enhancements
-
-### Workspace
-
-- Ctrl + Alt clicking on cylindercal face will select all parallel cylindrical faces.
-- Alt + clicing on a Solid/Sheet/Empty will select all objects in the same group.
-- Box/Cylinder/Sphere will now give objects default names
-- Resizable left panel.
-
-### File import/export
-
-- STL files can be imported for reference.
-- Obj/Stl export is now parallelized.
-
-### Commands
-
-- The Extrude command's gizmo has been improved, allowing you to manipulate the thickness.
-- The Rebuild Curve command's Refit method has been enhanced to allow for keeping corners.
-
-## Renamaed Commands and Removed Features
-
-### Renamed commands
-- Explode renamed to Unjoin (Unjoin/Unjoin Curves/Unjoin Faces/Unjoin Sheiis) Refer to [here](/solid/unjoin) for more details.
-- Delete renamed to Dissolve (this should not affect you unless you have custom keybindings)
-
-### Removed Features
-- Focus (replaced by Isolate)
+- The Pipe command has been improved to allow piping multiple curves at once.
+- Radial Array and Rectangular Array commands now remember the last used count.
+- Save As and Export commands have been separated into individual commands.
 
 ## Download and Installation
 
-Plasticity 1.3 is now available for download. Please refer to [this link](/getting-started/download-and-install) for more details.
+Details on downloading and installing Plasticity 1.4 can be found [here](/getting-started/download-and-install).
+
+## Past Update Information
+
+- October 9, 2023 [Version 1.3](/release-notes/whats-new-1-3)
