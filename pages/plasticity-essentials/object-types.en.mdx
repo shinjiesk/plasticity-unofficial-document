@@ -18,21 +18,20 @@ Objects are categorized into Sketch, Solid, and Empty, each with further subdivi
 
 ## 1. Sketch[#sketch]
 
+![curve-vertex-controlvertex](/img/curve-vertex-controlvertex.png)
+
 ### 1. Curve [#curve]
-    - A line or curve made up of vertices and control points is called a Curve.
+    - A line or curve made up of Vertices and Control Vertices is called a Curve.
     - To select, switch to [**Edge Selection Mode**](selection-mode).
     - Multiple curves can be connected and treated as a single curve.
     - Displayed in blue and turns yellow when selected.
-
-![Curve](/img/object-name-curve.png)
 
 ### 2. Vertex [#vertex]
 - The points at both ends of a Curve are called Vertices.
 - To select, switch to [**Control Point Selection Mode**](selection-mode).
 - Displayed as purple points, turning white when selected.
 - When multiple vertices overlap, the point turns teal.
-
-![Vertex](/img/object-name-vertex.png)
+    ![overlapped-vertices](/img/overlapped-vertices.png)
 
 ### 3. Control Vertex[#control-vertex]
 - Points that define the shape of a Curve are called Control Vertices.
@@ -41,46 +40,42 @@ Objects are categorized into Sketch, Solid, and Empty, each with further subdivi
 - Vertices and Control Vertices are connected by white lines.
 - Adding Control Vertices allows for more complex Curves.
 
-![Control-Vertex](/img/object-name-cv.png)
-
 ### 4. Region [#region]
 - An area enclosed by Curves is called a Region.
 - To select, switch to [**Face Selection Mode**](selection-mode).
 - Displayed as dark blue, turning light blue when selected.
 - Selecting a Region automatically activates the [**Extrude**](/solid/extrude) command.
+![region](/img/region.png)
+
 
 ## 2. Solid[#solid]
 
 ### 1. Solid [#solid-1]
 - A closed solid body made of multiple faces without any holes is called a Solid.
 - To select, switch to [**Body Selection Mode**](selection-mode).
-- Removing part of a Solid's face turns it into an open body, a Sheet.
 - Displayed as gray, with outlines turning yellow when selected.
-
-![Solid](/img/object-name-solid.png)
+![Solid](/img/solid.png)
 
 ### 2. Sheet [#sheet]
 - An open body made of faces with holes is called a Sheet.
+- Removing part of a Solid's face turns it into an open body, a Sheet.
 - To select, switch to [**Body Selection Mode**](selection-mode).
 - Displayed as gray, with outlines turning yellow when selected.
-
-![Sheet](/img/object-name-sheet.png)
+![Sheet](/img/sheet.png)
 
 ### 3. Face [#face]
 - Each plane or curved surface that makes up Solids and Sheets is called a Face.
 - To select, switch to [**Face Selection Mode**](selection-mode).
 - Displayed as gray, turning light yellow when selected.
 - Selecting a Face automatically activates [**Offset Face**](/solid/offset-face) command.
-
-![Face](/img/object-name-face.png)
+![Face](/img/face.png)
 
 ### 4. Edge [#edge]
 - The boundary lines that surround Faces are called Edges.
 - To select, switch to [**Edge Selection Mode**](selection-mode).
 - Displayed as black lines, turning yellow when selected.
 - Selecting an Edge where two Faces meet automatically activates [**Fillet**](/solid/fillet) command. Selecting an open Edge on a Sheet automatically activates [**Extend Sheet**](/solid/extend-sheet) command.
-
-![Edge](/img/object-name-edge.png)
+![Edge](/img/edge.png)
 
 ## 3. Empty[#empty]
 
@@ -89,7 +84,7 @@ Objects are categorized into Sketch, Solid, and Empty, each with further subdivi
 - To select, switch to [**Body Selection Mode**](selection-mode).
 - Outlines turn yellow when selected.
 
-### 2. Mesh (Mesh)[#mesh]
+### 2. Mesh [#mesh]
 - 3D data such as STL and FBX imported using the Import function are called Meshes.
 - To select, switch to [**Body Selection Mode**](selection-mode).
 - Outlines turn yellow when selected.
