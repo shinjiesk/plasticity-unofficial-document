@@ -1,5 +1,6 @@
 import Reference from 'components/Reference'
 import { Callout } from 'nextra/components'
+import VideoPlayer from 'components/VideoPlayer';
 
 # Measure
 
@@ -15,12 +16,16 @@ import { Callout } from 'nextra/components'
 3. Move the cursor to the desired axis and click to place the dimension. 
 3. カーソルを移動させて、寸法値を表示したい軸を選択し、クリックで確定します。
 4. 構築平面の座標軸を基準にした寸法値が表示され、アウトライナーにMeasurementsが追加されます。
+<VideoPlayer fileName="measure-1"/>
 
 <Callout type="info">
-- 構築平面に垂直な座標軸を計測するときは、それを含む構築平面に切り替える必要があります。
-- ユーザが定義した構築平面を基準に寸法値を表示できます。構築平面の作り方は[こちら](/plasticity-essentials/construction-plane)を参照してください。
-- 2点間の距離を計測するときは、右クリックで確定します。
+- ユーザが定義した構築平面を基準に寸法値を表示することもできます。構築平面の作り方は[こちら](/plasticity-essentials/construction-plane)を参照してください。
 </Callout> 
+
+## 2点間の直線距離を計測する
+
+- 寸法値を確定するときに右クリックすると、2点間の直線距離を計測することができます。
+<VideoPlayer fileName="measure-2"/>
 
 ## 関連項目
 - [Dimension](dimension)

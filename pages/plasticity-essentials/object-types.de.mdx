@@ -18,21 +18,20 @@ Objekte sind in die Kategorien Skizze, Festkörper und Leer unterteilt, wobei je
 
 ## 1. Sketch[#sketch]
 
+![curve-vertex-controlvertex](/img/curve-vertex-controlvertex.png)
+
 ### 1. Curve [#curve]
 - Eine aus Vertices und Steuerungspunkten bestehende Linie oder Kurve wird als Curve bezeichnet.
 - Zum Auswählen wechseln Sie in den [**Kanten-Auswahlmodus**](selection-mode).
 - Mehrere Kurven können verbunden und als eine einzige Kurve behandelt werden.
 - Angezeigt in Blau und wird gelb, wenn sie ausgewählt ist.
 
-![Kurve](/img/object-name-curve.png)
-
 ### 2. Vertex [#vertex]
 - Die Punkte an beiden Enden einer Curve werden als Vertices bezeichnet.
 - Zum Auswählen wechseln Sie in den [**Steuerungspunkt-Auswahlmodus**](selection-mode).
 - Angezeigt als lila Punkte, die weiß werden, wenn sie ausgewählt sind.
 - Wenn sich mehrere Vertices überlappen, wird der Punkt türkis.
-
-![Vertex](/img/object-name-vertex.png)
+    ![overlapped-vertices](/img/overlapped-vertices.png)
 
 ### 3. Control Vertex [#control-vertex]
 - Punkte, die die Form einer Curve definieren, werden als Control Vertices bezeichnet.
@@ -41,44 +40,41 @@ Objekte sind in die Kategorien Skizze, Festkörper und Leer unterteilt, wobei je
 - Vertices und Steuerungsvertices sind durch weiße Linien verbunden.
 - Das Hinzufügen von Steuerungsvertices ermöglicht komplexere Kurven.
 
-![Steuerungsvertex](/img/object-name-cv.png)
-
 ### 4. Region [#region]
 - Ein von Curves umschlossener Bereich wird als Region bezeichnet.
 - Zum Auswählen wechseln Sie in den [**Flächen-Auswahlmodus**](selection-mode).
 - Angezeigt als dunkelblau, wird hellblau, wenn sie ausgewählt ist.
 - Das Auswählen einer Region aktiviert automatisch den [**Extrudieren**](/solid/extrude) Befehl.
+![region](/img/region.png)
 
 ## 2. Solid [#solid]
 
 ### 1. Solid [#solid-1]
 - Ein geschlossener fester Körper, der aus mehreren Flächen ohne Löcher besteht, wird als Solid bezeichnet.
 - Zum Auswählen wechseln Sie in den [**Körper-Auswahlmodus**](selection-mode).
-- Das Entfernen eines Teils einer Festkörperfläche verwandelt ihn in einen offenen Körper, ein Blatt.
 - Angezeigt als grau, mit Konturen, die gelb werden, wenn sie ausgewählt sind.
-
-![Festkörper](/img/object-name-solid.png)
+![Solid](/img/solid.png)
 
 ### 2. Shhet [#sheet]
 - Ein offener Körper, der aus Flächen mit Löchern besteht, wird als Sheet bezeichnet.
+- Das Entfernen eines Teils einer Festkörperfläche verwandelt ihn in einen offenen Körper, ein Blatt.
 - Zum Auswählen wechseln Sie in den [**Körper-Auswahlmodus**](selection-mode).
 - Angezeigt als grau, mit Konturen, die gelb werden, wenn sie ausgewählt sind.
-
-![Blatt](/img/object-name-sheet.png)
+![Sheet](/img/sheet.png)
 
 ### 3. Face [#face]
 - Jede ebene oder gekrümmte Oberfläche, die Solids und Sheets bildet, wird als Face bezeichnet.
 - Zum Auswählen wechseln Sie in den [**Flächen-Auswahlmodus**](selection-mode).
 - Angezeigt als grau, wird hellgelb, wenn sie ausgewählt ist.
 - Das Auswählen einer Fläche aktiviert automatisch den [**Offset Face**](/solid/offset-face) Befehl.
+![Face](/img/face.png)
 
 ### 4. Edge [#edge]
 - Die Randlinien, die Faces umgeben, werden als Edges bezeichnet.
 - Zum Auswählen wechseln Sie in den [**Kanten-Auswahlmodus**](selection-mode).
 - Angezeigt als schwarze Linien, die gelb werden, wenn sie ausgewählt sind.
 - Das Auswählen einer Kante, an der zwei Flächen zusammentreffen, aktiviert automatisch den Befehl [**Fillet**](/solid/fillet). Das Auswählen einer offenen Kante an einem Blatt aktiviert automatisch den Befehl [**Extend Sheet**](/solid/extend-sheet).
-
-![Edge](/img/object-name-edge.png)
+![Edge](/img/edge.png)
 
 ## 3. Empty [#empty]
 
