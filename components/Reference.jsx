@@ -1,7 +1,8 @@
 import React from "react";
 import { useRouter } from "next/router";
+import ButtonIcon from 'components/ButtonIcon';
 
-const Reference = ({ shortcut, command, button }) => {
+const Reference = ({ shortcut, command, button, buttonIcon }) => {
     const router = useRouter();
     const { locale } = router;
 
@@ -38,7 +39,9 @@ const Reference = ({ shortcut, command, button }) => {
             <div className="col-span-3">{translation.shortcutLabel}</div>
             <div className="col-span-7 font-bold">{shortcut || "-"}</div>
             <div className="col-span-3">{translation.buttonLabel}</div>
-            <div className="col-span-7 font-bold">{button || "-"}</div>
+            <div className="col-span-7 font-bold">{button || "-"}{" "}
+                <ButtonIcon type={buttonIcon || "button-none"} />
+            </div>
         </div>
 
     );

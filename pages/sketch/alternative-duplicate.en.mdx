@@ -1,8 +1,9 @@
 import Reference from 'components/Reference'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Alternative Duplicate
 
-<Reference shortcut="Alt + D" command="Alternative Duplicate" button="" />
+<Reference shortcut="Alt + D" command="Alternative Duplicate" button="Left of Command Bar"   buttonIcon='button-duplicate'/>
 
 Project the Curves onto the current construction plane along the normal direction, thereby generating a Curves.
 
@@ -13,6 +14,13 @@ Project the Curves onto the current construction plane along the normal directio
 3. Press <kbd>Alt + D</kbd> to excute the command.
 4. The projected Curves will be created on the current construction plane.
 5. Optionally, you can move the Curves using the Move Gizmo.
+    - You can also limit the direction of movement.
+    - <Kst>Keyboard Shortcuts</Kst>
+        - <kbd>Shift + X</kbd>/ <kbd>Shift + Y</kbd>/<kbd>Shift + Z</kbd> **X, Y, Z plane:** Constrain to the X, Y, or Z-plane.
+        - <kbd>G</kbd> **Screen space:** Constrains to the apparent plane.
+        - <kbd>F</kbd> **Freestyle:** Constrains the direction by two points.
+        - <kbd>V</kbd> **Pivot:** Constrains the direction by clicking on the plane.
+        - <kbd>W</kbd> **Worldspace:** Releases the directional constraint.
 6. Right-click or click OK in the Command Dialog to confirm.
 
 ## See also

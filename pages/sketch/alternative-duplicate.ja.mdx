@@ -1,8 +1,9 @@
 import Reference from 'components/Reference'
+import Kst from 'components/KeyboardShortcutsTitle'
 
 # Alternative Duplicate
 
-<Reference shortcut="Alt + D" command="Alternative Duplicate" button="" />
+<Reference shortcut="Alt + D" command="Alternative Duplicate" button="コマンドバー左"  buttonIcon='button-duplicate'/>
 
 カーブを現在の構築平面に法線の方向に投影し、カーブを生成します。
 
@@ -13,6 +14,14 @@ import Reference from 'components/Reference'
 3. <kbd>Alt + D</kbd> を押してコマンドを実行します。
 4. 投影された曲線が現在の構築平面に作成されます。
 5. 移動ギズモを使用して曲線を移動することもできます。
+  - 移動方向を限定することもできます。
+  - <Kst>キーボードショートカット</Kst>
+    - <kbd>X</kbd>/ <kbd>Y</kbd>/<kbd>Z</kbd> **X/Y/Z-axis:** [X、Y、Z軸に拘束します](/tool/sketching-essentials#constrain-to-an-axis)。
+    - <kbd>Shift + X</kbd>/ <kbd>Shift + Y</kbd>/<kbd>Shift + Z</kbd> **X, Y, Z-plane:** X, Y, Z平面に拘束します。
+    - <kbd>G</kbd> **Screen space:** 見た目の平面に限定します。
+    - <kbd>F</kbd> **Freestyle:** 最初のクリックで始点、次のクリックで終点を指定します。
+    - <kbd>V</kbd> **Pivot:** ギズモの位置をクリックして指定します。
+    - <kbd>W</kbd> **Worldspace:** ギズモの座標軸を元に戻します。
 6. コマンドダイアログのOKをクリックするか、右クリックで確定します。
 
 ## 関連項目
