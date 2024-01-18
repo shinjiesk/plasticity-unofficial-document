@@ -1,5 +1,35 @@
 {
-  "sketching-essentials": "Sketching Essentials"
-
+  "sketching-essentials": "Sketching Essentials",
+  "line": "Line",
+  "spline-curve": "Spline Curve",
+  "control-point-curve": "Control Point Curve",
+  "center-circle": "Center Circle",
+  "two-point-circle": "Two Point Circle",
+  "three-point-circle": "Three Point Circle",
+  "tangent-circle": "Tangent Circle",
+  "center-point-arc": "Center Point Arc",
+  "three-point-arc": "Three Point Arc",
+  "tangent-arc": "Tangent Arc",
+  "polygon": "Regular Polygon",
+  "spiral": "Spiral",
+  "corner-rectangle": "Corner Rectangle",
+  "center-rectangle": "Center Rectangle",
+  "three-point-rectangle": "Three Point Rectangle",
+  "bridge-curve":{
+    "title": "Bridge Curve",
+    "href": "/sketch/bridge-curve"
+  },
+  "trim": {
+    "title":"Trim",
+    "href": "/sketch/trim"
+  },
+  "split-curve-at-point": {
+    "title":"Split Curve At Point",
+    "href": "/sketch/split-segment"
+  },
+  "sphere": "Sphere",
+  "corner-box": "Corner Box",
+  "center-box": "Center Box",
+  "three-point-box": "Three Point Box",
+  "cylinder": "Cylinder"
 }
-
