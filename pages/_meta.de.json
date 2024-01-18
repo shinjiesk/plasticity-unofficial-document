@@ -31,5 +31,10 @@
         "type": "separator",
         "title": "Fortgeschritten"
     },
-    "cad-essentials": "CAD Grundlagen"
+    "cad-essentials": "CAD Grundlagen",
+    "contact": {
+        "title": "Benutzerunterstützung",
+        "type": "page",
+        "href": "/getting-started/user-support"
+    }
 }

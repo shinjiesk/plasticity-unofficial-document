@@ -31,5 +31,10 @@
         "type": "separator",
         "title": "Advanced"
     },
-    "cad-essentials": "CAD Essentials"
+    "cad-essentials": "CAD Essentials",
+    "contact": {
+        "title": "User Support",
+        "type": "page",
+        "href": "/getting-started/user-support"
+    }
 }
